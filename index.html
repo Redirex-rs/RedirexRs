@@ -444,67 +444,19 @@ input, textarea {
 textarea { height: 25vh; resize: none; }
 
 <?php
-
-if (isset($_POST['name']) && isset($_POST['email'])) {
-
- $name = $_POST['name'];
-
- $email = $_POST['email'];
-
- $to = 'nightmane9n@gmail.com';
-
- $subject = "New Message on KristjanMark.com";
-
- $body = '<html>
-
-    <body>
-
-     <h2>Title</h2>
-
-     <br>
-
-     <p>Name:<br>'.$name.'</p>
-
-     <p>Email:<br>'.$email.'</p>
-
-
-
-    </body>
-
-   </html>';
-
-
-
-//headers
-
-$headers  = "From: ".$name." <".$email.">\r\n";
-
-$headers .= "Reply-To: ".$email."\r\n";
-
-$headers .= "MIME-Version: 1.0\r\n";
-
-$headers .= "Content-type: text/html; charset-utf-8";
-
-
-
-//send
-
-$send = mail($to, $subject, $body, $headers);
-
-if ($send) {
-
- echo '<br>';
-
- echo "Success. Thanks for Your Message.";
-
-} else {
-
- echo 'Error.';
-
-}
-
-}
-
+$name = $_POST['name'];
+$visitor_email = $_POST['email'];
+$message = $_POST['message'];
+$email_from = 'asdasd';
+$email_subject = "New Form Submission";
+$email_body = "User Name: $name.\n".
+"User Email: $visitor_email.\n".
+"User Message: $message.\n";
+$to = "nightmane9@gmail.com";
+$headers = "From: $email_from \r\n";
+$headers .= "Reply To: $visitor_email \r\n";
+mail($to,$email_subject,$email_body,$headers);
+header("Location: Website Name");
 ?>
 
 	</style>
@@ -533,7 +485,7 @@ if ($send) {
     
   </nav>
 		<!-- kontakt forma-->	
-<form action="MAILTO:nightmane9@gmail.com" method="post" enctype="text/plain">			
+<form action="" method="post" enctype="text/plain">			
 			<div id="contactForm">
 
   <h1>Kontaktirajte nas</h1>
