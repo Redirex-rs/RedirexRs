@@ -9,7 +9,7 @@
 <script src="https://kit.fontawesome.com/3429f72bdb.js" crossorigin="anonymous"></script>
 <!--Let browser know website is optimized for mobile-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta https-equiv="X-UA-Compatible" content="IE=edge">
 <title>Redirex</title>
 <link rel="shortcut icon" href="favicon.ico" >
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -176,7 +176,7 @@
   grid-template-columns: 49% 49%  ;
   row-gap: 1%; 
   padding-left: 2%;
-  padding-top: 5%;			 
+  padding-top: 25%;			 
   
 }
 		 .grid-container2 {
@@ -196,7 +196,7 @@
     width: 100vw;  
     height: 100%;   
     overflow-x: hidden;
-   background-image: url(heartbeat-1892826_1920.jp);
+   background-image: url(IMG_20191106_185213_HDR.jp);
 	
 	background-size: 100vw 40vh;
 	background-repeat: no-repeat;			
@@ -362,7 +362,155 @@
   position: relative;
   width: 50%;
 }
+	
+	
+	* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container3 {
+  max-width: 90%;
+  position: top;
+  margin: auto;
+}
+	
+	.container3 {
+  width: 100%;
+  height: 1vh;
+  position: top;
+}
+
+.container3 .slide {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 40vh;
+  transition: opacity 2s ease-in-out;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0;
+}
+
+.container3 .slide.show {
+  opacity: 1;
+}
 	</style>
+	
+	
+	<style>
+	
+
+
+#contact { 
+  -webkit-user-select: none; /* Chrome/Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+  color: white;
+  text-align: center;
+  cursor: pointer; 		
+}
+
+
+#contact:active { background: #444; }
+
+#contactForm { 
+  display: none;
+  border: 6px solid salmon; 
+  padding: 2em;
+  width: 50vw;
+  text-align: center;
+  z-index: 1;	
+  background: #fff;
+  position: fixed;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%)
+  
+}
+
+input, textarea { 
+  margin: .8em auto;
+  font-family: inherit; 
+  text-transform: inherit; 
+  font-size: inherit;
+  
+  display: block; 
+  width: 40vw; 
+  padding: .4em;
+}
+textarea { height: 25vh; resize: none; }
+
+<?php
+
+if (isset($_POST['name']) && isset($_POST['email'])) {
+
+ $name = $_POST['name'];
+
+ $email = $_POST['email'];
+
+ $to = 'nightmane9n@gmail.com';
+
+ $subject = "New Message on KristjanMark.com";
+
+ $body = '<html>
+
+    <body>
+
+     <h2>Title</h2>
+
+     <br>
+
+     <p>Name:<br>'.$name.'</p>
+
+     <p>Email:<br>'.$email.'</p>
+
+
+
+    </body>
+
+   </html>';
+
+
+
+//headers
+
+$headers  = "From: ".$name." <".$email.">\r\n";
+
+$headers .= "Reply-To: ".$email."\r\n";
+
+$headers .= "MIME-Version: 1.0\r\n";
+
+$headers .= "Content-type: text/html; charset-utf-8";
+
+
+
+//send
+
+$send = mail($to, $subject, $body, $headers);
+
+if ($send) {
+
+ echo '<br>';
+
+ echo "Success. Thanks for Your Message.";
+
+} else {
+
+ echo 'Error.';
+
+}
+
+}
+
+?>
+
+	</style>
+	
+	
+ 
 		</head>
 
 		<body style="background-image:image " id="math.min">
@@ -371,7 +519,7 @@
 		
 
 	   <!-- Meni s leve strane vidljiv na dektop--->
-<div class="hide-on-small-only">
+
 
   
     <nav class="nav-wrapper fixed" > <span onclick="openNav()"> <i class="fas fa-bars" style="padding-left: 2%"></i></span>
@@ -379,12 +527,42 @@
         <!-- Dropdown Structure -->
         <li><a href="index.html">Glavna Stranica</a></li>
         <li><a href="#">Pomoc</a></li>
-        <li><a href="#">Kontakt</a></li>
+        <li><a href="#" id="contact">Kontakt</a></li>
         <li><a href="#">O nama</a></li>
       </ul>
     
   </nav>
+		<!-- kontakt forma-->	
+<form action="MAILTO:nightmane9@gmail.com" method="post" enctype="text/plain">			
+			<div id="contactForm">
 
+  <h1>Kontaktirajte nas</h1>
+  <small></small>
+  
+  <form action="#">
+    <input placeholder="Ime" type="text" required />
+    <input placeholder="Email" type="email" required />
+    <input placeholder="Subject" type="text" required />
+    <textarea placeholder="Comment"></textarea>
+    <input class="formBtn" type="submit" />
+    <input class="formBtn" type="reset" />
+  </form>
+</div>
+	</form>		
+	<!-- slideshow bannera-->		
+	<div class="container3">
+  
+  <div class="slide show" style="background-image: url('IMG_20191106_185213_HDR.jpg');"></div>
+  <div class="slide" style="background-image: url('cat-2536662_1920.jpg');"></div>
+  <div class="slide" style="background-image: url('IMG_20191106_185213_HDR.jpg');"></div>
+  <div class="slide" style="background-image: url('cat-2536662_1920.jpg');"></div>
+</div>
+			
+ 
+			
+	
+			
+			
 
 
 
@@ -511,30 +689,41 @@
 
   <div class="grid-container">
    
-<!---
+
   <div class="col s12 m7" style="width: 47vw"> 
     <div class="card horizontal" style="padding-top: 0%; width: 100%; height: 100%">
       <div class="card-image" style="padding-top: 3vw">
+       <a href="https://www.dr-marina.rs/" target="_blank">
         <img src="stranice/Medicina/pedijatrija/zigic-Marina/76173541_552680855542351_4464686055437631488_n.jpg"  >
+		</a>   
       </div>
       <div class="card-stacked" style=" width: 50vw; height: 15vh">
         <div class="card-content" style="width: 100%">
-          <p>I am a very simple card. I am good at containing small bits of information.</p>
+          <p>Adresa: Njegoševa 1/3,
+Požarevac<br>
+Telefon: 012 410 079<br>
+Mobilni: 063 811 5595<br> 
+E-mail: zigicm65@gmail.com
+</p>
         </div>
       </div>
     </div>
-  </div>   -->
+  </div>
   
  
 
   <div class="col s12 m7" style="width: 47vw"> 
     <div class="card horizontal" style="padding-top: 0%; width: 100%; height: 100%"	 >
       <div class="card-image" style="padding-top: 3vw">
+		   <a href="stranice/Medicina/interna medicina/Zigic-inter/zigic-inter.html" >
         <img src="stranice/Medicina/interna medicina/Zigic-inter/73202629_541035030006605_4107229886035263488_n.jpg" style="padding-top: 5%; width: 100%; height: 60%">
+		   </a>	   
       </div>
       <div class="card-stacked" style=" width: 50vw; height: 15vh">
         <div class="card-content" style="width: 100%" >
-          <p>I am a very simple card. I am good at containing small bits of information.I am a very simple card. I am good at containing small bits of information.I am a very simple card. I am good at containing small bits of information</p>
+          <p>Zakazivanje na telelefone:<br>
+– 012/401-354<br>
+– 065/201-08-79</p>
         </div>
         
       </div>
@@ -543,12 +732,16 @@
   
   <div class="col s12 m7" style="width: 47vw"> 
     <div class="card horizontal" style="padding-top: 0%; width: 100%; height: 100%"	 >
+		
       <div class="card-image" style="padding-top: 3vw">
+		  <a href="stranice/Ostalo/DejanKostic/DejaKostic.html" >
         <img src="stranice/Ostalo/DejanKostic/74718044_541291849993482_7181548454101909504_n(1).jpg" style="padding-top: 5%; width: 100%; height: 60%">
+		 </a> 
       </div>
+			
       <div class="card-stacked" style=" width: 50vw; height: 15vh">
         <div class="card-content" style="width: 100%" >
-          <p>I am a very simple card. I am good at containing small bits of information.I am a very simple card. I am good at containing small bits of information.I am a very simple card. I am good at containing small bits of information</p>
+          <p>Galerija ručno izradjenih lampi, noževa i privezaka</p>
         </div>
         
       </div>
@@ -582,11 +775,11 @@
     <div class="polaroid" style="padding-left: 2vw "> <a href="stranice/Medicina/interna medicina/Zigic-inter/zigic-inter.html"> <img src="stranice/Medicina/interna medicina/Zigic-inter/73202629_541035030006605_4107229886035263488_n.jpg" style="width: 95%" alt=""/> </a> </div>
     <div class="polaroid" style="padding-left: 2vw"> <a href="stranice/Ostalo/DejanKostic/DejaKostic.html"> <img src="stranice/Ostalo/DejanKostic/74718044_541291849993482_7181548454101909504_n(1).jpg" style="width: 95%" alt=""/> </a> </div> -->
   </div> 
-</div>
 
-<!-- vidljivo na telefonima  -->
+
+<!-- vidljivo na telefonima  
 <div class="hide-on-large-only">
- <!-- <ul id="slide-out" class="sidenav">
+  <ul id="slide-out" class="sidenav">
     <div class="user-view" style="width:100%">
       <div class="background" style="background-color: #4fc3f7; height: 20vh"> <a href="index.html" style="width:100vw%; height: 20vh"><img  src="../HTMLDreamweaver/redirex3v.png" style="width: 100%; height: 20vh"></a> </div>
     </div>
@@ -612,8 +805,7 @@
     <div class="left-align" style="padding-left: 8vw"> <a href="Ostalo/DejanKostic/DejaKostic.html"> <img src="stranice/Ostalo/DejanKostic/74718044_541291849993482_7181548454101909504_n(1).jpg" style="width: 95%" alt=""/> </a> </div>
   </div>
 </div>  --->
-	<img src="cat-2536662_1920.jpg" style="height: 100%; width: 100%" alt="">
-</div>
+
 <!-- ^^^vidljivo na telefonima ^^^--> 
 
 <!--Import jQuery before materialize.js--> 
@@ -655,5 +847,48 @@ function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }  
 		  </script>
+			
+				<script>
+
+					
+					function cycleBackgrounds() {
+  var index = 0;
+  $imageEls = $('.container3 .slide'); // Get the images to be cycled.
+  setInterval(function () {
+    // Get the next index.  If at end, restart to the beginning.
+    index = index + 1 < $imageEls.length ? index + 1 : 0;
+
+    // Show the next
+    $imageEls.eq(index).addClass('show');
+
+    // Hide the previous
+    $imageEls.eq(index - 1).removeClass('show');
+  }, 2500);
+};
+
+// Document Ready.
+$(function () {
+  cycleBackgrounds();
+});
+	</script>
+			
+		<script>
+	$(function() {
+  
+  // contact form animations
+  $('#contact').click(function() {
+    $('#contactForm').fadeToggle();
+  })
+  $(document).mouseup(function (e) {
+    var container = $("#contactForm");
+
+    if (!container.is(e.target) // if the target of the click isn't the container...
+        && container.has(e.target).length === 0) // ... nor a descendant of the container
+    {
+        container.fadeOut();
+    }
+  });
+  
+});</script>		
 </body>
 </html>
