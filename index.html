@@ -19,37 +19,9 @@
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 
-<style>
-/* Tooltip container */
 
-
-.tooltip {
-	position: relative;
-	display: inline-block;
-}
-.tooltip .tooltiptext {
-	visibility: hidden;
-	width: 120px;
-	background-color: white;
-	color: #000;
-	text-align: center;
-	border-radius: 6px;
-	padding: 5px 0;
-	/* Position the tooltip */
-	position: absolute;
-	z-index: 1;
-	top: -5px;
-	right: 2100%;
-}
-.tooltip:hover .tooltiptext {
-	visibility: visible;
-}
-</style>
-<script>
-			  $(document).ready(function(){
-    $('.collapsible').collapsible();
-  });</script>
 <style>
+
 .button {
 	background-color: #4CAF50; /* Green */
 	border: none;
@@ -157,7 +129,7 @@
 	}
 		 
 		.left-button{
-       left: 1vw;
+       left: vw;
        right: auto;
       } 
 		 
@@ -176,7 +148,7 @@
   grid-template-columns: 49% 49%  ;
   row-gap: 1%; 
   padding-left: 2%;
-  padding-top: 25%;			 
+  padding-top: 5%;			 
   
 }
 		 .grid-container2 {
@@ -189,16 +161,6 @@
   padding-left: 10%;
   
 }
-		  .grid-container3 {
-  
-  
-  display: grid;
-  grid-template-columns: 33.33% 33.33% 33.33% ;
-  grid-gap: %;
-  		 
-  padding-left: 0%;
-  
-}
 	</style>
 	
 	<style>
@@ -206,12 +168,12 @@
     width: 100vw;  
     height: 100%;   
     overflow-x: hidden;
-   background-image: url(IMG_20191106_185213_HDR.jp);
+    background-image: url(73283049_403540813934253_866534816181387264_n.jpg);
 	
-	background-size: 100vw 40vh;
+	background-size: 100% 40%;
 	background-repeat: no-repeat;			
 		
-	padding-bottom: 90%;
+	padding-bottom: 0%;
 	
     } 
 			.container_lmenu {
@@ -312,12 +274,6 @@
  background-color:rgba(108,142,211,0.19) ;
  		
 }
-		.nav-wrapper-mob {
- 		
- background-color:rgba(108,142,211,1.00) ;
-		
- 		
-}
 		.nav-wrapper:hover{
 			background-color:rgba(108,142,211,1.00) 
   
@@ -329,9 +285,6 @@
       
 			
 }
-		h1{
-			font-size: 40px; 
-		}
 		
 		
 			</style> 
@@ -367,17 +320,6 @@
   transform: translate(-50%, -50%);
 		white-space: nowrap; }
 	
-	.text2 {
-  color: white;
-  font-size: 10px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-		white-space: nowrap; }
-	
 	.image1 {
   display: block;
   width: 100%;
@@ -392,44 +334,9 @@
   position: relative;
   width: 50%;
 }
-	
-	
-	* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container3 {
-  max-width: 90%;
-  position: top;
-  margin: auto;
-}
-	
-	.container3 {
-  width: 100%;
-  height: 1vh;
-  position: top;
-}
-
-.container3 .slide {
-  z-index: -1;
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  height: 40vh;
-  transition: opacity 2s ease-in-out;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0;
-}
-
-.container3 .slide.show {
-  opacity: 1;
-}
 	</style>
 	
-	
-	<style>
+		<style>
 	
 
 
@@ -441,18 +348,9 @@
   text-align: center;
   cursor: pointer; 		
 }
-		#contact1 { 
-  -webkit-user-select: none; /* Chrome/Safari */        
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* IE10+ */
-  color: white;
-  text-align: center;
-  cursor: pointer; 		
-}
 
 
 #contact:active { background: #444; }
-#contact1:active { background: #444; }		
 
 #contactForm { 
   display: none;
@@ -464,21 +362,6 @@
   background: #fff;
   position: fixed;
   top:50%;
-  left:50%;
-  transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%)
-  
-}
-		#contactForm1 { 
-  display: none;
-  border: 6px solid rgba(108,142,211,1.00); 
-  padding: 2em;
-  width: 85vw;
-  text-align: center;
-  z-index: 1;	
-  background: #fff;
-  position: fixed;
-  top:40%;
   left:50%;
   transform: translate(-50%,-50%);
   -webkit-transform: translate(-50%,-50%)
@@ -497,10 +380,7 @@ input, textarea {
 }
 textarea { height: 25vh; resize: none; }
 
-		.background-img{
-			z-index: -1;
-			position: top;
-		}
+
 
 	</style>
 	
@@ -634,7 +514,7 @@ textarea { height: 25vh; resize: none; }
     </a> 
     
     
-</div> 
+</div>
 
 
 	   
@@ -743,129 +623,6 @@ E-mail: zigicm65@gmail.com
 
 
 <!-- vidljivo na telefonima --->
-<div class="hide-on-large-only">
-
-
-
-
-    <nav class="nav-wrapper-mob fixed" > <span onclick="openNav()"> <i class="fas fa-bars" style="padding-left: 2%"></i></span>
-      <ul id="nav-mobile1" class="right" style="padding-right: 2%">
-        <!-- Dropdown Structure -->
-        <li><a href="index.html">Glavna Stranica</a></li>
-        <li><a href="#">Pomoc</a></li>
-        <li><a href="#" id="contact1">Kontakt</a></li>
-        <li><a href="#">O nama</a></li>
-      </ul>
-    
-  </nav>
- 
-  		<!-- kontakt forma-->	
-<form action="" method="post" enctype="text/plain">			
-			<div id="contactForm1">
-
-  <h1>Kontaktirajte nas</h1>
-  <small></small>
-  
-  <form action="#">
-    <p>Redirex.rs</p>
-    <p>Email: Redirex-rs@gmail.com</p>
-	<p>Facebook: <a href="https://www.facebook.com/redirexx/">https://www.facebook.com/redirexx/</a></p>
-    
-    
-    
-  </form>
-</div>
-	</form>
-	
-	<!-- slideshow bannera-->		
-	
-  
-  <div class="background-img">
-  	<img src="IMG_20191107_205101_HDR_kraca.jpg" style="width: 100%; height: 20vh" alt="" class="">
-  </div>
-
-	
-		
-  
-	<div id="myNav1" class="overlay"> 
-
-	  <!-- Button to close the overlay navigation --> 
-	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; </a> 
-
-	  <!-- Overlay content -->
-	  <div class="overlay-content">
-		<div class="grid-container3">
-
-	 <a href="stranice/Usluzne delatnosti/usluzne-delatnosti.html">
-		  <div class="container1">
-			 <img src="banneri/73322768_2555973544630575_8621212102922600448_n.jpg" style="width: 30vw; height: 10vh" class="image1"> 
-				<div class="overlay1">
-					<div class="text2">USLUŽNE DELATNOSTI</div>
-				</div>
-		  </div>
-	 </a> 
-
-	 <a href="stranice/Zanatsko usluzne delatnosti/Zanatsko-Usluzne-Radnje.html">
-			<div class="container1">
-			 <img src="banneri/73533053_485586932045471_6308197288598568960_n.jpg" style="width: 30vw; height: 10vh" class="image1"> 
-				<div class="overlay1">
-					<div class="text2">ZANATSKO USLUŽNE</div>
-				</div>
-		  </div>
-	 </a> 
-		<a href="stranice/Kucne popravke/Kucne-Popravke.html">
-		   <div class="container1">
-			 <img src="banneri/74161171_470145256950090_5022318384079962112_n.jpg" style="width: 30vw; height: 10vh" class="image1"> 
-				<div class="overlay1">
-					<div class="text2">KUĆNE POPRAVKE</div>
-				</div>
-		  </div>
-		</a> 
-
-		<a href="stranice/Servis bele tehnike/Servis-Bele-Tehnike.html">
-			<div class="container1">
-			   <img src="banneri/washing-machine-2668472_1920.jpg" style="width: 30vw; height: 10vh" class="image1"> 
-				 <div class="overlay1">
-					<div class="text2">SERVIS BELE TEHNIKE</div>
-				 </div>
-			</div>
-		</a> 
-		<a href="stranice/Medicina/Medicina.html">
-			<div class="container1">
-			   <img src="banneri/49714009_1028677463986112_5525291193681838080_n.jpg" style="width: 30vw; height: 10vh" class="image1"> 
-				 <div class="overlay1">
-					<div class="text2">ZDRAVSTVO</div>
-				 </div>
-			</div>
-		</a> 
-
-		<a href="stranice/Maloprodaja/Maloprodaja.html">
-		<div class="container1">
-			   <img src="banneri/store-984393_1920.jpg" style="width: 30vw; height: 10vh" class="image1"> 
-				 <div class="overlay1">
-					<div class="text2">MALOPRODAJA</div>
-				 </div>
-			</div>
-		</a> 
-	   </div>
-	  </div>  
-		<a href="stranice/Ostalo/Ostalo.html" style="padding-top: 40%; padding-left: 35%">
-			<div class="container2">
-			   <img src="banneri/woodtype-846089_1920.jpg" style="width: 30vw; height: 10vh" class="image1"> 
-				 <div class="overlay1">
-					<div class="text2">OSTALO</div>
-				 </div>
-			</div>
-		</a> 
-
-
-	</div> 
-
-</div>
-
-
-
-<!-- ^^^vidljivo na telefonima ^^^--> 
 
 
 
@@ -982,16 +739,7 @@ $(function () {
     $('.sidenav').sidenav();
   });
 		  
-		  /* Open when someone clicks on the span element */
-/* Open when someone clicks on the span element */
-function openNav() {
-  document.getElementById("myNav1").style.width = "100%";
-}
 
-/* Close when someone clicks on the "x" symbol inside the overlay */
-function closeNav() {
-  document.getElementById("myNav1").style.width = "0%";
-}  
 			</script>		
 </body>
 </html>
