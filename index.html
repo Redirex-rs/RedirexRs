@@ -417,7 +417,7 @@
 
 #contactForm { 
   display: none;
-  border: 6px solid salmon; 
+  border: 6px solid rgba(108,142,211,1.00); 
   padding: 2em;
   width: 50vw;
   text-align: center;
@@ -443,21 +443,7 @@ input, textarea {
 }
 textarea { height: 25vh; resize: none; }
 
-<?php
-$name = $_POST['name'];
-$visitor_email = $_POST['email'];
-$message = $_POST['message'];
-$email_from = 'asdasd';
-$email_subject = "New Form Submission";
-$email_body = "User Name: $name.\n".
-"User Email: $visitor_email.\n".
-"User Message: $message.\n";
-$to = "nightmane9@gmail.com";
-$headers = "From: $email_from \r\n";
-$headers .= "Reply To: $visitor_email \r\n";
-mail($to,$email_subject,$email_body,$headers);
-header("Location: Website Name");
-?>
+
 
 	</style>
 	
@@ -492,12 +478,12 @@ header("Location: Website Name");
   <small></small>
   
   <form action="#">
-    <input placeholder="Ime" type="text" required />
-    <input placeholder="Email" type="email" required />
-    <input placeholder="Subject" type="text" required />
-    <textarea placeholder="Comment"></textarea>
-    <input class="formBtn" type="submit" />
-    <input class="formBtn" type="reset" />
+    <p>Redirex.rs</p>
+    <p>Email: Redirex-rs@gmail.com</p>
+	<p>Facebook: <a href="https://www.facebook.com/redirexx/">https://www.facebook.com/redirexx/</a></p>
+    
+    
+    
   </form>
 </div>
 	</form>		
