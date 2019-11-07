@@ -189,6 +189,16 @@
   padding-left: 10%;
   
 }
+		  .grid-container3 {
+  
+  
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33% ;
+  grid-gap: %;
+  		 
+  padding-left: 0%;
+  
+}
 	</style>
 	
 	<style>
@@ -302,6 +312,12 @@
  background-color:rgba(108,142,211,0.19) ;
  		
 }
+		.nav-wrapper-mob {
+ 		
+ background-color:rgba(108,142,211,1.00) ;
+		
+ 		
+}
 		.nav-wrapper:hover{
 			background-color:rgba(108,142,211,1.00) 
   
@@ -313,6 +329,9 @@
       
 			
 }
+		h1{
+			font-size: 40px; 
+		}
 		
 		
 			</style> 
@@ -340,6 +359,17 @@
 	.text1 {
   color: white;
   font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+		white-space: nowrap; }
+	
+	.text2 {
+  color: white;
+  font-size: 10px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -411,9 +441,18 @@
   text-align: center;
   cursor: pointer; 		
 }
+		#contact1 { 
+  -webkit-user-select: none; /* Chrome/Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+  color: white;
+  text-align: center;
+  cursor: pointer; 		
+}
 
 
 #contact:active { background: #444; }
+#contact1:active { background: #444; }		
 
 #contactForm { 
   display: none;
@@ -425,6 +464,21 @@
   background: #fff;
   position: fixed;
   top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%)
+  
+}
+		#contactForm1 { 
+  display: none;
+  border: 6px solid rgba(108,142,211,1.00); 
+  padding: 2em;
+  width: 85vw;
+  text-align: center;
+  z-index: 1;	
+  background: #fff;
+  position: fixed;
+  top:40%;
   left:50%;
   transform: translate(-50%,-50%);
   -webkit-transform: translate(-50%,-50%)
@@ -443,7 +497,10 @@ input, textarea {
 }
 textarea { height: 25vh; resize: none; }
 
-
+		.background-img{
+			z-index: -1;
+			position: top;
+		}
 
 	</style>
 	
@@ -457,7 +514,7 @@ textarea { height: 25vh; resize: none; }
 		
 
 	   <!-- Meni s leve strane vidljiv na dektop--->
-
+<div class="hide-on-small-only">
 
   
     <nav class="nav-wrapper fixed" > <span onclick="openNav()"> <i class="fas fa-bars" style="padding-left: 2%"></i></span>
@@ -490,10 +547,10 @@ textarea { height: 25vh; resize: none; }
 	<!-- slideshow bannera-->		
 	<div class="container3">
   
-  <div class="slide show" style="background-image: url('IMG_20191106_185213_HDR.jpg');"></div>
-  <div class="slide" style="background-image: url('cat-2536662_1920.jpg');"></div>
-  <div class="slide" style="background-image: url('IMG_20191106_185213_HDR.jpg');"></div>
-  <div class="slide" style="background-image: url('cat-2536662_1920.jpg');"></div>
+  <div class="slide show" style="background-image: url('IMG_20191107_205101_HDR.jpg');"></div>
+  <div class="slide" style="background-image: url('IMG_20191107_162932_HDR.jpg');"></div>
+  <div class="slide" style="background-image: url('IMG_20191107_205101_HDR.jpg');"></div>
+  <div class="slide" style="background-image: url('IMG_20191107_163114_HDR.jpg');"></div>
 </div>
 			
  
@@ -577,36 +634,10 @@ textarea { height: 25vh; resize: none; }
     </a> 
     
     
-</div>
+</div> 
 
-<!-- Use any element to open/show the overlay navigation menu --> 
 
-<!--   
 	   
-<div class="hide-on-small-only">
-<div class="main_wrap">	
-		<ul id="slide-out-desktop" class="sidenav">
-    <div class="user-view" style="width:100%">
-      <div class="background" style="background-color: #4fc3f7; height: 20vh">
-         <a href="index.html" style="width:100vw%; height: 20vh"><img  src="../HTMLDreamweaver/redirex3v.png" style="width: 100%; height: 20vh"></a>
-      </div>
-      
-      
-    </div>
-    <div style="height: 70%">
-    <br><br><br><br><br><br>
-    <li><a href="stranice/Usluzne delatnosti/usluzne-delatnosti.html" class="waves-effect waves-light btn button3" style="width:90%; height:7vh">UsluŽne Delatnosi</a></li>
-    <li><a href="../stranice/Zanatsko usluzne delatnosti/Zanatsko-Usluzne-Radnje.html"    class="waves-effect waves-light btn button3" style="width:90%; height:7vh">Zanatsko UsluŽne</a></li>
-    <li><a href="../stranice/Kucne popravke/Kucne-Popravke.html" class="waves-effect waves-light btn button3" style="width:90%; height:7vh">KuĆne Popravke</a></li>
-    <li><a href="stranice/Servis bele tehnike/Servis-Bele-Tehnike.html" class="waves-effect waves-light btn button3" style="width:90%; height: 7vh">Servis Bele Tehnike</a></li>
-    <li><a href="Medicina/Medicina.html" class="waves-effect waves-light btn button3" style="width:90%; height:7vh">Zdravstvo</a></li>
-    <li> <a href="../stranice/Maloprodaja/Maloprodaja.html" class="waves-effect waves-light btn button3" style="width:90%; height:7vh">Maloprodaja</a></li>
-    <li><a href="../stranice/Ostalo/Ostalo.html" class="waves-effect waves-light btn button3" style="width:90%; height:7vh">Ostalo</a></li>
-    </div>
-  </ul>
- </div>          
-  <a href="#" data-target="slide-out-desktop" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        --> 
 
 <!-- Action dugme--->
 <div>
@@ -691,60 +722,153 @@ E-mail: zigicm65@gmail.com
  
   
  
+   
   
-  
- 
-    
-
-  
-   
-   
-   
-   
-   
-   
-  <!-- 
-   
-    <div class="polaroid" style="padding-left: 2vw; animation-delay: 0.6s; animation-name: fadeInLeft; "> 
-    <a href="https://www.dr-marina.rs/" target="_blank">
-     <img src="stranice/Medicina/pedijatrija/zigic-Marina/76173541_552680855542351_4464686055437631488_n.jpg" style="width: 95%" alt=""/>
-     </a> 
-    </div>
-    <div class="polaroid" style="padding-left: 2vw "> <a href="stranice/Medicina/interna medicina/Zigic-inter/zigic-inter.html"> <img src="stranice/Medicina/interna medicina/Zigic-inter/73202629_541035030006605_4107229886035263488_n.jpg" style="width: 95%" alt=""/> </a> </div>
-    <div class="polaroid" style="padding-left: 2vw"> <a href="stranice/Ostalo/DejanKostic/DejaKostic.html"> <img src="stranice/Ostalo/DejanKostic/74718044_541291849993482_7181548454101909504_n(1).jpg" style="width: 95%" alt=""/> </a> </div> -->
   </div> 
 
+</div>
 
-<!-- vidljivo na telefonima  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- vidljivo na telefonima --->
 <div class="hide-on-large-only">
-  <ul id="slide-out" class="sidenav">
-    <div class="user-view" style="width:100%">
-      <div class="background" style="background-color: #4fc3f7; height: 20vh"> <a href="index.html" style="width:100vw%; height: 20vh"><img  src="../HTMLDreamweaver/redirex3v.png" style="width: 100%; height: 20vh"></a> </div>
-    </div>
-    <div style="height: 70%"> <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <li><a href="stranice/Usluzne delatnosti/usluzne-delatnosti.html" class="waves-effect waves-light btn button3" style="width:90%; height:7vh">UsluŽne Delatnosi</a></li>
-      <li><a href="../stranice/Zanatsko usluzne delatnosti/Zanatsko-Usluzne-Radnje.html"    class="waves-effect waves-light btn button3" style="width:90%; height:7vh">Zanatsko UsluŽne</a></li>
-      <li><a href="../stranice/Kucne popravke/Kucne-Popravke.html" class="waves-effect waves-light btn button3" style="width:90%; height:7vh">KuĆne Popravke</a></li>
-      <li><a href="stranice/Servis bele tehnike/Servis-Bele-Tehnike.html" class="waves-effect waves-light btn button3" style="width:90%; height: 7vh">Servis Bele Tehnike</a></li>
-      <li><a href="Medicina/Medicina.html" class="waves-effect waves-light btn button3" style="width:90%; height:7vh">Zdravstvo</a></li>
-      <li> <a href="../stranice/Maloprodaja/Maloprodaja.html" class="waves-effect waves-light btn button3" style="width:90%; height:7vh">Maloprodaja</a></li>
-      <li><a href="../stranice/Ostalo/Ostalo.html" class="waves-effect waves-light btn button3" style="width:90%; height:7vh">Ostalo</a></li>
-    </div>
-  </ul>
-  <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-  <div class="">
-    <div class="left-align" style="padding-left: 8vw "> <a href="https://www.dr-marina.rs/" target="_blank"> <img src="stranice/Medicina/pedijatrija/zigic-Marina/76173541_552680855542351_4464686055437631488_n.jpg" style="width: 95%" alt=""/> </a> </div>
-    <div class="left-align" style="padding-left: 8vw "> <a href="../stranice/Medicina/interna medicina/Zigic-inter/zigic-inter.html"> <img src="stranice/Medicina/interna medicina/Zigic-inter/73202629_541035030006605_4107229886035263488_n.jpg" style="width: 95%" alt=""/> </a> </div>
-    <div class="left-align" style="padding-left: 8vw"> <a href="Ostalo/DejanKostic/DejaKostic.html"> <img src="stranice/Ostalo/DejanKostic/74718044_541291849993482_7181548454101909504_n(1).jpg" style="width: 95%" alt=""/> </a> </div>
+
+
+
+
+    <nav class="nav-wrapper-mob fixed" > <span onclick="openNav()"> <i class="fas fa-bars" style="padding-left: 2%"></i></span>
+      <ul id="nav-mobile1" class="right" style="padding-right: 2%">
+        <!-- Dropdown Structure -->
+        <li><a href="index.html">Glavna Stranica</a></li>
+        <li><a href="#">Pomoc</a></li>
+        <li><a href="#" id="contact1">Kontakt</a></li>
+        <li><a href="#">O nama</a></li>
+      </ul>
+    
+  </nav>
+ 
+  		<!-- kontakt forma-->	
+<form action="" method="post" enctype="text/plain">			
+			<div id="contactForm1">
+
+  <h1>Kontaktirajte nas</h1>
+  <small></small>
+  
+  <form action="#">
+    <p>Redirex.rs</p>
+    <p>Email: Redirex-rs@gmail.com</p>
+	<p>Facebook: <a href="https://www.facebook.com/redirexx/">https://www.facebook.com/redirexx/</a></p>
+    
+    
+    
+  </form>
+</div>
+	</form>
+	
+	<!-- slideshow bannera-->		
+	
+  
+  <div class="background-img">
+  	<img src="IMG_20191107_205101_HDR_kraca.jpg" style="width: 100%; height: 20vh" alt="" class="">
   </div>
-</div>  --->
+
+	
+		
+  
+	<div id="myNav1" class="overlay"> 
+
+	  <!-- Button to close the overlay navigation --> 
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; </a> 
+
+	  <!-- Overlay content -->
+	  <div class="overlay-content">
+		<div class="grid-container3">
+
+	 <a href="stranice/Usluzne delatnosti/usluzne-delatnosti.html">
+		  <div class="container1">
+			 <img src="banneri/73322768_2555973544630575_8621212102922600448_n.jpg" style="width: 30vw; height: 10vh" class="image1"> 
+				<div class="overlay1">
+					<div class="text2">USLUŽNE DELATNOSTI</div>
+				</div>
+		  </div>
+	 </a> 
+
+	 <a href="stranice/Zanatsko usluzne delatnosti/Zanatsko-Usluzne-Radnje.html">
+			<div class="container1">
+			 <img src="banneri/73533053_485586932045471_6308197288598568960_n.jpg" style="width: 30vw; height: 10vh" class="image1"> 
+				<div class="overlay1">
+					<div class="text2">ZANATSKO USLUŽNE</div>
+				</div>
+		  </div>
+	 </a> 
+		<a href="stranice/Kucne popravke/Kucne-Popravke.html">
+		   <div class="container1">
+			 <img src="banneri/74161171_470145256950090_5022318384079962112_n.jpg" style="width: 30vw; height: 10vh" class="image1"> 
+				<div class="overlay1">
+					<div class="text2">KUĆNE POPRAVKE</div>
+				</div>
+		  </div>
+		</a> 
+
+		<a href="stranice/Servis bele tehnike/Servis-Bele-Tehnike.html">
+			<div class="container1">
+			   <img src="banneri/washing-machine-2668472_1920.jpg" style="width: 30vw; height: 10vh" class="image1"> 
+				 <div class="overlay1">
+					<div class="text2">SERVIS BELE TEHNIKE</div>
+				 </div>
+			</div>
+		</a> 
+		<a href="stranice/Medicina/Medicina.html">
+			<div class="container1">
+			   <img src="banneri/49714009_1028677463986112_5525291193681838080_n.jpg" style="width: 30vw; height: 10vh" class="image1"> 
+				 <div class="overlay1">
+					<div class="text2">ZDRAVSTVO</div>
+				 </div>
+			</div>
+		</a> 
+
+		<a href="stranice/Maloprodaja/Maloprodaja.html">
+		<div class="container1">
+			   <img src="banneri/store-984393_1920.jpg" style="width: 30vw; height: 10vh" class="image1"> 
+				 <div class="overlay1">
+					<div class="text2">MALOPRODAJA</div>
+				 </div>
+			</div>
+		</a> 
+	   </div>
+	  </div>  
+		<a href="stranice/Ostalo/Ostalo.html" style="padding-top: 40%; padding-left: 35%">
+			<div class="container2">
+			   <img src="banneri/woodtype-846089_1920.jpg" style="width: 30vw; height: 10vh" class="image1"> 
+				 <div class="overlay1">
+					<div class="text2">OSTALO</div>
+				 </div>
+			</div>
+		</a> 
+
+
+	</div> 
+
+</div>
+
+
 
 <!-- ^^^vidljivo na telefonima ^^^--> 
+
+
+
 
 <!--Import jQuery before materialize.js--> 
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> 
@@ -784,6 +908,7 @@ function openNav() {
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }  
+	
 		  </script>
 			
 				<script>
@@ -827,6 +952,46 @@ $(function () {
     }
   });
   
-});</script>		
+})
+	
+	$(function() {
+  
+  // contact form animations
+  $('#contact1').click(function() {
+    $('#contactForm1').fadeToggle();
+  })
+  $(document).mouseup(function (e) {
+    var container = $("#contactForm1");
+
+    if (!container.is(e.target) // if the target of the click isn't the container...
+        && container.has(e.target).length === 0) // ... nor a descendant of the container
+    {
+        container.fadeOut();
+    }
+  });
+  
+})
+			</script>
+			<script>
+				
+			document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, options);
+  });</script> 
+<script>$(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+		  
+		  /* Open when someone clicks on the span element */
+/* Open when someone clicks on the span element */
+function openNav() {
+  document.getElementById("myNav1").style.width = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav() {
+  document.getElementById("myNav1").style.width = "0%";
+}  
+			</script>		
 </body>
 </html>
