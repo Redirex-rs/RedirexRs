@@ -382,8 +382,8 @@
 #contactForm { 
   display: none;
   border: 6px solid rgba(108,142,211,1.00); 
-  padding: 2em;
-  width: 50vw;
+  padding: 1em;
+  width: 60vw;
   text-align: center;
   z-index: 1;	
   background: #fff;
@@ -418,37 +418,42 @@ textarea { height: 25vh; resize: none; }
 		
 
 	   <!-- Meni s leve strane vidljiv na dektop--->
-<div class="hide-on-small-only">
-
+<nav class="nav-wrapper fixed" > <span onclick="openNav()"> <i class="fas fa-bars" style="padding-left: 2%"></i></span>
+    <ul id="nav-mobile" class="right  " style="padding-right: 2%">
+      <!-- Dropdown Structure -->
+      <li><a href="../../index.html">Glavna Stranica</a></li>
+      <li><a href="#">Pomoc</a></li>
+      <li><a href="#" id="contact">Kontakt</a></li>
+      
+    </ul>
   
-    <nav class="nav-wrapper fixed" > <span onclick="openNav()"> <i class="fas fa-bars" style="padding-left: 2%"></i></span>
-      <ul id="nav-mobile" class="right hide-on-med-and-down " style="padding-right: 2%">
-        <!-- Dropdown Structure -->
-        <li><a href="../../index.html">Glavna Stranica</a></li>
-        <li><a href="#">Pomoc</a></li>
-        <li><a href="#" id="contact">Kontakt</a></li>
-        <li><a href="#">O nama</a></li>
-      </ul>
-    
-  </nav>
-
-		<!-- kontakt forma-->	
+</nav>
+  <!-- kontakt forma-->	
 <form action="" method="post" enctype="text/plain">			
-			<div id="contactForm">
+    <div id="contactForm">
+<div class="hide-on-small-only">
+<h1>Kontakt</h1>
+<small></small>
+<form action="#">
+  <p>Redirex.rs</p>
+  <p>Email: Redirex-rs@gmail.com</p>
+<p>Facebook: <a href="https://www.facebook.com/redirexx/">https://www.facebook.com/redirexx/</a></p>
 
-  <h1>Kontaktirajte nas</h1>
+</form>
+</div>
+<div class="hide-on-large-only">
+  <h4>Kontakt</h4>
   <small></small>
   
   <form action="#">
     <p>Redirex.rs</p>
-    <p>Email: Redirex-rs@gmail.com</p>
-	<p>Facebook: <a href="https://www.facebook.com/redirexx/">https://www.facebook.com/redirexx/</a></p>
-    
-    
-    
+    <p>Redirex-rs@gmail.com</p>
+  <p>Facebook: <a href="https://www.facebook.com/redirexx/">www.facebook.com/redirexx/</a></p>
+  
   </form>
 </div>
-	</form>	
+</div>
+</form>		
 
 
 <!-- The overlay -->
@@ -460,7 +465,8 @@ textarea { height: 25vh; resize: none; }
   <!-- Overlay content -->
   <div class="overlay-content">
     <div class="grid-container2">
-   
+
+   <div class="hide-on-small-only">
  <a href="../Usluzne delatnosti/usluzne-delatnosti.html">
       <div class="container1">
          <img src="../../banneri/73322768_2555973544630575_8621212102922600448_n.jpg" style="width: 25vw; height: 15vh" class="image1"> 
@@ -469,7 +475,20 @@ textarea { height: 25vh; resize: none; }
             </div>
       </div>
  </a> 
-   
+</div> 
+
+<div class="hide-on-large-only">
+  <a href="../Usluzne delatnosti/usluzne-delatnosti.html">
+       <div class="container1">
+          <img src="../../banneri/73322768_2555973544630575_8621212102922600448_n.jpg" style="width: 25vw; height: 15vh" class="image1"> 
+             <div class="overlay1">
+                 <div class="text1">USLUŽNE DELATNOSTI</div>
+             </div>
+       </div>
+  </a> 
+ </div> 
+
+<div class="hide-on-small-only">
  <a href="../Zanatsko usluzne delatnosti/Zanatsko-Usluzne-Radnje.html">
         <div class="container1">
          <img src="../../banneri/73533053_485586932045471_6308197288598568960_n.jpg" style="width: 25vw; height: 15vh" class="image1"> 
@@ -478,6 +497,20 @@ textarea { height: 25vh; resize: none; }
             </div>
       </div>
  </a> 
+</div>
+
+<div class="hide-on-large-only">
+    <a href="../Zanatsko usluzne delatnosti/Zanatsko-Usluzne-Radnje.html">
+           <div class="container1">
+            <img src="../../banneri/73533053_485586932045471_6308197288598568960_n.jpg" style="width: 25vw; height: 15vh" class="image1"> 
+               <div class="overlay1">
+                   <div class="text1">ZANATSKO USLUŽNE</div>
+               </div>
+         </div>
+    </a> 
+   </div>
+
+ <div class="hide-on-small-only">
     <a href="../Kucne popravke/Kucne-Popravke.html">
        <div class="container1">
          <img src="../../banneri/74161171_470145256950090_5022318384079962112_n.jpg" style="width: 25vw; height: 15vh" class="image1"> 
@@ -486,7 +519,20 @@ textarea { height: 25vh; resize: none; }
             </div>
       </div>
     </a> 
-    
+  </div>
+
+  <div class="hide-on-large-only">
+      <a href="../Kucne popravke/Kucne-Popravke.html">
+         <div class="container1">
+           <img src="../../banneri/74161171_470145256950090_5022318384079962112_n.jpg" style="width: 25vw; height: 15vh" class="image1"> 
+              <div class="overlay1">
+                  <div class="text1">KUĆNE POPRAVKE</div>
+              </div>
+        </div>
+      </a> 
+    </div>
+
+    <div class="hide-on-small-only">
     <a href="../Servis bele tehnike/Servis-Bele-Tehnike.html">
         <div class="container1">
            <img src="../../banneri/washing-machine-2668472_1920.jpg" style="width: 25vw; height: 15vh" class="image1"> 
@@ -495,6 +541,21 @@ textarea { height: 25vh; resize: none; }
              </div>
         </div>
     </a> 
+  </div>
+
+  <div class="hide-on-large-only">
+      <a href="../Servis bele tehnike/Servis-Bele-Tehnike.html">
+          <div class="container1">
+             <img src="../../banneri/washing-machine-2668472_1920.jpg" style="width: 25vw; height: 15vh" class="image1"> 
+               <div class="overlay1">
+                  <div class="text1">SERVIS BELE TEHNIKE</div>
+               </div>
+          </div>
+      </a> 
+    </div>
+
+
+    <div class="hide-on-small-only">  
     <a href="../Medicina/Medicina.html">
     	<div class="container1">
            <img src="../../banneri/49714009_1028677463986112_5525291193681838080_n.jpg" style="width: 25vw; height: 15vh" class="image1"> 
@@ -503,7 +564,20 @@ textarea { height: 25vh; resize: none; }
              </div>
         </div>
     </a> 
-    
+  </div>
+
+  <div class="hide-on-large-only">  
+      <a href="../Medicina/Medicina.html">
+        <div class="container1">
+             <img src="../../banneri/49714009_1028677463986112_5525291193681838080_n.jpg" style="width: 25vw; height: 15vh" class="image1"> 
+               <div class="overlay1">
+                  <div class="text1">ZDRAVSTVO</div>
+               </div>
+          </div>
+      </a> 
+    </div>
+
+    <div class="hide-on-small-only">  
     <a href="../Maloprodaja/Maloprodaja.html">
     <div class="container1">
            <img src="../../banneri/store-984393_1920.jpg" style="width: 25vw; height: 15vh" class="image1"> 
@@ -513,8 +587,22 @@ textarea { height: 25vh; resize: none; }
         </div>
     </a> 
    </div>
+
+   <div class="hide-on-large-only">  
+      <a href="../Maloprodaja/Maloprodaja.html">
+      <div class="container1">
+             <img src="../../banneri/store-984393_1920.jpg" style="width: 25vw; height: 15vh" class="image1"> 
+               <div class="overlay1">
+                  <div class="text1">MALOPRODAJA</div>
+               </div>
+          </div>
+      </a> 
+     </div>
+
   </div>  
-    <a href="../Ostalo/Ostalo.html" style="padding-top: 20%; padding-left: 37.5%">
+
+  <div class="hide-on-small-only">
+    <a href="../Ostalo/Ostalo.html" style="padding-top: 1%; padding-left: 37.7%">
         <div class="container2">
            <img src="../../banneri/woodtype-846089_1920.jpg" style="width: 25vw; height: 15vh" class="image1"> 
              <div class="overlay1">
@@ -522,37 +610,25 @@ textarea { height: 25vh; resize: none; }
              </div>
         </div>
     </a> 
-    
-    
+  </div> 
+  <div class="hide-on-large-only">
+    <a href="../Ostalo/Ostalo.html" style="padding-left: 39%">
+        <div class="container2">
+           <img src="../../banneri/woodtype-846089_1920.jpg" style="width: 25vw; height: 15vh" class="image1"> 
+             <div class="overlay1">
+                <div class="text1">OSTALO</div>
+             </div>
+        </div>
+    </a> 
+  </div> 
+</div>
 </div>
 
 <!-- Use any element to open/show the overlay navigation menu --> 
 
 <!--   
 	   
-<div class="hide-on-small-only">
-<div class="main_wrap">	
-		<ul id="slide-out-desktop" class="sidenav">
-    <div class="user-view" style="width:100%">
-      <div class="background" style="background-color: #4fc3f7; height: 20vh">
-         <a href="index.html" style="width:100vw%; height: 20vh"><img  src="../HTMLDreamweaver/redirex3v.png" style="width: 100%; height: 20vh"></a>
-      </div>
-      
-      
-    </div>
-    <div style="height: 70%">
-    <br><br><br><br><br><br>
-    <li><a href="stranice/Usluzne delatnosti/usluzne-delatnosti.html" class="waves-effect waves-light btn button3" style="width:90%; height:7vh">UsluŽne Delatnosi</a></li>
-    <li><a href="../stranice/Zanatsko usluzne delatnosti/Zanatsko-Usluzne-Radnje.html"    class="waves-effect waves-light btn button3" style="width:90%; height:7vh">Zanatsko UsluŽne</a></li>
-    <li><a href="../stranice/Kucne popravke/Kucne-Popravke.html" class="waves-effect waves-light btn button3" style="width:90%; height:7vh">KuĆne Popravke</a></li>
-    <li><a href="stranice/Servis bele tehnike/Servis-Bele-Tehnike.html" class="waves-effect waves-light btn button3" style="width:90%; height: 7vh">Servis Bele Tehnike</a></li>
-    <li><a href="Medicina/Medicina.html" class="waves-effect waves-light btn button3" style="width:90%; height:7vh">Zdravstvo</a></li>
-    <li> <a href="../stranice/Maloprodaja/Maloprodaja.html" class="waves-effect waves-light btn button3" style="width:90%; height:7vh">Maloprodaja</a></li>
-    <li><a href="../stranice/Ostalo/Ostalo.html" class="waves-effect waves-light btn button3" style="width:90%; height:7vh">Ostalo</a></li>
-    </div>
-  </ul>
- </div>          
-  <a href="#" data-target="slide-out-desktop" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+<
         --> 
 
 <!-- Action dugme--->
@@ -646,7 +722,7 @@ textarea { height: 25vh; resize: none; }
     <div class="polaroid" style="padding-left: 2vw "> <a href="stranice/Medicina/interna medicina/Zigic-inter/zigic-inter.html"> <img src="stranice/Medicina/interna medicina/Zigic-inter/73202629_541035030006605_4107229886035263488_n.jpg" style="width: 95%" alt=""/> </a> </div>
     <div class="polaroid" style="padding-left: 2vw"> <a href="stranice/Ostalo/DejanKostic/DejaKostic.html"> <img src="stranice/Ostalo/DejanKostic/74718044_541291849993482_7181548454101909504_n(1).jpg" style="width: 95%" alt=""/> </a> </div> -->
   </div> 
-</div>
+
 
 <!-- vidljivo na telefonima  -->
 <div class="hide-on-large-only">
@@ -676,7 +752,7 @@ textarea { height: 25vh; resize: none; }
     <div class="left-align" style="padding-left: 8vw"> <a href="Ostalo/DejanKostic/DejaKostic.html"> <img src="stranice/Ostalo/DejanKostic/74718044_541291849993482_7181548454101909504_n(1).jpg" style="width: 95%" alt=""/> </a> </div>
   </div>
 </div>  --->
-<img src="cat-2536662_1920.jpg" style="height: 100%; width: 100%" alt="">
+
 
 </div>
 <!-- ^^^vidljivo na telefonima ^^^--> 
