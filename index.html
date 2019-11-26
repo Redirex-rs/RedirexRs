@@ -4,6 +4,7 @@
 <head>
 <!--Import Google Icon Font-->
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 <!--Import materialize.css-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 <script src="https://kit.fontawesome.com/3429f72bdb.js" crossorigin="anonymous"></script>
@@ -224,13 +225,13 @@
         background-color: rgb(0,0,0); /* Black fallback color */
         background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
         overflow-y: hidden; /* Disable horizontal scroll */
-        transition: .4s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+        transition: .3s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
       }
       
       /* Position the content inside the overlay */
       .overlay-content {
         position: relative;
-        top: 25%; /* 25% from the top */
+        top: 10%; /* 25% from the top */
         width: 100%; /* 100% width */
         text-align: center; /* Centered text/links */
         margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
@@ -302,10 +303,10 @@
       }
       
         .container1:hover .overlay1 {
-        width: 197%;
+        width: 97%;
       }
         .container2:hover .overlay1 {
-        width: 82%;
+        width: 97%;
       }
         
         .text1 {
@@ -326,12 +327,12 @@
       }
           .container1 {
         position: relative;
-        width: 50%;
+        width: 100%;
       }
         
         .container2 {
         position: relative;
-        width: 50%;
+        width: 100%;
       }
         </style>
         
@@ -379,8 +380,8 @@
       }
       textarea { height: 25vh; resize: none; }
       
-      
-      
+
+
         </style>
 	
 	
@@ -396,54 +397,56 @@
 
 
   
-    <nav class="nav-wrapper fixed" > <span onclick="openNav()"> <i class="fas fa-bars" style="padding-left: 2%"></i></span>
-      <ul id="nav-mobile" class="right  " style="padding-right: 2%">
-        <!-- Dropdown Structure -->
-        <li><a href="index.html">Glavna Stranica</a></li>
-        <li><a href="#">Pomoc</a></li>
-        <li><a href="#" id="contact">Kontakt</a></li>
-        
-      </ul>
-    
-  </nav>
+     <nav class="nav-wrapper fixed" > <span onclick="openNav()"> <i class="fas fa-bars" style="padding-left: 2%"></i></span>
+    <ul id="nav-mobile" class="right  " style="padding-right: 2%">
+      <!-- Dropdown Structure -->
+     
+      <li><a href="index.html">Glavna Stranica</a></li>
+      <li><a href="#">Pomoc</a></li>
+      <li><a href="#" id="contact">Kontakt</a></li>
+      
+    </ul>
+  
+</nav>
 		<!-- kontakt forma-->	
 <form action="" method="post" enctype="text/plain">			
 			<div id="contactForm">
 <div class="hide-on-small-only">
   <h1>Kontakt</h1>
-  <small></small>
-  
+  <small></small> 
   <form action="#">
     <p>Redirex.rs</p>
-    <p>Email: redirexrs@gmail.com</p>
+    <p>Email: Redirex-rs@gmail.com</p>
 	<p>Facebook: <a href="https://www.facebook.com/redirexx/">https://www.facebook.com/redirexx/</a></p>
   
   </form>
 </div>
+
+
 <div class="hide-on-large-only">
     <h4>Kontakt</h4>
     <small></small>
     
     <form action="#">
       <p>Redirex.rs</p>
-      <p>redirexrs@gmail.com</p>
+      <p>Redirex-rs@gmail.com</p>
     <p>Facebook: <a href="https://www.facebook.com/redirexx/">www.facebook.com/redirexx/</a></p>
     
     </form>
   </div>
 </div>
 	</form>		
-	<!-- slideshow bannera-->		
-	<div class="container3">
+		
+		
+
+
+
   
-  <div class="slide show" style="background-image: url('Slika1.jpg');"></div>
-  <div class="slide" style="background-image: url('Slika2.jpg');"></div>
-  <div class="slide" style="background-image: url('Slika1.jpg');"></div>
-  <div class="slide" style="background-image: url('Slika2.jpg');"></div>
-</div>
-			
- 
-			
+  
+  
+
+  
+		
 	
 			
 			
@@ -458,12 +461,12 @@
   
   <!-- Overlay content -->
   <div class="overlay-content">
-    <div class="grid-container2">
+    <div class="grid-containe">
 
    <div class="hide-on-small-only">
  <a href="stranice/Usluzne delatnosti/usluzne-delatnosti.html">
       <div class="container1">
-         <img src="banneri/73322768_2555973544630575_8621212102922600448_n.jpg" style="width: 25vw; height: 15vh" class="image1"> 
+         <img src="banneri/73322768_2555973544630575_8621212102922600448_n.jpg" style="width: 25vw; height: 9vh" class="image1"> 
             <div class="overlay1">
                 <div class="text1">USLUŽNE DELATNOSTI</div>
             </div>
@@ -485,7 +488,7 @@
 <div class="hide-on-small-only">
  <a href="stranice/Zanatsko usluzne delatnosti/Zanatsko-Usluzne-Radnje.html">
         <div class="container1">
-         <img src="banneri/73533053_485586932045471_6308197288598568960_n.jpg" style="width: 25vw; height: 15vh" class="image1"> 
+         <img src="banneri/73533053_485586932045471_6308197288598568960_n.jpg" style="width: 25vw; height: 9vh" class="image1"> 
             <div class="overlay1">
                 <div class="text1">ZANATSKO USLUŽNE</div>
             </div>
@@ -507,7 +510,7 @@
  <div class="hide-on-small-only">
     <a href="stranice/Kucne popravke/Kucne-Popravke.html">
        <div class="container1">
-         <img src="banneri/74161171_470145256950090_5022318384079962112_n.jpg" style="width: 25vw; height: 15vh" class="image1"> 
+         <img src="banneri/74161171_470145256950090_5022318384079962112_n.jpg" style="width: 25vw; height: 9vh" class="image1"> 
             <div class="overlay1">
                 <div class="text1">KUĆNE POPRAVKE</div>
             </div>
@@ -529,7 +532,7 @@
     <div class="hide-on-small-only">
     <a href="stranice/Servis bele tehnike/Servis-Bele-Tehnike.html">
         <div class="container1">
-           <img src="banneri/washing-machine-2668472_1920.jpg" style="width: 25vw; height: 15vh" class="image1"> 
+           <img src="banneri/washing-machine-2668472_1920.jpg" style="width: 25vw; height: 9vh" class="image1"> 
              <div class="overlay1">
                 <div class="text1">SERVIS BELE TEHNIKE</div>
              </div>
@@ -552,7 +555,7 @@
     <div class="hide-on-small-only">  
     <a href="stranice/Medicina/Medicina.html">
     	<div class="container1">
-           <img src="banneri/49714009_1028677463986112_5525291193681838080_n.jpg" style="width: 25vw; height: 15vh" class="image1"> 
+           <img src="banneri/49714009_1028677463986112_5525291193681838080_n.jpg" style="width: 25vw; height: 9vh" class="image1"> 
              <div class="overlay1">
                 <div class="text1">ZDRAVSTVO</div>
              </div>
@@ -574,7 +577,7 @@
     <div class="hide-on-small-only">  
     <a href="stranice/Maloprodaja/Maloprodaja.html">
     <div class="container1">
-           <img src="banneri/store-984393_1920.jpg" style="width: 25vw; height: 15vh" class="image1"> 
+           <img src="banneri/store-984393_1920.jpg" style="width: 25vw; height: 9vh" class="image1"> 
              <div class="overlay1">
                 <div class="text1">MALOPRODAJA</div>
              </div>
@@ -596,9 +599,9 @@
   </div>  
 
   <div class="hide-on-small-only">
-    <a href="stranice/Ostalo/Ostalo.html" style="padding-top: 1%; padding-left: 37.7%">
+    <a href="stranice/Ostalo/Ostalo.html" style="padding-top: 1%; padding-left:%">
         <div class="container2">
-           <img src="banneri/woodtype-846089_1920.jpg" style="width: 25vw; height: 15vh" class="image1"> 
+           <img src="banneri/woodtype-846089_1920.jpg" style="width: 25vw; height: 9vh" class="image1"> 
              <div class="overlay1">
                 <div class="text1">OSTALO</div>
              </div>
@@ -606,7 +609,7 @@
     </a> 
   </div> 
   <div class="hide-on-large-only">
-    <a href="stranice/Ostalo/Ostalo.html" style="padding-left: 39%">
+    <a href="stranice/Ostalo/Ostalo.html" style="padding-left: %">
         <div class="container2">
            <img src="banneri/woodtype-846089_1920.jpg" style="width: 25vw; height: 15vh" class="image1"> 
              <div class="overlay1">
@@ -621,7 +624,8 @@
 	   
 
 <!-- Action dugme--->
-<div>
+
+<div class="hide-on-large-only">
   <div class="fixed-action-btn left-button"> <a class="btn-floating btn-large red"> <i class="large material-icons">add</i> </a>
     <ul>
       <li><a class="btn-floating green" href="androidapp.html"><i class="fab fa-android"></i></a></li>
@@ -643,7 +647,7 @@
     <div class="card horizontal" style="padding-top: 0%; width: 100%; height: 100%">
       <div class="card-image" style="padding-top: 3vw">
        <a href="https://www.dr-marina.rs/" target="_blank">
-        <img src="stranice/Medicina/pedijatrija/76173541_552680855542351_4464686055437631488_n.jpg"  >
+        <img src="stranice/Medicina/pedijatrija/main_banner_marina.jpg"  >
 		</a>   
       </div>
       <div class="card-stacked" style=" width: 50vw; height: 15vh">
@@ -696,8 +700,8 @@ E-mail: zigicm65@gmail.com
       </div>
     </div>
   </div>
-	  
-	  <div class="col s12 m7" style="width: 47vw"> 
+  
+  <div class="col s12 m7" style="width: 47vw"> 
     <div class="card horizontal" style="padding-top: 0%; width: 100%; height: 100%"	 >
       <div class="card-image" style="padding-top: 3vw">
 		   <a href="stranice/Ostalo/Kult-tatoo/Kult-tatoo.html" >
@@ -707,7 +711,7 @@ E-mail: zigicm65@gmail.com
       <div class="card-stacked" style=" width: 50vw; height: 15vh">
         <div class="card-content" style="width: 100%" >
           <p><h5>Tattoo-Kult Pozarevac</h5><br><br>
-             <a href="https://www.facebook.com/Tattoo-Kult-Pozarevac-853460601357982/" target="_blank" class="btn blue" style="width: 20vw" >
+             <a href="" class="btn blue" style="width: 20vw" >
              <i class="fab fa-facebook-square"></i>
                
              </a> 
@@ -717,7 +721,7 @@ E-mail: zigicm65@gmail.com
       </div>
     </div>
   </div>
-	  
+  
   </div> 
 </div>
 
@@ -774,10 +778,7 @@ E-mail: zigicm65@gmail.com
 	  
     });
   });
-			  
-			   $(document).ready(function(){
-    $('.collapsible').collapsible();
-  });
+			 
 	</script> 
 <script> document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.sidenav');
@@ -790,12 +791,11 @@ E-mail: zigicm65@gmail.com
 		  /* Open when someone clicks on the span element */
 /* Open when someone clicks on the span element */
 function openNav() {
-  document.getElementById("myNav").style.width = "100%";
+  document.getElementById("myNav").style.width = "30%";
 }
 
 /* Close when someone clicks on the "x" symbol inside the overlay */
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
+function closeNav() {  document.getElementById("myNav").style.width = "0%";
 }; 
 	
 
@@ -816,5 +816,8 @@ function closeNav() {
   });
   
 });</script>
+
+
+
 </body>
 </html>
