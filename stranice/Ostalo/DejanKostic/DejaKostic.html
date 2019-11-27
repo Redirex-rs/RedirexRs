@@ -2,7 +2,7 @@
   <!DOCTYPE html>
   <html>
     <head>
-   <!--Import Google Icon Font-->
+    	<!--Import Google Icon Font-->
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <!--Import materialize.css-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -19,8 +19,12 @@
 	<![endif]-->
 
 <style>
-/* Tooltip container */
-.strokeme
+	
+	h3 {
+				  font-size: 2vh;
+			  }
+	
+	.strokeme
 {
     color: white;
     text-shadow:
@@ -32,13 +36,13 @@
 	.box_textshadow {
      text-shadow: 2px 2px 0px #FF0000; /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
 }
-	p{
-		font-size: 1.5vw;
-	}
+	
 	
 	h2{
 		font-size: 3vw;
 	}
+/* Tooltip container */
+
 
 .tooltip {
 	position: relative;
@@ -62,10 +66,7 @@
 	visibility: visible;
 }
 </style>
-<script>
-			  $(document).ready(function(){
-    $('.collapsible').collapsible();
-  });</script>
+
 <style>
 .button {
 	background-color: #4CAF50; /* Green */
@@ -92,7 +93,7 @@
 }
 .button4 {
 	border-radius: 12px;
-}lef
+}
 .button5 {
 	border-radius: 99%;
 }
@@ -157,7 +158,8 @@
 	  }
 			</style>
 
-	 <style> html {
+	 <style> 
+		 html {
 					width: 100%;
 					height: 100%;
 					margin: 0;
@@ -201,7 +203,7 @@
   
   display: grid;
   grid-template-columns: 30% 30% 30% ;
-  grid-gap: %;
+  grid-gap: 11%;
   		 
   padding-left: 10%;
   
@@ -213,7 +215,7 @@
     width: 100vw;  
     height: 100%;   
     overflow-x: hidden;
-    background-image: url(74161171_470145256950090_5022318384079962112_n.jpg);
+    background-image: url();
 	
 	background-size: 100% 40%;
 	background-repeat: no-repeat;			
@@ -247,6 +249,7 @@
 		}
 		
 		.overlay-content{
+
 			
 		}
 		
@@ -420,6 +423,7 @@ input, textarea {
 }
 textarea { height: 25vh; resize: none; }
 	</style>
+		
     </head>
    
     <body style="background-color:#424242  ">
@@ -428,45 +432,50 @@ textarea { height: 25vh; resize: none; }
    
    <!-- Meni s leve strane vidljiv na dektop--->
    
-<div class="hide-on-small-only">
+
 
   
+ 
     <nav class="nav-wrapper fixed" > <span onclick="openNav()"> <i class="fas fa-bars" style="padding-left: 2%"></i></span>
-      <ul id="nav-mobile" class="right hide-on-med-and-down " style="padding-right: 2%">
-        <!-- Dropdown Structure -->
-        <li><a href="../../../index.html">Glavna Stranica</a></li>
-        <li><a href="#">Pomoc</a></li>
-        <li><a href="#">Kontakt</a></li>
-        <li><a href="#">O nama</a></li>
-      </ul>
-    
-  </nav>
-    <!-- kontakt forma-->	
-<form action="" method="post" enctype="text/plain">			
-    <div id="contactForm">
-<div class="hide-on-small-only">
-<h1>Kontakt</h1>
-<small></small>
-<form action="#">
-  <p>Redirex.rs</p>
-  <p>Email: Redirex-rs@gmail.com</p>
-<p>Facebook: <a href="https://www.facebook.com/redirexx/">https://www.facebook.com/redirexx/</a></p>
-
-</form>
-</div>
-<div class="hide-on-large-only">
-  <h4>Kontakt</h4>
-  <small></small>
+    <ul id="nav-mobile" class="right  " style="padding-right: 2%">
+      <!-- Dropdown Structure -->
+     
+      <li><a href="../../../index.html">Glavna Stranica</a></li>
+      <li><a href="#">Pomoc</a></li>
+      <li><a href="#" id="contact">Kontakt</a></li>
+      
+    </ul>
   
+</nav>
+		<!-- kontakt forma-->	
+<form action="" method="post" enctype="text/plain">			
+			<div id="contactForm">
+<div class="hide-on-small-only">
+  <h1>Kontakt</h1>
+  <small></small> 
   <form action="#">
     <p>Redirex.rs</p>
-    <p>Redirex-rs@gmail.com</p>
-  <p>Facebook: <a href="https://www.facebook.com/redirexx/">www.facebook.com/redirexx/</a></p>
+    <p>Email: Redirexrs@gmail.com</p>
+	<p>Facebook: <a href="https://www.facebook.com/redirexx/">https://www.facebook.com/redirexx/</a></p>
   
   </form>
 </div>
+
+
+<div class="hide-on-large-only">
+    <h4>Kontakt</h4>
+    <small></small>
+    
+    <form action="#">
+      <p>Redirex.rs</p>
+      <p>Redirexrs@gmail.com</p>
+    <p>Facebook: <a href="https://www.facebook.com/redirexx/">www.facebook.com/redirexx/</a></p>
+    
+    </form>
+  </div>
 </div>
-</form>	
+	</form>			
+		
  
 
 
@@ -653,7 +662,7 @@ textarea { height: 25vh; resize: none; }
         
         
          
-  </div>       
+      
      
       
        
@@ -675,8 +684,31 @@ textarea { height: 25vh; resize: none; }
            <br><br>
 			   
 			 
-   	     
-   	     
+   	     <div class="hide-on-large-only">   
+   	    <div class="strokeme" style="padding-top: 0%">
+   	        <div class="center" style="width: 90vw; align-content: center; padding-left: 7vw">
+   	     	  <p><h4>Ručni Rad - Požarevac</h4></p>  
+   	     	</div>
+         <br>
+         
+         <br>
+      <div>
+         
+        <div class="center">
+           
+              
+                  <p><h3> Za jedinstven i kreativan poklon posetite fb stranicu (link) ili pinterest galeriju.</h3></p>
+              
+                <p><h3>Arts & crafts</h3></p>
+              
+              <br><br>
+         
+   	      </div>
+   	    </div> 
+   	  </div>
+     </div> 
+     
+   	 <div class="hide-on-small-only">   
    	    <div class="strokeme" style="padding-top: 0%">
    	        <div class="center" style="width: 90vw; align-content: center; padding-left: 7vw">
    	     	  <p><h2>Ručni Rad - Požarevac</h2></p>  
@@ -699,7 +731,7 @@ textarea { height: 25vh; resize: none; }
    	      </div>
    	    </div> 
    	  </div>
-
+     </div> 
    	     
    	     
    	     <div class="grid-container2" style="padding-left: 10%">
@@ -728,39 +760,23 @@ textarea { height: 25vh; resize: none; }
    	     
    	     <br><br>
    	       
-   	 <div>   
-   	     <div class="w3-content w3-display-container" style="max-width:100vw; padding-left: 10%">
-  <img class="mySlides" src="../DejanKostic/slika1.png" style="width:80vw; height: 40vh">
-  <img class="mySlides" src="../DejanKostic/slika2.png" style="width:80vw; height: 40vh">
-  <img class="mySlides" src="../DejanKostic/slika3.png" style="width:80vw; height: 40vh">
-  <img class="mySlides" src="../DejanKostic/slika4.png" style="width:80vw; height: 40vh">
-  <img class="mySlides" src="../DejanKostic/slika5.png" style="width:80vw; height: 40vh">
-  <img class="mySlides" src="../DejanKostic/slika6.png" style="width:80vw; height: 40vh">
-  <img class="mySlides" src="../DejanKostic/slika7.png" style="width:80vw; height: 40vh">
-  <img class="mySlides" src="../DejanKostic/slika8.png" style="width:80vw; height: 40vh">
-  <img class="mySlides" src="../DejanKostic/slika9.png" style="width:80vw; height: 40vh">
+   	 <div class="grid-container-slike" style="padding-left: 3%">   
+   	     
+  <img class="" src="../DejanKostic/slika1.png" style="width:45vw; height: 40vh">
+  <img class="" src="../DejanKostic/slika2.png" style="width:45vw; height: 40vh">
+  <img class="" src="../DejanKostic/slika3.png" style="width:45vw; height: 40vh">
+  <img class="" src="../DejanKostic/slika4.png" style="width:45vw; height: 40vh">
+  <img class="" src="../DejanKostic/slika5.png" style="width:45vw; height: 40vh">
   
-  <img class="mySlides" src="slika5.png" style="width:80vw; height: 40vh">
- <div class="SlideIndicator" style="padding-top: 5%">
-  <div class=" w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:20%">
-    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(6)"></span>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(7)"></span>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(8)"></span>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(9)"></span>
-  </div>   
-</div>
-   </div> 	   
+  <img class="" src="../DejanKostic/slika7.png" style="width:45vw; height: 40vh">
+  <img class="" src="../DejanKostic/slika8.png" style="width:45vw; height: 40vh">
+  <img class="" src="../DejanKostic/slika9.png" style="width:45vw; height: 40vh">
+  
+     
    	     
-   	     
+   	     <br>
   </div>  	     
-   	     
+   	  <br>   
    	     
    	     
  </div>          
@@ -825,32 +841,26 @@ function closeNav() {
 }  
 		  </script>
    <script>
-var slideIndex = 1;
-showDivs(slideIndex);
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
+	   
+$(function() {
+  
+  // contact form animations
+  $('#contact').click(function() {
+    $('#contactForm').fadeToggle();
+  })
+  $(document).mouseup(function (e) {
+    var container = $("#contactForm");
 
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-white", "");
-  }
-  x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-white";
-}
+    if (!container.is(e.target) // if the target of the click isn't the container...
+        && container.has(e.target).length === 0) // ... nor a descendant of the container
+    {
+        container.fadeOut();
+    }
+  });
+  
+});
+		
 </script>
       
       
