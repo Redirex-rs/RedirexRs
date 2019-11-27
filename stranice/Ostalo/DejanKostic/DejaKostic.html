@@ -180,9 +180,9 @@
 	}
 		 
 		.left-button{
-       left: vw;
-       right: auto;
-      } 
+       left: auto;
+       right: 1vw;
+      }  
 		 
 		 .outline {
 	text-shadow:
@@ -292,11 +292,12 @@
 /* Position the content inside the overlay */
 .overlay-content {
   position: relative;
-  top: 25%; /* 25% from the top */
+  top: 10%; /* 25% from the top */
   width: 100%; /* 100% width */
   text-align: center; /* Centered text/links */
   margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
 }
+
 
 /* The navigation links inside the overlay */
 .overlay a {
@@ -316,9 +317,9 @@
 /* Position the close button (top right corner) */
 .overlay .closebtn {
   position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
+  top: 0.5vh;
+  right: 1vw;
+  font-size: 50px;
 }
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
@@ -363,12 +364,13 @@
   transition: .5s ease;
 }
 
-	.container1:hover .overlay1 {
-  width: 197%;
+.container1:hover .overlay1 {
+  width: 97%;
 }
 	.container2:hover .overlay1 {
-  width: 82%;
+  width: 97%;
 }
+
 	
 	.text1 {
   color: white;
@@ -386,14 +388,14 @@
   width: 100%;
   height: auto;
 }
-		.container1 {
+.container1 {
   position: relative;
-  width: 50%;
+  width: 100%;
 }
 	
 	.container2 {
   position: relative;
-  width: 50%;
+  width: 100%;
 }
 	
 	.mySlides {display:none}
@@ -483,88 +485,178 @@
   
   <!-- Overlay content -->
   <div class="overlay-content">
-    <div class="grid-container3">
-   
+      <div class="grid-containe">
+
+   <div class="hide-on-small-only">
  <a href="../../Usluzne delatnosti/usluzne-delatnosti.html">
       <div class="container1">
-         <img src="../../../banneri/73322768_2555973544630575_8621212102922600448_n.jpg" style="width: 25vw; height: 15vh" class="image1"> 
+         <img src="../../../banneri/73322768_2555973544630575_8621212102922600448_n.jpg" style="width: 25vw; height: 9vh" class="image1"> 
             <div class="overlay1">
                 <div class="text1">USLUŽNE DELATNOSTI</div>
             </div>
       </div>
  </a> 
-   
+</div> 
+
+<div class="hide-on-large-only">
+  <a href="../../Usluzne delatnosti/usluzne-delatnosti.html">
+       <div class="container1">
+          <img src="../../../banneri/73322768_2555973544630575_8621212102922600448_n.jpg" style="width: 25vw; height: 7vh" class="image1"> 
+             <div class="overlay1">
+                 <div class="text1">USLUŽNE DELATNOSTI</div>
+             </div>
+       </div>
+  </a> 
+ </div> 
+
+<div class="hide-on-small-only">
  <a href="../../Zanatsko usluzne delatnosti/Zanatsko-Usluzne-Radnje.html">
         <div class="container1">
-         <img src="../../../banneri/73533053_485586932045471_6308197288598568960_n.jpg" style="width: 25vw; height: 15vh" class="image1"> 
+         <img src="../../../banneri/73533053_485586932045471_6308197288598568960_n.jpg" style="width: 25vw; height: 9vh" class="image1"> 
             <div class="overlay1">
                 <div class="text1">ZANATSKO USLUŽNE</div>
             </div>
       </div>
  </a> 
+</div>
+
+<div class="hide-on-large-only">
+    <a href="../../Zanatsko usluzne delatnosti/Zanatsko-Usluzne-Radnje.html">
+           <div class="container1">
+            <img src="../../../banneri/73533053_485586932045471_6308197288598568960_n.jpg" style="width: 25vw; height: 7vh" class="image1"> 
+               <div class="overlay1">
+                   <div class="text1">ZANATSKO USLUŽNE</div>
+               </div>
+         </div>
+    </a> 
+   </div>
+
+ <div class="hide-on-small-only">
     <a href="../../Kucne popravke/Kucne-Popravke.html">
        <div class="container1">
-         <img src="../../../banneri/74161171_470145256950090_5022318384079962112_n.jpg" style="width: 25vw; height: 15vh" class="image1"> 
+         <img src="../../../banneri/74161171_470145256950090_5022318384079962112_n.jpg" style="width: 25vw; height: 9vh" class="image1"> 
             <div class="overlay1">
                 <div class="text1">KUĆNE POPRAVKE</div>
             </div>
       </div>
     </a> 
-    
+  </div>
+
+  <div class="hide-on-large-only">
+      <a href="../../Kucne popravke/Kucne-Popravke.html">
+         <div class="container1">
+           <img src="../../../banneri/74161171_470145256950090_5022318384079962112_n.jpg" style="width: 25vw; height: 7vh" class="image1"> 
+              <div class="overlay1">
+                  <div class="text1">KUĆNE POPRAVKE</div>
+              </div>
+        </div>
+      </a> 
+    </div>
+
+    <div class="hide-on-small-only">
     <a href="../../Servis bele tehnike/Servis-Bele-Tehnike.html">
         <div class="container1">
-           <img src="../../../banneri/washing-machine-2668472_1920.jpg" style="width: 25vw; height: 15vh" class="image1"> 
+           <img src="../../../banneri/washing-machine-2668472_1920.jpg" style="width: 25vw; height: 9vh" class="image1"> 
              <div class="overlay1">
                 <div class="text1">SERVIS BELE TEHNIKE</div>
              </div>
         </div>
     </a> 
+  </div>
+
+  <div class="hide-on-large-only">
+      <a href="../../Servis bele tehnike/Servis-Bele-Tehnike.html">
+          <div class="container1">
+             <img src="../../../banneri/washing-machine-2668472_1920.jpg" style="width: 25vw; height: 7vh" class="image1"> 
+               <div class="overlay1">
+                  <div class="text1">SERVIS BELE TEHNIKE</div>
+               </div>
+          </div>
+      </a> 
+    </div>
+
+
+    <div class="hide-on-small-only">  
     <a href="../../Medicina/Medicina.html">
     	<div class="container1">
-           <img src="../../../banneri/49714009_1028677463986112_5525291193681838080_n.jpg" style="width: 25vw; height: 15vh" class="image1"> 
+           <img src="../../../banneri/49714009_1028677463986112_5525291193681838080_n.jpg" style="width: 25vw; height: 9vh" class="image1"> 
              <div class="overlay1">
                 <div class="text1">ZDRAVSTVO</div>
              </div>
         </div>
     </a> 
-    
+  </div>
+
+  <div class="hide-on-large-only">  
+      <a href="../../Medicina/Medicina.html">
+        <div class="container1">
+             <img src="../../../banneri/49714009_1028677463986112_5525291193681838080_n.jpg" style="width: 25vw; height: 7vh" class="image1"> 
+               <div class="overlay1">
+                  <div class="text1">ZDRAVSTVO</div>
+               </div>
+          </div>
+      </a> 
+    </div>
+
+    <div class="hide-on-small-only">  
     <a href="../../Maloprodaja/Maloprodaja.html">
     <div class="container1">
-           <img src="../../../banneri/store-984393_1920.jpg" style="width: 25vw; height: 15vh" class="image1"> 
+           <img src="../../../banneri/store-984393_1920.jpg" style="width: 25vw; height: 9vh" class="image1"> 
              <div class="overlay1">
                 <div class="text1">MALOPRODAJA</div>
              </div>
         </div>
     </a> 
    </div>
+
+   <div class="hide-on-large-only">  
+      <a href="../../Maloprodaja/Maloprodaja.html">
+      <div class="container1">
+             <img src="../../../banneri/store-984393_1920.jpg" style="width: 25vw; height: 7vh" class="image1"> 
+               <div class="overlay1">
+                  <div class="text1">MALOPRODAJA</div>
+               </div>
+          </div>
+      </a> 
+     </div>
+
   </div>  
-    <a href="../../Ostalo/Ostalo.html" style="padding-top: 20%; padding-left: 37.5%">
+
+  <div class="hide-on-small-only">
+    <a href="../../Ostalo/Ostalo.html" style="padding-top: 1%; padding-left:%">
         <div class="container2">
-           <img src="../../../banneri/woodtype-846089_1920.jpg" style="width: 25vw; height: 15vh" class="image1"> 
+           <img src="../../../banneri/woodtype-846089_1920.jpg" style="width: 25vw; height: 9vh" class="image1"> 
              <div class="overlay1">
                 <div class="text1">OSTALO</div>
              </div>
         </div>
     </a> 
-    
-    
+  </div> 
+  <div class="hide-on-large-only">
+    <a href="../../Ostalo/Ostalo.html" style="padding-left: %">
+        <div class="container2">
+           <img src="../../../banneri/woodtype-846089_1920.jpg" style="width: 25vw; height: 7vh" class="image1"> 
+             <div class="overlay1">
+                <div class="text1">OSTALO</div>
+             </div>
+        </div>
+    </a> 
+  </div> 
+</div>
 </div>
          
          
     <!-- Action dugme--->			
-	<div>		
-   		 <div class="fixed-action-btn left-button">
-               <a class="btn-floating btn-large red">
-                 <i class="large material-icons">add</i>
-               </a>
-               <ul>
-                 <li><a class="btn-floating green"><i class="fab fa-android"></i></a></li>
-                 <li><a class="btn-floating #827717 lime darken-4"><i class="fas fa-question"></i></a>           </li>
-                 <li><a class="btn-floating blue" href="https://www.facebook.com/redirexx/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                 <li><a class="btn-floating #ff6d00 orange accent-4"><i class="material-icons">mail</i>           </a></li>
-               </ul>
-         </div>
-    </div>
+	<div class="hide-on-large-only">
+  <div class="fixed-action-btn left-button" style="padding-left: 1vw"> <a class="btn-floating btn-large red"> <i class="large material-icons">add</i> </a>
+    <ul>
+      <li><a class="btn-floating green" href="androidapp.html"><i class="fab fa-android"></i></a></li>
+      <li><a class="btn-floating #827717 lime darken-4"><i class="fas fa-question"></i></a></li>
+      <li><a class="btn-floating blue" href="https://www.facebook.com/redirexx/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+      <li><a class="btn-floating #ff6d00 orange accent-4"><i class="material-icons">mail</i></a></li>
+    </ul>
+  </div>
+</div>
         
         
          
@@ -730,8 +822,9 @@
 		  /* Open when someone clicks on the span element */
 /* Open when someone clicks on the span element */
 function openNav() {
-  document.getElementById("myNav").style.width = "100%";
+  document.getElementById("myNav").style.width = "30%";
 }
+
 
 /* Close when someone clicks on the "x" symbol inside the overlay */
 function closeNav() {
