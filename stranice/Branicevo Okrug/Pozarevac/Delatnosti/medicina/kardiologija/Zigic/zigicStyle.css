@@ -304,6 +304,7 @@ a {
   color: #fff;
   text-align: center;
   padding: 1em;
+  position: relative;
 }
 
  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
@@ -437,6 +438,7 @@ a {
   color: #fff;
   text-align: center;
   padding: 1em;
+  position: relative;
 }
 
 
