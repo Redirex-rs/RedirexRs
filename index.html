@@ -24,7 +24,29 @@
   <script src="GlavniCss.css"></script>
   <link rel="stylesheet" href="GlavniCss.css" class="">
   
- <style>     /* The Overlay (background) */
+ <style>   
+	.footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+}
+	 
+	 p{
+		 font-size: 1.5vw;
+	 }
+	 
+	 .opis {
+  border-top: 1px rgb(120, 120, 120, 0.8) solid;
+  border-bottom: 1px rgb(120, 120, 120, 0.8) solid;
+  background: #fff;
+  box-shadow: 2px 2px 10px #000;
+  width: 95%;
+  padding: 1vw;
+  margin-bottom: 1rem;
+}
+	 
+	 /* The Overlay (background) */
   .overlay {
     /* Height & width depends on how you want to reveal the overlay (see JS below) */   
     height: 100%;
@@ -84,7 +106,7 @@ h9 {
 
 		<body  id="math.min">
     
-<div class="content-glavni" style="margin-bottom: 3%;margin-left: 4%; margin-right: 4%; background-color: rgb(255, 255, 255);">	  
+<!--- <div class="content-glavni" style="margin-bottom: 3%;margin-left: 4%; margin-right: 4%; background-color: rgb(255, 255, 255);">	--->  
 <div id="background-slika">		
 
 
@@ -92,44 +114,79 @@ h9 {
 
  
   
-     <nav class="nav-wrapper fixed" style="padding-left: 1%;"> <span onclick="openNav()" style="width:2vw;"> <i class="fas fa-bars" style="padding-left: 2%"></i></span>
+     <nav class="nav-wrapper sticky" style="padding-left: 1%;"> <span onclick="openNav()" style="width:2vw;"> <i class="fas fa-bars" style="padding-left: 2%"></i></span>
     <ul id="nav-mobile" class="right" style="padding-right: 2%">
       <!-- Dropdown Structure -->
      
-      <li><a href="index.html">Glavna Stranica</a></li>
      
+    
       <li><a class="dropdown-trigger center hide-on-small-only" ref="#" data-target="dropdown1" style="width: 16vw">Upravni Okrug</a></li>
         <ul id="dropdown1" class="dropdown-content">
-          <li><a href="#!">Borski upravni okrug</a></li>
-          <li><a href="stranice/Branicevo Okrug/index-branicevo.html">Braničevski upravni okrug</a></li>
-          <li><a href="#!">Zaječarski upravni okrug</a></li>
-          <li><a href="#!">Zapadnobački upravni okrug</a></li>
-          <li><a href="#!">Zlatiborski upravni okrug</a></li>
-          <li><a href="#!">Jablanički upravni okrug</a></li>
-          <li><a href="#!">Južnobanatski upravni okrug</a></li>
-          <li><a href="#!">Južnobački upravni okrug</a></li>
-          <li><a href="#!">Kolubarski upravni okrug</a></li>
-          <li><a href="#!">Kosovski upravni okrug</a></li>
-          <li><a href="#!">Kosovsko-mitrovački upravni okrug</a></li>
-          <li><a href="#!">Kosovsko-pomoravski upravni okrug</a></li>
-          <li><a href="#!">Mačvanski upravni okrug</a></li>
-          <li><a href="#!">Moravički upravni okrug</a></li>
-          <li><a href="#!">Nišavski upravni okrug</a></li>
-          <li><a href="#!">Pećki upravni okrug</a></li>
-          <li><a href="#!">Pirotski upravni okrug</a></li>
-          <li><a href="#!">Podunavski upravni okrug</a></li>
-          <li><a href="#!">Pomoravski upravni okrug</a></li>
-          <li><a href="#!">Prizrenski upravni okrug</a></li>
-          <li><a href="#!">Pčinjski upravni okrug</a></li>
-          <li><a href="#!">Rasinski upravni okrug</a></li>
-          <li><a href="#!">Raški upravni okrug</a></li>
-          <li><a href="#!">Severnobanatski upravni okrug</a></li>
-          <li><a href="#!">Severnobački upravni okrug</a></li>
-          <li><a href="#!">Srednjobanatski upravni okrug</a></li>
-          <li><a href="#!">Sremski upravni okrug</a></li>
-          <li><a href="#!">Toplički upravni okrug</a></li>
-          <li><a href="#!">Šumadijski upravni okrug</a></li>
+         
+          
+          <li><a href="stranice/Bor Okrug/index-bor.html" style="color: white">Borski okrug</a></li>
+            <li class="divider"></li>
+          <li><a href="stranice/Branicevo Okrug/index-branicevo.html" style="color: white">Braničevski okrug</a></li>
+            <li class="divider"></li>
+          <li><a href="stranice/28-Grad Beograd/index-beograd.html" style="color: white">Grad Beograd</a></li>
+            <li class="divider"></li>
+          <li><a href="stranice/1-Zajecar okrug/index-zajecar.html" style="color: white">Zaječarski okrug</a></li>
+            <li class="divider"></li>
+          <li><a href="stranice/2-Zapadnobacki okrug/index-zapadnobacki.html" style="color: white">Zapadnobački okrug</a></li>
+            <li class="divider"></li>
+          <li><a href="stranice/3-Zlatiborski okrug/index-zlatiborski.html" style="color: white">Zlatiborski okrug</a></li>
+            <li class="divider"></li>
+          <li><a href="stranice/4-Jablanicki okrug/index-jablanicki.html" style="color: white">Jablanički okrug</a></li>
+            <li class="divider"></li>
+          <li><a href="stranice/5-Juznobanatski okrug/index-juznobanatski.html" style="color: white">Južnobanatski okrug</a></li>
+            <li class="divider"></li>
+          <li><a href="stranice/6-Juznobacki okrug/index-juznobacki.html" style="color: white">Južnobački okrug</a></li>
+            <li class="divider"></li>
+          <li><a href="stranice/7-Kolubarski okrug/index-kolubarski.html" style="color: white">Kolubarski okrug</a></li>
+            <li class="divider"></li>
+          <li><a href="stranice/8-Kosovski okrug/index-kosovski.html" style="color: white">Kosovski okrug</a></li>
+            <li class="divider"></li>
+          <li><a href="stranice/9-Kosovsko-mitrovacki okrug/index-kosovskomitrovacki.html" style="color: white">Kosovsko-mitrovački okrug</a>
+          </li>
+            <li class="divider"></li>
+          <li><a href="stranice/10-Kosovsko-pomoravski okrug/index-kosovskopomoravski.html" style="color: white">Kosovsko-pomoravski okrug</a></li>
+            <li class="divider"></li>
+          <li><a href="stranice/11-Macvanski okrug/index-macvanski.html" style="color: white">Mačvanski okrug</a></li>
+            <li class="divider"></li>
+          <li><a href="stranice/12-Moravicki okrug/index-moravicki.html" style="color: white">Moravički okrug</a></li>
+            <li class="divider"></li>
+          <li><a href="stranice/13-Nisavski okrug/index-nisavski.html" style="color: white">Nišavski okrug</a></li>
+            <li class="divider"></li>
+          <li><a href="stranice/14-Pecki okrug/index-pecki.html" style="color: white">Pećki okrug</a></li>
+            <li class="divider"></li>
+          <li><a href="stranice/15-Pirotski okrug/index-pirotski.html" style="color: white">Pirotski okrug</a></li>
+            <li class="divider"></li>
+          <li><a href="stranice/16-Podunavski okrug/index-podunavski.html" style="color: white">Podunavski okrug</a></li>
+            <li class="divider"></li>
+          <li><a href="stranice/17-Pomoravski okrug/index-pomoravski.html" style="color: white">Pomoravski okrug</a></li>
+            <li class="divider"></li>
+          <li><a href="stranice/18-Prizrenski okrug/index-prizrenski.html" style="color: white">Prizrenski okrug</a></li>
+            <li class="divider"></li>
+          <li><a href="stranice/19-Pcinjski okrug/index-pcinjski.html" style="color: white">Pčinjski okrug</a></li>
+            <li class="divider"></li>
+          <li><a href="stranice/20-Rasinski okrug/index-rasinski.html" style="color: white">Rasinski okrug</a></li>
+            <li class="divider"></li>
+          <li><a href="stranice/21-Raski okrug/index-raski.html" style="color: white">Raški okrug</a></li>
+            <li class="divider"></li>
+          <li><a href="stranice/22-Severnobanatski okrug/index-severnobanatski.html" style="color: white">Severnobanatski okrug</a></li>
+            <li class="divider"></li>
+          <li><a href="stranice/23-Severnobacki okrug/index-severnobacki.html" style="color: white">Severnobački okrug</a></li>
+            <li class="divider"></li>
+          <li><a href="stranice/24-Srednjobanatski okrug/index-srednjobanatski.html" style="color: white">Srednjobanatski okrug</a></li>
+            <li class="divider"></li>
+          <li><a href="stranice/25-Sremski okrug/index-sremski.html" style="color: white">Sremski okrug</a></li>
+            <li class="divider"></li>
+          <li><a href="stranice/26-Toplicki okrug/index-toplicki.html" style="color: white">Toplički okrug</a></li>
+            <li class="divider"></li>
+          <li><a href="stranice/27-Sumadijski okrug/index-sumadijski.html" style="color: white">Šumadijski okrug</a></li>
+          
         </ul>
+       
       <li><a href="#" id="contact">Kontakt</a></li>
       
     </ul>
@@ -143,7 +200,7 @@ h9 {
   <small></small> 
   <form action="#">
     <p>Redirex.rs</p>
-    <p>Email: Redirexrs@gmail.com</p>
+    <p>Email: redirexrs@gmail.com</p>
 	<p>Facebook: <a href="https://www.facebook.com/redirexx/">https://www.facebook.com/redirexx/</a></p>
   
   </form>
@@ -156,7 +213,7 @@ h9 {
     
     <form action="#">
       <p>Redirex.rs</p>
-      <p>Redirexrs@gmail.com</p>
+      <p>redirexrs@gmail.com</p>
     <p>Facebook: <a href="https://www.facebook.com/redirexx/">www.facebook.com/redirexx/</a></p>
     
     </form>
@@ -170,167 +227,17 @@ h9 {
 <div id="myNav" class="overlay"> 
   
   <!-- Button to close the overlay navigation --> 
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; </a> 
+   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; </a>  
   
   <!-- Overlay content -->
   <div class="overlay-content">
-    <div class="grid-containe">
+   
 
-   <div class="hide-on-small-only">
- <a href="stranice/Usluzne delatnosti/usluzne-delatnosti.html">
-      <div class="container1">
-         <img src="banneri/73322768_2555973544630575_8621212102922600448_n.jpg" style="width: 25vw; height: 9vh" class="image1"> 
-            <div class="overlay1">
-                <div class="text1">USLUŽNE DELATNOSTI</div>
-            </div>
-      </div>
- </a> 
-</div> 
-
-<div class="hide-on-large-only">
-  <a href="stranice/Usluzne delatnosti/usluzne-delatnosti.html">
-       <div class="container1">
-          <img src="banneri/73322768_2555973544630575_8621212102922600448_n.jpg" style="width: 25vw; height: 7vh" class="image1"> 
-             <div class="overlay1">
-                 <div class="text1"><h9>USLUŽNE<br>  DELATNOSTI</h9></div>
-             </div>
-       </div>
-  </a> 
- </div> 
-
-<div class="hide-on-small-only">
- <a href="stranice/Zanatsko usluzne delatnosti/Zanatsko-Usluzne-Radnje.html">
-        <div class="container1">
-         <img src="banneri/73533053_485586932045471_6308197288598568960_n.jpg" style="width: 25vw; height: 9vh" class="image1"> 
-            <div class="overlay1">
-                <div class="text1">ZANATSKO USLUŽNE</div>
-            </div>
-      </div>
- </a> 
-</div>
-
-<div class="hide-on-large-only">
-    <a href="stranice/Zanatsko usluzne delatnosti/Zanatsko-Usluzne-Radnje.html">
-           <div class="container1">
-            <img src="banneri/73533053_485586932045471_6308197288598568960_n.jpg" style="width: 25vw; height: 7vh" class="image1"> 
-               <div class="overlay1">
-                   <div class="text1">ZANATSKO USLUŽNE</div>
-               </div>
-         </div>
-    </a> 
-   </div>
-
- <div class="hide-on-small-only">
-    <a href="stranice/Kucne popravke/Kucne-Popravke.html">
-       <div class="container1">
-         <img src="banneri/74161171_470145256950090_5022318384079962112_n.jpg" style="width: 25vw; height: 9vh" class="image1"> 
-            <div class="overlay1">
-                <div class="text1">KUĆNE POPRAVKE</div>
-            </div>
-      </div>
-    </a> 
-  </div>
-
-  <div class="hide-on-large-only">
-      <a href="stranice/Kucne popravke/Kucne-Popravke.html">
-         <div class="container1">
-           <img src="banneri/74161171_470145256950090_5022318384079962112_n.jpg" style="width: 25vw; height: 7vh" class="image1"> 
-              <div class="overlay1">
-                  <div class="text1">KUĆNE POPRAVKE</div>
-              </div>
-        </div>
-      </a> 
-    </div>
-
-    <div class="hide-on-small-only">
-    <a href="stranice/Servis bele tehnike/Servis-Bele-Tehnike.html">
-        <div class="container1">
-           <img src="banneri/washing-machine-2668472_1920.jpg" style="width: 25vw; height: 9vh" class="image1"> 
-             <div class="overlay1">
-                <div class="text1">SERVIS BELE TEHNIKE</div>
-             </div>
-        </div>
-    </a> 
-  </div>
-
-  <div class="hide-on-large-only">
-      <a href="stranice/Servis bele tehnike/Servis-Bele-Tehnike.html">
-          <div class="container1">
-             <img src="banneri/washing-machine-2668472_1920.jpg" style="width: 25vw; height: 7vh" class="image1"> 
-               <div class="overlay1">
-                  <div class="text1">SERVIS BELE TEHNIKE</div>
-               </div>
-          </div>
-      </a> 
-    </div>
+  <div class="text" style="margin-top: 20%"><p>Pritiskom na "Upravni okrug" u <br>gornjem desnom uglu izaberite okrug i <br> nakon toga opštinu koja vam je potrebna.</p></div>
 
 
-    <div class="hide-on-small-only">  
-    <a href="stranice/Medicina/Medicina.html">
-    	<div class="container1">
-           <img src="banneri/49714009_1028677463986112_5525291193681838080_n.jpg" style="width: 25vw; height: 9vh" class="image1"> 
-             <div class="overlay1">
-                <div class="text1">ZDRAVSTVO</div>
-             </div>
-        </div>
-    </a> 
-  </div>
-
-  <div class="hide-on-large-only">  
-      <a href="stranice/Medicina/Medicina.html">
-        <div class="container1">
-             <img src="banneri/49714009_1028677463986112_5525291193681838080_n.jpg" style="width: 25vw; height: 7vh" class="image1"> 
-               <div class="overlay1">
-                  <div class="text1">ZDRAVSTVO</div>
-               </div>
-          </div>
-      </a> 
-    </div>
-
-    <div class="hide-on-small-only">  
-    <a href="stranice/Maloprodaja/Maloprodaja.html">
-    <div class="container1">
-           <img src="banneri/store-984393_1920.jpg" style="width: 25vw; height: 9vh" class="image1"> 
-             <div class="overlay1">
-                <div class="text1">MALOPRODAJA</div>
-             </div>
-        </div>
-    </a> 
-   </div>
-
-   <div class="hide-on-large-only">  
-      <a href="stranice/Maloprodaja/Maloprodaja.html">
-      <div class="container1">
-             <img src="banneri/store-984393_1920.jpg" style="width: 25vw; height: 7vh" class="image1"> 
-               <div class="overlay1">
-                  <div class="text1">MALOPRODAJA</div>
-               </div>
-          </div>
-      </a> 
-     </div>
-
-  </div>  
-
-  <div class="hide-on-small-only">
-    <a href="stranice/Ostalo/Ostalo.html" style="padding-top: 1%;">
-        <div class="container2">
-           <img src="banneri/woodtype-846089_1920.jpg" style="width: 25vw; height: 9vh" class="image1"> 
-             <div class="overlay1">
-                <div class="text1">OSTALO</div>
-             </div>
-        </div>
-    </a> 
-  </div> 
-  <div class="hide-on-large-only">
-    <a href="stranice/Ostalo/Ostalo.html">
-        <div class="container2">
-           <img src="banneri/woodtype-846089_1920.jpg" style="width: 25vw; height: 7vh" class="image1"> 
-             <div class="overlay1">
-                <div class="text1">OSTALO</div>
-             </div>
-        </div>
-    </a> 
-  </div> 
+  
+  
 </div>
 </div>
 
@@ -352,34 +259,39 @@ h9 {
 <!-- vidljivo na dektop---> 
 
 <br>
+ <div class="opis" style="margin-top: 25%; margin-left: 2%">
+ 	<p>
+ 		<h3>Dobrodošli na Redirex.rs</h3><br>
+        Ukratko o strukturi web-stranice: <br>
+        <u>-Glavna stranica:</u> ovde se nalaze važna obaveštenja sto se tiču samog sajta, kao i informacije svakog ažuriranja. <br>
+        
+        <u>-Stranica okruga:</u> na ovoj stranici možete naći opstine tog okruga i izabrati onu koja vam je potrebna. Upravni okrug možete izabrati pritiskom na "Upravni okrug" u gornjem desnom uglu. <br>
+        
+        <u>-Stranica opštine:</u> svaka stranica opštine ima svoju grupu delatnosti radi lakšeg i tačnijeg pretraživanja. Takođe planiramo da stupimo u kontakt sa gradonačelnicima opština i da sva važna obaveštenja, sto se tiču tih opština, budu prikazana u meniju s leve strane. Na glavnoj stranici svake opštine nalaziće se info-kartice svih, nezavizno od delatnosti. <br>
+        
+        <u>-Stranice delatnosti:</u> ubacivanje novih delatnosti će se vršiti ukoliko je potrebno, kao i podgrupe delatnosti. <br>
+        
+ 		<u>-Lične stranice:</u> od info-kartice do stranice po želji, sve je na vama.<br><br>
+ 		
+ 		Aktivnim i svakodnevnim oglašavanjem cilj nam je da ovaj sajt postane svakodnevno ime gde će svako moći da pronađe sve od informacija sto je potrebno. Takođe svakodnevno radimo na usavršavanju i dodavanju novih opcija, mogućnosti i svega ostalog što bi pomoglo u lakšem pretraživanju.<br>
+ 		
+ 		
 
+ 		
+ 	</p>
+ 	
+ 	
+ </div>
 
-<a href="stranice/Branicevo Okrug/index-branicevo.html" class=""><div class="button"></div></a>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 <div class="hide-on-large-only">
-  <div style="padding-top: 20%;">
-
-  <a href="" class="">
-    <img src="stranice/Medicina/pedijatrija/main_banner_marina.jpg" style="width: 100%;" alt="">
-  </a>
-
-  <div class="divider"></div>
-
-  <a href="" class="">
-      <img src="stranice/Medicina/interna medicina/Zigic-inter/Dr-zigicM-manji-banner1.jpg" style="width: 100%;" alt="">
-    </a>
-
-  <a href="stranice/Ostalo/DejanKostic/DejaKostic.html">
-    <img src="stranice\Ostalo\DejanKostic\74718044_541291849993482_7181548454101909504_n(1).jpg" style="width: 100%;" alt="">
-  </a>
-    </div>
+ 
 </div>
 
+</div>
 
-</div>
-</div>
 
 
 
@@ -388,7 +300,9 @@ h9 {
 <!-- vidljivo na telefonima --->
 
 
-
+<div class="footer">
+        &copy Redirex team, 2020.
+    </div>
 
 <!--Import jQuery before materialize.js--> 
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> 
@@ -406,13 +320,14 @@ h9 {
 	  
     });
   });
-			 
-	</script> 
+			</script>
+  
 <script> document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.sidenav');
     var instances = M.Sidenav.init(elems, options);
   });</script> 
-<script>$(document).ready(function(){
+<script>
+	$(document).ready(function(){
     $('.sidenav').sidenav();
   });
 		  
@@ -425,8 +340,8 @@ function openNav() {
 /* Close when someone clicks on the "x" symbol inside the overlay */
 function closeNav() {  document.getElementById("myNav").style.width = "0%";
 }; 
-	
-
+	</script>
+<script>
 	$(function() {
   
   // contact form animations
@@ -446,6 +361,8 @@ function closeNav() {  document.getElementById("myNav").style.width = "0%";
 });
 	
 $('.dropdown-trigger').dropdown();
+	
+	
 	
 	</script>
 
