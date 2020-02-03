@@ -1,6 +1,10 @@
 @charset "utf-8";
 /* CSS Document */
 
+.dropdown-sadrzaj{
+	position: relative;
+}
+
       .button {
         background-color: #4CAF50; /* Green */
         border: none;
@@ -31,7 +35,7 @@
         border-radius: 99%;
       }
      
-      
+
       
             .container {
         position: relative;
@@ -153,10 +157,13 @@
           } 
 
           #background-slika{
-            background-image: url('IMG_20191107_205101_HDR_kraca.jpg');
+            background-image: url('75354953_111627406958960_7611389103208136704_o.jpg');
             z-index: -1;
             background-size: 100% 35vh;
             background-repeat: no-repeat;
+			border-bottom: thick;
+			border-bottom-color: black;
+			
             
 
           }
@@ -192,6 +199,8 @@
   z-index: -1;
   -webkit-box-shadow: 0 0 2vw 0.3vw rgb(83, 82, 82);
   box-shadow: 0 0 20% 21% rgb(63, 62, 62);
+height: 100%;
+  margin-bottom: 5%;
 }
           
           
@@ -214,7 +223,8 @@
            
       }
           .nav-wrapper:hover{
-            background-color:rgba(108,142,211,1.00) 
+            background-color:rgba(12,64,118,1.00);
+			 
         
           }
           
@@ -288,7 +298,7 @@
       
       #contactForm { 
         display: none;
-        border: 6px solid rgba(108,142,211,1.00); 
+        border: 6px solid rgba(12,64,118,1.00); 
         padding: 1em;
         width: 60vw;
         text-align: center;
@@ -316,9 +326,14 @@
       
       .dropdown-content {
         margin-top: 4vh;
-        max-height: 40vh;
+        max-height: 70vh;
         max-width: 100%;
+		background-color: rgba(12,64,118,1.00);
+		text-color: white;
+		  
       }
 
-        
+.dropdown-content :hover{
+	background-color:  rgba(41,135,233,1.00);
+} 
 	
