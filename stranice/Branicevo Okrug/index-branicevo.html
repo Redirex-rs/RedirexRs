@@ -21,10 +21,15 @@
 	<![endif]-->
 
 
-  <script src="../../GlavniCss.css"></script>
-  <link rel="stylesheet" href="../../GlavniCss.css" class="">
   
- <style>     /* The Overlay (background) */
+  <link rel="stylesheet" href="GlavniCss-zajecar.css" class="">
+  
+ <style> 
+	 
+	 
+
+	 
+	 /* The Overlay (background) */
   .overlay {
     /* Height & width depends on how you want to reveal the overlay (see JS below) */   
     height: 100%;
@@ -47,6 +52,7 @@ top: 10%; /* 25% from the top */
 width: 100%; /* 100% width */
 text-align: center; /* Centered text/links */
 margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+	  
 }
   
   /* The navigation links inside the overlay */
@@ -58,6 +64,12 @@ margin-top: 30px; /* 30px top margin to avoid conflict with the close button on 
     display: block; /* Display block instead of inline */
     transition: 0.3s; /* Transition effects on hover (color) */
   }
+ 
+	 .overlay div {
+		 width: auto;
+		 height: auto;
+
+	 }
   
   /* When you mouse over the navigation links, change their color */
   .overlay a:hover, .overlay a:focus {
@@ -84,7 +96,7 @@ h9 {
 
 		<body  id="math.min">
     
-<div class="content-glavni" style="margin-bottom: 3%;margin-left: 4%; margin-right: 4%; background-color: rgb(255, 255, 255);">	  
+<!--- 	--->  
 <div id="background-slika">		
 
 
@@ -98,48 +110,19 @@ h9 {
      
       <li><a href="../../index.html">Glavna Stranica</a></li>
      
-      <li><a class="dropdown-trigger center hide-on-small-only" ref="#" data-target="dropdown1" style="width: 16vw">Upravni Okrug</a></li>
-        <ul id="dropdown1" class="dropdown-content">
-          <li><a href="#!">Borski upravni okrug</a></li>
-          <li><a href="#!">Braničevski upravni okrug</a></li>
-          <li><a href="#!">Zaječarski upravni okrug</a></li>
-          <li><a href="#!">Zapadnobački upravni okrug</a></li>
-          <li><a href="#!">Zlatiborski upravni okrug</a></li>
-          <li><a href="#!">Jablanički upravni okrug</a></li>
-          <li><a href="#!">Južnobanatski upravni okrug</a></li>
-          <li><a href="#!">Južnobački upravni okrug</a></li>
-          <li><a href="#!">Kolubarski upravni okrug</a></li>
-          <li><a href="#!">Kosovski upravni okrug</a></li>
-          <li><a href="#!">Kosovsko-mitrovački upravni okrug</a></li>
-          <li><a href="#!">Kosovsko-pomoravski upravni okrug</a></li>
-          <li><a href="#!">Mačvanski upravni okrug</a></li>
-          <li><a href="#!">Moravički upravni okrug</a></li>
-          <li><a href="#!">Nišavski upravni okrug</a></li>
-          <li><a href="#!">Pećki upravni okrug</a></li>
-          <li><a href="#!">Pirotski upravni okrug</a></li>
-          <li><a href="#!">Podunavski upravni okrug</a></li>
-          <li><a href="#!">Pomoravski upravni okrug</a></li>
-          <li><a href="#!">Prizrenski upravni okrug</a></li>
-          <li><a href="#!">Pčinjski upravni okrug</a></li>
-          <li><a href="#!">Rasinski upravni okrug</a></li>
-          <li><a href="#!">Raški upravni okrug</a></li>
-          <li><a href="#!">Severnobanatski upravni okrug</a></li>
-          <li><a href="#!">Severnobački upravni okrug</a></li>
-          <li><a href="#!">Srednjobanatski upravni okrug</a></li>
-          <li><a href="#!">Sremski upravni okrug</a></li>
-          <li><a href="#!">Toplički upravni okrug</a></li>
-          <li><a href="#!">Šumadijski upravni okrug</a></li>
-
-          
-          
-
-
-        </ul>
+     
       <li><a href="#" id="contact">Kontakt</a></li>
       
     </ul>
   
 </nav>
+	
+	<div class="center" style="margin-top: 5%">
+	  <img src="../Branicevo Okrug/Pozarevac/800px-Grb_pozarevca.svg.png" alt="" class="" style="width: 20vw">
+	 
+	</div>
+	<div class="divider"></div>
+	
 		<!-- kontakt forma-->	
 <form action="" method="post" enctype="text/plain">			
 			<div id="contactForm">
@@ -148,7 +131,7 @@ h9 {
   <small></small> 
   <form action="#">
     <p>Redirex.rs</p>
-    <p>Email: Redirexrs@gmail.com</p>
+    <p>Email: redirexrs@gmail.com</p>
 	<p>Facebook: <a href="https://www.facebook.com/redirexx/">https://www.facebook.com/redirexx/</a></p>
   
   </form>
@@ -161,7 +144,7 @@ h9 {
     
     <form action="#">
       <p>Redirex.rs</p>
-      <p>Redirexrs@gmail.com</p>
+      <p>redirexrs@gmail.com</p>
     <p>Facebook: <a href="https://www.facebook.com/redirexx/">www.facebook.com/redirexx/</a></p>
     
     </form>
@@ -179,164 +162,14 @@ h9 {
   
   <!-- Overlay content -->
   <div class="overlay-content">
-    <div class="grid-containe">
-
-   <div class="hide-on-small-only">
- <a href="../Usluzne delatnosti/usluzne-delatnosti.html">
-      <div class="container1">
-         <img src="../../banneri/73322768_2555973544630575_8621212102922600448_n.jpg" style="width: 25vw; height: 9vh" class="image1"> 
-            <div class="overlay1">
-                <div class="text1">USLUŽNE DELATNOSTI</div>
-            </div>
-      </div>
- </a> 
+   
+    
+  <div class="text" style="padding-top: 50%"><p>Izaberite opštinu<br> kako biste izabrali delatnost.</p></div>
+  
 </div> 
 
-<div class="hide-on-large-only">
-  <a href="../Usluzne delatnosti/usluzne-delatnosti.html">
-       <div class="container1">
-          <img src="../../banneri/73322768_2555973544630575_8621212102922600448_n.jpg" style="width: 25vw; height: 7vh" class="image1"> 
-             <div class="overlay1">
-                 <div class="text1"><h9>USLUŽNE<br>  DELATNOSTI</h9></div>
-             </div>
-       </div>
-  </a> 
- </div> 
-
-<div class="hide-on-small-only">
- <a href="../Zanatsko usluzne delatnosti/Zanatsko-Usluzne-Radnje.html">
-        <div class="container1">
-         <img src="../../banneri/73533053_485586932045471_6308197288598568960_n.jpg" style="width: 25vw; height: 9vh" class="image1"> 
-            <div class="overlay1">
-                <div class="text1">ZANATSKO USLUŽNE</div>
-            </div>
-      </div>
- </a> 
-</div>
-
-<div class="hide-on-large-only">
-    <a href="../Zanatsko usluzne delatnosti/Zanatsko-Usluzne-Radnje.html">
-           <div class="container1">
-            <img src="../../banneri/73533053_485586932045471_6308197288598568960_n.jpg" style="width: 25vw; height: 7vh" class="image1"> 
-               <div class="overlay1">
-                   <div class="text1">ZANATSKO USLUŽNE</div>
-               </div>
-         </div>
-    </a> 
-   </div>
-
- <div class="hide-on-small-only">
-    <a href="../Kucne popravke/Kucne-Popravke.html">
-       <div class="container1">
-         <img src="../../banneri/74161171_470145256950090_5022318384079962112_n.jpg" style="width: 25vw; height: 9vh" class="image1"> 
-            <div class="overlay1">
-                <div class="text1">KUĆNE POPRAVKE</div>
-            </div>
-      </div>
-    </a> 
-  </div>
-
-  <div class="hide-on-large-only">
-      <a href="../Kucne popravke/Kucne-Popravke.html">
-         <div class="container1">
-           <img src="../../banneri/74161171_470145256950090_5022318384079962112_n.jpg" style="width: 25vw; height: 7vh" class="image1"> 
-              <div class="overlay1">
-                  <div class="text1">KUĆNE POPRAVKE</div>
-              </div>
-        </div>
-      </a> 
-    </div>
-
-    <div class="hide-on-small-only">
-    <a href="../Servis bele tehnike/Servis-Bele-Tehnike.html">
-        <div class="container1">
-           <img src="../../banneri/washing-machine-2668472_1920.jpg" style="width: 25vw; height: 9vh" class="image1"> 
-             <div class="overlay1">
-                <div class="text1">SERVIS BELE TEHNIKE</div>
-             </div>
-        </div>
-    </a> 
-  </div>
-
-  <div class="hide-on-large-only">
-      <a href="../Servis bele tehnike/Servis-Bele-Tehnike.html">
-          <div class="container1">
-             <img src="../../banneri/washing-machine-2668472_1920.jpg" style="width: 25vw; height: 7vh" class="image1"> 
-               <div class="overlay1">
-                  <div class="text1">SERVIS BELE TEHNIKE</div>
-               </div>
-          </div>
-      </a> 
-    </div>
 
 
-    <div class="hide-on-small-only">  
-    <a href="../Medicina/Medicina.html">
-    	<div class="container1">
-           <img src="../../banneri/49714009_1028677463986112_5525291193681838080_n.jpg" style="width: 25vw; height: 9vh" class="image1"> 
-             <div class="overlay1">
-                <div class="text1">ZDRAVSTVO</div>
-             </div>
-        </div>
-    </a> 
-  </div>
-
-  <div class="hide-on-large-only">  
-      <a href="../Medicina/Medicina.html">
-        <div class="container1">
-             <img src="../../banneri/49714009_1028677463986112_5525291193681838080_n.jpg" style="width: 25vw; height: 7vh" class="image1"> 
-               <div class="overlay1">
-                  <div class="text1">ZDRAVSTVO</div>
-               </div>
-          </div>
-      </a> 
-    </div>
-
-    <div class="hide-on-small-only">  
-    <a href="../Maloprodaja/Maloprodaja.html">
-    <div class="container1">
-           <img src="../../banneri/store-984393_1920.jpg" style="width: 25vw; height: 9vh" class="image1"> 
-             <div class="overlay1">
-                <div class="text1">MALOPRODAJA</div>
-             </div>
-        </div>
-    </a> 
-   </div>
-
-   <div class="hide-on-large-only">  
-      <a href="../Maloprodaja/Maloprodaja.html">
-      <div class="container1">
-             <img src="../../banneri/store-984393_1920.jpg" style="width: 25vw; height: 7vh" class="image1"> 
-               <div class="overlay1">
-                  <div class="text1">MALOPRODAJA</div>
-               </div>
-          </div>
-      </a> 
-     </div>
-
-  </div>  
-
-  <div class="hide-on-small-only">
-    <a href="../Ostalo/Ostalo.html" style="padding-top: 1%;">
-        <div class="container2">
-           <img src="../../banneri/woodtype-846089_1920.jpg" style="width: 25vw; height: 9vh" class="image1"> 
-             <div class="overlay1">
-                <div class="text1">OSTALO</div>
-             </div>
-        </div>
-    </a> 
-  </div> 
-  <div class="hide-on-large-only">
-    <a href="../Ostalo/Ostalo.html">
-        <div class="container2">
-           <img src="../../banneri/woodtype-846089_1920.jpg" style="width: 25vw; height: 7vh" class="image1"> 
-             <div class="overlay1">
-                <div class="text1">OSTALO</div>
-             </div>
-        </div>
-    </a> 
-  </div> 
-</div>
 </div>
 
 	   
@@ -357,125 +190,51 @@ h9 {
 <!-- vidljivo na dektop---> 
 
 <br>
+<br>
+
 
 
 <div class="hide-on-small-only">
-  <div class="grid-container" style="padding-top: 20%;">
- <div class="col s12 m7" style="width: 47vw;"> 
-    <div class="card horizontal" style="padding-top: 0%; width: 97%; height: 100%">
-      <div class="card-image" style="padding-top: 3vw">
-       <a href="https://www.dr-marina.rs/" target="_blank">
-        <img src="../Medicina/pedijatrija/main_banner_marina.jpg"  >
-		</a>   
-      </div>
-      <div class="card-stacked" style=" width: 50vw; height: 15vh">
-        <div class="card-content" style="width: 100%">
-          <p>Adresa: Njegoševa 1/3,
-Požarevac<br>
-Telefon: 012 410 079<br>
-Mobilni: 063 811 5595<br> 
-E-mail: zigicm65@gmail.com
-</p>
-        </div>
-      </div>
-    </div>
+  <div class="grid-container center-align">
+   <a href="Pozarevac/Pozarevac.html" style="height: 10vh" class="btn-index">
+    <div class="" style="height: 10vh; padding-top: 5%">Opština Požarevac</div></a> 
+   <a href="Golubac/Golubac.html" style="height: 10vh" class="btn-index">
+    <div class="" style="height: 10vh; padding-top: 5%">Opština Golubac</div></a>
+   <a href="Veliko Gradiste/VelikoGradiste.html" style="height: 10vh" class="btn-index">
+    <div class="" style="height: 10vh; padding-top: 5%">Opština Veliko Gradište </div></a>
+   <a href="Malo Crnice/MaloCrnice.html" style="height: 10vh" class="btn-index"> 
+  	<div class="" style="height: 10vh; padding-top: 5%">Opština Malo Crniće </div></a>
+   <a href="Zabari/Zabari.html" style="height: 10vh" class="btn-index">  
+    <div class="" style="height: 10vh; padding-top: 5%">Opština Žabari</div></a>
+   <a href="Petrovac/Petrovac.html" style="height: 10vh" class="btn-index"> 
+    <div class="" style="height: 10vh; padding-top: 5%">Opština Petrovac </div></a>
+   <a href="Kucevo/Kucevo.html" style="height: 10vh" class="btn-index"> 
+  	<div class="" style="height: 10vh; padding-top: 5%">Opština Kučevo</div></a>
+   <a href="Zagubica/Zagubica.html" style="height: 10vh" class="btn-index">	
+    <div class="" style="height: 10vh; padding-top: 5%">Opština Žagubica</div></a>
+    
   </div>
-  
- 
-
-  <div class="col s12 m7" style="padding-right: 1.4%; width: 47vw"> 
-    <div class="card horizontal right" style=" width: 97%; height: 100%;"	 >
-      <div class="card-image" style="padding-top: 3vw">
-		   <a href="../Medicina/interna medicina/Zigic-inter/zigic-inter.html" >
-        <img src="../Medicina/interna medicina/Zigic-inter/Main-banner.jpg" style="padding-top: 5%; width: 100%; height: 60%">
-		   </a>	   
-      </div>
-      <div class="card-stacked" style=" width: 50vw; height: 15vh">
-        <div class="card-content" style="width: 100%" >
-          <p>Zakazivanje na telelefone:<br>
-– 012/401-354<br>
-– 065/201-08-79</p>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-  
-  <div class="col s12 m7" style="width: 47vw"> 
-    <div class="card horizontal" style="padding-top: 0%; width: 97%; height: 100%"	 >
-		
-      <div class="card-image" style="padding-top: 3vw">
-		  <a href="../Ostalo/DejanKostic/DejaKostic.html" >
-        <img src="../Ostalo/DejanKostic/74718044_541291849993482_7181548454101909504_n(1).jpg" style="padding-top: 5%; width: 100%; height: 60%">
-		 </a> 
-      </div>
-			
-      <div class="card-stacked" style=" width: 50vw; height: 15vh">
-        <div class="card-content" style="width: 100%" >
-          <p>Galerija ručno izradjenih lampi, noževa i privezaka</p>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-  
-  <div class="col s12 m7" style="padding-right: 1.4%; width: 47vw"> 
-    <div class="card horizontal right" style="padding-top: 0%; width: 97%; height: 100%"	 >
-      <div class="card-image" style="padding-top: 3vw">
-		   <a href="../Ostalo/Kult-tatoo/Kult-tatoo.html" >
-        <img src="../Ostalo/Kult-tatoo/74404000_1175489372645200_3374571257759531008_n.jpg" style="padding-top: 5%; width: 100%; height: 60%">
-		   </a>	   
-      </div>
-      <div class="card-stacked" style=" width: 50vw; height: 15vh">
-        <div class="card-content" style="width: 100%" >
-          <p><h5>Tattoo-Kult Pozarevac<br><a href="" class="btn blue" style="width: 20vw" >
-            <i class="fab fa-facebook-square"></i>
-              
-            </a></h5><br><br>
-              
-          </p>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-
-  <br><br><br>
-  </div> 
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br>
 </div>
 
 
 
 
 <div class="hide-on-large-only">
-  <div style="padding-top: 20%;">
+ 
+</div>
 
-  <a href="" class="">
-    <img src="../Medicina/pedijatrija/main_banner_marina.jpg" style="width: 100%;" alt="">
-  </a>
 
-  <div class="divider"></div>
+</div>
+</div>
 
-  <a href="" class="">
-      <img src="../Medicina/interna medicina/Zigic-inter/Dr-zigicM-manji-banner1.jpg" style="width: 100%;" alt="">
-    </a>
 
-  <a href="../Ostalo/DejanKostic/DejaKostic.html">
-    <img src="../Ostalo/DejanKostic/74718044_541291849993482_7181548454101909504_n(1).jpg" style="width: 100%;" alt="">
-  </a>
+
+
+
+<div class="footer">
+        &copy Redirex team, 2020.
     </div>
-</div>
-
-
-</div>
-</div>
-
-
-
-
-
-<!-- vidljivo na telefonima --->
 
 
 
@@ -486,7 +245,7 @@ E-mail: zigicm65@gmail.com
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
 <script src="../../scrypts.js"></script> 
 <script src="../../GlavniCss.css"></script>
-<script src="file:///C|/Users/Thyrantt/Documents/pushpin.js"></script> 
+ 
 <script>
 		document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.fixed-action-btn');
