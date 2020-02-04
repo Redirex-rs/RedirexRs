@@ -95,10 +95,11 @@
            
       
        html {
-                width: 100%;
-                height: 100%;
+                width:auto;
+                
                 margin: 0;
                 padding: 0;
+		       
       
               }
       
@@ -129,7 +130,7 @@
         display: grid;
         grid-template-columns: 49% 48% ;
          row-gap: 2%;
-        padding-bottom: 5%;
+        margin-bottom: 5vh;
         overflow: hidden;
         padding-left: 0.3%;			 
         z-index: -2;
@@ -146,9 +147,10 @@
       }
        
             body {
-          width: 100vw;  
-          height: 100%;   
+          width:auto;  
+             
           z-index: -1;
+	      
          
           			
           
@@ -156,17 +158,7 @@
         
           } 
 
-          #background-slika{
-            background-image: url('75354953_111627406958960_7611389103208136704_o.jpg');
-            z-index: -1;
-            background-size: 100% 35vh;
-            background-repeat: no-repeat;
-			border-bottom: thick;
-			border-bottom-color: black;
-			
-            
-
-          }
+          
             .container_lmenu {
            height: 1vh;
            width: 10%;
