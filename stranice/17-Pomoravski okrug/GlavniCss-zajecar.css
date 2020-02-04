@@ -145,14 +145,17 @@
 		margin-bottom: 3vh;
       }
            .grid-container2 {
-        
-        
         display: grid;
-        grid-template-columns: 30% 30% 30% ;
+        grid-template-columns: 46% 46% ;
+        column-gap: 4%;
+        padding-bottom: 5%;
+        overflow: hidden;
         
-             
-        padding-left: 10%;
-        
+		margin-right: 1%;	   
+		grid-row-gap: 2%;
+        z-index: -2;
+		margin-bottom: 3vh;
+		position: center center;	 
       }
        
             body {
