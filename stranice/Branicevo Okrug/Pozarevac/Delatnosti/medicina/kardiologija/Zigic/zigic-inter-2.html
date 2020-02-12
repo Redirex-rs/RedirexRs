@@ -4,135 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<script src="https://kit.fontawesome.com/3429f72bdb.js" crossorigin="anonymous"></script>
     <title>Ordinacija Žigić - Redirex</title>
-	<link rel="shortcut icon" href="favicon.ico" >
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="zigicStyle.css">
-	<style>     /* The Overlay (background) */
-  .overlay {
-    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
-    height: 100%;
-    width: 0;
-    position: fixed; /* Stay in place */
-    z-index: 2; /* Sit on top */
-      
-    left: 0;
-    top: 0;
-    background-color: rgb(3, 0, 0); /* Black fallback color */
-    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
-    overflow-y: hidden; /* Disable horizontal scroll */
-    transition: .3s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-  }
-  
-  /* Position the content inside the overlay */
-  .overlay-content {
-position: relative;
-top: 10%; /* 25% from the top */
-width: 100%; /* 100% width */
-text-align: center; /* Centered text/links */
-margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
-}
-  
-  /* The navigation links inside the overlay */
-  .overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: rgb(90, 90, 90);
-    display: block; /* Display block instead of inline */
-    transition: 0.3s; /* Transition effects on hover (color) */
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
-  }
-  
-  /* Position the close button (top right corner) */
-  .overlay .closebtn {
-position: absolute;
-top: 0.5vh;
-right: 1vw;
-font-size: 50px;
-}
-	
-</style>
-		
 </head>
 
 <body>
+
+    <!-- Navbar -->
+    <nav class="navbar ">
+        <div class="navbar-right flex">
+            <a class="navbar-links" href="../../../../index.html">Glavna</a>
+            <a class="navbar-links" id="contact" href="#">Kontakt</a>
+        </div>
+    </nav>
+
     <!-- Banner image with title  -->
     <div class="banner">
-        
+        <img src="./sliderfolder/zigicBanner.jpg">
         <div class="banner-title flex">
-           
             <h1>Ordinacija Žigić -</h1>
-            
             <h2>Spec. internistička ordinacija Požarevac</h2>
         </div>
     </div>
-	<br>
 
-<nav class="nav-wrapper fixed" style="padding-left: 1%;"> <span onclick="openNav()" style="width:2vw;"> <i class="fas fa-bars" style="padding-left: 2%"></i></span>
-    <ul id="nav-mobile" class="right" style="padding-right: 2%">
-      <!-- Dropdown Structure -->
-     
-      <li><a href="../../../../../../../index.html">Glavna Stranica</a></li>
-      <li><a href="#" id="contact">Kontakt</a></li>
-      
-    </ul>
-  
-</nav>	
-	
-	
-	<form action="" method="post" enctype="text/plain">			
-			<div id="contactForm">
-<div class="hide-on-small-only">
-  <h1>Kontakt</h1>
-  <small></small> 
-  <form action="#">
-    <p>Redirex.rs</p>
-    <p>Email: redirexrs@gmail.com</p>
-	<p>Facebook: <a href="https://www.facebook.com/redirexx/" target="_blank">https://www.facebook.com/redirexx/</a></p>
-  
-  </form>
-</div>
-
-
-<div class="hide-on-large-only">
-    <h4>Kontakt</h4>
-    <small></small>
-    
-    <form action="#">
-      <p>Redirex.rs</p>
-      <p>redirexrs@gmail.com</p>
-    <p>Facebook: <a href="https://www.facebook.com/redirexx/">www.facebook.com/redirexx/</a></p>
-    
-    </form>
-  </div>
-</div>
-	</form>
-	
-	<!-- The overlay -->
-<div id="myNav" class="overlay"> 
-  
-  <!-- Button to close the overlay navigation --> 
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; </a> 
-  
-  <!-- Overlay content -->
-  
-</div>
-	
     <!-- Main section with all info about customer  -->
     <div class="main-sec flex">
+
         <!-- About section  -->
         <div class="opis">
-            <h2 class="opis-naslov">Opis</h2><br>
-            <h3>Ordinacija ŽIGIĆ – Spec. internistička ordinacija Požarevac</h3><br>
+            <div class="opis-slika">
+                <img src="./IMG_0930-1024x427.jpg" alt="Dr. Žigić since 2016.">
+            </div>
+            <h2 class="opis-naslov">Opis</h2>
             <div class="opis-tekst">
+                <h4>Ordinacija ŽIGIĆ – Spec. internistička ordinacija Požarevac</h4><br>
                 <p>Specijalistička internistička ordinacija Žigić otvorena je marta 2016.godine i nalazi se u   ulici Bratstva i jedinstva 100 u Požarevcu (put prema bolnici).</p><br>
                 <p>Bavimo se dijagnostikom internističkih oboljenja, a posebno kardiovaskularnih bolesti.
                 </p><br>
@@ -144,34 +51,36 @@ font-size: 50px;
                 <p>Zakazivanje na telelefone: <br><br>
                     <ul>
                         <li>012/401-354</li>
-                        <li>012/401-354</li>
-                        <li>012/401-354</li>
+                        <li>065/201-08-79</li>
                     </ul>
                 </p>
             </div>
         </div>
+
         <!-- Information about work time, adress and contact -->
         <div class="informacije">
+
             <!-- Work time -->
             <div class="radno-vreme">
-                <h2>Radno vreme:</h2><br>
+                <h2>Radno vreme:</h2>
                 <ul class="radno-vreme-lista">
                    <li>Radnim danima: <br> 9h - 13h i 17h - 19h</li><br>
                    <li>Subotom: <br> 10h - 12h</li>
             </ul>
             </div>
+
             <!-- Adress -->
             <div class="adresa">
-                <h2>Adresa:</h2><br>
+                <h2>Adresa:</h2>
                 <p>Bratstva I Jedinstva 100, Požarevac</p>
             </div>
+
             <!-- Contact info -->
             <div class="kontakt">
-                <h2>Zakazivanje na telelefone:</h2><br>
+                <h2>Zakazivanje na telelefone:</h2>
                     <ul class="kontakt-lista">
                         <li>012/401-354</li>
-                        <li>012/401-354</li>
-                        <li>012/401-354</li>
+                        <li>065/201-08-79</li>
                     </ul>
             </div>
         </div>
@@ -180,148 +89,108 @@ font-size: 50px;
 
 
     <!-- Slideshow container -->
+    <h2 class="slideshow-title">Slike</h2>
+
     <div class="slideshow-container">
       
         <!-- Full width images on slideshow -->
         
         <div class="mySlides fade">
-            <img src="sliderfolder/IMG_0931-1024x427.jpg" style="width:100%" onclick="openModal();currentSlide2(1)" />
+            <img src="./sliderfolder/s1.jpg" style="width:100%" onclick="openModal();currentSlide2(1)" />
         </div>
 
         <div class="mySlides fade">
-            <img src="sliderfolder/IMG_0984-728x728.jpg" style="width:100%" onclick="openModal();currentSlide2(2)" />
+            <img src="./sliderfolder/s2.jpg" style="width:100%" onclick="openModal();currentSlide2(2)" />
         </div>
   
         <div class="mySlides fade">
-            <img src="sliderfolder/IMG_1010-1024x427.jpg" style="width:100%" onclick="openModal();currentSlide2(3)" />
+            <img src="./sliderfolder/s3.jpg" style="width:100%" onclick="openModal();currentSlide2(3)" />
         </div>
   
         <div class="mySlides fade">
-            <img src="sliderfolder/IMG_1011-728x728.jpg" style="width:100%" onclick="openModal();currentSlide2(4)" />
+            <img src="./sliderfolder/s4.jpg" style="width:100%" onclick="openModal();currentSlide2(4)" />
         </div>
   
         <div class="mySlides fade">
-            <img src="sliderfolder/IMG_1014-728x728.jpg" style="width:100%" onclick="openModal();currentSlide2(5)" />
+            <img src="./sliderfolder/s5.jpg" style="width:100%" onclick="openModal();currentSlide2(5)" />
         </div>
   
         <div class="mySlides fade">
-            <img src="sliderfolder/IMG_1015-728x728.jpg" style="width:100%" onclick="openModal();currentSlide2(6)" />
+            <img src="./sliderfolder/s6.jpg" style="width:100%" onclick="openModal();currentSlide2(6)" />
         </div>
 
         <div class="mySlides fade">
-            <img src="sliderfolder/zigicslika1.jpg" style="width:100%" onclick="openModal();currentSlide2(7)" />
+            <img src="./sliderfolder/s7.jpg" style="width:100%" onclick="openModal();currentSlide2(7)" />
         </div>
   
         <!-- Next and previous buttons of slideshow-->
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(+1)">&#10095;</a>
-      </div>
+    </div>
       <br />
   
       <!-- The dots/circles -->
-      
+      <div class="dots" style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+      </div>
 
-      <!-- Full screen modal -->
+    <!-- Full screen modal -->
 
-      <div id="my-modal" class="modal">
+    <div id="my-modal" class="modal">
 
-        <a href="javascript:void(0)" class="close" style="height: 5vh" onclick="closeModal()">&times;</a>
+        <a href="javascript:void(0)" class="close" onclick="closeModal()">&times;</a>
+
         <!-- Full screen images after activation of Modal-->
         <div class="modal-content flex">
+
             <!-- Images that will be opened with Full screen Modal -->
             <div class="my-slides enlarged-img">
-                <img src="sliderfolder/IMG_0931-1024x427.jpg">
+                <img src="./sliderfolder/s1.jpg">
             </div>
 
             <div class="my-slides">
-                <img src="sliderfolder/IMG_0984-728x728.jpg">
+                <img src="./sliderfolder/s2.jpg">
             </div>
 
             <div class="my-slides">
-                <img src="sliderfolder/IMG_1010-1024x427.jpg">
+                <img src="./sliderfolder/s3.jpg">
             </div>
 
             <div class="my-slides">
-                <img src="sliderfolder/IMG_1011-728x728.jpg">
+                <img src="./sliderfolder/s4.jpg">
             </div>
 
             <div class="my-slides">
-                <img src="sliderfolder/IMG_1014-728x728.jpg">
+                <img src="./sliderfolder/s5.jpg">
             </div>
 
             <div class="my-slides">
-                <img src="sliderfolder/IMG_1015-728x728.jpg">
+                <img src="./sliderfolder/s6.jpg">
             </div>
 
             <div class="my-slides">
-                <img src="sliderfolder/zigicslika1.jpg">
+                <img src="./sliderfolder/s7.jpg">
             </div>
         </div>
 
         <!-- Next and previous buttons on Modal -->
         <a class="prev" onclick="changeSlides2(-1)">&#10094;</a>
         <a class="next" onclick="changeSlides2(1)">&#10095;</a>
-      </div>
+    </div>
+
     <!-- Copy rights -->
-    
+    <div class="footer">
+        &copy Redirex team, 2020.
+    </div>
 
     <!-- Java scripts called -->
     <script type="text/javascript" src="./myscripts.js"></script>
-    <!--Import jQuery before materialize.js--> 
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> 
-<!--JavaScript at end of body for optimized loading--> 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
-	<script>
-		document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.fixed-action-btn');
-    var instances = M.FloatingActionButton.init(elems, {
-      direction: 'up',
-      hoverEnabled: false
-	  
-    });
-  });
-			 
-	</script> 
-<script> document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems, options);
-  });</script> 
-<script>$(document).ready(function(){
-    $('.sidenav').sidenav();
-  });
-		  
-		  /* Open when someone clicks on the span element */
-/* Open when someone clicks on the span element */
-function openNav() {
-  document.getElementById("myNav").style.width = "70%";
-}
-
-/* Close when someone clicks on the "x" symbol inside the overlay */
-function closeNav() {  document.getElementById("myNav").style.width = "0%";
-}; 
-	
-
-	$(function() {
-  
-  // contact form animations
-  $('#contact').click(function() {
-    $('#contactForm').fadeToggle();
-  })
-  $(document).mouseup(function (e) {
-    var container = $("#contactForm");
-
-    if (!container.is(e.target) // if the target of the click isn't the container...
-        && container.has(e.target).length === 0) // ... nor a descendant of the container
-    {
-        container.fadeOut();
-    }
-  });
-  
-});
-	
-$('.dropdown-trigger').dropdown();
-	
-	</script>
 
 </body>
 
