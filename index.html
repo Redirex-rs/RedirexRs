@@ -25,6 +25,9 @@
   <link rel="stylesheet" href="GlavniCss.css" class="">
   
  <style>   
+	
+	 
+	 
 	.footer {
   background: #000;
   color: #fff;
@@ -49,7 +52,7 @@
   background: #fff;
   box-shadow: 2px 2px 10px #000;
   width: 95%;
-  padding: 1vw;
+  padding: 1.5rem;
   margin-bottom: 1rem;
 }
 	 
@@ -121,7 +124,7 @@ h9 {
 
  
   
-     <nav class="nav-wrapper sticky" style="padding-left: 1%;"> <span onclick="openNav()" style="width:2vw;"> <i class="fas fa-bars" style="padding-left: 2%"></i></span>
+     <nav class="nav-wrapper fixed" style="padding-left: 1%">
     <ul id="nav-mobile" class="right" style="padding-right: 2%">
       <!-- Dropdown Structure -->
      
@@ -221,7 +224,7 @@ h9 {
     <form action="#">
       <p>Redirex.rs</p>
       <p>redirexrs@gmail.com</p>
-    <p>Facebook: <a href="https://www.facebook.com/redirexx/">www.facebook.com/redirexx/</a></p>
+      <p>Facebook: <a href="https://www.facebook.com/redirexx/">www.facebook.com/redirexx/</a></p>
     
     </form>
   </div>
@@ -264,23 +267,23 @@ h9 {
 </div>
 
 <!-- vidljivo na dektop---> 
-<div class="hide-on-large-only" >
+<!---  <div class="hide-on-large-only" >
 <a href="Mobilni-okruzi.html" style="width: 100%;height: 9vh; margin-top: 30%; position: right; background-color: rgba(12,64,118,1.00)" class="btn">
       <div class="">Upravni Okruzi</div></a> 
-</div>      
+</div>     ---> 
       
       <br>
  <div class="opis" style="margin-top: 25%; margin-left: 2%">
  	<p>
  		<h3>Dobrodošli na Redirex.rs</h3><br>
-        Ukratko o strukturi web-stranice: <br>
-        <u>-Glavna stranica:</u> ovde se nalaze važna obaveštenja sto se tiču samog sajta, kao i informacije svakog ažuriranja. <br>
+        Ukratko o strukturi web-stranice: <br><br>
+        <u>-Glavna stranica:</u> ovde se nalaze važna obaveštenja sto se tiču samog sajta, kao i informacije svakog ažuriranja. <br><br>
         
-        <u>-Stranica okruga:</u> na ovoj stranici možete naći opstine tog okruga i izabrati onu koja vam je potrebna. Upravni okrug možete izabrati pritiskom na "Upravni okrug" u gornjem desnom uglu. <br>
+        <u>-Stranica okruga:</u> na ovoj stranici možete naći opstine tog okruga i izabrati onu koja vam je potrebna. Upravni okrug možete izabrati pritiskom na "Upravni okrug" u gornjem desnom uglu. <br><br>
         
-        <u>-Stranica opštine:</u> svaka stranica opštine ima svoju grupu delatnosti radi lakšeg i tačnijeg pretraživanja. Takođe planiramo da stupimo u kontakt sa gradonačelnicima opština i da sva važna obaveštenja, sto se tiču tih opština, budu prikazana u meniju s leve strane. Na glavnoj stranici svake opštine nalaziće se info-kartice svih, nezavizno od delatnosti. <br>
+        <u>-Stranica opštine:</u> svaka stranica opštine ima svoju grupu delatnosti radi lakšeg i tačnijeg pretraživanja. Takođe planiramo da stupimo u kontakt sa gradonačelnicima opština i da sva važna obaveštenja, sto se tiču tih opština, budu prikazana u meniju s leve strane. Na glavnoj stranici svake opštine nalaziće se info-kartice svih, nezavizno od delatnosti. <br><br>
         
-        <u>-Stranice delatnosti:</u> ubacivanje novih delatnosti će se vršiti ukoliko je potrebno, kao i podgrupe delatnosti. <br>
+        <u>-Stranice delatnosti:</u> ubacivanje novih delatnosti će se vršiti ukoliko je potrebno, kao i podgrupe delatnosti. <br><br>
         
  		<u>-Lične stranice:</u> od info-kartice do stranice po želji, sve je na vama.<br><br>
  		
@@ -319,7 +322,7 @@ h9 {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
 <script src="scrypts.js"></script> 
 <script src="GlavniCss.css"></script>
-<script src="../pushpin.js"></script> 
+
 <script>
 		document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.fixed-action-btn');
@@ -331,10 +334,13 @@ h9 {
   });
 			</script>
   
-<script> document.addEventListener('DOMContentLoaded', function() {
+<script> 
+	document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.sidenav');
     var instances = M.Sidenav.init(elems, options);
-  });</script> 
+  });
+	</script> 
+  
 <script>
 	$(document).ready(function(){
     $('.sidenav').sidenav();

@@ -215,16 +215,7 @@ height: 100%;
           right: 35px;
         }
       } 
-          .nav-wrapper {
-           
-       background-color:rgba(108,142,211,0.19) ;
-           
-      }
-          .nav-wrapper:hover{
-            background-color:rgba(12,64,118,1.00);
-			 
-        
-          }
+          
           
           .polaroid:hover{
           border: 4px solid #fff;
@@ -334,4 +325,25 @@ height: 100%;
 .dropdown-content :hover{
 	background-color:  rgba(41,135,233,1.00);
 } 
+
+.nav-wrapper {
+        
+       background-color:rgba(12,64,118,0.6) ;
+          
+      }
+
+.nav-wrapper:hover{
+       background-color:rgba(12,64,118,1.00);
+
+           
+          }
+
+.nav-wrapper {
+
+	line-height: 3rem;
+	margin: 0;
+	padding: 0;
+	max-height: 3rem;
+	
+}
 	
