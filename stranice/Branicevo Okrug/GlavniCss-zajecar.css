@@ -11,6 +11,8 @@
 }  
 
 
+
+
       .button {
         background-color: #4CAF50; /* Green */
         border: none;
@@ -353,8 +355,20 @@
 }
 
 p{
-	font-size: 1.2vw;
+	font-size: 0.9rem;
 }
+
+.nav-wrapper > span > i {
+	font-size: 1rem;
+}
+
+@media (min-width: 768px){
+	.nav-wrapper > span > i {
+	font-size: 1.7rem;
+}
+	
+}
+
 
 .nav-wrapper{
 	position: fixed;
