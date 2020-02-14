@@ -100,14 +100,7 @@
           }
            
       
-       html {
-                width:auto;
-                
-                margin: 0;
-                padding: 0;
-		       
       
-              }
       
       
         .div1 {
@@ -151,16 +144,67 @@
         padding-left: 10%;
         
       }
+
+.grid-container3 {
+	
+	display: grid;
+    text-align: left;
+    column-gap: 10%;
+    margin-left: 2%;
+	margin-right: 1%;	   
+	grid-row-gap: 0.7%;
+    font-size: 1em;
+    
+	vertical-align: 2em;
+	padding-bottom: 2em;
+	overflow: visible;
+}
+
+.grid-container3 > a {
+	text-align: left;
+	font-size: 1.7rem;
+	vertical-align: middle;
+	line-height: 4rem;
+	padding-left: 1%;
+}
+
+
+
+@media (min-width: 768px) {
+.grid-container3 {
+	
+        display: grid;
+        grid-template-columns: 45% 45% ;	   
+		grid-row-gap: 2%;
+        padding-left: 5%;
+	    column-gap: 5%;
+		padding-bottom: 3em;
+			 
+	}
+
+	
+	.grid-container3 > a {
+	font-size: 2em;
+	text-align:left;
+	align-content: middle;
+		
+
+		
+}
+	.grid-container3 > a > img {
+		
+		padding-right: 1%;
+		
+		
+	}
+	
+	
+}
        
-            body {
-          width:auto;  
-             
-          z-index: -1;
-	      
-         
-          			
-          
-        padding-bottom: 0%;
+     body {
+        width:auto;          
+        
+		 overflow:scroll;
         
           } 
 
