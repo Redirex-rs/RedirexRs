@@ -83,25 +83,7 @@
       }
      
         
-        
-    
-            .pin-top {
-          position: relative;
-          }
-      
-          
-          .pin-bottom {
-          position: relative;
-          }
-      
-          
-          .pinned {
-          position: fixed !important;
-          }
-           
-      
-      
-      
+
       
         .div1 {
           float: left;
@@ -110,11 +92,7 @@
           width: 25%;
         }
            
-          left-button{
-       left: auto;
-       right: 1vw;
-      } 
-           
+     
            .outline {
         text-shadow:
           -1px -1px 0 #000,
