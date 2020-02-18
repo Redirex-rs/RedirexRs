@@ -85,4 +85,6 @@ function showSlides2(n) {
   slides2[slideIndex2-1].style.display = "block";
 }
 
+
+
 /* ===========================================*/

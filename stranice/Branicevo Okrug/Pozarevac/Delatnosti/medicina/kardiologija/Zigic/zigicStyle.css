@@ -9,7 +9,7 @@
 body {
   background: rgb(240, 240, 240);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 1.25rem;
+  
 }
 
 img {
@@ -17,10 +17,87 @@ img {
   display: block;
 }
 
-a {
-  text-decoration: none;
-  color: white;
+    
+      #contact { 
+        -webkit-user-select: none; /* Chrome/Safari */        
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE10+ */
+        color: white;
+        text-align: center;
+        cursor: pointer; 		
+      }
+      
+      
+      #contact:active { background: #444; }
+      
+      #contactForm { 
+        display: none;
+        border: 6px solid rgba(12,64,118,1.00); 
+        padding: 1em;
+        width: 60vw;
+        text-align: center;
+        z-index: 1;	
+        background: #fff;
+        position: fixed;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+       -webkit-transform: translate(-50%,-50%)
+        
+      }
+      
+      input, textarea { 
+        margin: .8em auto;
+        font-family: inherit; 
+        text-transform: inherit; 
+        font-size: inherit;
+        
+        display: block; 
+        width: 40vw; 
+        padding: .4em;
+      }
+      textarea { height: 25vh; resize: none; }
+      
+      .dropdown-content {
+        margin-top: 4vh;
+        max-height: 40vh;
+        max-width: 100%;
+      }
+
+
+
+.nav-wrapper{
+	position: fixed;
+	top: 0%;
+	z-index: 5;
 }
+
+.nav-wrapper > span > i {
+	font-size: 1rem;
+}
+
+@media (min-width: 768px){
+	.nav-wrapper > span > i {
+	font-size: 1.7rem;
+}
+	
+}
+
+
+.nav-wrapper{
+	position: fixed;
+	top: 0%;
+}
+
+ .nav-wrapper {
+           
+       background-color:rgba(12,64,118,0.8) ;
+           
+      }
+          .nav-wrapper:hover{
+            background-color:rgba(12,64,118,1.00) 
+        
+          }
 
 /* Flex class that could be added to other items if needed */
 .flex {
@@ -81,6 +158,25 @@ a {
   top: 0;
   text-align: center;
 }
+
+
+
+@media (min-width: 768px) {
+	.banner-title {
+  font-size: 0.7rem;
+  background: rgba(0, 0, 0, 0.404);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  color: rgb(245, 245, 245);
+  text-shadow: 5px 5px 5px #000, 5px 5px 5px #000, 5px 5px 5px #000;
+  top: 0;
+  text-align: center;
+}
+	
+
+}
+
 
 /*============== Page's Main section ==============*/
 

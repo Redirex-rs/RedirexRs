@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ordinacija Žigić - Redirex</title>
+    <!--Import materialize.css-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="zigicStyle.css">
@@ -12,20 +14,54 @@
 
 <body>
 
+   	
+   
     <!-- Navbar -->
-    <nav class="navbar ">
-        <div class="navbar-right flex">
-            <a class="navbar-links" href="../../../../index.html">Glavna</a>
-            <a class="navbar-links" id="contact" href="#">Kontakt</a>
-        </div>
-    </nav>
+<nav class="nav-wrapper fixed" style="padding-left: 1%;">
+    <ul id="nav-mobile" class="right" style="padding-right: 2%">
+      <!-- Dropdown Structure -->
+     
+      <li><a href="../../../index.html">Glavna Stranica</a></li>
+      <li><a href="#" id="contact">Kontakt</a></li>
+      
+    </ul>
+  
+</nav>
+    
+    <form action="" method="post" enctype="text/plain">			
+			<div id="contactForm">
+<div class="hide-on-small-only">
+  <h1>Kontakt</h1>
+  <small></small> 
+  <form action="#">
+    <p>Redirex.rs</p>
+    <p>Email: redirexrs@gmail.com</p>
+	<p>Facebook: <a href="https://www.facebook.com/redirexx/">https://www.facebook.com/redirexx/</a></p>
+  
+  </form>
+</div>
+
+
+<div class="hide-on-large-only">
+    <h4>Kontakt</h4>
+    <small></small>
+    
+    <form action="#">
+      <p>Redirex.rs</p>
+      <p>redirexrs@gmail.com</p>
+    <p>Facebook: <a href="https://www.facebook.com/redirexx/">www.facebook.com/redirexx/</a></p>
+    
+    </form>
+  </div>
+</div>
+	</form>
 
     <!-- Banner image with title  -->
     <div class="banner">
         <img src="./sliderfolder/zigicBanner.jpg">
         <div class="banner-title flex">
-            <h1>Ordinacija Žigić -</h1>
-            <h2>Spec. internistička ordinacija Požarevac</h2>
+            <h3>Ordinacija Žigić -</h3>
+            <h4>Spec. internistička ordinacija Požarevac</h4>
         </div>
     </div>
 
@@ -63,7 +99,7 @@
             <!-- Work time -->
             <div class="radno-vreme">
                 <h2>Radno vreme:</h2>
-                <ul class="radno-vreme-lista">
+                <ul class="radno-vreme-lista" style="padding-left: 1em">
                    <li>Radnim danima: <br> 9h - 13h i 17h - 19h</li><br>
                    <li>Subotom: <br> 10h - 12h</li>
             </ul>
@@ -78,7 +114,7 @@
             <!-- Contact info -->
             <div class="kontakt">
                 <h2>Zakazivanje na telelefone:</h2>
-                    <ul class="kontakt-lista">
+                    <ul class="kontakt-lista" style="padding-left: 1em">
                         <li>012/401-354</li>
                         <li>065/201-08-79</li>
                     </ul>
@@ -191,6 +227,32 @@
 
     <!-- Java scripts called -->
     <script type="text/javascript" src="./myscripts.js"></script>
+    <!--Import jQuery before materialize.js--> 
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> 
+<!--JavaScript at end of body for optimized loading--> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 	
+
+<script>
+		$(function() {
+  
+  // contact form animations
+  $('#contact').click(function() {
+    $('#contactForm').fadeToggle();
+  })
+  $(document).mouseup(function (e) {
+    var container = $("#contactForm");
+
+    if (!container.is(e.target) // if the target of the click isn't the container...
+        && container.has(e.target).length === 0) // ... nor a descendant of the container
+    {
+        container.fadeOut();
+    }
+  });
+  
+});
+	
+$('.dropdown-trigger').dropdown();
+	</script>
 
 </body>
 
