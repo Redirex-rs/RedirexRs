@@ -108,29 +108,7 @@ img {
 }
 
 /*============== Navbar ==============*/
-.navbar {
-  position: fixed;
-  width: 100%;
-  z-index: 1;
-  border-top: 1px rgba(78, 92, 121, 1) solid;
-  border-bottom: 1px rgba(78, 92, 121, 1) solid;
-  background: rgba(78, 92, 121, 0.7);
-  line-height: 3em;
-}
 
-.navbar-right {
-  flex-direction: row;
-  justify-content: flex-end;
-}
-
-.navbar-links {
-  padding: 0 2em;
-  margin: 0 0.5em;
-}
-
-.navbar-links:hover {
-  background: rgba(78, 92, 121, 1);
-}
 
 
 /*============== Banner ==============*/
