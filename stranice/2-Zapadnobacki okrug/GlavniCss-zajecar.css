@@ -135,13 +135,13 @@
       }
            .grid-container2 {
         display: grid;
-        grid-template-columns: 46% 46% ;
-        column-gap: 4%;
+        grid-template-columns: 33% 33% 33% ;
+       
         padding-bottom: 5%;
         overflow: hidden;
         
 		margin-right: 1%;	   
-		grid-row-gap: 2%;
+		
         z-index: -2;
 		margin-bottom: 3vh;
 		position: center center;	 
@@ -247,7 +247,7 @@ height: 100%;
       }
       
       .container1:hover .overlay1 {
-  width: 97%;
+  width: 100%;
 }
 	.container2:hover .overlay1 {
   width: 97%;
