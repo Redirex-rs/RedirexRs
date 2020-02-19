@@ -348,6 +348,10 @@ height: 100%;
 	top: 0%;
 }
 
+.nav-wrapper > span > i {
+	font-size: 1rem;
+}
+
 .footer {
   position: absolute;
   width: 100%;
