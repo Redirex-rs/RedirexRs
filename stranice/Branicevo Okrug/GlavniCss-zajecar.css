@@ -128,13 +128,13 @@
 
          .grid-container2 {
         display: grid;
-        grid-template-columns: 46% 46% ;
-        column-gap: 3%;
-        padding-bottom: 5%;                         
+        grid-template-columns: 30% 30% 30% ;
+        column-gap: 2%;
+        
         overflow: hidden;
-		overflow-y: hidden;	 
-		grid-row-gap: 3%;
-		margin-left: 4%;	 
+        
+		margin-left: 5%;	   
+		grid-row-gap: 2%;
         z-index: -2;
 		margin-bottom: 3vh;
 		position: center center;	 
