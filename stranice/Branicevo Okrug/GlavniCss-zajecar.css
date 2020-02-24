@@ -141,10 +141,7 @@
       }
 
 .flex-container3 {
-	
-	
-    text-align: left;	   
-	
+    text-align: left;
     font-size: 1em;
 	vertical-align: 2em;
 	overflow:hidden;
@@ -157,14 +154,6 @@
 	font-size: 2rem;
 	vertical-align: middle;
 	line-height: 4rem;
-
-}
-
-.flex-container3 > div {
-	
-	width: 1em;
-	
-	
 }
 
 
@@ -173,6 +162,21 @@ div.card {
 	box-shadow: 5px 5px 10px grey
 }
 
+@media (max-width: 768px){
+	.flex-container3 {
+	
+        display:flex;
+		z-index: -3;
+	    flex-wrap: wrap;
+	    justify-content: center;
+	  }	
+	
+	.flex-container3 > div{
+		padding: 1rem;
+		object-position: center;
+		
+	}
+}
 
 @media (min-width: 768px) {
 .flex-container3 {
@@ -180,6 +184,7 @@ div.card {
         display:flex;
 		z-index: -3;
 	    flex-wrap: wrap;
+	    justify-content: center;
 	  }	
 	
 	.flex-container3 > div{
