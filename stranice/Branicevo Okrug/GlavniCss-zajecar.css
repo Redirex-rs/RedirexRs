@@ -142,7 +142,7 @@
 
 .flex-container3 {
     text-align: left;
-    font-size: 1em;
+    
 	vertical-align: 2em;
 	overflow:hidden;
 	z-index: -4;
@@ -164,7 +164,7 @@ div.card {
 
 @media (max-width: 768px){
 	.flex-container3 {
-	
+	    
         display:flex;
 		z-index: -3;
 	    flex-wrap: wrap;
@@ -181,7 +181,7 @@ div.card {
 
 @media (min-width: 768px) {
 .flex-container3 {
-	
+	    
         display:flex;
 		z-index: -3;
 	    flex-wrap: wrap;
@@ -401,6 +401,10 @@ div.card {
 
 p{
 	font-size: 0.9rem;
+}
+
+p1{
+	font-size: 1.3em;
 }
 
 .nav-wrapper > span > i {
