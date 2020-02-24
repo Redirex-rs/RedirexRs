@@ -175,6 +175,7 @@ div.card {
 		padding: 1rem;
 		object-position: center;
 		
+		
 	}
 }
 
@@ -190,6 +191,7 @@ div.card {
 	.flex-container3 > div{
 		padding: 1rem;
 		object-position: center;
+		width: 28em;
 	}
 	
 }
