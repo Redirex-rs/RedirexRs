@@ -144,18 +144,17 @@
 	
 	
     text-align: left;	   
-	grid-row-gap: 0.7%;
+	
     font-size: 1em;
 	vertical-align: 2em;
 	overflow:hidden;
 	z-index: -4;
-    position: center;
-	
+	justify-content: center;
 }
 
 .flex-container3 > a {
 	text-align: left;
-	font-size: 1.7rem;
+	font-size: 2rem;
 	vertical-align: middle;
 	line-height: 4rem;
 
@@ -164,7 +163,8 @@
 .flex-container3 > div {
 	
 	width: 1em;
-	padding-left: 0.5%;
+	
+	
 }
 
 
@@ -183,8 +183,8 @@ div.card {
 	  }	
 	
 	.flex-container3 > div{
-		padding: 0.7em;
-		
+		padding: 1rem;
+		object-position: center;
 	}
 	
 }
