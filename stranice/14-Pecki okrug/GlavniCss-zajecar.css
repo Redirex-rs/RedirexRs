@@ -5,6 +5,8 @@
 /* CSS Document */
 
       .footer {
+margin-top: auto;
+
   
   width: 100%;
   background: #000;
@@ -373,6 +375,8 @@ background-color:rgba(12,64,118,1.00);
 }
 
 .footer {
+margin-top: auto;
+
   
   width: 100%;
   background: #000;

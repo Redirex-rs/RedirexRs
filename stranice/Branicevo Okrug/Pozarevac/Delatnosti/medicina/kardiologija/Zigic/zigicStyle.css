@@ -440,6 +440,8 @@ background-color:rgba(12,64,118,1.00);
 /*============== Footer / Copyrights ==============*/
 
 .footer {
+margin-top: auto;
+
   background: rgb(78, 92, 121, 1);
   color: #fff;
   text-align: center;
