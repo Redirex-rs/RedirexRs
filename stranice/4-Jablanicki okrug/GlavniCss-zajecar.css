@@ -1,7 +1,19 @@
 @charset "utf-8";
+.dropdown-content li:hover {
+	background-color: rgba(18,97,179,1.00)
+}
 /* CSS Document */
 
-      .button {
+      .footer {
+  
+  width: 100%;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+}
+
+.button {
         background-color: #4CAF50; /* Green */
         border: none;
         color: white;
@@ -36,8 +48,7 @@
 	font: normal;
 	color: white;
 	font-size: 2vh;
-	border: 0.3vw solid crimson;
-	border-color: black;
+	
 	
 }  
 
@@ -135,7 +146,7 @@
         
         display: grid;
         grid-template-columns: 48% 48% ;
-        column-gap: 4%;
+        column-gap: 2%;
         padding-bottom: 5%;
         overflow: hidden;
         margin-left: 5%;
@@ -145,7 +156,11 @@
 		margin-bottom: 3vh;
       }
 
-           .grid-container2 {
+           .grid-container > a {
+	box-shadow: 8px 8px 10px grey
+}
+
+         .grid-container2 {
         display: grid;
         grid-template-columns: 30% 30% 30% ;
         column-gap: 2%;
@@ -351,6 +366,8 @@ height: 100%;
       textarea { height: 25vh; resize: none; }
       
       .dropdown-content {
+background-color:rgba(12,64,118,1.00);
+  
         margin-top: 4vh;
         max-height: 40vh;
         max-width: 100%;
@@ -366,7 +383,7 @@ height: 100%;
 }
 
 .footer {
-  position: absolute;
+  
   width: 100%;
   background: #000;
   color: #fff;

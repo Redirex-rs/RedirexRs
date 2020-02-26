@@ -1,8 +1,20 @@
 @charset "utf-8";
+.dropdown-content li:hover {
+	background-color: rgba(18,97,179,1.00)
+}
+
 /* CSS Document */
 
 * {
-	box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+body {
+	min-height: 100%;
+	
 }
 
 .btn-index{
@@ -10,8 +22,7 @@
 	font: normal;
 	color: white;
 	font-size: 2vh;
-	border: 0.3vw solid crimson;
-	border-color: black;
+	
 	
 }  
 
@@ -28,7 +39,16 @@
 
 
 
-      .button {
+      .footer {
+  
+  width: 100%;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+}
+
+.button {
         background-color: #4CAF50; /* Green */
         border: none;
         color: white;
@@ -117,14 +137,21 @@
         
         display: grid;
         grid-template-columns: 48% 48% ;
-        column-gap: 4%;
+        column-gap: 2%;
         overflow: hidden;
         margin-left: 5%;
 		margin-right: 5%;	   
 		grid-row-gap: 4vh;
         z-index: -2;
 		margin-bottom: 3vh;
+			  justify-content: center;
       }
+
+.grid-container > a {
+	box-shadow: 8px 8px 10px grey
+}
+
+         
 
          .grid-container2 {
         display: grid;
@@ -379,10 +406,16 @@ div.card {
       textarea { height: 25vh; resize: none; }
       
       .dropdown-content {
+background-color:rgba(12,64,118,1.00);
+  
         margin-top: 4vh;
         max-height: 40vh;
         max-width: 100%;
+		background-color:rgba(12,64,118,1.00); 
       }
+
+
+
 
 .nav-wrapper{
 	position: fixed;
@@ -391,7 +424,7 @@ div.card {
 }
 
 .footer {
-  position: absolute;
+  
   width: 100%;
   background: #000;
   color: #fff;
@@ -429,12 +462,13 @@ p1{
 }
 
 .footer {
-  position: absolute;
+  
   width: 100%;
   background: #000;
   color: #fff;
   text-align: center;
   padding: 1em;
+  
 }
 
         
