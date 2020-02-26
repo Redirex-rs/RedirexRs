@@ -36,6 +36,11 @@ body {
 }
 }
 
+@media (min-width: 768px) {
+	.grid-container2  {
+	font-size: 2em;
+}
+}
 
 
 
