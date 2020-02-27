@@ -142,10 +142,19 @@
 	font-size: 1.7rem;
 	vertical-align: middle;
 	line-height: 4rem;
-	padding-left: 1%;
+	
+	height: 2.5em;
 }
+
+.grid-container3 > a > img {
+		
+		height: 100%;
+		width: 100%;
+		align-content: right;
+	}
+
 .grid-container3 > a {
-	box-shadow: 10px 10px 10px grey
+	box-shadow: 5px 5px 3px grey
 }
 
 
@@ -165,22 +174,24 @@
 	.grid-container3 > a {
 	font-size: 2em;
 	text-align:left;
-	align-content: middle;
+	height: 2.3em;
 		
 }
 	.grid-container3 > a > img {
 		
-		padding-right: 1%;
-		
+		height: 100%;
+		width: inherit;
 		
 	}
 	
-	
+	.grid-container3 > a > text {
+		vertical-align: middle
+	}
 }
        
      body {
         width:auto;          
-        
+        background-color: rgba(251,250,254,1.00);
 		 overflow:scroll;
         
           } 

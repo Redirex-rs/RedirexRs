@@ -13,6 +13,7 @@
 }
 
 body {
+background-color: rgba(251,250,254,1.00);
 	min-height: 100%;
 	
 }
@@ -30,10 +31,37 @@ body {
 	font-size: 1em;
 }
 
+.grid-container > a > div  {
+		text-align: center;
+		height: 100%;
+	    vertical-align: middle;
+		line-height: 3em;
+}
+
 @media (min-width: 768px) {
 	.grid-container > a {
 	font-size: 2em;
+		
 }
+	.grid-container > a > div  {
+		text-align: center;
+		height: 100%;
+	    vertical-align: middle;
+		line-height: 3em;
+}
+
+@media (min-width: 768px) {
+	.grid-container > a > div > text {
+		vertical-align: middle
+	}
+	
+}
+
+.grid-container > a > div  {
+		text-align: center;
+		height: 100%;
+	    vertical-align: middle;
+		line-height: 3em;
 }
 
 @media (min-width: 768px) {
@@ -42,7 +70,9 @@ body {
 }
 }
 
-
+.grid-container a {
+	justify-content: center center
+}
 
       .footer {
   margin-top: auto;
@@ -211,6 +241,13 @@ div.card {
 	}
 }
 
+.grid-container > a > div  {
+		text-align: center;
+		height: 100%;
+	    vertical-align: middle;
+		line-height: 3em;
+}
+
 @media (min-width: 768px) {
 .flex-container3 {
 	    
@@ -363,6 +400,13 @@ div.card {
 	font-size: 1em;
 }
 
+.grid-container > a > div  {
+		text-align: center;
+		height: 100%;
+	    vertical-align: middle;
+		line-height: 3em;
+}
+
 @media (min-width: 768px) {
 	.grid-container > a {
 	font-size: 2em;
@@ -446,7 +490,12 @@ p{
 
 p1{
 	font-size: 1.3em;
+	text-align: center
 }
+	
+	.card-image{
+		color: gray
+	}
 
 .nav-wrapper > span > i {
 	font-size: 1rem;

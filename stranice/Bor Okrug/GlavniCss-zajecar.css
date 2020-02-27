@@ -152,6 +152,7 @@ margin-top: auto;
       }
        
             body {
+background-color: rgba(251,250,254,1.00);
 
    
           z-index: -1;
@@ -293,6 +294,13 @@ margin-top: auto;
       
       .grid-container > a {
 	font-size: 1em;
+}
+
+.grid-container > a > div  {
+		text-align: center;
+		height: 100%;
+	    vertical-align: middle;
+		line-height: 3em;
 }
 
 @media (min-width: 768px) {
