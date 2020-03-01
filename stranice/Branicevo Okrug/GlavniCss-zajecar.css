@@ -50,11 +50,7 @@ background-color: rgba(251,250,254,1.00);
 		line-height: 3em;
 }
 
-@media (min-width: 768px) {
-	.grid-container > a > div > text {
-		vertical-align: middle
-	}
-	
+
 }
 
 .grid-container > a > div  {

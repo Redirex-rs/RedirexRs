@@ -1,4 +1,4 @@
-@charset "utf-8";
+d@charset "utf-8";
 /* CSS Document */
 
 .dropdown-sadrzaj{
@@ -123,7 +123,7 @@
         
       }
 
-.grid-container3 {
+.flex-container3 {
 	
 	display: grid;
     text-align: left;
@@ -137,7 +137,7 @@
 	overflow: visible;
 }
 
-.grid-container3 > a {
+.flex-container3 > a {
 	text-align: left;
 	font-size: 1.7rem;
 	vertical-align: middle;
@@ -146,20 +146,20 @@
 	height: 2.5em;
 }
 
-.grid-container3 > a > img {
+.flex-container3 > a > img {
 		
 		height: 100%;
 		width: 100%;
 		align-content: right;
 	}
 
-.grid-container3 > a {
+.flex-container3 > a {
 	box-shadow: 5px 5px 3px grey
 }
 
 
 @media (min-width: 768px) {
-.grid-container3 {
+.flex-container3 {
 	
         display: grid;
         grid-template-columns: 45% 45% ;	   
@@ -171,20 +171,20 @@
 	}
 
 	
-	.grid-container3 > a {
+	.flex-container3 > a {
 	font-size: 2em;
 	text-align:left;
 	height: 2.3em;
 		
 }
-	.grid-container3 > a > img {
+	.flex-container3 > a > img {
 		
 		height: 100%;
 		width: inherit;
 		
 	}
 	
-	.grid-container3 > a > text {
+	.flex-container3 > a > text {
 		vertical-align: middle
 	}
 }

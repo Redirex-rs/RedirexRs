@@ -23,6 +23,7 @@
 
   <script src="GlavniCss.css"></script>
   <link rel="stylesheet" href="GlavniCss.css" class="">
+  <link rel="stylesheet" href="css/dropdownw3.css">
   
  <style> 
 	 
@@ -223,7 +224,7 @@ h9 {
 
 <br>
  
- <div class="grid-container3" style="margin-bottom: 4em">
+ <div class="flex-container3" style="margin-bottom: 4em">
  	 
          
           
@@ -232,7 +233,8 @@ h9 {
             <img  align="right" src="stranice/Bor Okrug/Bor/Veliki_grb_Bora.png" alt="" style="width:6rem;"> 
            
        </a>
-            
+        
+ 
        <a class="btn-index-mob center" href="stranice/Branicevo Okrug/index-branicevo.html" style=" color: white">Braničevski okrug
           
            <img  align="right" src="stranice/Branicevo Okrug/Pozarevac/800px-Grb_pozarevca.svg.png" alt="" style="width:4rem;">
@@ -446,6 +448,7 @@ h9 {
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> 
 <!--JavaScript at end of body for optimized loading--> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+<script src="JSS/dropdownw3.js"></script>
 <script src="scrypts.js"></script> 
 <script src="GlavniCss.css"></script>
 <script src="../pushpin.js"></script> 
@@ -458,6 +461,8 @@ h9 {
 	  
     });
   });
+	
+	
 			</script>
   
 <script> document.addEventListener('DOMContentLoaded', function() {
@@ -500,7 +505,9 @@ function closeNav() {  document.getElementById("myNav").style.width = "0%";
 	
 $('.dropdown-trigger').dropdown();
 	
-	
+$(document).ready(function(){
+    $('.collapsible').collapsible();
+  });	
 	
 	</script>
 
