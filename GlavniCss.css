@@ -1,4 +1,4 @@
-d@charset "utf-8";
+@charset "utf-8";
 /* CSS Document */
 
 .dropdown-sadrzaj{
@@ -167,7 +167,7 @@ d@charset "utf-8";
         justify-content: center;
 	    column-gap: 5%;
 		padding-bottom: 3em;
-			 
+		 
 	}
 
 	
