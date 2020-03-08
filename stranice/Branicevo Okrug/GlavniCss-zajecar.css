@@ -275,11 +275,11 @@ div.card {
 }
 
 .flex-container4 > a {
-	text-align: left;
+	text-align: center;
 	font-size: 1.7rem;
 	vertical-align: middle;
 	line-height: 4rem;
-	
+	column-gap: 1em;
 	height: 2.5em;
 }
 
@@ -311,7 +311,7 @@ div.card {
 	font-size: 2em;
 	text-align:left;
 	height: 2.3em;
-	text-align: center;	
+	
 		
 }
 	.flex-container4 > a > img {
