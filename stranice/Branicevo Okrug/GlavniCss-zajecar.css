@@ -5,6 +5,12 @@
 
 /* CSS Document */
 
+.column {
+	height: 100%;
+	position:inherit;
+	justify-content: flex-end
+}
+
 * {
   margin: 0;
   border: 0;
@@ -199,11 +205,13 @@ background-color: rgba(251,250,254,1.00);
 
 .flex-container3 {
     text-align: left;
-    
+	
+	top:1em;
+    justify-content:space-around;
 	vertical-align: 2em;
 	overflow:hidden;
 	z-index: -4;
-	justify-content: center;
+	
 }
 
 .flex-container3 > a {
@@ -229,8 +237,8 @@ div.card {
 	  }	
 	
 	.flex-container3 > div{
-		padding: 1rem;
-		object-position: center;
+		
+		justify-content: flex-start;
 		width: 25em;
 		
 	}
@@ -256,6 +264,7 @@ div.card {
 		padding: 1rem;
 		object-position: center;
 		width: 28em;
+		
 	}
 	
 }
@@ -500,8 +509,8 @@ box-shadow: 25px 25px 20px;
         position: fixed;
         top:50%;
         left:50%;
-        transform: translate(-50%,-50%);
        -webkit-transform: translate(-50%,-50%);
+		 transform: translate(-50%,-50%); 
 		box-shadow: 25px 25px 20px;  
         
       }
@@ -550,7 +559,7 @@ p{
 }
 
 p1{
-	font-size: 1.3em;
+	
 	text-align: center
 }
 	
