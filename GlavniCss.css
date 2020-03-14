@@ -5,18 +5,68 @@
 	position: relative;
 }
 
-      .button {
-        background-color: #4CAF50; /* Green */
-        border: none;
-        color: white;
-        padding: 20px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-      }
+@media (max-width: 768px){
+	.carousel-item{
+	background-image: url(banneri/INDEX-banner1.jpg);
+	-webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size:auto;
+    height: 10em;		
+   	background-repeat: no-repeat;
+		
+}
+	.carousel-glavni{
+	border-style: solid;
+	border-color: red;
+	width: 90%;
+	height: 40%;
+	
+	
+}
+	
+	
+}
+
+@media (min-width: 768px) {
+.carousel-item{
+	background-image: url(banneri/INDEX-banner1.jpg);
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    
+	height: 40em;
+	object-fit: fill;
+	
+	justify-content: center;
+	align-items: center;
+}
+	.carousel-glavni{
+	
+	width: 70%;
+	height: 90%;
+	
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	margin-left: 15%
+}
+	.dropdown {
+		justify-content: center;
+		align-content: center;
+			
+	}
+	.brn{
+		margin-left: 20%
+	}
+}
+
+.container  a{
+	color: aliceblue;
+}
+
+      
       .button1 {
         border-radius: 2px;
       }
@@ -43,10 +93,7 @@
 	
 }  
       
-            .container {
-        position: relative;
-        width: 50%;
-      }
+            
       
       .image {
         display: block;
@@ -139,17 +186,17 @@
 
 .flex-container3 > a {
 	text-align: left;
-	font-size: 1.7rem;
-	vertical-align: middle;
-	line-height: 4rem;
+	font-size: 0.7rem;
 	
-	height: 2.5em;
+	;
+	
+	height: 0.5em;
 }
 
 .flex-container3 > a > img {
 		
-		height: 100%;
-		width: 100%;
+	height: 10%;
+		width: 10%;
 		align-content: right;
 	}
 
@@ -162,19 +209,22 @@
 .flex-container3 {
 	
         display: grid;
-        grid-template-columns: 45% 45% ;	   
+        grid-template-columns: 30% 30% 30% ;	   
 		grid-row-gap: 2%;
         justify-content: center;
 	    column-gap: 5%;
 		padding-bottom: 3em;
-		 
 	}
 
 	
 	.flex-container3 > a {
-	font-size: 2em;
+	font-size: 1.3em;
 	text-align:left;
 	height: 2.3em;
+	background: rgba(12,64,118,1.00);
+	 -webkit-box-shadow: 0px 0px 7px #4195fc;
+       -moz-box-shadow: 0px 0px 7px #4195fc;
+            box-shadow: 0px 0px 7px #4195fc; 	
 		
 }
 	.flex-container3 > a > img {
@@ -191,8 +241,8 @@
        
      body {
         width:auto;          
-        background-color: rgba(251,250,254,1.00);
-		 overflow:scroll;
+        background-image: url(pzoadinska.jpg);
+		overflow:scroll;
         
           } 
 
@@ -347,18 +397,7 @@ height: 100%;
       }
       textarea { height: 25vh; resize: none; }
       
-      .dropdown-content {
-        margin-top: 4vh;
-        max-height: 70vh;
-        max-width: 100%;
-		background-color: rgba(12,64,118,1.00);
-		text-color: white;
-		  
-      }
-
-.dropdown-content :hover{
-	background-color:  rgba(41,135,233,1.00);
-} 
+      
 
 .nav-wrapper {
         

@@ -6,13 +6,14 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 <!--Import materialize.css-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
 <script src="https://kit.fontawesome.com/3429f72bdb.js" crossorigin="anonymous"></script>
 <!--Let browser know website is optimized for mobile-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta https-equiv="X-UA-Compatible" content="IE=edge">
 <title>Redirex</title>
 <link rel="shortcut icon" href="favicon.ico" >
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -41,16 +42,18 @@
 	 
 	 #background-slika{
 		 background-size: contain;
-		 background-image: url(75354953_111627406958960_7611389103208136704_o.jpg);
+		 background-image: url(75354953_111627406958960_7611389103208136704_o.jp);
 		 background-repeat: no-repeat;
 	 }
 	 
 	 
 	 .opis {
-  border-top: 1px rgb(120, 120, 120, 0.8) solid;
-  border-bottom: 1px rgb(120, 120, 120, 0.8) solid;
-  background: #fff;
-  box-shadow: 2px 2px 10px #000;
+  color: aliceblue;
+  background:rgba(255,255,255,0.00);
+  		 
+ -webkit-box-shadow: 0px 0px 8px #fff;
+       -moz-box-shadow: 0px 0px 8px #fff;
+            box-shadow: 0px 0px 8px #fff;	 
   width: 95%;
   padding: 1.5rem;
   margin-bottom: 1rem;
@@ -114,95 +117,41 @@ h9 {
 
 		</head>
 
-		<body  id="math.min">
+		<body  id="math.min" style="background-image: url(banneri/pzoadinska.jpg)">
     
 <!--- <div class="content-glavni" style="margin-bottom: 3%;margin-left: 4%; margin-right: 4%; background-color: rgb(255, 255, 255);">	--->  
 <div id="background-slika">		
 
 
 	   <!-- Meni s leve strane vidljiv na dektop--->
+ <nav class="navbar navbar-expand-lg" style="background-color:rgba(12,64,118,1.00);">
+  <div class="container">
+  	 <a class="navbar-brand" href="#">Redirex</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
- 
-  
-     <nav class="nav-wrapper fixed" style="padding-left: 1%">
-    <ul id="nav-mobile" class="right" style="padding-right: 2%">
-      <!-- Dropdown Structure -->
-     
-     
-    
-   <!---   <li><a class="dropdown-trigger center hide-on-small-only" ref="#" data-target="dropdown1" style="width: 16vw">Upravni Okrug</a></li>
-        <ul id="dropdown1" class="dropdown-content">
-         
-          
-          <li><a href="stranice/Bor Okrug/index-bor.html" style="color: white">Borski okrug</a></li>
-            <li class="divider"></li>
-          <li><a href="stranice/Branicevo Okrug/index-branicevo.html" style="color: white">Braničevski okrug</a></li>
-            <li class="divider"></li>
-          <li><a href="stranice/28-Grad Beograd/index-beograd.html" style="color: white">Grad Beograd</a></li>
-            <li class="divider"></li>
-          <li><a href="stranice/1-Zajecar okrug/index-zajecar.html" style="color: white">Zaječarski okrug</a></li>
-            <li class="divider"></li>
-          <li><a href="stranice/2-Zapadnobacki okrug/index-zapadnobacki.html" style="color: white">Zapadnobački okrug</a></li>
-            <li class="divider"></li>
-          <li><a href="stranice/3-Zlatiborski okrug/index-zlatiborski.html" style="color: white">Zlatiborski okrug</a></li>
-            <li class="divider"></li>
-          <li><a href="stranice/4-Jablanicki okrug/index-jablanicki.html" style="color: white">Jablanički okrug</a></li>
-            <li class="divider"></li>
-          <li><a href="stranice/5-Juznobanatski okrug/index-juznobanatski.html" style="color: white">Južnobanatski okrug</a></li>
-            <li class="divider"></li>
-          <li><a href="stranice/6-Juznobacki okrug/index-juznobacki.html" style="color: white">Južnobački okrug</a></li>
-            <li class="divider"></li>
-          <li><a href="stranice/7-Kolubarski okrug/index-kolubarski.html" style="color: white">Kolubarski okrug</a></li>
-            <li class="divider"></li>
-          <li><a href="stranice/8-Kosovski okrug/index-kosovski.html" style="color: white">Kosovski okrug</a></li>
-            <li class="divider"></li>
-          <li><a href="stranice/9-Kosovsko-mitrovacki okrug/index-kosovskomitrovacki.html" style="color: white">Kosovsko-mitrovački okrug</a>
-          </li>
-            <li class="divider"></li>
-          <li><a href="stranice/10-Kosovsko-pomoravski okrug/index-kosovskopomoravski.html" style="color: white">Kosovsko-pomoravski okrug</a></li>
-            <li class="divider"></li>
-          <li><a href="stranice/11-Macvanski okrug/index-macvanski.html" style="color: white">Mačvanski okrug</a></li>
-            <li class="divider"></li>
-          <li><a href="stranice/12-Moravicki okrug/index-moravicki.html" style="color: white">Moravički okrug</a></li>
-            <li class="divider"></li>
-          <li><a href="stranice/13-Nisavski okrug/index-nisavski.html" style="color: white">Nišavski okrug</a></li>
-            <li class="divider"></li>
-          <li><a href="stranice/14-Pecki okrug/index-pecki.html" style="color: white">Pećki okrug</a></li>
-            <li class="divider"></li>
-          <li><a href="stranice/15-Pirotski okrug/index-pirotski.html" style="color: white">Pirotski okrug</a></li>
-            <li class="divider"></li>
-          <li><a href="stranice/16-Podunavski okrug/index-podunavski.html" style="color: white">Podunavski okrug</a></li>
-            <li class="divider"></li>
-          <li><a href="stranice/17-Pomoravski okrug/index-pomoravski.html" style="color: white">Pomoravski okrug</a></li>
-            <li class="divider"></li>
-          <li><a href="stranice/18-Prizrenski okrug/index-prizrenski.html" style="color: white">Prizrenski okrug</a></li>
-            <li class="divider"></li>
-          <li><a href="stranice/19-Pcinjski okrug/index-pcinjski.html" style="color: white">Pčinjski okrug</a></li>
-            <li class="divider"></li>
-          <li><a href="stranice/20-Rasinski okrug/index-rasinski.html" style="color: white">Rasinski okrug</a></li>
-            <li class="divider"></li>
-          <li><a href="stranice/21-Raski okrug/index-raski.html" style="color: white">Raški okrug</a></li>
-            <li class="divider"></li>
-          <li><a href="stranice/22-Severnobanatski okrug/index-severnobanatski.html" style="color: white">Severnobanatski okrug</a></li>
-            <li class="divider"></li>
-          <li><a href="stranice/23-Severnobacki okrug/index-severnobacki.html" style="color: white">Severnobački okrug</a></li>
-            <li class="divider"></li>
-          <li><a href="stranice/24-Srednjobanatski okrug/index-srednjobanatski.html" style="color: white">Srednjobanatski okrug</a></li>
-            <li class="divider"></li>
-          <li><a href="stranice/25-Sremski okrug/index-sremski.html" style="color: white">Sremski okrug</a></li>
-            <li class="divider"></li>
-          <li><a href="stranice/26-Toplicki okrug/index-toplicki.html" style="color: white">Toplički okrug</a></li>
-            <li class="divider"></li>
-          <li><a href="stranice/27-Sumadijski okrug/index-sumadijski.html" style="color: white">Šumadijski okrug</a></li>
-          
-        </ul>
-       --->
-      <li><a href="Mobilni-okruzi.html">Okrug</a></li> 
-      <li><a href="#" id="contact">Kontakt</a></li>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      
       
     </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+  </div>
+</nav> 
+ 
   
-</nav>
+    
 		<!-- kontakt forma-->	
 <form action="" method="post" enctype="text/plain">			
 			<div id="contactForm">
@@ -254,16 +203,250 @@ h9 {
 
 	   
 
-<!-- Action dugme--->
-
+<!-- Carousel--->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner" data-interval="false">
+   
+    <div class="carousel-item">
+     
+      <img src="banneri/INDEX-banner1.jp" class="d-block w-100" alt="..." >
+      <div class="carousel-glavni">
+      	
+       	<div class="flex-container3" style="margin-bottom: 4em">
+ 	 
+         
+          
+       <a class="btn-index-mob center" href="stranice/Bor Okrug/index-bor.html" style=" color: white">Borski okrug 
+           
+            <img  align="right" src="stranice/Bor Okrug/Bor/Veliki_grb_Bora.png" alt="" style=""> 
+           
+       </a>
+        
+ 
+       <a class="btn-index-mob center" href="stranice/Branicevo Okrug/index-branicevo.html" style=" color: white">Braničevski okrug
+          
+           <img  align="right" src="stranice/Branicevo Okrug/Pozarevac/800px-Grb_pozarevca.svg.png" alt="" >
+           
+       </a>
+            
+       <a class="btn-index-mob center" href="stranice/28-Grad Beograd/index-beograd.html" style="color: white">Grad Beograd
+           
+           <img class="background" align="right" src="stranice/28-Grad Beograd/1024px-Flag_of_Belgrade,_Serbia.svg.png" alt="" >
+           
+       </a>
+            
+          
+       <a class="btn-index-mob center" href="stranice/1-Zajecar okrug/index-zajecar.html" style="color: white">Zaječarski okrug
+        
+         <img  align="right" src="stranice/1-Zajecar okrug/Zajecar/COA_zajecar.png" alt="" >
+         
+       </a>
+          
+            
+       <a class="btn-index-mob center" href="stranice/2-Zapadnobacki okrug/index-zapadnobacki.html" style="color: white">Zapadnobački okrug
+       
+          <img  align="right" src="stranice/2-Zapadnobacki okrug/COA_Sombor.png" alt="">
+       
+       </a>
+           
+       <a class="btn-index-mob center" href="stranice/3-Zlatiborski okrug/index-zlatiborski.html" style="color: white">Zlatiborski okrug
+         
+          <img  align="right" src="stranice/3-Zlatiborski okrug/Uzice/Uzice_COA_small.gif" alt="" >
+          
+       </a>
+           
+          
+       <a class="btn-index-mob center" href="stranice/4-Jablanicki okrug/index-jablanicki.html" style="color: white">Jablanički okrug
+          
+          <img  align="right" src="stranice/4-Jablanicki okrug/Leskovac/Leskovac-grb-srednji.png" alt="" > 
+          
+       </a>
+          
+            
+       <a class="btn-index-mob center" href="stranice/5-Juznobanatski okrug/index-juznobanatski.html" style="color: white">Južnobanatski okrug
+          
+          <img  align="right" src="stranice/5-Juznobanatski okrug/Pancevo/Pancevo-coat_of_arms.png" alt="" >
+          
+       </a>
+           
+          
+       <a class="btn-index-mob center" href="stranice/6-Juznobacki okrug/index-juznobacki.html" style="color: white">Južnobački okrug
+          
+          <img  align="right" src="stranice/6-Juznobacki okrug/Novi sad/800px-Novi_Sad_Coat_of_Arms.svg.png" alt="" >
+          
+       </a>
+          
+            
+          <a class="btn-index-mob center" href="stranice/7-Kolubarski okrug/index-kolubarski.html" style="color: white">Kolubarski okrug
+          
+          <img  align="right" src="stranice/7-Kolubarski okrug/Valjevo/COA_Valjevo.gif" alt="" >
+          
+       </a>
+           
+       <a class="btn-index-mob center" href="stranice/8-Kosovski okrug/index-kosovski.html" style="color: white">Kosovski okrug
+         
+          
+         
+       </a>
+           
+       <a class="btn-index-mob center" href="stranice/9-Kosovsko-mitrovacki okrug/index-kosovskomitrovacki.html" style="color: white">Kos-mitrovački okrug
+          
+          
+          
+       </a>
+          
+            
+       <a class="btn-index-mob center" href="stranice/10-Kosovsko-pomoravski okrug/index-kosovskopomoravski.html" style="color: white">Kos-pomoravski okrug
+           
+           
+           
+       </a>
+            
+       <a class="btn-index-mob center" href="stranice/11-Macvanski okrug/index-macvanski.html" style="color: white">Mačvanski okrug
+           
+           <img  align="right" src="stranice/11-Macvanski okrug/Sabac/COA_Šabac_(big).png" alt="" >
+           
+       </a>
+            
+       <a class="btn-index-mob center" href="stranice/12-Moravicki okrug/index-moravicki.html" style="color: white">Moravički okrug
+       
+           <img  align="right" src="stranice/12-Moravicki okrug/Cacak/Čačak_-_grb.png" alt="" >
+       
+       </a>
+           
+             
+       <a class="btn-index-mob center" href="stranice/13-Nisavski okrug/index-nisavski.html" style="color: white">Nišavski okrug
+           
+           <img  align="right" src="stranice/13-Nisavski okrug/Nis/Nis_Coat_of_Arms.png" alt="" >
+           
+       </a>
+            
+       <a class="btn-index-mob center" href="stranice/14-Pecki okrug/index-pecki.html" style="color: white">Pećki okrug
+       
+           
+             
+       </a>
+           
+             
+       <a class="btn-index-mob center" href="stranice/15-Pirotski okrug/index-pirotski.html" style="color: white">Pirotski okrug
+          
+            <img  align="right" src="stranice/15-Pirotski okrug/Pirot/Blason_de_Pirot.png" alt="" > 
+           
+       </a>
+            
+       <a class="btn-index-mob center" href="stranice/16-Podunavski okrug/index-podunavski.html" style="color: white">Podunavski okrug
+         
+            <img  align="right" src="stranice/16-Podunavski okrug/Smederevo/Smederevo_coat_of_arms.gif" alt="" > 
+          
+       </a>
+           
+             
+       <a class="btn-index-mob center" href="stranice/17-Pomoravski okrug/index-pomoravski.html" style="color: white">Pomoravski okrug
+         
+            <img  align="right" src="stranice/17-Pomoravski okrug/Jagodina/Grb_opstine_Jagodina.png" alt="" > 
+          
+       </a>
+            
+       <a class="btn-index-mob center" href="stranice/18-Prizrenski okrug/index-prizrenski.html" style="color: white">Prizrenski okrug
+          
+            
+           
+       </a>
+            
+       <a class="btn-index-mob center" href="stranice/19-Pcinjski okrug/index-pcinjski.html" style="color: white">Pčinjski okrug
+          
+            <img  align="right" src="stranice/19-Pcinjski okrug/Vranje/800px-Veliki_grb-vranja.png" alt="" > 
+           
+       </a>
+            
+       <a class="btn-index-mob center" href="stranice/20-Rasinski okrug/index-rasinski.html" style="color: white">Rasinski okrug
+         
+            <img  align="right" src="stranice/20-Rasinski okrug/Krusevac/Grb_ks.png" alt="" > 
+         
+       </a>
+           
+       <a class="btn-index-mob center" href="stranice/21-Raski okrug/index-raski.html" style="color: white">Raški okrug
+        
+            <img  align="right" src="stranice/21-Raski okrug/Kraljevo/Coat_of_arms_of_Kraljevo.png" alt="" > 
+         
+       </a>
+           
+       <a class="btn-index-mob center" href="stranice/22-Severnobanatski okrug/index-severnobanatski.html" style="color: white">Severnobanatski okrug
+        
+            <img  align="right" src="stranice/22-Severnobanatski okrug/Kikinda/Wappen_Kikinda.png" alt="" > 
+         
+       </a>
+           
+       <a class="btn-index-mob center" href="stranice/23-Severnobacki okrug/index-severnobacki.html" style="color: white">Severnobački okrug
+     
+            <img  align="right" src="stranice/23-Severnobacki okrug/Subotica/Grb_subotice.png" alt="" > 
+            
+       </a>
+           
+       <a class="btn-index-mob center" href="stranice/24-Srednjobanatski okrug/index-srednjobanatski.html" style="color: white">Srednjobanatski okrug
+        
+            <img  align="right" src="stranice/24-Srednjobanatski okrug/Zrenjanin/Coat_of_Arms_of_Zrenjanin.png" alt="" > 
+         
+       </a>
+           
+       <a class="btn-index-mob center" href="stranice/25-Sremski okrug/index-sremski.html" style="color: white">Sremski okrug
+         
+            <img  align="right" src="stranice/25-Sremski okrug/Sremska mitrovica/1200px-Grb_sremska_mitrovica.svg.png" alt="" > 
+         
+       </a>
+           
+       <a class="btn-index-mob center" href="stranice/26-Toplicki okrug/index-toplicki.html" style="color: white">Toplički okrug
+        
+            <img  align="right" src="stranice/26-Toplicki okrug/Prokuplje/COA_Prokuplje.png" alt="" > 
+         
+       </a>
+           
+       <a class="btn-index-mob center" href="stranice/27-Sumadijski okrug/index-sumadijski.html" style="color: white">Šumadijski okrug
+       
+            <img  align="right" src="stranice/27-Sumadijski okrug/Kragujevac/Grb-Kragujevac.png" alt="" > 
+         
+       </a>
+          
+       
+ </div>
+      
+     </div>
+    </div>
+    
+    <div class="carousel-item active" >
+      <img src="banneri/INDEX-banner1.jp" class="d-block w-100" alt="..." >
+        
+    </div>
+    
+    <div class="carousel-item">
+     
+      <img src="banneri/INDEX-banner1.jp" class="d-block w-100" alt="..." >
+      
+    </div>
+    
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>OKRUZI
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">OPSTINE
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 
 
 <!-- vidljivo na dektop---> 
 
       
       <br>
- <div class="opis" style="margin-top: 25%; margin-left: 2%">
- 	<p>
+  <div class="opis" style="margin-top: %; margin-left: 2%">
+ 	
  		<h3>Dobrodošli na Redirex.rs</h3><br>
         Ukratko o strukturi web-stranice: <br><br>
         <u>-Glavna stranica:</u> ovde se nalaze važna obaveštenja sto se tiču samog sajta, kao i informacije svakog ažuriranja. <br><br>
@@ -281,7 +464,7 @@ h9 {
  		
 
  		
- 	</p>
+ 	
  	
  	
  </div>
@@ -309,6 +492,9 @@ h9 {
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> 
 <!--JavaScript at end of body for optimized loading--> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <script src="scrypts.js"></script> 
 <script src="GlavniCss.css"></script>
 
@@ -345,6 +531,7 @@ function openNav() {
 function closeNav() {  document.getElementById("myNav").style.width = "0%";
 }; 
 	</script>
+	
 <script>
 	$(function() {
   
@@ -367,6 +554,12 @@ function closeNav() {  document.getElementById("myNav").style.width = "0%";
 $('.dropdown-trigger').dropdown();
 	
 	
+	$('.carousel').carousel({
+    interval: false,
+	wrap: false	
+}); 
+	
+	 
 	
 	</script>
 
