@@ -169,7 +169,11 @@
         padding-left: 10%;
         
       }
-
+@media (max-width: 1208px) {
+	.flex-container3{
+		visibility: hidden
+	}	
+}
 .flex-container3 {
 	
 	display: grid;
@@ -187,8 +191,6 @@
 .flex-container3 > a {
 	text-align: left;
 	font-size: 0.7rem;
-	
-	;
 	
 	height: 0.5em;
 }
