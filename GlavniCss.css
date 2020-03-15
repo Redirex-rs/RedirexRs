@@ -55,6 +55,12 @@
 }
 
 @media (min-width: 768px) {
+	.mobilni-dugme{
+		display: none;
+		
+			
+	}
+	
 .carousel-item{ 
 	background-image: url(banneri/INDEX-banner1.jpg);
 	-webkit-background-size: cover;
@@ -257,6 +263,9 @@
 	vertical-align: 2em;
 	padding-bottom: 2em;
 	overflow: visible;
+	
+	border-style: groove;
+	border-color: red
 }
 
 .flex-container3 > a {
