@@ -246,7 +246,7 @@
         padding-left: 10%;
         
       }
-@media (max-width: 1208px) {
+@media (max-width: 1060px) {
 	.flex-container3{
 		visibility: hidden
 	}	
@@ -269,7 +269,7 @@
 
 .flex-container3 > a {
 	text-align: left;
-	font-size: 0.7rem;
+	font-size: 0.5rem;
 	
 	height: 0.5em;
 }
@@ -299,7 +299,7 @@
 
 	
 	.flex-container3 > a {
-	font-size: 1.3em;
+	font-size: 1.15em;
 	text-align:left;
 	height: 2.3em;
 	background: rgba(12,64,118,1.00);
