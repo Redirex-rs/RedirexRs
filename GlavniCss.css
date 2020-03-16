@@ -246,7 +246,7 @@
         padding-left: 10%;
         
       }
-@media (max-width: 1060px) {
+@media (max-width: 1000px) {
 	.flex-container3{
 		visibility: hidden
 	}	
