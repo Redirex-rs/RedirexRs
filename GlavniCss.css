@@ -96,7 +96,7 @@
 
 .container  a{
 	color: aliceblue;
-}
+	}
 
 
 
@@ -104,8 +104,10 @@
 
       
       .button {
-        border: 1px solid;
-		 border-color: aqua
+        background: rgba(255,255,255,0.00);
+  
+  
+  border: 1px solid aqua;
       }
       .button2 {
         border-radius: 4px;
