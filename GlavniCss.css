@@ -30,6 +30,11 @@
 	
 }
 	
+	.full-image{
+		border: 1px solid;
+		border-color: black;
+	}
+	
 	.btn {
  background: rgba(255,255,255,0.00);
   
