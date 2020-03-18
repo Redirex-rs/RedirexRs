@@ -32,8 +32,8 @@
 	
 	.btn {
  background: rgba(255,255,255,0.00);
-  padding: 5px 10px;
-  border-radius: 2px;
+  
+  
   border: 1px solid aqua;
 }
 	
@@ -41,6 +41,7 @@
 
 .btn:hover {
   cursor: url(http://cur.cursors-4u.net/symbols/sym-1/sym46.cur), auto;
+  background: rgba(255,255,255,1);	 
 }
 .blue {
   color: #55acee;
@@ -102,8 +103,9 @@
 
 
       
-      .button1 {
-        border-radius: 2px;
+      .button {
+        border: 1px solid;
+		 border-color: aqua
       }
       .button2 {
         border-radius: 4px;
@@ -120,13 +122,7 @@
         border-radius: 99%;
       }
      
-.btn{
-	
-	
-	text-align: center center;
-		  
-	
-}  
+
       
             
       
@@ -469,7 +465,7 @@ height: 100%;
         font-size: inherit;
         
         display: block; 
-        width: 40vw; 
+        width: 100%; 
         padding: .4em;
       }
       textarea { height: 25vh; resize: none; }

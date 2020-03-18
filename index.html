@@ -12,6 +12,7 @@
 <!--Let browser know website is optimized for mobile-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta https-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Content-Security-Policy" content="frame-src 'self' *.http://127.0.0.1:57239/preview/app/index.html;">
 <title>Redirex</title>
 <link rel="shortcut icon" href="favicon.ico" >
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
@@ -133,7 +134,7 @@ h9 {
 	   <!-- Meni s leve strane vidljiv na dektop--->
  <nav class="navbar navbar-expand-lg" style="background-color:rgba(12,64,118,1.00);">
   <div class="container">
-  	 <a class="navbar-brand" href="#">Redirex</a>
+  	 <a class="navbar-brand" style="text-align: left" href="#"><strong><h3>Redirex</h3></strong></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -141,18 +142,18 @@ h9 {
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#"><span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" id="contact">Link</a>
+        
       </li>
       
       
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">KONTAKT</button>
+    
+  
+
   </div>
   </div>
 </nav> 
@@ -187,6 +188,44 @@ h9 {
   </div>
 </div>
 	</form>		
+		
+	<!-- Modal -->
+	
+	
+	
+
+<form id="gform" method="post" action="https://script.google.com/macros/s/AKfycbxJmQKWegIdhH2hb_12hKraiWfNbkw0J8ainENbSg/exec">
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" >
+      <div class="modal-header">
+        
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <div class="form-group"> 
+        <label for="fname">Ime/e-mail</label><br>
+  <input type="text" id="name" name="fname" value="John">
+       </div>
+      <div class="form-group">  
+  <label for="lname">Tekst</label><br>
+  <textarea type="text" id="message" name="lname" value="Tekst"></textarea>
+  <input type="submit" value="Submit">
+          
+      </div>    
+        
+      </div>
+      
+    </div>
+  </div>
+</div>
+	</form> 
+	
+		
+
+		
 		
 	
 
@@ -570,6 +609,17 @@ $('.dropdown-trigger').dropdown();
 	wrap: false	
 }); 
 	
+	 //Modal za slanje emaila
+	
+	$('#exampleModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  var recipient = button.data('whatever') // Extract info from data-* attributes
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this)
+  modal.find('.modal-title').text('New message to ' + nightmane9@gmail.com)
+  modal.find('.modal-body input').val(nightmane9@gmail.com)
+})
 	 
 	
 	</script>
