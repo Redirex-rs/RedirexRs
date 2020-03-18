@@ -4,6 +4,11 @@
 }
 /* CSS Document */
 
+.btn-index:hover{
+	border: 2.5px solid;
+	border-color: aqua;
+}
+
 
 
  .btn-index{

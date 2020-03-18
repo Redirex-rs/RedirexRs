@@ -4,8 +4,13 @@
 }
 /* CSS Document */
 
+.btn-index:hover{
+	border: 2.5px solid;
+	border-color: aqua;
+}
+
       .footer {
-margin-top: auto;
+
 
   
   width: 100%;
@@ -13,6 +18,8 @@ margin-top: auto;
   color: #fff;
   text-align: center;
   padding: 1em;
+		  
+		  
 }
 
 .button {
@@ -166,6 +173,11 @@ margin-top: auto;
       }
        
             body {
+background: url(../../banneri/background-okrug.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 background-color: rgba(251,250,254,1.00);
 
    

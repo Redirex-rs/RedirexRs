@@ -5,10 +5,24 @@
 
 /* CSS Document */
 
+
+
 .column {
 	height: 100%;
 	position:inherit;
-	justify-content: flex-end
+	justify-content: flex-end;
+}
+
+.column:hover{
+	
+	border-style: 1px solid;
+	border-color: aqua;
+}
+
+
+.card:hover{
+	cursor: url(http://cur.cursors-4u.net/symbols/sym-1/sym46.cur), auto;
+	
 }
 
 * {
@@ -24,6 +38,7 @@ background: url(../../banneri/background-okrug.jpg) no-repeat center center fixe
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
 	
 }
 
@@ -34,8 +49,12 @@ background: url(../../banneri/background-okrug.jpg) no-repeat center center fixe
 	font-size: 2vh;
 	border-style: solid;
 	border-color: aliceblue;
-	
 }  
+
+.btn-index:hover{
+	border: 2.5px solid;
+	border-color: aqua;
+}
 
 .grid-container > a {
 	font-size: 1em;
