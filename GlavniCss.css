@@ -231,20 +231,19 @@
 	
 	display: grid;
     text-align: left;
-    column-gap: 10%;
+    column-gap: 5%;
     margin-left: 2%;
 	margin-right: 1%;	   
 	grid-row-gap: 0.7%;
     font-size: 1em;
-	vertical-align: 2em;
-	padding-bottom: 2em;
+	
 	overflow: visible;
 }
 
 .flex-container3 > a {
 	text-align: left;
 	font-size: 0.5rem;
-	height: 0.5em;
+	height: 2.5em!important;
 }
 
 .flex-container3 > a > img {
@@ -253,9 +252,7 @@
 	align-content: right;
 }
 
-.flex-container3 > a {
-	box-shadow: 5px 5px 3px grey
-}
+
 
 
 @media (min-width: 768px) {
