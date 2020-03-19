@@ -6,13 +6,17 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 <!--Import materialize.css-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
 <script src="https://kit.fontawesome.com/3429f72bdb.js" crossorigin="anonymous"></script>
 <!--Let browser know website is optimized for mobile-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta https-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Content-Security-Policy" content="frame-src 'self' *.http://127.0.0.1:57239/preview/app/index.html;">
 <title>Redirex</title>
 <link rel="shortcut icon" href="favicon.ico" >
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
+
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -23,50 +27,59 @@
 
   <script src="GlavniCss.css"></script>
   <link rel="stylesheet" href="GlavniCss.css" class="">
-  <link rel="stylesheet" href="css/dropdownw3.css">
+  
   
  <style> 
 	 
 	 
 	 
+
 	 
 	 .btn-index-mob{
-	background-color: rgba(12,64,118,1.00);
+	background-color: rgba(12,64,118,0.70);
 	font-family: Gotham, Helvetica Neue, Helvetica, Arial," sans-serif";
 	color: white;
 	font-size: 0.5rem;
-} 
+	border: solid;
+	border-color: aqua;
+		 display: flex;
+   align-items: center;
+   justify-content: space-between;
 	 
-	
+		 
+} 
+	 .btn-index-mob text{
+		 background-color: rgba(12,64,118,0.50);
+		 
+  vertical-align: middle;
+	 }
+	 
+ 
+	 
 	 
 	.footer {
   background: #000;
   color: #fff;
   text-align: center;
   padding: 1em;
-  position: absolute;
-  width: 100%;		
-
 }
 	 
 	 p{
 		 font-size: 1.5vw;
 	 }
 	 
-	 p1{
-		 font-size: 3.5vw;
-	 }
+	
 	 
-	 p2{
-		 font-size: 4vw;
-	 }
+	 
 	 .opis {
-  border-top: 1px rgb(120, 120, 120, 0.8) solid;
-  border-bottom: 1px rgb(120, 120, 120, 0.8) solid;
-  background: #fff;
-  box-shadow: 2px 2px 10px #000;
+  color: aliceblue;
+  background:rgba(255,255,255,0.00);
+  		 
+ -webkit-box-shadow: 0px 0px 8px aqua;
+       -moz-box-shadow: 0px 0px 8px aqua;
+            box-shadow: 0px 0px 8px aqua;	 
   width: 95%;
-  padding: 1vw;
+  padding: 1.5rem;
   margin-bottom: 1rem;
 }
 	 
@@ -128,308 +141,271 @@ h9 {
 
 		</head>
 
-		<body  id="math.min" style="background-image: url(banneri/background-okrug.jpg)">
+		<body  id="math.min" style="background-image: url(banneri/pzoadinska.jpg)">
     
 <!--- <div class="content-glavni" style="margin-bottom: 3%;margin-left: 4%; margin-right: 4%; background-color: rgb(255, 255, 255);">	--->  
 <div id="background-slika">		
 
 
 	   <!-- Meni s leve strane vidljiv na dektop--->
+<nav class="navbar navbar-expand-lg" style="background-color:rgba(12,64,118,1.00);">
+  <div class="container">
+  	 <a class="navbar-brand" style="text-align: left" href="#"><strong><h3>Redirex</h3></strong></a>
+  <button class="navbar-toggler" type="button" data-toggle="#" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
- 
-  
-     <nav class="nav-wrapper sticky" style="padding-left: 1%;"> <span onclick="openNav()" style="width:2vw;"> <i class="fas fa-bars" style="padding-left: 2%"></i></span>
-    <ul id="nav-mobile" class="right" style="padding-right: 2%">
-      <!-- Dropdown Structure -->
-     
-     
-    
-      <li><a href="index.html">Glavna Stranica</a></li>
+  <div class=" navbar" id="navbarSupportedContent">
+    <ul class="navbar-nav ">
+      <li class="nav-item active">
+        <a class="nav-link" href="#"><span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
         
-       
-      <li><a href="#" id="contact">Kontakt</a></li>
+      </li>
+      
       
     </ul>
-  
-</nav>
-		<!-- kontakt forma-->	
-<form action="" method="post" enctype="text/plain">			
-			<div id="contactForm">
-<div class="hide-on-small-only">
-  <h1>Kontakt</h1>
-  <small></small> 
-  <form action="#">
-    <p>Redirex.rs</p>
-    <p>Email: redirexrs@gmail.com</p>
-	<p>Facebook: <a href="https://www.facebook.com/redirexx/">https://www.facebook.com/redirexx/</a></p>
-  
-  </form>
-</div>
-
-
-<div class="hide-on-large-only">
-    <h4>Kontakt</h4>
-    <small></small>
+    <button style="background-color: rgba(255,255,255,0.00); border: 1px solid; border-color: aqua" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">KONTAKT</button>
     
-    <form action="#">
-      <p2>Redirex.rs</p2>
-      <p2>redirexrs@gmail.com</p2>
-    <p2>Facebook: <a href="https://www.facebook.com/redirexx/">www.facebook.com/redirexx/</a></p2>
-    
-    </form>
+  
+
   </div>
-</div>
-	</form>		
+  </div>
+</nav> 
+ 
+  
+    
+		<!-- kontakt forma-->	
+	
 		
+	<!-- Modal -->
+	
+	
 	
 
-<!-- The overlay -->
-<div id="myNav" class="overlay"> 
-  
-  <!-- Button to close the overlay navigation --> 
-   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; </a>  
-  
-  <!-- Overlay content -->
-  <div class="overlay-content">
-  
-   
 
-  <div class="text" style="margin-top: 20%"></div>
-
-
-  
-  
-</div>
-</div>
 
 	   
 
-<!-- Action dugme--->
 
-<!--- <div class="hide-on-large-only">
-  <div class="fixed-action-btn left-button"> <a class="btn-floating btn-large red"> <i class="large material-icons">add</i> </a>
-    <ul>
-      <li><a class="btn-floating green" href="androidapp.html"><i class="fab fa-android"></i></a></li>
-      <li><a class="btn-floating #827717 lime darken-4"><i class="fas fa-question"></i></a></li>
-      <li><a class="btn-floating blue" href="https://www.facebook.com/redirexx/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-      <li><a class="btn-floating #ff6d00 orange accent-4"><i class="material-icons">mail</i></a></li>
-    </ul>
-  </div>
-</div> --->
+      	
+       		
+     
+     </div>
+   
+
 
 <!-- vidljivo na dektop---> 
-
-<br>
- 
- <div class="flex-container4" style="margin-bottom: 4em">
+<div class="flex-container4" style="margin-bottom: 4em; margin-top: 3%">
  	 
          
           
-       <a class="btn-index-mob btn center" href="stranice/Bor Okrug/index-bor.html" style=" color: white">Borski okrug 
+       <a class="btn-index-mob center" href="stranice/Bor Okrug/index-bor.html" style=" color: white">Borski okrug 
            
-            <img  align="right" src="stranice/Bor Okrug/Bor/Veliki_grb_Bora.png" alt="" style="width: 3.3rem"> 
+            <img  align="right" src="stranice/Bor Okrug/Bor/Veliki_grb_Bora.png" alt="" style="" style="width: 3.4em"> 
            
        </a>
         
  
-       <a class="btn-index-mob btn center" href="stranice/Branicevo Okrug/index-branicevo.html" style=" color: white">Braničevski okrug
+       <a class="btn-index-mob center" href="stranice/Branicevo Okrug/index-branicevo.html" style=" color: white">Braničevski okrug
           
-           <img  align="right" src="stranice/Branicevo Okrug/Pozarevac/800px-Grb_pozarevca.svg.png" alt="" style="width:2.7rem;">
+           <img  align="right" src="stranice/Branicevo Okrug/Pozarevac/800px-Grb_pozarevca.svg.png" alt="" style="width: 2em" >
            
        </a>
             
-       <a class="btn-index-mob btn center" href="stranice/28-Grad Beograd/index-beograd.html" style="color: white">Grad Beograd
+       <a class="btn-index-mob center" href="stranice/28-Grad Beograd/index-beograd.html" style="color: white">Grad Beograd
            
-           <img class="background" align="right" src="stranice/28-Grad Beograd/1024px-Flag_of_Belgrade,_Serbia.svg.png" alt="" style="width:3rem;">
+           <img class="background" align="right" src="stranice/28-Grad Beograd/1024px-Flag_of_Belgrade,_Serbia.svg.png" alt="" style="width: 2.4em" >
            
        </a>
             
           
-       <a class="btn-index-mob btn center" href="stranice/1-Zajecar okrug/index-zajecar.html" style="color: white">Zaječarski okrug
+       <a class="btn-index-mob center" href="stranice/1-Zajecar okrug/index-zajecar.html" style="color: white">Zaječarski okrug
         
-         <img  align="right" src="stranice/1-Zajecar okrug/Zajecar/COA_zajecar.png" alt="" style="width:2em;">
+         <img  align="right" src="stranice/1-Zajecar okrug/Zajecar/COA_zajecar.png" alt="" style="width: 2.2em" >
          
        </a>
           
             
-       <a class="btn-index-mob btn center" href="stranice/2-Zapadnobacki okrug/index-zapadnobacki.html" style="color: white">Zapadnobački okrug
+       <a class="btn-index-mob center" href="stranice/2-Zapadnobacki okrug/index-zapadnobacki.html" style="color: white;">Zapadnobački okrug
        
-          <img  align="right" src="stranice/2-Zapadnobacki okrug/COA_Sombor.png" alt="" style="width:2.8rem;">
+          <img  align="right" src="stranice/2-Zapadnobacki okrug/COA_Sombor.png" alt="" style="width: 2.5rem">
        
        </a>
            
-       <a class="btn-index-mob btn center" href="stranice/3-Zlatiborski okrug/index-zlatiborski.html" style="color: white">Zlatiborski okrug
+       <a class="btn-index-mob center" href="stranice/3-Zlatiborski okrug/index-zlatiborski.html" style="color: white">Zlatiborski okrug
          
-          <img  align="right" src="stranice/3-Zlatiborski okrug/Uzice/Uzice_COA_small.gif" alt="" style="width:2.8rem;">
+          <img  align="right" src="stranice/3-Zlatiborski okrug/Uzice/Uzice_COA_small.gif" alt="" style="width: 2.5em" >
           
        </a>
            
           
-       <a class="btn-index-mob btn center" href="stranice/4-Jablanicki okrug/index-jablanicki.html" style="color: white">Jablanički okrug
+       <a class="btn-index-mob center" href="stranice/4-Jablanicki okrug/index-jablanicki.html" style="color: white">Jablanički okrug
           
-          <img  align="right" src="stranice/4-Jablanicki okrug/Leskovac/Leskovac-grb-srednji.png" alt="" style="width:2.8rem;"> 
+          <img  align="right" src="stranice/4-Jablanicki okrug/Leskovac/Leskovac-grb-srednji.png" alt="" style="width: 2.5em" > 
           
        </a>
           
             
-       <a class="btn-index-mob btn center" href="stranice/5-Juznobanatski okrug/index-juznobanatski.html" style="color: white">Južnobanatski okrug
+       <a class="btn-index-mob center" href="stranice/5-Juznobanatski okrug/index-juznobanatski.html" style="color: white;">Južnobanatski okrug
           
-          <img  align="right" src="stranice/5-Juznobanatski okrug/Pancevo/Pancevo-coat_of_arms.png" alt="" style="width:2.8rem;">
+          <img  align="right" src="stranice/5-Juznobanatski okrug/Pancevo/Pancevo-coat_of_arms.png" alt="" style="width: 2.5em" >
           
        </a>
            
           
-       <a class="btn-index-mob btn center" href="stranice/6-Juznobacki okrug/index-juznobacki.html" style="color: white">Južnobački okrug
+       <a class="btn-index-mob center" href="stranice/6-Juznobacki okrug/index-juznobacki.html" style="color: white">Južnobački okrug
           
-          <img  align="right" src="stranice/6-Juznobacki okrug/Novi sad/800px-Novi_Sad_Coat_of_Arms.svg.png" alt="" style="width:2.8rem;">
+          <img  align="right" src="stranice/6-Juznobacki okrug/Novi sad/800px-Novi_Sad_Coat_of_Arms.svg.png" alt="" style="width: 2.5em" >
           
        </a>
           
             
-          <a class="btn-index-mob btn center" href="stranice/7-Kolubarski okrug/index-kolubarski.html" style="color: white">Kolubarski okrug
+          <a class="btn-index-mob center" href="stranice/7-Kolubarski okrug/index-kolubarski.html" style="color: white">Kolubarski okrug
           
-          <img  align="right" src="stranice/7-Kolubarski okrug/Valjevo/COA_Valjevo.gif" alt="" style="width:2.8rem;">
+          <img  align="right" src="stranice/7-Kolubarski okrug/Valjevo/COA_Valjevo.gif" alt="" >
           
        </a>
            
-       <a class="btn-index-mob btn center" href="stranice/8-Kosovski okrug/index-kosovski.html" style="color: white">Kosovski okrug
+       <a class="btn-index-mob center" href="stranice/8-Kosovski okrug/index-kosovski.html" style="color: white">Kosovski okrug
          
           
          
        </a>
            
-       <a class="btn-index-mob btn center" href="stranice/9-Kosovsko-mitrovacki okrug/index-kosovskomitrovacki.html" style="color: white">Kos-mitrovački okrug
+       <a class="btn-index-mob center" href="stranice/9-Kosovsko-mitrovacki okrug/index-kosovskomitrovacki.html" style="color: white">Kos-mitrovački okrug
           
           
           
        </a>
           
             
-       <a class="btn-index-mob btn center" href="stranice/10-Kosovsko-pomoravski okrug/index-kosovskopomoravski.html" style="color: white">Kos-pomoravski okrug
+       <a class="btn-index-mob center" href="stranice/10-Kosovsko-pomoravski okrug/index-kosovskopomoravski.html" style="color: white">Kos-pomoravski okrug
            
            
            
        </a>
             
-       <a class="btn-index-mob btn center" href="stranice/11-Macvanski okrug/index-macvanski.html" style="color: white">Mačvanski okrug
+       <a class="btn-index-mob center" href="stranice/11-Macvanski okrug/index-macvanski.html" style="color: white">Mačvanski okrug
            
-           <img  align="right" src="stranice/11-Macvanski okrug/Sabac/COA_Šabac_(big).png" alt="" style="width:2.8rem;">
+           <img  align="right" src="stranice/11-Macvanski okrug/Sabac/COA_Šabac_(big).png" alt=""  style="width: 2em">
            
        </a>
             
-       <a class="btn-index-mob btn center" href="stranice/12-Moravicki okrug/index-moravicki.html" style="color: white">Moravički okrug
+       <a class="btn-index-mob center" href="stranice/12-Moravicki okrug/index-moravicki.html" style="color: white">Moravički okrug
        
-           <img  align="right" src="stranice/12-Moravicki okrug/Cacak/Čačak_-_grb.png" alt="" style="width:2.8rem;">
+           <img  align="right" src="stranice/12-Moravicki okrug/Cacak/Čačak_-_grb.png" alt="" style="width: 2.5em" >
        
        </a>
            
              
-       <a class="btn-index-mob btn center" href="stranice/13-Nisavski okrug/index-nisavski.html" style="color: white">Nišavski okrug
+       <a class="btn-index-mob center" href="stranice/13-Nisavski okrug/index-nisavski.html" style="color: white">Nišavski okrug
            
-           <img  align="right" src="stranice/13-Nisavski okrug/Nis/Nis_Coat_of_Arms.png" alt="" style="width:2.8rem;">
+           <img  align="right" src="stranice/13-Nisavski okrug/Nis/Nis_Coat_of_Arms.png" alt=""  style="width: 2em">
            
        </a>
             
-       <a class="btn-index-mob btn center" href="stranice/14-Pecki okrug/index-pecki.html" style="color: white">Pećki okrug
+       <a class="btn-index-mob center" href="stranice/14-Pecki okrug/index-pecki.html" style="color: white">Pećki okrug
        
            
              
        </a>
            
              
-       <a class="btn-index-mob btn center" href="stranice/15-Pirotski okrug/index-pirotski.html" style="color: white">Pirotski okrug
+       <a class="btn-index-mob center" href="stranice/15-Pirotski okrug/index-pirotski.html" style="color: white">Pirotski okrug
           
-            <img  align="right" src="stranice/15-Pirotski okrug/Pirot/Blason_de_Pirot.png" alt="" style="width:2.8rem;"> 
+            <img  align="right" src="stranice/15-Pirotski okrug/Pirot/Blason_de_Pirot.png" alt=""  style="width: 2em"> 
            
        </a>
             
-       <a class="btn-index-mob btn center" href="stranice/16-Podunavski okrug/index-podunavski.html" style="color: white">Podunavski okrug
+       <a class="btn-index-mob center" href="stranice/16-Podunavski okrug/index-podunavski.html" style="color: white">Podunavski okrug
          
-            <img  align="right" src="stranice/16-Podunavski okrug/Smederevo/Smederevo_coat_of_arms.gif" alt="" style="width:2.8rem;"> 
+            <img  align="right" src="stranice/16-Podunavski okrug/Smederevo/Smederevo_coat_of_arms.gif" alt="" style="width: 2em" > 
           
        </a>
            
              
-       <a class="btn-index-mob btn center" href="stranice/17-Pomoravski okrug/index-pomoravski.html" style="color: white">Pomoravski okrug
+       <a class="btn-index-mob center" href="stranice/17-Pomoravski okrug/index-pomoravski.html" style="color: white">Pomoravski okrug
          
-            <img  align="right" src="stranice/17-Pomoravski okrug/Jagodina/Grb_opstine_Jagodina.png" alt="" style="width:2.8rem;"> 
+            <img  align="right" src="stranice/17-Pomoravski okrug/Jagodina/Grb_opstine_Jagodina.png" alt=""  style="width: 2.5em"> 
           
        </a>
             
-       <a class="btn-index-mob btn center" href="stranice/18-Prizrenski okrug/index-prizrenski.html" style="color: white">Prizrenski okrug
+       <a class="btn-index-mob center" href="stranice/18-Prizrenski okrug/index-prizrenski.html" style="color: white">Prizrenski okrug
           
             
            
        </a>
             
-       <a class="btn-index-mob btn center" href="stranice/19-Pcinjski okrug/index-pcinjski.html" style="color: white">Pčinjski okrug
+       <a class="btn-index-mob center" href="stranice/19-Pcinjski okrug/index-pcinjski.html" style="color: white">Pčinjski okrug
           
-            <img  align="right" src="stranice/19-Pcinjski okrug/Vranje/800px-Veliki_grb-vranja.png" alt="" style="width:2.8rem;"> 
+            <img  align="right" src="stranice/19-Pcinjski okrug/Vranje/800px-Veliki_grb-vranja.png" alt="" style="width: 2.5em" > 
            
        </a>
             
-       <a class="btn-index-mob btn center" href="stranice/20-Rasinski okrug/index-rasinski.html" style="color: white">Rasinski okrug
+       <a class="btn-index-mob center" href="stranice/20-Rasinski okrug/index-rasinski.html" style="color: white">Rasinski okrug
          
-            <img  align="right" src="stranice/20-Rasinski okrug/Krusevac/Grb_ks.png" alt="" style="width:2.8rem;"> 
+            <img  align="right" src="stranice/20-Rasinski okrug/Krusevac/Grb_ks.png" alt="" style="width: 2.2em" > 
          
        </a>
            
-       <a class="btn-index-mob btn center" href="stranice/21-Raski okrug/index-raski.html" style="color: white">Raški okrug
+       <a class="btn-index-mob center" href="stranice/21-Raski okrug/index-raski.html" style="color: white">Raški okrug
         
-            <img  align="right" src="stranice/21-Raski okrug/Kraljevo/Coat_of_arms_of_Kraljevo.png" alt="" style="width:2.8rem;"> 
+            <img  align="right" src="stranice/21-Raski okrug/Kraljevo/Coat_of_arms_of_Kraljevo.png" alt="" style="width: 2.2em" > 
          
        </a>
            
-       <a class="btn-index-mob btn center" href="stranice/22-Severnobanatski okrug/index-severnobanatski.html" style="color: white">Severnobanatski okrug
+       <a class="btn-index-mob center" href="stranice/22-Severnobanatski okrug/index-severnobanatski.html" style="color: white;">Severnobanatski okrug
         
-            <img  align="right" src="stranice/22-Severnobanatski okrug/Kikinda/Wappen_Kikinda.png" alt="" style="width:2rem;"> 
+            <img  align="right" src="stranice/22-Severnobanatski okrug/Kikinda/Wappen_Kikinda.png" alt="" style="width: 2em" > 
          
        </a>
            
-       <a class="btn-index-mob btn center" href="stranice/23-Severnobacki okrug/index-severnobacki.html" style="color: white">Severnobački okrug
+       <a class="btn-index-mob center" href="stranice/23-Severnobacki okrug/index-severnobacki.html" style="color: white;">Severnobački okrug
      
-            <img  align="right" src="stranice/23-Severnobacki okrug/Subotica/Grb_subotice.png" alt="" style="width:2.3rem;"> 
+            <img  align="right" src="stranice/23-Severnobacki okrug/Subotica/Grb_subotice.png" alt="" style="width: 2.5em" > 
             
        </a>
            
-       <a class="btn-index-mob btn center" href="stranice/24-Srednjobanatski okrug/index-srednjobanatski.html" style="color: white">Srednjobanatski okrug
+       <a class="btn-index-mob center" href="stranice/24-Srednjobanatski okrug/index-srednjobanatski.html" style="color: white;">Srednjobanatski okrug
         
-            <img  align="right" src="stranice/24-Srednjobanatski okrug/Zrenjanin/Coat_of_Arms_of_Zrenjanin.png" alt="" style="width:2.3rem;"> 
+            <img  align="right" src="stranice/24-Srednjobanatski okrug/Zrenjanin/Coat_of_Arms_of_Zrenjanin.png" alt="" style="width: 1.8em" > 
          
        </a>
            
-       <a class="btn-index-mob btn center" href="stranice/25-Sremski okrug/index-sremski.html" style="color: white">Sremski okrug
+       <a class="btn-index-mob center" href="stranice/25-Sremski okrug/index-sremski.html" style="color: white">Sremski okrug
          
-            <img  align="right" src="stranice/25-Sremski okrug/Sremska mitrovica/1200px-Grb_sremska_mitrovica.svg.png" alt="" style="width:2.3rem;"> 
+            <img  align="right" src="stranice/25-Sremski okrug/Sremska mitrovica/1200px-Grb_sremska_mitrovica.svg.png" alt="" style="width: 2em"> 
          
        </a>
            
-       <a class="btn-index-mob btn center" href="stranice/26-Toplicki okrug/index-toplicki.html" style="color: white">Toplički okrug
+       <a class="btn-index-mob center" href="stranice/26-Toplicki okrug/index-toplicki.html" style="color: white">Toplički okrug
         
-            <img  align="right" src="stranice/26-Toplicki okrug/Prokuplje/COA_Prokuplje.png" alt="" style="width:2.3rem;"> 
+            <img  align="right" src="stranice/26-Toplicki okrug/Prokuplje/COA_Prokuplje.png" alt=""  style="width: 2.2em"> 
          
        </a>
            
-       <a class="btn-index-mob btn center" href="stranice/27-Sumadijski okrug/index-sumadijski.html" style="color: white">Šumadijski okrug
+       <a class="btn-index-mob center" href="stranice/27-Sumadijski okrug/index-sumadijski.html" style="color: white">Šumadijski okrug
        
-            <img  align="right" src="stranice/27-Sumadijski okrug/Kragujevac/Grb-Kragujevac.png" alt="" style="width:2.3rem;"> 
+            <img  align="right" src="stranice/27-Sumadijski okrug/Kragujevac/Grb-Kragujevac.png" alt="" style="width: 2.2em" > 
          
        </a>
-          
-        
- 	
- 	<br> <br>
+       <p></p>   
+       <br>&nbsp;
  </div>
-<br> <br>
+      
+      <br>
+  
 
-<p> </p>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
 
 <div class="hide-on-large-only">
  
 </div>
 
-
-</div>
+	
 
 
 
@@ -444,11 +420,14 @@ h9 {
 <!--Import jQuery before materialize.js--> 
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> 
 <!--JavaScript at end of body for optimized loading--> 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
-<script src="JSS/dropdownw3.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <script src="scrypts.js"></script> 
 <script src="GlavniCss.css"></script>
-<script src="../pushpin.js"></script> 
+
 <script>
 		document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.fixed-action-btn');
@@ -458,14 +437,15 @@ h9 {
 	  
     });
   });
-	
-	
 			</script>
   
-<script> document.addEventListener('DOMContentLoaded', function() {
+<script> 
+	document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.sidenav');
     var instances = M.Sidenav.init(elems, options);
-  });</script> 
+  });
+	</script> 
+  
 <script>
 	$(document).ready(function(){
     $('.sidenav').sidenav();
@@ -474,13 +454,14 @@ h9 {
 		  /* Open when someone clicks on the span element */
 /* Open when someone clicks on the span element */
 function openNav() {
-  document.getElementById("myNav").style.width = "100%";
+  document.getElementById("myNav").style.width = "30%";
 }
 
 /* Close when someone clicks on the "x" symbol inside the overlay */
 function closeNav() {  document.getElementById("myNav").style.width = "0%";
 }; 
 	</script>
+	
 <script>
 	$(function() {
   
@@ -502,9 +483,25 @@ function closeNav() {  document.getElementById("myNav").style.width = "0%";
 	
 $('.dropdown-trigger').dropdown();
 	
-$(document).ready(function(){
-    $('.collapsible').collapsible();
-  });	
+	
+	$('.carousel').carousel({
+    interval: false,
+	wrap: false	
+}); 
+	
+	
+	 //Modal za slanje emaila
+	
+	$('#exampleModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  var recipient = button.data('whatever') // Extract info from data-* attributes
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this)
+  modal.find('.modal-title').text('New message to ' + nightmane9@gmail.com)
+  modal.find('.modal-body input').val(nightmane9@gmail.com)
+})
+	 
 	
 	</script>
 
