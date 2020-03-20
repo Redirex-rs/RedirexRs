@@ -12,10 +12,20 @@
 <!--Let browser know website is optimized for mobile-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta https-equiv="X-UA-Compatible" content="IE=edge">
-<meta http-equiv="Content-Security-Policy" content="frame-src 'self' *.http://127.0.0.1:57239/preview/app/index.html;">
+
+
 <title>Redirex</title>
 <link rel="shortcut icon" href="favicon.ico" >
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
+<script src="default-src 'self' cdn.script.googleusercontent.com"></script>
+<meta https-equiv="Content-Security-Policy" 
+        content="default-src 'self' data: gap: 'unsafe-eval' ws: ; 
+        style-src 'self' 'unsafe-inline'; 
+        script-src https: *.script.googleusercontent.com ;
+        media-src 'none'; 
+        font-src *;
+        connect-src *;
+        img-src 'self' data: content:;">
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -69,6 +79,12 @@
   padding: 1.5rem;
   margin-bottom: 1rem;
 }
+	 
+	 .opis img {
+		 display: block;
+  margin-left: auto;
+  margin-right: auto;
+	 }
 	 
 	 /* The Overlay (background) */
   .overlay {
@@ -164,33 +180,7 @@ h9 {
   
     
 		<!-- kontakt forma-->	
-<form action="" method="post" enctype="text/plain">			
-			<div id="contactForm">
-<div class="hide-on-med-and-down">
-  <h1>Kontakt</h1>
-  <small></small> 
-  <form action="#">
-    <p>Redirex.rs</p>
-    <p>Email: redirexrs@gmail.com</p>
-	<p>Facebook: <a href="https://www.facebook.com/redirexx/">https://www.facebook.com/redirexx/</a></p>
-  
-  </form>
-</div>
 
-
-<div class="hide-on-large-only">
-    <h4>Kontakt</h4>
-    <small></small>
-    
-    <form action="#">
-      <p>Redirex.rs</p>
-      <p>redirexrs@gmail.com</p>
-      <p>Facebook: <a href="https://www.facebook.com/redirexx/">www.facebook.com/redirexx/</a></p>
-    
-    </form>
-  </div>
-</div>
-	</form>		
 		
 	<!-- Modal -->
 	
@@ -215,12 +205,10 @@ h9 {
       <div class="form-group">  
   <label for="lname">Tekst:</label><br>
   <textarea type="text" id="message" name="lname" value="Tekst"></textarea>
-  <input type="submit" value="Posalji">
-          <b>*</b>Poruka je poslata iako nakon sto pritisnete "submit" i na sledecoj stranici dobijete poruku <b>"Blocked by Content Security Policy"**</b> ili <b>prikaze praznu stranicu***</b> na Google Chrome. <br> Mozete nas kontaktirati i direktno preko email adrese: <b>redirexrs@gmail.com</b> <br> <br>
-     <b>**</b>    
-     <img class="full-image" src="banneri/Mozilla-success.png" style="width: 29em;border: 1px solid;border-color: black;" >
-     <b>***</b>     
-     <img class="full-image" src="banneri/Chrome-success.jpg" style="width: 29em;border: 1px solid;border-color: black;" >
+  <input type="submit" formtarget="_blank" value="Posalji">
+           Mozete nas kontaktirati i direktno preko email adrese: <b>redirexrs@gmail.com</b> <br>
+           ili preko facebook stranice <a href="https://www.facebook.com/redirexx/" class="">facebook.com/redirexx/</a>.
+    
       </div>    
         
       </div>
@@ -501,6 +489,14 @@ h9 {
 
       
       <br>
+      <div class="opis" style="margin-top: %; margin-left: 2%">
+ 	
+ 		<h3><u>20.mart.2020</u></h3> <br> <br>
+ 		Ubacena je mail kontakt forma preko koje mozete sa posaljete mail direktno sa websajta.<br> <br>
+        <img class="full-image" src="banneri/forma-mail.png" style="width: 18em;border: 1px solid;border-color: black; " >
+ 	
+ </div>
+      <br>
   <div class="opis" style="margin-top: %; margin-left: 2%">
  	
  		<h3>Dobrodošli na Redirex.rs</h3><br>
@@ -516,12 +512,6 @@ h9 {
  		<u>-Lične stranice:</u> od info-kartice do stranice po želji, sve je na vama.<br><br>
  		
  		Aktivnim i svakodnevnim oglašavanjem cilj nam je da ovaj sajt postane svakodnevno ime gde će svako moći da pronađe sve od informacija sto je potrebno. Takođe svakodnevno radimo na usavršavanju i dodavanju novih opcija, mogućnosti i svega ostalog što bi pomoglo u lakšem pretraživanju.<br>
- 		
- 		
-
- 		
- 	
- 	
  	
  </div>
 
@@ -616,7 +606,9 @@ $('.dropdown-trigger').dropdown();
 	wrap: false	
 }); 
 	
-	
+	$(".subcribe-form").submit(function(event){
+
+event.preventDefault()
 	 //Modal za slanje emaila
 	
 	$('#exampleModal').on('show.bs.modal', function (event) {
