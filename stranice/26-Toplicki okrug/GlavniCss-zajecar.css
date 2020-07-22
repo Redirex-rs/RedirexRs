@@ -171,7 +171,7 @@ margin-top: auto;
       }
        
             body {
-background: url(../../banneri/background-okrug.jpg) no-repeat center center fixed; 
+background: url("../../banneri/background-okrug.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -186,6 +186,10 @@ background-color: rgba(251,250,254,1.00);
         padding-bottom: 0%;
         
           } 
+
+div.card {
+	box-shadow: 5px 5px 10px grey
+}
 
           #background-slika{
             background-image: url('IMG_20191107_205101_HDR_kraca.jp');
@@ -402,6 +406,63 @@ margin-top: auto;
   color: #fff;
   text-align: center;
   padding: 1em;
+}
+
+.flex-container3 {
+    text-align: left;
+    
+	vertical-align: 2em;
+	overflow:hidden;
+	z-index: -4;
+	justify-content: center;
+}
+
+.flex-container3 > a {
+	text-align: left;
+	font-size: 2rem;
+	vertical-align: middle;
+	line-height: 4rem;
+}
+
+@media (max-width: 768px){
+	.flex-container3 {
+	    
+        display:flex;
+		z-index: -3;
+	    flex-wrap: wrap;
+	    justify-content: center;
+	  }	
+	
+	.flex-container3 > div{
+		padding: 1rem;
+		object-position: center;
+		width: 25em;
+		
+	}
+}
+
+.grid-container > a > div  {
+		text-align: center;
+		height: 100%;
+	    vertical-align: middle;
+		line-height: 3em;
+}
+
+@media (min-width: 768px) {
+.flex-container3 {
+	    
+        display:flex;
+		z-index: -3;
+	    flex-wrap: wrap;
+	    justify-content: center;
+	  }	
+	
+	.flex-container3 > div{
+		padding: 1rem;
+		object-position: center;
+		width: 28em;
+	}
+	
 }
 
         
