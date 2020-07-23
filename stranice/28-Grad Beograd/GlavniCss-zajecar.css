@@ -20,6 +20,67 @@ margin-top: auto;
   padding: 1em;
 }
 
+.flex-container3 {
+    text-align: left;
+	
+	top:1em;
+    justify-content:space-around;
+	vertical-align: 2em;
+	overflow:hidden;
+	z-index: -4;
+	
+}
+
+.flex-container3 > a {
+	text-align: left;
+	font-size: 2rem;
+	vertical-align: middle;
+	line-height: 4rem;
+}
+
+@media (max-width: 768px){
+	.flex-container3 {
+	    
+        display:flex;
+		z-index: -3;
+	    flex-wrap: wrap;
+	    justify-content: center;
+	  }	
+	
+	.flex-container3 > div{
+		
+		justify-content: flex-start;
+		width: 25em;
+		
+	}
+}
+
+.grid-container > a > div  {
+		text-align: center;
+		height: 100%;
+	    vertical-align: middle;
+		line-height: 3em;
+}
+
+@media (min-width: 768px) {
+.flex-container3 {
+	    
+        display:flex;
+		z-index: -3;
+	    flex-wrap: wrap;
+	    justify-content: center;
+	  }	
+	
+	.flex-container3 > div{
+		padding: 1rem;
+		object-position: center;
+		width: 28em;
+		
+	}
+	
+}
+
+
 .button {
         background-color: #4CAF50; /* Green */
         border: none;
@@ -170,7 +231,7 @@ margin-top: auto;
       }
        
             body {
-background: url(../../banneri/background-okrug.jpg) no-repeat center center fixed; 
+background: url("../../banneri/background-okrug.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
