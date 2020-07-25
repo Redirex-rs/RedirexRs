@@ -4,6 +4,20 @@
 }
 /* CSS Document */
 
+@media (min-width: 768px) {
+.masonry { /* Masonry container */
+  column-count: 3;
+  column-gap: 1em;
+}
+
+.column {
+	background-color: #eee;
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%;
+}
+}
+}
 .btn-index:hover{
 	border: 2.5px solid;
 	border-color: aqua;
@@ -38,6 +52,20 @@ margin-top: auto;
 	line-height: 4rem;
 }
 
+.grid-container^ {
+        display: grid;
+        grid-template-columns: 30% 30% 30% ;
+        column-gap: 2%;
+        
+        overflow: hidden;
+        
+		margin-left: 5%;	   
+		grid-row-gap: 2%;
+        z-index: -2;
+		margin-bottom: 3vh;
+		position: center center;	 
+      }
+
 @media (max-width: 768px){
 	.flex-container3 {
 	    
@@ -62,6 +90,8 @@ margin-top: auto;
 		line-height: 3em;
 }
 
+
+
 @media (min-width: 768px) {
 .flex-container3 {
 	    
@@ -74,7 +104,7 @@ margin-top: auto;
 	.flex-container3 > div{
 		padding: 1rem;
 		object-position: center;
-		width: 28em;
+		width: 100%;
 		
 	}
 	
@@ -216,7 +246,7 @@ margin-top: auto;
 	box-shadow: 8px 8px 10px grey
 }
 
-         .grid-container2 {
+         .grid-container^ {
         display: grid;
         grid-template-columns: 46% 46% ;
         column-gap: 4%;
@@ -341,7 +371,7 @@ height: 100%;
       }
       
       .container1:hover .overlay1 {
-  width: 97%;
+  width: 33%;
 }
 	.container2:hover .overlay1 {
   width: 97%;

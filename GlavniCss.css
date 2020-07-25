@@ -1,5 +1,18 @@
 @charset "utf-8";
 /* CSS Document */
+@media (min-width: 768px) {
+.masonry { /* Masonry container */
+  column-count: 3;
+  column-gap: 1em;
+}
+
+.column {
+	background-color: #eee;
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%;
+}
+}
 
 .dropdown-sadrzaj{
 	position: relative;
@@ -212,7 +225,7 @@
         padding-left: 0.3%;			 
         z-index: -2;
       }
-           .grid-container2 {
+           .grid-container^ {
         
         
         display: grid;
@@ -356,7 +369,7 @@
       }
       
       .container1:hover .overlay1 {
-  width: 97%;
+  width: 33%;
 }
 	.container2:hover .overlay1 {
   width: 97%;

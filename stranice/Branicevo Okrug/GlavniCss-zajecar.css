@@ -4,6 +4,19 @@
 }
 
 /* CSS Document */
+@media (min-width: 768px) {
+.masonry { /* Masonry container */
+  column-count: 3;
+  column-gap: 1em;
+}
+
+.column {
+	background-color: #eee;
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%;
+}
+}
 
 
 
@@ -95,7 +108,7 @@ background: url(../../banneri/background-okrug.jpg) no-repeat center center fixe
 }
 
 @media (min-width: 768px) {
-	.grid-container2  {
+	.grid-container^  {
 	font-size: 2em;
 }
 }
@@ -219,7 +232,7 @@ background: url(../../banneri/background-okrug.jpg) no-repeat center center fixe
 
          
 
-         .grid-container2 {
+         .grid-container^ {
         display: grid;
         grid-template-columns: 30% 30% 30% ;
         column-gap: 2%;
@@ -461,7 +474,7 @@ div.card {
       }
       
       .container1:hover .overlay1 {
-  width: 97%;
+  width: 33%;
 }
 	.container2:hover .overlay1 {
   width: 97%;

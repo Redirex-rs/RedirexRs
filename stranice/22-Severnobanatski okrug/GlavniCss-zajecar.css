@@ -3,6 +3,19 @@
 	background-color: rgba(18,97,179,1.00)
 }
 /* CSS Document */
+@media (min-width: 768px) {
+.masonry { /* Masonry container */
+  column-count: 3;
+  column-gap: 1em;
+}
+
+.column {
+	background-color: #eee;
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%;
+}
+}
 
 .btn-index:hover{
 	border: 2.5px solid;
@@ -166,7 +179,7 @@ body{
 	box-shadow: 8px 8px 10px grey
 }
 
-         .grid-container2 {
+         .grid-container^ {
         display: grid;
         grid-template-columns: 30% 30% 30% ;
         column-gap: 2%;
@@ -276,7 +289,7 @@ body{
       }
       
       .container1:hover .overlay1 {
-  width: 97%;
+  width: 33%;
 }
 	.container2:hover .overlay1 {
   width: 97%;

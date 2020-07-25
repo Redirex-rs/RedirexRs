@@ -200,7 +200,7 @@ margin-top: auto;
 	box-shadow: 8px 8px 10px grey
 }
 
-         .grid-container2 {
+         .grid-container^ {
   
   
   display: grid;
@@ -356,7 +356,7 @@ margin-top: auto;
 }
 
 .container1:hover .overlay1 {
-  width: 97%;
+  width: 33%;
 }
 	.container2:hover .overlay1 {
   width: 97%;
@@ -507,9 +507,8 @@ textarea { height: 25vh; resize: none; }
 </div>
 <!-- Use any element to open/show the overlay navigation menu --> 
 
-<div class="flex-container3" style="padding-top: 1%;">
-	
-	<div class="column" style="width: rem">
+<div class="flex-container^" style="padding-top: 1%;">
+<div class="masonry" ><div class="column" style="width: rem">
     <div class="col s12 m7">
       <div class="card">
        
@@ -592,10 +591,53 @@ Postoji mogućnost da sve vaše preglede snimimo na CD. <br> <br>
     </div>
   </div>
 	
+	<div class="column" style="width: rem">
+    <div class="col s12 m7">
+      <div class="card">
+       
+        <div class="card-image" style="text-align: center">
+          <img style="padding: 0.3em; " src="../Delatnosti/medicina i zdravlje/fiziomedica/vra.jpg"><p1>Vranje</p1> </div>
+        <div class="card-content" style="color: black">
+          <p1><h6>Fizikalna terapija i rehabilitacija Fiziomedica</h6> <br>
+<i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Oktobarske Revolucije 35, Vranje<br> <br>
+
+<i class="fas fa-phone"></i>&nbsp;&nbsp;064 2077756<br>
+<i class="fas fa-clock"></i>&nbsp;&nbsp;Radnim danima: 08:00 - 20:00 <br>
+			  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subotom: 08:00-20:00
+    
+    
+<i class="fas fa-envelope"></i>&nbsp;&nbsp;ninoslavtimc@gmail.com<br><br>
+<i class="fas fa-clock"></i>&nbsp;&nbsp;Pregledi se rade u periodu od 18h-20h radnim danima, subotom od 14h-15h uz zakazivanje.	  
+<br> <br>
+Zalažemo se za siguran i pouzdan način rada zbog čega smo stekli veliki ugled i ostvarili saradnju sa mnogim klijentima <br> <br>
+FIZIOMEDICA  se bavi:<br><br>
+
+    -Skola Masaze<br>
+    -Kiropraktika<br>
+    -Sportske povrede<br>
+    -Terapija bolova u kicmi<br>
+    -Ostale masaze<br> <br>
+
+Naše stručno osobolje će Vam pružiti najpozdaniju i kvalitetnu uslugu. Po povoljnim cenama se izdvajamo od konkurencije, uz održavanje dobrog kvaliteta.			  
+</p1>
+        </div>
+        
+        <div class="card-action">
+        
+       <a href="https://www.facebook.com/Fiziomedica-194966707317619/" target="_blank"><i class="fab fa-facebook-square fa-3x" style="color: dodgerblue; "></i></a>
+			
+	   	
+			
+        </div>
+      </div>
+    </div>
+  </div>
+	
 </div>	
 
 
 
+</div>
 <!-- ^^^vidljivo na telefonima ^^^--> 
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -613,6 +655,15 @@ Postoji mogućnost da sve vaše preglede snimimo na CD. <br> <br>
 <script src="zdravstvo/scrypts.js"></script> 
 
 <script>
+	
+	
+var cards = $(".column");
+for(var i = 0; i < cards.length; i++){
+    var target = Math.floor(Math.random() * cards.length -1) + 1;
+    var target2 = Math.floor(Math.random() * cards.length -1) +1;
+    cards.eq(target).before(cards.eq(target2));
+}
+	
 		document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.fixed-action-btn');
     var instances = M.FloatingActionButton.init(elems, {
