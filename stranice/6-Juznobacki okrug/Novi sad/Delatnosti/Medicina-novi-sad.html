@@ -507,7 +507,9 @@ textarea { height: 25vh; resize: none; }
 </div>
 <!-- Use any element to open/show the overlay navigation menu --> 
 <div class="flex-container^" style="padding-top: 1%;">
-<div class="masonry" ><div class="column" style="width: rem">
+<div class="masonry" >
+	
+	<div class="column" style="width: rem">
     <div class="col s12 m7">
       <div class="card">
        
@@ -518,7 +520,7 @@ textarea { height: 25vh; resize: none; }
 <i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Vase Stajića 25, 21000 Novi Sad, Srbija<br> <br>
 
 <i class="fas fa-phone"></i>&nbsp;&nbsp;063/585 000<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;021/382-9955<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;021/382-9955<br><br>
     
 <i class="fas fa-envelope"></i>&nbsp;&nbsp;klinika@nadadiva.rs<br><br>
 <i class="fas fa-clock"></i>&nbsp;&nbsp;Radnim danima: 08:00 - 20:00 <br>
@@ -560,7 +562,7 @@ stručno i ljubazno osoblje Poliklinike Nada Diva MED PLUS postavljaju standarde
 <i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Laze Telečkog 19, Novi Sad<br> <br>
 
 <i class="fas fa-phone"></i>&nbsp;&nbsp;021 66 12 999<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;063 93 93 113<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;063 93 93 113<br><br>
     
 <i class="fas fa-envelope"></i>&nbsp;&nbsp;ordinacija@drslavica.com<br><br>
 <i class="fas fa-clock"></i>&nbsp;&nbsp;Radnim danima: 08:00 - 18:00 <br>
@@ -587,6 +589,42 @@ Volimo posao kojim se bavimo i rado stavljamo naše znanje, stručnost i iskustv
     </div>
   </div>
 	
+	<div class="column" style="width: rem">
+    <div class="col s12 m7">
+      <div class="card">
+       
+        <div class="card-image" style="text-align: center">
+          <img style="padding: 0.3em; " src="medicina/Feri Dent/1521937681akcije-SEPTEMBAR-2017.jpg"><p1>Novi Sad</p1> </div>
+        <div class="card-content" style="color: black">
+          <p1><h6>Feri Dent Stomatološka ordinacija</h6> <br>
+<i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Gogoljeva 20/5, Grbavica, Novi Sad<br> <br>
+
+<i class="fas fa-phone"></i>&nbsp;&nbsp;021 545 972<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;063 566 996<br><br>
+    
+<i class="fas fa-envelope"></i>&nbsp;&nbsp;ferident90@gmail.com<br><br>
+<i class="fas fa-clock"></i>&nbsp;&nbsp;Radnim danima: 11:00 - 20:00		  
+<br> <br>
+Osnovana je krajem 2005. godine, i od tada pa sve do danas uspešno posluje i napreduje.<br><br>
+Osnivač i vlasnik je ortodont, dr Farzad Mohammadzadeh Eidgahi.<br><br> Iako specijalizovani ortodont, Dr Fazrad, ili kako ga vecina kolega i pacijenata zove, Dr Feri, u svom dugogodišnjem iskustvu specijalizovao se i za druga polja stomatologije, te Feri Dent danas nudi manje-više, sve vrste stomatoloških usluga, od protetike, dečije stomatologije, lečenja zuba i svega ostalog što Vam može zatrebati.
+</p1>
+        </div>
+        
+        <div class="card-action">
+        
+       <a href="https://www.facebook.com/stomatologferidentnovisad/" target="_blank"><i class="fab fa-facebook-square fa-3x" style="color: dodgerblue; "></i></a>
+			
+	   <a href="https://twitter.com/FeriDent" target="_blank"><i class="fab fa-twitter-square fa-3x" style="color:dodgerblue; "></i></a>
+			
+	   <a href="https://ferident.rs" target="_blank"><i class="fab fa-internet-explorer fa-3x" style="color:rgba(57,171,235,1.00); "></i></a>	
+			
+	   	
+			
+        </div>
+      </div>
+    </div>
+  </div>	
+	
 </div>
 
 
@@ -610,6 +648,14 @@ Volimo posao kojim se bavimo i rado stavljamo naše znanje, stručnost i iskustv
 <script src="zdravstvo/scrypts.js"></script> 
 
 <script>
+	
+	var cards = $(".column");
+for(var i = 0; i < cards.length; i++){
+    var target = Math.floor(Math.random() * cards.length -1) + 1;
+    var target2 = Math.floor(Math.random() * cards.length -1) +1;
+    cards.eq(target).before(cards.eq(target2));
+}
+	
 		document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.fixed-action-btn');
     var instances = M.FloatingActionButton.init(elems, {
