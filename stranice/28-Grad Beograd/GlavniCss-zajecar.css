@@ -3,11 +3,12 @@
 	background-color: rgba(18,97,179,1.00)
 }
 /* CSS Document */
-
-@media (min-width: 768px) {
+@media (max-width: 768px) {
 .masonry { /* Masonry container */
-  column-count: 3;
+  column-count: 1;
   column-gap: 1em;
+  margin-left: 1%;
+  margin-right: 1%;
 }
 
 .column {
@@ -17,7 +18,39 @@
   width: 100%;
 }
 }
+
+@media (min-width: 768px) {
+.masonry { /* Masonry container */
+  column-count: 3;
+  column-gap: 1em;
+  margin-left: 1%;
+  margin-right: 1%;
 }
+
+.column {
+	background-color: #eee;
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%;
+}
+}
+
+@media (max-height: 400px) {
+.masonry { /* Masonry container */
+  column-count: 2;
+  column-gap: 1em;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.column {
+	background-color: #eee;
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%;
+}
+}
+
 .btn-index:hover{
 	border: 2.5px solid;
 	border-color: aqua;
@@ -42,7 +75,6 @@ margin-top: auto;
 	vertical-align: 2em;
 	overflow:hidden;
 	z-index: -4;
-	
 }
 
 .flex-container3 > a {
@@ -52,21 +84,35 @@ margin-top: auto;
 	line-height: 4rem;
 }
 
-.grid-container^ {
-        display: grid;
-        grid-template-columns: 30% 30% 30% ;
-        column-gap: 2%;
-        
-        overflow: hidden;
-        
-		margin-left: 5%;	   
-		grid-row-gap: 2%;
-        z-index: -2;
-		margin-bottom: 3vh;
-		position: center center;	 
-      }
+
 
 @media (max-width: 768px){
+	
+	.grid-container-btn {
+        display: grid;
+        grid-template-columns: 49% 49% ;
+        column-gap: 1%;
+        padding-bottom: 5%;                         
+       
+        margin-left: 4%;
+		margin-right: 1%;
+		margin-top: 1%;	
+		grid-row-gap: 1%;
+        z-index: -2;
+		margin-bottom: 3vh;
+		position: center center ;
+			
+      }
+	
+	.grid-container-btn > a {
+		padding: rem;
+		object-position: center center;
+		width: 100%;
+		margin-bottom: 2%;
+		
+	}
+	
+	
 	.flex-container3 {
 	    
         display:flex;
@@ -83,16 +129,36 @@ margin-top: auto;
 	}
 }
 
-.grid-container > a > div  {
-		text-align: center;
-		height: 100%;
-	    vertical-align: middle;
-		line-height: 3em;
-}
+
 
 
 
 @media (min-width: 768px) {
+	
+		.grid-container-btn {
+        display: grid;
+        grid-template-columns: 31% 31% 31% ;
+        column-gap: %;
+        padding-bottom: %;                         
+       
+        margin-left: 4%;
+		margin-right: 1%;
+		margin-top: 1%;	
+		grid-row-gap: %;
+        z-index: -2;
+		margin-bottom: 3vh;
+		position: center center ;
+			
+      }
+	
+	.grid-container-btn > a {
+		padding: rem;
+		object-position: center center;
+		width: 100%;
+		margin-bottom: %;
+		
+	}
+	
 .flex-container3 {
 	    
         display:flex;
@@ -485,8 +551,6 @@ background-color:rgba(12,64,118,1.00);
 
 .footer {
 margin-top: auto;
-
-  
   width: 100%;
   background: #000;
   color: #fff;
