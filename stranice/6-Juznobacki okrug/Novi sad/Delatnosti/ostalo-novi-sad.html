@@ -17,7 +17,7 @@
 	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
-
+<link rel="stylesheet" href="../../GlavniCss-zajecar.css" class="">
 <style>
 /* Tooltip container */
 .content-glavni{ 
@@ -213,24 +213,6 @@ margin-top: auto;
 	</style>
 	
 	<style>
-			body {
-background: url(../../banneri/background-okrug.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-background-color: rgba(251,250,254,1.00);
-    width: 100vw;  
-    height: 100%;   
-    overflow-x: hidden;
-    background-image: url(woodtype-846089_1920.jpg);
-	
-	background-size: 100% 40%;
-	background-repeat: no-repeat;			
-		
-	padding-bottom: 0%;
-	
-    } 
 			.container_lmenu {
 		 height: 1vh;
 		 width: 10%;
@@ -517,64 +499,40 @@ textarea { height: 25vh; resize: none; }
 
 </div>
 
-<!-- Action dugme--->
+<div class="masonry" >
 
-<!-- 
-<div class="hide-on-large-only">
-  <div class="fixed-action-btn left-button hide" style="padding-left: 1vw"> <a class="btn-floating btn-large red"> <i class="large material-icons">add</i> </a>
-    <ul>
-      <li><a class="btn-floating green" href="ostalo/androidapp.html"><i class="fab fa-android"></i></a></li>
-      <li><a class="btn-floating #827717 lime darken-4"><i class="fas fa-question"></i></a></li>
-      <li><a class="btn-floating blue" href="https://www.facebook.com/redirexx/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-      <li><a class="btn-floating #ff6d00 orange accent-4"><i class="material-icons">mail</i></a></li>
-    </ul>
-  </div>
-</div>
+<!--Sudski Prevodilac Za Rumunski jezik-->
+    <div class="column" style="width: rem">
+    <div class="col s12 m7 ">
+      <div class="card">
+        <div class="card-image" style="text-align: center">
+          <img style="padding: 0.3em; " src="../Delatnosti/Usluge/Sudski prevod. Rumunski/novi.jpg"><p1>Novi Sad</p1> </div>
+        <div class="card-content" style="color: black">
+          <p1><h6>Sudski Prevodilac Za Rumunski jezik , Časovi Rumunskog Jezika</h6> <br>
+<i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Bulevar Evrope 23/59 , Novi Sad<br>
+<i class="fas fa-phone"></i>&nbsp;&nbsp;063 850 93 38 <br>
+<i class="fas fa-envelope"></i>&nbsp;&nbsp;popovic.virdjinija@gmail.com<br> 
+<br> <br>
+Prevod dokumenata (lična i pravna), kupoprodajne ugovore kao i ugovore druge vrste i sve overavamo pečatom sudskog prevodioca za rumunski jezik u dva primerka.<br>
+Prevodimo za potrebe suda (pismeno i usmeno kao i na terenu).  <br>
+Ukoliko je potrebno firmama iz Rumunije usmeni (konsekutivni) prevod i kontakt sa firmama iz Srbije kao i firmama iz Srbije u Rumuniji, mogu nas kontaktirati. <br>Časovi rumunskog jezika za sve uzraste,
+priprema za intervju za dobijanje rumunskog državljanstva (konverzacija i gramatika), online časovi rumunskog jezika. <br> 
+</p1>
+        </div>
+        
+        <div class="card-action">
 
-<!-- vidljivo na dektop---> 
-
-<br>
-<br>
-
-  <div class="grid-container">
-   
-<!--
-  <div class="col s12 m7" style="width: 47vw"> 
-    <div class="card horizontal" style="padding-top: 0%; width: 100%; height: 100%">
-      <div class="card-image" style="padding-top: 3vw">
-       <a href=""></a>
-        <img src="stranice/Medicina/pedijatrija/zigic-Marina/76173541_552680855542351_4464686055437631488_n.jpg"  >
-      </div>
-      <div class="card-stacked" style=" width: 50vw; height: 15vh">
-        <div class="card-content" style="width: 100%">
-          <p>I am a very simple card. I am good at containing small bits of information.</p>
         </div>
       </div>
     </div>
   </div>
-  
- 
-
-  
-  
-  -->
- 
-
-  <!-- 
-   
-    <div class="polaroid" style="padding-left: 2vw; animation-delay: 0.6s; animation-name: fadeInLeft; "> 
-    <a href="https://www.dr-marina.rs/" target="_blank">
-     <img src="stranice/Medicina/pedijatrija/zigic-Marina/76173541_552680855542351_4464686055437631488_n.jpg" style="width: 95%" alt=""/>
-     </a> 
-    </div>
-    -->
-  </div> 
-  </div>
-</div>
-<!-- vidljivo na telefonima  -->
+	
+	
+		
 
 </div>
-<!-- ^^^vidljivo na telefonima ^^^--> 
+			
+			
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <div class="footer">
@@ -591,6 +549,15 @@ textarea { height: 25vh; resize: none; }
 <script src="ostalo/scrypts.js"></script> 
 
 <script>
+	
+	var cards = $(".column");
+for(var i = 0; i < cards.length; i++){
+    var target = Math.floor(Math.random() * cards.length -1) + 1;
+    var target2 = Math.floor(Math.random() * cards.length -1) +1;
+    cards.eq(target).before(cards.eq(target2));
+}
+	
+	
 		document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.fixed-action-btn');
     var instances = M.FloatingActionButton.init(elems, {
