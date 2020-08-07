@@ -15,8 +15,8 @@
 	text-shadow:0px 0px 0px #7cacde;
 	text-align: center;
 	height: 2em;
-	border-style: solid;
-    border-color: black;
+	border:1px solid black;
+	
 	
 }
 .myButton:hover {
@@ -52,6 +52,7 @@
 	height: 2em;
 	border-style: solid;
     border-color: black;
+	
 }
 }
 @media (max-width: 768px) {
@@ -70,7 +71,8 @@
 	text-decoration:none;
 	text-shadow:0px 0px 0px #7cacde;
 	text-align: center;
-	height: 2em;
+	height: 3em;
+	border:1px solid black;
 	
 }
 .myButton:hover {
@@ -103,6 +105,59 @@
 	text-decoration:none;
 	text-shadow:0px 0px 0px #7cacde;
 	text-align: center;
-	height: 2em;
+	height: 3em;
+}
+}
+@media (max-height: 400px) {
+	.myButton {
+	box-shadow:inset 0px 1px 0px 0px #bee2f9;
+	background:linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
+	background-color:#3d94f6;
+	border-radius:10px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:0.9em;
+	font-weight:bold;
+	padding: 0.2em;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #7cacde;
+	text-align: center;
+	height: 3em;
+	border:1px solid black;
+	
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #468ccf 5%, #63b8ee 100%);
+	background-color:#468ccf;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+.grayout {
+    opacity: 0.6; /* Real browsers */
+    filter: alpha(opacity = 60); /* MSIE */
+}
+
+.myButton-disabled {
+	box-shadow:inset 0px 1px 0px 0px #bee2f9;
+	background:linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
+	background-color:gray;
+	border-radius:10px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:0.9em;
+	font-weight:bold;
+	padding: 0.2em;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #7cacde;
+	text-align: center;
+	height: 3em;
 }
 }

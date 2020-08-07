@@ -3,10 +3,12 @@
 	background-color: rgba(18,97,179,1.00)
 }
 /* CSS Document */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
 .masonry { /* Masonry container */
-  column-count: 3;
+  column-count: 1;
   column-gap: 1em;
+  margin-left: 1%;
+  margin-right: 1%;
 }
 
 .column {
@@ -16,6 +18,39 @@
   width: 100%;
 }
 }
+
+@media (min-width: 768px) {
+.masonry { /* Masonry container */
+  column-count: 3;
+  column-gap: 1em;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.column {
+	background-color: #eee;
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%;
+}
+}
+
+@media (max-height: 400px) {
+.masonry { /* Masonry container */
+  column-count: 2;
+  column-gap: 1em;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.column {
+	background-color: #eee;
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%;
+}
+}
+
 
 .btn-index:hover{
 	border: 2.5px solid;

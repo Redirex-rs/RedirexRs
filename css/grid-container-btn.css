@@ -24,7 +24,7 @@
 		margin-bottom: %;
 		
 	}
-
+}
 
 
 @media (max-width: 768px){
@@ -32,6 +32,33 @@
 	.grid-container-btn {
         display: grid;
         grid-template-columns: 49% 49% ;
+        column-gap: 1%;
+        padding-bottom: 5%;                         
+        height: 3em;
+        margin-left: 4%;
+		margin-right: 1%;
+		margin-top: 1%;	
+		grid-row-gap: 1%;
+        z-index: -2;
+		margin-bottom: 3vh;
+		position: center center ;
+			
+      }
+	
+	.grid-container-btn > a {
+		padding: rem;
+		object-position: center center;
+		width: 100%;
+		margin-bottom: 2%;
+		
+	}
+}
+	
+	@media (max-height: 400px) {
+	
+	.grid-container-btn {
+        display: grid;
+        grid-template-columns: 24% 24% 24% 24% ;
         column-gap: 1%;
         padding-bottom: 5%;                         
        
@@ -51,4 +78,5 @@
 		width: 100%;
 		margin-bottom: 2%;
 		
+	}
 	}

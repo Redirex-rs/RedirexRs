@@ -10,7 +10,7 @@
 <!--Let browser know website is optimized for mobile-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Redirex</title>
-<link rel="shortcut icon" href="zdravstvo/favicon.ico" >
+<link rel="shortcut icon" href="usluzne delatnosti/favicon.ico" >
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -18,44 +18,12 @@
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 
+<link rel="stylesheet" href="../../GlavniCss-zajecar.css" class="">
 <style>
-/* Tooltip container */
-.content-glavni{ 
-            background: rgb(7, 7, 7);
-  z-index: -1;
-  -webkit-box-shadow: 0 0 2vw 0.3vw rgb(83, 82, 82);
-  box-shadow: 0 0 20% 21% rgb(63, 62, 62);
-height: 100%;
-  margin-bottom: 5%;
-}	
-
-.tooltip {
-	position: relative;
-	display: inline-block;
-}
-.tooltip .tooltiptext {
-	visibility: hidden;
-	width: 120px;
-	background-color: white;
-	color: #000;
-	text-align: center;
-	border-radius: 6px;
-	padding: 5px 0;
-	/* Position the tooltip */
-	position: absolute;
-	z-index: 1;
-	top: -5px;
-	right: 2100%;
-}
-.tooltip:hover .tooltiptext {
-	visibility: visible;
-}
-</style>
-<script>
-			  $(document).ready(function(){
-    $('.collapsible').collapsible();
-  });</script>
-<style>
+	
+	.card-image{
+		color: gray
+	}
 .footer {
 margin-top: auto;
 
@@ -208,39 +176,12 @@ margin-top: auto;
   grid-gap: %;
   		 
   padding-left: 10%;
-  padding-top: 0%;
-}
-		  .grid-container3 {
   
-  
-  display: grid;
-  grid-template-columns: 30% 30% 30% ;
-  grid-gap: %;
-  		 
-  padding-left: 10%;
-  padding-top: 0%;
 }
 	</style>
 	
 	<style>
-			body {
-background: url(../../banneri/background-okrug.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-background-color: rgba(251,250,254,1.00);
-    width: 100vw;  
-    height: 100%;   
-    overflow-x: hidden;
-    background-image: url(49714009_1028677463986112_5525291193681838080_n.jpg);
-	
-	background-size: 100% 40%;
-	background-repeat: no-repeat;			
-		
-	padding-bottom: 0%;
-	
-    } 
+			
 			.container_lmenu {
 		 height: 1vh;
 		 width: 10%;
@@ -372,7 +313,7 @@ background-color: rgba(251,250,254,1.00);
   transition: .5s ease;
 }
 
-.container1:hover .overlay1 {
+	.container1:hover .overlay1 {
   width: 33%;
 }
 	.container2:hover .overlay1 {
@@ -395,7 +336,7 @@ background-color: rgba(251,250,254,1.00);
   width: 100%;
   height: auto;
 }
-.container1 {
+	.container1 {
   position: relative;
   width: 100%;
 }
@@ -453,32 +394,34 @@ input, textarea {
 textarea { height: 25vh; resize: none; }
 
 
-
+.content-glavni{ 
+            background: rgb(7, 7, 7);
+  z-index: -1;
+  -webkit-box-shadow: 0 0 2vw 0.3vw rgb(83, 82, 82);
+  box-shadow: 0 0 20% 21% rgb(63, 62, 62);
+height: 100%;
+  margin-bottom: 5%;
+}
 	</style>
 		</head>
 
-		<body style="background-image:image " id="math.min">
+		<body id="math.min">
 
 	  <!--- <div class="#" style="margin-bottom: 3%;margin-left: 4%; margin-right: 4%; background-color: rgb(255, 255, 255);">	--->
 		
 
 	   <!-- Meni s leve strane vidljiv na dektop--->
-<nav class="nav-wrapper fixed" > <span onclick="openNav()"> <i class="fas fa-bars" style="padding-left: 2%"></i></span>
+  <nav class="nav-wrapper fixed" > <span onclick="openNav()"> <i class="fas fa-bars" style="padding-left: 2%"></i></span>
     <ul id="nav-mobile" class="right  " style="padding-right: 2%">
       <!-- Dropdown Structure -->
-      <li><a href="../../../../index.html">Glavna Stranica</a></li>
-    
+      
       <li><a href="#" id="contact">Kontakt</a></li>
       
     </ul>
   
 </nav>
  
- 
-<div class="center" style="margin-top: 7vh">
-	  <img src="../COA_Prokuplje.png" alt="" class="" style="width: 15vw">
-	 
-	</div>
+ <div class="center" style="margin-top: 10vh"><img src="../COA_Prokuplje.png" alt="" class="" style="width: 10vw"></div>
 	<div class="divider"></div>
  
   <!-- kontakt forma-->	
@@ -517,94 +460,67 @@ textarea { height: 25vh; resize: none; }
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; </a> 
   
   <!-- Overlay content -->
-  <div class="overlay-content"> 
+ <div class="overlay-content"> 
     <p></p>
   </div>
 
 </div>
-<!-- Use any element to open/show the overlay navigation menu --> 
 
-<!--   
-	   
 
-</div>
 
-<!-- Action dugme--->
-
-<!-- 
-<div class="hide-on-large-only">
-  <div class="fixed-action-btn left-button hide" style="padding-left: 1vw"> <a class="btn-floating btn-large red"> <i class="large material-icons">add</i> </a>
-    <ul>
-      <li><a class="btn-floating green" href="zdravstvo/androidapp.html"><i class="fab fa-android"></i></a></li>
-      <li><a class="btn-floating #827717 lime darken-4"><i class="fas fa-question"></i></a></li>
-      <li><a class="btn-floating blue" href="https://www.facebook.com/redirexx/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-      <li><a class="btn-floating #ff6d00 orange accent-4"><i class="material-icons">mail</i></a></li>
-    </ul>
-  </div>
-</div>
 
 <!-- vidljivo na dektop---> 
 
-         
-       
-       
-        <div class="hide-on-small-onlyy" style="padding-top: 5%; padding-bottom: 10%">  
-          <div class="container_mmenu" style="padding-left: 5%">
-           <div>
-          	<a href="kardiologija-prokuplje.html" class="btn button4 blue" style="width: 95%; height: 10vh; padding-left: 2vw"><h4>Kardiologija</h4></a>
-          	</div>
-          	<br>
-          	<div>
-          	<a href="pedijatrija-prokuplje.html" class="btn button4 blue" style="width: 95%; height: 10vh"><h4>Pedijatrija</h4></a>
-          	</div>
-          	<br>
-          	<div>
-          	<a href="interna-prokuplje.html" class="btn button4 blue" style="width: 95%; height: 10vh"><h4>interna</h4></a>
-          	</div>
-         </div>
-</div> 
-         
-         
-         
+<br>
+<br>
+
+ 
+<div class="masonry" >
+	
+	<div class="column" style="width: rem">
+    <div class="col s12 m7">
+      <div class="card">
+       <a href="http://herbamedicanatural.com" target="_blank">
+        <div class="card-image" style="text-align: center">
+          <img style="padding: 0.3em; height: 40%" src="../Delatnosti/Prokuplje-zdravlje/Herba Medical Natural – Prirodni preparati/10547628_768314899886341_2161372759293284324_n.png"><p1>Prokuplje</p1> </div>
+        <div class="card-content" style="color: black">
+          <p1><h6>Herba Medical Natural – Prirodni preparati</h6> <br>
+<i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp; 8. Marta 25, Prokuplje 18400 <br>
+<i class="fas fa-phone"></i>&nbsp;&nbsp;027/331-195;  027 333 202 <br>
+<br> <br>
+Radno vreme: <br>
+Radnim danima: 09:00h – 17:00h <br>
+Subotom: 09:00h – 17:00h <br> <br>
+Firma Herba Medical Natural se bavi iskljucivo proizvodnjom i prodajom cajeva i drugih preparata na biljnoj bazi koji pomazu prilikom lecenja mioma, cisti, ranica, stresa, depresije, nervoze kao i citavog niza drugih zdravstvenih problema.
+</p1>
+        </div>
+        </a>
+        <div class="card-action">
         
-<!--
-  <div class="col s12 m7" style="width: 47vw"> 
-    <div class="card horizontal" style="padding-top: 0%; width: 100%; height: 100%">
-      <div class="card-image" style="padding-top: 3vw">
-       <a href=""></a>
-        <img src="stranice/Medicina/pedijatrija/zigic-Marina/76173541_552680855542351_4464686055437631488_n.jpg"  >
-      </div>
-      <div class="card-stacked" style=" width: 50vw; height: 15vh">
-        <div class="card-content" style="width: 100%">
-          <p>I am a very simple card. I am good at containing small bits of information.</p>
+       <a href="https://www.facebook.com/HerbaMedicaNatural/" target="_blank"><i class="fab fa-facebook-square fa-3x" style="color: dodgerblue; "></i></a>
+			
+	   <a href="https://twitter.com/MedicaHerba" target="_blank"><i class="fab fa-twitter-square fa-3x" style="color:rgba(57,171,235,1.00); "></i></a>
+			
+	   <a href="http://herbamedicanatural.com" target="_blank"><i class="fab fa-internet-explorer fa-3x" style="color:rgba(57,171,235,1.00); "></i></a>	
+		
+	   <a href="https://www.youtube.com/watch?v=HxGDGR4FDOo" target="_blank"><i class="fab fa-youtube-square fa-3x" style="color:red; "></i></a>			
+			
         </div>
       </div>
     </div>
   </div>
-  
- 
-   
-    <div class="polaroid" style="padding-left: 2vw; animation-delay: 0.6s; animation-name: fadeInLeft; "> 
-    <a href="https://www.dr-marina.rs/" target="_blank">
-     <img src="stranice/Medicina/pedijatrija/zigic-Marina/76173541_552680855542351_4464686055437631488_n.jpg" style="width: 95%" alt=""/>
-     </a> 
-    </div>
-    <div class="polaroid" style="padding-left: 2vw "> <a href="stranice/Medicina/interna medicina/Zigic-inter/zigic-inter.html"> <img src="stranice/Medicina/interna medicina/Zigic-inter/73202629_541035030006605_4107229886035263488_n.jpg" style="width: 95%" alt=""/> </a> </div>
-    <div class="polaroid" style="padding-left: 2vw"> <a href="stranice/Ostalo/DejanKostic/DejaKostic.html"> <img src="stranice/Ostalo/DejanKostic/74718044_541291849993482_7181548454101909504_n(1).jpg" style="width: 95%" alt=""/> </a> </div> -->
-  
 
 
-<!-- vidljivo na telefonima  -->
 
-
-</div>
 
 
 
 </div>
+
+
 <!-- ^^^vidljivo na telefonima ^^^--> 
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <div class="footer">
         &copy Redirex team, 2020.
     </div>
@@ -616,7 +532,7 @@ textarea { height: 25vh; resize: none; }
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> 
 <!--JavaScript at end of body for optimized loading--> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
-<script src="zdravstvo/scrypts.js"></script> 
+<script src="usluzne delatnosti/scrypts.js"></script> 
 
 <script>
 		document.addEventListener('DOMContentLoaded', function() {
@@ -668,6 +584,7 @@ function closeNav() {
     }
   });
   
-});</script>	
+});
+		  </script>	
 </body>
 </html>
