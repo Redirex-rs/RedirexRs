@@ -5,10 +5,12 @@
 <!--Import Google Icon Font-->
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <!--Import materialize.css-->
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js?ver=5.4.2">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 <script src="https://kit.fontawesome.com/3429f72bdb.js" crossorigin="anonymous"></script>
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>	
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!--Let browser know website is optimized for mobile-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Redirex</title>
@@ -20,14 +22,26 @@
 	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
+<link rel="stylesheet" href="../../../css/floatingdugme.css" class="">	
+<link rel="stylesheet" href="../../../css/masonry.css">
+<link rel="stylesheet" href="../../../css/myInput.css">	
 <link rel="stylesheet" href="../GlavniCss-zajecar.css" class="">
+<script src="../../../JSS/Filterovanje.js"></script>
+<script src="../../../JSS/backtotop.js"></script>	
+	
+<script>
 
+	
+	
+	</script>
 <style>
 /* Tooltip container */
 	p1 {
 		 
 		 font-size:1rem;
 	 }
+	
+	
 	
 .content-glavni{ 
             background: rgb(7, 7, 7);
@@ -88,23 +102,7 @@ margin-top: auto;
 	margin: 4px 2px;
 	cursor: pointer;
 }
-.button1 {
-	border-radius: 2px;
-}
-.button2 {
-	border-radius: 4px;
-}
-.button3 {
-	border-top: 2px solid #555555;
-	border-right: 10px;
-	background-color: #4fc3f7;
-}
-.button4 {
-	border-radius: 12px;
-}
-.button5 {
-	border-radius: 99%;
-}
+
 </style>
 
 <!--- slide preko slike  -->
@@ -149,22 +147,6 @@ margin-top: auto;
 }
 </style>
   
-  
-	  <style>
-		  .pin-top {
-		position: relative;
-	  }
-
-	  // Class for when element is below threshold
-	  .pin-bottom {
-		position: relative;
-	  }
-
-	  // Class for when element is pinned
-	  .pinned {
-		position: fixed !important;
-	  }
-			</style>
 
 	 <style> html {
 					width: 100%;
@@ -231,42 +213,6 @@ margin-top: auto;
 }
 	</style>
 	
-	<style>
-			body {
-
-    } 
-			.container_lmenu {
-		 height: 1vh;
-		 width: 10%;
-		 
-	 }
-
-	 .container_mmenu{
-		 height: 100%;
-		 width: 100%;
-	 }
- 
-	 .container_banner{ 
-		 width: 10vw;
-		 height: 10vh;
-	 }
-		.navbar-default {
-    background-color: #F8F8F8;
-    border-color: #E7E7E7;
-	width: 100%;		
-}
-		
-		.slide-out-desktop{
-			width: 90%;
-		}
-		
-		.overlay-content{
-			
-		}
-		
-		
-		
-			</style>
 	
 	
 	<style>
@@ -468,6 +414,7 @@ textarea { height: 25vh; resize: none; }
   
 </nav>
  
+
  
 <div class="center" style="margin-top: 7vh">
 	  <img src="../1024px-Flag_of_Belgrade,_Serbia.svg.png" alt="" class="" style="width: 15vw">
@@ -517,19 +464,24 @@ textarea { height: 25vh; resize: none; }
 
 </div>
 <!-- Use any element to open/show the overlay navigation menu --> 
-
+		
+<input id="myInput" type="text" placeholder="Pretraga">
+		
+	
 			
-			
-	<div class="flex-container^" style="padding-top: 1%;">
-<div class="masonry" >
+	
+<div class="masonry" id="Lista" style="list-style-type:none;">
 
 <!--Dom za stara i odrasla lica NAJMILIJI-->
-    <div class="column" style="width: rem">
+
+<div class="column" style="width: rem" id="dom za stare">
     <div class="col s12 m7 ">
       <div class="card">
         <div class="card-image" style="text-align: center">
-          <img style="padding: 0.3em; " src="../Delatnosti/Zdravlje i medicina/dom za starije - najmiliji/mali-logo.png"><p1>Zemun/Beograd</p1> </div>
+          </div>
         <div class="card-content" style="color: black">
+			<img style="display:block;margin:auto;width: 90%" src="../Delatnosti/Zdravlje i medicina/dom za starije - najmiliji/mali-logo.png"> <br> <p1>Zemun/Beograd</p1>
+			<hr>
           <p1><h6>Dom za stara i odrasla lica NAJMILIJI</h6> <br>
 <i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp; Vojni put 2.deo 293a, Zemun, Beograd<br>
 <i class="fas fa-phone"></i>&nbsp;&nbsp;011/408 5510; 065/403 7365 <br>
@@ -540,6 +492,8 @@ Ceo dom je namenski građen za negu starih lica, pa se vodilo računa o svakoj p
 Prostorije su opremljene krevetima urađenim prema medicinskim standardima i zaštićeni ogradicama u cilju bezbednosti korisnika. 
 Sve zajedničke prostorije korisnika uređene su tako da im pružaju komfor,udobnost i uživanje u toplom kućnom ambijentu. 
 Dom Najmiliji je potpuno nova kuća sa potpuno novim nekorišćenim nameštajem.
+			  
+			  
 </p1>
         </div>
         
@@ -552,15 +506,16 @@ Dom Najmiliji je potpuno nova kuća sa potpuno novim nekorišćenim nameštajem.
         </div>
       </div>
     </div>
-  </div>
+  </div> 
 <!--Logopedski centar Lingua Logos-->
-    <div class="column" style="width: rem">
+<div class="column" style="width: rem">
     <div class="col s12 m7">
       <div class="card">
-       
         <div class="card-image" style="text-align: center">
-          <img style="padding: 0.3em; " src="../Delatnosti/Zdravlje i medicina/logoped. lingua/razvoj-govora-1024x576.png"><p1>Beograd</p1> </div>
+          </div>
         <div class="card-content" style="color: black">
+			<img style="display:block;margin:auto;width: 100%" src="../Delatnosti/Zdravlje i medicina/logoped. lingua/razvoj-govora-1024x576.png"> <br> <p1>Beograd</p1> 
+			<hr>
           <p1><h6>Logopedski centar Lingua Logos</h6> <br>
 <i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Lingua Logos Centar 1
 Belville, Đorđa Stanojevića 11Đ
@@ -578,6 +533,7 @@ U Logopedskom centru „Lingua Logos“ tim sačinjen od defektologa – logoped
  reedukatora psihomotorike i psihologa udružuje svoja polja ekspertize,
  kako bi na osnovu opservacije i procene odredio adekvatan program tretmana,
  prilagođen biološkom potencijalu i dinamici napredovanja svakog deteta ponaosob.
+			  	 
 </p1>
         </div>
         
@@ -590,15 +546,16 @@ U Logopedskom centru „Lingua Logos“ tim sačinjen od defektologa – logoped
         </div>
       </div>
     </div>
-  </div>		
+  </div>
 <!--Optičarska Radnja Optika Soko-->	
-	<div class="column">
+<div class="column">
+	<p class="hide">Optika</p>
     <div class="col s12 m7">
       <div class="card">
-       
         <div class="card-image" style="text-align: center">
-          <img style="padding: 0.3em; " src="../Delatnosti/Zdravlje i medicina/Optika Soko/optika-soko-radnja-1064x531.jpg"><p1>Beograd</p1> </div>
+          </div>
         <div class="card-content" style="color: black">
+<img style="display:block;margin:auto;width: 100%" src="../Delatnosti/Zdravlje i medicina/Optika Soko/optika-soko-radnja-1064x531.jpg"><p1>Beograd</p1> <hr>			
           <p1><h6>Optičarska Radnja Optika Soko</h6> <br>
 <i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Bulevar kralja Aleksandra 321, Beograd<br> <br>
 
@@ -632,19 +589,20 @@ Naše profesionalno i stručno osoblje će Vam pružiti svu neophodnu pomoć pri
         </div>
       </div>
     </div>
-  </div>	
+  </div>
 <!--GALA DENT – Stomatološka ordinacija-->	
-	<div class="column" style="width: rem">
+<div class="column" style="width: rem">
     <div class="col s12 m7">
       <div class="card">
        
         <div class="card-image" style="text-align: center">
-          <img style="padding: 0.3em; " src="../Delatnosti/Zdravlje i medicina/GALA DENT/28576094_886908381471409_8581742138858738753_n.png"><p1>Beograd</p1> </div>
+          </div>
         <div class="card-content" style="color: black">
+			<img style="display:block;margin:auto;width: 100%" src="../Delatnosti/Zdravlje i medicina/GALA DENT/28576094_886908381471409_8581742138858738753_n.png"><p1>Beograd</p1> <hr>
           <p1><h6>GALA DENT – Stomatološka ordinacija</h6> <br>
 <i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Kneginje Zorke 94, 11000 Beograd<br> <br>
 
-<i class="fas fa-phone"></i>&nbsp;&nbsp;(+381 65 779 32 79)<br>
+<i class="fas fa-phone"></i>&nbsp;&nbsp;+381 65 779 32 79<br>
     
     
 <i class="fas fa-envelope"></i>&nbsp;&nbsp;info@galadent.rs<br><br>
@@ -674,13 +632,14 @@ Osmesi ne liče jedni na druge – svaki osmeh je svojstven samo osobi koja ga n
     </div>
   </div>
 <!--Ginekološka ordinacija dr Biljana Živaljević-->		
-	<div class="column" style="width: rem">
+<div class="column" style="width: rem">
+	<p class="hide">ginekologija</p>
     <div class="col s12 m7">
       <div class="card">
-       
         <div class="card-image" style="text-align: center">
-          <img style="padding: 0.3em; " src="../Delatnosti/Zdravlje i medicina/Ginek. Biljana Živaljvić/83201594_2806292849416842_6648127697920720896_n.jpg"><p1>Beograd</p1> </div>
+           </div>
         <div class="card-content" style="color: black">
+<img style="display:block;margin:auto;width: 100%" src="../Delatnosti/Zdravlje i medicina/Ginek. Biljana Živaljvić/83201594_2806292849416842_6648127697920720896_n.jpg"><p1>Beograd</p1> <hr>			
           <p1><h6>Ginekološka ordinacija dr Biljana Živaljević</h6> <br>
 <i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Kumanovska 23, Beograd, Vračar<br> <br>
 
@@ -705,6 +664,8 @@ Kontrola trudnoće<br>
 
 Adolescentna ginekologija i savetovalište za kontracepciju
 – savetovalište je besplatno, termin po dogovoru
+			  
+			  
 </p1>
         </div>
         
@@ -721,13 +682,13 @@ Adolescentna ginekologija i savetovalište za kontracepciju
     </div>
   </div>
 <!--Veterinarska ordinacija SALI VET-->		
-	<div class="column" style="width: rem">
+<div class="column" style="width: rem">
     <div class="col s12 m7">
       <div class="card">
-       
         <div class="card-image" style="text-align: center">
-          <img style="padding: 0.3em; " src="../Delatnosti/Zdravlje i medicina/vet Sali/veterinarska-ambulanta-sali-vet-10-4-1-300x120.jpg"><p1>Beograd</p1> </div>
+          </div>
         <div class="card-content" style="color: black">
+			<img style="display:block;margin:auto;width: 100%" src="../Delatnosti/Zdravlje i medicina/vet Sali/veterinarska-ambulanta-sali-vet-10-4-1-300x120.jpg"><p1>Beograd</p1> <hr>
           <p1><h6>Veterinarska ordinacija SALI VET</h6> <br>
 <i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Bulevar Arsenija Čarnojevića 145 blok38 , Belgrade, Serbia<br> <br>
 
@@ -751,6 +712,8 @@ Dežurni telefoni mobilni:<br>
 tel: +381 69 773 359<br>
 tel: +381 69 773 358<br>
 email: roda.lo28@gmail.com
+			  
+			  
 </p1>
         </div>
         
@@ -759,13 +722,13 @@ email: roda.lo28@gmail.com
     </div>
   </div>
 <!--Biohemijska i mikro biološka labaratorija Mak Lab-->		
-	<div class="column" style="width: rem">
+<div class="column" style="width: rem">
     <div class="col s12 m7">
       <div class="card">
-       
         <div class="card-image" style="text-align: center">
-          <img style="padding: 0.3em; " src="../Delatnosti/Zdravlje i medicina/lab. Mak Lab/louis-reed-747388-unsplash-1064x709-1-1064x709.jpg"><p1>Beograd</p1> </div>
+          </div>
         <div class="card-content" style="color: black">
+<img style="display:block;margin:auto;width: 100%" src="../Delatnosti/Zdravlje i medicina/lab. Mak Lab/louis-reed-747388-unsplash-1064x709-1-1064x709.jpg"><p1>Beograd</p1> <hr>			
           <p1><h6>Biohemijska i mikro biološka labaratorija Mak Lab</h6> <br>
 <i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Biohemijska laboratorija <br>
     Generala Štefanika 18, lokal 2, Beograd<br>
@@ -816,13 +779,13 @@ Od usluga Vam nudimo: <br><br>
     </div>
   </div>
 <!--Internističko kardiološka ordinacija MEDISIN 59-->		
-	<div class="column" style="width: rem">
+<div class="column" style="width: rem">
     <div class="col s12 m7">
       <div class="card">
-       
         <div class="card-image" style="text-align: center">
-          <img style="padding: 0.3em; " src="../Delatnosti/Zdravlje i medicina/Medisin 59/header.jpg"><p1>Beograd</p1> </div>
+          </div>
         <div class="card-content" style="color: black">
+<img style="display:block;margin:auto;width: 100%" src="../Delatnosti/Zdravlje i medicina/Medisin 59/header.jpg"><p1>Beograd</p1> <hr>			
           <p1><h6>Internističko kardiološka ordinacija MEDISIN 59</h6> <br>
 <i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Gospodar Jevremova 59, Beograd<br> <br>
 
@@ -850,13 +813,13 @@ a klasična u smislu posvećenosti bolesniku u naporu da se poboljša i unapredi
     </div>
   </div>
 <!--Psihološko savetovalište Filipović-->		
-	<div class="column" style="width: rem">
+<div class="column" style="width: rem">
     <div class="col s12 m7">
       <div class="card">
-       
         <div class="card-image" style="text-align: center">
-          <img style="padding: 0.3em; " src="../Delatnosti/Zdravlje i medicina/psih. Filipovic/49815667_2706526782705631_9134687915744428032_n.png"><p1>Beograd</p1> </div>
+          </div>
         <div class="card-content" style="color: black">
+<img style="display:block;margin:auto;width: 100%" src="../Delatnosti/Zdravlje i medicina/psih. Filipovic/49815667_2706526782705631_9134687915744428032_n.png"><p1>Beograd</p1> <hr>			
           <p1><h6>Psihološko savetovalište Filipović</h6> <br>
 <i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Zaplanjska 84e, Beograd<br> <br>
 
@@ -884,13 +847,14 @@ Geštalt terapije,  znanja iz  komunikacionih i emocionalnih veština, i  po pot
     </div>
   </div>
 <!--Dom Zdravlja Hemikal-->		
-	<div class="column" style="width: rem">
+<div class="column" style="width: rem">
     <div class="col s12 m7">
       <div class="card">
        
         <div class="card-image" style="text-align: center">
-          <img style="padding: 0.3em; " src="../Delatnosti/Zdravlje i medicina/Hemikal/12074596_623475731089460_3441508267015762564_n.jpg"	><p1>Lazarevac/Beograd</p1> </div>
+          </div>
         <div class="card-content" style="color: black">
+<img style="display:block;margin:auto;width: 100%" src="../Delatnosti/Zdravlje i medicina/Hemikal/12074596_623475731089460_3441508267015762564_n.jpg"><p1>Lazarevac/Beograd</p1> <hr>			
           <p1><h6>Dom Zdravlja Hemikal</h6> <br>
 <i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Dr Đorđe Kovačević 18, Lazarevac<br> <br>
 
@@ -906,6 +870,8 @@ U radom delu doma zdravlja nalazi se 10 specijalističkih ordinacija sa odgovara
 holter EKG-a, holter krvnog pritiska itd, kompletna laboratorijska dijagnostika, biohemijske, hematološke, mikrobiološke, virusološke, imunološke, alergološke i druge analize. 
 Terenska služba Doma zdravlja radi 14 sati dnevno i opremljena je ultrazvukom najnovije generacije, aparatom za EKG, holterom EKG-a,
 holterom krvnog pritiska i laboratorijskim instrumentima za uzimanje uzoraka krvi i mokraće
+			  
+			 <p class="hide">jebiga</p> 
 </p1>
         </div>
         
@@ -924,13 +890,13 @@ holterom krvnog pritiska i laboratorijskim instrumentima za uzimanje uzoraka krv
     </div>
   </div>
 <!--Ordinacija Horus DR.Mirko Đorđević-->		
-	<div class="column" style="width: rem">
+<div class="column" style="width: rem">
     <div class="col s12 m7">
       <div class="card">
-       
         <div class="card-image" style="text-align: center">
-          <img style="padding: 0.3em; " src="../Delatnosti/Zdravlje i medicina/Ordin. Horus/1-11-971x728.jpg"><p1>Beograd</p1> </div>
+          </div>
         <div class="card-content" style="color: black">
+<img style="display:block;margin:auto;width: 100%" src="../Delatnosti/Zdravlje i medicina/Ordin. Horus/1-11-971x728.jpg"><p1>Beograd</p1> <hr>			
           <p1><h6>Ordinacija Horus DR.Mirko Đorđević</h6> <br>
 <i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Bulevar Mihajla Pupina 145/62, Novi Beograd<br> <br>
 
@@ -958,13 +924,13 @@ Tretmanu AKUPUNKTUROM prethodi obavezna kompletna dijagnostika po principima tra
     </div>
   </div>
 <!--Specijalistička ginekološko akušerska ordinacija EVA-->		
-	<div class="column" style="width: rem" id="ginekologija">
+<div class="column" style="width: rem" id="ginekologija">
     <div class="col s12 m7">
       <div class="card">
-       
         <div class="card-image" style="text-align: center">
-          <img style="padding: 0.3em; " src="../Delatnosti/Zdravlje i medicina/spec. gin. Eva/19511160_314005035687714_5381718251021212730_n.jpg"><p1>Zemun/Beograd</p1> </div>
+          </div>
         <div class="card-content" style="color: black">
+<img style="display:block;margin:auto;width: 100%" src="../Delatnosti/Zdravlje i medicina/spec. gin. Eva/19511160_314005035687714_5381718251021212730_n.jpg"><p1>Zemun/Beograd</p1> <hr>			
           <p1><h6>Specijalistička ginekološko akušerska ordinacija EVA </h6> <br>
 <i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Dubrovačka 3, Zemun<br> <br>
 
@@ -985,19 +951,19 @@ Zalažemo se za siguran i pouzdan način rada zbog čega smo stekli veliki ugled
 	   <a href="http://ordinacijaeva.com" target="_blank"><i class="fab fa-internet-explorer fa-3x" style="color:rgba(57,171,235,1.00); "></i></a>	
 			
 	   	
-			
+		<p class="hide">Specijalisticka ginekologija  ginekolog ginekoloska akuserska ordinacija EVA</p>	
         </div>
       </div>
     </div>
   </div>
 <!--Salon za otklanjanje vaški i gnjida Beovaškica-->		
-	<div class="column" style="width: rem">
+<div class="column" style="width: rem">
     <div class="col s12 m7">
       <div class="card">
-       
         <div class="card-image" style="text-align: center">
-          <img style="padding: 0.3em; " src="../Delatnosti/Zdravlje i medicina/beovaskica/salon-za-uklanjanje-vaski-i-gnjda-1.jpg"><p1>Beograd</p1> </div>
+          </div>
         <div class="card-content" style="color: black">
+<img style="display:block;margin:auto;width: 100%" src="../Delatnosti/Zdravlje i medicina/beovaskica/salon-za-uklanjanje-vaski-i-gnjda-1.jpg"><p1>Beograd</p1> <hr>			
           <p1><h6>Salon za otklanjanje vaški i gnjida Beovaškica</h6> <br>
 <i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Pančićeva 14, Beograd<br> <br>
 
@@ -1032,7 +998,7 @@ Specijalizovani salon za uklanjanje vaški i gnjida <br> <br>
 		
 </div>
 
-</div>
+ <button class="float" style="background-color: cornflowerblue" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up fa-2x"></i></button> 
 
 
 <!-- ^^^vidljivo na telefonima ^^^--> 
@@ -1049,21 +1015,14 @@ Specijalizovani salon za uklanjanje vaški i gnjida <br> <br>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> 
 <!--JavaScript at end of body for optimized loading--> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
-
+<script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js?ver=5.4.2"></script>
 
 			
 <script src="zdravstvo/scrypts.js"></script>
 <script src="Filterovanje.js"></script> 
 
 <script>
-		document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.fixed-action-btn');
-    var instances = M.FloatingActionButton.init(elems, {
-      direction: 'up',
-      hoverEnabled: false
-	  
-    });
-  });
+		
 			  
 			   $(document).ready(function(){
     $('.collapsible').collapsible();
@@ -1117,7 +1076,6 @@ for(var i = 0; i < cards.length; i++){
 $('.dropdown-trigger').dropdown();	
 	
 
-	
 			</script>	
 </body>
 </html>
