@@ -48,6 +48,13 @@
 		border-color: black;
 	}
 	
+	.btn1 {
+background: rgba(255,255,255,0.00);
+border: 1px solid aqua;
+width: 8em; 
+color: aqua;
+}
+	
 	.btn {
 background: rgba(255,255,255,0.00);
 border: 1px solid aqua;
