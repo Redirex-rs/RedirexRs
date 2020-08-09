@@ -51,6 +51,8 @@
 	.btn {
 background: rgba(255,255,255,0.00);
 border: 1px solid aqua;
+position: absolute; 
+width: 8em; 
 color: aqua
 }
 
@@ -67,10 +69,12 @@ color: aqua
 
 @media (min-width: 768px) {
 	.mobilni-dugme{
-display: flex;
-  align-items: center;
-  justify-content: center;
-		top: 50%;
+		display: none;
+		position: absolute;
+top: 50%; 
+width: 8em; 
+		
+			
 	}
 	
 .carousel-item{ 
