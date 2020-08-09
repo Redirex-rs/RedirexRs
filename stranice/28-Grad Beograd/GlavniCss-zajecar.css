@@ -290,30 +290,17 @@ margin-top: auto;
       }
        
             body {
-background: url("../../banneri/background-okrug.jpg") no-repeat center center fixed; 
+  background: url("../../banneri/background-okrug.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-background-color: rgba(251,250,254,1.00);
-
-   
-          z-index: -1;
-         
-          			
-          
-        padding-bottom: 0%;
+  background-color: rgba(251,250,254,1.00);
+  z-index: -1;
+  padding-bottom: 0%;
         
           } 
 
-          #background-slika{
-            background-image: url('IMG_20191107_205101_HDR_kraca.jp');
-            z-index: -1;
-            background-size: 100% 35vh;
-            background-repeat: no-repeat;
-            
-
-          }
             .container_lmenu {
            height: 1vh;
            width: 10%;
