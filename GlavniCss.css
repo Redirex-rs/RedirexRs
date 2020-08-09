@@ -49,30 +49,28 @@
 	}
 	
 	.btn {
- background: rgba(255,255,255,0.00);
-  
-  
-  border: 1px solid aqua;
+background: rgba(255,255,255,0.00);
+border: 1px solid aqua;
+color: aqua
 }
 
 	
 
-.btn:hover {
-  .
-  background: rgba(255,255,255,1);	 
-}
+
 .blue {
   color: #55acee;
   border: 2px #55acee solid;
+	
 }
 	
 }
 
 @media (min-width: 768px) {
 	.mobilni-dugme{
-		display: none;
-		
-			
+display: flex;
+  align-items: center;
+  justify-content: center;
+		top: 50%;
 	}
 	
 .carousel-item{ 
@@ -298,14 +296,7 @@
 		vertical-align: middle
 	}
 }
-       
-     body {
-                  
-        background-image: url(pzoadinska.jpg);
-		overflow:scroll;
-		font-family: 'Open Sans', 'sans-serif';
-        
-     } 
+     
 
           
             .container_lmenu {
