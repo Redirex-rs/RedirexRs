@@ -53,10 +53,12 @@ background: rgba(255,255,255,0.00);
 border: 1px solid aqua;
 position: absolute; 
 width: 8em; 
-color: aqua
+color: aqua;
 }
 
-	
+	.btn:hover{
+		background-color: aqua;
+	}
 
 
 .blue {
@@ -69,10 +71,11 @@ color: aqua
 
 @media (min-width: 768px) {
 	.mobilni-dugme{
-		display: none;
-		position: absolute;
+display: none;
+position: absolute;
 top: 50%; 
-width: 8em; 
+width: 8em;
+background-color: darkturquoise		
 		
 			
 	}
