@@ -50,7 +50,7 @@
 	
 	.btn1 {
 background: rgba(255,255,255,0.00);
-border: 1px solid aqua;
+border: 1px solid aqua; 
 width: 8em; 
 color: aqua;
 }
@@ -59,8 +59,9 @@ color: aqua;
 background: rgba(255,255,255,0.00);
 border: 1px solid aqua;
 position: absolute; 
-width: 8em; 
+width: 120%; 
 color: aqua;
+top: 10%;		
 }
 
 	.btn:hover{
