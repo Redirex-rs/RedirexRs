@@ -5,6 +5,7 @@
 <!--Import Google Icon Font-->
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <!--Import materialize.css-->
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 <script src="https://kit.fontawesome.com/3429f72bdb.js" crossorigin="anonymous"></script>
 <!--Let browser know website is optimized for mobile-->
@@ -18,6 +19,12 @@
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 <link rel="stylesheet" href="../../GlavniCss-zajecar.css" class="">
+<link rel="stylesheet" href="../../../../css/floatingdugme.css" class="">	
+<link rel="stylesheet" href="../../../../css/masonry.css">
+<link rel="stylesheet" href="../../../../css/myInput.css">
+<script src="../../../../JSS/Filterovanje.js"></script>
+<script src="../../../../JSS/backtotop.js"></script>
+
 <style>
 /* Tooltip container */
 .content-glavni{ 
@@ -507,14 +514,17 @@ textarea { height: 25vh; resize: none; }
 </div>
 <!-- Use any element to open/show the overlay navigation menu --> 
 
-<div class="flex-container^" style="padding-top: 1%;">
-<div class="masonry" ><div class="column" style="width: rem">
+<input id="myInput" type="text" placeholder="Pretraga">
+
+<div class="masonry" id="Lista" style="list-style-type:none;" >
+<!--MILAX – Biljni napitak – Biljna apoteka Krunić-->	
+	<div class="column" style="width: rem">
     <div class="col s12 m7">
       <div class="card">
-       
         <div class="card-image" style="text-align: center">
-          <img style="padding: 0.3em; " src="../Delatnosti/Zdravlje i medicina/Milax/72950882_1206854072855117_7968374703108653056_o.jpg"><p1>Valjevo</p1> </div>
+          </div>
         <div class="card-content" style="color: black">
+<img style="display:block;margin:auto;width: 90%" src="../Delatnosti/Zdravlje i medicina/Milax/72950882_1206854072855117_7968374703108653056_o.jpg"><p1>Valjevo</p1> <hr>			
           <p1><h6>MILAX – Biljni napitak – Biljna apoteka Krunić</h6> <br>
 <i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Doktora Pantića 9, Valjevo<br> <br>
 
@@ -524,27 +534,32 @@ textarea { height: 25vh; resize: none; }
 <br> <br>
 Sedište apoteke nalazi se u selu nedaleko od Valjeva, a divlje bilje sa okolnih brda osnovna je sirovina za Milax čaj.
 </p1>
-        </div>
         
-        <div class="card-action">
+        
+        <br><br><hr><br>
         
        <a href="https://www.facebook.com/Milax-biljni-napitak-148375738702961/" target="_blank"><i class="fab fa-facebook-square fa-3x" style="color: dodgerblue; "></i></a>
 			
 	   <a href="http://www.lekzasidu.com" target="_blank"><i class="fab fa-internet-explorer fa-3x" style="color:rgba(57,171,235,1.00); "></i></a>	
 			
 	   	
-			
+		</div>	
         </div>
       </div>
     </div>
+	
+	
+	
   </div>
 	
-	
-	
-</div>
 
 
-</div>
+
+			
+			
+			
+ <button class="float" style="background-color: cornflowerblue" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up fa-2x"></i></button>			
+			
 <!-- ^^^vidljivo na telefonima ^^^--> 
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br>

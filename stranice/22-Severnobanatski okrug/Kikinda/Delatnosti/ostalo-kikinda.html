@@ -5,6 +5,7 @@
 <!--Import Google Icon Font-->
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <!--Import materialize.css-->
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 <script src="https://kit.fontawesome.com/3429f72bdb.js" crossorigin="anonymous"></script>
 <!--Let browser know website is optimized for mobile-->
@@ -18,6 +19,12 @@
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 <link rel="stylesheet" href="../../GlavniCss-zajecar.css" class="">
+<link rel="stylesheet" href="../../../../css/floatingdugme.css" class="">	
+<link rel="stylesheet" href="../../../../css/masonry.css">
+<link rel="stylesheet" href="../../../../css/myInput.css">
+<script src="../../../../JSS/Filterovanje.js"></script>
+<script src="../../../../JSS/backtotop.js"></script>
+
 <style>
 /* Tooltip container */
 .content-glavni{ 
@@ -491,21 +498,19 @@ textarea { height: 25vh; resize: none; }
   <div class="overlay-content"> 
     <p></p>
   </div>
-
-  
-
-
 </div>
+			
+	<input id="myInput" type="text" placeholder="Pretraga">		
 
-<div class="masonry">
+<div class="masonry" id="Lista" style="list-style-type:none;" >
 <!--Pogrebne usluge AMENTES-->			
 	<div class="column" style="width: rem">
     <div class="col s12 m7">
       <div class="card">
-       
         <div class="card-image" style="text-align: center">
-          <img style="padding: 0.3em; " src="../Delatnosti/Usluge/Porg. Amerntes/radnja1.jpg"><p1>Kikinda</p1> </div>
+         </div>
         <div class="card-content" style="color: black">
+			 <img style="display:block;margin:auto;width: 90%" src="../Delatnosti/Usluge/Porg. Amerntes/radnja1.jpg"><p1>Kikinda</p1> <hr>
           <p1><h6>Pogrebne usluge AMENTES</h6> <br>
 <i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Nemanjina 59, Kikinda
 Srbija<br> <br>
@@ -517,9 +522,9 @@ Pogrebna radnja AMENTES iz Kikinde se već dokazala kvalitetom, ljubaznošću i 
 Na usluzi smo Vam 24h što u toku radnog vremena, što i van njega. Kada dođete kod nas u najtežim trenucima mi smo tu da vam pomognemo da izaberete opremu da dostojanstveno otpratite Vaše najmilije. <br>Naši ljudi obavljaju kompletnu uslugu oko pokojnika kao i prevoz do odredišta ( kapela, kuća, groblje…). Na dan sahrane naše usluge su vam opet na raspolaganju da obavimo ceo običaj i da Vam se nađemo na usluzi kada Vam je najteže. <br><br>
 Obezbedjujemo besplatno hladnjaču, sredjujemo potrebnu dokumentaciju, obavljamo prevoz umrlog.
 </p1>
-        </div>
         
-        <div class="card-action">
+        
+        <br><br><hr><br>
         	
 			
 	   	
@@ -527,11 +532,14 @@ Obezbedjujemo besplatno hladnjaču, sredjujemo potrebnu dokumentaciju, obavljamo
         </div>
       </div>
     </div>
+	
+	
   </div>		
 
 </div>
 
-
+ <button class="float" style="background-color: cornflowerblue" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up fa-2x"></i></button>	
+			
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <div class="footer">
         &copy Redirex team, 2020.

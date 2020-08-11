@@ -5,6 +5,7 @@
 <!--Import Google Icon Font-->
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <!--Import materialize.css-->
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 <script src="https://kit.fontawesome.com/3429f72bdb.js" crossorigin="anonymous"></script>
 <!--Let browser know website is optimized for mobile-->
@@ -493,14 +494,16 @@ textarea { height: 25vh; resize: none; }
 <!-- Action dugme--->
 
    
-	<div class="masonry" >
+	<input id="myInput" type="text" placeholder="Pretraga">
+
+<div class="masonry" id="Lista" style="list-style-type:none;" >
 
     <!--Mašinska Obrada Metala Dva Čekića-->
       <div class="column" style="width: rem">
     <div class="col s12 m7 ">
       <div class="card">
         <div class="card-image" style="text-align: center">
-          <img style="padding: 0.3em; " src="../Delatnosti/Zanatsko usluzne/Dva cekica/DSC_0008.jpg"><p1>Beograd</p1> </div>
+          <img style="display:block;margin:auto;width: 90%" src="../Delatnosti/Zanatsko usluzne/Dva cekica/DSC_0008.jpg"><p1>Beograd</p1> </div>
         <div class="card-content" style="color: black">
           <p1><h6>Mašinska Obrada Metala Dva Čekića</h6> <br>
 <i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp; Trinaestog Oktobra 67, Beograd <br><br>
@@ -514,7 +517,7 @@ Delove od metala proizvodimo po uzorku, crtežu ili vašoj sugestiji sa našim s
 Radimo i sečenje do fi 200 mm.
 </p1>
         </div>
-        <div class="card-action">			
+        <br><br><hr><br>			
 			
         </div>
         

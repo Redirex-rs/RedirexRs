@@ -3,6 +3,10 @@
 	background-color: rgba(18,97,179,1.00)
 }
 /* CSS Document */
+.column  a {
+	margin: 1em
+}
+
 @media (min-width: 768px) {
 .masonry { /* Masonry container */
   column-count: 3;

@@ -1,5 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
+.column  a {
+	margin: 1em
+}
 @media (min-width: 768px) {
 .masonry { /* Masonry container */
   column-count: 3;

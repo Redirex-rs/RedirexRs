@@ -5,6 +5,7 @@
 <!--Import Google Icon Font-->
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <!--Import materialize.css-->
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 <script src="https://kit.fontawesome.com/3429f72bdb.js" crossorigin="anonymous"></script>
 <!--Let browser know website is optimized for mobile-->
@@ -18,6 +19,12 @@
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 <link rel="stylesheet" href="../../GlavniCss-zajecar.css" class="">
+<link rel="stylesheet" href="../../../../css/floatingdugme.css" class="">	
+<link rel="stylesheet" href="../../../../css/masonry.css">
+<link rel="stylesheet" href="../../../../css/myInput.css">
+<script src="../../../../JSS/Filterovanje.js"></script>
+<script src="../../../../JSS/backtotop.js"></script>
+
 <style>
 /* Tooltip container */
 .content-glavni{ 
@@ -507,15 +514,17 @@ textarea { height: 25vh; resize: none; }
 </div>
 <!-- Use any element to open/show the overlay navigation menu --> 
 
-<div class="flex-container^" style="padding-top: 1%;">
-<div class="masonry" >
-	<div class="column" style="width: rem">
+<input id="myInput" type="text" placeholder="Pretraga">
+
+<div class="masonry" id="Lista" style="list-style-type:none;" >
+<!--Psihijatrijska ordinacija Neurorelax -->	
+    <div class="column" style="width: rem">
     <div class="col s12 m7">
       <div class="card">
-       
         <div class="card-image" style="text-align: center">
-          <img style="padding: 0.3em; " src="../Delatnosti/zdravlje i medicina/Psih ord Neurorelax/27752185_1466693370094755_8173647850143322480_n-612x215.jpg"><p1>Niš</p1> </div>
+          </div>
         <div class="card-content" style="color: black">
+	<img style="display:block;margin:auto;width: 90%" src="../Delatnosti/zdravlje i medicina/Psih ord Neurorelax/27752185_1466693370094755_8173647850143322480_n-612x215.jpg"><p1>Niš</p1> <hr>		
           <p1><h6>Psihijatrijska ordinacija Neurorelax</h6> <br>
 <i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Učitelj Milina 22 pored Čaira, Niš<br> <br>
 
@@ -530,25 +539,24 @@ Ako vas muče problemi razvoja vaše dece, partnerski odnosi, stres,
 nesigurnost, anksioznost, neraspoloženje ili druge psihičke smetnje, dođite da uz pomoć i
 podršku vrhunskih profesionalaca rešite svoje probleme.
 </p1>
-        </div>
         
-        <div class="card-action">
+        
+        <br><br><hr><br>
         
        <a href="https://www.facebook.com/ordinacija.neurorelax.nis/" target="_blank"><i class="fab fa-facebook-square fa-3x" style="color: dodgerblue; "></i></a>
 			
-	   	
+	   	 </div>
         </div>
       </div>
     </div>
-  </div>
-	
+<!--OPTIKA MILOŠEVIĆ -->	
 	<div class="column" style="width: rem">
     <div class="col s12 m7">
       <div class="card">
-       
         <div class="card-image" style="text-align: center">
-          <img style="padding: 0.3em; " src="../Delatnosti/zdravlje i medicina/Optika Milosevic/48365960_516437345533397_9049258778549026816_n-559x419.jpg"><p1>Niš</p1> </div>
+         </div>
         <div class="card-content" style="color: black">
+			 <img style="display:block;margin:auto;width: 90%" src="../Delatnosti/zdravlje i medicina/Optika Milosevic/48365960_516437345533397_9049258778549026816_n-559x419.jpg"><p1>Niš</p1> <hr>
           <p1><h6>OPTIKA MILOŠEVIĆ</h6> <br>
 <i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Koste Stamenkovica 16/1, Niš<br> <br>
 
@@ -562,28 +570,27 @@ optika Milošević nudi sve za Vaše oči na jednom mestu.  <br>
 Konstantno prateći svetske trendove i uzimajući u obzir potrebe i želje klijenata, 
 u našu ponudu uvrstili smo kolekcije vodećih svetskih brendova.
 </p1>
-        </div>
         
-        <div class="card-action">
+        
+        <br><br><hr><br>
         
        <a href="https://www.facebook.com/optikaa.milosevic/" target="_blank"><i class="fab fa-facebook-square fa-3x" style="color: dodgerblue; "></i></a>
 			
 	   <a href="https://www.instagram.com/optika_milosevic/?hl=sr" target="_blank"><i class="fab fa-instagram-square fa-3x" style="color: rebeccapurple; "></i></a>
 			
 	   	
-			
+			</div>
         </div>
       </div>
     </div>
-  </div>
-	
+<!--Stomatološka ordinacija Branko Dental Tehno -->	
 	<div class="column" style="width: rem">
     <div class="col s12 m7">
       <div class="card">
-       
         <div class="card-image" style="text-align: center">
-          <img style="padding: 0.3em; " src="../Delatnosti/zdravlje i medicina/Branko dental tehno/61558399_2730909520257823_5285523141144084480_n.png"><p1>Niš</p1> </div>
+          </div>
         <div class="card-content" style="color: black">
+			<img style="display:block;margin:auto;width: 90%" src="../Delatnosti/zdravlje i medicina/Branko dental tehno/61558399_2730909520257823_5285523141144084480_n.png"><p1>Niš</p1> <hr>
           <p1><h6>Stomatološka ordinacija Branko Dental Tehno</h6> <br>
 <i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Stojana Novakovića 2, Niš<br> <br>
 
@@ -606,27 +613,26 @@ Naše usluge su mnogobrojne. Pružamo vam sledeće usluge: <br> <br>
     IMPLANTOLOGIJA<br>
     DEČJA STOMATOLOGIJA<br>
 </p1>
-        </div>
         
-        <div class="card-action">
+        
+        <br><br><hr><br>
         
        <a href="https://www.facebook.com/Branko-Dental-Tehno-1253539301328193/" target="_blank"><i class="fab fa-facebook-square fa-3x" style="color: dodgerblue; "></i></a>
 			
 	   <a href="http://dentaltehno.com" target="_blank"><i class="fab fa-internet-explorer fa-3x" style="color:rgba(57,171,235,1.00); "></i></a>		
 			
-	   	
+	   	</div>
         </div>
       </div>
     </div>
-  </div>
-	
+<!--Ortoplus – Ortopedska Pomagala -->	
 	<div class="column" style="width: rem">
     <div class="col s12 m7">
       <div class="card">
-       
         <div class="card-image" style="text-align: center">
-          <img style="padding: 0.3em; " src="../Delatnosti/zdravlje i medicina/ortoplus/преузимање.png"><p1>Niš</p1> </div>
+         </div>
         <div class="card-content" style="color: black">
+ <img style="display:block;margin:auto;width: 90%" src="../Delatnosti/zdravlje i medicina/ortoplus/преузимање.png"><p1>Niš</p1> <hr>			
           <p1><h6>Ortoplus – Ortopedska Pomagala</h6> <br>
 <i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Sremska 2 18000 Niš<br> <br>
 
@@ -640,28 +646,26 @@ Naše usluge su mnogobrojne. Pružamo vam sledeće usluge: <br> <br>
 Ortoplus 3D tehnika pokriva od glave do pete. Omogućava projektovanje pomoću računara i softver aplikacija, anatomski tačno dizajniranje i proizvodnju svih vrsta individualnih protetičkih i ortotičkih pomagala.  <br> <br>
 Ortoplus 3D tehnika je alat koji nam omogućava da oblik i modifikacije koje se vrše na modelu budu anatomski ispravne: možemo rotirati, korigovati, poravnjati i uviti,  što se jednostavno ne može napravi u gipsu.			  
 </p1>
-        </div>
         
-        <div class="card-action">
+        <br><br><hr><br>
         
        <a href="https://www.facebook.com/Ortoplus-Ni%C5%A1-Rudo-Montenegro-ortopedska-pomagala-154710104598641/" target="_blank"><i class="fab fa-facebook-square fa-3x" style="color: dodgerblue; "></i></a>
 			
 	   <a href="http://ortoplus.rs/index.htm" target="_blank"><i class="fab fa-internet-explorer fa-3x" style="color:rgba(57,171,235,1.00); "></i></a>
 			
 	   	
-			
+			</div>
         </div>
       </div>
     </div>
-  </div>
-	
-	<div class="column" style="width: rem">
+<!--MAGNET MEDIC Specijalistička radiološka ordinacija -->	
+    <div class="column" style="width: rem">
     <div class="col s12 m7">
       <div class="card">
-       
         <div class="card-image" style="text-align: center">
-          <img style="padding: 0.3em; " src="../Delatnosti/zdravlje i medicina/magnet medic/27540389_1040587616080662_8039806686659657388_n.png"><p1>Niš</p1> </div>
+          </div>
         <div class="card-content" style="color: black">
+<img style="display:block;margin:auto;width: 90%" src="../Delatnosti/zdravlje i medicina/magnet medic/27540389_1040587616080662_8039806686659657388_n.png"><p1>Niš</p1> <hr>			
           <p1><h6>MAGNET MEDIC Specijalistička radiološka ordinacija</h6> <br>
 <i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;9. Brigade br.59, 18000 Niš
 Srbija<br> <br>
@@ -698,9 +702,9 @@ Magnetna rezonanca pregledi: <br><br>
 		  
 	<a style="color:red;" href="http://magnetmedic.rs/usluge-i-cene/"><u><h6>CENOVNIK</h6></u></a>		  
 </p1>
-        </div>
+     
         
-        <div class="card-action">
+        <br><br><hr><br>
         
        <a href="https://www.facebook.com/magnetmedic/" target="_blank"><i class="fab fa-facebook-square fa-3x" style="color: dodgerblue; "></i></a>
 						
@@ -709,19 +713,18 @@ Magnetna rezonanca pregledi: <br><br>
 	   <a href="http://magnetmedic.rs/" target="_blank"><i class="fab fa-internet-explorer fa-3x" style="color:rgba(57,171,235,1.00); "></i></a>
 			
 	   	
-			
+			</div>
         </div>
       </div>
     </div>
-  </div>
-	
+<!--Ortopedska pomagala Orto kuća Pavlović -->	
 	<div class="column" style="width: rem">
     <div class="col s12 m7">
       <div class="card">
-       
         <div class="card-image" style="text-align: center">
-          <img style="padding: 0.3em; " src="../Delatnosti/zdravlje i medicina/orto kuca pavlovic/n.png"><p1>Niš</p1> </div>
+          </div>
         <div class="card-content" style="color: black">
+<img style="display:block;margin:auto;width: 90%" src="../Delatnosti/zdravlje i medicina/orto kuca pavlovic/n.png"><p1>Niš</p1> <hr>			
           <p1><h6>Ortopedska pomagala Orto kuća Pavlović</h6> <br>
 <i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Todora Milovanovića 8, Niš<br> <br>
 
@@ -737,26 +740,25 @@ Orto kuća Pavlović doo posluje od 2015. godine sa sedištem u Nišu. Zahvaljuj
 Poštujemo vremenske rokove i dogovore u saradnji s klijentima,  zbog čega smo stvorili imidž kvaliteta, a ne kvantiteta obavljenih poslova.  <br><br>
 Glavna delatnost nam je prodaja ortopedskih pomagala<br>			  
 </p1>
-        </div>
         
-        <div class="card-action">
+        
+        <br><br><hr><br>
         
        <a href="https://www.facebook.com/pavlovicnesa1502/" target="_blank"><i class="fab fa-facebook-square fa-3x" style="color: dodgerblue; "></i></a>
 			
 	   	
-			
+			</div>
         </div>
       </div>
     </div>
-  </div>
-	
+<!--Optika Nikolić -->	
 	<div class="column" style="width: rem">
     <div class="col s12 m7">
       <div class="card">
-       
         <div class="card-image" style="text-align: center">
-          <img style="padding: 0.3em; " src="../Delatnosti/zdravlje i medicina/optika Nikolic/Untitledm.jpg"><p1>Niš</p1> </div>
+         </div>
         <div class="card-content" style="color: black">
+ <img style="display:block;margin:auto;width: 90%" src="../Delatnosti/zdravlje i medicina/optika Nikolic/Untitledm.jpg"><p1>Niš</p1> <hr>			
           <p1><h6>Optika Nikolić</h6> <br>
 <i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Bul. Nemanjića, Zona 3, lok 94 ,
 18000 Niš, Srbija<br> <br>
@@ -780,11 +782,9 @@ MOGUĆNOST PLAĆANJA 3 – 6 RATA
     </div>
   </div>
 	
-	
-</div>
+</div>	
 
-
-</div>
+ <button class="float" style="background-color: cornflowerblue" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up fa-2x"></i></button>
 <!-- ^^^vidljivo na telefonima ^^^--> 
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br>

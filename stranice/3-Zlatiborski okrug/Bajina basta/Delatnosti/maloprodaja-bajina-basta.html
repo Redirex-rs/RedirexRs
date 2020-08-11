@@ -5,6 +5,7 @@
 <!--Import Google Icon Font-->
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <!--Import materialize.css-->
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 <script src="https://kit.fontawesome.com/3429f72bdb.js" crossorigin="anonymous"></script>
 <!--Let browser know website is optimized for mobile-->
@@ -19,6 +20,12 @@
 	<![endif]-->
 
 <link rel="stylesheet" href="../../GlavniCss-zajecar.css" class="">
+<link rel="stylesheet" href="../../../../css/floatingdugme.css" class="">	
+<link rel="stylesheet" href="../../../../css/masonry.css">
+<link rel="stylesheet" href="../../../../css/myInput.css">
+<script src="../../../../JSS/Filterovanje.js"></script>
+<script src="../../../../JSS/backtotop.js"></script>
+
 
 <style>
 
@@ -280,41 +287,19 @@ height: 100%;
 
 <!-- vidljivo na dektop---> 
 
-<div class="masonry" >
-	<div class="column" style="width: rem">
-    <div class="col s12 m7">
-      <div class="card">
-       <a href="http://zvemil.com" target="_blank">
-        <div class="card-image" style="text-align: center; background-color: black; height: 40%">
-          <img style="padding: 0.3em; height: 40%" src="../Delatnosti/trgovina/Zvemil/83172619_1724646624344609_5714732271144009728_n.png"><p1 style="color:white">Bajina Bašta</p1> </div>
-        <div class="card-content" style="color: black">
-          <p1>
-          <i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Dragoljuba Bešlića 1, Bajina Bašta 31250, Srbija <br>
-          <i class="fas fa-phone"></i>&nbsp;031 8611551 <br>
-          <i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;064 8267313 <br> <br>
-          Radno vreme: <br>
-           Pon - Pet: 06:00 – 14:00
+<input id="myInput" type="text" placeholder="Pretraga">
 
-</p1>
-        </div>
-        </a>
-        <div class="card-action">
-       <a href="https://www.facebook.com/zvemilcompany/" target="_blank"><i class="fab fa-facebook-square fa-3x" style="color: dodgerblue; "></i></a> 
-       <a href="https://www.instagram.com/zvemil.doo/" target="_blank"><i class="fab fa-instagram-square fa-3x" style="color:rgba(128,76,203,1.00); "></i></a>
-        </div>
-      </div>
-    </div>
+<div class="masonry" id="Lista" style="list-style-type:none;" >
+<!-- -->	
+	
+	
+	
   </div>
 
-</div>
 
 
   
-
-
-<!-- vidljivo na telefonima  -->
-
-
+ <button class="float" style="background-color: cornflowerblue" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up fa-2x"></i></button>
 
 <!-- ^^^vidljivo na telefonima ^^^--> 
 
