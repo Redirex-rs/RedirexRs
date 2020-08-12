@@ -426,21 +426,7 @@ div.card {
             
 
           }
-            .container_lmenu {
-           height: 1vh;
-           width: 10%;
-           
-         }
-      
-         .container_mmenu{
-           height: 100%;
-           width: 100%;
-         }
-       
-         .container_banner{ 
-           width: 10vw;
-           height: 10vh;
-         }
+            
           .navbar-default {
           background-color: #F8F8F8;
           border-color: #E7E7E7;

@@ -220,21 +220,7 @@ background-color: rgba(251,250,254,1.00);
             
 
           }
-            .container_lmenu {
-           height: 1vh;
-           width: 10%;
-           
-         }
-      
-         .container_mmenu{
-           height: 100%;
-           width: 100%;
-         }
-       
-         .container_banner{ 
-           width: 10vw;
-           height: 10vh;
-         }
+            
           .navbar-default {
           background-color: #F8F8F8;
           border-color: #E7E7E7;
@@ -247,14 +233,7 @@ background-color: rgba(251,250,254,1.00);
           
           
           
-          .content-glavni{ 
-            background: rgb(7, 7, 7);
-  z-index: -1;
-  -webkit-box-shadow: 0 0 2vw 0.3vw rgb(83, 82, 82);
-  box-shadow: 0 0 20% 21% rgb(63, 62, 62);
-height: 100%;
-  margin-bottom: 5%;
-}
+          
           
           
           
