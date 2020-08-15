@@ -6,8 +6,11 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <!--Import materialize.css-->
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js?ver=5.4.2">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 <script src="https://kit.fontawesome.com/3429f72bdb.js" crossorigin="anonymous"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!--Let browser know website is optimized for mobile-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Redirex</title>
@@ -20,14 +23,29 @@
 	<![endif]-->
 <link rel="stylesheet" href="../../GlavniCss-zajecar.css" class="">
 <link rel="stylesheet" href="../../../../css/floatingdugme.css" class="">	
-<link rel="stylesheet" href="../../../../css/masonry.css">
+ <link rel="stylesheet" href="../../../../css/masonry.css"> 
 <link rel="stylesheet" href="../../../../css/myInput.css">
 <script src="../../../../JSS/Filterovanje.js"></script>
-<script src="../../../../JSS/backtotop.js"></script>
+<script src="../../../../JSS/backtotop.js"></script>	
 
 <style>
 /* Tooltip container */
+	p1 {
+		 
+		 font-size:1rem;
+	 }
 
+	.masonry{
+		margin: 1%;
+	}
+	.column {
+		width: 25em;
+		
+	}
+	
+	
+	
+	
 
 .tooltip {
 	position: relative;
@@ -79,23 +97,7 @@ margin-top: auto;
 	margin: 4px 2px;
 	cursor: pointer;
 }
-.button1 {
-	border-radius: 2px;
-}
-.button2 {
-	border-radius: 4px;
-}
-.button3 {
-	border-top: 2px solid #555555;
-	border-right: 10px;
-	background-color: #4fc3f7;
-}
-.button4 {
-	border-radius: 12px;
-}
-.button5 {
-	border-radius: 99%;
-}
+
 </style>
 
 <!--- slide preko slike  -->
@@ -140,8 +142,6 @@ margin-top: auto;
 }
 </style>
   
-  
-	  
 
 	 <style> html {
 					width: 100%;
@@ -194,29 +194,20 @@ margin-top: auto;
   grid-gap: %;
   		 
   padding-left: 10%;
+  padding-top: 0%;
+}
+		  .grid-container3 {
   
+  
+  display: grid;
+  grid-template-columns: 30% 30% 30% ;
+  grid-gap: %;
+  		 
+  padding-left: 10%;
+  padding-top: 0%;
 }
 	</style>
 	
-	<style>
-			
-		.navbar-default {
-    background-color: #F8F8F8;
-    border-color: #E7E7E7;
-	width: 100%;		
-}
-		
-		.slide-out-desktop{
-			width: 90%;
-		}
-		
-		.overlay-content{
-			
-		}
-		
-		
-		
-			</style>
 	
 	
 	<style>
@@ -401,7 +392,7 @@ textarea { height: 25vh; resize: none; }
 	</style>
 		</head>
 
-		<body style="background-image:image " id="math.min">
+	<body>	
 <!--- <div class="#" style="margin-bottom: 3%;margin-left: 4%; margin-right: 4%; background-color: rgb(255, 255, 255);">	--->
 	  
 		
@@ -476,14 +467,15 @@ textarea { height: 25vh; resize: none; }
 
 <div class="masonry" id="Lista" style="list-style-type:none;" >
 	
-	<div class="column" style="width: rem">
+<div  class="column" style="width: 25rem">
     <div class="col s12 m7 ">
       <div class="card">
         <div class="card-image" style="text-align: center">
          </div>
         <div class="card-content" style="color: black">
- <img style="display:block;margin:auto;width: 90%" src="../Delatnosti/Usluge/knjizara alex/bela.jpg"><p1>Bela Crkva</p1>  <hr>			
-          <p1><h6>Knjižara Alex</h6> <br>
+ <img style="display:block;margin:auto;width: 90%" src="../Delatnosti/Usluge/knjizara alex/bela.jpg"><p1>Bela Crkva</p1> 
+			<hr>			
+          <p1><h6>Knjižara Alex</h6></p1> <br>
 <i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp; Karađorđeva 35 , Bela Palanka<br>
 <i class="fas fa-phone"></i>&nbsp;&nbsp;063 882 81 94 <br>
 <i class="fas fa-envelope"></i>&nbsp;&nbsp;knjizaraalex@gmail.com<br> 
@@ -499,8 +491,7 @@ Pored skolkog i kancelarijskog materijala vrsimo vršimo izradu:<br><br>
     -Štampanje crno belo i boju svih formata<br>
     -Izrada pečata
 
-</p1>
-        
+
         
         <br><br><hr><br>
         
@@ -511,6 +502,7 @@ Pored skolkog i kancelarijskog materijala vrsimo vršimo izradu:<br><br>
       </div>
     </div>
 	
+
   </div>
 	
 	
@@ -531,17 +523,17 @@ Pored skolkog i kancelarijskog materijala vrsimo vršimo izradu:<br><br>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> 
 <!--JavaScript at end of body for optimized loading--> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
-<script src="ostalo/scrypts.js"></script> 
+<script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js?ver=5.4.2"></script>
 
 <script>
-		document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.fixed-action-btn');
-    var instances = M.FloatingActionButton.init(elems, {
-      direction: 'up',
-      hoverEnabled: false
-	  
-    });
-  });
+	var cards = $(".column");
+for(var i = 0; i < cards.length; i++){
+    var target = Math.floor(Math.random() * cards.length -1) + 1;
+    var target2 = Math.floor(Math.random() * cards.length -1) +1;
+    cards.eq(target).before(cards.eq(target2));
+}
+	
+		
 			  
 			   $(document).ready(function(){
     $('.collapsible').collapsible();
@@ -551,7 +543,8 @@ Pored skolkog i kancelarijskog materijala vrsimo vršimo izradu:<br><br>
     var elems = document.querySelectorAll('.sidenav');
     var instances = M.Sidenav.init(elems, options);
   });</script> 
-<script>$(document).ready(function(){
+<script>
+	$(document).ready(function(){
     $('.sidenav').sidenav();
   });
 		  

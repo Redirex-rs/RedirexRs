@@ -23,6 +23,7 @@ margin-bottom: 1em;
 
 #myInput[type=text] {
 	padding-left: 1em;
+	
 }
 
 
@@ -36,3 +37,5 @@ margin-bottom: 1em;
   color: black; /* Add a black text color */
   display: block; /* Make it into a block element to fill the whole list */
 }
+
+

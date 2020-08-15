@@ -1,5 +1,25 @@
 @charset "utf-8";
 /* CSS Document */
+
+.btn-index-mob{
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+	border: 0.2px solid;
+	border-color:  aqua;
+	padding-left: 0.7em;
+	height: 2em;
+	 }
+	 
+	.btn-index-mob-disabled{
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+	background-color:#BDB6B6;
+	padding-left: 0.7em	 
+	 }
+
+
 .column  a {
 	margin: 1em
 }
@@ -34,42 +54,29 @@
 	align-items: center;
 		
 }
-	.carousel-glavni{
 	
-	width: 50%;
-	height: 60%;
-	
-	position: relative;
-	justify-content: center;
-	align-items: center;
-	margin-left: 20%;	
-	
-}
 	
 	.full-image{
 		border: 1px solid;
 		border-color: black;
 	}
 	
-	.btn1 {
-background: rgba(255,255,255,0.00);
-border: 1px solid aqua; 
-width: 8em; 
-color: aqua;
-}
+	
 	
 	.btn {
-background: rgba(255,255,255,0.00);
+background: rgba(12,64,118,1.00);
 border: 1px solid aqua;
-position: absolute; 
-width: 120%; 
+width: 4em; 
 color: aqua;
-top: 10%;		
+margin:0 auto;
+display:block;		
+justify-content: center;
+padding-top: em;
+width: 10em;
+font-size: 2em		
 }
 
-	.btn:hover{
-		background-color: aqua;
-	}
+	
 
 
 .blue {
@@ -91,29 +98,10 @@ background-color: darkturquoise
 			
 	}
 	
-.carousel-item{ 
-	background-image: url(banneri/INDEX-banner1.jpg);
-	-webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-    
-	height: 40em;
-	object-fit: fill;
-	
-	justify-content: center;
-	align-items: center;
-}
-	.carousel-glavni{
-	
-	width: 70%;
-	height: 90%;
-	
-	position: relative;
-	justify-content: center;
-	align-items: center;
-	margin-left: 15%
-}
+	.btn{
+		display: none
+	}
+
 	.dropdown {
 		justify-content: center;
 		align-content: center;
@@ -133,7 +121,12 @@ background-color: darkturquoise
 	}
 
 
-
+body {
+	background-image: url("banneri/pzoadinska.jpg");
+	background-repeat: no-repeat;
+	z-index: -999;
+		
+}
 
 
       
@@ -210,52 +203,37 @@ background-color: darkturquoise
 	padding-bottom: 1%;
 	
 }
+
+.flex-container4 div {
+	width: 70%;
+	justify-content: flex-start
+}
 		
 		.flex-container4 a{
 			height: 2.5em!important;
-			width: 100%;
+			width: 90%;
 			font-size: 1.2rem;
 			text-align: justify;
+			
 				
 		}
-		.flex-container4 a img {
-			width: 3em;
-			padding: 0.2em;
-			padding-right:.4em
+		.flex-container4 img {
+			height: 2em;
+    width: 2em;
+	align-content: right;
 		}
 
 		
-
-
- 
-          
-           
-           .grid-container {
-        
-        
-        display: grid;
-        grid-template-columns: 49% 48% ;
-         row-gap: 2%;
-        margin-bottom: 5vh;
-        overflow: hidden;
-        padding-left: 0.3%;			 
-        z-index: -2;
-      }
-           .grid-container3 {
-        
-        
-        display: grid;
-        grid-template-columns: 30% 30% 30% ;
-        
-             
-        padding-left: 10%;
-        
-      }
-@media (max-width: 1000px) {
+@media (max-width: 768px){
 	.flex-container3{
-		visibility: hidden
-	}	
+		display: none;
+	}
 }
+
+           
+@media (min-width: 768px) {
+	
+
 .flex-container3 {
 	
 	display: grid;
@@ -263,7 +241,7 @@ background-color: darkturquoise
     column-gap: 5%;
     margin-left: 2%;
 	margin-right: 1%;	   
-	grid-row-gap: 0.7%;
+	
     font-size: 1em;
 	
 	overflow: visible;
@@ -275,13 +253,21 @@ background-color: darkturquoise
 	height: 2.5em!important;
 }
 
-.flex-container3 > a > img {
-	height: 10%;
-    width: 10%;
+.flex-container3  img {
+	height: 2em;
+    width: 2em;
 	align-content: right;
 }
-
-
+}
+@media (min-width: 768px) {
+	.dugmeokruga {
+		display: none
+	}
+}
+ 
+.dugmeokruga{
+	 align-content: center
+}
 
 
 @media (min-width: 768px) {
@@ -295,14 +281,8 @@ background-color: darkturquoise
 	}
 
 	
-	.flex-container3 > a {
-	font-size: 1.15em;
-	text-align:left;
-	height: 2.3em;
-	background: rgba(12,64,118,1.00);
-	-webkit-box-shadow: 0px 0px 7px #4195fc;
-    -moz-box-shadow: 0px 0px 7px #4195fc;
-    box-shadow: 0px 0px 7px #4195fc; 	
+	.flex-container3  a {
+		
 		
 }
 	.flex-container3 > a > img {

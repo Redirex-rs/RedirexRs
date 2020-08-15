@@ -8,11 +8,17 @@
 
 }
 	
-
 .masonry { /* Masonry container */
-  column-width: 25em;
+  column-width: 25em!important;
   column-gap: 1em;
   margin-left: 1%;
   margin-right: 1%;
-	margin-top: 1%;
+  margin-top: 1%;
+  height: auto;
+}
+.column { /* Masonry container */
+  width: 100%;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
 }

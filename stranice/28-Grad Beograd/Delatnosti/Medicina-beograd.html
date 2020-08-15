@@ -29,7 +29,7 @@
 <link rel="stylesheet" href="../GlavniCss-zajecar.css" class="">
 <script src="../../../JSS/Filterovanje.js"></script>
 <script src="../../../JSS/backtotop.js"></script>	
-	
+<script src="../../../JSS/collapsible.js"></script>
 <script>
 
 	
@@ -41,7 +41,8 @@
 		 
 		 font-size:1rem;
 	 }
-	
+
+
 	
 	
 	
@@ -475,22 +476,23 @@ textarea { height: 25vh; resize: none; }
         <div class="card-content" id="0-beograd" style="color: black">
 			<img style="display:block;margin:auto;width: 90%" src="../Delatnosti/Zdravlje i medicina/dom za starije - najmiliji/mali-logo.png"> <br> <p1>Zemun/Beograd</p1>
 			<hr>
-          <p1><h6>Dom za stara i odrasla lica NAJMILIJI</h6> <br>
+          <p1><h6>Dom za stara i odrasla lica NAJMILIJI</h6> <br></p1>
 <i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp; Vojni put 2.deo 293a, Zemun, Beograd<br>
 <i class="fas fa-phone"></i>&nbsp;&nbsp;011/408 5510; 065/403 7365 <br>
 <i class="fas fa-envelope"></i>&nbsp;&nbsp;dom.najmiliji@gmail.com	 <br> 
 <br> <br>
+				
+<br>	
 Nov, udoban i luksuzan smeštaj, svima koji svoju starost žele da provedu u miru i zasluženoj nezi i pažnji. 
 Ceo dom je namenski građen za negu starih lica, pa se vodilo računa o svakoj prostoriji koja će služiti stanarima doma. 
 Prostorije su opremljene krevetima urađenim prema medicinskim standardima i zaštićeni ogradicama u cilju bezbednosti korisnika. 
 Sve zajedničke prostorije korisnika uređene su tako da im pružaju komfor,udobnost i uživanje u toplom kućnom ambijentu. 
 Dom Najmiliji je potpuno nova kuća sa potpuno novim nekorišćenim nameštajem.
-			  
-			  
-</p1>
+		  
+
+      
         
-        
-        <br><br><hr><br>
+    <br><br><hr><br>
         
            <a href="https://www.facebook.com/Dom-za-stara-lica-Najmiliji-417747415054202/" target="_blank"><i class="fab fa-facebook-square fa-3x" style="color: dodgerblue; "></i></a>
 			
@@ -990,7 +992,7 @@ Specijalizovani salon za uklanjanje vaški i gnjida <br> <br>
 	
   </div>
 		
-
+</div>
 
  <button class="float" style="background-color: cornflowerblue" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up fa-2x"></i></button> 
 
@@ -1059,7 +1061,11 @@ function closeNav() {
   });
   
 });
-			
+		
+$('#myCollapsible').collapse({
+  toggle: false
+})	
+	
 var cards = $(".column");
 for(var i = 0; i < cards.length; i++){
     var target = Math.floor(Math.random() * cards.length -1) + 1;

@@ -6,8 +6,12 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <!--Import materialize.css-->
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js?ver=5.4.2">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 <script src="https://kit.fontawesome.com/3429f72bdb.js" crossorigin="anonymous"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!--Let browser know website is optimized for mobile-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Redirex</title>
@@ -20,7 +24,7 @@
 	<![endif]-->
 <link rel="stylesheet" href="../../GlavniCss-zajecar.css" class="">
 <link rel="stylesheet" href="../../../../css/floatingdugme.css" class="">	
-<link rel="stylesheet" href="../../../../css/masonry.css">
+<link rel="stylesheet" href="../../../../css/masonry.css"> 
 <link rel="stylesheet" href="../../../../css/myInput.css">
 <script src="../../../../JSS/Filterovanje.js"></script>
 <script src="../../../../JSS/backtotop.js"></script>
@@ -143,13 +147,7 @@ margin-top: auto;
   
 	  
 
-	 <style> html {
-					width: 100%;
-					height: 100%;
-					margin: 0;
-					padding: 0;
-
-				}
+	 <style> 
 
 
 	.div1 {
@@ -412,7 +410,7 @@ textarea { height: 25vh; resize: none; }
 	</style>
 		</head>
 
-		<body style="background-image:image " id="math.min">
+		<body>
 
 	  <!--- <div class="#" style="margin-bottom: 3%;margin-left: 4%; margin-right: 4%; background-color: rgb(255, 255, 255);">	--->
 		
@@ -752,7 +750,7 @@ MOGUĆNOST PLAĆANJA 3 – 6 RATA
  <button class="float" style="background-color: cornflowerblue" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up fa-2x"></i></button>
 <!-- ^^^vidljivo na telefonima ^^^--> 
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 <div class="footer">
         &copy Redirex team, 2020.
     </div>
@@ -764,9 +762,16 @@ MOGUĆNOST PLAĆANJA 3 – 6 RATA
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> 
 <!--JavaScript at end of body for optimized loading--> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
-<script src="zdravstvo/scrypts.js"></script> 
+<script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js?ver=5.4.2"></script> 
 
 <script>
+	
+	var cards = $(".column");
+for(var i = 0; i < cards.length; i++){
+    var target = Math.floor(Math.random() * cards.length -1) + 1;
+    var target2 = Math.floor(Math.random() * cards.length -1) +1;
+    cards.eq(target).before(cards.eq(target2));
+}
 		document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.fixed-action-btn');
     var instances = M.FloatingActionButton.init(elems, {
