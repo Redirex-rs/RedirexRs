@@ -1,4 +1,4 @@
-	$(document).ready(function(){
+	$(function(){
   $("#myInput").on("keyup", function() {
     var value = $(this).val().toLowerCase();
     $("#Lista div").filter(function() {

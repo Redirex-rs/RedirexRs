@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+	<!DOCTYPE html>
 
 <html>
 <head>
@@ -6,10 +6,10 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 <!--Import materialize.css-->
-<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>	
- 	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+ 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>	
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
 <script src="https://kit.fontawesome.com/3429f72bdb.js" crossorigin="anonymous"></script>
@@ -30,6 +30,8 @@
         font-src *;
         connect-src *;
         img-src 'self' data: content:;">
+	
+	
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -39,22 +41,30 @@
 	<![endif]-->
 <link rel="stylesheet" href="JSS/W3-dropdown-onclick.css">
 <script src="JSS/W3-dropdown-onclick.js"></script>	
-	
-	
+<link rel="stylesheet" href="css/pop-up-modal.css">	
 <link rel="stylesheet" href="css/W3-search.css">
 <script src="JSS/W3-search.js"></script>	
 <script src="JSS/backtotop.js"></script>
-  <script src="GlavniCss.css"></script>
-  <link rel="stylesheet" href="GlavniCss.css" class="">
-  <link rel="stylesheet" href="css/myInput1.css">
-  <script src="JSS/Filterovanje1.js"></script>
+<script src="GlavniCss.css"></script>
+<link rel="stylesheet" href="GlavniCss.css" class="">
+<link rel="stylesheet" href="css/myInput1.css">
+<script src="JSS/Filterovanje1.js"></script>
 <script src="src/selectstyle.js"></script>	
+<script src="JSS/pop-up-modal.js"></script>
+<script src="JSS/w3-sidenav.js"></script>
 	
+<link rel="stylesheet" href="css/w3-sidenav.css">	
  <style>   
 	 
 	 .hide{
   display:none;  
 }
+.modal-backdrop.in {
+    background-color: #000000
+}
+	 .main-overlay{
+		 background-color: rgba(5,5,5,0.07)
+	 }
 	 
 	 .button{
 		 background: rgba(12,64,118,1.00);
@@ -76,10 +86,10 @@
 }
 	 
 	 p{
-		 font-size: 1.5vw;
+		 font-size: 1.5em;
 	 }
 	 
-	
+	 
 	
 	 
 	 
@@ -102,52 +112,7 @@
 	 }
 	 
 	 /* The Overlay (background) */
-  .overlay {
-    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
-    height: 100%;
-    width: 0;
-    position: fixed; /* Stay in place */
-    z-index: 2; /* Sit on top */
-      
-    left: 0;
-    top: 0;
-    background-color: rgb(3, 0, 0); /* Black fallback color */
-    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    transition: .3s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-  }
   
-  /* Position the content inside the overlay */
-  .overlay-content {
-position: relative;
-top: 10%; /* 25% from the top */
-width: 100%; /* 100% width */
-text-align: center; /* Centered text/links */
-margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
-}
-  
-  /* The navigation links inside the overlay */
-  .overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: rgb(90, 90, 90);
-    display: block; /* Display block instead of inline */
-    transition: 0.3s; /* Transition effects on hover (color) */
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
-  }
-  
-  /* Position the close button (top right corner) */
-  .overlay .closebtn {
-position: absolute;
-top: 0.5vh;
-right: 1vw;
-font-size: 50px;
-}
 
 h9 {
   font-size: x-small;
@@ -159,8 +124,7 @@ h9 {
 
 		</head>
 
-		<body>
-    
+		<body >   
 <!--- <div class="content-glavni" style="margin-bottom: 3%;margin-left: 4%; margin-right: 4%; background-color: rgb(255, 255, 255);">	--->  
 		
 
@@ -168,25 +132,13 @@ h9 {
 	   <!-- Meni s leve strane vidljiv na dektop--->
  <nav class="navbar navbar-expand-lg" style="background-color:rgba(12,64,118,1.00);">
   <div class="container">
-  	 <a class="navbar-brand" style="text-align: left" href="#"><strong><h3>Redirex</h3></strong></a>
-  <button class="navbar-toggler" type="button" data-toggle="#" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+  	 <a class="navbar-brand" style="text-align: left; color: white" href="#"><strong><h3>Redirex</h3></strong></a>
+
 
   <div class=" navbar" id="navbarSupportedContent">
-    <ul class="navbar-nav ">
-      <li class="nav-item active">
-        <a class="nav-link" href="#"><span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        
-      </li>
-      
-      
-    </ul>
-    <button style="margin-left: -24%;   background-color: rgba(255,255,255,0.00); border: 1px solid; border-color: aqua" type="button" class="btn1 btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">KONTAKT</button>
+
     
-  
+  <span onclick="openNav()" style="font-size: 1.5em; color: white"><i class="fas fa-chevron-left"></i>&nbsp;<i class="fas fa-info-circle"></i></span>
 
   </div>
   </div>
@@ -199,39 +151,10 @@ h9 {
 		
 	<!-- Modal -->
 	
-	
+
 	
 
-<form id="gform" method="post" action="https://script.google.com/macros/s/AKfycbxJmQKWegIdhH2hb_12hKraiWfNbkw0J8ainENbSg/exec">
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content" >
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Redirex kontakt</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      <div class="form-group"> 
-        <label for="fname">Ime:</label><br>
-  <input type="text" id="name" name="fname" value="">
-       </div>
-      <div class="form-group">  
-  <label for="lname">Tekst:</label><br>
-  <textarea type="text" id="message" name="lname" value="Tekst"></textarea>
-  <input type="submit" formtarget="_blank" value="Posalji">
-           Mozete nas kontaktirati i direktno preko email adrese: <b>redirexrs@gmail.com</b> <br>
-           ili preko facebook stranice <a href="https://www.facebook.com/redirexx/" class="">facebook.com/redirexx/</a>.
-    
-      </div>    
-        
-      </div>
-      
-    </div>
-  </div>
-</div>
-	</form> 
+
 	
 		
 
@@ -240,24 +163,18 @@ h9 {
 	
 
 <!-- The overlay -->
-<div id="myNav" class="overlay"> 
-  
-  <!-- Button to close the overlay navigation --> 
-   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; </a>  
-  
-  <!-- Overlay content -->
-  <div class="overlay-content">
-   
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-  
+	<div class="side-content">
+email:<br> <p1> redirexrs@gmail.com</p1><br><br> _________________________ <br><br><br>
+Facebook: <a href="https://www.facebook.com/redirex.rs.7">Redirex</a>		
+		
+
+	</div>
 
 
-  
-  
-</div>
-</div>
-
-	   
+</div>	   
 
 <!-- Carousel--->
 
@@ -637,68 +554,18 @@ h9 {
 
 
 <!-- vidljivo na dektop---> 
-<hr> <br>
+<hr> 
 	
 
 		
 
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+	<a href="stranica-pretrage.html" >
+		<div class="dugme-search" style="margin-left:  ">
+		<i class="fas fa-search fa-2x" style="padding: 0.5em" >Jednostavna pretraga</i> <br> 
+		</div>	
+	</a>
 
-<ul id="myUL">
-	
-  <li style="display:none"><a class="optika" href="stranice/28-Grad Beograd/Delatnosti/Medicina-beograd.html#2-beograd">Opticarska Radnja Optika Soko - Beograd  </a></li>
-	
-<li style="display:none">
-  <a href="stranice/28-Grad Beograd/Delatnosti/Medicina-beograd.html#0-beograd" class="#">Dom za stara i odrasla lica NAJMILIJI - Beograd
-	   
-  </a>
-</li> 
-	
-  <li style="display:none">
-	  <a href="stranice/28-Grad Beograd/Delatnosti/Medicina-beograd.html#1-beograd" class="">Logopedski centar Lingua Logos - Beograd
-	  </a>
-	</li>
-	
-  <li style="display:none"><a href="stranice/28-Grad Beograd/Delatnosti/Medicina-beograd.html#3-beograd" class="">GALA DENT – Stomatoloska ordinacija - Beograd</a></li>
-	
-	<li style="display:none"><a href="stranice/28-Grad Beograd/Delatnosti/Medicina-beograd.html#4-beograd" class="">Ginekoloska ordinacija dr Biljana Zivaljevic - Beograd</a></li>
-	
-	<li style="display:none"><a href="stranice/28-Grad Beograd/Delatnosti/Medicina-beograd.html#5-beograd" class="">Veterinarska ordinacija SALI VET - Beograd</a></li>
-	
-	<li style="display:none"><a href="stranice/28-Grad Beograd/Delatnosti/Medicina-beograd.html#6-beograd" class="">Biohemijska i mikro bioloska labaratorija Mak Lab - Beograd</a></li>
-	
-	<li style="display:none"><a href="stranice/28-Grad Beograd/Delatnosti/Medicina-beograd.html#7-beograd" class="">Internisticko kardioloska ordinacija MEDISIN 59 - Beograd</a></li>
-	
-	<li style="display:none"><a href="stranice/28-Grad Beograd/Delatnosti/Medicina-beograd.html#8-beograd" class="">Psiholosko savetovaliste Filipovic - Beograd</a></li>
-	
-	<li style="display:none"><a href="stranice/28-Grad Beograd/Delatnosti/Medicina-beograd.html#9-beograd" class="">Dom Zdravlja Hemikal - Beograd</a></li>
-	
-	<li style="display:none"><a href="stranice/28-Grad Beograd/Delatnosti/Medicina-beograd.html#10-beograd" class=""></a>Ordinacija Horus DR.Mirko Djordjevic - Beograd</li>
-	
-	<li style="display:none"><a href="stranice/28-Grad Beograd/Delatnosti/Medicina-beograd.html#11-beograd" class="">Specijalisticka ginekolosko akuserska ordinacija EVA - Beograd</a></li>
-	
-	<li style="display:none"><a href="stranice/28-Grad Beograd/Delatnosti/Medicina-beograd.html#12-beograd" class="">Salon za otklanjanje vaski i gnjida Beovaskica - Beograd</a></li>
-	
-	<li style="display:none"><a href="" class=""></a></li>
-	<li style="display:none"><a href="" class=""></a></li>
-	<li style="display:none"><a href="" class=""></a></li>
-	<li style="display:none"><a href="" class=""></a></li>
-	<li style="display:none"><a href="" class=""></a></li>
-	<li style="display:none"><a href="" class=""></a></li>
-	<li style="display:none"><a href="" class=""></a></li>
-	<li style="display:none"><a href="" class=""></a></li>
-	<li style="display:none"><a href="" class=""></a></li>
-	<li style="display:none"><a href="" class=""></a></li>
-	<li style="display:none"><a href="" class=""></a></li>
-	<li style="display:none"><a href="" class=""></a></li>
-	<li style="display:none"><a href="" class=""></a></li>
-	<li style="display:none"><a href="" class=""></a></li>
-	<li style="display:none"><a href="" class=""></a></li>
-	<li style="display:none"><a href="" class=""></a></li>
-	<li style="display:none"><a href="" class=""></a></li>
-	
-	
-</ul>
+
 	
 	
 <br> <hr>     
@@ -742,9 +609,7 @@ h9 {
 
 
 
-
 <!-- vidljivo na telefonima --->
-
 
 
 
@@ -754,81 +619,22 @@ h9 {
         as needed -->
   <script src="js/bootstrap.min.js"></script>
 
+
 <script>
-		document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.fixed-action-btn');
-    var instances = M.FloatingActionButton.init(elems, {
-      direction: 'up',
-      hoverEnabled: false
-	  
-    });
-  });
-			</script>
-  
-<script> 
-	document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems, options);
-  });
-	</script> 
-  
-<script>
-	$(document).ready(function(){
-    $('.sidenav').sidenav();
-  });
+	
 		  
 		  /* Open when someone clicks on the span element */
 /* Open when someone clicks on the span element */
 function openNav() {
-  document.getElementById("myNav").style.width = "30%";
+  document.getElementById("mySidenav").style.width = "65%";	
 }
 
-/* Close when someone clicks on the "x" symbol inside the overlay */
-function closeNav() {  document.getElementById("myNav").style.width = "0%";
-}; 
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
 	</script>
 	
-<script>
-	$(function() {
-  
-  // contact form animations
-  $('#contact').click(function() {
-    $('#contactForm').fadeToggle();
-  })
-  $(document).mouseup(function (e) {
-    var container = $("#contactForm");
 
-    if (!container.is(e.target) // if the target of the click isn't the container...
-        && container.has(e.target).length === 0) // ... nor a descendant of the container
-    {
-        container.fadeOut();
-    }
-  });
-  
-});
-	
-$('.dropdown-trigger').dropdown();
-	
-	
-	
-	
-	$(".subcribe-form").submit(function(event){
-
-event.preventDefault()
-	 //Modal za slanje emaila
-	
-	$('#exampleModal').on('show.bs.modal', function (event) {
-  var button = $(event.relatedTarget) // Button that triggered the modal
-  var recipient = button.data('whatever') // Extract info from data-* attributes
-  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-  var modal = $(this)
-  modal.find('.modal-title').text('New message to ' + nightmane9@gmail.com)
-  modal.find('.modal-body input').val(nightmane9@gmail.com)
-})
-	 
-	
-	</script>
 
 
 

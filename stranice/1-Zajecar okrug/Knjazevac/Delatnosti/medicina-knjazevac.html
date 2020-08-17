@@ -482,12 +482,13 @@ textarea { height: 25vh; resize: none; }
 
 <div class="masonry" id="Lista" style="list-style-type:none;" >
 <!--Stomatološka ordinacija OGI-DENT -->	
+	
 	<div class="column" style="width: rem">
     <div class="col s12 m7">
       <div class="card">
         <div class="card-image" style="text-align: center">
           </div>
-        <div class="card-content" style="color: black">
+        <div class="card-content" id="30-knjazevac" style="color: black">
 <img style="display:block;margin:auto;width: 90%" src="../Delatnosti/zdravlje i medicina/OGI-DENT/Who-regulates-your-dentists-practice-1064x710.jpg"><p1>Knjaževac</p1> <hr>			
           <p1><h6>Stomatološka ordinacija OGI-DENT </h6> <br>
 <i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Branka Radičevića 6/2, 19350 Knjaževac<br> <br>
@@ -519,6 +520,7 @@ Nudimo još jednu uslugu u našoj ordinaciji a to je mezoterapija.
         </div>
       </div>
     </div>
+	
 	
 	
   </div>
@@ -576,6 +578,12 @@ function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }; 
 	
+	var cards = $(".column");
+for(var i = 0; i < cards.length; i++){
+    var target = Math.floor(Math.random() * cards.length -1) + 1;
+    var target2 = Math.floor(Math.random() * cards.length -1) +1;
+    cards.eq(target).before(cards.eq(target2));
+}
 
 	$(function() {
   
