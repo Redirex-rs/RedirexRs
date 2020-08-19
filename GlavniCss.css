@@ -134,7 +134,7 @@ body {
 }
 
 .dugme-search i {
-	width: 12em;
+	width: 8em;
 	border:1px solid black;
 	color: white;
 	margin-top: 1em;
@@ -212,7 +212,7 @@ body {
 
 .flex-container4 div {
 	width: 70%;
-	justify-content: 
+	padding-top: 1em
 }
 		
 		.flex-container4 a{
@@ -220,7 +220,7 @@ body {
 			width: 90%;
 			font-size: 1.2rem;
 			text-align: justify;
-			
+			padding-top: 1em
 				
 		}
 		.flex-container4 img {
@@ -231,9 +231,20 @@ body {
 
 		
 @media (max-width: 768px){
-	.flex-container3{
-		display: none;
+	.flex-container3 > div{
+		width: 20em;
 	}
+	.flex-container3 a {
+		height: 2.5em!important;
+			width: 10em;
+			font-size: 1.2rem;
+			text-align: justify;
+	}
+	.flex-container3  img {
+	height: 2em;
+    width: 2em;
+	align-content: right;
+}
 }
 
            
@@ -242,7 +253,7 @@ body {
 
 .flex-container3 {
 	
-	display: grid;
+	display: flex;
     text-align: left;
     column-gap: 5%;
     margin-left: 2%;
