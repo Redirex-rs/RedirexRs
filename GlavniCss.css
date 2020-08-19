@@ -1,185 +1,116 @@
-@charset "utf-8";
+
 /* CSS Document */
+ /* Dropdown Button */
+@media (max-width: 768px){
+		.dropdown button{
+	}
+	.dropdown-disabled {
+  background: rgba(95,95,95,0.91);
+  color: white;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+  height: 2.5em;
+  width: 100%;		
+}
+	.inactiveLink {
+   pointer-events: none;
+   cursor: default;
+   background-color: rgba(80,80,80,0.22)	
+}
+
+.dropdown-disabled {
+  background: rgba(95,95,95,0.91);
+  color: white;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+  height: 2.5em;
+  width: 100%;
+}
+
+/* Dropdown button on hover & focus */
+.dropdown:hover {
+  border: 0.1px solid;
+  border-color:  aqua;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 100%;
+  
+  z-index: 4;
+}
+
+/* Links inside the dropdown */
+.dropdown-menu a {
+  color: black;
+  padding: 0.5em 16px;
+  text-decoration: none;
+  display: block;
+  z-index: 4;
+  margin-left: 1%;	
+	
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-menu a:hover {background-color:azure}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;} 
+
+
+	
+	.dropdown-disabled {
+  background: rgba(95,95,95,0.91);
+  color: white;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+  height: 2.5em;
+  width: 100%;
+}
+.baner > img {
+	height: 6em
+}
+	
+*{padding:0;margin:0;}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#0C9;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+.my-float{
+	margin-top:22px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 
 .column  a {
 	margin: 1em
-}
-@media (min-width: 768px) {
-.masonry { /* Masonry container */
-  column-count: 3;
-  column-gap: 1em;
-}
-
-.column {
-	background-color: #eee;
-  display: inline-block;
-  margin: 0 0 1em;
-  width: 100%;
-}
-}
-
-.dropdown-sadrzaj{
-	position: relative;
-}
-
-@media (max-width: 768px){
-	.carousel-item{
-	background-image: url(banneri/INDEX-banner1.jpg);
-	-webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-size:auto;
-    height: 10em;		
-   	background-repeat: no-repeat;
-		justify-content: center;
-	align-items: center;
-		
-}
+}	
+	
 	
 
-	
 }
 
-
-body {
-	background-image: url("banneri/pzoadinska.jpg");
-	background-repeat: no-repeat;
-	
-		
-}
-
-.dugme-search{
-	display:block;
-	margin:auto;
-	padding: 1%;
-	
-}
-
-.dugme-search i {
-	width: 8em;
-	border:1px solid black;
-	color: white;
-	margin-top: 1em;
-	display:block;
-	margin:auto;
-	border: 2px solid #dadada;
-    border-radius: 7px;
-	box-shadow: 0 0 5px #9ecaed;
-	
-}
-      
- 
-@media (max-width: 768px){
-	.flex-container3 > div{
-		width: 20em;
-	}
-	.flex-container3 a {
-		height: 2.5em!important;
-			width: 10em;
-			font-size: 1.2rem;
-			text-align: justify;
-	}
-	.flex-container3  img {
-	height: 2em;
-    width: 2em;
-	align-content: right;
-}
-}
-
-           
-@media (min-width: 768px) {
-	
-
-.flex-container3 {
-	
-	display: flex;
-    text-align: left;
-    column-gap: 5%;
-    margin-left: 2%;
-	margin-right: 1%;	   
-	
-    font-size: 1em;
-	
-	overflow: visible;
-}
-
-.flex-container3 > a {
-	text-align: left;
-	font-size: 0.5rem;
-	height: 2.5em!important;
-}
-
-.flex-container3  img {
-	height: 2em;
-    width: 2em;
-	align-content: right;
-}
-}
-@media (min-width: 768px) {
-
-
-
-@media (min-width: 768px) {
-.flex-container3 {
-        display: grid;
-        grid-template-columns: 30% 30% 30% ;	   
-		grid-row-gap: 2%;
-        justify-content: center;
-	    column-gap: 5%;
-		padding-bottom: 3em;
-	}
-
-	.flex-container3 > a > img {
-		height: 100%;
-		width: inherit;
-	}
-	
-	.flex-container3 > a > text {
-		vertical-align: middle
-	}
-}
-     
-  #contact { 
-        -webkit-user-select: none; /* Chrome/Safari */        
-        -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* IE10+ */
-        color: white;
-        text-align: center;
-        cursor: pointer; 		
-      }
-      
-      
-      #contact:active { background: #444; }
-      
-      #contactForm { 
-		  box-shadow: 25px 25px 20px;
-
-        display: none;
-        border: 6px solid rgba(12,64,118,1.00); 
-        padding: 1em;
-        width: 60vw;
-        text-align: center;
-        z-index: 1;	
-        background: #fff;
-        position: fixed;
-        top:50%;
-        left:50%;
-        transform: translate(-50%,-50%);
-       -webkit-transform: translate(-50%,-50%)
-        
-      }
-      
-      input, textarea { 
-        margin: .8em auto;
-        font-family: inherit; 
-        text-transform: inherit; 
-        font-size: inherit;
-        
-        display: block; 
-        width: 100%; 
-        padding: .4em;
-      }
-      textarea { height: 25vh; resize: none; }
-      
- 
