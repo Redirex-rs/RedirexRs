@@ -1,24 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
 
-.btn-index-mob{
-	display: flex;
-    align-items: center;
-    justify-content: space-between;
-	border: 0.2px solid;
-	border-color:  aqua;
-	padding-left: 0.7em;
-	height: 2em;
-	 }
-	 
-	.btn-index-mob-disabled{
-	display: flex;
-    align-items: center;
-    justify-content: space-between;
-	background-color:#BDB6B6;
-	padding-left: 0.7em	 
-	 }
-
 
 .column  a {
 	margin: 1em
@@ -55,68 +37,9 @@
 		
 }
 	
-	
-	.full-image{
-		border: 1px solid;
-		border-color: black;
-	}
-	
-	
-	
-	.btn {
-background: rgba(12,64,118,1.00);
-border: 1px solid aqua;
-width: 4em; 
-color: aqua;
-margin:0 auto;
-display:block;		
-justify-content: center;
-padding-top: em;
-width: 10em;
-font-size: 2em		
-}
 
-	
-
-
-.blue {
-  color: #55acee;
-  border: 2px #55acee solid;
 	
 }
-	
-}
-
-@media (min-width: 768px) {
-	.mobilni-dugme{
-display: none;
-position: absolute;
-top: 50%; 
-width: 8em;
-background-color: darkturquoise		
-		
-			
-	}
-	
-	.btn{
-		display: none
-	}
-
-	.dropdown {
-		justify-content: center;
-		align-content: center;
-			
-	}
-	.brn{
-		margin-left: 20%
-	}
-	
-	
-	
-	
-}
-
-
 
 
 body {
@@ -146,90 +69,7 @@ body {
 	
 }
       
-      .button {
-        background: rgba(255,255,255,0.00);
-  
-  
-  border: 1px solid aqua;
-      }
-      .button2 {
-        border-radius: 4px;
-      }
-      .button3 {
-        border-top: 2px solid #555555;
-        border-right: 10px;
-        background-color: #4fc3f7;
-      }
-      .button4 {
-        border-radius: 12px;
-      }
-      .button5 {
-        border-radius: 99%;
-      }
-     
-
-      
-            
-      
-      .image {
-        display: block;
-        width: 100%;
-        height: auto;
-      }
-      
-      
-      
-      .container:hover .overlay {
-        width: 100%;
-      }
-      
-      .text {
-        color: white;
-        font-size: 20px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        white-space: nowrap;
-      }
-     
-
-	
-	.flex-container4 {
-	
-	display: grid;
-    column-gap: 1%;
-    margin-left: 2%;
-	margin-right: 1%;	   
-	grid-row-gap: 0.5%;
-    font-size: 1em;
-	vertical-align: 5%;
-	padding-bottom: 1%;
-	
-}
-
-.flex-container4 div {
-	width: 70%;
-	padding-top: 1em
-}
-		
-		.flex-container4 a{
-			height: 2.5em!important;
-			width: 90%;
-			font-size: 1.2rem;
-			text-align: justify;
-			padding-top: 1em
-				
-		}
-		.flex-container4 img {
-			height: 2em;
-    width: 2em;
-	align-content: right;
-		}
-
-		
+ 
 @media (max-width: 768px){
 	.flex-container3 > div{
 		width: 20em;
@@ -277,14 +117,7 @@ body {
 }
 }
 @media (min-width: 768px) {
-	.dugmeokruga {
-		display: none
-	}
-}
- 
-.dugmeokruga{
-	 align-content: center
-}
+
 
 
 @media (min-width: 768px) {
@@ -297,11 +130,6 @@ body {
 		padding-bottom: 3em;
 	}
 
-	
-	.flex-container3  a {
-		
-		
-}
 	.flex-container3 > a > img {
 		height: 100%;
 		width: inherit;
@@ -312,61 +140,7 @@ body {
 	}
 }
      
-
-          
-     
-    
-          
-          
-        .overlay1 {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: #008CBA;
-        overflow: hidden;
-        width: 0;
-        height: 100%;
-        transition: .5s ease;
-      }
-      
-      .container1:hover .overlay1 {
-  width: 33%;
-}
-	.container2:hover .overlay1 {
-  width: 97%;
-}
-        
-        .text1 {
-        color: white;
-        font-size: 20px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-          white-space: nowrap; }
-        
-        .image1 {
-        display: block;
-        width: 100%;
-        height: auto;
-      }
-          .container1 {
-        position: relative;
-        width: 100%;
-      }
-        
-        .container2 {
-        position: relative;
-        width: 100%;
-      }
-       
-        
-      
-      
-      #contact { 
+  #contact { 
         -webkit-user-select: none; /* Chrome/Safari */        
         -moz-user-select: none; /* Firefox */
         -ms-user-select: none; /* IE10+ */
@@ -408,28 +182,4 @@ body {
       }
       textarea { height: 25vh; resize: none; }
       
-      
-
-.nav-wrapper {
-        
-       background-color:rgba(12,64,118,0.6) ;
-          
-      }
-
-.nav-wrapper:hover{
-       background-color:rgba(12,64,118,1.00);
-
-           
-          }
-
-.nav-wrapper {
-
-	line-height: 3rem;
-	margin: 0;
-	padding: 0;
-	max-height: 3rem;
-	
-}
-	p{
-	font-size: 0.9rem;
-}
+ 
