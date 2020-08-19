@@ -6,28 +6,46 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <!--Import materialize.css-->
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js?ver=5.4.2">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 <script src="https://kit.fontawesome.com/3429f72bdb.js" crossorigin="anonymous"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!--Let browser know website is optimized for mobile-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Redirex</title>
-<link rel="shortcut icon" href="ostalo/favicon.ico" >
+<link rel="shortcut icon" href="zdravstvo/favicon.ico" >
+
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
 	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
-<link rel="stylesheet" href="../../GlavniCss-zajecar.css" class="">
-<link rel="stylesheet" href="../../../../css/floatingdugme.css" class="">	
-<link rel="stylesheet" href="../../../../css/masonry.css">
-<link rel="stylesheet" href="../../../../css/myInput.css">
-<script src="../../../../JSS/Filterovanje.js"></script>
-<script src="../../../../JSS/backtotop.js"></script>
+<link rel="stylesheet" href="../../../css/floatingdugme.css" class="">	
+<link rel="stylesheet" href="../../../css/masonry.css">
+<link rel="stylesheet" href="../../../css/myInput.css">	
+<link rel="stylesheet" href="../GlavniCss-zajecar.css" class="">
+<script src="../../../JSS/Filterovanje.js"></script>
+<script src="../../../JSS/backtotop.js"></script>	
+<script src="../../../JSS/collapsible.js"></script>
+<script>
 
+	
+	
+	</script>
 <style>
 /* Tooltip container */
+	p1 {
+		 
+		 font-size:1rem;
+	 }
 
+
+	
+	
+	
 
 .tooltip {
 	position: relative;
@@ -79,23 +97,7 @@ margin-top: auto;
 	margin: 4px 2px;
 	cursor: pointer;
 }
-.button1 {
-	border-radius: 2px;
-}
-.button2 {
-	border-radius: 4px;
-}
-.button3 {
-	border-top: 2px solid #555555;
-	border-right: 10px;
-	background-color: #4fc3f7;
-}
-.button4 {
-	border-radius: 12px;
-}
-.button5 {
-	border-radius: 99%;
-}
+
 </style>
 
 <!--- slide preko slike  -->
@@ -140,8 +142,6 @@ margin-top: auto;
 }
 </style>
   
-  
-	  
 
 	 <style> html {
 					width: 100%;
@@ -194,29 +194,20 @@ margin-top: auto;
   grid-gap: %;
   		 
   padding-left: 10%;
+  padding-top: 0%;
+}
+		  .grid-container3 {
   
+  
+  display: grid;
+  grid-template-columns: 30% 30% 30% ;
+  grid-gap: %;
+  		 
+  padding-left: 10%;
+  padding-top: 0%;
 }
 	</style>
 	
-	<style>
-			
-		.navbar-default {
-    background-color: #F8F8F8;
-    border-color: #E7E7E7;
-	width: 100%;		
-}
-		
-		.slide-out-desktop{
-			width: 90%;
-		}
-		
-		.overlay-content{
-			
-		}
-		
-		
-		
-			</style>
 	
 	
 	<style>
@@ -402,27 +393,30 @@ textarea { height: 25vh; resize: none; }
 		</head>
 
 		<body style="background-image:image " id="math.min">
-<!--- <div class="#" style="margin-bottom: 3%;margin-left: 4%; margin-right: 4%; background-color: rgb(255, 255, 255);">	--->
-	  
+
+	  <!--- <div class="#" style="margin-bottom: 3%;margin-left: 4%; margin-right: 4%; background-color: rgb(255, 255, 255);">	--->
 		
 
 	   <!-- Meni s leve strane vidljiv na dektop--->
 <nav class="nav-wrapper fixed" > <span onclick="openNav()"> <i class="fas fa-bars" style="padding-left: 2%"></i></span>
     <ul id="nav-mobile" class="right  " style="padding-right: 2%">
       <!-- Dropdown Structure -->
-      <li><a href="../../../../index.html">Glavna Stranica</a></li>
-      
+      <li><a href="../../../index.html">Glavna Stranica</a></li>
+    
       <li><a href="#" id="contact">Kontakt</a></li>
       
     </ul>
   
 </nav>
  
- <div class="center" style="margin-top: 7vh">
-	  <img src="../Uzice_COA_small.gif" alt="" class="" style="width: 15vw">
+
+ 
+<div class="center" style="margin-top: 7vh">
+	  <img src="../1024px-Flag_of_Belgrade,_Serbia.svg.png" alt="" class="" style="width: 15vw">
 	 
 	</div>
 	<div class="divider"></div>
+ 
   <!-- kontakt forma-->	
 <form action="" method="post" enctype="text/plain">			
     <div id="contactForm">
@@ -463,45 +457,60 @@ textarea { height: 25vh; resize: none; }
     <p></p>
   </div>
 
-  
-
 </div>
+<!-- Use any element to open/show the overlay navigation menu --> 
+		
+<input id="myInput" type="text" placeholder="Pretraga"> 
+		
+	
+			
+	
+<div class="masonry" id="Lista" style="list-style-type:none;">
 
-<input id="myInput" type="text" placeholder="Pretraga">
-
-<div class="masonry" id="Lista" style="list-style-type:none;" >
-
-<!--Montaža I Remont Pekarske Opreme Jenet DOO-->
-    <div class="column" style="width: rem">
+<!--Dom za stara i odrasla lica NAJMILIJI-->
+<div class="column" style="width: rem" id="dom za stare">
     <div class="col s12 m7 ">
       <div class="card">
         <div class="card-image" style="text-align: center">
           </div>
-        <div class="card-content" id="62" style="color: black">
-<img style="display:block;margin:auto;width: 90%" src="../Delatnosti/Usluge/pekarska oprema Jenet doo/pekarska-oprema-slika-47924282.jpg"><p1>Užice</p1> <hr>			
-          <p1><h6>Montaža I Remont Pekarske Opreme Jenet DOO</h6> <br>
-<i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Lunovo Selo bb, Užice<br>
-<i class="fas fa-phone"></i>&nbsp;&nbsp;069 66 25 083 <br>
-		  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;031 803 771 <br>
-<i class="fas fa-envelope"></i>&nbsp;&nbsp;jenet.rs@gmail.com<br> 
+        <div class="card-content" id="71" style="color: black">
+			<img style="display:block;margin:auto;width: 90%" src="proizvodnja i prodaja namestaja/namestaj miletic/34177492_1696108213771079_4440061225518235648_n.jpg"> <br> <p1>Beograd/Kruševac</p1>
+			<hr>
+          <p1><h6>Nemaštaj Miletić</h6> <br></p1>
+<i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Izložbeni prostor se nalazi u Beogradu<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sedište firme se nalazi u Kruševcu <br>
+<i class="fas fa-phone"></i>&nbsp;&nbsp;064 912 73 73 <br>
+<i class="fas fa-envelope"></i>&nbsp;&nbsp;markoemilijamiletic@gmail.com<br> 
 <br> <br>
-Jenet D.O.O. je firma koja se bavi uslugama instaliranja pekarske opreme. <br>Za naše klijente nudimo usluge montaže i remonta pekarske opreme. <br>Veliki broj zadovoljnih klijenata govori o uspešnosti našeg dugogodišnjeg poslovanja.
-</p1>
-        </div>
-        
-        
+				
+<br>	
 
+	Firma “Nameštaj Miletić” bavi se proizvodnjom i prodajom namešataja na veliko i malo. <br>Osnovana ne 1995. godine, i od tada, pa do danas uspešno se bavi proizvodnjom i prodajom nameštaja po meri. <br>Pretežno se bavimo proizvodnjom stolova i stolica. <br><br>
+	Sedište firme se nalazi u Kruševcu, izložbeni prostor se nalazi u Beogradu.
+Sa poštovanjem,
+Vaš Nameštaj Miletić		
+
+      
+        
+    <br><br><hr><br>
+        
+           <a href="https://www.facebook.com/NamestajMiletic/" target="_blank"><i class="fab fa-facebook-square fa-3x" style="color: dodgerblue; "></i></a>
+			
+	   <a href="https://www.instagram.com/namestaj_miletic/?hl=sr" target="_blank"><i class="fab fa-instagram-square fa-3x" style="color: rebeccapurple; "></i></a>
+			
+		</div>	
         </div>
       </div>
     </div>
-	
-	
-  </div>
-	
-	
-			
-			
-	 <button class="float" style="background-color: cornflowerblue" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up fa-2x"></i></button>		
+
+
+		
+</div>
+
+ <button class="float" style="background-color: cornflowerblue" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up fa-2x"></i></button> 
+
+
+<!-- ^^^vidljivo na telefonima ^^^--> 
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <div class="footer">
@@ -515,24 +524,14 @@ Jenet D.O.O. je firma koja se bavi uslugama instaliranja pekarske opreme. <br>Za
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> 
 <!--JavaScript at end of body for optimized loading--> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
-<script src="ostalo/scrypts.js"></script> 
+<script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js?ver=5.4.2"></script>
+
+			
+<script src="zdravstvo/scrypts.js"></script>
+<script src="Filterovanje.js"></script> 
 
 <script>
-	
-	var cards = $(".column");
-for(var i = 0; i < cards.length; i++){
-    var target = Math.floor(Math.random() * cards.length -1) + 1;
-    var target2 = Math.floor(Math.random() * cards.length -1) +1;
-    cards.eq(target).before(cards.eq(target2));
-}
-		document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.fixed-action-btn');
-    var instances = M.FloatingActionButton.init(elems, {
-      direction: 'up',
-      hoverEnabled: false
-	  
-    });
-  });
+		
 			  
 			   $(document).ready(function(){
     $('.collapsible').collapsible();
@@ -574,6 +573,22 @@ function closeNav() {
     }
   });
   
-});</script>	
+});
+		
+$('#myCollapsible').collapse({
+  toggle: false
+})	
+	
+var cards = $(".column");
+for(var i = 0; i < cards.length; i++){
+    var target = Math.floor(Math.random() * cards.length -1) + 1;
+    var target2 = Math.floor(Math.random() * cards.length -1) +1;
+    cards.eq(target).before(cards.eq(target2));
+}
+
+$('.dropdown-trigger').dropdown();	
+	
+
+			</script>	
 </body>
 </html>
