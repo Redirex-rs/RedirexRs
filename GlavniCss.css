@@ -105,6 +105,26 @@ html {
   scroll-behavior: smooth;
 }
 
+	.dugme-search{
+	display:block;
+	margin:auto;
+	padding: 1%;
+	
+}
+
+.dugme-search i {
+	width: 7em;
+	border:1px solid black;
+	color: white;
+	margin-top: 1em;
+	display:block;
+	margin:auto;
+	border: 2px solid #dadada;
+    border-radius: 7px;
+	box-shadow: 0 0 5px #9ecaed;
+	
+}	
+	
 
 .column  a {
 	margin: 1em
