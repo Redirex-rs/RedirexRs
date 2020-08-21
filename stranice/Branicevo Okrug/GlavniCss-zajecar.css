@@ -1,4 +1,12 @@
 @charset "utf-8";
+
+	
+	.search-container{
+		display:flex;
+		
+	}
+
+
 .dropdown-content li:hover {
 	background-color: rgba(18,97,179,1.00)
 }
@@ -615,23 +623,8 @@ background-color:rgba(12,64,118,1.00);
 	z-index: 5;
 }
 
-.footer {
-  
-  width: 100%;
-  background: #000;
-  color: #fff;
-  text-align: center;
-  padding: 1em;
-}
 
-p{
-	font-size: 0.9rem;
-}
 
-p1{
-	
-	text-align: center
-}
 	
 	.card-image{
 		color: gray
@@ -660,15 +653,7 @@ p1{
 	font-size: 1rem;
 }
 
-.footer {
-  
-  width: 100%;
-  background: #000;
-  color: #fff;
-  text-align: center;
-  padding: 1em;
-  
-}
+
 
         
 	
