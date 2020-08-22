@@ -56,13 +56,30 @@
 <link rel="stylesheet" href="css/w3-sidenav.css">	
 
 <style>
+	
+	.dropdown-1{
+		display: inline-block;
+		width: 10em
+	}
+	.navbar-ul .dropdown{
+		float: right;
+		display:inline-flex:;
+		width: 10em;
+		
+		
+	}
+	
+	.navbar-ul{
+		
+	}
+	
 	.container{
 		margin-bottom: 1em;
 		display:inline-block
 	}
 	
 	.navbar{
-		height: 3em
+		height: 3em;
 	}
 	
 	.navbar > div{
@@ -538,12 +555,11 @@ body {
 	   <!-- Meni s leve strane vidljiv na dektop--->
  <nav class="navbar" style="background-color:rgba(12,64,118,1.00);">
   	 <div class="navbar-brand" style="text-align: left; color: white" href="#"><p><h1><strong><dd>Redirex</dd></strong></h1></p></div>
+<ul class="navbar-ul">
 
-    
-  <span onclick="openNav()" style="font-size: 1.5em; color: white"><i class="fas fa-chevron-left"></i>&nbsp;<i class="fas fa-info-circle"></i></span>
+</ul>	
+  <span onclick="openNav()" style="font-size: 1.5em; color: white; margin-right: 1em"><i class="fas fa-chevron-left"></i>&nbsp;<i class="fas fa-info-circle"></i></span>
 
- 
-  
 </nav> 
  
   
@@ -561,9 +577,7 @@ body {
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
 	<div class="side-content">
-email:<br> <p1> redirexrs@gmail.com</p1><br><br> _________________________ <br><br><br>
-Facebook: <a href="https://www.facebook.com/redirex.rs.7" target="_blank">Redirex</a>		
-		
+<p1>Ukoliko želite da se i vas profil nadje na sajtu, posetite našu stranicu sa svim potrebnim informacijama:<br> <br> <a href="kako-se-oglasiti.html"><i class="fas fa-hand-point-right"></i>&nbsp;&nbsp;Kako se oglasiti na redirex.rs?</a> </p1><br><br> _________________________ <br><br><br>		
 
 	</div>
 
@@ -578,7 +592,7 @@ Facebook: <a href="https://www.facebook.com/redirex.rs.7" target="_blank">Redire
 	
 </div>		
 		  
-<div class="glavni-menu"><p><strong>Okruzi i opštine</strong></p></div>
+<div id="okruzi" class="glavni-menu"><p><strong>Okruzi i opštine</strong></p></div>
 
 	
       	
@@ -943,7 +957,7 @@ Facebook: <a href="https://www.facebook.com/redirex.rs.7" target="_blank">Redire
 	
     
      
-<div class="glavni-menu"><p><strong>Pretraga</strong></p></div>    
+<div id="pretraga" class="glavni-menu"><p><strong>Pretraga</strong></p></div>    
 
 
 
@@ -1157,7 +1171,7 @@ Facebook: <a href="https://www.facebook.com/redirex.rs.7" target="_blank">Redire
 		  /* Open when someone clicks on the span element */
 /* Open when someone clicks on the span element */
 function openNav() {
-  document.getElementById("mySidenav").style.width = "65%";	
+  document.getElementById("mySidenav").style.width = "60%";	
 }
 
 function closeNav() {
