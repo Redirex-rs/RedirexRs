@@ -6,7 +6,7 @@ $(function(){
     });
     $(document).on("click", function(event){
         var $trigger = $(".dropdown");
-        if($trigger !== event.target && !$trigger.has(event.target).length){
+        if (!$(event.target).closest('.dropdown').length){
             $(".dropdown-menu").slideUp("fast");
         }            
     });
