@@ -8,10 +8,12 @@
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>	
 <script data-ad-client="ca-pub-2077196854990037" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!--Import materialize.css-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>	
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">	
 <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script> 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
 <script src="https://kit.fontawesome.com/3429f72bdb.js" crossorigin="anonymous"></script>
 <!--Let browser know website is optimized for mobile-->
@@ -24,7 +26,6 @@
 <meta name="google-site-verification" content="googlea157b9b90b885cb9.html"> 
 <link rel="canonical" href="https://redirex.rs">	
 <link rel="shortcut icon" href="favicon.ico" >
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
 <script src="default-src 'self' cdn.script.googleusercontent.com"></script>
 <meta https-equiv="Content-Security-Policy" 
         content="default-src 'self' data: gap: 'unsafe-eval' ws: ; 
@@ -56,6 +57,34 @@
 <link rel="stylesheet" href="css/w3-sidenav.css">	
 
 <style>
+	.listing-small-content a {
+		color: white
+	}
+	
+	.najnovije .row{
+		box-sizing: border-box;
+	    text-align: center;
+		width: 100%;
+		margin: auto;
+		padding-top: 3em;
+		padding-bottom: 5em;
+		display: flex;
+	}
+	
+	.najnovije{
+		box-sizing: border-box;
+	    text-align: center;
+		width: 100%;
+		margin: auto;
+		display: flex;
+		border: 1px solid 
+	}
+	
+	.card-img-top{
+		margin:auto;
+		width: 15em;
+		height: 10em;
+	}
 	
 	.dropdown-1{
 		display: inline-block;
@@ -301,7 +330,8 @@ html {
 
 body {
 	background-image: url("banneri/pzoadinska.jpg");
-	background-repeat: no-repeat;
+	background-repeat: repeat;
+	height: 100%
 	
 		
 }
@@ -362,7 +392,7 @@ body {
 .flex-container3 {
         display:inline-flex;
         justify-content: center;
-		padding-bottom: 6em;
+		padding-bottom:m;
 	    padding-top: 3em;
         margin: auto;
 	    flex-wrap: wrap;
@@ -553,7 +583,7 @@ body {
 
 
 	   <!-- Meni s leve strane vidljiv na dektop--->
- <nav class="navbar" style="background-color:rgba(12,64,118,1.00);">
+ <nav id="vrh-navbar" class="navbar" style="background-color:rgba(12,64,118,1.00);">
   	 <div class="navbar-brand" style="text-align: left; color: white" href="#"><p><h1><strong><dd>Redirex</dd></strong></h1></p></div>
 <ul class="navbar-ul">
 
@@ -570,14 +600,15 @@ body {
 	<!-- Modal -->
 	
 
-	
 
 <!-- The overlay -->
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
 	<div class="side-content">
-<p1>Ukoliko želite da se i vas profil nadje na sajtu, posetite našu stranicu sa svim potrebnim informacijama:<br> <br> <a href="kako-se-oglasiti.html"><i class="fas fa-hand-point-right"></i>&nbsp;&nbsp;Kako se oglasiti na redirex.rs?</a> </p1><br><br> _________________________ <br><br><br>		
+<p1>Ukoliko želite da se i vas profil nadje na Redirex sajtu, posetite našu stranicu sa svim potrebnim informacijama:<br> <br> <a href="kako-se-oglasiti.html"><i class="fas fa-hand-point-right"></i>&nbsp;&nbsp;Kako se oglasiti na redirex.rs?</a> </p1><br>
+<a href="#text-9"><i class="fas fa-hand-point-right"></i>&nbsp;&nbsp;Kontakt</a> <br><br>	
+		_________________________ <br><br><br>		
 
 	</div>
 
@@ -586,7 +617,7 @@ body {
 
 <!-- Carousel--->
 <div class="banner-text">
-<img src="banneri/cubes-2492010.jpg" alt="" class="">
+<img src="banneri/cubes-2492010.jpg" alt="redirex/redirex.rs" class="">
 	<!--
 	<div class="right"><h1><strong>Dobrodosli na redirex</strong></h1> <br> <h4> Poslovni Katalog Srbije </h4> </div> -->
 	
@@ -596,7 +627,7 @@ body {
 
 	
       	
-  	<div class="flex-container3" style="margin-bottom: 13em; margin-top: 3em; ">
+  	<div class="flex-container3" style="margin-bottom: 10em; margin-top: 3em; ">
 <!--Borski  -->	
 <div class="dropdown" style="margin-bottom: 1em">
 	<button class="dropdown">Borski okrug &nbsp;<img src="stranice/Bor Okrug/Bor/Veliki_grb_Bora.png" alt=""> </button>
@@ -955,7 +986,80 @@ body {
  </div>	
      
 	
-    
+<div id="najnovije" class="glavni-menu"><p><strong>Najnovije</strong></p></div>	
+	
+<div class="najnovije">
+    <div class="row"> 
+
+
+ <div class="col-sm-8 col-lg-3 col-md-6" style="display: table ;margin: auto;padding-bottom: 0.5em">
+			<div class="container" style="margin: auto">
+  <div class="card" style="">
+    <img class="card-img-top" src="stranice/28-Grad Beograd/Delatnosti/proizvodnja i prodaja namestaja/namestaj miletic/34177492_1696108213771079_4440061225518235648_n - manja.jpg" alt="Card image">
+    <div class="card-body">
+      <h5 class="card-title">Nameštaj Miletić - Beograd</h5>
+      <p class="card-text"></p>
+      <a href="stranice/28-Grad Beograd/Delatnosti/namestaj-beograd.html#71" class="btn btn-primary">Detaljnije <i class="fas fa-external-link-alt"></i></a>
+    </div>
+  </div>
+			
+         </div>
+	</div>
+	
+ <div class="col-sm-5 col-lg-3 col-md-6" style="display: table;margin: auto;padding-bottom: 0.5em">
+               <div class="container" style="margin: auto">
+  <div class="card" style="">
+    <img class="card-img-top" src="stranice/1-Zajecar okrug/Zajecar/Delatnosti/proizvodnja i prodaja namestaja/Argentis/murano-01-1064x704-1.jpg" alt="Redirex">
+    <div class="card-body">
+      <h5 class="card-title">Argentis Nameštaj – Zaječar</h5>
+      <p class="card-text"></p>
+      <a href="stranice/1-Zajecar okrug/Zajecar/Delatnosti/namestaj-zajecar.html#72" class="btn btn-primary">Detaljnije <i class="fas fa-external-link-alt"></i></a>
+    </div>
+  </div>
+			
+         </div>   
+			   
+</div><!-- /.col-* -->
+
+ <div class="col-sm-5 col-lg-3 col-md-6" style="display: table ;margin: auto;padding-bottom: 0.5em">
+     
+   <div class="container" style="margin: auto">
+  <div class="card" style="">
+    <img class="card-img-top" src="stranice/5-Juznobanatski okrug/Pancevo/Delatnosti/Veleprodaja/papirna konfekcija  Dona/papirna-konfekcija-dona-dona-6415-11551097284707.jpg" alt="Card image">
+    <div class="card-body">
+      <h5 class="card-title">Papirna Konfekcija Dona - Pančevo</h5>
+      <p class="card-text"></p>
+      <a href="stranice/5-Juznobanatski okrug/Pancevo/Delatnosti/industrija-pancevo.html#70" class="btn btn-primary">Detaljnije <i class="fas fa-external-link-alt"></i></a>
+    </div>
+  </div>
+			
+         
+
+    </div><!-- /.box -->        
+</div><!-- /.col-* -->	
+	 
+ <div class="col-sm-5 col-lg-3 col-md-6" style="display: table ;margin: auto;padding-bottom: 0.5em">
+     
+   <div class="container" style="margin: auto">
+  <div class="card" style="">
+    <img class="card-img-top" src="stranice/3-Zlatiborski okrug/Arilje/Delatnosti/Maloprodaja/TR Palma tekstil/arilje.png" alt="Card image">
+    <div class="card-body">
+      <h10 class="card-title">Proizvodnja tekstilne konfekcije TR PALMA - Arilje</h10>
+      <p class="card-text"></p>
+      <a href="stranice/3-Zlatiborski okrug/Arilje/Delatnosti/industrija-arilje.html#69" class="btn btn-primary">Detaljnije <i class="fas fa-external-link-alt"></i></a>
+    </div>
+  </div>
+			
+         
+
+    </div><!-- /.box -->        
+</div> 
+    </div><!-- /.row -->    						
+</div><!-- /.cols-sm-3 -->
+
+				            
+	   
+		
      
 <div id="pretraga" class="glavni-menu"><p><strong>Pretraga</strong></p></div>    
 
@@ -989,7 +1093,7 @@ body {
 </div>	
 	
 </div>	
-	
+		
 	
 <br> <hr> 
 	
@@ -1089,9 +1193,8 @@ body {
 		</div>
     </div>					           
 </div><!-- /.cols-sm-3 -->
-<!--	
-<div class="footer-linkovi items-per-row-1">
-<div class="listings-row">
+	
+	<div class="col-sm-3">
 <h2 class="widgettitle"><strong>LINKOVI SAJTA</strong></h2>
 <div class="listing-container">
     <div class="listing-small">
@@ -1099,14 +1202,17 @@ body {
 
 <div class="listing-small-content">
 
-<a href="" class="">Okruzi i opstine</a>
-
+<a href="#okruzi" class="">Okruzi i opstine</a><br>
+<a href="#najnovije" class="">Najnovije</a><br>
+<a href="#pretraga" class="">Pretraga</a><br>	
+<a href="#vrh-navbar" class="" onclick="openNav()">Kako se oglasiti na redirex</a><br>
         
         </div>
     </div>
-</div>
+</div> 
+		</div>
 	
-	
+<!--	
 <div class="listing-container">
 <div class="listing-small">
 
