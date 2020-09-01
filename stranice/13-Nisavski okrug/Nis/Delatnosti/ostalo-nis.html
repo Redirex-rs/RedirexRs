@@ -6,22 +6,36 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <!--Import materialize.css-->
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js?ver=5.4.2">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 <script src="https://kit.fontawesome.com/3429f72bdb.js" crossorigin="anonymous"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!--Let browser know website is optimized for mobile-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Redirex</title>
-<link rel="shortcut icon" href="ostalo/favicon.ico" >
+<link rel="shortcut icon" href="zdravstvo/favicon.ico" >
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
 	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
+<link rel="stylesheet" href="../../GlavniCss-zajecar.css" class="">
+<link rel="stylesheet" href="../../../../css/floatingdugme.css" class="">	
+<link rel="stylesheet" href="../../../../css/masonry.css"> 
+<link rel="stylesheet" href="../../../../css/myInput.css">
+<script src="../../../../JSS/Filterovanje.js"></script>
+<script src="../../../../JSS/backtotop.js"></script>
 
 <style>
 /* Tooltip container */
-
+	
+	a {
+		outline: none
+	}	
+	
 
 .tooltip {
 	position: relative;
@@ -137,13 +151,7 @@ margin-top: auto;
   
 	  
 
-	 <style> html {
-					width: 100%;
-					height: 100%;
-					margin: 0;
-					padding: 0;
-
-				}
+	 <style> 
 
 
 	.div1 {
@@ -188,29 +196,22 @@ margin-top: auto;
   grid-gap: %;
   		 
   padding-left: 10%;
+  padding-top: 0%;
+}
+		  .grid-container3 {
   
+  
+  display: grid;
+  grid-template-columns: 30% 30% 30% ;
+  grid-gap: %;
+  		 
+  padding-left: 10%;
+  padding-top: 0%;
 }
 	</style>
 	
 	<style>
-			body {
-background: url(../../banneri/background-okrug.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-background-color: rgba(251,250,254,1.00);
-    width: 100vw;  
-    height: 100%;   
-    overflow-x: hidden;
-    background-image: url(woodtype-846089_1920.jpg);
-	
-	background-size: 100% 40%;
-	background-repeat: no-repeat;			
-		
-	padding-bottom: 0%;
-	
-    } 
+			
 			
 		.navbar-default {
     background-color: #F8F8F8;
@@ -413,9 +414,9 @@ textarea { height: 25vh; resize: none; }
 	</style>
 		</head>
 
-		<body style="background-image:image " id="math.min">
-<!--- <div class="#" style="margin-bottom: 3%;margin-left: 4%; margin-right: 4%; background-color: rgb(255, 255, 255);">	--->
-	  
+		<body>
+
+	  <!--- <div class="#" style="margin-bottom: 3%;margin-left: 4%; margin-right: 4%; background-color: rgb(255, 255, 255);">	--->
 		
 
 	   <!-- Meni s leve strane vidljiv na dektop--->
@@ -423,18 +424,20 @@ textarea { height: 25vh; resize: none; }
     <ul id="nav-mobile" class="right  " style="padding-right: 2%">
       <!-- Dropdown Structure -->
       <li><a href="../../../../index.html">Glavna Stranica</a></li>
-      
+    
       <li><a href="#" id="contact">Kontakt</a></li>
       
     </ul>
   
 </nav>
  
- <div class="center" style="margin-top: 7vh">
+ 
+<div class="center" style="margin-top: 7vh">
 	  <img src="../Nis_Coat_of_Arms.png" alt="" class="" style="width: 15vw">
 	 
 	</div>
 	<div class="divider"></div>
+ 
   <!-- kontakt forma-->	
 <form action="" method="post" enctype="text/plain">			
     <div id="contactForm">
@@ -444,7 +447,7 @@ textarea { height: 25vh; resize: none; }
 <small></small>
 <form action="#">
   <p>Redirex.rs</p>
-  <p>Email: Redirex-rs@gmail.com</p>
+  <p>Email: redirexrs@gmail.com</p>
 <p>Facebook: <a href="https://www.facebook.com/redirexx/">https://www.facebook.com/redirexx/</a></p>
 
 </form>
@@ -455,7 +458,7 @@ textarea { height: 25vh; resize: none; }
   
   <form action="#">
     <p>Redirex.rs</p>
-    <p>Redirex-rs@gmail.com</p>
+    <p>redirexrs@gmail.com</p>
   <p>Facebook: <a href="https://www.facebook.com/redirexx/">www.facebook.com/redirexx/</a></p>
   
   </form>
@@ -475,74 +478,65 @@ textarea { height: 25vh; resize: none; }
     <p></p>
   </div>
 
-  
-
+</div>
 <!-- Use any element to open/show the overlay navigation menu --> 
 
+<input id="myInput" type="text" placeholder="Pretraga">
 
+<div class="masonry" id="Lista" style="list-style-type:none;" >
+<!--Dubinsko pranje Niš – Top Wash Servis -->	
+    <div class="column" style="width: rem">
+    <div class="col s12 m7">
+      <div class="card">
+        <div class="card-image" style="text-align: center">
+          </div>
+        <div class="card-content" id="34" style="color: black">
+	<img style="display:block;margin:auto;width: 90%" src="Usluge/Dubinsko pranje/pre_i_posle-612x274.jpg"><p1>Niš</p1> <hr>		
+          <p1><h6>Dubinsko pranje Niš – Top Wash Servis</h6> <br>
 
-</div>
+<i class="fas fa-phone"></i>&nbsp;&nbsp;063/39-93-93 <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 062/839-93-93<br>
+<i class="fas fa-envelope"></i>&nbsp;&nbsp;topwashservis@gmail.com		  
+<br> <br>
+Top wash servis je porodična firma osnovana 2012.godine. Naš cilj je da naši klijenti uvek budu zadovoljni. Vi ste nama na prvom mestu i zato se trudimo svih ovih godina da udovoljimo svakom Vašem zahtevu. Potpuno smo posvećeni onome što radimo i trudimo se da svojim klijentima pruzimo najbolju uslugu. <br> <br>
 
-<!-- Action dugme--->
+    DUBINSKO PRANJE NAMEŠTAJA <br>
+    DUBINSKO PRANJE AUTOMOBILA<br>
+    DUBINSKO PRANJE ITISONA<br>
+    IZNAJMLJIVANJE MAŠINA<br><br>
 
-<!-- 
-<div class="hide-on-large-only">
-  <div class="fixed-action-btn left-button hide" style="padding-left: 1vw"> <a class="btn-floating btn-large red"> <i class="large material-icons">add</i> </a>
-    <ul>
-      <li><a class="btn-floating green" href="ostalo/androidapp.html"><i class="fab fa-android"></i></a></li>
-      <li><a class="btn-floating #827717 lime darken-4"><i class="fas fa-question"></i></a></li>
-      <li><a class="btn-floating blue" href="https://www.facebook.com/redirexx/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-      <li><a class="btn-floating #ff6d00 orange accent-4"><i class="material-icons">mail</i></a></li>
-    </ul>
-  </div>
-</div>
+Zašto odabrati nas:<br>
 
-<!-- vidljivo na dektop---> 
-
-<br>
-<br>
-
-  <div class="grid-container">
-   
-<!--
-  <div class="col s12 m7" style="width: 47vw"> 
-    <div class="card horizontal" style="padding-top: 0%; width: 100%; height: 100%">
-      <div class="card-image" style="padding-top: 3vw">
-       <a href=""></a>
-        <img src="stranice/Medicina/pedijatrija/zigic-Marina/76173541_552680855542351_4464686055437631488_n.jpg"  >
-      </div>
-      <div class="card-stacked" style=" width: 50vw; height: 15vh">
-        <div class="card-content" style="width: 100%">
-          <p>I am a very simple card. I am good at containing small bits of information.</p>
+    -Višegodišnje iskustvo<br>
+    -Besplatan dolazak<br>
+    -Profesionalne Karcher mašine<br>
+    -Originalna sredstva<br>
+    -Kvalitetna usluga<br>
+			  
+</p1>
+        
+        
+        <br><br><hr><br>
+        
+       <a href="https://www.facebook.com/topwashservis/" target="_blank"><i class="fab fa-facebook-square fa-3x" style="color: dodgerblue; "></i></a>
+	
+	   <a href="https://www.instagram.com/top_wash_servis_dubinsko/" target="_blank"><i class="fab fa-instagram-square fa-3x" style="color: rebeccapurple; "></i></a>
+	   
+	   <a href="https://www.youtube.com/watch?v=4nnDSBucs44&feature=youtu.be" target="_blank"><i class="fab fa-youtube-square fa-3x" style="color: red; "></i></a>
+			
+	   <a href="http://www.dubinsko-pranje.rs" target="_blank"><i class="fab fa-internet-explorer fa-3x" style="color:rgba(57,171,235,1.00); "></i></a>		
+			
+	   	 </div>
         </div>
       </div>
     </div>
-  </div>
-  
- 
+	
+</div>	
 
-  
-  
-  -->
- 
-
-  <!-- 
-   
-    <div class="polaroid" style="padding-left: 2vw; animation-delay: 0.6s; animation-name: fadeInLeft; "> 
-    <a href="https://www.dr-marina.rs/" target="_blank">
-     <img src="stranice/Medicina/pedijatrija/zigic-Marina/76173541_552680855542351_4464686055437631488_n.jpg" style="width: 95%" alt=""/>
-     </a> 
-    </div>
-    -->
-  </div> 
-  </div>
-</div>
-<!-- vidljivo na telefonima  -->
-
-</div>
+ <button class="float" style="background-color: cornflowerblue" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up fa-2x"></i></button>
 <!-- ^^^vidljivo na telefonima ^^^--> 
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 <div class="footer">
         &copy Redirex team, 2020.
     </div>
@@ -554,9 +548,16 @@ textarea { height: 25vh; resize: none; }
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> 
 <!--JavaScript at end of body for optimized loading--> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
-<script src="ostalo/scrypts.js"></script> 
+<script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js?ver=5.4.2"></script> 
 
 <script>
+	
+	var cards = $(".column");
+for(var i = 0; i < cards.length; i++){
+    var target = Math.floor(Math.random() * cards.length -1) + 1;
+    var target2 = Math.floor(Math.random() * cards.length -1) +1;
+    cards.eq(target).before(cards.eq(target2));
+}
 		document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.fixed-action-btn');
     var instances = M.FloatingActionButton.init(elems, {
@@ -606,6 +607,8 @@ function closeNav() {
     }
   });
   
-});</script>	
+});
+	
+			</script>	
 </body>
 </html>
