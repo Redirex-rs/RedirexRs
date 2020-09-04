@@ -628,13 +628,18 @@ margin: auto;
     width: 100%;
     height: 100%;
     background: black;
-    display: flex;
+    display: table-row;
     justify-content: center;
     align-items: center;
+vertical-align:middle;
 }
+	
 
 .loader > img {
-    width: 30em;
+    width: 25em;
+	display: table;
+    vertical-align:middle;
+	margin: auto
 }
 
 .loader.hidden {
@@ -658,7 +663,10 @@ margin: auto;
 <body>
 
 <div class="loader">
-   <img src="banneri/73081046_108934263856788_4915437994069983232_o.jpg" alt="">
+
+   <img style="margin-top: 30%" src="banneri/73081046_108934263856788_4915437994069983232_o.jpg" alt="">
+	
+   <img class="row" src="banneri/ezgif.com-crop.gif" alt="">
 	
 </div>
 
