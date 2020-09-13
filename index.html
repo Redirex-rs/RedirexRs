@@ -1204,19 +1204,33 @@ margin: auto;
 <br>
 </div>	
 	
+
+
+
+
 	
+	
+	
+	
+<!--	
 <div class="dropdown" style="display: table; margin: auto; width: 20em; margin-top: -1em">
 	
-<button  class="dropdown">Lista Gradova &nbsp; </button>
-<div id="myDropdown" class="dropdown-menu" style="height: 21em; overflow: auto" >
-<ul id="lista-gradova">
+<div class="search-filert-towns">
+					<p>Unesite ime grada:</p>
+				<!--Make sure the form has the autocomplete function switched off:
+					<form autocomplete="off" action="#">
+						<div class="autocomplete">
+	  						<input id="myInput2" type="text" name="myCountry" placeholder="Grad">
+						</div>
+						<input type="submit" class="town-submit-btn">
+				  	</form>
 	
+				</div>
 	
-</ul>
-</div>	
+</div>	-->
 </div>	
 	
-</div>	
+
 		
 	
 <br> <hr> 
@@ -1382,7 +1396,7 @@ margin: auto;
 </div>
 
 
-
+<a id="Bor" href="stranice/1-Zajecar okrug/Boljevac/Boljevac.html" class=""></a>
 
 
 
@@ -1399,6 +1413,15 @@ margin: auto;
 
 
 <script>
+	
+	
+	
+	
+var towns = ["Bor","Kladovo","Majdanpek","Negotin","Beograd","Požarevac","Kučevo","Malo Crniće","Petrovac","Golubac","Veliko Gradište","Žabari","Žagubica","Boljevac","Knjaževac","Sokobanja","Zaječar","Apatin","Kula","Odžaci","Sombor","Bajina Bašta","Čajetina","Kosjerić","Nova Varoš","Požega","Priboj","Prijepolje","Sjenica","Užice","Bojnik","Crna Trava","Lebane","Leskovac","Medveđa","Vlasotince","Alibunar","Bela Crkva","Kovačica","Kovin","Opovo","Pančevo","Plandište","Vršac","Bač","Bačka Palanka","Bački Petrovac","Bečej","Beočin","Novi Sad","Srbobran","Sremski Karlovci","Temerin","Titel","Vrbas","Žabalj","Lajkovac","Ljig","Mionica","Osecina","Ub","Valjevo","Glogovac","Kačanik","Kosovo Polje","Ljipljan","Obilić","Podujevo","Priština","Štimlje","Štrpce","Uroševac","Kosovska Mitrovica","Leposavić","Srbica","Vučitrn","Zubin Potok","Zvečan","Gnjilane","Kosovska Kamenica","Novo Brdo","Vitina","Bogatić","Koceljevo","Krupanj","Ljubovija","Loznica","Mali Zvornik","Šabac","Vladimirci","Čačak","Gornji Milanovac","Ivanjica","Lučani","Doljevac","Gadzin Han","Merošina","Niš","Niška Banja","Ražanj","Svrljig","Dečani","Đakovica","Istok","Klina","Peć","Babušnica","Bela Palanka","Dimitrovgrad","Pirot","Smederevo","Smederevska Palanka","Velika Plana","Ćuprija","Despotovac","Jagodina","Paraćin","Rekovac","Svilajnac","Dragaš","Orahovac","Prizren","Suva Reka","Bosilegrad","Bujanovac","Preševo","Surdulica","Trgovište","Vladičin Han","Vranje","Aleksandrovac","Brus","Ćićevac","Kruševac","Trstenik","Varvarin","Kraljevo","Novi Pazar","Raška","Tutin","Vrnjačka Banja","Ada","Čoka","Kanjiža","Kikinda","Novi Kneževac","Senta","Bačka Topola","Mali Idjos","Subotica","Nova Crnja","Novi Bečej","Sečanj","Žitište","Zrenjanin","Indjija","Irig","Pećnici","Ruma","Šid","Sremska Mitrovica","Stara Pazova","Blace","Kuršumlija","Prokuplje","Žitoradja","Arandjelovac","Batočina","Knić","Kragujevac","Lapovo","Rača","Topola"];	
+
+
+
+
 window.addEventListener("load", function () {
     const loader = document.querySelector(".loader");
     loader.className += " hidden"; // class "loader hidden"
