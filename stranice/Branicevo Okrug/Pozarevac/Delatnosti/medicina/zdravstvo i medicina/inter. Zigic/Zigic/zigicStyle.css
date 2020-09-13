@@ -7,15 +7,17 @@
 }
 
 body {
-background: url(../../banneri/background-okrug.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-background-color: rgba(251,250,254,1.00);
-  background: rgb(240, 240, 240);
+background-image: url("../../../../../../../banneri/75247294_111626686959032_7162865256169996288_o.jpg");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;	
+background-color:black;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   
+}
+
+h4{
+	color: white
 }
 
 img {
@@ -23,101 +25,9 @@ img {
   display: block;
 }
 
-    
-      #contact { 
-        -webkit-user-select: none; /* Chrome/Safari */        
-        -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* IE10+ */
-        color: white;
-        text-align: center;
-        cursor: pointer; 		
-      }
-      
-      
-      #contact:active { background: #444; }
-      
-      #contactForm {
-box-shadow: 25px 25px 20px;
  
-        display: none;
-        border: 6px solid rgba(12,64,118,1.00); 
-        padding: 1em;
-        width: 60vw;
-        text-align: center;
-        z-index: 1;	
-        background: #fff;
-        position: fixed;
-        top:50%;
-        left:50%;
-        transform: translate(-50%,-50%);
-       -webkit-transform: translate(-50%,-50%)
-        
-      }
-      
-      input, textarea { 
-        margin: .8em auto;
-        font-family: inherit; 
-        text-transform: inherit; 
-        font-size: inherit;
-        
-        display: block; 
-        width: 40vw; 
-        padding: .4em;
-      }
-      textarea { height: 25vh; resize: none; }
-      
-      .dropdown-content {
-background-color:rgba(12,64,118,1.00);
-  
-        margin-top: 4vh;
-        max-height: 40vh;
-        max-width: 100%;
-      }
+ 
 
-
-
-.nav-wrapper{
-	
-	top: 0%;
-	z-index: 5;
-}
-
-.nav-wrapper > span > i {
-	font-size: 1rem;
-}
-
-@media (min-width: 768px){
-	.nav-wrapper > span > i {
-	font-size: 1.7rem;
-}
-	
-}
-
-
-.nav-wrapper{
-	
-	top: 0%;
-
-}
-
-.nav-wrapper > span > i {
-	font-size: 1rem;
-}
-
- .nav-wrapper {
-
-	line-height: 3rem;
-	margin: 0;
-	padding: 0;
-	max-height: 3rem;
-           
-       background-color:rgba(12,64,118,0.8) ;
-           
-      }
-          .nav-wrapper:hover{
-            background-color:rgba(12,64,118,1.00) 
-        
-          }
 
 /* Flex class that could be added to other items if needed */
 .flex {
@@ -129,7 +39,22 @@ background-color:rgba(12,64,118,1.00);
 
 /*============== Navbar ==============*/
 
-
+.navbar{
+		height: 3em;
+	}
+	
+	.navbar > div{
+	display: block;
+		height: 1em;
+	}
+	
+	.navbar-brand{
+		height: 1.5em;
+	}
+	
+	.navbar-brand p {
+		margin-top: -2em
+	}
 
 /*============== Banner ==============*/
 
@@ -185,12 +110,18 @@ background-color:rgba(12,64,118,1.00);
 
 /*============== Page's Main section ==============*/
 
+.banner{
+	width:100%
+}
+
+
 .main-sec {
   justify-content: flex-start;
   width: 100%;
 }
 
 .opis-slika {
+	width: 100%;
   text-align: center;
   margin-bottom: 2em;
   box-shadow: 2px 2px 10px rgba(78, 92, 121, 1);
@@ -210,10 +141,8 @@ background-color:rgba(12,64,118,1.00);
 .adresa > p,
 .kontakt-lista {
   width: 100%;
-  background: #fff;
-  border-top: 1px rgb(78, 92, 121, 0.4) solid;
-  border-bottom: 1px rgb(78, 92, 121, 0.4) solid;
-  box-shadow: 2px 2px 10px rgba(78, 92, 121, 1);
+  color: white;
+  background: rgba(0,0,0,0.00);
   padding-top: 1em;
   padding-bottom: 1em;
 }
@@ -224,7 +153,7 @@ background-color:rgba(12,64,118,1.00);
 }
 
 .opis-tekst > h4 {
-  color: rgb(26, 61, 133);
+  color: white;
 }
 
 .opis-naslov,
@@ -232,7 +161,7 @@ background-color:rgba(12,64,118,1.00);
 .radno-vreme > h4,
 .adresa > h4,
 .kontakt > h4 {
-  color: rgb(26, 61, 133);
+  color:white:;
   padding-left: 1em;
   margin-bottom: 0.5em;
 }
@@ -407,7 +336,6 @@ background-color:rgba(12,64,118,1.00);
   .radno-vreme-lista,
   .adresa > p,
   .kontakt-lista {
-    border: 1px rgb(78, 92, 121, 0.4) solid;
     border-radius: 5px;
 }
 
@@ -460,12 +388,85 @@ background-color:rgba(12,64,118,1.00);
 }
 
 /*============== Footer / Copyrights ==============*/
-
+	
+	.col- {
+		padding-bottom: 1em
+	}
+	
+	.widgettitle{
+		width: auto;
+	}
+	.widget .widget-inner {
+    background-size: cover;
+    background-position: center center;
+}
+	
+	.row {
+		margin: auto;
+		padding-bottom: 1em
+	}
+	.row .row{
+		box-sizing: border-box;
+	    text-align: center;
+		width: 100%;
+		align-content: center center;
+		margin: auto;
+		display: table
+	}
+	
+	.box-content{
+		align-content: left;
+		font-size: 0.9em;
+		margin: auto;
+		display: table
+			
+	}
+	
+	.box-body{
+		margin: auto;
+		align-items: center
+	}
+	
+	.box{
+		margin: 0px;
+		display: table
+	
+	} 
+	
+	
+	
+	.box-inner{
+		align-content: left;
+		display: table;
+		margin: auto
+	}
 .footer {
 margin-top: auto;
 
-  background: rgb(78, 92, 121, 1);
-  color: #fff;
+  background: black;
+  color: white;
   text-align: center;
   padding: 1em;
 }
+
+.footer a {
+	color: white
+}
+
+.sub-footer{
+		padding: 1em;
+		padding-bottom: 2em;
+		align-content: left;
+		display: table;
+	}
+	
+	.sub-footer > a {
+		display: inline-block;
+		color: white;
+		margin-left: 4em;
+		font-size: 0.9em
+	}
+	
+	.footer-img{
+		margin: auto
+	}
