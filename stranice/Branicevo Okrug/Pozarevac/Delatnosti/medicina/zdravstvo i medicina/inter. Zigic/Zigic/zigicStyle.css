@@ -25,6 +25,8 @@ img {
   display: block;
 }
 
+
+
  
 .loader {
      position: fixed;
@@ -203,8 +205,9 @@ padding-right: 1.1rem;
 .adresa,
 .kontakt,
 .informacije {
-  width: 100%;
+  width: 95%;
   margin-bottom: 2em;
+  margin: 0.5em;	
 }
 
 .opis-tekst,
@@ -237,8 +240,19 @@ padding-right: 1.1rem;
   margin-bottom: 0.5em;
 }
 
-/*============== Slideshow ==============*/
-
+/*============== <768px ==============*/
+@media (max-width: 768px) {
+		.radno-vreme-lista,
+  .kontakt-lista {
+    border-radius: 5px;
+	 margin-left: 2.5em 
+	 
+}
+	
+	.adresa > p {
+	margin-left: 2.5em	
+	}
+}
 
 /*============== For width of 768px ++  ==============*/
 
