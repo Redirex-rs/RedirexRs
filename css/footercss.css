@@ -1,4 +1,8 @@
-	.sub-footer{
+.footer a{
+	color: white
+}
+
+.sub-footer{
 		padding: 1em;
 		padding-bottom: 2em;
 		align-content: left;

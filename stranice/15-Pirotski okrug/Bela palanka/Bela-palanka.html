@@ -2,18 +2,24 @@
 
 <html>
 <head>
+	<meta charset="utf-8">
 <!--Import Google Icon Font-->
-<script data-ad-client="ca-pub-2077196854990037" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <!--Import materialize.css-->
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">	
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script> 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
 <script src="https://kit.fontawesome.com/3429f72bdb.js" crossorigin="anonymous"></script>
 <!--Let browser know website is optimized for mobile-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta https-equiv="X-UA-Compatible" content="IE=edge">
-<title>Redirex</title>
+
+<title>Redirex: Bela Palanka</title>
 <link rel="shortcut icon" href="../../../favicon.ico" >
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -22,57 +28,15 @@
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 
-
-  <link rel="stylesheet" href="../../../css/css-btn-delatnosti.css" class="">
-  <link rel="stylesheet" href="../GlavniCss-zajecar.css" class="">
+  <script src="../../../css/Overlay.js"></script>
+<link rel="stylesheet" href="../../../css/overlay.css">
+  <link rel="stylesheet" href="../../../css/GlavniCss-zajecar.css" class="">
+  <link rel="stylesheet" href="../../../css/css-btn-delatnosti.css">
+  <link rel="stylesheet" href="../../../css/grid-container-btn.css">
+  
   
  <style>     /* The Overlay (background) */
-  .overlay {
-    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
-    height: 100%;
-    width: 0;
-    position: fixed; /* Stay in place */
-     z-index: 7; /* Sit on top */
-      
-    left: 0;
-    top: 0;
-    background-color: rgb(3, 0, 0); /* Black fallback color */
-    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
-    overflow-y: hidden; /* Disable horizontal scroll */
-    transition: .3s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-  }
-  
-  /* Position the content inside the overlay */
-  .overlay-content {
-position: relative;
-top: 10%; /* 25% from the top */
-width: 100%; /* 100% width */
-text-align: center; /* Centered text/links */
-margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
-}
-  
-  /* The navigation links inside the overlay */
-  .overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: rgb(90, 90, 90);
-    display: block; /* Display block instead of inline */
-    transition: 0.3s; /* Transition effects on hover (color) */
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
-  }
-  
-  /* Position the close button (top right corner) */
-  .overlay .closebtn {
-position: absolute;
-top: 0.5vh;
-right: 1vw;
-font-size: 50px;
-}
+
 	
 h9 {
   font-size: 0.6em;
@@ -89,73 +53,80 @@ h9 {
     
 <!--- <div class="#" style="margin-bottom: 3%;margin-left: 4%; margin-right: 4%; background-color: rgb(255, 255, 255);">	--->  
 		
+  <nav id="vrh-navbar" class="navbar" style="background-color:rgba(12,64,118,1.00);">
+  	 <div class="navbar-brand" style="text-align: left; color: white" href="#"><p><h1><strong>Redirex</strong></h1></p></div>
+<ul class="navbar-ul">
+
+</ul>	
+  <a href="../../../index.html" style="color: white">Glavna stranica</a>
+
+</nav> 
 
 
-	   <!-- Meni s leve strane vidljiv na dektop--->
-     <nav class="nav-wrapper fixed" style="padding-left: 1%;"> <span onclick="openNav()" style="width:2vw;"> <i class="fas fa-bars" style="padding-left: 2%">&nbsp;&nbsp;Informacije</i></span>
-    <ul id="nav-mobile" class="right" style="padding-right: 2%">
-      <!-- Dropdown Structure -->
-     
-      
-            <li><a href="../../../index.html" style="color: white">Glavna stranica</a></li>
-            
-            
-         </ul>        
-      
-  
-</nav>
 	
-	<div class="center" style="margin-top: 5vh">
+	<div class="center" >
 	  <img src="Blason_de_Bela_Palanka.png" alt="" class="" style="width: 15vw">
 	 
 	</div>
 	<div class="divider"></div>
 	
-		<!-- kontakt forma-->	
-<form action="" method="post" enctype="text/plain">			
-			<div id="contactForm">
-<div class="hide-on-med-and-down">
-
-  <h1>Kontakt</h1>
-  <small></small> 
-  <form action="#">
-    <p>Redirex.rs</p>
-    <p>Email: redirexrs@gmail.com</p>
-	<p>Facebook: <a href="https://www.facebook.com/redirexx/">https://www.facebook.com/redirexx/</a></p>
-  
-  </form>
-</div>
-
-
-<div class="hide-on-large-only">
-    <h4>Kontakt</h4>
-    <small></small>
-    
-    <form action="#">
-      <p>Redirex.rs</p>
-      <p>redirexrs@gmail.com</p>
-    <p>Facebook: <a href="https://www.facebook.com/redirexx/">www.facebook.com/redirexx/</a></p>
-    
-    </form>
-  </div>
-</div>
-	</form>		
+	
 		
 	
 
-<!-- The overlay -->
-<div id="myNav" class="overlay"> 
+<!-- NAV1 -->
+<div id="myNav1" class="overlay"> 
   
   <!-- Button to close the overlay navigation --> 
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; </a> 
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times; </a> 
   
   <!-- Overlay content -->
   <div class="overlay-content">
-    
-</div>   
+
+  
 </div>
 
-<!-- Action dugme--->
+   </div>
+<!-- NAV2 -->	   
+<div id="myNav2" class="overlay"> 
+  
+  <!-- Button to close the overlay navigation --> 
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times; </a> 
+  
+  <!-- Overlay content -->
+  <div class="overlay-content">
+   
+  
+</div>
+
+   </div>
+<!-- NAV3 -->	   
+<div id="myNav3" class="overlay"> 
+  
+  <!-- Button to close the overlay navigation --> 
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav3()">&times; </a> 
+  
+  <!-- Overlay content -->
+  <div class="overlay-content">
+  
+  
+</div>
+
+   </div>
+<!-- NAV4 -->	   
+<div id="myNav4" class="overlay"> 
+  
+  <!-- Button to close the overlay navigation --> 
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav4()">&times; </a> 
+  
+  <!-- Overlay content -->
+  <div class="overlay-content">
+  
+  
+</div>
+
+   </div>
+
 
 
 <div class="grid-container-btn">
@@ -166,7 +137,7 @@ h9 {
 	<a href="#" class="myButton-disabled grayout">Veleprodaja</a>
 	<a href="#" class="myButton-disabled grayout">Servis bele tehnike</a>
 	<a href="#" class="myButton-disabled grayout">Rekreacija</a>
-	<a href="#" class="myButton-disabled grayout">Automibolizam</a>
+	<a href="#" class="myButton-disabled grayout">Automobilizam</a>
 	<a href="Delatnosti/ostalo-bela-palanka.html" class="myButton">Usluge</a>
 </div>
 	
@@ -174,10 +145,12 @@ h9 {
 	
 
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<div class="footer">
-        &copy Redirex team, 2020.
-    </div>
+<div class="bot-dugmici row">	
+	<div onclick="openNav1()" class="bot-dugme" ><p><strong>Akcije i popusti</strong></p></div>
+	<div onclick="openNav2()" class="bot-dugme"><p><strong>Poslovni oglasi</strong></p></div>
+	<div onclick="openNav3()" class="bot-dugme" ><p><strong>Novi oglasi</strong></p></div>
+	<div onclick="openNav4()" class="bot-dugme"><p><strong>Obaveštenja</strong></p></div>
+</div>
 
 
 
@@ -189,64 +162,7 @@ h9 {
 <script src="../../../scrypts.js"></script> 
 <script src="../../../GlavniCss.css"></script>
  
-<script>
-		document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.fixed-action-btn');
-    var instances = M.FloatingActionButton.init(elems, {
-      direction: 'up',
-      hoverEnabled: false
-	  
-    });
-  });
-			 
-	</script> 
-<script> document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems, options);
-  });</script> 
-<script>$(document).ready(function(){
-    $('.sidenav').sidenav();
-  });
-		  
-		  /* Open when someone clicks on the span element */
-/* Open when someone clicks on the span element */
-function openNav() {
-  document.getElementById("myNav").style.width = "100%";
-}
 
-/* Close when someone clicks on the "x" symbol inside the overlay */
-function closeNav() {  document.getElementById("myNav").style.width = "0%";
-}; 
-	
-
-	$(function() {
-  
-  // contact form animations
-  $('#contact').click(function() {
-    $('#contactForm').fadeToggle();
-  })
-  $(document).mouseup(function (e) {
-    var container = $("#contactForm");
-
-    if (!container.is(e.target) // if the target of the click isn't the container...
-        && container.has(e.target).length === 0) // ... nor a descendant of the container
-    {
-        container.fadeOut();
-    }
-  });
-  
-});
-	
-var cards = $(".column");
-for(var i = 0; i < cards.length; i++){
-    var target = Math.floor(Math.random() * cards.length -1) + 1;
-    var target2 = Math.floor(Math.random() * cards.length -1) +1;
-    cards.eq(target).before(cards.eq(target2));
-}
-
-$('.dropdown-trigger').dropdown();
-	
-	</script>
 
 
 
