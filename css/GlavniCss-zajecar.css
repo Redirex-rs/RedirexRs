@@ -216,7 +216,7 @@ font-size: 2em
 
 .bot-dugme{
 	width: 25%;
-	background-color: black;
+	background-color: #333333;
 	border-right: 2px solid rgba(12,64,118,1.00);
 	border-left: 2px solid rgba(12,64,118,1.00);
 	cursor: pointer
