@@ -12,7 +12,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>	
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">	
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><style>
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+</style>	
 <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script> 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
 <script src="https://kit.fontawesome.com/3429f72bdb.js" crossorigin="anonymous"></script>
@@ -59,7 +61,14 @@
 <style>
 	
 	.sidenav{
-		opacity: 92%
+		opacity: 92%;
+		display: block;
+		margin: auto
+	}
+	
+	.side-content1{
+		margin: auto;
+		display: table
 	}
 	
 	@media (max-width: 768px){
@@ -67,16 +76,7 @@
 		body{
 			background-color: black;
 		}
-		
-		.banner-text img {
-		width: 100%;
-		height: 8em;	
-		z-index: -1;	
 	}
-	}
-	
-	
-	
 	
 	.card{
 		width: 13em;
@@ -134,8 +134,17 @@
 	}
 	
 	.navbar-ul{
+		 list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  inl		
+		
 		
 	}
+	.navbar-ul li {
+  float: right; 	
+}
 	
 	.container{
 		margin-bottom: 1em;
@@ -146,13 +155,8 @@
 		height: 3em;
 	}
 	
-	.navbar > div{
-	display: block;
-		height: 1em;
-	}
 	
 	.navbar-brand{
-		height: 1.5em;
 	}
 	
 	.navbar-brand p {
@@ -168,20 +172,6 @@
 	  padding: 5em
 		  
 		
-	}
-	
-	.banner-text{
- 	   position: relative;
-       text-align: center;
-       color: white;
-	   margin: auto	
-	}
-	@media (min-width: 768px)	{
-	.banner-text img {
-		width: 100%;
-		height: 20em;
-		z-index: -1;	
-	}
 	}
 	
 	.sub-footer{
@@ -202,7 +192,6 @@
 		margin: auto
 	}
 	
-	
 	.pretrage{
 		
 		margin: auto;
@@ -213,8 +202,6 @@
 		box-sizing: border-box;
 		displa	
 	}
-	
-	
 	
 	*{
 		box-sizing: border-box
@@ -269,8 +256,6 @@
 	
 	} 
 	
-	
-	
 	.box-inner{
 		align-content: left;
 		display: table;
@@ -281,7 +266,6 @@
 		display:flex;
 		
 	}
-	
 	
 	.glavni-menu{
 		width: 100%;
@@ -300,14 +284,7 @@
 		color: white;
 		padding-left: 1.5%
 	}
-	
-	.banner > img {
-		width: 100%;
-		height: 15em;
-		object-fit:cover;
-	}
-	
-	
+		
 *{padding:0;margin:0;}
 
 .float{
@@ -331,9 +308,6 @@ html {
   scroll-behavior: smooth;
 }
 	
-	
-
-
 .column  a {
 	margin: 1em
 }
@@ -350,12 +324,11 @@ html {
   width: 100%;
 }
 
-
 .dropdown-sadrzaj{
 	position: relative;
 }
 
-      .footer {
+.footer {
   margin-top: auto;
   border-top: 1px solid white;
   width: 100%;		  
@@ -372,10 +345,7 @@ body {
 	
 	}
 }
-	
 
-	
-	
 .dugme-search{
 	display:flex;
 	margin:auto;
@@ -395,36 +365,12 @@ body {
 	box-shadow: 0 0 5px #9ecaed;
 	
 }
-/*	@media (max-width: 768px){	
-		.flex-container3 > div {
-			width: 80%;
-			margin-left: 2%
-		}
-
-.flex-container3 > a {
-	text-align: left;
-	font-size: 0.5rem;
-	height: 2.5em!important;
-	width: 70%
-		
-}
-
-.flex-container3  img {
-	height: 2em;
-    width: 2em;
-	align-content: right;
-}     
-	} */
-	
-          
+   
 .flex-container3  img {
 	height: 2em;
     width: 2em;
 	align-content: right;
 }
-
-
-
 
 .flex-container3 {
         display:inline-flex;
@@ -437,17 +383,14 @@ body {
 	    padding-right: 2em
  	}
 	
-	 .flex-container3 > div {
+.flex-container3 > div {
 		 width: 14em;
 		 margin: auto
 	 }
-	
-	
-	.flex-container3 > a > text {
+.flex-container3 > a > text {
 		vertical-align: middle
 	}
 
-	
 .modal {
         position: fixed;
         left: 0;
@@ -501,7 +444,6 @@ body {
 
 }
 
-
 .inactiveLink {
    pointer-events: none;
    cursor: default;
@@ -528,8 +470,6 @@ body {
 	outline: none
 	}
 
-	
-
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
   position: relative;
@@ -545,8 +485,6 @@ body {
   border: 4px solid rgba(17,93,172,1.00)	
 }
 	
-	
-
 /* Links inside the dropdown */
 .dropdown-menu a {
   color: black;
@@ -616,9 +554,70 @@ margin: auto;
         visibility: hidden;
     }
 }
-
-
 	
+.banner-text {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.banner-text > img {
+  object-fit: cover;
+  min-width: 100%;
+  max-height: 100%;
+}
+
+.banner-title {
+  font-size: 1.3rem;
+  background: rgba(0, 0, 0, 0.404);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  color: rgb(245, 245, 245);
+  text-shadow: 5px 5px 5px #000, 5px 5px 5px #000, 5px 5px 5px #000;
+  top: 0;
+  text-align: center;
+}
+@media (min-width: 768px) {
+	.banner-title {
+  font-size: 1.7rem;
+  background: rgba(0, 0, 0, 0.404);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  color: rgb(245, 245, 245);
+  text-shadow: 5px 5px 5px #000, 5px 5px 5px #000, 5px 5px 5px #000;
+  top: 0;
+  text-align: center;
+}
+}
+@media (min-width: 768px) {
+	
+  .banner-text {
+    height: 350px;
+  }
+h2{
+		font-size: 3em;
+	    margin-top: 1em;
+	    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"
+	}
+h3{
+		font-size: 2em
+	}	
+	}
+@media (max-width: 768px) {
+	li{
+		font-size: 0.9em
+	}	
+	
+  .banner-text {
+    height: 150px;
+  }
+	h2{
+		font-size: 1.5em;
+		margin-top: 1em
+	}	
+	}	
 	</style>
 
 	
@@ -633,54 +632,56 @@ margin: auto;
 </div>	
 </div>
 
-
+<nav id="vrh-navbar" class="navbar" style="background-color:rgba(12,64,118,1.00);">
 	
+  <ul class="navbar-ul">
+	  
+	  
+   <li style="cursor: pointer"> <span onclick="openNav1()" style=" border-right: 2px solid white ;color: white; margin-right: 1em">&nbsp;Informacije&nbsp;</span></li>
 	
-
-	   <!-- Meni s leve strane vidljiv na dektop--->
- <nav id="vrh-navbar" class="navbar" style="background-color:rgba(12,64,118,1.00);">
-  	 <div class="navbar-brand" style="text-align: left; color: white" href="#"><p><h1><strong><dd>Redirex</dd></strong></h1></p></div>
-<ul class="navbar-ul">
-
-</ul>	
-  <span onclick="openNav()" style="font-size: 1.5em; color: white; margin-right: 1em"><i class="fas fa-chevron-left"></i>&nbsp;<i class="fas fa-info-circle"></i></span>
-
-</nav> 
- 
-  
-    
-		<!-- kontakt forma-->	
-
-		
-	<!-- Modal -->
+   <li> <span onclick="openNav()" style="color: white; border-right: 2px solid white">Obaveštenja (0)&nbsp;</span></li>
+	  
+	  
+  </ul>	
+</nav> 	
 	
+ <!--overlay desni-->
+<div id="mySidenav1" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
 
-
-<!-- The overlay -->
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-	<div class="side-content">
+	<div class="side-content1">
 		
 <br> <br> <a href="kako-se-oglasiti.html"><i class="fas fa-hand-point-right"></i>&nbsp;&nbsp;Kako se oglasiti na redirex.rs?</a> 
 		<br> <br>
 <a href="stranica-pretrage.html"><i class="fas fa-hand-point-right"></i>&nbsp;&nbsp;Brza pretraga baze</a> <br><br>		
 <a href="#text-9"><i class="fas fa-hand-point-right"></i>&nbsp;&nbsp;Kontakt</a> <br><br>	
-		_________________________ <br><br><br>		
+		<hr class="solid" style="border-top: 1px solid gray; width: 100%; margin: auto; padding-bottom: 0.5em">		
 
 	</div>
 
 
 </div>	   
+<!--overlay levi-->
+<div id="mySidenav2" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
 
+	<div class="side-content">
+		
+
+	</div>
+
+
+</div>	
+	
+	
 <!-- Carousel--->
 <div class="banner-text">
 <img src="banneri/cubes-2492010.jpg" alt="redirex / redirex.rs" class="">
-	<!--
-	<div class="right"><h1><strong>Dobrodosli na redirex</strong></h1> <br> <h4> Poslovni Katalog Srbije </h4> </div> -->
-	
-</div>		
-		  
+	<div class="banner-title ">
+            <h2><strong>REDIREX</strong></h2>
+            <h3>Biznis Katalog Srbije</h3>
+        </div>
+</div>				  
 <div id="okruzi" class="glavni-menu"><p><strong>Okruzi i opštine</strong></p></div>
 
 	
@@ -1165,28 +1166,6 @@ margin: auto;
 	
 
 
-
-
-	
-	
-	
-	
-<!--	
-<div class="dropdown" style="display: table; margin: auto; width: 20em; margin-top: -1em">
-	
-<div class="search-filert-towns">
-					<p>Unesite ime grada:</p>
-				<!--Make sure the form has the autocomplete function switched off:
-					<form autocomplete="off" action="#">
-						<div class="autocomplete">
-	  						<input id="myInput2" type="text" name="myCountry" placeholder="Grad">
-						</div>
-						<input type="submit" class="town-submit-btn">
-				  	</form>
-	
-				</div>
-	
-</div>	-->
 </div>	
 	
 
@@ -1388,13 +1367,24 @@ window.addEventListener("load", function () {
 		  
 		  /* Open when someone clicks on the span element */
 /* Open when someone clicks on the span element */
-function openNav() {
-  document.getElementById("mySidenav").style.width = "100%";	
+function openNav1() {
+  document.getElementById("mySidenav1").style.width = "100%";	
 }
 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
+function closeNav1() {
+  document.getElementById("mySidenav1").style.width = "0";
 }
+	
+
+		  /* Open when someone clicks on the span element */
+/* Open when someone clicks on the span element */
+function openNav2() {
+  document.getElementById("mySidenav2").style.width = "100%";	
+}
+
+function closeNav2() {
+  document.getElementById("mySidenav2").style.width = "0";
+}	
 	</script>
 	
 
