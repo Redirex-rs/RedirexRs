@@ -441,3 +441,16 @@ margin-top: auto;
 	.footer-img{
 		margin: auto
 	}
+
+.drustvene-mreze{
+	display: flex;
+	margin: inherit;
+	align-content: center;
+	margin: 3em;
+	text-align: center;	
+}
+.drustvene-mreze>a{
+	display: inline-block;
+	margin: auto;
+	color: white
+}
