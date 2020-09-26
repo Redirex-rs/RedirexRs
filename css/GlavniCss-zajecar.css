@@ -197,30 +197,69 @@ position: fixed;
 padding-bottom: 0;	
 z-index: 2	
 }
-
-.bot-dugme p{
-	margin: auto;
-	color: white;
-	text-align: center;
-	
+@media(max-width: 768px){
+	.bot-dugme1 > p,
+.bot-dugme2 > p,
+.bot-dugme3 > p,
+.bot-dugme4 > p {
+	font-size: 0.85em;
+	}
 }
 
+
 @media(min-width: 768px){
-	.bot-dugme p{
+    .bot-dugme1 > p,
+.bot-dugme2 > p,
+.bot-dugme3 > p,
+.bot-dugme4 > p {
 	margin: auto;
 	color: white;
 	text-align: center;
 font-size: 2em	
 }
+	
 }
 
-.bot-dugme{
+
+.bot-dugme1 > p,
+.bot-dugme2 > p,
+.bot-dugme3 > p,
+.bot-dugme4 > p {
+	margin: auto;
+	color: white;
+	text-align: center;
+	background: rgba(0,0,0,0.44);
+	height: 100%
+		
+}
+
+.bot-dugme1,
+.bot-dugme2,
+.bot-dugme3,
+.bot-dugme4 {
 	width: 25%;
 	background-color: #333333;
 	border-right: 2px solid rgba(12,64,118,1.00);
 	border-left: 2px solid rgba(12,64,118,1.00);
-	cursor: pointer
+	cursor: pointer;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
+
+.bot-dugme1 {
+	background-image: url("../banneri/money-2724235_640.jpg")
+}
+.bot-dugme2 {
+	background-image:url("../banneri/poslovnioglasi.jpg")
+}
+.bot-dugme3 {
+	background-image:url("../banneri/novioglasi.jpg")
+}
+.bot-dugme4 {
+	background-image: url("../banneri/obavestenja.jpg")
+}
+
+
 
 .bot-dugme:hover{
 	background-color: rgba(12,64,118,1.00)
