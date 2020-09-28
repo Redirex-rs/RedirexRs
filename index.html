@@ -12,6 +12,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>	
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><style>
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 </style>	
@@ -59,8 +60,18 @@
 <link rel="stylesheet" href="css/w3-sidenav.css">	
 
 <style>
+	.table{
+		color: white;
+	}
+	
+	.logo-img-nav{
+		height: 3em;
+		z-index: 5	
+	}
+	
+	
 	.banner > img {
-	height: 6em
+	
 }
 	
 	.sidenav{
@@ -74,11 +85,41 @@
 		display: table
 	}
 	
-	@media (max-width: 768px){
+@media (max-width: 768px){
 		
 		body{
 			background-color: black;
 		}
+		
+	           	.logo-img-nav{
+	           	height: 2em;
+	           	z-index: 5	
+	           }
+		
+                .flex-container3  img {
+            	height: 1.5em;
+                width: 1.5em;
+                align-content: right;
+            }
+
+                .flex-container3 {
+                        display:inline-flex;
+                        justify-content: center;
+		                padding-bottom:m;
+	                    padding-top: 0.5em;
+                        margin: auto;
+	                    flex-wrap: wrap;
+                 	}
+	
+                .flex-container3 > div {
+                		 width: 13em;
+					margin: 0.3em;
+					font-size: 0.75em
+                	 }
+                .flex-container3 > a > text {
+                		vertical-align: middle
+                	}
+                		
 	}
 	
 	.card{
@@ -137,16 +178,16 @@
 	}
 	
 	.navbar-ul{
-		 list-style-type: none;
-  margin: 0;
+  list-style-type: none;
   padding: 0;
   overflow: hidden;
-  inl		
+  display: table;		
 		
 		
 	}
 	.navbar-ul li {
-  float: right; 	
+	vertical-align: middle;
+	display: inline
 }
 	
 	.container{
@@ -155,7 +196,7 @@
 	}
 	
 	.navbar{
-		height: 3em;
+		
 	}
 	
 	
@@ -272,12 +313,11 @@
 	
 	.glavni-menu{
 		width: 100%;
-		height: 1.5em;
-		background-color: rgba(12,64,118,0.72);
+		height: 2em;
+		background-color: rgba(0,0,0,0.02);
 		font-size: 1.5em;
+		border-bottom: 1px solid white;
 		justify-content: center;
-  -moz-box-shadow: 0 10px 5px white;
-  box-shadow: 0 10px 30px white;
 	}
 	
 	.glavni-menu > p {
@@ -369,6 +409,8 @@ body {
 	
 }
    
+	@media (min-width: 768px){	
+
 .flex-container3  img {
 	height: 2em;
     width: 2em;
@@ -383,7 +425,7 @@ body {
         margin: auto;
 	    flex-wrap: wrap;
 		padding-left: 2em;
-	    padding-right: 2em
+	    padding-right: 2em;
  	}
 	
 .flex-container3 > div {
@@ -393,7 +435,7 @@ body {
 .flex-container3 > a > text {
 		vertical-align: middle
 	}
-
+	}
 .modal {
         position: fixed;
         left: 0;
@@ -564,8 +606,6 @@ margin: auto;
   margin-bottom: 1rem;
 }
 
-
-
 .banner-title {
   font-size: 1.3rem;
   background: rgba(0, 0, 0, 0.404);
@@ -637,15 +677,17 @@ h3{
 </div>	
 </div>
 
-<nav id="vrh-navbar" class="navbar" style="background-color:rgba(12,64,118,1.00);">
+<nav id="vrh-navbar" class="navbar " style="background-color:rgba(0,0,0,0.00);">
 	
   <ul class="navbar-ul">
-	  
-	  
-   <li style="cursor: pointer"> <span onclick="openNav1()" style=" border-right: 2px solid white ;color: white; margin-right: 1em">&nbsp;Informacije&nbsp;</span></li>
+	<li><img class="logo-img-nav" src="LogoMakr_86RlJV.png" alt=""></li>  
 	
    <li> <span onclick="openNav()" style="color: white; border-right: 2px solid white">Obaveštenja (0)&nbsp;</span></li>
 	  
+   <li style="cursor: pointer"> <span onclick="openNav1()" style=" border-right: 2px solid white ;color: white; margin-right: 1em">&nbsp;Informacije&nbsp;</span></li>
+	
+
+   
 	  
   </ul>	
 </nav> 	
@@ -708,7 +750,7 @@ h3{
 <!--Beograd  -->		
 <div class="dropdown"  style="margin-bottom: 1em">	
     <a href="stranice/28-Grad Beograd/index-beograd.html" class="dropdown" style="font-size: 1em;">	
-	    <button onClick="stranice/28-Grad Beograd/index-beograd.html" class="dropdown" >Grad Beograd (31)&nbsp;<img src="stranice/28-Grad Beograd/1024px-Flag_of_Belgrade,_Serbia.svg.png" alt="" style="height: 32px; width: 32px">
+	    <button onClick="stranice/28-Grad Beograd/index-beograd.html" class="dropdown" >Grad Beograd (31)&nbsp;<img src="stranice/28-Grad Beograd/1024px-Flag_of_Belgrade,_Serbia.svg.png" alt="" style="height: 1.3em; width: 1.3em                ">
 		</button>
 	</a> 	
 </div>	
@@ -1152,7 +1194,7 @@ h3{
      
 <div id="pretraga" class="glavni-menu"><p><strong>Pretraga</strong></p></div>    
 
-
+	
 
 <!-- vidljivo na dektop---> 
 <hr> 
@@ -1169,9 +1211,57 @@ h3{
 <br>
 </div>	
 	
+ <!--   <input class="form-control" id="myInput" type="text" placeholder="Search..">
+  <br>
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+      </tr>
+    </thead>
+    <tbody id="myTable">
+      <tr>
+        <td>Beograd - Delatnosti / oglasi / obaveštenja</td>
+        
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@mail.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@greatstuff.com</td>
+      </tr>
+      <tr>
+        <td>Anja</td>
+        <td>Ravendale</td>
+        <td>a_r@test.com</td>
+      </tr>
+    </tbody>
+  </table>
+ <script>
+	 
+$('table').hide();
+$('#myInput').on("keyup", function(){
+    var searchVal = $('#myInput').val();
+    if(searchVal == ""){
+        $('table').hide();
+    }
+    else{
+        $('table').show();
+        $('table tr td').show();
+		$('table tr td:not(:contains("' + searchVal + '"))').hide();
+    }
+});
+	
+	</script> -->
+	
+</div>
 
 
-</div>	
+
 	
 
 		
@@ -1390,6 +1480,9 @@ function openNav2() {
 function closeNav2() {
   document.getElementById("mySidenav2").style.width = "0";
 }	
+	
+
+	
 	</script>
 	
 
