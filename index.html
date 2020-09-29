@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8">
 <!--Import Google Icon Font-->
-
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>	
 <script data-ad-client="ca-pub-2077196854990037" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!--Import materialize.css-->
@@ -57,18 +57,85 @@
 <script src="JSS/pop-up-modal.js"></script>
 <script src="JSS/w3-sidenav.js"></script>
 <link rel="stylesheet" href="GlavniCss.css">	
-<link rel="stylesheet" href="css/w3-sidenav.css">	
+<link rel="stylesheet" href="css/w3-sidenav.css">
 
 <style>
 	.table{
 		color: white;
 	}
+
+	a {
+    text-decoration: none !important;
+}
+	
+.btn1 {
+  width: 150px;
+  height: 50px;
+  border: 1px solid white;
+  font-size: 2em;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 0;
+  transition: 1s;
+	color: white;
+}
+
+.btn1::before, .btn1::after {
+  position: absolute;
+  background: black;
+  z-index: -1;
+  transition: 1s;
+  content: '';
+	color: white;
+}
+
+.btn1::before {
+  height: 50px;
+  width: 130px;
+	color: white;
+}
+
+.btn1::after {
+  width: 150px;
+  height: 30px;
+	color: white;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+	font-size: 1.32em
+}
+
+.btn1:hover::before {
+  width: 0px;
+  background: black;
+	color: white;
+}
+
+.btn1:hover::after {
+  height: 0px;
+  background: black;
+	color: white;
+}
+
+.btn1:hover {
+  background: black;
+	color: white;
+}
 	
 	.logo-img-nav{
 		height: 3em;
 		z-index: 5	
 	}
-	
 	
 	.banner > img {
 	
@@ -637,7 +704,7 @@ margin: auto;
   .banner-text {
     height: 350px;
   }
-h2{
+h1{
 		font-size: 3em;
 	    margin-top: 1em;
 	    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"
@@ -662,10 +729,11 @@ h3{
 		font-size: 1.5em;
 		margin-top: 1em
 	}	
-	}	
+	}
+	
+	
 	</style>
 
-	
 	
 </head>
 <body>
@@ -678,18 +746,30 @@ h3{
 </div>
 
 <nav id="vrh-navbar" class="navbar " style="background-color:rgba(0,0,0,0.00);">
+	<a href="index.html">
+		
+		<div class="btn1">
+  <span class="noselect">Redirex</span>
+</div>
+		
+		
+	</a><br>
 	
-  <ul class="navbar-ul">
-	<li><img class="logo-img-nav" src="LogoMakr_86RlJV.png" alt=""></li>  
+<ul class="navbar-ul">
 	
-   <li> <span onclick="openNav()" style="color: white; border-right: 2px solid white">Obaveštenja (0)&nbsp;</span></li>
+<li> <span onclick="openNav()" style="color: white; border-right: 1px solid white">Obaveštenja (0)&nbsp;</span></li>
 	  
-   <li style="cursor: pointer"> <span onclick="openNav1()" style=" border-right: 2px solid white ;color: white; margin-right: 1em">&nbsp;Informacije&nbsp;</span></li>
+<li style="cursor: pointer"> <span onclick="openNav1()" style=" border-right: 1px solid white ;color: white; margin-right: em">Informacije&nbsp;</span></li>
 	
-
-   
+<li><a style="color: white;border-right: 1px solid white" href="#okruzi" class="">Okruzi i opštine&nbsp;</a></li>	
 	  
-  </ul>	
+<li><a style="color: white;border-right: 1px solid white" href="#najnovije" class="">Najnovije&nbsp;</a></li>
+	  
+<li><a style="color: white;border-right: 1px solid white" href="#pretraga" class="">Pretraga&nbsp;</a></li>
+	  
+<li><a style="color: white;" href="kako-se-oglasiti.html" class="">Oglašavanje&nbsp;</a></li> 
+	  
+</ul>	
 </nav> 	
 	
  <!--overlay desni-->
@@ -725,15 +805,23 @@ h3{
 <div class="banner-text">
 <img src="banneri/cubes-2492010.jpg" alt="redirex / redirex.rs" class="">
 	<div class="banner-title ">
-            <h2><strong>REDIREX</strong></h2>
+   
+          <h1 style="text-decoration: none"><strong>REDIREX</strong></h1>
             <h3>Poslovni Katalog Srbije</h3>
         </div>
-</div>				  
-<div id="okruzi" class="glavni-menu"><p><strong>Okruzi i opštine</strong></p></div>
+      </div>
+    
+  
 
+ 		
 	
-      	
-  	<div id="myDIV" class="flex-container3" style="margin-bottom: 10em; margin-top: 3em; ">
+	
+	
+	
+	
+<div id="okruzi" class="glavni-menu"><p><strong>Okruzi i opštine</strong></p></div>
+  	
+<div id="myDIV" class="flex-container3" style="margin-bottom: 10em; margin-top: 3em; ">
 <!--Borski  -->	
 <div class="dropdown" style="margin-bottom: 1em">
 	<button class="dropdown">Borski okrug (1) &nbsp;<img src="stranice/Bor Okrug/Bor/Veliki_grb_Bora.png" alt=""> </button>
@@ -1187,11 +1275,7 @@ h3{
 		
     </div><!-- /.row -->    						
 </div><!-- /.cols-sm-3 -->
-
-				            
-	   
-		
-     
+	
 <div id="pretraga" class="glavni-menu"><p><strong>Pretraga</strong></p></div>    
 
 	
@@ -1199,8 +1283,7 @@ h3{
 <!-- vidljivo na dektop---> 
 <hr> 
 	
-
-		
+	
 <div class="pretrage" style="padding-top: em; padding-bottom: 12em">
 	<div class="pretrage-stranica">
 	<a href="stranica-pretrage.html" >
@@ -1210,6 +1293,9 @@ h3{
 	</a>
 <br>
 </div>	
+</div>		
+	
+	
 	
  <!--   <input class="form-control" id="myInput" type="text" placeholder="Search..">
   <br>
@@ -1373,7 +1459,7 @@ $('#myInput').on("keyup", function(){
 
 <div class="listing-small-content">
 
-<a href="#okruzi" class="">Okruzi i opstine</a><br>
+<a href="#okruzi" class="">Okruzi i opštine</a><br>
 <a href="#najnovije" class="">Najnovije</a><br>
 <a href="#pretraga" class="">Pretraga</a><br>	
 <a href="#vrh-navbar" class="" onclick="openNav()">Kako se oglasiti na redirex</a><br>

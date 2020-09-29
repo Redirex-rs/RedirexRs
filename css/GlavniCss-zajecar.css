@@ -1,5 +1,53 @@
 @charset "utf-8";
 
+
+
+.colap-dugme{
+	border: 1px solid black;
+	width: 100%;
+	padding: 0.2em;
+}
+
+.collapse{
+	margin: 1em
+}
+
+hr{
+	margin-bottom: em
+}
+
+@media (max-width: 768px){
+.naslov{
+font-size: 2rem;	
+  width: 100%;
+  color: rgb(245, 245, 245);
+  text-shadow: 5px 5px 5px #000, 5px 5px 5px #000, 5px 5px 5px #000;
+  margin-bottom: 2em;
+  text-align: center;
+}
+}
+
+@media (min-width: 768px) {
+	.naslov{
+		margin-bottom: 2em;
+	}
+	
+	.naslov > h1{
+  font-size: 4rem;	
+  width: 100%;
+  color: rgb(245, 245, 245);
+  text-shadow: 5px 5px 5px #000, 5px 5px 5px #000, 5px 5px 5px #000;
+  text-align: center;
+}
+	
+	.naslov > h2{
+  font-size: 3rem;	
+  width: 100%;
+  color: rgb(245, 245, 245);
+  text-shadow: 5px 5px 5px #000, 5px 5px 5px #000, 5px 5px 5px #000;
+  text-align: center;
+}
+}
 	
 	.search-container{
 		display:flex;
@@ -30,7 +78,7 @@ html {
 }
 
 .column  a {
-	margin: 1em;
+	margin: 0.5em;
 }
 
 .column img{
