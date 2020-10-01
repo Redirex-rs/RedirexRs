@@ -74,7 +74,7 @@ html {
 /* CSS Document */
 
 .column{
-	padding-bottom: 1em
+	
 }
 
 .column  a {
@@ -320,5 +320,39 @@ font-size: 2em
   padding: 1em;		
 }
 
-        
+   /* Custom css za kartice */      
+
+/*DITEKS TEKSTIL*/
+.col-diteks {
+		background: url("../stranice/28-Grad Beograd/Delatnosti/Tekstil/ditekstekstil/scarf-3118638_1920.jpg");
+		background-size: cover;
+		color: white;
+		background-color: rgba(0,0,0,0.95);
+		text-shadow: 6px 6px 6px #000, 6px 6px 6px #000, 6px 6px 6px #000;
+		padding: 1em
+	}
+
+	.col-diteks img {
+		 -webkit-filter: drop-shadow(2px 2.5px 0 white)
+                  drop-shadow(2px 2.5px 0 white);
+  filter: drop-shadow(2px 2.5px 0 white) 
+          drop-shadow(-2px 2.5px 0 white);
+	}
+	
+	.diteks > i {
+		color: white
+	}
+
+/*----------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
 	
