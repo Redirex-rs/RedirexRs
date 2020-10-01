@@ -1,0 +1,45 @@
+.container-redirex-stranica {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.btn-redirex-stranica {
+  text-decoration: none;
+  border: 1px solid rgb(146, 148, 248);
+  position: relative;
+  overflow: hidden;
+  background: rgba(0,0,0,0.86);
+  color: white;
+  width: 100%;
+  font-size: 1.2em;
+  padding: 0.4em;
+  text-align: center; 
+  border-radius: 5px
+}
+
+.btn-redirex-stranica:hover {
+  box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+color: white	
+}
+
+.btn-redirex-stranica:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(146, 148, 248, 0.6),
+    transparent
+  );
+  transition: all 650ms;
+}
+
+.btn-redirex-stranica:hover:before {
+  left: 100%;
+}
