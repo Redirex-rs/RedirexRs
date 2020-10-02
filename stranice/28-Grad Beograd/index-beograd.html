@@ -33,9 +33,15 @@
   <link rel="stylesheet" href="../../css/GlavniCss-zajecar.css" class="">
   <link rel="stylesheet" href="../../css/css-btn-delatnosti.css">
   <link rel="stylesheet" href="../../css/grid-container-btn.css">	
- <style>   
+ <style>  
+	 
+	 .navbar:hover{
+		 background: rgba(0,0,0,1.00);
+		 border-bottom: 1px solid white
+	 }
+	 
 	 body{
-		 background-image: url("belgrade-1457112928SwE.jpg")
+		 background-image: url("../../banneri/background-okrug.jpg")
 	 }
 
 h9 {
@@ -59,14 +65,14 @@ h9 {
 
  
   
-  <nav id="vrh-navbar" class="navbar" style="background-color:rgba(12,64,118,1.00);">
-  	 <div class="navbar-brand" style="text-align: left; color: white" href="#"><p><h1><strong>Redirex</strong></h1></p></div>
-<ul class="navbar-ul">
+	 <nav id="vrh-navbar" class="navbar">
+		 <div class="navbar-brand" style="text-align: left; color: white" href="#"><a href="../../index.html" style="color: white"><p><h1><strong>Redirex</strong></h1></p></a></div>
+		
+	<ul class="navbar-ul">
 
-</ul>	
-  <a href="../../index.html" style="color: white">Glavna stranica</a>
+	</ul>	
 
-</nav> 
+	</nav> 
 	
 	<div class="center">
 	  <img src="1024px-Flag_of_Belgrade,_Serbia.svg.png" alt="" class="" style="width:20vw">
@@ -132,23 +138,27 @@ h9 {
 
    </div>
 
-<!-- Action dugme--->
-
+	
+	
+	
 <div class="grid-container-btn">
 	
 	<a href="#" class="myButton-disabled grayout">Uslužne delatnosti</a>
-	<a href="Delatnosti/Zanatsko-Usluzne-Radnje-beograd.html" class="myButton">Zanatsko uslužne</a>
-	<a href="Delatnosti/Medicina-beograd.html" class="myButton">Medicina i zdravlje</a>
-	<a href="Delatnosti/maloprodaja-beograd.html" class="myButton">Maloprodaja</a>
-	<a href="Delatnosti/namestaj-beograd.html" class="myButton">Nameštaj</a>
-	<a href="#" class="myButton-disabled grayout">Servis bele tehnike</a>
-	<a href="Delatnosti/uredj. enterijera-beograd.html" class="myButton">Uređivanje enterijera</a>
-	<a href="Delatnosti/tekstil-industrija-beograd.html" class="myButton">Tekstilna industrija</a>
-	<a href="Delatnosti/ostalo-beograd.html" class="myButton">Usluge</a>
-	<a href="Delatnosti/Nekretnine-beograd.html" class="myButton">Nekretnine</a>
-	<a href="Delatnosti/servis i prodaja racunara - beograd.html" class="myButton">Servis i prodaja računara</a>
+	<a href="Delatnosti/Zanatsko-Usluzne-Radnje-beograd.html" class="myButton">Zanatsko uslužne&nbsp;<i class="fas fa-tools"></i></a>
+	<a href="Delatnosti/Medicina-beograd.html" class="myButton">Medicina i zdravlje&nbsp;<i class="fas fa-prescription-bottle-alt"></i></a>
+	<a href="Delatnosti/maloprodaja-beograd.html" class="myButton">Maloprodaja&nbsp;<i class="fas fa-money-bill-wave"></i></a>
+	<a href="Delatnosti/namestaj-beograd.html" class="myButton">Nameštaj&nbsp;<i class="fas fa-couch"></i></a>
+	<a href="#" class="myButton-disabled grayout">Servis bele tehnike&nbsp;</a>
+	<a href="Delatnosti/uredj. enterijera-beograd.html" class="myButton">Uređivanje enterijera&nbsp;<i class="fas fa-home"></i></a>
+	<a href="Delatnosti/tekstil-industrija-beograd.html" class="myButton">Tekstilna industrija&nbsp;<i class="fas fa-tshirt"></i></a>
+	<a href="Delatnosti/ostalo-beograd.html" class="myButton">Usluge&nbsp;<i class="fas fa-briefcase"></i></a>
+	<a href="Delatnosti/Nekretnine-beograd.html" class="myButton">Nekretnine&nbsp;<i class="fas fa-home"></i></a>
+	<a href="Delatnosti/servis i prodaja racunara - beograd.html" class="myButton">Servis i prodaja računara&nbsp;<i class="fas fa-laptop"></i></a>
 </div>
 
+	
+	
+	
 
 <div class="bot-dugmici row">	
 	<div onclick="openNav1()" class="bot-dugme1" ><p><strong>(0) Akcije i popusti</strong></p></div>
@@ -161,12 +171,23 @@ h9 {
 
 
 <!--Import jQuery before materialize.js-->  
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> 
+ <script src="https://code.jquery.com/jquery.js"></script> 
 <!--JavaScript at end of body for optimized loading--> 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
-<script src="../../../scrypts.js"></script> 
-<script src="../../../GlavniCss.css"></script>
+<script src="js/bootstrap.min.js"></script>
  
+<script>
+	$(function() {
+var selectedClass = "";
+$(".filter").click(function(){
+selectedClass = $(this).attr("data-rel");
+$("#gallery").fadeTo(100, 0.1);
+$("#gallery div").not("."+selectedClass).fadeOut().removeClass('animation');
+setTimeout(function() {
+$("."+selectedClass).fadeIn().addClass('animation');
+$("#gallery").fadeTo(300, 1);
+}, 300);
+});
+});</script>	
 
 </body>
 </html>

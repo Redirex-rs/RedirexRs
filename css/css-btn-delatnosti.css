@@ -1,9 +1,10 @@
 @media (min-width: 768px) {
 .myButton {
-	box-shadow:inset 0px 1px 0px 0px #bee2f9;
-	background:linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
-	background-color:#3d94f6;
-	border-radius:px;
+	
+	background:black;
+	background-color:black;
+	border-bottom: 1px solid white;
+	border-left: 1px solid white;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
@@ -15,13 +16,13 @@
 	text-shadow:0px 0px 0px #7cacde;
 	text-align: center;
 	height: 2em;
-	border:1px solid black;
-	
-	
 }
+	
+	.myButton i{
+		right: 0
+	}
 .myButton:hover {
-	background:linear-gradient(to bottom, #468ccf 5%, #63b8ee 100%);
-	background-color:#468ccf;
+	background-color:rgba(12,64,118,1.00);
 }
 .myButton:active {
 	position:relative;
@@ -35,46 +36,38 @@
 }
 
 .myButton-disabled {
-	box-shadow:inset 0px 1px 0px 0px #bee2f9;
-	background:linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
-	background-color:gray;
-	border-radius:0px;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:1.5em;
-	font-weight:bold;
-	padding: 3px;
-	text-decoration:none;
-	text-shadow:0px 0px 0px #7cacde;
-	text-align: center;
-	height: 2em;
-	border-style: solid;
-    border-color: black;
+	display: none
 	
 }
 }
 @media (max-width: 768px) {
 	.myButton {
-	box-shadow:inset 0px 1px 0px 0px #bee2f9;
-	background:linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
-	background-color:#3d94f6;
-	border-radius:10px;
-	display:inline-block;
+	background:black;
+	background-color:black;
+	border-bottom: 1px solid white;
+	border-left: 1px solid white;
+	display:flex;
 	cursor:pointer;
 	color:#ffffff;
 	font-family:Arial;
-	font-size:0.9em;
+	font-size:1em;
 	font-weight:bold;
-	padding: 0.2em;
+	padding: 3px;
 	text-decoration:none;
 	text-shadow:0px 0px 0px #7cacde;
 	text-align: center;
-	height: 3em;
-	border:1px solid black;
+	height: 2em;
+	width: 4em	
 	
 }
+	
+	.myButton i{
+		top: 0;
+		right: 0;
+		margin: auto;
+		margin-right: 0;
+	}
+	
 .myButton:hover {
 	background:linear-gradient(to bottom, #468ccf 5%, #63b8ee 100%);
 	background-color:#468ccf;
@@ -91,22 +84,23 @@
 }
 
 .myButton-disabled {
-	box-shadow:inset 0px 1px 0px 0px #bee2f9;
-	background:linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
-	background-color:gray;
-	border-radius:10px;
-	display:inline-block;
+	
+	background:black;
+	background-color:black;
+	border-bottom: 1px solid white;
+	border-left: 1px solid white;
+	display:none;
 	cursor:pointer;
 	color:#ffffff;
 	font-family:Arial;
-	font-size:0.9em;
+	font-size:1em;
 	font-weight:bold;
-	padding: 0.2em;
+	padding: 3px;
 	text-decoration:none;
 	text-shadow:0px 0px 0px #7cacde;
 	text-align: center;
-	height: 3em;
-}
+	height: 2em;
+
 }
 @media (max-height: 400px) {
 	.myButton {
