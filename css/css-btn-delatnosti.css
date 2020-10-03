@@ -3,8 +3,6 @@
 	
 	background:black;
 	background-color:black;
-	border-bottom: 1px solid white;
-	border-left: 1px solid white;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
@@ -13,16 +11,18 @@
 	font-weight:bold;
 	padding: 3px;
 	text-decoration:none;
-	text-shadow:0px 0px 0px #7cacde;
 	text-align: center;
 	height: 2em;
+	border-radius:  15px 50px;
 }
 	
 	.myButton i{
 		right: 0
 	}
 .myButton:hover {
-	background-color:rgba(12,64,118,1.00);
+	box-shadow:  3px 3px 8px gray;
+	border: 1px solid gray;
+	
 }
 .myButton:active {
 	position:relative;
@@ -50,22 +50,29 @@
 	cursor:pointer;
 	color:#ffffff;
 	font-family:Arial;
-	font-size:1em;
+	font-size:0.8rem;
 	font-weight:bold;
 	padding: 3px;
 	text-decoration:none;
 	text-shadow:0px 0px 0px #7cacde;
 	text-align: center;
-	height: 2em;
-	width: 4em	
-	
+	height: 2.5em;
+	width: 5em;
+	margin: 0.4em;	
+	border-radius:  10px;
+		
+		
 }
+	.myButton:checked{
+	box-shadow:  3px 3px 8px gray;
+	border: 1px solid gray;
+	}
 	
 	.myButton i{
 		top: 0;
 		right: 0;
 		margin: auto;
-		margin-right: 0;
+		margin-right: 0.5em;
 	}
 	
 .myButton:hover {

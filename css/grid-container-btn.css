@@ -31,7 +31,7 @@
         grid-template-columns: 49% 49% ;
         column-gap: 1%;
         padding-bottom: 5%;                         
-        height: 3em;
+        height: 3.5em;
         margin-left: 4%;
 		margin-right: 1%;
 		margin-top: 1em;	
@@ -39,13 +39,14 @@
         z-index: -2;
 		margin-bottom: 3vh;
 		position: center center ;
+		margin: auto;
+		padding-top: 1em;
 			
       }
 	
 	.grid-container-btn > a {
 		padding: rem;
-		object-position: center center;
-		width: 10em;
+		width: 13em;
 		height: 4em;
 		margin-bottom: 2%;
 		text-align: center;
