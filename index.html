@@ -58,7 +58,112 @@
 <script src="JSS/w3-sidenav.js"></script>
 <link rel="stylesheet" href="GlavniCss.css">	
 <link rel="stylesheet" href="css/w3-sidenav.css">
+<style>
+	
+	@media (max-width: 768px){
+		.leaf-fall img {
+			width: 3em;
+			height: 3em;
+		}
+		.leaf-fall-1 img {
+			width: 4em;
+			height: 4em;
+		}
+	}
+	@media (min-width: 768px){
+		.leaf-fall img {
+			width: 5em;
+			height: 5em;
+		}
+		.leaf-fall-1 img {
+			width: 9em;
+			height: 9em;
+		}
+	}
+	
+section {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: black;
+	z-index: -99999;
+}
 
+.set{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.set div {
+	position: absolute;
+	display: block;
+}
+
+.set div:nth-child(1){
+	left: 25%;
+	animation: animate 4s linear infinite;
+}
+.set div:nth-child(2){
+	left: 50%;
+	animation: animate 9s linear infinite;
+}
+.set div:nth-child(3){
+	left: 70%;
+	animation: animate 6s linear infinite;
+}
+.set div:nth-child(4){
+	left: 8%;
+	animation: animate 7.3s linear infinite;
+}
+.set div:nth-child(5){
+	left: 85%;
+	animation: animate 14s linear infinite;
+}
+.set div:nth-child(6){
+	left: 35%;
+	animation: animate 16s linear infinite;
+}
+.set div:nth-child(7){
+	left: 4%;
+	animation: animate 11.7s linear infinite;
+}
+.set div:nth-child(8){
+	left: 53%;
+	animation: animate 3s linear infinite;
+}
+.set div:nth-child(9){
+	left: 45%;
+	animation: animate 8.2s linear infinite;
+}
+.set div:nth-child(10){
+	left: 35%;
+	animation: animate 13.4s linear infinite;
+}
+.set div:nth-child(11){
+	left: 22%;
+	animation: animate 11s linear infinite;
+}
+.set div:nth-child(12){
+	left: 80%;
+	animation: animate 9.1s linear infinite;
+}
+.set div:nth-child(13){
+	left: 60%;
+	animation: animate 3s linear infinite;
+}	
+
+@keyframes animate {
+	0%{
+		top: -10%;
+	}
+	100%{
+		top: 110%;
+	}
+}	
+</style>
 <style>
 	.table{
 		color: white;
@@ -745,6 +850,7 @@ h3{
 </head>
 <body>
 
+	
 <div class="loader">
 <div class="load-slike">
    <img  src="banneri/73081046_108934263856788_4915437994069983232_o.jpg" alt="">
@@ -809,8 +915,41 @@ h3{
 	
 	
 <!-- Carousel--->
-<div class="banner-text">
-<img src="banneri/cubes-2492010.jpg" alt="redirex / redirex.rs" class="">
+<div class="banner-text" style="width: 100%; background: rgba(0,0,0,0.00)">
+<section>
+	
+   <div class="set">
+	
+	  <div class="leaf-fall" style=" width: 5em; height: 5em"><img style="" src="fall-anim/list-1.png" alt="1"></div>
+	   
+	   <div class="leaf-fall" style=" width: 5em; height: 5em"><img style="" src="fall-anim/list-2.png" alt="2"></div>
+	   
+	   <div class="leaf-fall-1" style="width: 5em; height: 5em"><img style="" src="fall-anim/list-3.png" alt="3"></div>
+	   
+	   <div class="leaf-fall" style=" width: 5em; height: 5em"><img style="" src="fall-anim/list-2.png" alt="4"></div>
+	   
+	   <div class="leaf-fall" style="width: 5em; height: 5em"><img style="" src="fall-anim/list-1.png" alt="5"></div>
+	   
+	   <div class="leaf-fall" style=" width: 5em; height: 5em"><img style="" src="fall-anim/list-2.png" alt="6"></div>
+	   
+	   <div class="leaf-fall" style="width: 5em; height: 5em"><img style="" src="fall-anim/list-1.png" alt="7"></div>
+	   
+	   <div class="leaf-fall" style=" width: 5em; height: 5em"><img style="" src="fall-anim/list-2.png" alt="8"></div>
+	   
+	   <div class="leaf-fall" style="width: 5em; height: 5em"><img style="" src="fall-anim/list-1.png" alt="9"></div>
+	   
+	   <div class="leaf-fall-1" style=" width: 5em; height: 5em"><img style="" src="fall-anim/list-3.png" alt="10"></div>
+	   
+	   <div class="leaf-fall-1" style="width: 5em; height: 5em"><img style="" src="fall-anim/list-3.png" alt="11"></div>
+	   
+	   <div class="leaf-fall" style="width: 5em; height: 5em"><img style="" src="fall-anim/list-1.png" alt="12"></div>
+	   
+	   <div class="leaf-fall" style="width: 5em; height: 5em"><img style="" src="fall-anim/list-1.png" alt="13"></div>
+	   
+
+   </div>
+	
+</section>
 	<div class="banner-title ">
    
           <h1 style="text-decoration: none"><strong>REDIREX</strong></h1>
@@ -876,7 +1015,7 @@ h3{
             </div>
 </div>	
  <!--Zapadno backi -->       
-<div class="dropdown-disabled" style="margin-bottom: 1em">
+<div class="dropdown" style="margin-bottom: 1em">
 	<button class="dropdown-disabled">Zapadnobački okrug &nbsp;<img src="stranice/Zapadnobacki okrug/COA_Sombor.png" alt=""> </button>
             <div id="myDropdown-zbacka" class="dropdown-menu">
 				<i class="fas fa-chevron-up fa-2x arrowup"></i>
@@ -904,7 +1043,7 @@ h3{
             </div>
 </div>	
 <!--Jablanički  -->           
-<div class="dropdown-disabled" style="margin-bottom: 1em"	>
+<div class="dropdown" style="margin-bottom: 1em"	>
 	<button  class="dropdown-disabled">Jablanički okrug &nbsp;<img src="stranice/Jablanicki okrug/Leskovac/Leskovac-grb-srednji.png" alt=""> </button>
             <div id="myDropdown-jablan" class="dropdown-menu">
 				<i class="fas fa-chevron-up fa-2x arrowup"></i>
@@ -964,7 +1103,7 @@ h3{
             </div>
 </div>          
 <!--Kosovski  -->		
-<div class="dropdown-disabled" style="margin-bottom: 1em">
+<div class="dropdown" style="margin-bottom: 1em">
 	<button  class="dropdown-disabled">Kosovski okrug &nbsp;</button>
             <div id="myDropdown-kosovski" class="dropdown-menu">
 				<i class="fas fa-chevron-up fa-2x arrowup"></i>
@@ -981,7 +1120,7 @@ h3{
             </div>
 </div> 
 <!--Kosovsko-mitrovački  -->		
-<div class="dropdown-disabled" style="margin-bottom: 1em">
+<div class="dropdown" style="margin-bottom: 1em">
 	<button  class="dropdown-disabled">Kosovsko-mitrovački okrug &nbsp;</button>
             <div id="myDropdown-kosmitrovacki" class="dropdown-menu">
 				<i class="fas fa-chevron-up fa-2x arrowup"></i>
@@ -994,7 +1133,7 @@ h3{
             </div>
 </div>		
 <!--Kosovsko-pomoravski  -->		
-<div class="dropdown-disabled" style="margin-bottom: 1em">
+<div class="dropdown" style="margin-bottom: 1em">
 	<button  class="dropdown-disabled">Kosovsko-pomoravski okrug &nbsp;</button>
       <div id="myDropdown-kospomoravski" class="dropdown-menu">
 		  <i class="fas fa-chevron-up fa-2x arrowup"></i>
@@ -1045,7 +1184,7 @@ h3{
             </div>
 </div>
  <!--Pećki  -->            
-<div class="dropdown-disabled" style="margin-bottom: 1em">
+<div class="dropdown" style="margin-bottom: 1em">
 	<button  class="dropdown-disabled">Pećki okrug &nbsp; </button>
             <div id="myDropdown-pec" class="dropdown-menu">
 				<i class="fas fa-chevron-up fa-2x arrowup"></i>
@@ -1078,7 +1217,7 @@ h3{
             </div>
 </div>          
 <!--Pomoravski  -->       
-<div class="dropdown-disabled" style="margin-bottom: 1em">
+<div class="dropdown" style="margin-bottom: 1em">
 	<button  class="dropdown-disabled">Pomoravski okrug &nbsp;<img src="stranice/Pomoravski okrug/Jagodina/Grb_opstine_Jagodina.png" alt=""> </button>
             <div id="myDropdown-pomoravski" class="dropdown-menu">
 				<i class="fas fa-chevron-up fa-2x arrowup"></i>
@@ -1091,7 +1230,7 @@ h3{
             </div>
 </div>            
  <!--Prizrenski  -->      
-<div class="dropdown-disabled" style="margin-bottom: 1em">
+<div class="dropdown" style="margin-bottom: 1em">
 	<button  class="dropdown-disabled">Prizrenski okrug &nbsp; </button>
             <div id="myDropdown-prizrenski" class="dropdown-menu">
 				<i class="fas fa-chevron-up fa-2x arrowup"></i>
@@ -1164,7 +1303,7 @@ h3{
             </div>
 </div>         
 <!--Srednjobanatski  -->       
-<div class="dropdown-disabled" style="margin-bottom: 1em">
+<div class="dropdown" style="margin-bottom: 1em">
 	<button  class="dropdown-disabled">Srednjobanatski okrug &nbsp;<img src="stranice/Srednjobanatski okrug/Zrenjanin/Coat_of_Arms_of_Zrenjanin.png" alt=""> </button>
             <div id="myDropdown-sredbanat" class="dropdown-menu">
 				<i class="fas fa-chevron-up fa-2x arrowup"></i>
