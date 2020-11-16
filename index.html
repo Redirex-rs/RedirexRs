@@ -61,7 +61,7 @@
 <style>
 	
 	body{
-		background-image: radial-gradient(circle at 10% 26%, rgba(90, 90, 90,0.06) 0%, rgba(90, 90, 90,0.06) 25%,rgba(137, 137, 137,0.06) 25%, rgba(137, 137, 137,0.06) 50%,rgba(185, 185, 185,0.06) 50%, rgba(185, 185, 185,0.06) 75%,rgba(232, 232, 232,0.06) 75%, rgba(232, 232, 232,0.06) 100%),radial-gradient(circle at 46% 66%, rgba(171, 171, 171,0.06) 0%, rgba(171, 171, 171,0.06) 25%,rgba(128, 128, 128,0.06) 25%, rgba(128, 128, 128,0.06) 50%,rgba(84, 84, 84,0.06) 50%, rgba(84, 84, 84,0.06) 75%,rgba(41, 41, 41,0.06) 75%, rgba(41, 41, 41,0.06) 100%),linear-gradient(90deg, rgb(107, 35, 237),rgb(61, 203, 252));
+		background-image: repeating-linear-gradient(90deg, hsla(57,0%,42%,0.09) 0px, hsla(57,0%,42%,0.09) 1px,transparent 1px, transparent 60px),repeating-linear-gradient(0deg, hsla(57,0%,42%,0.09) 0px, hsla(57,0%,42%,0.09) 1px,transparent 1px, transparent 60px),repeating-linear-gradient(0deg, hsla(57,0%,42%,0.09) 0px, hsla(57,0%,42%,0.09) 1px,transparent 1px, transparent 10px),repeating-linear-gradient(90deg, hsla(57,0%,42%,0.09) 0px, hsla(57,0%,42%,0.09) 1px,transparent 1px, transparent 10px),linear-gradient(90deg, rgb(20,20,20),rgb(20,20,20));
 		overflow-x: hidden
 	}
 	
@@ -448,7 +448,6 @@ section {
 	.dugme-search{
 	display: block;	
 	height: 100%;
-	
 }
 	@media (min-width: 768px){
 		.dugme-search i {
@@ -456,9 +455,8 @@ section {
 	color: white;
 	display:block;
 	margin:auto;
-	border: 2px solid #dadada;
     border-radius: 7px;
-	box-shadow: 0 0 5px #9ecaed;
+	box-shadow: 0 0 5px #db6400;
 	padding: 1em;
 	}
 		
@@ -468,6 +466,7 @@ section {
 			padding-top: 5em
 	}
 	}
+	
 	@media (max-width: 768px){
 .dugme-search i {
 	width: 10em;
@@ -554,7 +553,7 @@ section {
 	}
 	
 	@media (max-width: 768px){
-	.glavni-menu{
+.glavni-menu{
 		width: 100%;
 		height: 2em;
 		background-color: rgba(0,0,0,0.022);
@@ -563,10 +562,16 @@ section {
 		justify-content: center;
 		display: block;
 		text-align: center;
+		background: #db6400;
+		text-shadow:
+    -1.1px -1.1px 0 #000,
+    1.1px -1.1px 0 #000,
+    -1.1px 1.1px 0 #000,
+    1.1px 1.1px 0 #000; 
 		
 	}
 	
-	.glavni-menu > p {
+.glavni-menu > p {
 		width: 10em;
 		vertical-align: middle;
 		justify-content: center;
@@ -577,7 +582,7 @@ section {
 	}
 	
 	@media (min-width: 768px){
-	.glavni-menu{
+.glavni-menu{
 		width: 100%;
 		height: 2em;
 		background-color: rgba(0,0,0,0.02);
@@ -587,6 +592,8 @@ section {
 		display: block;
 		text-align: center;
 		color: white;
+		background: black;
+		border-bottom:2px solid #db6400;
     text-shadow:
     -1.1px -1.1px 0 #000,
     1.1px -1.1px 0 #000,
@@ -594,7 +601,7 @@ section {
     1.1px 1.1px 0 #000; 
 	}
 	
-	.glavni-menu > p {
+.glavni-menu > p {
 		width: 20em;
 		vertical-align: middle;
 		justify-content: center;
@@ -650,7 +657,7 @@ html {
 
 .footer {
   margin-top: auto;
-  border-top: 1px solid white;
+  border-top: 5px solid #db6400;
   width: 100%;		  
   background-color: black;
   color: #fff;
@@ -658,14 +665,7 @@ html {
   bottom: 0	
 }
 
-	@media (min-width: 768px){
-body {
-	background-image: linear-gradient(135deg, transparent 0%, transparent 1%,rgba(13, 90, 227,0.5) 1%, rgba(13, 90, 227,0.5) 34%,transparent 34%, transparent 73%,rgba(39, 220, 232,0.5) 73%, rgba(39, 220, 232,0.5) 100%),linear-gradient(45deg, transparent 0%, transparent 11%,rgb(13, 90, 227) 11%, rgb(13, 90, 227) 62%,rgb(20, 123, 228) 62%, rgb(20, 123, 228) 93%,transparent 93%, transparent 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
-	background-repeat: repeat;
-	height: 100%
-	
-	}
-}
+
 
    
 	@media (min-width: 768px){	
@@ -708,7 +708,7 @@ body {
         transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
 	z-index: 99
     }
-    .modal-content {
+.modal-content {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -718,7 +718,7 @@ body {
         width: 24rem;
         border-radius: 0.5rem;
     }
-    .close-button {
+.close-button {
         float: right;
         width: 1.5rem;
         line-height: 1.5rem;
@@ -727,16 +727,15 @@ body {
         border-radius: 0.25rem;
         background-color: lightgray;
     }
-    .close-button:hover {
+.close-button:hover {
         background-color: darkgray;
     }
-    .show-modal {
+.show-modal {
         opacity: 1;
         visibility: visible;
         transform: scale(1.0);
         transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
-    }	
-	
+    }
 .dropdown {
   background: rgba(12,64,118,1.00);
   color: white;
@@ -745,35 +744,29 @@ body {
   cursor: pointer;
   height: 2.5em;
   width: 100%;	
-
 }
-
 .inactiveLink {
    pointer-events: none;
    cursor: default;
-   background-color: rgba(80,80,80,0.22)	
+   color: black;
 }
-
 .dropdown-disabled {
   background: rgba(95,95,95,0.91);
-  color: white;
+  color:black;
   font-size: 1em;
   border: none;
   cursor: pointer;
   height: 2.5em;
   width: 100%;
 }
-
 /* Dropdown button on hover & focus */
 .dropdown:hover {
   background-color: rgba(17,93,172,1.00)
 }
-
 .dropdown.clicked{
 		border: 2px solid green;
 	outline: none
 	}
-
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
   position: relative;
@@ -783,7 +776,7 @@ body {
 .dropdown-menu {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: black;
   width: 100%;
   z-index: 4;
   border: 4px solid rgba(17,93,172,1.00)	
@@ -791,13 +784,14 @@ body {
 	
 /* Links inside the dropdown */
 .dropdown-menu a {
-  color: black;
+  color: white;
   padding: 0.5em 16px;
   text-decoration: none;
   display: block;
   z-index: 4;
 margin: auto;	
-  border-top: 1px solid black;
+  border-top: 1px solid #db6400;
+	background: black;
 }
 	
 .dropdown-menu li {
@@ -809,9 +803,11 @@ margin: auto;
   margin-left: 1%;	
 	
 }	
-
+.dropdown-menu i {
+	 color: #db6400;
+	}
 /* Change color of dropdown links on hover */
-.dropdown-menu a:hover {background-color:azure}
+.dropdown-menu a:hover {background-color:#db6400}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;} 
@@ -923,7 +919,7 @@ h3{
 		margin-top: 1em
 	}	
 	body{
-		background-image: linear-gradient(135deg, transparent 0%, transparent 1%,rgba(13, 90, 227,0.5) 1%, rgba(13, 90, 227,0.5) 34%,transparent 34%, transparent 73%,rgba(39, 220, 232,0.5) 73%, rgba(39, 220, 232,0.5) 100%),linear-gradient(45deg, transparent 0%, transparent 11%,rgb(13, 90, 227) 11%, rgb(13, 90, 227) 62%,rgb(20, 123, 228) 62%, rgb(20, 123, 228) 93%,transparent 93%, transparent 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
+		background-image: repeating-linear-gradient(90deg, hsla(57,0%,42%,0.09) 0px, hsla(57,0%,42%,0.09) 1px,transparent 1px, transparent 60px),repeating-linear-gradient(0deg, hsla(57,0%,42%,0.09) 0px, hsla(57,0%,42%,0.09) 1px,transparent 1px, transparent 60px),repeating-linear-gradient(0deg, hsla(57,0%,42%,0.09) 0px, hsla(57,0%,42%,0.09) 1px,transparent 1px, transparent 10px),repeating-linear-gradient(90deg, hsla(57,0%,42%,0.09) 0px, hsla(57,0%,42%,0.09) 1px,transparent 1px, transparent 10px),linear-gradient(90deg, rgb(20,20,20),rgb(20,20,20));
 		height: 90%;
 		background-repeat: repeat;
 	}
@@ -1061,7 +1057,7 @@ h3{
 	
 	
 	
-<div id="okruzi" class="glavni-menu"><p><strong>OKRUZI I OPŠTINE</strong></p></div>
+<div id="okruzi" class="glavni-menu" style="margin-top: -0.5em; color: white"><strong>OKRUZI I OPŠTINE</strong></div>
   	
 <div id="myDIV" class="flex-container3" style="margin-bottom: 10em; margin-top: 3em; ">
 <!--Borski  -->	
@@ -1530,7 +1526,7 @@ h3{
 	<div class="pretrage-stranica">
 	<a href="stranica-pretrage.html" >
 		<div class="dugme-search">
-		<i class="fas fa-search fa-2x">&nbsp;&nbsp;Jednostavna pretraga svih info-kartica</i> <br> 
+		<i class="fas fa-search fa-2x" style="background: #333">&nbsp;&nbsp;Jednostavna pretraga svih info-kartica</i> <br> 
 		</div>	
 	</a>
 <br>
@@ -1632,7 +1628,8 @@ h3{
 			<hr>
 			<dl>
 
-<dt style="padding-bottom: 1em"><i class="fa fa-envelope"></i> redirexrs@gmail.com</dt><dd></dd>
+<dt style="padding-bottom: em"><i class="fa fa-envelope" style="margin-right: 0.5em"></i> redirexrs@gmail.com</dt><dd></dd>
+<dt style="padding-bottom: 1em"><i class="fa fa-envelope" style="margin-right: 0.5em"></i> redirex.srb@gmail.com</dt><dd></dd>				
 				
 <a href="https://www.facebook.com/redirexx" target="_blank" class="">
 <dt><i class="fab fa-facebook-square fa-3x" style="color: white"></i></dt><dd></dd></a>

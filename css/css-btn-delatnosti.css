@@ -14,6 +14,7 @@
 	text-align: center;
 	height: 2em;
 	border-radius:  15px 50px;
+	border: 2px solid #db6400
 	
 }
 	
@@ -60,8 +61,7 @@
 	height: 2.5em;
 	width: 5em;
 	margin: auto;
-	border-radius:  10px;
-		
+	border-radius:  10px;	
 		
 }
 	.myButton:checked{
