@@ -59,7 +59,9 @@
 <link rel="stylesheet" href="GlavniCss.css">	
 <link rel="stylesheet" href="css/w3-sidenav.css">
 <style>
-	
+	*{
+		outline: none;
+	}
 	body{
 		background-image: repeating-linear-gradient(90deg, hsla(57,0%,42%,0.09) 0px, hsla(57,0%,42%,0.09) 1px,transparent 1px, transparent 60px),repeating-linear-gradient(0deg, hsla(57,0%,42%,0.09) 0px, hsla(57,0%,42%,0.09) 1px,transparent 1px, transparent 60px),repeating-linear-gradient(0deg, hsla(57,0%,42%,0.09) 0px, hsla(57,0%,42%,0.09) 1px,transparent 1px, transparent 10px),repeating-linear-gradient(90deg, hsla(57,0%,42%,0.09) 0px, hsla(57,0%,42%,0.09) 1px,transparent 1px, transparent 10px),linear-gradient(90deg, rgb(20,20,20),rgb(20,20,20));
 		overflow-x: hidden
@@ -696,6 +698,7 @@ html {
 		vertical-align: middle
 	}
 	}
+	
 .modal {
         position: fixed;
         left: 0;
@@ -771,8 +774,20 @@ html {
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
   position: relative;
+	
 }
-
+	.dropdown img {
+		float: right;
+		margin-right: em
+	}
+	
+	.beograd-dugme{
+		background: rgba(12,64,118,1.00);
+  color: white;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+	}
 /* Dropdown Content (Hidden by Default) */
 .dropdown-menu {
   display: none;
@@ -926,7 +941,10 @@ h3{
 	}
 	
 	}
-	
+
+	.flex-container3 > .dropdown >.dropdown{
+		border: 0.1em solid gray
+	}
 	
 	</style>
 
@@ -1075,14 +1093,15 @@ h3{
             </div>
 </div>
 <!--Beograd  -->		
-<div class="dropdown"  style="margin-bottom: 1em">	
-    <a href="stranice/28-Grad Beograd/index-beograd.html" class="dropdown" style="font-size: 1em;">	
-	    <button onClick="stranice/28-Grad Beograd/index-beograd.html" class="dropdown" ><i style="color: red" class="fas fa-exclamation"></i>&nbsp;Grad Beograd (33)<img src="stranice/28-Grad Beograd/1024px-Flag_of_Belgrade,_Serbia.svg.png" alt="" style="height: 1.3em; width: 1.3em                ">
-		</button>
-	</a> 	
+<div class="dropdown"  style="margin-bottom: 1em;">	
+		<button class="dropdown">
+	<a class="beograd-dugme" href="stranice/28-Grad Beograd/index-beograd.html" style="font-size: 1em;">		
+	    <i style="color: red" class="fas fa-exclamation"></i>&nbsp;Grad Beograd (33)&nbsp;<img src="stranice/28-Grad Beograd/1024px-Flag_of_Belgrade,_Serbia.svg.png" alt="" >
+		
+	</a> 	</button>
 </div>	
 <!--Braničevski  -->			
-<div class="dropdown" style="margin-bottom: 1em">
+<div class="dropdown" style="margin-bottom: 1em;">
 	<button  class="dropdown">Braničevski okrug (3)&nbsp;<img src="stranice/Branicevo Okrug/Pozarevac/800px-Grb_pozarevca.svg.png" alt=""> </button>
             <div id="myDropdown-branicevo" class="dropdown-menu">
 				<i class="fas fa-chevron-up fa-2x arrowup"></i>

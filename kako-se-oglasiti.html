@@ -53,18 +53,17 @@
 <script src="JSS/pop-up-modal.js"></script>
 <script src="JSS/w3-sidenav.js"></script>
 <link rel="stylesheet" href="GlavniCss.css">	
-<link rel="stylesheet" href="css/w3-sidenav.css">	
+<link rel="stylesheet" href="css/w3-sidenav.css">
+	
+<link rel="stylesheet" href="../../../css/GlavniCss-zajecar.css" class="">	
 
 <style>
-	
-		
-	.soc-mreze{
-		display: table;
-		margin: auto;
-		align-content: center;
-		width: 20em
+	*{
+		outline: none;
 	}
-	.informacije1{
+		
+		
+	.informacije-4{
 		box-sizing: border-box;
 	    text-align: center;
 		width: 100%;
@@ -74,19 +73,154 @@
 		color: white;
 	}
 	
+	
+	
+	@media (max-width: 768px){
+		.informacije1{
+	        text-align: center;
+		    margin: auto;
+		    display: block;
+		    color: white;
+		}
+		.informacije1-stranica{
+			margin: 1.5em;
+			margin-bottom: 5em
+		}
+		
+		.soc-mreze-link{
+			display: block;
+			width: 15em;
+			margin: auto;
+			padding: 1em
+		}
+		
+		.ls-tekst{
+			display: block;
+			margin-top: -2em;
+		}
+		.ls-tekst p {
+			font-size: 1em;
+		}
+		
+		.informacije2{
+		width: 50%;
+		margin: auto;
+		display: block;
+	}
+	
 	.informacije{
 		box-sizing: border-box;
 	    text-align: left;
-		width: 15em;
-		margin: auto;
+		width: 50%;
 		display: flex;
-		padding-top: 1em
+		padding-top: 2.5em;
+		padding-left: 0.5em;
 	}
+		.slika-kartica{
+			width: 10em;
+		}
+		.slika-stranica{
+			display: block;
+			
+		}
+		.slika-stranica img {
+			width: 21em;
+			border: 1px solid white
+			
+		}
+		.informacije3{
+		width: 100%;
+		margin: auto;
+		display: block;
+	}
+		.informacije1{
+		display: block;
+		margin: auto;
+	}
+	}	
+	
+	
+	@media (min-width: 768px){
+		.soc-mreze {
+			display: flex;
+			margin: auto;
+		}
+		.soc-mreze-link{
+			width: 20em;
+			padding: 1em;
+		}
+		
+		.soc-mreze-inner{
+			display: inline-flex;
+			margin: auto;
+			width: 60em;
+		}
+		.informacije1{
+			margin: auto;
+		    display: block;
+	        text-align: center;
+		    color: white;
+			margin-top: 6em
+		}
+		.informacije1-stranica{
+			height: 20em;
+			margin: auto;
+			display: block;
+		}
+		.informacije1 p {
+			font-size: 1.4em
+		}
+	.ls-tekst{
+		display: block;
+		margin-top: -2em;
+		}
+		.ls-tekst p {
+		font-size: 1.2em;
+		padding: 1em;
+		}	
+		
+	.informacije2{
+		width: 50%;
+		margin: auto;
+		display: block;
+	}
+	
+	.informacije{
+	    text-align: left;
+		width: 50%;
+		display: block;
+		margin: auto;
+	}
+	.informacije p {
+		display: block;
+		margin: auto;
+		width: 50%;
+		font-size: 1.5em;
+		float: right
+		}
+	.slika-kartica{
+			width: 18em;
+		float: left
+		}		
+	.slika-stranica{
+		display: block;
+		}
+		.slika-stranica img {
+		width: 40em;
+		border: 1px solid white;
+			
+		}
+		.informacije3{
+		width: 50%;
+		margin: auto;
+		display: block;
+	}	
+	}
+		
 	
 	.tekst-p{
 		color: white;
-		display: row;	
-		
+		display: row;		
 		align-content: center center;
 	}
 	
@@ -316,16 +450,14 @@ body {
 
 
 	   <!-- Meni s leve strane vidljiv na dektop--->
- <nav class="navbar" style="background-color:rgba(12,64,118,1.00);">
-  	 <div class="navbar-brand" style="text-align: left; color: white" href="#"><a href="index.html" style="color: white"><p><h1><strong><dd>Redirex</dd></strong></h1></p></a></div>
-<ul class="navbar-ul">
-<div style="color: white; font-size: 1em; padding-top:0.5em ; padding-right: 1em">	
-  <a href="javascript:history.back()" style="color: white"><strong><i class="fas fa-arrow-left">&nbsp;</i>NAZAD</strong></a>
-</div>
-</ul>
-	
-</nav> 
- 
+	 <nav id="vrh-navbar" class="navbar">
+		 <div class="navbar-brand" style="text-align: left; color: white" href="#"><a href="index.html" style="color: white"><p><h1><strong>Redirex</strong></h1></p></a></div>
+		
+	<ul class="navbar-ul">
+
+	</ul>	
+
+	</nav>
 <!-- The overlay -->
 
 	
@@ -336,16 +468,17 @@ body {
 	
 	<p class="tekst-p" style="color: white; margin-top: 5em">
 	<div class="info-title">	
-	<h1><strong>Kako se oglasiti na Redirex.rs?</strong></h1></div> <br> <br>
-	<h4>Kako bismo dodali vašu info karticu, potrebno je samo poslati vaše informacije:
+	<h1><strong>Info-Kartica</strong></h1></div>
+	<hr class="solid" style="border-top: 1px solid white; width: 10em; margin: auto; padding-bottom: 0.5em"> <br> <br>
+	<h4>Kako bismo dodali vašu info karticu, potrebno je samo poslati vaše informacije:</h4>
 	<br> 
 	<div class="row">	
 		<div class="informacije" style="">
-	<p style="font-size: 0.9em; margin-left: 1em">	
+	<p>	
 		
 		
 		- Fotografija ili logo<br>
-		- Naziv vaše firme ili usluge<br>
+		- Naziv preduzeća<br>
         - Grad<br>
         - Adresa<br>
         - Broj telefona<br>
@@ -356,39 +489,93 @@ body {
 	</p>		
 		</div>
 		
-			<div class="informacije" style=" margin-top: ; display: table">
-			<p>Primer kartice</p>	
+			<div class="informacije2" style="border:">
 				
-	<img src="banneri/primer-kartice.png" alt="" style="width: 14em">	
+	<div class="slika-kartica" style="display: inline-flex">			
+	<img src="banneri/primer-kartice.png" alt="">	
 		</div>
-	
+				
 	</div>
-	</h4> 
+	</div>
+	 
     </p>
 	
 </div>
 
-<div class="informacije1" style="margin: em; margin-top: 4em">
-	<p><h9>Dodavanje info kartica na sajt je besplatno i sve informacije nam možete poslati na mail ili preko facebook stranice ili profila:</h9></p>
-	<div class="soc-mreze row">
+<div class="informacije-4" style="margin: em; margin-top: em">
+	
+	<p><h9>Dodavanje info kartica na sajt je besplatno i sve informacije nam možete poslati na mail ili preko facebook stranice ili profila.</h9></p>
+</div>	
+<br>
+<hr class="solid" style="border-top: 1px solid white; width: 95%; margin: auto; padding-bottom: 0.5em">
+
+<div class="Tekst" style="">
+	
+<p class="tekst-p" style="color: white; margin-top: 5em">
+<div class="info-title">	
+	<h1><strong>Lična stranica</strong></h1> <hr class="solid" style="border-top: 1px solid white; width: 10em; margin: auto; padding-bottom: 0.5em">
+</div> <br> <br>
+	
+  <div class="ls-tekst">
+	 <p>Lična stranica može sadržati neograničenu količinu informacija, teksta, slika,itd.. <br> Dovoljno je samo poslati nam vašu internet stranicu, profil bilo koje društvene mreže ili direktno mailom sve što želite da se nađe na vašoj redirex stranici.</p>
+  </div>
+	
+	<br> 
+	
+<div class="row">	
+		
+			<div class="informacije3">
+	<p style="color: #898989">Primer stranice <br> ( stranicu mozete posetiti <a href="stranice/Nisavski okrug/Nis/Delatnosti/nekretnine/MEGA nekretnine/MEGA-nekretnine.html">ovde</a> )</p>			
+	<div class="slika-stranica">			
+	<img src="banneri/primer-stranice.png" alt="">	
+		</div>
+				
+	</div>
+</div>
+	 
+    </p>
+	
+</div>
+
+
+<hr class="solid" style="border-top: 1px solid white; width: 95%; margin: auto; padding-bottom: 0.5em; margin-top: 3em">
+
+
+
+<div class="informacije1-stranica">
+<div class="informacije1">
+<p style="margin-bottom: 2.5em">Sve informacije kao i sva dodatna pitanja nam možete poslati na: </p>	
+	
+	<div class="soc-mreze">
+<div class="soc-mreze-inner">		
+<div class="soc-mreze-link">		
 	Link profila:
 <a href="https://www.facebook.com/redirex.rs.7" target="_blank" class="">
-<dt><i class="fab fa-facebook-square fa-3x" style="color: white"></i></dt><dd></dd></a>	
+<dt><i class="fab fa-facebook-square fa-4x" style="color: white"></i></dt><dd></dd></a>	</div>
+		
+<div class="soc-mreze-link">		
 	Link stranice:	
 <a href="https://www.facebook.com/redirexx" target="_blank" class="" style="margin-top: 1em; margin-bottom: 1em">
-<dt><i class="fab fa-facebook-square fa-3x" style="color: white"></i></dt><dd></dd></a>
-	E-mail:	
-<dt style="padding-bottom: 1em; " ><i class="fa fa-envelope"></i> redirexrs@gmail.com</dt><dd></dd>
+<dt><i class="fab fa-facebook-square fa-4x" style="color: white"></i></dt><dd></dd></a>
+</div>
+		
+<div class="soc-mreze-link">		
+	E-mail:	<br><br>
+<dt style="padding-bottom: em; " > redirexrs@gmail.com</dt> <br>
+<dt style="padding-bottom: 1em; " > redirex.srb@gmail.com</dt>	
+</div>
+</div>	
+	
 	</div>
 	
+</div>	
 </div>	
 	
 	
 	
 	
 	
-	
-<br> <hr> <br> <hr><br> <hr><br> <hr>
+
 	
 <div class="footer">
 <p><h3 style="margin-bottom: em"></h3></p>	
@@ -480,9 +667,7 @@ body {
 <dt style="padding-bottom: 1em"><i class="fa fa-envelope" style="margin-right: 0.5em"></i> redirex.srb@gmail.com</dt><dd></dd>
 				
 <a href="https://www.facebook.com/redirexx" target="_blank" class="">
-<dt><i class="fab fa-facebook-square fa-3x" style="color: white"></i></dt><dd></dd></a>
-<a href="linkedin.com/in/redirex-rs-9a24a11b5" target="_blank" class="">
-<dt><i class="fab fa-linkedin fa-3x" style="color: white"></i></dt><dd></dd></a>				
+<dt><i class="fab fa-facebook-square fa-3x" style="color: white"></i></dt><dd></dd></a>			
             </dl>   
 		</div>
     </div>					           
