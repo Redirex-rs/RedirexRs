@@ -25,17 +25,136 @@
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 <link rel="stylesheet" href="JSS/W3-dropdown-onclick.css">
-<script src="JSS/W3-dropdown-onclick.js"></script>	
-	
+<script src="JSS/W3-dropdown-onclick.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 <script src="JSS/W3-search.js"></script>
-  <script src="GlavniCss.css"></script>
-  <link rel="stylesheet" href="GlavniCss.css" class="">
 
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">  
-  
- <style> 
+<style>
+
+	.dropdown{
+		display: block;
+		width: 20em;
+		height: 100%;
+		margin: auto;
+	}
+	.dropdown p {
+		display:flex;
+		margin: auto;
+		width: 5em;
+		height: 1.5em;
+		font-size: 2em;
+	}
+	.dropdown>i {
+	}
+	.search-polje{
+		margin: 2em
+	}
+	
+</style>
+		
+<style>
+	@media (min-width: 768px){	
+.Medicina-i-zdravlje{
+		 background-image: url("banneri/delatnosti-slike/dna-1811955_640.jpg");
+		 background-size: contain;
+	     text-shadow: 5px 5px 5px #000, 5px 5px 5px #000, 5px 5px 5px #000;
+		 border: 3px solid aqua; 
+	 } 		
+.Medicina-i-zdravlje p {
+		 width: 100%;
+		 height: 100%;
+		 background: rgba(0,0,0,0.36);
+		 padding: 1.2em;
+		 font-size: 1.2em 
+	 } 		
+	
+.Usluge{
+		background-image: url("banneri/delatnosti-slike/trade.png");
+		 background-size: contain;
+	     text-shadow: 7px 7px 7px #000,7px 7px 7px #000, 7px 7px 7px #000;
+		 border: 3px solid green;
+	}
+.Usluge p {
+		width: 100%;
+		 height: 100%;
+		 background: rgba(0,0,0,0.56);
+		 padding: 1em;
+		 font-size: 1.3em
+	}	
+.Nekretnine{
+		background-image: url("banneri/delatnosti-slike/buildings.jpg");
+		 background-size: contain;
+	     text-shadow: 7px 7px 7px #000,7px 7px 7px #000, 7px 7px 7px #000;
+		 border: 3px solid orange;
+	}
+.Nekretnine p {
+		width: 100%;
+		 height: 100%;
+		 background: rgba(0,0,0,0.56);
+		 padding: 1em;
+		 font-size: 1.3em
+	}
+.Uredjivanje-enterijera{
+		background-image: url("banneri/delatnosti-slike/dekor.jpg");
+		 background-size: contain;
+	     text-shadow: 7px 7px 7px #000,7px 7px 7px #000, 7px 7px 7px #000;
+		 border: 3px solid purple;
+	}
+.Uredjivanje-enterijera p {
+		width: 100%;
+		 height: 100%;
+		 background: rgba(0,0,0,0.56);
+		 padding: 1em;
+		 font-size: 1.3em
+	}
+.Dekorativne-usluge{
+		background-image: url("banneri/delatnosti-slike/out-dekor.jpg");
+		 background-size: contain;
+	     text-shadow: 7px 7px 7px #000,7px 7px 7px #000, 7px 7px 7px #000;
+		 border: 3px solid rgba(177,255,0,1.00);
+	}
+.Dekorativne-usluge p {
+		width: 100%;
+		 height: 100%;
+		 background: rgba(0,0,0,0.56);
+		 padding: 1em;
+		 font-size: 1.3em
+	}
+.Namestaj{
+		background-image: url("banneri/delatnosti-slike/namestaj.jpg");
+		 background-size: contain;
+	     text-shadow: 7px 7px 7px #000,7px 7px 7px #000, 7px 7px 7px #000;
+		 border: 3px solid rgba(39,255,57,1.00);
+	}
+.Namestaj p {
+		width: 100%;
+		 height: 100%;
+		 background: rgba(0,0,0,0.56);
+		 padding: 1em;
+		 font-size: 1.3em
+	}
+.Industrija{
+		background-image: url("banneri/delatnosti-slike/indus.jpg");
+		 background-size: contain;
+	     text-shadow: 7px 7px 7px #000,7px 7px 7px #000, 7px 7px 7px #000;
+		 border: 3px solid rgba(162,3,5,1.00);
+	}
+.Industrija p {
+		width: 100%;
+		 height: 100%;
+		 background: rgba(0,0,0,0.56);
+		 padding: 1em;
+		 font-size: 1.3em
+	}
+}
+</style>		
+		
+<style> 
+	 
+	 
+	 
 	@media (max-width: 768px){
 	.pretraga-sve > li{
 		margin-bottom: 0.7em;
@@ -43,7 +162,43 @@
 		font-size: 1em;
 	}
 }	  
-
+	 
+	 
+	@media (min-width: 768px){
+		.pretraga-sve{;
+  -webkit-column-count: 4
+  -moz-column-count: 4;
+  -ms-column-count: 4;
+  -o-column-count: 4;
+  column-count: 4;
+  -webkit-column-gap: 0px;
+  -moz-column-gap: 0px;
+  -ms-column-gap: 0px;
+  -o-column-gap: 0px;
+  column-gap: 0px;
+  list-style: inside none;
+  padding: 0;
+  		
+			
+		} 
+		
+		.pretraga-sve li {
+			  font-size: 1em;
+  -webkit-column-break-inside: avoid;
+  column-break-inside: avoid;
+  page-break-inside: avoid;
+			width: 20em;
+			height: 10em;
+			margin: auto;
+			margin-bottom: 1em;
+			
+		}
+	 }
+	 
+		
+		
+		
+		
 	 
 #myInput {
   width: 50%;
@@ -58,20 +213,7 @@
     border-radius: 7px;
 	box-shadow: 0 0 5px #9ecaed;
 }
-
-#myUL {
-  /* Remove default list styling */
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: block	
- 	
-}
-
-	 #myUL li {
-		 margin-left: 1%;
-	 }	 
-	 
+ 
 #myUL a {
   color: white
 }
@@ -85,27 +227,14 @@
 		 }
 	 }	 
 
-#myUL a img {
-	height: 2em;
-	margin-left: 1em;
-		
-}
 
-#myUL li a:hover:not(.header) {
-  background-color: #eee; /* Add a hover effect to all links, except for headers */
-  color: black	
-}
+
 
 #myUL li a {
 	list-style: none
-}	 
+}		 
 	 
-	 
-
-	
-	 
-	 
-	.footer {
+.footer {
   background: #000;
   color: #fff;
   text-align: center;
@@ -221,15 +350,7 @@ h9 {
 }
 
 /* Advance search for Professions section*/
-#myBtnContainer {
-	align-self: flex-start;
-	margin-right: 1em;
-	color: #fff;
-}
 
-.container {
-  overflow: hidden;
-}
 
 .filterDiv {
   color: #ffffff;
@@ -266,6 +387,8 @@ h9 {
   font-weight: 600;
 }
 
+	 
+	 
 
 
 </style>
@@ -280,42 +403,18 @@ h9 {
 
 
 	   <!-- Meni s leve strane vidljiv na dektop--->
-<nav class="navbar navbar-expand-lg" style="background-color:rgba(12,64,118,1.00); margin-bottom: 2em">
-  <div class="container">
-  	 <a class="navbar-brand" style="text-align: left;  color: white" href="index.html"><strong><h3><i class="fas fa-chevron-left fa-sm"></i>&nbsp;Redirex</h3></strong></a>
-  <button class="navbar-toggler" type="button" data-toggle="#" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+	 <nav id="vrh-navbar" class="navbar">
+		 <div class="navbar-brand" style="text-align: left; color: white" href="#"><a href="../../../../../index.html" style="color: white"><p><h1><strong>Redirex</strong></h1></p></a></div>
+		
+	<ul class="navbar-ul">
 
-  <div class=" navbar" id="navbarSupportedContent">
-    <ul class="navbar-nav ">
-      <li class="nav-item active">
-        <a class="nav-link" href="#"><span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        
-      </li>
-    </ul>
-  </div>
-  </div>
-</nav> 
+	</ul>	
+
+	</nav>
  
   
-   <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
-	
-<center>
-	<div class="w3-dropdown-click">
-		<button onclick="myFunction2()" class="w3-button">
-			Pretraga po delatnosti
-			&nbsp;
-			<i class='fas fa-angle-down'></i>
-		</button>
-		<div id="Demo" class="w3-dropdown-content">
-			<div class="search-filter-items">
-
-				<!-- Control buttons -->
-				<div id="myBtnContainer">
-					
+   
+<div class="filteri-delat">
 	<button class="btn" onclick="filterSelection('all')"> Prikaži sve</button>
 	<button class="btn" onclick="filterSelection('Medicina-i-zdravlje')"> Medicina i zdravlje</button>
 	<button class="btn" onclick="filterSelection('Usluge')"> Usluge</button>
@@ -325,207 +424,198 @@ h9 {
 	<button class="btn" onclick="filterSelection('Uredjivanje-enterijera')"> Uredjivanje enterijera</button>
 	<button class="btn" onclick="filterSelection('Industrija')"> Industrija</button>
 	<button class="btn" onclick="filterSelection('Tekstil')"> Tekstil</button>
-	<button class="btn" onclick="filterSelection('Maloprodaja')"> Maloprodaja</button>				
-  			</div>
+	<button class="btn" onclick="filterSelection('Maloprodaja')"> Maloprodaja</button>
+</div>			
+	 
 
-			</div>
-		</div>
-	</div>
-	</center>
-
-<ul id="myUL" class="pretraga-sve container" style="margin-top: 2em">
+<div class="search-polje">
+<input  type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+</div>		
+<ul id="myUL" class="pretraga-sve" style="margin-top: 2em">
 	
-    <li class="filterDiv Medicina-i-zdravlje"><a href="stranice/28-Grad Beograd/Delatnosti/Medicina-beograd.html#2-beograd">Opticarska Radnja Optika Soko - Beograd  </a></li> 	
-    <li class="filterDiv Medicina-i-zdravlje"><a href="stranice/28-Grad Beograd/Delatnosti/Medicina-beograd.html#0" class="#">Dom za stara i odrasla lica NAJMILIJI - Beograd</a></li>  
-	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/28-Grad Beograd/Delatnosti/Medicina-beograd.html#1" class="">Logopedski centar Lingua Logos - Beograd</a></li> 	
-    <li class="filterDiv Medicina-i-zdravlje"><a href="stranice/28-Grad Beograd/Delatnosti/Medicina-beograd.html#3" class="">GALA DENT – Stomatoloska ordinacija - Beograd</a></li> 	
-	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/28-Grad Beograd/Delatnosti/Medicina-beograd.html#4" class="">Ginekoloska ordinacija dr Biljana Zivaljevic - Beograd</a></li>	
-	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/28-Grad Beograd/Delatnosti/Medicina-beograd.html#5" class="">Veterinarska ordinacija SALI VET - Beograd</a></li>	
-	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/28-Grad Beograd/Delatnosti/Medicina-beograd.html#6" class="">Biohemijska i mikro bioloska labaratorija Mak Lab - Beograd</a></li>	
-	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/28-Grad Beograd/Delatnosti/Medicina-beograd.html#7" class="">Internisticko kardioloska ordinacija MEDISIN 59 - Beograd</a></li>	
-	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/28-Grad Beograd/Delatnosti/Medicina-beograd.html#8" class="">Psiholosko savetovaliste Filipovic - Beograd</a></li>	
-	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/28-Grad Beograd/Delatnosti/Medicina-beograd.html#9"
-	class="">Dom Zdravlja Hemikal - Beograd</a></li>	
-	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/28-Grad Beograd/Delatnosti/Medicina-beograd.html#10" class="">Ordinacija Horus DR.Mirko Djordjevic - Beograd</a></li>	
-	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/28-Grad Beograd/Delatnosti/Medicina-beograd.html#11" class="">Specijalisticka ginekolosko akuserska ordinacija EVA - Beograd</a></li>	
-	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/28-Grad Beograd/Delatnosti/Medicina-beograd.html#12" class="">Salon za otklanjanje vaski i gnjida Beovaskica - Beograd</a></li>	
-	<li class="filterDiv Usluge"><a href="stranice/28-Grad Beograd/Delatnosti/ostalo-beograd.html#13" class="">Servis Gitara Zarko - Beograd</a></li>
-	<li class="filterDiv Usluge"><a href="stranice/28-Grad Beograd/Delatnosti/ostalo-beograd.html#14" class="">Cvecara Mini Orhideja - Sremcica/Zeleznik/Beograd</a></li> 
+ <li class="filterDiv Medicina-i-zdravlje Beograd"><a href="stranice/28-Grad Beograd/Delatnosti/Medicina-beograd.html#2-beograd"><p>Opticarska Radnja Optika Soko - Beograd</p></a></li> 
+    <li class="filterDiv Medicina-i-zdravlje Beograd"><a href="stranice/28-Grad Beograd/Delatnosti/Medicina-beograd.html#0" class="#"><p>Dom za stara i odrasla lica NAJMILIJI - Beograd</p></a></li> 
 	
-	<li class="filterDiv Usluge"><a href="stranice/28-Grad Beograd/Delatnosti/ostalo-beograd.html#15" class="">Restauracija Klavira Predrag Puhaca - Beograd</a></li> 
+	<li class="filterDiv Medicina-i-zdravlje Beograd"><a href="stranice/28-Grad Beograd/Delatnosti/Medicina-beograd.html#1" class=""><p>Logopedski centar Lingua Logos - Beograd</p></a></li> 	
 	
-	<li class="filterDiv Usluge"><a href="stranice/28-Grad Beograd/Delatnosti/ostalo-beograd.html#16" class="">Masinska Obrada Metala Dva Cekica - Beograd </a></li> 
+    <li class="filterDiv Medicina-i-zdravlje Beograd"><a href="stranice/28-Grad Beograd/Delatnosti/Medicina-beograd.html#3" class=""><p>GALA DENT – Stomatoloska ordinacija - Beograd</p></a></li> 	
 	
-	<li class="filterDiv Usluge"><a href="stranice/28-Grad Beograd/Delatnosti/ostalo-beograd.html#17" class="">casovi matematike i statistike Vojvodic Markov - Beograd</a></li>
+	<li class="filterDiv Medicina-i-zdravlje Beograd"><a href="stranice/28-Grad Beograd/Delatnosti/Medicina-beograd.html#4" class=""><p>Ginekoloska ordinacija dr Biljana Zivaljevic - Beograd</p></a></li>	
 	
-	<li class="filterDiv Usluge"><a href="stranice/28-Grad Beograd/Delatnosti/ostalo-beograd.html#18" class="">Dubinsko pranje MIMI - Beograd</a></li>
+	<li class="filterDiv Medicina-i-zdravlje Beograd"><a href="stranice/28-Grad Beograd/Delatnosti/Medicina-beograd.html#5" class=""><p>Veterinarska ordinacija SALI VET - Beograd</p></a></li>	
 	
-	<li class="filterDiv Usluge"><a href="stranice/28-Grad Beograd/Delatnosti/ostalo-beograd.html#19" 
-	class="">PC Ultimate servis racunara i periferne opreme - Beograd</a></li>
+	<li class="filterDiv Medicina-i-zdravlje Beograd"><a href="stranice/28-Grad Beograd/Delatnosti/Medicina-beograd.html#6" class=""><p>Biohemijska i mikro bioloska labaratorija Mak Lab - Beograd</p></a></li>
 	
-	<li class="filterDiv Usluge"><a href="stranice/28-Grad Beograd/Delatnosti/ostalo-beograd.html#20" class="">Odgajivacnica Egzoticnih Pataka, Gusaka i Labudova - Beograd</a></li>
+	<li class="filterDiv Medicina-i-zdravlje Beograd"><a href="stranice/28-Grad Beograd/Delatnosti/Medicina-beograd.html#7" class=""><p>Internisticko kardioloska ordinacija MEDISIN 59 - Beograd</p></a></li>	
 	
-	<li class="filterDiv Usluge"><a href="stranice/28-Grad Beograd/Delatnosti/ostalo-beograd.html#21" class="">Uklanjanje vlage u vašem domu, lokalu i poslovnom prostoru - Resnik/Beograd</a></li>
+	<li class="filterDiv Medicina-i-zdravlje Beograd"><a href="stranice/28-Grad Beograd/Delatnosti/Medicina-beograd.html#8" class=""><p>Psiholosko savetovaliste Filipovic - Beograd</p></a></li>	
 	
-	<li class="filterDiv Usluge"><a href="stranice/28-Grad Beograd/Delatnosti/ostalo-beograd.html#22" class="">Servis i Prodaja Fiskalnih Kasa Obrenovac – Shrooms Soft d.o.o - Obrenovac/Beograd </a></li>
+	<li class="filterDiv Medicina-i-zdravlje Beograd"><a href="stranice/28-Grad Beograd/Delatnosti/Medicina-beograd.html#9"
+	class=""><p>Dom Zdravlja Hemikal - Beograd</p></a></li>	
+	<li class="filterDiv Medicina-i-zdravlje Beograd"><a href="stranice/28-Grad Beograd/Delatnosti/Medicina-beograd.html#10" class=""><p>Ordinacija Horus DR.Mirko Djordjevic - Beograd</p></a></li>	
 	
-	<li class="filterDiv Usluge"><a href="stranice/28-Grad Beograd/Delatnosti/ostalo-beograd.html#23" class="">Trubaci za veselja Orkestar Sinise Stankovica - Beograd</a></li>
+	<li class="filterDiv Medicina-i-zdravlje Beograd"><a href="stranice/28-Grad Beograd/Delatnosti/Medicina-beograd.html#11" class=""><p>Specijalisticka ginekolosko akuserska ordinacija EVA - Beograd</p></a></li>	
 	
-	<li class="filterDiv Usluge"><a href="stranice/28-Grad Beograd/Delatnosti/ostalo-beograd.html#24" class="">Dostava Pecene Ribe Fish Bar Gogi - Zemun/Beograd</a></li>
+	<li class="filterDiv Medicina-i-zdravlje Beograd"><a href="stranice/28-Grad Beograd/Delatnosti/Medicina-beograd.html#12" class=""><p>Salon za otklanjanje vaski i gnjida Beovaskica - Beograd</p></a></li>
 	
-	<li class="filterDiv Usluge"><a href="stranice/28-Grad Beograd/Delatnosti/ostalo-beograd.html#25" class="">Servis pumpi za vodu Elper - Beograd</a></li>
+	<li class="filterDiv Usluge Beograd"><a href="stranice/28-Grad Beograd/Delatnosti/ostalo-beograd.html#13" class=""><p>Servis Gitara Zarko - Beograd</p></a></li>
 	
-	<li class="filterDiv Usluge"><a href="stranice/28-Grad Beograd/Delatnosti/ostalo-beograd.html#26" class="">Cvecara i Pogrebne Usluge CRN BOR - Sopot/Beograd</a></li>
+	<li class="filterDiv Usluge Beograd"><a href="stranice/28-Grad Beograd/Delatnosti/ostalo-beograd.html#14" class=""><p>Cvecara Mini Orhideja - Sremcica/Zeleznik/Beograd</p></a></li> 
 	
-	<li class="filterDiv Usluge"><a href="stranice/28-Grad Beograd/Delatnosti/ostalo-beograd.html#27" class="">Pangolin - Beograd</a></li>
+	<li class="filterDiv Usluge Beograd"><a href="stranice/28-Grad Beograd/Delatnosti/ostalo-beograd.html#15" class=""><p>Restauracija Klavira Predrag Puhaca - Beograd</p></a></li> 
 	
-	<li class="filterDiv Usluge"><a href="stranice/28-Grad Beograd/Delatnosti/ostalo-beograd.html#28" class="">TRANSPORTER ONE - Dobanovci/Beograd</a></li>
+	<li class="filterDiv Usluge Beograd"><a href="stranice/28-Grad Beograd/Delatnosti/ostalo-beograd.html#16" class=""><p>Masinska Obrada Metala Dva Cekica - Beograd </p></a></li> 
 	
-	<li class="filterDiv Nekretnine"><a href="stranice/28-Grad Beograd/Delatnosti/Nekretnine-beograd.html#29" class="">Simonovic Nekretnine - Beograd</a></li>
+	<li class="filterDiv Usluge Beograd"><a href="stranice/28-Grad Beograd/Delatnosti/ostalo-beograd.html#17" class=""><p>casovi matematike i statistike Vojvodic Markov - Beograd</p></a></li>
 	
-	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/Zajecarski okrug/Knjazevac/Delatnosti/medicina-knjazevac.html#30" class="">Stomatoloska ordinacija OGI-DENT - Knjazevac</a></li>
+	<li class="filterDiv Usluge Beograd"><a href="stranice/28-Grad Beograd/Delatnosti/ostalo-beograd.html#18" class=""><p>Dubinsko pranje MIMI - Beograd</p></a></li>
 	
-	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/Macvanski okrug/Sabac/Delatnosti/Medicina-sabac.html#31" class="">Stomatoloska ordinacija DR MATIC - Sabac</a></li>
+	<li class="filterDiv Usluge Beograd"><a href="stranice/28-Grad Beograd/Delatnosti/ostalo-beograd.html#19" 
+	class=""><p>PC Ultimate servis racunara i periferne opreme - Beograd</p></a></li>
 	
-	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/Moravicki okrug/Cacak/Delatnosti/Medicina-cacak.html#32" class="">Dijagnosticko internisticki centar HIPOKRAT - Cacak</a></li>
+	<li class="filterDiv Usluge Beograd"><a href="stranice/28-Grad Beograd/Delatnosti/ostalo-beograd.html#20" class=""><p>Odgajivacnica Egzoticnih Pataka, Gusaka i Labudova - Beograd</p></a></li>
 	
-	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/Nisavski okrug/Doljevac/Delatnosti/Medicina-doljevac.html#33" class="">POBEDITE MUCANJE – BARAVOS - Doljevac</a></li>
+	<li class="filterDiv Usluge Beograd"><a href="stranice/28-Grad Beograd/Delatnosti/ostalo-beograd.html#21" class=""><p>Uklanjanje vlage u vašem domu, lokalu i poslovnom prostoru - Resnik/Beograd</p></a></li>
 	
-	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/Nisavski okrug/Nis/Delatnosti/Medicina-nis.html#34" class="">Psihijatrijska ordinacija Neurorelax - Nis</a></li>
+	<li class="filterDiv Usluge Beograd"><a href="stranice/28-Grad Beograd/Delatnosti/ostalo-beograd.html#22" class=""><p>Servis i Prodaja Fiskalnih Kasa Obrenovac – Shrooms Soft d.o.o - Obrenovac/Beograd </p></a></li>
 	
-	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/Nisavski okrug/Nis/Delatnosti/Medicina-nis.html#35" class="">OPTIKA MILOSEVIĆ - Nis</a></li>
+	<li class="filterDiv Usluge Beograd"><a href="stranice/28-Grad Beograd/Delatnosti/ostalo-beograd.html#23" class=""><p>Trubaci za veselja Orkestar Sinise Stankovica - Beograd</p></a></li>
 	
-	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/Nisavski okrug/Nis/Delatnosti/Medicina-nis.html#36" class="">Stomatoloska ordinacija Branko Dental Tehno - Nis</a></li>
+	<li class="filterDiv Usluge Beograd"><a href="stranice/28-Grad Beograd/Delatnosti/ostalo-beograd.html#24" class=""><p>Dostava Pecene Ribe Fish Bar Gogi - Zemun/Beograd</p></a></li>
 	
-	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/Nisavski okrug/Nis/Delatnosti/Medicina-nis.html#37" class="">Ortoplus – Ortopedska Pomagala - Nis</a></li>
+	<li class="filterDiv Usluge Beograd"><a href="stranice/28-Grad Beograd/Delatnosti/ostalo-beograd.html#25" class=""><p>Servis pumpi za vodu Elper - Beograd</p></a></li>
 	
-	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/Nisavski okrug/Nis/Delatnosti/Medicina-nis.html#38" class="">MAGNET MEDIC Specijalisticka radioloska ordinacija - Nis</a></li>
+	<li class="filterDiv Usluge Beograd"><a href="stranice/28-Grad Beograd/Delatnosti/ostalo-beograd.html#26" class=""><p>Cvecara i Pogrebne Usluge CRN BOR - Sopot/Beograd</p></a></li>
 	
-	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/Nisavski okrug/Nis/Delatnosti/Medicina-nis.html#39" class="">Ortopedska pomagala Orto kuca Pavlovic - Nis</a></li>
+	<li class="filterDiv Usluge Beograd"><a href="stranice/28-Grad Beograd/Delatnosti/ostalo-beograd.html#27" class=""><p>Pangolin - Beograd</p></a></li>
 	
-	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/Nisavski okrug/Nis/Delatnosti/Medicina-nis.html#40" class="">Optika Nikolic - Nis</a></li>
+	<li class="filterDiv Usluge Beograd"><a href="stranice/28-Grad Beograd/Delatnosti/ostalo-beograd.html#28" class=""><p>TRANSPORTER ONE - Dobanovci/Beograd</p></a></li>
 	
-	<li class="filterDiv Usluge"><a href="stranice/Pirotski okrug/Bela palanka/Delatnosti/ostalo-bela-palanka.html#41" class="">Knjizara Alex - Bela Palanka</a></li>
+	<li class="filterDiv Nekretnine Beograd"><a href="stranice/28-Grad Beograd/Delatnosti/Nekretnine-beograd.html#29" class=""><p>Simonovic Nekretnine - Beograd</p></a></li>
 	
-	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/Rasinski okrug/Krusevac/Delatnosti/Medicina-krusevac.html#42" class="">Stomatoloska ordinacija RADIX - Krusevac</a></li>
+	<li class="filterDiv Medicina-i-zdravlje Knjazevac"><a href="stranice/Zajecarski okrug/Knjazevac/Delatnosti/medicina-knjazevac.html#30" class=""><p>Stomatoloska ordinacija OGI-DENT - Knjazevac</p></a></li>
 	
-	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/Podunavski okrug/Velika plana/Delatnosti/Medicina-vel-plana.html#43" class="">Specijalisticka lekarska ordinacija ULTRAMEDICS Dr Sladjana Antonijevic Jelic - Velika Plana</a></li>
+	<li class="filterDiv Medicina-i-zdravlje Sabac"><a href="stranice/Macvanski okrug/Sabac/Delatnosti/Medicina-sabac.html#31" class=""><p>Stomatoloska ordinacija DR MATIC - Sabac</p></a></li>
 	
-	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/Pcinjski okrug/Vranje/Delatnosti/Medicina-vranje.html#44" class="">OPTIKA MIMA - Vranje</a></li>
+	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/Moravicki okrug/Cacak/Delatnosti/Medicina-cacak.html#32" class=""><p>Dijagnosticko internisticki centar HIPOKRAT - Cacak</p></a></li>
 	
-	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/Pcinjski okrug/Vranje/Delatnosti/Medicina-vranje.html#45" class="">Ginekolosko akuserska ordinacija Dr Dzikic - Vranje</a></li>
+	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/Nisavski okrug/Doljevac/Delatnosti/Medicina-doljevac.html#33" class=""><p>POBEDITE MUCANJE – BARAVOS - Doljevac</p></a></li>
 	
-	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/Pcinjski okrug/Vranje/Delatnosti/Medicina-vranje.html#46" class="">Fizikalna terapija i rehabilitacija Fiziomedica - Vranje</a></li>
+	<li class="filterDiv Medicina-i-zdravlje Nis"><a href="stranice/Nisavski okrug/Nis/Delatnosti/Medicina-nis.html#34" class=""><p>Psihijatrijska ordinacija Neurorelax - Nis</p></a></li>
 	
-	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/Raski okrug/Kraljevo/Delatnosti/Medicina-kraljevo.html#47" class="">Stomatoloska ordinacija ,,DR STEVANOVIC” - Kraljevo</a></li>
+	<li class="filterDiv Medicina-i-zdravlje Nis"><a href="stranice/Nisavski okrug/Nis/Delatnosti/Medicina-nis.html#35" class=""><p>OPTIKA MILOSEVIĆ - Nis</p></a></li>
 	
-	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/Raski okrug/Vrnjacka banja/Delatnosti/Medicina-vb.html#48" class="">Apoteka sa tradicijom Ksenija - Vrnjacka Banja</a></li>
+	<li class="filterDiv Medicina-i-zdravlje Nis"><a href="stranice/Nisavski okrug/Nis/Delatnosti/Medicina-nis.html#36" class=""><p>Stomatoloska ordinacija Branko Dental Tehno - Nis</p></a></li>
 	
-	<li class="filterDiv Usluge"><a href="stranice/Severnobanatski okrug/Kikinda/Delatnosti/ostalo-kikinda.html#49" class="">Pogrebne usluge AMENTES - Kikinda</a></li>
+	<li class="filterDiv Medicina-i-zdravlje Nis"><a href="stranice/Nisavski okrug/Nis/Delatnosti/Medicina-nis.html#37" class=""><p>Ortoplus – Ortopedska Pomagala - Nis</p></a></li>
 	
-	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/Juznobacki okrug/Novi sad/Delatnosti/Medicina-novi-sad.html#50" class="">Otorinolaringologija, interna medicina, radiologija NADA DIVA MED PLUS - Novi Sad</a></li>
+	<li class="filterDiv Medicina-i-zdravlje Nis"><a href="stranice/Nisavski okrug/Nis/Delatnosti/Medicina-nis.html#38" class=""><p>MAGNET MEDIC Specijalisticka radioloska ordinacija - Nis</p></a></li>
 	
-	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/Juznobacki okrug/Novi sad/Delatnosti/Medicina-novi-sad.html#51" class="">Ordinacija Opste Medicine Porodicni Lekar Slavica - Novi Sad</a></li>
+	<li class="filterDiv Medicina-i-zdravlje Nis"><a href="stranice/Nisavski okrug/Nis/Delatnosti/Medicina-nis.html#39" class=""><p>Ortopedska pomagala Orto kuca Pavlovic - Nis</p></a></li>
 	
-	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/Juznobacki okrug/Novi sad/Delatnosti/Medicina-novi-sad.html#52" class="">Feri Dent Stomatoloska ordinacija - Novi Sad</a></li>
+	<li class="filterDiv Medicina-i-zdravlje Nis"><a href="stranice/Nisavski okrug/Nis/Delatnosti/Medicina-nis.html#40" class=""><p>Optika Nikolic - Nis</p></a></li>
 	
-	<li class="filterDiv Usluge"><a href="stranice/Juznobacki okrug/Novi sad/Delatnosti/ostalo-novi-sad.html#53" class="">Sudski Prevodilac Za Rumunski jezik - Novi Sad</a></li>
+	<li class="filterDiv Usluge"><a href="stranice/Pirotski okrug/Bela palanka/Delatnosti/ostalo-bela-palanka.html#41" class=""><p>Knjizara Alex - Bela Palanka</p></a></li>
 	
-	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/Severnobacki okrug/Subotica/Delatnosti/Medicina-subotica.html#54" class="">Stomatoloska ordinacija Kupresanin - Subotica</a></li>
+	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/Rasinski okrug/Krusevac/Delatnosti/Medicina-krusevac.html#42" class=""><p>Stomatoloska ordinacija RADIX - Krusevac</p></a></li>
 	
-	<li class="filterDiv Usluge Dekorativne-usluge"><a href="stranice/Severnobacki okrug/Subotica/Delatnosti/Dekorativne-usluge-subotica.html#55" class="">Umetnicka radionica Umetnik Dabar - Subotica</a></li>
+	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/Podunavski okrug/Velika plana/Delatnosti/Medicina-vel-plana.html#43" class=""><p>Specijalisticka lekarska ordinacija ULTRAMEDICS Dr Sladjana Antonijevic Jelic - Velika Plana</p></a></li>
 	
-	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/Sremski okrug/Sremska mitrovica/Delatnosti/Medicina-sremska-mitrovica.html#56" class="">Centar za logopediju i zdrav život Logo M - Sremska Mitrovica</a></li>
+	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/Pcinjski okrug/Vranje/Delatnosti/Medicina-vranje.html#44" class=""><p>OPTIKA MIMA - Vranje</p></a></li>
 	
-	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/Toplicki okrug/Prokuplje/Delatnosti/Medicina-prokuplje.html#57" class="">Herba Medical Natural – Prirodni preparati - Prokuplje</a></li>
+	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/Pcinjski okrug/Vranje/Delatnosti/Medicina-vranje.html#45" class=""><p>Ginekolosko akuserska ordinacija Dr Dzikic - Vranje</p></a></li>
 	
-	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/27-Sumadijski okrug/Kragujevac/Delatnosti/Medicina-kragujevac.html#58" class="">Privatna internisticko kardioloska ordinacija Miloradović - Kragujevac</a></li>
+	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/Pcinjski okrug/Vranje/Delatnosti/Medicina-vranje.html#46" class=""><p>Fizikalna terapija i rehabilitacija Fiziomedica - Vranje</p></a></li>
 	
-	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/Juznobacki okrug/Backa palanka/Delatnosti/Medicina-backa-palanka.html#59" class="">Stomatoloska ordinacija Bugarski Dent - Backa Palanka</a></li>
+	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/Raski okrug/Kraljevo/Delatnosti/Medicina-kraljevo.html#47" class=""><p>Stomatoloska ordinacija ,,DR STEVANOVIC” - Kraljevo</p></a></li>
 	
-	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/27-Sumadijski okrug/Kragujevac/Delatnosti/Medicina-kragujevac.html#60" class="">Stomatoloska Ordinacija Mijema Dent - Kragujevac</a></li>
+	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/Raski okrug/Vrnjacka banja/Delatnosti/Medicina-vb.html#48" class=""><p>Apoteka sa tradicijom Ksenija - Vrnjacka Banja</p></a></li>
 	
-	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/27-Sumadijski okrug/Kragujevac/Delatnosti/Medicina-kragujevac.html#61" class="">Ordinacija za plasticnu i estetsku hirurgiju MARAS - Kragujevac</a></li>
+	<li class="filterDiv Usluge"><a href="stranice/Severnobanatski okrug/Kikinda/Delatnosti/ostalo-kikinda.html#49" class=""><p>Pogrebne usluge AMENTES - Kikinda</p></a></li>
 	
-	<li class="filterDiv Usluge"><a href="stranice/Zlatiborski okrug/Uzice/Delatnosti/ostalo-uzice.html#62" class="">Montaza I Remont Pekarske Opreme Jenet DOO - Uzice</a></li>
+	<li class="filterDiv Medicina-i-zdravlje Novi-Sad"><a href="stranice/Juznobacki okrug/Novi sad/Delatnosti/Medicina-novi-sad.html#50" class=""><p>Otorinolaringologija, interna medicina, radiologija NADA DIVA MED PLUS - Novi Sad</p></a></li>
 	
-	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/Kolubarski okrug/Osecina/Delatnosti/Medicina-osecina.html#63" class="">Apoteka Stefanovic - Osecina</a></li>
+	<li class="filterDiv Medicina-i-zdravlje Novi-Sad"><a href="stranice/Juznobacki okrug/Novi sad/Delatnosti/Medicina-novi-sad.html#51" class=""><p>Ordinacija Opste Medicine Porodicni Lekar Slavica - Novi Sad</p></a></li>
 	
-	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/Kolubarski okrug/Valjevo/Delatnosti/Medicina-valjevo.html#64" class="">MILAX – Biljni napitak – Biljna apoteka Krunic - Valjevo</a></li>
+	<li class="filterDiv Medicina-i-zdravlje Novi-Sad"><a href="stranice/Juznobacki okrug/Novi sad/Delatnosti/Medicina-novi-sad.html#52" class=""><p>Feri Dent Stomatoloska ordinacija - Novi Sad</p></a></li>
 	
-	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/Bor Okrug/Kladovo/Delatnosti/Medicina-kladovo.html#65" class="">Apoteka Talia - Kladovo</a></li>
+	<li class="filterDiv Usluge Novi-Sad"><a href="stranice/Juznobacki okrug/Novi sad/Delatnosti/ostalo-novi-sad.html#53" class=""><p>Sudski Prevodilac Za Rumunski jezik - Novi Sad</p></a></li>
 	
-	<li class="filterDiv Nekretnine"><a href="stranice/Branicevo Okrug/Petrovac/Delatnosti/nekretnine-petrovac.html#66" class="">Privredno Drustvo za Inzenjering FMS Kvart - Petrovac</a></li>
+	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/Severnobacki okrug/Subotica/Delatnosti/Medicina-subotica.html#54" class=""><p>Stomatoloska ordinacija Kupresanin - Subotica</p></a></li>
 	
-	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/Branicevo Okrug/Pozarevac/Delatnosti/Medicina-pozarevac.html#67" class="">DR Marina - Pozarevac</a></li>
+	<li class="filterDiv Usluge Dekorativne-usluge"><a href="stranice/Severnobacki okrug/Subotica/Delatnosti/Dekorativne-usluge-subotica.html#55" class=""><p>Umetnicka radionica Umetnik Dabar - Subotica</p></a></li>
+	<li class="filterDiv Usluge Dekorativne-usluge"><a href="stranice/Severnobacki okrug/Subotica/Delatnosti/Dekorativne-usluge-subotica.html#55" class=""><p>Umetnicka radionica Umetnik Dabar - Subotica</p></a></li>
+	<li class="filterDiv Usluge Dekorativne-usluge"><a href="stranice/Severnobacki okrug/Subotica/Delatnosti/Dekorativne-usluge-subotica.html#55" class=""><p>Umetnicka radionica Umetnik Dabar - Subotica</p></a></li>
 	
-	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/Branicevo Okrug/Pozarevac/Delatnosti/Medicina-pozarevac.html#68" class="">Specijalisticka Internisticka Ordinacija Zigic - Pozarevac</a></li>
+	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/Sremski okrug/Sremska mitrovica/Delatnosti/Medicina-sremska-mitrovica.html#56" class=""><p>Centar za logopediju i zdrav život Logo M - Sremska Mitrovica</p></a></li>
 	
-	<li class="filterDiv Industrija"><a href="stranice/Zlatiborski okrug/Arilje/Delatnosti/industrija-arilje.html#69" class="">Proizvodnja tekstilne konfekcije TR PALMA - Arilje</a></li>
+	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/Toplicki okrug/Prokuplje/Delatnosti/Medicina-prokuplje.html#57" class=""><p>Herba Medical Natural – Prirodni preparati - Prokuplje</p></a></li>
 	
-	<li class="filterDiv Industrija"><a href="stranice/Juznobanatski okrug/Pancevo/Delatnosti/industrija-pancevo.html#70" class="">Papirna Konfekcija Dona - Pancevo</a></li>
+	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/27-Sumadijski okrug/Kragujevac/Delatnosti/Medicina-kragujevac.html#58" class=""><p>Privatna internisticko kardioloska ordinacija Miloradović - Kragujevac</p></a></li>
 	
-	<li class="filterDiv Namestaj"><a href="stranice/28-Grad Beograd/Delatnosti/namestaj-beograd.html#71" class="">Nemastaj Miletic - Beograd</a></li>
+	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/Juznobacki okrug/Backa palanka/Delatnosti/Medicina-backa-palanka.html#59" class=""><p>Stomatoloska ordinacija Bugarski Dent - Backa Palanka</p></a></li>
 	
-	<li class="filterDiv Namestaj"><a href="stranice/Zajecarski okrug/Zajecar/Delatnosti/namestaj-zajecar.html#72" class="">Argentis Namestaj - Zajecar</a></li>
+	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/27-Sumadijski okrug/Kragujevac/Delatnosti/Medicina-kragujevac.html#60" class=""><p>Stomatoloska Ordinacija Mijema Dent - Kragujevac</p></a></li>
 	
-	<li class="filterDiv Namestaj"><a href="stranice/27-Sumadijski okrug/Kragujevac/Delatnosti/gradjevina-kragujevac.html#73" class="">Izrada ALU i PVC stolarije Montaza BAU - Kragujevac</a></li>
+	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/27-Sumadijski okrug/Kragujevac/Delatnosti/Medicina-kragujevac.html#61" class=""><p>Ordinacija za plasticnu i estetsku hirurgiju MARAS - Kragujevac</p></a></li>
 	
-	<li class="filterDiv Usluge"><a href="stranice/Juznobacki okrug/Novi sad/Delatnosti/Zanatsko-Usluzne-Radnje-novi-sad.html#74" class="">Popravka aparata za domaćinstvo SZR ELSA - Sremska Kamenica</a></li>
+	<li class="filterDiv Usluge"><a href="stranice/Zlatiborski okrug/Uzice/Delatnosti/ostalo-uzice.html#62" class=""><p>Montaza I Remont Pekarske Opreme Jenet DOO - Uzice</p></a></li>
 	
-	<li class="filterDiv Namestaj"><a href="stranice/Severnobacki okrug/Subotica/Delatnosti/uredj. enterijera.html#75" class="">Izrada namestaja i kuhinja po meri SIMONIKS DOO - Subotica</a></li>
+	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/Kolubarski okrug/Osecina/Delatnosti/Medicina-osecina.html#63" class=""><p>Apoteka Stefanovic - Osecina</p></a></li>
 	
-	<li class="filterDiv Usluge"><a href="stranice/Sremski okrug/Stara pazova/Delatnosti/uredjivanje baste-stara-pazova.html#76" class="">Rasadnik Smaragd – Zlatna basta, Nova Pazova</a></li>
+	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/Kolubarski okrug/Valjevo/Delatnosti/Medicina-valjevo.html#64" class=""><p>MILAX – Biljni napitak – Biljna apoteka Krunic - Valjevo</p></a></li>
 	
-	<li class="filterDiv Uredjivanje-enterijera"><a href="stranice/Raski okrug/Tutin/Delatnosti/uredj.enterijera-tutin.html#77" class="">Domis Lux uredjivanje enterijera - Tutin</a></li>
+	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/Bor Okrug/Kladovo/Delatnosti/Medicina-kladovo.html#65" class=""><p>Apoteka Talia - Kladovo</p></a></li>
 	
-	<li class="filterDiv Usluge"><a href="stranice/Nisavski okrug/Nis/Delatnosti/ostalo-nis.html#78" class="">Dubinsko pranje Top Wash Servis - Nis</a></li>
+	<li class="filterDiv Nekretnine"><a href="stranice/Branicevo Okrug/Petrovac/Delatnosti/nekretnine-petrovac.html#66" class=""><p>Privredno Drustvo za Inzenjering FMS Kvart - Petrovac</p></a></li>
 	
-	<li class="filterDiv Nekretnine"><a href="stranice/Nisavski okrug/Nis/Delatnosti/nekretnine-nis.html#79" class="">MEGA Nekretnine - Nis</a></li>
+	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/Branicevo Okrug/Pozarevac/Delatnosti/Medicina-pozarevac.html#67" class=""><p>DR Marina - Pozarevac</p></a></li>
 	
-	<li class="filterDiv Tekstil Usluge"><a href="stranice/28-Grad Beograd/Delatnosti/tekstil-industrija-beograd.html#80" class="">DITEKS TEKSTIL - Beograd</a></li>
+	<li class="filterDiv Medicina-i-zdravlje"><a href="stranice/Branicevo Okrug/Pozarevac/Delatnosti/Medicina-pozarevac.html#68" class=""><p>Specijalisticka Internisticka Ordinacija Zigic - Pozarevac</p></a></li>
 	
-	<li class="filterDiv Maloprodaja Usluge"><a href="stranice/28-Grad Beograd/Delatnosti/maloprodaja-beograd.html#81" class="">VODOVODNI I ELEKTROMATERIJAL PETROVIC - Beograd</a></li>
+	<li class="filterDiv Industrija"><a href="stranice/Zlatiborski okrug/Arilje/Delatnosti/industrija-arilje.html#69" class=""><p>Proizvodnja tekstilne konfekcije TR PALMA - Arilje</p></a></li>
+	<li class="filterDiv Industrija"><a href="stranice/Zlatiborski okrug/Arilje/Delatnosti/industrija-arilje.html#69" class=""><p>Proizvodnja tekstilne konfekcije TR PALMA - Arilje</p></a></li>
 	
-	<li><a href="" class=""></a></li>
-	<li><a href="" class=""></a></li>
-	<li><a href="" class=""></a></li>
-	<li><a href="" class=""></a></li>
-	<li><a href="" class=""></a></li>
-	<li><a href="" class=""></a></li>
-	<li><a href="" class=""></a></li>
+	<li class="filterDiv Industrija"><a href="stranice/Juznobanatski okrug/Pancevo/Delatnosti/industrija-pancevo.html#70" class=""><p>Papirna Konfekcija Dona - Pancevo</p></a></li>
+	<li class="filterDiv Industrija"><a href="stranice/Juznobanatski okrug/Pancevo/Delatnosti/industrija-pancevo.html#70" class=""><p>Papirna Konfekcija Dona - Pancevo</p></a></li>
+	
+	<li class="filterDiv Namestaj"><a href="stranice/28-Grad Beograd/Delatnosti/namestaj-beograd.html#71" class=""><p>Nemastaj Miletic - Beograd</p></a></li>
+	
+	<li class="filterDiv Namestaj"><a href="stranice/Zajecarski okrug/Zajecar/Delatnosti/namestaj-zajecar.html#72" class=""><p>Argentis Namestaj - Zajecar</p></a></li>
+	
+	<li class="filterDiv Namestaj"><a href="stranice/27-Sumadijski okrug/Kragujevac/Delatnosti/gradjevina-kragujevac.html#73" class=""><p>Izrada ALU i PVC stolarije Montaza BAU - Kragujevac</p></a></li>
+	
+	<li class="filterDiv Usluge Novi-Sad"><a href="stranice/Juznobacki okrug/Novi sad/Delatnosti/Zanatsko-Usluzne-Radnje-novi-sad.html#74" class=""><p>Popravka aparata za domaćinstvo SZR ELSA - Sremska Kamenica</p></a></li>
+	
+	<li class="filterDiv Namestaj"><a href="stranice/Severnobacki okrug/Subotica/Delatnosti/uredj. enterijera.html#75" class=""><p>Izrada namestaja i kuhinja po meri SIMONIKS DOO - Subotica</p></a></li>
+	
+	<li class="filterDiv Usluge"><a href="stranice/Sremski okrug/Stara pazova/Delatnosti/uredjivanje baste-stara-pazova.html#76" class=""><p>Rasadnik Smaragd – Zlatna basta, Nova Pazova</p></a></li>
+	
+	<li class="filterDiv Uredjivanje-enterijera Tutin"><a href="stranice/Raski okrug/Tutin/Delatnosti/uredj.enterijera-tutin.html#77" class=""><p>Domis Lux uredjivanje enterijera - Tutin</p></a></li>
+	<li class="filterDiv Uredjivanje-enterijera"><a href="stranice/Raski okrug/Tutin/Delatnosti/uredj.enterijera-tutin.html#77" class=""><p>Domis Lux uredjivanje enterijera - Tutin</p></a></li>
+	<li class="filterDiv Uredjivanje-enterijera"><a href="stranice/Raski okrug/Tutin/Delatnosti/uredj.enterijera-tutin.html#77" class=""><p>Domis Lux uredjivanje enterijera - Tutin</p></a></li>
+	
+	<li class="filterDiv Usluge Nis"><a href="stranice/Nisavski okrug/Nis/Delatnosti/ostalo-nis.html#78" class=""><p>Dubinsko pranje Top Wash Servis - Nis</p></a></li>
+	
+	<li class="filterDiv Nekretnine Nis"><a href="stranice/Nisavski okrug/Nis/Delatnosti/nekretnine-nis.html#79" class=""><p>MEGA Nekretnine - Nis</p></a></li>
+	
+	<li class="filterDiv Tekstil Usluge Beograd"><a href="stranice/28-Grad Beograd/Delatnosti/tekstil-industrija-beograd.html#80" class=""><p>DITEKS TEKSTIL - Beograd</p></a></li>
+	<li class="filterDiv Tekstil Usluge"><a href="stranice/28-Grad Beograd/Delatnosti/tekstil-industrija-beograd.html#80" class=""><p>DITEKS TEKSTIL - Beograd</p></a></li>
+	<li class="filterDiv Tekstil Usluge"><a href="stranice/28-Grad Beograd/Delatnosti/tekstil-industrija-beograd.html#80" class=""><p>DITEKS TEKSTIL - Beograd</p></a></li>
+	
+	
+	<li class="filterDiv Maloprodaja Usluge Beograd"><a href="stranice/28-Grad Beograd/Delatnosti/maloprodaja-beograd.html#81" class=""><p>VODOVODNI I ELEKTROMATERIJAL PETROVIC - Beograd</p></a></li>
+	<li class="filterDiv Maloprodaja Usluge"><a href="stranice/28-Grad Beograd/Delatnosti/maloprodaja-beograd.html#81" class=""><p>VODOVODNI I ELEKTROMATERIJAL PETROVIC - Beograd</p></a></li>
+	<li class="filterDiv Maloprodaja Usluge"><a href="stranice/28-Grad Beograd/Delatnosti/maloprodaja-beograd.html#81" class=""><p>VODOVODNI I ELEKTROMATERIJAL PETROVIC - Beograd</p></a></li>
+	
+	<!-- <li><a href="" class=""></a></li> -->
+	
 	
 	
 	
 	
 </ul>
-	   
-
-
-      	
-       		
-
-   
-
-
-  
-
-<br><br><br><br><br><br><br><br><br><br><br><br>
-
-
-<div class="hide-on-large-only">
- 
-</div>
-
-	
-
-
-
-
-
-
-<!-- vidljivo na telefonima --->
-
+		   
 
 
 
@@ -542,172 +632,109 @@ h9 {
 
 <!--JS for advanced search dropdown menu--> 
 <script>
-	function myFunction2() {
-	  var x = document.getElementById("Demo");
-	  if (x.className.indexOf("w3-show") == -1) {
-		x.className += " w3-show";
-	  } else { 
-		x.className = x.className.replace(" w3-show", "");
-	  }
-	}
-</script>
-<!--JS for advanced search by town name--> 
-<script>
-
-//Towns var
-var towns = ["Bor","Kladovo","Majdanpek","Negotin","Beograd","Požarevac","Kučevo","Malo Crniće","Petrovac","Golubac","Veliko Gradište","Žabari","Žagubica","Boljevac","Knjaževac","Sokobanja","Zaječar","Apatin","Kula","Odžaci","Sombor","Bajina Bašta","Čajetina","Kosjerić","Nova Varoš","Požega","Priboj","Prijepolje","Sjenica","Užice","Bojnik","Crna Trava","Lebane","Leskovac","Medveđa","Vlasotince","Alibunar","Bela Crkva","Kovačica","Kovin","Opovo","Pančevo","Plandište","Vršac","Bač","Bačka Palanka","Bački Petrovac","Bečej","Beočin","Novi Sad","Srbobran","Sremski Karlovci","Temerin","Titel","Vrbas","Žabalj","Lajkovac","Ljig","Mionica","Osecina","Ub","Valjevo","Glogovac","Kačanik","Kosovo Polje","Ljipljan","Obilić","Podujevo","Priština","Štimlje","Štrpce","Uroševac","Kosovska Mitrovica","Leposavić","Srbica","Vučitrn","Zubin Potok","Zvečan","Gnjilane","Kosovska Kamenica","Novo Brdo","Vitina","Bogatić","Koceljevo","Krupanj","Ljubovija","Loznica","Mali Zvornik","Šabac","Vladimirci","Čačak","Gornji Milanovac","Ivanjica","Lučani","Doljevac","Gadzin Han","Merošina","Niš","Niška Banja","Ražanj","Svrljig","Dečani","Đakovica","Istok","Klina","Peć","Babušnica","Bela Palanka","Dimitrovgrad","Pirot","Smederevo","Smederevska Palanka","Velika Plana","Ćuprija","Despotovac","Jagodina","Paraćin","Rekovac","Svilajnac","Dragaš","Orahovac","Prizren","Suva Reka","Bosilegrad","Bujanovac","Preševo","Surdulica","Trgovište","Vladičin Han","Vranje","Aleksandrovac","Brus","Ćićevac","Kruševac","Trstenik","Varvarin","Kraljevo","Novi Pazar","Raška","Tutin","Vrnjačka Banja","Ada","Čoka","Kanjiža","Kikinda","Novi Kneževac","Senta","Bačka Topola","Mali Idjos","Subotica","Nova Crnja","Novi Bečej","Sečanj","Žitište","Zrenjanin","Indjija","Irig","Pećnici","Ruma","Šid","Sremska Mitrovica","Stara Pazova","Blace","Kuršumlija","Prokuplje","Žitoradja","Arandjelovac","Batočina","Knić","Kragujevac","Lapovo","Rača","Topola"];
-
-
-function autocomplete(inp, arr) {
-    /*the autocomplete function takes two arguments,
-    the text field element and an array of possible autocompleted values:*/
-    var currentFocus;
-    /*execute a function when someone writes in the text field:*/
-    inp.addEventListener("input", function(e) {
-        var a, b, i, val = this.value;
-        /*close any already open lists of autocompleted values*/
-        closeAllLists();
-        if (!val) { return false;}
-        currentFocus = -1;
-        /*create a DIV element that will contain the items (values):*/
-        a = document.createElement("DIV");
-        a.setAttribute("id", this.id + "autocomplete-list");
-        a.setAttribute("class", "autocomplete-items");
-        /*append the DIV element as a child of the autocomplete container:*/
-        this.parentNode.appendChild(a);
-        /*for each item in the array...*/
-        for (i = 0; i < arr.length; i++) {
-          /*check if the item starts with the same letters as the text field value:*/
-          if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
-            /*create a DIV element for each matching element:*/
-            b = document.createElement("DIV");
-            /*make the matching letters bold:*/
-            b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
-            b.innerHTML += arr[i].substr(val.length);
-            /*insert a input field that will hold the current array item's value:*/
-            b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
-            /*execute a function when someone clicks on the item value (DIV element):*/
-                b.addEventListener("click", function(e) {
-                /*insert the value for the autocomplete text field:*/
-                inp.value = this.getElementsByTagName("input")[0].value;
-                /*close the list of autocompleted values,
-                (or any other open lists of autocompleted values:*/
-                closeAllLists();
-            });
-            a.appendChild(b);
-          }
-        }
-    });
-    /*execute a function presses a key on the keyboard:*/
-    inp.addEventListener("keydown", function(e) {
-        var x = document.getElementById(this.id + "autocomplete-list");
-        if (x) x = x.getElementsByTagName("div");
-        if (e.keyCode == 40) {
-          /*If the arrow DOWN key is pressed,
-          increase the currentFocus variable:*/
-          currentFocus++;
-          /*and and make the current item more visible:*/
-          addActive(x);
-        } else if (e.keyCode == 38) { //up
-          /*If the arrow UP key is pressed,
-          decrease the currentFocus variable:*/
-          currentFocus--;
-          /*and and make the current item more visible:*/
-          addActive(x);
-        } else if (e.keyCode == 13) {
-          /*If the ENTER key is pressed, prevent the form from being submitted,*/
-          e.preventDefault();
-          if (currentFocus > -1) {
-            /*and simulate a click on the "active" item:*/
-            if (x) x[currentFocus].click();
-          }
-        }
-    });
-    function addActive(x) {
-      /*a function to classify an item as "active":*/
-      if (!x) return false;
-      /*start by removing the "active" class on all items:*/
-      removeActive(x);
-      if (currentFocus >= x.length) currentFocus = 0;
-      if (currentFocus < 0) currentFocus = (x.length - 1);
-      /*add class "autocomplete-active":*/
-      x[currentFocus].classList.add("autocomplete-active");
-    }
-    function removeActive(x) {
-      /*a function to remove the "active" class from all autocomplete items:*/
-      for (var i = 0; i < x.length; i++) {
-        x[i].classList.remove("autocomplete-active");
+   filterSelection("all");
+   function filterSelection(c) {
+      var x, i;
+      x = document.querySelectorAll(".filterDiv");
+      if (c == "all") c = "";
+      Array.from(x).forEach(item => {
+         removeActiveClass(item, "show");
+         if (item.className.indexOf(c) > -1) addActiveClass(item, "show");
+      });
+   }
+   function addActiveClass(ele, name) {
+      var i, arr1, arr2;
+      arr1 = ele.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+         if (arr1.indexOf(arr2[i]) == -1) {
+            ele.className += " " + arr2[i];
+         }
       }
-    }
-    function closeAllLists(elmnt) {
-      /*close all autocomplete lists in the document,
-      except the one passed as an argument:*/
-      var x = document.getElementsByClassName("autocomplete-items");
-      for (var i = 0; i < x.length; i++) {
-        if (elmnt != x[i] && elmnt != inp) {
-        x[i].parentNode.removeChild(x[i]);
+   }
+   function removeActiveClass(ele, name) {
+      var i, arr1, arr2;
+      arr1 = ele.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+         while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
+         }
       }
+      ele.className = arr1.join(" ");
+   }
+   var filterBtns = document.querySelector(".filterBtns");
+   var btns = filterBtns.getElementsByTagName("button");
+   for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+         var current = document.getElementsByClassName("active");
+         current[0].className = current[0].className.replace(" active", "");
+         this.className += " active";
+      });
+   }
+	
+	
+	
+	
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction1() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
     }
   }
-  /*execute a function when someone clicks in the document:*/
-  document.addEventListener("click", function (e) {
-      closeAllLists(e.target);
-  });
-  }
+} 	
+	
+	
+	
+	
+	
+	
+function myFunction() {
+  // Declare variables
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById('myInput');
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myUL");
+  li = ul.getElementsByTagName('li');
 
-  autocomplete(document.getElementById("myInput2"), towns);
-</script>
-
-<!-- JS for advanced filter for professions --> 
-
-<script>
-	filterSelection("all")
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("filterDiv");
-  if (c == "all") c = "";
-  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
-}
-
-// Show filtered elements
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {
-      element.className += " " + arr2[i];
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
     }
   }
+}	
+	
+	
+	
+function sortList(ul) {
+  var ul = document.getElementById(ul);
+
+  Array.from(ul.getElementsByTagName("li"))
+    .sort((a, b) => a.textContent.localeCompare(b.textContent))
+    .forEach(li => ul.appendChild(li));
 }
 
-// Hide elements that are not selected
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);
-    }
-  }
-  element.className = arr1.join(" ");
-}
-
-// Add active class to the current control button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
+sortList("stocksymbols");	
+	
 </script>
 
   
