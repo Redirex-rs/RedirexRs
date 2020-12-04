@@ -4,16 +4,19 @@
 		 border-bottom: 1px solid white
 	 }
 .card-content a i {
-	padding: 0.1em;
-	padding-bottom: 0.5em
-		
+	margin: 0.1em
 }
 
-
+.card-content a i:hover {
+	border-radius: 20%;
+	box-shadow: 0 0 5px rgba(0,0,0,1.00);
+	padding: 0.1em
+}
 .colap-dugme{
 	border: 1px solid black;
 	width: 100%;
 	padding: 0.2em;
+	
 }
 
 .collapse{
@@ -118,7 +121,8 @@ html {
 
 @media (min-width: 768px) {
 .masonry { /* Masonry container */
-  column-count: 3;
+  display: block;
+  flex-wrap: wrap;
   column-gap: 1em;
   margin-left: 1%;
   margin-right: 1%;
@@ -129,7 +133,8 @@ html {
 	background-color: #eee;
   display: inline-block;
   margin: 0 0 1em;
-  width: 100%;
+  width: 15em;
+font-size: 0.9em	
 }
 	
 
