@@ -1,166 +1,309 @@
-
-
-.card {
-  width: 450px;
-  height: 250px;
-  background-color: #fff;
-  background: linear-gradient(#f8f8f8, #fff);
-  box-shadow: 0 8px 16px -8px rgba(0,0,0,0.4);
-  border-radius: 6px;
-  overflow: hidden;
-  position: relative;
-  margin: 1.5rem;
-}
-
-.card h1 {
-  text-align: center;
-}
-
-.card .additional {
-  position: absolute;
-  width: 150px;
-  height: 100%;
-  background: linear-gradient(#dE685E, #EE786E);
-  transition: width 0.4s;
-  overflow: hidden;
-  z-index: 2;
-}
-
-.card.green .additional {
-  background: linear-gradient(#92bCa6, #A2CCB6);
-}
-
-
-.card:hover .additional {
-  width: 100%;
-  border-radius: 0 5px 5px 0;
-}
-
-.card .additional .user-card {
-  width: 150px;
-  height: 100%;
-  position: relative;
-  float: left;
-}
-
-.card .additional .user-card::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 10%;
-  right: -2px;
-  height: 80%;
-  border-left: 2px solid rgba(0,0,0,0.025);*/
-}
-
-.card .additional .user-card .level,
-.card .additional .user-card .points {
-  top: 15%;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 0.75em;
-  font-weight: bold;
-  background: rgba(0,0,0,0.15);
-  padding: 0.125rem 0.75rem;
-  border-radius: 100px;
-  white-space: nowrap;
-}
-
-.card .additional .user-card .points {
-  top: 85%;
-}
-
-.card .additional .user-card svg {
-  top: 50%;
-}
-
-.card .additional .more-info {
-  width: 300px;
-  float: left;
-  position: absolute;
-  left: 150px;
-  height: 100%;
-}
-
-.card .additional .more-info h1 {
-  color: #fff;
-  margin-bottom: 0;
-}
-
-.card.green .additional .more-info h1 {
-  color: #224C36;
-}
-
-.card .additional .coords {
-  margin: 0 1rem;
-  color: #fff;
-  font-size: 1rem;
-}
-
-.card.green .additional .coords {
-  color: #325C46;
-}
-
-.card .additional .coords span + span {
-  float: right;
-}
-
-.card .additional .stats {
-  font-size: 2rem;
-  display: flex;
-  position: absolute;
-  bottom: 1rem;
-  left: 1rem;
-  right: 1rem;
-  top: auto;
-  color: #fff;
-}
-
-.card.green .additional .stats {
-  color: #325C46;
-}
-
-.card .additional .stats > div {
-  flex: 1;
-  text-align: center;
-}
-
-.card .additional .stats i {
-  display: block;
-}
-
-.card .additional .stats div.title {
-  font-size: 0.75rem;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.card .additional .stats div.value {
-  font-size: 1.5rem;
-  font-weight: bold;
-  line-height: 1.5rem;
-}
-
-.card .additional .stats div.value.infinity {
-  font-size: 2.5rem;
-}
-
-.card .general {
-  width: 300px;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1;
-  box-sizing: border-box;
-  padding: 1rem;
-  padding-top: 0;
-}
-
-.card .general .more {
-  position: absolute;
-  bottom: 1rem;
-  right: 1rem;
-  font-size: 0.9em;
-}
-
+@media (max-width: 768px){
+	.kartice-glavno{
+		display: block;
+		width: 100;
+		height: auto;
+		padding: auto;
+	}
+	.kartice-sve{
+		display: block;
+		padding: auto;
+		width: auto;
+		padding-top: 5em;
+		padding-bottom: 10em;
+	}
+	.kartica-telo{
+		display: block;
+		width: 24em;
+		height: 15em;
+	    position: relative;
+		margin: auto;
+		margin-bottom: 9em;
+		margin-top: 2em
+		
+	}
+	.kartica-content{
+		display: block;
+		width: 25em;
+		height: 20em;
+		position: absolute; 
+		right: 0; 
+		bottom: 0;
+		background: rgba(240,240,240,1.00);
+		font-family: 'Oswald', sans-serif;
+		border-radius: 0.7em;
+	}
+	.kartica-slika{
+		width: 10em;
+		height: 7em;
+		position: absolute;
+		left: 1em;
+		top: -2em;
+		border-radius: 0.7em;
+		-webkit-box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.55);
+	-moz-box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.55);
+	box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.55);
+	}
+	.kartica-slika>img {
+		width: 10em;
+		height: 7em;
+		border-radius: 0.7em;
+	}
+	.kartica-info{
+		position: absolute; 
+		right: 0;
+		width: 17em;
+		height: 100%;
+		font-size: 0.7em;
+		padding: 0.5em;
+		
+	}
+	.kartica-kontakt{
+		position: absolute; 
+		right: 0;
+		width: 15.5em;
+		font-size: 1em;
+	}
+	
+	h2{
+		font-size: 2em
+	}
+	
+	.kartica-slogan{
+		position: absolute; 
+		left: 0;
+		bottom: 4em;
+		width: 11em;
+		height: 6em;
+		margin: 0.5em;
+		margin-bottom: 0.9em;
+		font-size: 0.8em;
+		top: 6em;
+		width: 13em;
+	}
+	.drustvene-mreze{
+		position: absolute; 
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		margin-bottom: 0.9em;
+	}
+	.drustvene-mreze a {
+		float: left;
+		margin-left: 0.9em;
+		margin-right: 0.9em;
+	}
+	.drustvene-mreze a:hover{
+		border: 1px solid white;
+		border-radius: 0.4em
+	}
+	
+	.drustvene-mreze .redirex-stranica{
+		display: block;	
+		float: right;
+	}
+	
+	h1{
+		font-size: 1.3em;
+		
+		font-family: 'Oswald', sans-serif;
+	}
+	h2{
+		font-size: 1.3em;
+		
+		font-family: 'Oswald', sans-serif;
+	}
+	
+	.navbar-brand strong {
+		font-size: 1.4em;
+	}
+	
+	.MIMI-orh{
+		
+		margin-top: 14em;
+	}
+	#mini-orhideja-content{
+		height: 25em;
+	}
+	.gogi-telo{
+		margin-top: 14em
+	}
+	.gogi-content{
+		height: 25em
+	}
+	.crnibor-content{
+		height: 23em
+	}
+	.crnibor-telo{
+		margin-top: 12em
+	}
+	
+	}
+@media (min-width: 768px){
+	.kartice-glavno{
+		display: block;
+		width: 100;
+		height: auto;
+		padding: auto;
+	}
+	.kartice-sve{
+		display: flex;
+		flex-wrap: wrap;
+		padding: auto;
+		width: auto;
+		padding-top: 5em;
+		padding-bottom: 10em;
+	}
+	.kartica-telo{
+		display: flex;
+		width: 36em;
+		height: 21em;
+	    position: relative;
+		margin: auto;
+		
+	}
+	.kartica-content{
+		display: block;
+		width: 33em;
+		height: 17em;
+		position: absolute; 
+		right: 0; 
+		bottom: 0;
+		background: rgba(240,240,240,1.00);
+		margin: 1em;
+		font-family: 'Oswald', sans-serif;
+		border-radius: 0.7em;
+	}
+	.kartica-slika{
+		width: 17em;
+		height: 10em;
+		position: absolute;
+		left: 1em;
+		top: -2em;
+		border-radius: 0.7em;
+		-webkit-box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.55);
+	-moz-box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.55);
+	box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.55);
+	}
+	.kartica-slika>img {
+		width: 17em;
+		height: 10em;
+		border-radius: 0.7em;
+	}
+	.kartica-info{
+		position: absolute; 
+		right: 0;
+		width: 14em;
+		height: 100%;
+		
+	}
+	.kartica-kontakt{
+		position: absolute; 
+		right: 0;
+		width: 18em;
+		font-size: 0.8em;
+	}
+	.kartica-slogan{
+		position: absolute; 
+		left: 1em;
+		bottom: 3em;
+		width: 21em;
+		height: 5em;
+		margin: 0.5em;
+		margin-bottom: 0.9em;
+		padding: 1em;
+		font-size: 0.8em;
+		top: 9em;
+	}
+	.drustvene-mreze{
+		position: absolute; 
+		left: 0;
+		bottom: 0;
+		width: 17em;
+		height: 2.5em;
+		margin: 0.5em;
+		margin-bottom: 0.9em;
+	}
+	.drustvene-mreze a {
+		float: right;
+		margin: auto;
+		margin-left: 0.9em;
+		margin-right: 0.9em
+	}
+	.drustvene-mreze a:hover{
+		border: 1px solid white;
+		border-radius: 0.4em;
+		padding-left: 2px;
+		padding-right: 2px;
+		background: white;
+	}
+	
+	.navbar-brand strong {
+		font-size: 1em
+	}
+	
+	h1{
+		font-size: 1.3em;
+		
+		font-family: 'Oswald', sans-serif;
+	}
+	h2{
+		font-size: 1.3em;
+		
+		font-family: 'Oswald', sans-serif;
+	}
+	
+	.MIMI-orh{
+		
+		margin-top: 9em;
+	}
+	#mini-orhideja-content{
+		height: 25em;
+	}
+	#mini-orhideja-slogan{
+		top: 10em;
+		font-size: 0.8em;
+		width: 20em;
+		left: 1em;
+	}
+	#odgajiv-content{
+		height: 20em
+	}
+	
+	#odgajiv-slogan{
+		top: 10em;
+		font-size: 0.8em;
+		width: 20em;
+		left: 1em;
+	}
+	.odgajiv-telo{
+		margin-top: 3em;
+	} 
+	.SS-content{
+		height: 20em
+	}
+	.SS-telo{
+		margin-top: 5em
+	}
+	.gogi-content{
+		height: 23em
+	}
+	.gogi-telo{
+		margin-top: 7em
+	}
+	.crnibor-content{
+		height: 23em
+	}
+	.crnibor-telo{
+		margin-top: 7em
+	}
+	.elek-petrovic-content{
+		height: 20em
+	}
+	.elek-petrovic-telo{
+		margin-top: 5em
+	}
+	}
+#DITEKS{
+		background: #333
+	}
