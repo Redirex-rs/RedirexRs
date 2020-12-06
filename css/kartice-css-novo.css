@@ -7,7 +7,6 @@
 	}
 	.kartice-sve{
 		display: block;
-		padding: auto;
 		width: auto;
 		padding-top: 5em;
 		padding-bottom: 10em;
@@ -15,17 +14,16 @@
 	.kartica-telo{
 		display: block;
 		width: 24em;
-		height: 15em;
+		height: 30em;
 	    position: relative;
-		margin: auto;
-		margin-bottom: 9em;
-		margin-top: 2em
+		margin-bottom: 6em;
+		margin-top: 3em;
 		
 	}
 	.kartica-content{
 		display: block;
 		width: 25em;
-		height: 20em;
+		height: 30em;
 		position: absolute; 
 		right: 0; 
 		bottom: 0;
@@ -122,22 +120,53 @@
 		
 		margin-top: 14em;
 	}
-	#mini-orhideja-content{
-		height: 25em;
-	}
-	.gogi-telo{
+	
+	.gogi-tel{
 		margin-top: 14em
 	}
 	.gogi-content{
 		height: 25em
 	}
 	.crnibor-content{
-		height: 23em
+		height: 30em
 	}
-	.crnibor-telo{
-		margin-top: 12em
+	.crnibor-tel{
+		margin-top: 20em;
+		margin-bottom: 5em;
 	}
-	
+	.soko-mob-tel{
+		margin-top: 15em;
+		margin-bottom: 5em;
+	}
+	.soko-mob-content{
+	}
+	.biljanaginek-tel{
+		margin-top: 20em;
+		margin-bottom: 5em;
+	}
+	.biljanaginek-content{
+		height: 30em;
+	}
+	.maklab-tel{
+		margin-top: 20em;
+		margin-bottom: 5em;
+	}
+	.maklab-content{
+		height: 30em;
+	}
+	.hemikal-telo{
+		margin-top: 12em;
+		margin-bottom: em;
+	}
+	.hemikal-content{
+		height: 35em;
+	}
+	.beovas-tel{
+		margin-top: 10em;
+		margin-bottom: 5em;
+	}
+	.beovas-content{
+	}
 	}
 @media (min-width: 768px){
 	.kartice-glavno{
@@ -160,6 +189,8 @@
 		height: 21em;
 	    position: relative;
 		margin: auto;
+		margin-top: 2.5em;
+		margin-bottom: 2.5em;
 		
 	}
 	.kartica-content{
@@ -170,7 +201,6 @@
 		right: 0; 
 		bottom: 0;
 		background: rgba(240,240,240,1.00);
-		margin: 1em;
 		font-family: 'Oswald', sans-serif;
 		border-radius: 0.7em;
 	}
@@ -278,32 +308,78 @@
 	}
 	.odgajiv-telo{
 		margin-top: 3em;
+		margin-bottom: 1em;
 	} 
 	.SS-content{
 		height: 20em
 	}
 	.SS-telo{
-		margin-top: 5em
+		margin-top: 5em;
+		margin-bottom: 1em;
 	}
 	.gogi-content{
 		height: 23em
 	}
 	.gogi-telo{
-		margin-top: 7em
+		margin-top: 7em;
+		margin-bottom: 1em;
 	}
 	.crnibor-content{
 		height: 23em
 	}
 	.crnibor-telo{
-		margin-top: 7em
+		margin-top: 7em;
+		margin-bottom: 1em;
 	}
 	.elek-petrovic-content{
 		height: 20em
 	}
 	.elek-petrovic-telo{
-		margin-top: 5em
+		margin-top: 5em;
+		margin-bottom: 1em;
+	}
+	.biljanaginek-content{
+		height: 25em
+	}
+	.biljanaginek-telo{
+		margin-top: 7em;
+		margin-bottom: 1em;
+	}
+	.maklab-content{
+		height: 29em
+	}
+	.maklab-telo{
+		margin-top: 13em;
+		margin-bottom: 1em;
+	}
+	.hemikal-content{
+		height: 31em
+	}
+	.hemikal-telo{
+		margin-top: 15em;
+		margin-bottom: 1em;
+	}
+	.zigic-telo{
+		margin-top: 15em;
+		margin-bottom: 1em;
+	}
+	.content-s{
+		height: 10em
+	}
+	.content-m{
+		height: 22em;
+	}
+	.content-m-plus{
+		height: 26em;
+	}
+	.content-l{
+		height: 30em
+	}
+	.soko-css{
+		margin-top: 5em;
 	}
 	}
+
 #DITEKS{
 		background: #333
 	}

@@ -4,7 +4,11 @@
 <head>
 	<meta charset="utf-8">
 <!--Import Google Icon Font-->
-
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet"> 	
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:ital,wght@0,700;1,900&display=swap" rel="stylesheet"> <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:ital,wght@0,700;1,900&display=swap" rel="stylesheet"> 
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <!--Import materialize.css-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -35,7 +39,7 @@
 <link rel="stylesheet" href="../../../../css/footercss.css">	
 <link rel="stylesheet" href="../../../../css/GlavniCss-zajecar.css" class="">
 <link rel="stylesheet" href="../../../../css/floatingdugme.css" class="">	
-<link rel="stylesheet" href="../../../../css/masonry.css"> 
+<link rel="stylesheet" href="../../../../css/kartice-css-novo.css"> 
 <link rel="stylesheet" href="../../../../css/myInput.css">
 
 
@@ -64,22 +68,40 @@ h9 {
 	  <!--- <div class="#" style="margin-bottom: 3%;margin-left: 4%; margin-right: 4%; background-color: rgb(255, 255, 255);">	--->
 		
 
-	   <!-- Meni s leve strane vidljiv na dektop--->
-  <nav id="vrh-navbar" class="navbar" style="background-color:rgba(12,64,118,1.00);">
-  	 <div class="navbar-brand" style="text-align: left; color: white" href="#">
-	   <a href="../../../../index.html">	
-		 <p><h1><strong>Redirex</strong></h1></p>
-	   </a>		
-	 </div>
-			
-<ul class="navbar-ul">
-
-</ul>
-	
+	   <!-- Meni s leve strane vidljiv na dektop---><!--Navbar-->
+<nav  class="navbar navbar-expand-lg navbar-dark primary-color">
+  <!-- Navbar brand -->
+  <a style="font-family: 'Russo One', sans-serif;" class="navbar-brand" href="https://redirex.rs">REDIREX</a>
+  <!-- Collapse button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="basicExampleNav">
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">	
+      <li class="nav-item">
+        <a class="nav-link" href="window.history.back();"><i class="fas fa-reply"></i>&nbsp;Nazad</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#text-9">Kontakt</a>
+      </li>
+      <!-- Dropdown -->
+      <li class="nav-item">
+        <a class="nav-link" href="https://redirex.rs/kako-se-oglasiti.html">Kako se oglasiti?</a>
+      </li>
+    </ul>
+    <!-- Links -->
+    <form class="form-inline">
+      <div class="md-form my-0">
+        <input id="myInput" type="text" placeholder="Pretraga">
+      </div>
+    </form>
+  </div>
+  <!-- Collapsible content -->
 </nav>
- 
- 
-<div class="center" >
+<!--/.Navbar--><div class="center" >
 	  <img src="../COA_Valjevo.gif" alt="" class="" style="width: 9em">
 	 
 	</div>
@@ -90,39 +112,45 @@ h9 {
 <hr class="solid" style="border-top: 1px solid gray; width: 100%; margin: auto; padding-bottom: 0.5em">	
  
  
-<!-- Use any element to open/show the overlay navigation menu --> 
-
-<input id="myInput" type="text" placeholder="Pretraga">
-
-<div class="masonry" id="Lista" style="list-style-type:none;" >
-<!--MILAX – Biljni napitak – Biljna apoteka Krunić-->	
-	<div class="column" style="width: rem">
-    <div class="col s12 m7">
-        <div class="card-image" style="text-align: center">
-          </div>
-        <div class="card-content" id="64" style="color: black">
-<img style="display:block;margin:auto;width: 90%" src="Zdravlje i medicina/Milax/72950882_1206854072855117_7968374703108653056_o.jpg"><p1>Valjevo</p1> <hr>			
-          <p1><h6>MILAX – Biljni napitak – Biljna apoteka Krunić</h6> <br>
+<!-- Use any element to open/show the overlay navigation menu -->
+	<div class="kartice-glavno">
+	<div class="kartice-sve">
+		
+<!--MILAX – Biljni napitak – Biljna apoteka Krunić-->
+<div id="64" class="kartica-telo -telo">
+		<div class="kartica-content content-">
+		  <div  class="kartica-slika" style="background: white">
+			<img src="Zdravlje i medicina/Milax/72950882_1206854072855117_7968374703108653056_o.jpg" alt="">
+			</div>
+	<div class="kartica-info">
+			<h2><center>MILAX – Biljni napitak – Biljna apoteka Krunić</center></h2>
+			  
+		<hr class="solid" style="border-top: 1px solid gray; width: 70%; margin: auto; padding-bottom: 0.5em; margin-bottom: 0.4em">	  
+			  
+		<div class="kartica-kontakt">
 <i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Doktora Pantića 9, Valjevo<br> <br>
-
-<i class="fas fa-phone"></i>&nbsp;&nbsp;065/ 270 7 270<br>
-    
-<i class="fas fa-envelope"></i>&nbsp;&nbsp;krunic.herbal@gmail.com  
-<br> <br>
-Sedište apoteke nalazi se u selu nedaleko od Valjeva, a divlje bilje sa okolnih brda osnovna je sirovina za Milax čaj.
-</p1>
-        <br><br><hr>
-        
-       <a href="https://www.facebook.com/Milax-biljni-napitak-148375738702961/" target="_blank"><i class="fab fa-facebook-square fa-3x" style="color: dodgerblue; "></i></a>
+<i class="fas fa-phone"></i>&nbsp;&nbsp;065/ 270 7 270<br><br>  
+<i class="fas fa-envelope"></i>&nbsp;&nbsp;krunic.herbal@gmail.com 
+		</div> 
+	</div>
+	<div class="kartica-slogan" >
+			<center><i>Sedište apoteke nalazi se u selu nedaleko od Valjeva, a divlje bilje sa okolnih brda osnovna je sirovina za Milax čaj.</i></center>  
+	</div>
+	<div class="drustvene-mreze" style="">
+		<hr class="solid" style="border-top: 1px solid gray; width: 100%; margin: auto; padding-bottom: 0.5em; margin-bottom: 0.4em">
+		
+       <a href="https://www.facebook.com/Milax-biljni-napitak-148375738702961/" target="_blank"><i class="fab fa-facebook-square fa-2x" style="color:#4F4F4F "></i></a>
 			
-	   <a href="http://www.lekzasidu.com" target="_blank"><i class="fas fa-globe fa-3x" style="color:rgba(57,171,235,1.00); "></i></a>	
-				
-        </div>
-      </div>
-    </div>
-	
+	   <a href="http://www.lekzasidu.com" target="_blank"><i class="fas fa-globe fa-2x" style="color:#4F4F4F "></i></a>
+			
+			  </div>
+		</div>
+</div>		
+		
+		
+		
   </div>
-	
+	</div>
 
 
 

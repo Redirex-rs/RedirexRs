@@ -4,13 +4,16 @@
 <head>
 <meta charset="utf-8">
 <!--Import Google Icon Font-->
-<link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
-<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>	
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet"> 	
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:ital,wght@0,700;1,900&display=swap" rel="stylesheet"> <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>	
 <script data-ad-client="ca-pub-2077196854990037" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!--Import materialize.css-->
 	
 	
-	
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:ital,wght@0,700;1,900&display=swap" rel="stylesheet"> 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>	
@@ -58,9 +61,7 @@
 <script src="JSS/Filterovanje1.js"></script>
 <script src="src/selectstyle.js"></script>	
 <script src="JSS/pop-up-modal.js"></script>
-<script src="JSS/w3-sidenav.js"></script>
-<link rel="stylesheet" href="GlavniCss.css">	
-<link rel="stylesheet" href="css/w3-sidenav.css">
+	
 <style>
 	*{
 		outline: none;
@@ -198,6 +199,9 @@ section {
   
 </style>
 <style>
+	
+
+	
 	.table{
 		color: white;
 	}
@@ -214,85 +218,7 @@ section {
 		position: absolute;
 		width: 100%
 	}
-	
-.btn1 {
-  width: 150px;
-  height: 50px;
-  border: 1px solid white;
-  font-size: 2em;
-  cursor: pointer;
-  -webkit-tap-highlight-color: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  z-index: 0;
-  transition: 1s;
-	color: white;
-}
 
-.btn1::before, .btn1::after {
-  position: absolute;
-  background: black;
-  z-index: -1;
-  transition: 1s;
-  content: '';
-	color: white;
-}
-
-.btn1::before {
-  height: 50px;
-  width: 130px;
-	color: white;
-}
-
-.btn1::after {
-  width: 150px;
-  height: 30px;
-	color: white;
-}
-
-.noselect {
-  -webkit-touch-callout: none;
-    -webkit-user-select: none;
-     -khtml-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-	font-size: 1.32em
-}
-
-.btn1:hover::before {
-  width: 0px;
-  background: black;
-	color: white;
-}
-
-.btn1:hover::after {
-  height: 0px;
-  background: black;
-	color: white;
-}
-
-.btn1:hover {
-  background: black;
-	color: white;
-}
-	
-	.logo-img-nav{
-		height: 3em;
-		z-index: 5	
-	}
-	
-	.banner > img {
-	
-}
-	
-	.sidenav{
-		opacity: 92%;
-		display: block;
-		margin: auto
-	}
 	
 	.side-content1{
 		margin: auto;
@@ -379,47 +305,11 @@ section {
 		margin-top: 0.5em	
 	}
 	
-	.dropdown-1{
-		display: inline-block;
-		width: 10em
-	}
-	.navbar-ul .dropdown{
-		float: right;
-		display:inline-flex:;
-		width: 10em;
-		
-		
-	}
-	
-	.navbar-ul{
-  list-style-type: none;
-  padding: 0;
-  overflow: hidden;
-  display: table;		
-		
-		
-	}
-	.navbar-ul li {
-	vertical-align: middle;
-	display: inline
-}
-	
 	.container{
 		margin-bottom: 1em;
 		display:inline-block
 	}
 	
-	.navbar{
-		
-	}
-	
-	
-	.navbar-brand{
-	}
-	
-	.navbar-brand p {
-		margin-top: -2em
-	}
 	
 	.right{
 	  position: absolute;
@@ -498,10 +388,6 @@ section {
 		box-sizing: border-box
 	}
 	
-	.dropdown1{
-		display: table;
-		margin: auto;
-	}
 	
 	.col- {
 		padding-bottom: 1em
@@ -657,9 +543,6 @@ html {
   width: 100%;
 }
 
-.dropdown-sadrzaj{
-	position: relative;
-}
 
 .footer {
   margin-top: auto;
@@ -750,7 +633,7 @@ html {
   border: none;
   cursor: pointer;
   height: 2.5em;
-  width: 100%;	
+  width: 100%;
 }
 .inactiveLink {
    pointer-events: none;
@@ -1094,34 +977,53 @@ h3{
 </div>	
 </div>
 
-<nav id="vrh-navbar" class="navbar " style="background-color:black;">
-	<a href="index.html">
-		
-		<div class="btn1">
-  <span class="noselect">Redirex</span>
-</div>
-		
-		
-	</a><br>
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark primary-color">
 
-	
-	
-<ul class="navbar-ul">
-	
-<li> <span onclick="openNav()" style="color: white; border-right: 1px solid white">Obaveštenja (0)&nbsp;</span></li>
-	  
-<li style="cursor: pointer"> <span onclick="openNav1()" style=" border-right: 1px solid white ;color: white; margin-right: em">&nbsp;Informacije&nbsp;</span></li>
-	 
-<li><a style="color: white;border-right: 1px solid white" href="#pretraga" class="">&nbsp;Pretraga&nbsp;</a></li>
-	
-<li><a style="color: white;border-right: 1px solid white" href="#najnovije" class="">&nbsp;Najnovije&nbsp;</a></li>
-	
-<li><a style="color: white;border-right: 1px solid white" href="#okruzi" class="">&nbsp;Okruzi i opštine&nbsp;</a></li>	
-	  
-<li><a style="color: white;border-right: 1px solid white" href="kako-se-oglasiti.html" class="">&nbsp;Oglašavanje&nbsp;</a></li>
-	  
-	</ul>
+  <!-- Navbar brand -->
+  <a style="font-family: 'Russo One', sans-serif;" class="navbar-brand" href="#">REDIREX</a>
+
+  <!-- Collapse button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="basicExampleNav">
+
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+     
+      <li class="nav-item">
+        <a class="nav-link" href="#pretraga">Pretraga</a>
+      </li>
+		
+      <li class="nav-item">
+        <a class="nav-link" href="#najnovije">Najnovije</a>
+      </li>
+		
+      <li class="nav-item">
+        <a class="nav-link" href="#okruzi">Okruzi i opštine</a>
+      </li>
+		
+      <li class="nav-item">
+        <a class="nav-link" href="kako-se-oglasiti.html">Kako se oglasiti</a>
+      </li>
+		
+	  <li class="nav-item">
+        <a class="nav-link" href="#text-9">Kontakt</a>
+      </li>	
+		
+    </ul>
+   
+  </div>
+  <!-- Collapsible content -->
+
 </nav>
+<!--/.Navbar-->	
+	
+
 
 	
 	
@@ -1138,37 +1040,7 @@ h3{
 </div>
 	
 	
-	
-	
- <!--overlay desni-->
-<div id="mySidenav1" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
 
-	<div class="side-content1">
-		
-<br> <br> <a href="kako-se-oglasiti.html"><i class="fas fa-hand-point-right"></i>&nbsp;&nbsp;Kako se oglasiti na redirex.rs?</a> 
-		<br> <br>
-<a href="stranica-pretrage.html"><i class="fas fa-hand-point-right"></i>&nbsp;&nbsp;Brza pretraga baze</a> <br><br>		
-<a href="#text-9"><i class="fas fa-hand-point-right"></i>&nbsp;&nbsp;Kontakt</a> <br><br>	
-		<hr class="solid" style="border-top: 1px solid gray; width: 100%; margin: auto; padding-bottom: 0.5em">		
-
-	</div>
-
-
-</div>	 
-<!--overlay levi-->
-<div id="mySidenav2" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
-
-	<div class="side-content">
-		
-
-	</div>
-
-
-</div>	
-	
-	
 <!-- Carousel--->
 <div class="banner-text" style="width: 100%; background: rgba(0,0,0,0.00)">
 <section>

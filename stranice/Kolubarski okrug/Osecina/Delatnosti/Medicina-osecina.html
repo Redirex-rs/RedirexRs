@@ -4,7 +4,11 @@
 <head>
 	<meta charset="utf-8">
 <!--Import Google Icon Font-->
-
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet"> 	
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:ital,wght@0,700;1,900&display=swap" rel="stylesheet"> <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:ital,wght@0,700;1,900&display=swap" rel="stylesheet"> 
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <!--Import materialize.css-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -35,7 +39,7 @@
 <link rel="stylesheet" href="../../../../css/footercss.css">	
 <link rel="stylesheet" href="../../../../css/GlavniCss-zajecar.css" class="">
 <link rel="stylesheet" href="../../../../css/floatingdugme.css" class="">	
-<link rel="stylesheet" href="../../../../css/masonry.css"> 
+<link rel="stylesheet" href="../../../../css/kartice-css-novo.css"> 
 <link rel="stylesheet" href="../../../../css/myInput.css">
 
 
@@ -64,22 +68,40 @@ h9 {
 	  <!--- <div class="#" style="margin-bottom: 3%;margin-left: 4%; margin-right: 4%; background-color: rgb(255, 255, 255);">	--->
 		
 
-	   <!-- Meni s leve strane vidljiv na dektop--->
-  <nav id="vrh-navbar" class="navbar" style="background-color:rgba(12,64,118,1.00);">
-  	 <div class="navbar-brand" style="text-align: left; color: white" href="#">
-	   <a href="../../../../index.html">	
-		 <p><h1><strong>Redirex</strong></h1></p>
-	   </a>		
-	 </div>
-			
-<ul class="navbar-ul">
-
-</ul>
-	
+	   <!-- Meni s leve strane vidljiv na dektop---><!--Navbar-->
+<nav  class="navbar navbar-expand-lg navbar-dark primary-color">
+  <!-- Navbar brand -->
+  <a style="font-family: 'Russo One', sans-serif;" class="navbar-brand" href="https://redirex.rs">REDIREX</a>
+  <!-- Collapse button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="basicExampleNav">
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">	
+      <li class="nav-item">
+        <a class="nav-link" href="window.history.back();"><i class="fas fa-reply"></i>&nbsp;Nazad</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#text-9">Kontakt</a>
+      </li>
+      <!-- Dropdown -->
+      <li class="nav-item">
+        <a class="nav-link" href="https://redirex.rs/kako-se-oglasiti.html">Kako se oglasiti?</a>
+      </li>
+    </ul>
+    <!-- Links -->
+    <form class="form-inline">
+      <div class="md-form my-0">
+        <input id="myInput" type="text" placeholder="Pretraga">
+      </div>
+    </form>
+  </div>
+  <!-- Collapsible content -->
 </nav>
- 
- 
-<div class="center" >
+<!--/.Navbar--><div class="center" >
 	  <img src="../COA_Osecina.gif" alt="" class="" style="width: 9em">
 	 
 	</div>
@@ -90,60 +112,56 @@ h9 {
 <hr class="solid" style="border-top: 1px solid gray; width: 100%; margin: auto; padding-bottom: 0.5em">	
  
  
-<!-- Use any element to open/show the overlay navigation menu --> 
-
-<input id="myInput" type="text" placeholder="Pretraga">
-
-<div class="masonry" id="Lista" style="list-style-type:none;" >
+<!-- Use any element to open/show the overlay navigation menu -->
+	<div class="kartice-glavno">
+	<div class="kartice-sve">
 <!--Apoteka Stefanović -->	
-	<div class="column" style="width: rem">
-    <div class="col s12 m7">
-        <div class="card-image" style="text-align: center">
-          </div>
-        <div class="card-content" id="63" style="color: black">
-<img style="display:block;margin:auto;width: 90%" src="zdravlje i medicina/Apoteka Stefanovic/Popularny-antybiotyk-dla-doroslych-i-dzieci-wycofany-z-obiegu_article.jpg"><p1>Osečina</p1> <hr>			
-          <p1><h6>Apoteka Stefanović </h6> <br>
-<i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Karađorđeva 96, 14253 Osečina<br> <br>
-
-<i class="fas fa-phone"></i>&nbsp;&nbsp;014/452-257<br>
-    
-<i class="fas fa-envelope"></i>&nbsp;&nbsp;apotekastefanovic@gmail.com<br><br>
-<i class="fas fa-clock"></i>&nbsp;&nbsp;Radnim danima: 08:00 - 20:00 <br>
-			  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subotom: 08:00-15:00 <br>	
-			  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nedeljom: 08:00-13:00
-<br> <br>
+<div id="63" class="kartica-telo -telo">
+		<div class="kartica-content content-m">
+		  <div  class="kartica-slika" style="background: white">
+			<img src="zdravlje i medicina/Apoteka Stefanovic/Popularny-antybiotyk-dla-doroslych-i-dzieci-wycofany-z-obiegu_article.jpg" alt="">
+			</div>
+	<div class="kartica-info">
+			<h2><center>Apoteka Stefanović</center></h2>
+			  
+		<hr class="solid" style="border-top: 1px solid gray; width: 70%; margin: auto; padding-bottom: 0.5em; margin-bottom: 0.4em">	  
+			  
+		<div class="kartica-kontakt">
+<i class="fas fa-map-marker-alt"></i>&nbsp;Karađorđeva 96, 14253 Osečina<br> <br>
+<i class="fas fa-phone"></i>&nbsp;014/452-257<br><br>
+<i class="fas fa-envelope"></i>&nbsp;apotekastefanovic@gmail.com<br><br>
+<i class="fas fa-clock"></i>&nbsp;Radnim danima: 08:00 - 20:00 <br>
+Subotom: 08:00-15:00 <br>	
+Nedeljom: 08:00-13:00
+		</div> 
+	</div>
+	<div class="kartica-slogan" >
+			<center><i>
 APOTEKA STEFANOVIĆ sa sedištem u Osečini, posluje sa iskustvom od 1992. godine. 
-Već više od 25 godina radimo veoma kvalitetno i pouzdano.<br><br>
-Naša osnovna delatnost jeste:<br>
+Već više od 25 godina radimo veoma kvalitetno i pouzdano.<br> 
+Radimo svih 7 dana u nedelji i držanim praznicima. <br>
 
-    -prodaja lekova,<br>
-    -izdavanje lekova na recept,<br>
-    -kontrola krvnog pritiska i<br>
-    -šećera u krvi.<br><br>
-
-Apoteka je potpuno opremljena svim lekovima, kozmetikom i melemima na prirodnoj bazi. 
-Radimo svih 7 dana u nedelji i držanim praznicima. <br><br>
-
-Ako imate dodatnih pitanja kontaktirajte nas na navedene telefone. 
-</p1>
-        
-        
-        <br><br><hr>
-        
-       <a href="https://www.facebook.com/PoliklinikaNadaDiva" target="_blank"><i class="fab fa-facebook-square fa-3x" style="color: dodgerblue; "></i></a>
+Ako imate dodatnih pitanja kontaktirajte nas na navedene telefone. 				
+				</i></center>  
+	</div>
+	<div class="drustvene-mreze" style="">
+		<hr class="solid" style="border-top: 1px solid gray; width: 100%; margin: auto; padding-bottom: 0.5em; margin-bottom: 0.4em">
+		
+       <a href="https://www.facebook.com/PoliklinikaNadaDiva" target="_blank"><i class="fab fa-facebook-square fa-2x" style="color:#4F4F4F "></i></a>
 			
-	   <a href="https://www.instagram.com/poliklinika.nada.diva/" target="_blank"><i class="fab fa-instagram-square fa-3x" style="color: rebeccapurple; "></i></a>
+	   <a href="https://www.instagram.com/poliklinika.nada.diva/" target="_blank"><i class="fab fa-instagram-square fa-2x" style="color:#4F4F4F "></i></a>
 			
-	   <a href="https://www.youtube.com/watch?time_continue=5&v=XxWYCRgu16Y&feature=emb_logo" target="_blank"><i class="fab fa-youtube-square fa-3x" style="color: red; "></i></a>		
+	   <a href="https://www.youtube.com/watch?time_continue=5&v=XxWYCRgu16Y&feature=emb_logo" target="_blank"><i class="fab fa-youtube-square fa-2x" style="color:#4F4F4F "></i></a>		
 			
-	   <a href="http://www.nadadivamedplus.rs" target="_blank"><i class="fas fa-globe fa-3x" style="color:rgba(57,171,235,1.00); "></i></a>	
-				
-        </div>
-      </div>
-    </div>
+	   <a href="http://www.nadadivamedplus.rs" target="_blank"><i class="fas fa-globe fa-2x" style="color:#4F4F4F "></i></a>
+			
+			  </div>
+		</div>
+</div>		
+		
 	
   </div>
-	
+	</div>
 
 			
 			

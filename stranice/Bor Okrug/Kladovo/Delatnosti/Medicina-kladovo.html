@@ -4,7 +4,11 @@
 <head>
 	<meta charset="utf-8">
 <!--Import Google Icon Font-->
-
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet"> 	
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:ital,wght@0,700;1,900&display=swap" rel="stylesheet"> <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:ital,wght@0,700;1,900&display=swap" rel="stylesheet"> 
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <!--Import materialize.css-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -35,7 +39,7 @@
 <link rel="stylesheet" href="../../../../css/footercss.css">	
 <link rel="stylesheet" href="../../../../css/GlavniCss-zajecar.css" class="">
 <link rel="stylesheet" href="../../../../css/floatingdugme.css" class="">	
-<link rel="stylesheet" href="../../../../css/masonry.css"> 
+<link rel="stylesheet" href="../../../../css/kartice-css-novo.css"> 
 <link rel="stylesheet" href="../../../../css/myInput.css">
 
 
@@ -64,23 +68,41 @@ h9 {
 	  <!--- 	--->
 		
 
-	   <!-- Meni s leve strane vidljiv na dektop--->
-
-   <nav id="vrh-navbar" class="navbar" style="background-color:rgba(12,64,118,1.00);">
-  	 <div class="navbar-brand" style="text-align: left; color: white" href="#">
-	   <a href="../../../../index.html">	
-		 <p><h1><strong>Redirex</strong></h1></p>
-	   </a>		
-	 </div>
-			
-<ul class="navbar-ul">
-
-</ul>
-	
+	   <!-- Meni s leve strane vidljiv na dektop---><!--Navbar-->
+<nav  class="navbar navbar-expand-lg navbar-dark primary-color">
+  <!-- Navbar brand -->
+  <a style="font-family: 'Russo One', sans-serif;" class="navbar-brand" href="https://redirex.rs">REDIREX</a>
+  <!-- Collapse button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="basicExampleNav">
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">	
+      <li class="nav-item">
+        <a class="nav-link" href="window.history.back();"><i class="fas fa-reply"></i>&nbsp;Nazad</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#text-9">Kontakt</a>
+      </li>
+      <!-- Dropdown -->
+      <li class="nav-item">
+        <a class="nav-link" href="https://redirex.rs/kako-se-oglasiti.html">Kako se oglasiti?</a>
+      </li>
+    </ul>
+    <!-- Links -->
+    <form class="form-inline">
+      <div class="md-form my-0">
+        <input id="myInput" type="text" placeholder="Pretraga">
+      </div>
+    </form>
+  </div>
+  <!-- Collapsible content -->
 </nav>
- 
-<div class="center" >
-	  <img src="../COA_Kladovo.png" alt="" class="" style="width: 9em">
+<!--/.Navbar--><div class="center" >
+	  <img src="../COA_Kladovo.png" alt="" class="" style="width: 4em">
 	 
 	</div>
 <div class="naslov">
@@ -92,48 +114,44 @@ h9 {
 	
 
 
-<!-- Use any element to open/show the overlay navigation menu --> 
-
-<input id="myInput" type="text" placeholder="Pretraga">
-
-<div class="masonry" id="Lista" style="list-style-type:none;" >
-<!--Apoteka Talia-->	
-	<div class="column" style="width: rem">
-    <div class="col s12 m7">
-        <div class="card-image" style="text-align: center">
-          </div>
-        <div id="65" style="color: black">
-<img style="display:block;margin:auto;width: 90%" src="../Delatnosti/zdravlje i medicina/Talia/Pharmacy-in-Gozo-1064x709.jpg"><p1>Kladovo</p1> <hr>			
-          <p1><h6>Apoteka Talia</h6> <br>
-<i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Dvadesetdrugog septembra 17, Kladovo<br>
-
-<i class="fas fa-phone"></i>&nbsp;&nbsp;019/801-801<br>
-    
-<i class="fas fa-envelope"></i>&nbsp;&nbsp;apotekatalia@gmail.com<br>
-<i class="fas fa-clock"></i>&nbsp;&nbsp;Radnim danima: 08:00 - 16:00 <br>
-			  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subotom: 08:00 - 20:00 <br>
-			  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nedeljom: 08:00 - 14:00
-<br> <br>
-U apoteci Talia možete naći kompletan asortiman proizvoda:<br><br>
-
-    -lekovi<br>
-    -dijetetski suplementi<br>
-    -bebi program,<br>
-    -oprema i hrana<br>
-    -nalozi za pomagala i drugo<br><br>
-
-Apoteka TALIA je sa sedištem u Kladovu na adresi 22.oktobra 17, a radno vreme je svakog dana od 07 do 20h, subotom od 08 do 20h, nedeljom od 08 do 14h.<br>
-Za sva dodatna pitanja, predloge i nedoumice obratite nam se s poverenjem. Stojimo Vam na raspolaganju za svaki vid dalje saradnje.  <br><br>
+<!-- Use any element to open/show the overlay navigation menu -->
+	<div class="kartice-glavno">
+	<div class="kartice-sve">
+<!--Apoteka Talia-->
+<div id="65" class="kartica-telo -telo">
+		<div class="kartica-content content-m">
+		  <div  class="kartica-slika" style="background: white">
+			<img src="../Delatnosti/zdravlje i medicina/Talia/Pharmacy-in-Gozo-1064x709.jpg" alt="">
+			</div>
+	<div class="kartica-info">
+			<h2><center>Apoteka Talia</center></h2>
 			  
-			  Ukoliko Vas interesuje jedinstvena kombinacija kvaliteta i dobre cene mi smo pravo mesto za Vas.
-</p1>
-        </div>
-     
-    </div>
-  </div>
+		<hr class="solid" style="border-top: 1px solid gray; width: 70%; margin: auto; padding-bottom: 0.5em; margin-bottom: 0.4em">	  
+			  
+		<div class="kartica-kontakt">
+<i class="fas fa-map-marker-alt"></i>&nbsp;Dvadesetdrugog septembra 17, Kladovo<br><br>
+<i class="fas fa-phone"></i>&nbsp;019/801-801<br><br>   
+<i class="fas fa-envelope"></i>&nbsp;apotekatalia@gmail.com<br><br>
+<i class="fas fa-clock"></i>&nbsp;Radnim danima: 08:00 - 16:00 <br>
+Subotom: 08:00 - 20:00 <br>
+Nedeljom: 08:00 - 14:00
+		</div> 
+	</div>
+	<div class="kartica-slogan" >
+			<center><i>Apoteka TALIA je sa sedištem u Kladovu na adresi 22.oktobra 17, a radno vreme je svakog dana od 07 do 20h, subotom od 08 do 20h, nedeljom od 08 do 14h.<br>
+Za sva dodatna pitanja, predloge i nedoumice obratite nam se s poverenjem. Stojimo Vam na raspolaganju za svaki vid dalje saradnje.</i></center>  
+	</div>
+	
+		</div>
+</div>		
+		
+		
+		
+		
+	
 	
 </div>
-
+</div>
 	
  <button class="float" style="background-color: cornflowerblue" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up fa-2x"></i></button>			
 			

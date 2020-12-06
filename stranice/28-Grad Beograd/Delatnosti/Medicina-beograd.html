@@ -4,7 +4,10 @@
 <head>
 	<meta charset="utf-8">
 <!--Import Google Icon Font-->
-
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet"> 	
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:ital,wght@0,700;1,900&display=swap"> 
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <!--Import materialize.css-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -35,9 +38,9 @@
 <link rel="stylesheet" href="../../../css/footercss.css">	
 <link rel="stylesheet" href="../../../css/GlavniCss-zajecar.css" class="">
 <link rel="stylesheet" href="../../../css/floatingdugme.css" class="">	
-<link rel="stylesheet" href="../../../css/masonry.css"> 
-<link rel="stylesheet" href="../../../css/myInput.css">
-
+<link rel="stylesheet" href="../../../css/kartice-css-novo.css"> 
+<link rel="stylesheet" href="../../../css/myInpu.css">
+<link rel="stylesheet" href="../../../css/">
 
 
 <style>
@@ -59,29 +62,53 @@ h9 {
 
 		</head>
 
-		<body style="background-image:image " id="math.min">
+		<body>
 
 	  <!--- <div class="#" style="margin-bottom: 3%;margin-left: 4%; margin-right: 4%; background-color: rgb(255, 255, 255);">	--->
-		
+<!--Navbar-->
+<nav  class="navbar navbar-expand-lg navbar-dark primary-color">
+  <!-- Navbar brand -->
+  <a style="font-family: 'Russo One', sans-serif;" class="navbar-brand" href="https://redirex.rs">REDIREX</a>
+  <!-- Collapse button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="basicExampleNav">
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">	
+      <li class="nav-item">
+        <a class="nav-link" href="window.history.back();"><i class="fas fa-reply"></i>&nbsp;Nazad</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#text-9">Kontakt</a>
+      </li>
+      <!-- Dropdown -->
+      <li class="nav-item">
+        <a class="nav-link" href="https://redirex.rs/kako-se-oglasiti.html">Kako se oglasiti?</a>
+      </li>
+    </ul>
+    <!-- Links -->
+    <form class="form-inline">
+      <div class="md-form my-0">
+        <input id="myInput" type="text" placeholder="Pretraga">
+      </div>
+    </form>
+  </div>
+  <!-- Collapsible content -->
+</nav>
+<!--/.Navbar-->
+			
+			
 
 	   <!-- Meni s leve strane vidljiv na dektop--->
-  <nav id="vrh-navbar" class="navbar" style="background-color:rgba(12,64,118,1.00);">
-  	 <div class="navbar-brand" style="text-align: left; color: white" href="#">
-	   <a href="../../../index.html">	
-		 <p><h1><strong>Redirex</strong></h1></p>
-	   </a>		
-	 </div>
-			
-<ul class="navbar-ul">
 
-</ul>
-	
-</nav>
  
 
  
 <div class="center" >
-	  <img src="../1024px-Flag_of_Belgrade,_Serbia.svg.png" alt="" class="" style="width: 15vw">
+	  <img src="../1024px-Flag_of_Belgrade,_Serbia.svg.png" alt="" class="" style="width: 7em">
 	 
 	</div>
 	
@@ -94,466 +121,527 @@ h9 {
   
 <!-- Use any element to open/show the overlay navigation menu --> 
 		
-<input id="myInput" type="text" placeholder="Pretraga"> 
-		
+ 
+
 	
-			
-	
-<div class="masonry" id="Lista" style="list-style-type:none;">
+	<div class="kartice-glavno">
+	<div class="kartice-sve">
 
 <!--Dom za stara i odrasla lica NAJMILIJI-->
-<div class="column" style="width: rem" id="dom za stare">
-    <div class="col s12 m7 ">
-        <div class="card-image" style="text-align: center">
-          </div>
-        <div class="card-content" id="0" style="color: black">
-			<img style="display:block;margin:auto;width: 90%" src="../Delatnosti/Zdravlje i medicina/dom za starije - najmiliji/mali-logo.png"> <br> <p1>Zemun/Beograd</p1>
-			<hr>
-          <p1><h6>Dom za stara i odrasla lica NAJMILIJI</h6> <br></p1>
-<i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp; Vojni put 2.deo 293a, Zemun, Beograd<br>
-<i class="fas fa-phone"></i>&nbsp;&nbsp;011/408 5510; 065/403 7365 <br>
-<i class="fas fa-envelope"></i>&nbsp;&nbsp;dom.najmiliji@gmail.com	 <br> 
-<br> <br>
+<div id="0" class="kartica-telo -telo">
+		<div class="kartica-content content-">
+		  <div  class="kartica-slika" style="background: white">
+			<img src="../Delatnosti/Zdravlje i medicina/dom za starije - najmiliji/mali-logo.png" alt="">
+			</div>
+	<div class="kartica-info">
+			<h2><center>Dom za stara i odrasla lica NAJMILIJI</center></h2>
+			  
+		<hr class="solid" style="border-top: 1px solid gray; width: 70%; margin: auto; padding-bottom: 0.5em; margin-bottom: 0.4em">	  
+			  
+		<div class="kartica-kontakt">
+			  <i style="color: black" class="fas fa-map-marker-alt"></i>&nbsp;Vojni put 2.deo 293a, Zemun, Beograd<br><br>
+              <i style="color: black" class="fas fa-phone"></i>&nbsp;
+              Telefoni:&nbsp;011/408 5510 <br>
+			  065/403 7365<br> <br>
+              <i style="color: black" class="fas fa-envelope"></i>&nbsp;
+              Email:<br>
+              dom.najmiliji@gmail.com <br> <br>
+		</div> 
+	</div>
+	<div class="kartica-slogan" >
+			<center><i>Nov, udoban i luksuzan smeštaj, svima koji svoju starost žele da provedu u miru i zasluženoj nezi i pažnji.</i></center>  
+	</div>
+	<div class="drustvene-mreze" style="">
+		<hr class="solid" style="border-top: 1px solid gray; width: 100%; margin: auto; padding-bottom: 0.5em; margin-bottom: 0.4em">
 		
-Nov, udoban i luksuzan smeštaj, svima koji svoju starost žele da provedu u miru i zasluženoj nezi i pažnji. 
-Ceo dom je namenski građen za negu starih lica, pa se vodilo računa o svakoj prostoriji koja će služiti stanarima doma. 
-Prostorije su opremljene krevetima urađenim prema medicinskim standardima i zaštićeni ogradicama u cilju bezbednosti korisnika. 
-Sve zajedničke prostorije korisnika uređene su tako da im pružaju komfor,udobnost i uživanje u toplom kućnom ambijentu. 
-Dom Najmiliji je potpuno nova kuća sa potpuno novim nekorišćenim nameštajem.
-		  
-
-      
-        
-    <br><br><hr>
-        
-           <a href="https://www.facebook.com/Dom-za-stara-lica-Najmiliji-417747415054202/" target="_blank"><i class="fab fa-facebook-square fa-3x" style="color: dodgerblue; "></i></a>
+		<a href="https://www.facebook.com/Dom-za-stara-lica-Najmiliji-417747415054202/" target="_blank"><i class="fab fa-facebook-square fa-2x" style="color: #4F4F4F "></i></a>
 			
-	   <a href="http://www.najmiliji.rs" target="_blank"><i class="fas fa-globe fa-3x" style="color:rgba(57,171,235,1.00); "></i></a>			
+	   <a href="http://www.najmiliji.rs" target="_blank"><i class="fas fa-globe fa-2x" style="color:#4F4F4F "></i></a>
 			
-        </div>
-      </div>
-    </div>
+			  </div>
+		</div>
+</div>
 <!--Logopedski centar Lingua Logos-->
-<div class="column" style="width: rem">
-    <div class="col s12 m7">
-        <div class="card-image" style="text-align: center">
-          </div>
-        <div class="card-content" id="1" style="color: black">
-			<img style="display:block;margin:auto;width: 100%" src="../Delatnosti/Zdravlje i medicina/logoped. lingua/razvoj-govora-1024x576.png"> <br> <p1>Beograd</p1> 
-			<hr>
-          <p1><h6>Logopedski centar Lingua Logos</h6> <br>
-<i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Lingua Logos Centar 1
-Belville, Đorđa Stanojevića 11Đ
-1070 Novi Beograd<br> <br>
-<i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Lingua Logos Centar 2
-Belville, Jurija Gagarina 14B
-1070 Novi Beograd <br> <br>
-<i class="fas fa-phone"></i>&nbsp;&nbsp;011/6303-319<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;062/206-216<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;065/55-222-44<br>
-<i class="fas fa-envelope"></i>&nbsp;&nbsp;lingualogos@gmail.com<br>
-<i class="fas fa-clock"></i>&nbsp;&nbsp;Radnim danima: 8:30 - 20:00 			  
-<br> <br>
-U Logopedskom centru „Lingua Logos“ tim sačinjen od defektologa – logopeda, defektologa – somatopeda,
+<div id="1" class="kartica-telo crnibor-telo">
+		<div class="kartica-content crnibor-content">
+		  <div  class="kartica-slika" style="background: white">
+			<img src="../Delatnosti/Zdravlje i medicina/logoped. lingua/razvoj-govora-1024x576.png" alt="">
+			</div>
+	<div class="kartica-info">
+			<h2><center>Logopedski centar Lingua Logos</center></h2>
+			  
+		<hr class="solid" style="border-top: 1px solid gray; width: 70%; margin: auto; padding-bottom: 0.5em; margin-bottom: 0.4em">	  
+			  
+		<div class="kartica-kontakt">
+			  <i style="color: black" class="fas fa-map-marker-alt"></i>&nbsp;Lingua Logos Centar 1
+              Belville, Đorđa Stanojevića 11Đ
+              1070 Novi Beograd<br> <br>
+              <i class="fas fa-map-marker-alt"></i>&nbsp;Lingua Logos Centar 2
+              Belville, Jurija Gagarina 14B
+              1070 Novi Beograd <br> <br>
+              <i style="color: black" class="fas fa-phone"></i>&nbsp;
+              Telefoni:&nbsp;011/6303-319<br>
+              062/206-216<br>
+              065/55-222-44<br><br>
+              <i style="color: black" class="fas fa-envelope"></i>&nbsp;
+              Email:<br>
+              lingualogos@gmail.com <br> <br>
+		</div> 
+	</div>
+	<div class="kartica-slogan" >
+			<center><i>U Logopedskom centru „Lingua Logos“ tim sačinjen od defektologa – logopeda, defektologa – somatopeda,
  reedukatora psihomotorike i psihologa udružuje svoja polja ekspertize,
  kako bi na osnovu opservacije i procene odredio adekvatan program tretmana,
- prilagođen biološkom potencijalu i dinamici napredovanja svakog deteta ponaosob.
-			  	 
-</p1>
-        <br><br><hr>
-        
-           <a href="https://www.facebook.com/LinguaLogos/" target="_blank"><i class="fab fa-facebook-square fa-3x" style="color: dodgerblue; "></i></a>
+ prilagođen biološkom potencijalu i dinamici napredovanja svakog deteta ponaosob.</i></center>  
+	</div>
+	<div class="drustvene-mreze" style="">
+		<hr class="solid" style="border-top: 1px solid gray; width: 100%; margin: auto; padding-bottom: 0.5em; margin-bottom: 0.4em">
+		
+		<a href="https://www.facebook.com/LinguaLogos/" target="_blank"><i class="fab fa-facebook-square fa-2x" style="color: #4F4F4F "></i></a>
 			
-	   <a href="http://lingualogos.com/" target="_blank"><i class="fas fa-globe fa-3x" style="color:rgba(57,171,235,1.00); "></i></a>			
+	   <a href="http://lingualogos.com/" target="_blank"><i class="fas fa-globe fa-2x" style="color:#4F4F4F "></i></a>
 			
-        </div>
-      </div>
-    </div>
-<!--Optičarska Radnja Optika Soko-->	
-<div class="column">
-    <div class="col s12 m7">
-        <div class="card-image" style="text-align: center">
-          </div>
-        <div class="card-content" id="2" style="color: black">
-<img style="display:block;margin:auto;width: 100%" src="../Delatnosti/Zdravlje i medicina/Optika Soko/optika-soko-radnja-1064x531.jpg"><p1>Beograd</p1> <hr>			
-          <p1><h6>Optičarska Radnja Optika Soko</h6> <br>
-<i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Bulevar kralja Aleksandra 321, Beograd<br>
-<i class="fas fa-phone"></i>&nbsp;&nbsp;066 242 624<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;011 24 29 009<br>
-<i class="fas fa-envelope"></i>&nbsp;&nbsp;office@optikasoko.rs<br>
-<i class="fas fa-clock"></i>&nbsp;&nbsp;Radnim danima: 09:00 - 20:00 <br>
-			  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subotom: 09:00-14:00		  
-<br> <br>
-U prijatnom ambijentu naše optičarske radnje, očekuje Vas veliki izbor originalnih dioptrijskih ramova i stakala,
- renomiranih proizvođača, koji će Vaš pogled učiniti savršenim na daljinu i na blizinu.
-Naše profesionalno i stručno osoblje će Vam pružiti svu neophodnu pomoć prilikom izbora Vašeg para naočara,
- dati preporuku za odgovarajuća dioptrijska stakla (monofokalna, bifokalna ili progresivna)
- i za adekvatnu zaštitu (antirefleks, fotoćelije, polarizacija i dr).
-</p1>
-        <br><br><hr>
-        
-       <a href="https://www.facebook.com/optika.soko.beograd/" target="_blank"><i class="fab fa-facebook-square fa-3x" style="color: dodgerblue; "></i></a>
+			  </div>
+		</div>
+</div>
+<!--Optičarska Radnja Optika Soko-->
+<div id="2" class="kartica-telo crbinor-telo soko-mob-telo soko-css">
+		<div class="kartica-content crnibor-content soko-mob-content">
+		  <div  class="kartica-slika" style="background: white">
+			<img src="../Delatnosti/Zdravlje i medicina/Optika Soko/optika-soko-radnja-1064x531.jpg" alt="">
+			</div>
+	<div class="kartica-info">
+			<h2><center>Optičarska Radnja Optika Soko</center></h2>
+			  
+		<hr class="solid" style="border-top: 1px solid gray; width: 70%; margin: auto; padding-bottom: 0.5em; margin-bottom: 0.4em">	  
+			  
+		<div class="kartica-kontakt">
+			  <i style="color: black" class="fas fa-map-marker-alt"></i>&nbsp;Bulevar kralja Aleksandra 321, Beograd<br><br>
+              <i style="color: black" class="fas fa-phone"></i>&nbsp;
+              Telefoni:&nbsp;066 242 624 <br>
+			  011 24 29 009<br> <br>
+              <i style="color: black" class="fas fa-envelope"></i>&nbsp;
+              Email:<br>
+              office@optikasoko.rs <br> <br>
+			  <i class="fas fa-clock"></i>&nbsp;Radnim danima: 09:00 - 20:00 <br>
+			  Subotom: 09:00-14:00
+		</div> 
+	</div>
+	<div class="kartica-slogan" >
+			<center><i>U prijatnom ambijentu naše optičarske radnje, očekuje Vas veliki izbor originalnih dioptrijskih ramova i stakala,
+ renomiranih proizvođača, koji će Vaš pogled učiniti savršenim na daljinu i na blizinu.</i></center>  
+	</div>
+	<div class="drustvene-mreze" style="">
+		<hr class="solid" style="border-top: 1px solid gray; width: 100%; margin: auto; padding-bottom: 0.5em; margin-bottom: 0.4em">
+		
+		 <a href="https://www.facebook.com/optika.soko.beograd/" target="_blank"><i class="fab fa-facebook-square fa-2x" style="color:#4F4F4F "></i></a>
 			
-	   <a href="https://www.instagram.com/optika_soko/" target="_blank"><i class="fab fa-instagram-square fa-3x" style="color: rebeccapurple; "></i></a>
+	   <a href="https://www.instagram.com/optika_soko/" target="_blank"><i class="fab fa-instagram-square fa-2x" style="color:#4F4F4F "></i></a>
 			
-	   <a href="https://www.youtube.com/watch?time_continue=63&v=7I3kE8IkyEg&feature=emb_logo" target="_blank"><i class="fab fa-youtube-square fa-3x" style="color: red; "></i></a>		
+	   <a href="https://www.youtube.com/watch?time_continue=63&v=7I3kE8IkyEg&feature=emb_logo" target="_blank"><i class="fab fa-youtube-square fa-2x" style="color:#4F4F4F "></i></a>		
 			
-	   <a href="http://lingualogos.com/" target="_blank"><i class="fas fa-globe fa-3x" style="color:rgba(57,171,235,1.00); "></i></a>	
+	   <a href="http://lingualogos.com/" target="_blank"><i class="fas fa-globe fa-2x" style="color:#4F4F4F "></i></a>
+		
 			
-	   	
-			
-        
-      </div>
-    </div>
-  </div>
+			  </div>
+		</div>
+</div>
 <!--GALA DENT – Stomatološka ordinacija-->	
-<div class="column" style="width: rem">
-    <div class="col s12 m7">
-        <div class="card-image" style="text-align: center">
-          </div>
-        <div class="card-content" id="3" style="color: black">
-			<img style="display:block;margin:auto;width: 100%" src="../Delatnosti/Zdravlje i medicina/GALA DENT/28576094_886908381471409_8581742138858738753_n.png"><p1>Beograd</p1> <hr>
-          <p1><h6>GALA DENT – Stomatološka ordinacija</h6> <br>
-<i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Kneginje Zorke 94, 11000 Beograd<br>
-<i class="fas fa-phone"></i>&nbsp;&nbsp;+381 65 779 32 79<br>
-<i class="fas fa-envelope"></i>&nbsp;&nbsp;info@galadent.rs<br>
-<i class="fas fa-clock"></i>&nbsp;&nbsp;Radnim danima: 11:00 - 19:00
-			  		  
-<br> <br>
-Posetite nas i osetite energiju i lakoću Gala stila, koja je u osnovi brendova Gala Dent i Gala Art,
+<div id="3" class="kartica-telo crnibor-telo">
+		<div class="kartica-content crnibor-content">
+		  <div  class="kartica-slika" style="background: white">
+			<img src="../Delatnosti/Zdravlje i medicina/GALA DENT/28576094_886908381471409_8581742138858738753_n.png" alt="">
+			</div>
+	<div class="kartica-info">
+			<h2><center>GALA DENT – Stomatološka ordinacija</center></h2>
+			  
+		<hr class="solid" style="border-top: 1px solid gray; width: 70%; margin: auto; padding-bottom: 0.5em; margin-bottom: 0.4em">	  
+			  
+		<div class="kartica-kontakt">
+			  <i style="color: black" class="fas fa-map-marker-alt"></i>&nbsp;Kneginje Zorke 94, 11000 Beograd<br><br>
+              <i style="color: black" class="fas fa-phone"></i>&nbsp;
+              Telefoni:&nbsp;+381 65 779 32 79 <br><br>
+              <i style="color: black" class="fas fa-envelope"></i>&nbsp;
+              Email:<br>
+              info@galadent.rs <br> <br>
+			  <i class="fas fa-clock"></i>&nbsp;Radnim danima: 11:00 - 19:00 
+		</div> 
+	</div>
+	<div class="kartica-slogan" >
+			<center><i>Posetite nas i osetite energiju i lakoću Gala stila, koja je u osnovi brendova Gala Dent i Gala Art,
 sa kojom zajedno osmišljavamo, kreiramo i gradimo, novi osmeh za nove godine, novi izgled za nove životne sadržaje. 
-Osmesi ne liče jedni na druge – svaki osmeh je svojstven samo osobi koja ga nosi.
-</p1>
-        <br><br><hr>
-        
-       <a href="https://www.facebook.com/galadentordinacija/?ref=br_rs" target="_blank"><i class="fab fa-facebook-square fa-3x" style="color: dodgerblue; "></i></a>
+Osmesi ne liče jedni na druge – svaki osmeh je svojstven samo osobi koja ga nosi.</i></center>  
+	</div>
+	<div class="drustvene-mreze" style="">
+		<hr class="solid" style="border-top: 1px solid gray; width: 100%; margin: auto; padding-bottom: 0.5em; margin-bottom: 0.4em">
+		
+		<a href="https://www.facebook.com/galadentordinacija/?ref=br_rs" target="_blank"><i class="fab fa-facebook-square fa-2x" style="color: #4F4F4F "></i></a>
 			
-	   <a href="https://www.instagram.com/ordinacijagaladent/" target="_blank"><i class="fab fa-instagram-square fa-3x" style="color: rebeccapurple; "></i></a>
+	   <a href="https://www.instagram.com/ordinacijagaladent/" target="_blank"><i class="fab fa-instagram-square fa-2x" style="color: #4F4F4F "></i></a>
 			
-	   <a href="https://www.youtube.com/watch?v=Vlyp4uIbbpA" target="_blank"><i class="fab fa-youtube-square fa-3x" style="color: red; "></i></a>		
+	   <a href="https://www.youtube.com/watch?v=Vlyp4uIbbpA" target="_blank"><i class="fab fa-youtube-square fa-2x" style="color: #4F4F4F "></i></a>		
 			
-	   <a href="http://www.galadent.rs" target="_blank"><i class="fas fa-globe fa-3x" style="color:rgba(57,171,235,1.00); "></i></a>	
+	   <a href="http://www.galadent.rs" target="_blank"><i class="fas fa-globe fa-2x" style="color:#4F4F4F "></i></a>
 			
-	   
-      </div>
-    </div>
-  </div>
-<!--Ginekološka ordinacija dr Biljana Živaljević-->		
-<div class="column" style="width: rem">
-    <div class="col s12 m7">
-        <div class="card-image" style="text-align: center">
-           </div>
-        <div class="card-content" id="4" style="color: black">
-<img style="display:block;margin:auto;width: 100%" src="../Delatnosti/Zdravlje i medicina/Ginek. Biljana Živaljvić/83201594_2806292849416842_6648127697920720896_n.jpg"><p1>Beograd</p1> <hr>			
-          <p1><h6>Ginekološka ordinacija dr Biljana Živaljević</h6> <br>
-<i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Kumanovska 23, Beograd, Vračar<br>
-<i class="fas fa-phone"></i>&nbsp;&nbsp;065/691-5765<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;063/691-576 <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;011/407-58-39<br>		  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;011/386-3716<br>  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;011/386-35-77<br>
-<i class="fas fa-envelope"></i>&nbsp;&nbsp;biljanazivaljevic@gmail.com<br>
-<i class="fas fa-clock"></i>&nbsp;&nbsp;Radnim danima: 12:00 - 19:00
-			  		  
-<br> <br>
-Sistematski ginekološki pregled <br>
-– kolposkopija&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;– PAPA<br>
-–VB&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;– CB<br>
-– brisevi na STB<br><br>
+			  </div>
+		</div>
+</div>	
+<!--Ginekološka ordinacija dr Biljana Živaljević-->
+<div id="4" class="kartica-telo biljanaginek-telo">
+		<div class="kartica-content biljanaginek-content">
+		  <div  class="kartica-slika" style="background: white">
+			<img src="../Delatnosti/Zdravlje i medicina/Ginek. Biljana Živaljvić/83201594_2806292849416842_6648127697920720896_n.jpg" alt="">
+			</div>
+	<div class="kartica-info">
+			<h2><center>Ginekološka ordinacija dr Biljana Živaljević</center></h2>
+			  
+		<hr class="solid" style="border-top: 1px solid gray; width: 70%; margin: auto; padding-bottom: 0.5em; margin-bottom: 0.4em">	  
+			  
+		<div class="kartica-kontakt">
+			  <i style="color: black" class="fas fa-map-marker-alt"></i>&nbsp;Kumanovska 23, Beograd, Vračar<br><br>
+              <i style="color: black" class="fas fa-phone"></i>&nbsp;
+              Telefoni:&nbsp;065/691-5765<br>
+              063/691-576 <br>
+              011/407-58-39<br>		  
+              011/386-3716<br>  
+              011/386-35-77<br><br>
+              <i style="color: black" class="fas fa-envelope"></i>&nbsp;
+              Email:<br>
+              biljanazivaljevic@gmail.com <br> <br>
+			  <i class="fas fa-clock"></i>&nbsp;Radnim danima: 12:00 - 19:00
+		</div> 
+	</div>
+	<div class="kartica-slogan" >
+			<center><i>Sistematski ginekološki pregled <br>
+–kolposkopija –PAPA 
+–VB –CB<br>
+–brisevi na STB<br><br>
 			  
 Kontrola trudnoće<br>
-– 3D/4D UZ pregled&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;– CTG monitoring<br>
-– DOUBLE/TRIPL test&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;– citogenetika<br> <br>
+–3D/4D UZ pregled –CTG monitoring<br>
+–DOUBLE/TRIPL test –citogenetika<br> <br>
 
 Adolescentna ginekologija i savetovalište za kontracepciju
-– savetovalište je besplatno, termin po dogovoru
-			  
-			  
-</p1>
-       
-        
-        <br><br><hr>
-        
-       <a href="https://www.facebook.com/drZivaljevic/" target="_blank"><i class="fab fa-facebook-square fa-3x" style="color: dodgerblue; "></i></a>		
-			
-	   <a href="http://drzivaljevic.com" target="_blank"><i class="fas fa-globe fa-3x" style="color:rgba(57,171,235,1.00); "></i></a>	
-			
-	   	
-			
-        
-      </div>
-    </div>
-  </div>
-<!--Veterinarska ordinacija SALI VET-->		
-<div class="column" style="width: rem">
-    <div class="col s12 m7">
-        <div class="card-image" style="text-align: center">
-          </div>
-        <div class="card-content" id="5" style="color: black">
-			<img style="display:block;margin:auto;width: 100%" src="../Delatnosti/Zdravlje i medicina/vet Sali/veterinarska-ambulanta-sali-vet-10-4-1-300x120.jpg"><p1>Beograd</p1> <hr>
-          <p1><h6>Veterinarska ordinacija SALI VET</h6> <br>
-<i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Bulevar Arsenija Čarnojevića 145 blok38 , Belgrade, Serbia<br>
-<i class="fas fa-phone"></i>&nbsp;&nbsp;011/8488-138<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;011/2141-112<br>
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;064/3498-914<br>
-<i class="fas fa-envelope"></i>&nbsp;&nbsp;sreten.dubljevic@gmail.com<br>
-<i class="fas fa-clock"></i>&nbsp;&nbsp;Radnim danima: 09:00 - 18:00 <br>
-			  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subotom: 09:00-14:00		  
-<br> <br>
-Za vaše ljubimce: <br>
-– obeležavanje mikročipom<br>
-– vakcinacija protiv besnila i ostale vakcinacije<br>
-– klinički pregled, dijagnoza i lečenje<br>
-– akuširanje (pomoć pri porođaju)<br>
-– stručne savete u vezi sprečavanja pojave bolesti (preventive), ishrane, nege i držanje.<br><br>
-Patronažna služba – dolazak na poziv<br><br>
-
-Dežurni telefoni mobilni:<br>
-tel: +381 69 773 359<br>
-tel: +381 69 773 358<br>
-email: roda.lo28@gmail.com
-			  
-			  
-</p1>
-        
-        
-        <br><br><hr>
+– savetovalište je besplatno, termin po dogovoru</i></center>  
+	</div>
+	<div class="drustvene-mreze" style="">
+		<hr class="solid" style="border-top: 1px solid gray; width: 100%; margin: auto; padding-bottom: 0.5em; margin-bottom: 0.4em">
 		
-      </div>
-    </div>
-  </div>
-<!--Biohemijska i mikro biološka labaratorija Mak Lab-->		
-<div class="column" style="width: rem">
-    <div class="col s12 m7">
-        <div class="card-image" style="text-align: center">
-          </div>
-        <div class="card-content" id="6" style="color: black">
-<img style="display:block;margin:auto;width: 100%" src="../Delatnosti/Zdravlje i medicina/lab. Mak Lab/louis-reed-747388-unsplash-1064x709-1-1064x709.jpg"><p1>Beograd</p1> <hr>			
-          <p1><h6>Biohemijska i mikro biološka labaratorija Mak Lab</h6> <br>
-<i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Biohemijska laboratorija <br>
+		      <a href="https://www.facebook.com/drZivaljevic/" target="_blank"><i class="fab fa-facebook-square fa-2x" style="color:#4F4F4F "></i></a>		
+			
+	   <a href="http://drzivaljevic.com" target="_blank"><i class="fas fa-globe fa-2x" style="color:#4F4F4F "></i></a>	
+			
+			  </div>
+		</div>
+</div>
+<!--Veterinarska ordinacija SALI VET-->	
+<div id="5" class="kartica-telo crnibor-telo">
+		<div class="kartica-content crnibor-content">
+		  <div  class="kartica-slika" style="background: white">
+			<img src="../Delatnosti/Zdravlje i medicina/vet Sali/veterinarska-ambulanta-sali-vet-10-4-1-300x120.jpg" alt="">
+			</div>
+	<div class="kartica-info">
+			<h2><center>Veterinarska ordinacija SALI VET</center></h2>
+			  
+		<hr class="solid" style="border-top: 1px solid gray; width: 70%; margin: auto; padding-bottom: 0.5em; margin-bottom: 0.4em">	  
+			  
+		<div class="kartica-kontakt">
+<i class="fas fa-map-marker-alt"></i>&nbsp;Bulevar Arsenija Čarnojevića 145 blok38 , Belgrade, Serbia<br><br>
+<i class="fas fa-phone"></i>&nbsp;011/8488-138<br><br>
+011/2141-112<br>
+064/3498-914<br>
+<i class="fas fa-envelope"></i>&nbsp;sreten.dubljevic@gmail.com<br><br>
+<i class="fas fa-clock"></i>&nbsp;Radnim danima: 09:00 - 18:00 <br>
+Subotom: 09:00-14:00
+		</div> 
+	</div>
+	<div class="kartica-slogan" >
+			<center><i>
+<strong>Patronažna služba – dolazak na poziv</strong><br><br>
+
+<strong>Dežurni telefoni mobilni:</strong><br>
+<strong>tel:</strong> +381 69 773 359<br>
+<strong>tel:</strong> +381 69 773 358<br>
+<strong>email:</strong> roda.lo28@gmail.com</i></center>  
+	</div>
+	<div class="drustvene-mreze" style="">
+		<hr class="solid" style="border-top: 1px solid gray; width: 100%; margin: auto; padding-bottom: 0.5em; margin-bottom: 0.4em">
+		
+		<a href="https://www.facebook.com/Dom-za-stara-lica-Najmiliji-417747415054202/" target="_blank"><i class="fab fa-facebook-square fa-2x" style="color: #4F4F4F "></i></a>
+			
+	   <a href="http://www.najmiliji.rs" target="_blank"><i class="fas fa-globe fa-2x" style="color:#4F4F4F "></i></a>
+			
+			  </div>
+		</div>
+</div>	
+<!--Biohemijska i mikro biološka labaratorija Mak Lab-->	
+<div id="6" class="kartica-telo maklab-telo">
+		<div class="kartica-content maklab-content">
+		  <div  class="kartica-slika" style="background: white">
+			<img src="../Delatnosti/Zdravlje i medicina/lab. Mak Lab/louis-reed-747388-unsplash-1064x709-1-1064x709.jpg" alt="">
+			</div>
+	<div class="kartica-info">
+			<h2><center>Biohemijska i mikro biološka labaratorija Mak Lab</center></h2>
+			  
+		<hr class="solid" style="border-top: 1px solid gray; width: 70%; margin: auto; padding-bottom: 0.5em; margin-bottom: 0.4em">	  
+			  
+		<div class="kartica-kontakt">
+<i class="fas fa-map-marker-alt"></i>&nbsp;<strong>Biohemijska laboratorija:</strong> <br>
     Generala Štefanika 18, lokal 2, Beograd<br>
-    011/630 67 13<br>
+<i class="fas fa-phone"></i>&nbsp;011/630 67 13<br>
     063/85 08 299<br> <br>
 			  
-<i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Mikrobiološka laboratorija <br>
+<i class="fas fa-map-marker-alt"></i>&nbsp;<strong>Mikrobiološka laboratorija:</strong> <br>
     Meštrovićeva 30b, Voždovac, Beograd <br>
-    011/398 22 60 <br>
+<i class="fas fa-phone"></i>&nbsp;011/398 22 60 <br>
     069/31 69 269<br> <br>			  
 
 <i class="fas fa-phone"></i>&nbsp;&nbsp;(011/630-67-13)<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(063/850-82-99)<br>
+    (063/850-82-99)<br>	<br>
     
-<i class="fas fa-envelope"></i>&nbsp;&nbsp;maklaboratorija@gmail.com<br>
-<i class="fas fa-clock"></i>&nbsp;&nbsp;Radnim danima: 07:00 - 19:00 <br>
-			  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subotom: 08:00-16:00		  
-<br> <br>
-Od usluga Vam nudimo: <br><br>
+<i class="fas fa-envelope"></i>&nbsp;maklaboratorija@gmail.com<br> <br>
+<i class="fas fa-clock"></i>&nbsp;Radnim danima: 07:00 - 19:00 <br>
+			  Subotom: 08:00-16:00
+		</div> 
+	</div>
+	<div class="kartica-slogan" >
+			<center><i>Od usluga Vam nudimo: <br><br>
 
-    Proveru krvne slike<br>
-    Kkagulaciju<br>
-    Pregled urina / Pojedinačni uzorak<br>
-    24-časovni urin ili urin u vremenskom intervalu<br>
-    Biohemiju<br>
-    Ukupni antioksidativni status<br>
-    Specifične proteine<br>
-    Imunologiju<br>
-    Test netolerancije na hranu<br>
-    Hormone<br>
-    Tumor markere<br>
-    Spermogram<br>
-    Koncentraciju lekova u krvi<br>
-    Mikrobiologiju<br>
-</p1>
-        
-        
-        <br><br><hr>
-        
-       <a href="https://www.facebook.com/profile.php?id=100012562428925&lst=100013202503344%3A100012562428925%3A1514282192" target="_blank"><i class="fab fa-facebook-square fa-3x" style="color: dodgerblue; "></i></a>	
-			
-	   <a href="http://maklab.rs" target="_blank"><i class="fas fa-globe fa-3x" style="color:rgba(57,171,235,1.00); "></i></a>	
+    Proveru krvne slike / 
+    Koagulaciju/
+    Pregled urina / Pojedinačni uzorak / <br>
+    24-časovni urin ili urin u vremenskom intervalu / 
+    Biohemiju / <br>
+    Ukupni antioksidativni status / 	
+    Specifične proteine / 
+    Imunologiju / <br>
+    Test netolerancije na hranu/ 
+    Hormone / 
+    Tumor markere / 
+    Spermogram / 
+    Koncentraciju lekova u krvi / 
+    Mikrobiologiju<br></i></center>  
+	</div>
+	<div class="drustvene-mreze" style="">
+		<hr class="solid" style="border-top: 1px solid gray; width: 100%; margin: auto; padding-bottom: 0.5em; margin-bottom: 0.4em">
 		
-      </div>
-    </div>
-  </div>
-<!--Internističko kardiološka ordinacija MEDISIN 59-->		
-<div class="column" style="width: rem">
-    <div class="col s12 m7">
-        <div class="card-image" style="text-align: center">
-          </div>
-        <div class="card-content" id="7" style="color: black">
-<img style="display:block;margin:auto;width: 100%" src="../Delatnosti/Zdravlje i medicina/Medisin 59/header.jpg"><p1>Beograd</p1> <hr>			
-          <p1><h6>Internističko kardiološka ordinacija MEDISIN 59</h6> <br>
-<i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Gospodar Jevremova 59, Beograd<br>
-<i class="fas fa-phone"></i>&nbsp;&nbsp;011/4040-044<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;069/4455-445<br>
-<i class="fas fa-envelope"></i>&nbsp;&nbsp;office@medisin.rs<br>
-<i class="fas fa-clock"></i>&nbsp;&nbsp;Radnim danima: 09:00 - 19:00
-			  		  
-<br> <br>
-Specijalistička ordinacija u oblasti interne medicine „Medisin“ je moderna ordinacija, klasičnih pogleda na medicinsku struku i nauku. 
-Moderna – jer je opremljena savremenim aparatima za dijagnostiku i lečenje, 
-a klasična u smislu posvećenosti bolesniku u naporu da se poboljša i unapredi njegovo zdravlje, a samim tim i kvalitet života.
-</p1>
-        <br><br><hr>		
+  <a href="https://www.facebook.com/profile.php?id=100012562428925&lst=100013202503344%3A100012562428925%3A1514282192" target="_blank"><i class="fab fa-facebook-square fa-2x" style="color: #4F4F4F "></i></a>	
 			
-	   <a href="http://medisin.rs" target="_blank"><i class="fas fa-globe fa-3x" style="color:rgba(57,171,235,1.00); "></i></a>	
+	   <a href="http://maklab.rs" target="_blank"><i class="fas fa-globe fa-2x" style="color:#4F4F4F "></i></a>
 			
-      </div>
-    </div>
-  </div>
-<!--Psihološko savetovalište Filipović-->		
-<div class="column" style="width: rem">
-    <div class="col s12 m7">
-        <div class="card-image" style="text-align: center">
-          </div>
-        <div class="card-content" id="8" style="color: black">
-<img style="display:block;margin:auto;width: 100%" src="../Delatnosti/Zdravlje i medicina/psih. Filipovic/49815667_2706526782705631_9134687915744428032_n.png"><p1>Beograd</p1> <hr>			
-          <p1><h6>Psihološko savetovalište Filipović</h6> <br>
-<i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Zaplanjska 84e, Beograd<br>
-<i class="fas fa-phone"></i>&nbsp;&nbsp;+381 62 220 406<br>
-<i class="fas fa-envelope"></i>&nbsp;&nbsp;office@savetovalistefilipovic.rs<br>
-			  <br>
-Svakom klijentu, paru, porodici, pristupam poštujući  njihove jedinstvene kapacitete za promenu, 
-kroz integrativni pristup u kome kombinujem metode i tehnike Sistemske porodične terapije, Rebt terapije, 
-Geštalt terapije,  znanja iz  komunikacionih i emocionalnih veština, i  po potrebi Hipnoterapije.
-</p1>
-        <br><br><hr>
-        
-       <a href="https://www.facebook.com/psihoterapija.biz/" target="_blank"><i class="fab fa-facebook-square fa-3x" style="color: dodgerblue; "></i></a>		
-			
-	   <a href="http://savetovalistefilipovic.rs" target="_blank"><i class="fas fa-globe fa-3x" style="color:rgba(57,171,235,1.00); "></i></a>	
-			
-      </div>
-    </div>
-  </div>
-<!--Dom Zdravlja Hemikal-->		
-<div class="column" style="width: rem">
-    <div class="col s12 m7">
-        <div class="card-image" style="text-align: center">
-          </div>
-        <div class="card-content" id="9" style="color: black">
-<img style="display:block;margin:auto;width: 100%" src="../Delatnosti/Zdravlje i medicina/Hemikal/12074596_623475731089460_3441508267015762564_n.jpg"><p1>Lazarevac/Beograd</p1> <hr>			
-          <p1><h6>Dom Zdravlja Hemikal</h6> <br>
-<i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Dr Đorđe Kovačević 18, Lazarevac<br>
-<i class="fas fa-phone"></i>&nbsp;&nbsp;014 226 741<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;065 254 29 64<br>
-<i class="fas fa-envelope"></i>&nbsp;&nbsp;milla.past@gmail.com<br>
-<i class="fas fa-clock"></i>&nbsp;&nbsp;Radnim danima: 07:00 - 21:00 <br>
-			  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subotom: 08:00-19:00 <br>	
-			  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nedeljom: 09:00-12:00
-<br> <br>
-U radom delu doma zdravlja nalazi se 10 specijalističkih ordinacija sa odgovarajućim čekaonicama, ultrazvučni kabinet, kardiološki kabinet, 
-holter EKG-a, holter krvnog pritiska itd, kompletna laboratorijska dijagnostika, biohemijske, hematološke, mikrobiološke, virusološke, imunološke, alergološke i druge analize. 
-Terenska služba Doma zdravlja radi 14 sati dnevno i opremljena je ultrazvukom najnovije generacije, aparatom za EKG, holterom EKG-a,
-holterom krvnog pritiska i laboratorijskim instrumentima za uzimanje uzoraka krvi i mokraće 
-</p1>
-        <br><br><hr>
-        
-       <a href="https://www.facebook.com/hemikalsistem/" target="_blank"><i class="fab fa-facebook-square fa-3x" style="color: dodgerblue; "></i></a>
-			
-	   <a href="https://www.youtube.com/watch?v=bJThwXvLFb8&feature=emb_logo" target="_blank"><i class="fab fa-youtube-square fa-3x" style="color: red; "></i></a>		
-			
-	   <a href="http://hemikal.com" target="_blank"><i class="fas fa-globe fa-3x" style="color:rgba(57,171,235,1.00); "></i></a>	
-			
-      </div>
-    </div>
-  </div>
-<!--Ordinacija Horus DR.Mirko Đorđević-->		
-<div class="column" style="width: rem">
-    <div class="col s12 m7">
-        <div class="card-image" style="text-align: center">
-          </div>
-        <div class="card-content" id="10" style="color: black">
-<img style="display:block;margin:auto;width: 100%" src="../Delatnosti/Zdravlje i medicina/Ordin. Horus/1-11-971x728.jpg"><p1>Beograd</p1> <hr>			
-          <p1><h6>Ordinacija Horus DR.Mirko Đorđević</h6> <br>
-<i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Bulevar Mihajla Pupina 145/62, Novi Beograd<br>
-<i class="fas fa-phone"></i>&nbsp;&nbsp;011 2147 317<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;064 3466 125<br>
-<i class="fas fa-envelope"></i>&nbsp;&nbsp;mirko@horus-bg.com<br>
-<i class="fas fa-clock"></i>&nbsp;&nbsp;Radnim danima: 09:00 - 17:00 <br>
-			  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subotom: 09:00-15:00		  
-<br> <br>
-Tretmanu AKUPUNKTUROM prethodi obavezna kompletna dijagnostika po principima tradicionalne medicine i na osnovu uvida u vašu medicinsku dokumentaciju. Praćenje efekata i rezultata tretmana vođenjem detaljne evidencije, omogućava doktoru da u narednim tretmanima preciznije odredi stepen vašeg napretka i optimalno modifikuje kombinacije akupunkturnih tačaka radi što uspešnijeg ukupnog tretmana.
-</p1>
-        <br><br><hr>
-        
-       <a href="https://www.facebook.com/Dr.Mirko.Sokol/" target="_blank"><i class="fab fa-facebook-square fa-3x" style="color: dodgerblue; "></i></a>
-			
-	   <a href="http://horusc.herokuapp.com/" target="_blank"><i class="fas fa-globe fa-3x" style="color:rgba(57,171,235,1.00); "></i></a>	
-			
-      </div>
-    </div>
-  </div>
-<!--Specijalistička ginekološko akušerska ordinacija EVA-->		
-<div class="column" style="width: rem" id="ginekologija">
-    <div class="col s12 m7">
-        <div class="card-image" style="text-align: center">
-          </div>
-        <div class="card-content" id="11" style="color: black">
-<img style="display:block;margin:auto;width: 100%" src="../Delatnosti/Zdravlje i medicina/spec. gin. Eva/19511160_314005035687714_5381718251021212730_n.jpg"><p1>Zemun/Beograd</p1> <hr>			
-          <p1><h6>Specijalistička ginekološko akušerska ordinacija EVA </h6> <br>
-<i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Dubrovačka 3, Zemun<br>
-<i class="fas fa-phone"></i>&nbsp;&nbsp;+381 11 316 3074<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+381 65 333 9353<br>
-<i class="fas fa-envelope"></i>&nbsp;&nbsp;ordinacijaeva@gmail.com		  
-<br><br>
-Specijalistička ginekološko akušerska ordinacija EVA osnovana je 2000. godine. Nalazi se u strogom centru Zemuna u Dubrovačkoj ulici br 3, kod M’cDonaldsa. <br>
-Zalažemo se za siguran i pouzdan način rada zbog čega smo stekli veliki ugled i ostvarili saradnju sa mnogim klijentima
-</p1>
-        <br><br><hr>
-        
-       <a href="https://www.facebook.com/ginekoloskaordinacijaeva" target="_blank"><i class="fab fa-facebook-square fa-3x" style="color: dodgerblue; "></i></a>	
-			
-	   <a href="http://ordinacijaeva.com" target="_blank"><i class="fas fa-globe fa-3x" style="color:rgba(57,171,235,1.00); "></i></a>	
-			
-	   	
-		<p class="hide">Specijalisticka ginekologija  ginekolog ginekoloska akuserska ordinacija EVA</p>	
-        
-      </div>
-    </div>
-  </div>
-<!--Salon za otklanjanje vaški i gnjida Beovaškica-->		
-<div class="column" style="width: rem">
-    <div class="col s12 m7">
-        <div class="card-image" style="text-align: center">
-          </div>
-        <div class="card-content" id="12" style="color: black">
-<img style="display:block;margin:auto;width: 100%" src="../Delatnosti/Zdravlje i medicina/beovaskica/salon-za-uklanjanje-vaski-i-gnjda-1.jpg"><p1>Beograd</p1> <hr>			
-          <p1><h6>Salon za otklanjanje vaški i gnjida Beovaškica</h6> <br>
-<i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Pančićeva 14, Beograd<br>
-<i class="fas fa-phone"></i>&nbsp;&nbsp;+381 11 21 86 974<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+381 61 17 57 095<br>
-<i class="fas fa-envelope"></i>&nbsp;&nbsp;beovaskica@gmail.com<br>
-<i class="fas fa-clock"></i>&nbsp;&nbsp;Radnim danima: 10:00 - 20:00 <br>
-			  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subotom: 10:00-15:00		  
-<br> <br>
-Specijalizovani salon za uklanjanje vaški i gnjida <br> <br>
--Frizerski salon BeoVaškica je specijalizovani salon za negu i higijenu glave.<br>
--Uspešno usklanjamo i eliminišemo Vaške i Gnjide iz Vaše kose.<br>
--Radimo pregled Vlasista tj glave, kose i zatim biramo najbolji tretman za Vas.<br>
--Koristimo savremene biljne preparate uz pomoć kojih s lakoćom rešavamo Vaš problem.<br>
+			  </div>
+		</div>
+</div>	
+<!--Internističko kardiološka ordinacija MEDISIN 59-->	
+<div id="7" class="kartica-telo crnibor-telo">
+		<div class="kartica-content crnibor-content">
+		  <div  class="kartica-slika" style="background: white">
+			<img src="../Delatnosti/Zdravlje i medicina/Medisin 59/header.jpg" alt="">
+			</div>
+	<div class="kartica-info">
+			<h2><center>Internističko kardiološka ordinacija MEDISIN 59</center></h2>
 			  
-</p1>
-        <br><br><hr>
-        
-       <a href="https://www.facebook.com/officebeovaskica/" target="_blank"><i class="fab fa-facebook-square fa-3x" style="color: dodgerblue; "></i></a>	
-			
-	   <a href="http://beovaskica.rs" target="_blank"><i class="fas fa-globe fa-3x" style="color:rgba(57,171,235,1.00); "></i></a>	
-			
-      </div>
-    </div>
-	
-	
-	
-  </div>
+		<hr class="solid" style="border-top: 1px solid gray; width: 70%; margin: auto; padding-bottom: 0.5em; margin-bottom: 0.4em">	  
+			  
+		<div class="kartica-kontakt">
+<i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Gospodar Jevremova 59, Beograd<br><br>
+<i class="fas fa-phone"></i>&nbsp;&nbsp;011/4040-044<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;069/4455-445<br><br>	
+<i class="fas fa-envelope"></i>&nbsp;&nbsp;office@medisin.rs<br> <br>
+<i class="fas fa-clock"></i>&nbsp;&nbsp;Radnim danima: 09:00 - 19:0
+		</div> 
+	</div>
+	<div class="kartica-slogan" >
+			<center><i>Specijalistička ordinacija u oblasti interne medicine „Medisin“ je moderna ordinacija, klasičnih pogleda na medicinsku struku i nauku. 
+Moderna – jer je opremljena savremenim aparatima za dijagnostiku i lečenje, 
+a klasična u smislu posvećenosti bolesniku u naporu da se poboljša i unapredi njegovo zdravlje, a samim tim i kvalitet života.</i></center>  
+	</div>
+	<div class="drustvene-mreze" style="">
+		<hr class="solid" style="border-top: 1px solid gray; width: 100%; margin: auto; padding-bottom: 0.5em; margin-bottom: 0.4em">
 		
-	
+<a href="http://medisin.rs" target="_blank"><i class="fas fa-globe fa-2x" style="color:#4F4F4F"></i></a>
+			
+			  </div>
+		</div>
+</div>	
+<!--Psihološko savetovalište Filipović-->
+<div id="8" class="kartica-telo crnibor-telo">
+		<div class="kartica-content crnibor-content">
+		  <div  class="kartica-slika" style="background: white">
+			<img src="../Delatnosti/Zdravlje i medicina/psih. Filipovic/49815667_2706526782705631_9134687915744428032_n.png" alt="">
+			</div>
+	<div class="kartica-info">
+			<h2><center>Psihološko savetovalište Filipović</center></h2>
+			  
+		<hr class="solid" style="border-top: 1px solid gray; width: 70%; margin: auto; padding-bottom: 0.5em; margin-bottom: 0.4em">	  
+			  
+		<div class="kartica-kontakt">
+<i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Zaplanjska 84e, Beograd<br><br>
+<i class="fas fa-phone"></i>&nbsp;&nbsp;+381 62 220 406<br><br>
+<i class="fas fa-envelope"></i>&nbsp;&nbsp;office@savetovalistefilipovic.rs<br><br>
+		</div> 
+	</div>
+	<div class="kartica-slogan" >
+			<center><i>Svakom klijentu, paru, porodici, pristupam poštujući  njihove jedinstvene kapacitete za promenu, 
+kroz integrativni pristup u kome kombinujem metode i tehnike Sistemske porodične terapije, Rebt terapije, 
+Geštalt terapije,  znanja iz  komunikacionih i emocionalnih veština, i  po potrebi Hipnoterapije.</i></center>  
+	</div>
+	<div class="drustvene-mreze" style="">
+		<hr class="solid" style="border-top: 1px solid gray; width: 100%; margin: auto; padding-bottom: 0.5em; margin-bottom: 0.4em">
+		
+       <a href="https://www.facebook.com/psihoterapija.biz/" target="_blank"><i class="fab fa-facebook-square fa-2x" style="color: #4F4F4F "></i></a>		
+			
+	   <a href="http://savetovalistefilipovic.rs" target="_blank"><i class="fas fa-globe fa-2x" style="color:#4F4F4F "></i></a>
+			
+			  </div>
+		</div>
+</div>	
+<!--Dom Zdravlja Hemikal-->	
+<div id="9" class="kartica-telo hemikal-telo">
+		<div class="kartica-content hemikal-content">
+		  <div  class="kartica-slika" style="background: white">
+			<img src="../Delatnosti/Zdravlje i medicina/Hemikal/12074596_623475731089460_3441508267015762564_n.jpg" alt="">
+			</div>
+	<div class="kartica-info">
+			<h2><center>Dom Zdravlja Hemikal</center></h2>
+			  
+		<hr class="solid" style="border-top: 1px solid gray; width: 70%; margin: auto; padding-bottom: 0.5em; margin-bottom: 0.4em">	  
+			  
+		<div class="kartica-kontakt">
+<i class="fas fa-map-marker-alt"></i>&nbsp;Dr Đorđe Kovačević 18, Lazarevac<br><br>
+<i class="fas fa-phone"></i>&nbsp;014 226 741<br>
+065 254 29 64<br><br>
+<i class="fas fa-envelope"></i>&nbsp;milla.past@gmail.com<br><br>
+<i class="fas fa-clock"></i>&nbsp;Radnim danima: 07:00 - 21:00 <br>
+Subotom: 08:00-19:00 <br>	
+Nedeljom: 09:00-12:00
+		</div> 
+	</div>
+	<div class="kartica-slogan" >
+			<center><i>
+U radom delu doma zdravlja nalazi se 10 specijalističkih ordinacija sa odgovarajućim čekaonicama, ultrazvučni kabinet, kardiološki kabinet, 
+holter EKG-a, holter krvnog pritiska itd, kompletna laboratorijska dijagnostika, biohemijske, hematološke, mikrobiološke, virusološke, imunološke, alergološke i druge analize. <br>
+Terenska služba Doma zdravlja radi 14 sati dnevno i opremljena je ultrazvukom najnovije generacije, aparatom za EKG, holterom EKG-a,
+holterom krvnog pritiska i laboratorijskim instrumentima za uzimanje uzoraka krvi i mokraće</i></center>  
+	</div>
+	<div class="drustvene-mreze" style="">
+		<hr class="solid" style="border-top: 1px solid gray; width: 100%; margin: auto; padding-bottom: 0.5em; margin-bottom: 0.4em">
+		
+       <a href="https://www.facebook.com/hemikalsistem/" target="_blank"><i class="fab fa-facebook-square fa-2x" style="color:#4F4F4F "></i></a>
+			
+	   <a href="https://www.youtube.com/watch?v=bJThwXvLFb8&feature=emb_logo" target="_blank"><i class="fab fa-youtube-square fa-2x" style="color:#4F4F4F "></i></a>		
+			
+	   <a href="http://hemikal.com" target="_blank"><i class="fas fa-globe fa-2x" style="color:#4F4F4F "></i></a>
+			
+			  </div>
+		</div>
+</div>	
+<!--Ordinacija Horus DR.Mirko Đorđević-->	
+<div id="10" class="kartica-telo crnibor-telo">
+		<div class="kartica-content crnibor-content">
+		  <div  class="kartica-slika" style="background: white">
+			<img src="../Delatnosti/Zdravlje i medicina/Ordin. Horus/1-11-971x728.jpg" alt="">
+			</div>
+	<div class="kartica-info">
+			<h2><center>Ordinacija Horus DR.Mirko Đorđević</center></h2>
+			  
+		<hr class="solid" style="border-top: 1px solid gray; width: 70%; margin: auto; padding-bottom: 0.5em; margin-bottom: 0.4em">	  
+			  
+		<div class="kartica-kontakt">
+<i class="fas fa-map-marker-alt"></i>&nbsp;Bulevar Mihajla Pupina 145/62, Novi Beograd<br><br>
+<i class="fas fa-phone"></i>&nbsp;011 2147 317<br>
+064 3466 125<br><br>
+<i class="fas fa-envelope"></i>&nbsp;mirko@horus-bg.com<br><br>
+<i class="fas fa-clock"></i>&nbsp;Radnim danima: 09:00 - 17:00 <br>
+Subotom: 09:00-15:00
+		</div> 
+	</div>
+	<div class="kartica-slogan" >
+			<center><i>Tretmanu AKUPUNKTUROM prethodi obavezna kompletna dijagnostika po principima tradicionalne medicine i na osnovu uvida u vašu medicinsku dokumentaciju.</i></center>  
+	</div>
+	<div class="drustvene-mreze" style="">
+		<hr class="solid" style="border-top: 1px solid gray; width: 100%; margin: auto; padding-bottom: 0.5em; margin-bottom: 0.4em">
+		
+       <a href="https://www.facebook.com/Dr.Mirko.Sokol/" target="_blank"><i class="fab fa-facebook-square fa-2x" style="color: #4F4F4F "></i></a>
+			
+	   <a href="http://horusc.herokuapp.com/" target="_blank"><i class="fas fa-globe fa-2x" style="color:#4F4F4F "></i></a>	
+			
+			  </div>
+		</div>
+</div>	
+<!--Specijalistička ginekološko akušerska ordinacija EVA-->	
+<div id="11" class="kartica-telo crnibor-telo">
+		<div class="kartica-content crnibor-content">
+		  <div  class="kartica-slika" style="background: white">
+			<img src="../Delatnosti/Zdravlje i medicina/spec. gin. Eva/19511160_314005035687714_5381718251021212730_n.jpg" alt="">
+			</div>
+	<div class="kartica-info">
+			<h2><center>Specijalistička ginekološko akušerska ordinacija EVA </center></h2>
+			  
+		<hr class="solid" style="border-top: 1px solid gray; width: 70%; margin: auto; padding-bottom: 0.5em; margin-bottom: 0.4em">	  
+			  
+		<div class="kartica-kontakt">
+<i class="fas fa-map-marker-alt"></i>&nbsp;Dubrovačka 3, Zemun<br><br>
+<i class="fas fa-phone"></i>&nbsp;+381 11 316 3074<br>
++381 65 333 9353<br><br>
+<i class="fas fa-envelope"></i>&nbsp;ordinacijaeva@gmail.com		  
+		</div> 
+	</div>
+	<div class="kartica-slogan" >
+			<center><i>Specijalistička ginekološko akušerska ordinacija EVA osnovana je 2000. godine. Nalazi se u strogom centru Zemuna u Dubrovačkoj ulici br 3, kod M’cDonaldsa. <br>
+Zalažemo se za siguran i pouzdan način rada zbog čega smo stekli veliki ugled i ostvarili saradnju sa mnogim klijentima</i></center>  
+	</div>
+	<div class="drustvene-mreze" style="">
+		<hr class="solid" style="border-top: 1px solid gray; width: 100%; margin: auto; padding-bottom: 0.5em; margin-bottom: 0.4em">
+		
+       <a href="https://www.facebook.com/ginekoloskaordinacijaeva" target="_blank"><i class="fab fa-facebook-square fa-2x" style="color:#4F4F4F "></i></a>	
+			
+	   <a href="http://ordinacijaeva.com" target="_blank"><i class="fas fa-globe fa-2x" style="color:#4F4F4F "></i></a>	
+			
+			  </div>
+		</div>
+</div>	
+<!--Salon za otklanjanje vaški i gnjida Beovaškica-->	
+<div id="12" class="kartica-telo beovas-telo">
+		<div class="kartica-content beovas-content">
+		  <div  class="kartica-slika" style="background: white">
+			<img src="../Delatnosti/Zdravlje i medicina/beovaskica/salon-za-uklanjanje-vaski-i-gnjda-1.jpg" alt="">
+			</div>
+	<div class="kartica-info">
+			<h2><center>Salon za otklanjanje vaški i gnjida Beovaškica</center></h2>
+			  
+		<hr class="solid" style="border-top: 1px solid gray; width: 70%; margin: auto; padding-bottom: 0.5em; margin-bottom: 0.4em">	  
+			  
+		<div class="kartica-kontakt">
+<i class="fas fa-map-marker-alt"></i>&nbsp;Pančićeva 14, Beograd<br><br>
+<i class="fas fa-phone"></i>&nbsp;+381 11 21 86 974<br>
++381 61 17 57 095<br><br>
+<i class="fas fa-envelope"></i>&nbsp;beovaskica@gmail.com<br><br>
+<i class="fas fa-clock"></i>&nbsp;Radnim danima: 10:00 - 20:00 <br>
+Subotom: 10:00-15:00
+		</div> 
+	</div>
+	<div class="kartica-slogan" >
+			<center><i>Specijalizovani salon za uklanjanje vaški i gnjida <br> </i></center>  
+	</div>
+	<div class="drustvene-mreze" style="">
+		<hr class="solid" style="border-top: 1px solid gray; width: 100%; margin: auto; padding-bottom: 0.5em; margin-bottom: 0.4em">
+		
+       <a href="https://www.facebook.com/officebeovaskica/" target="_blank"><i class="fab fa-facebook-square fa-2x" style="color: #4F4F4F "></i></a>	
+			
+	   <a href="http://beovaskica.rs" target="_blank"><i class="fas fa-globe fa-2x" style="color:#4F4F4F "></i></a>	
+			
+			  </div>
+		</div>
+</div>		
+		
+		
 </div>
-
+</div>
  <button class="float" style="background-color: cornflowerblue" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up fa-2x"></i></button> 
 
 
-<!-- ^^^vidljivo na telefonima ^^^--> 
+ 
 
 <div class="footer">
 <p><h3 style="margin-bottom: em"></h3></p>	
@@ -726,12 +814,13 @@ Specijalizovani salon za uklanjanje vaški i gnjida <br> <br>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
 <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js?ver=5.4.2"></script>
 
-<script>var cards = $(".column");
+<script>var cards = $(".kartica-telo");
 for(var i = 0; i < cards.length; i++){
     var target = Math.floor(Math.random() * cards.length -1) + 1;
     var target2 = Math.floor(Math.random() * cards.length -1) +1;
     cards.eq(target).before(cards.eq(target2));
 }
+
 			</script>	
 </body>
 </html>

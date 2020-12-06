@@ -4,7 +4,11 @@
 <head>
 	<meta charset="utf-8">
 <!--Import Google Icon Font-->
-
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet"> 	
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:ital,wght@0,700;1,900&display=swap" rel="stylesheet"> <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:ital,wght@0,700;1,900&display=swap" rel="stylesheet"> 
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <!--Import materialize.css-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -35,7 +39,7 @@
 <link rel="stylesheet" href="../../../../css/footercss.css">	
 <link rel="stylesheet" href="../../../../css/GlavniCss-zajecar.css" class="">
 <link rel="stylesheet" href="../../../../css/floatingdugme.css" class="">	
-<link rel="stylesheet" href="../../../../css/masonry.css"> 
+<link rel="stylesheet" href="../../../../css/kartice-css-novo.css"> 
 <link rel="stylesheet" href="../../../../css/myInput.css">
 
 
@@ -76,21 +80,40 @@ h9 {
 	  
 	<body>	
 
-	   <!-- Meni s leve strane vidljiv na dektop--->
-  <nav id="vrh-navbar" class="navbar" style="background-color:rgba(12,64,118,1.00);">
-  	 <div class="navbar-brand" style="text-align: left; color: white" href="#">
-	   <a href="../../../../index.html">	
-		 <p><h1><strong>Redirex</strong></h1></p>
-	   </a>		
-	 </div>
-			
-<ul class="navbar-ul">
-
-</ul>
-	
-</nav> 
- 
- <div class="center" >
+	   <!-- Meni s leve strane vidljiv na dektop---><!--Navbar-->
+<nav  class="navbar navbar-expand-lg navbar-dark primary-color">
+  <!-- Navbar brand -->
+  <a style="font-family: 'Russo One', sans-serif;" class="navbar-brand" href="https://redirex.rs">REDIREX</a>
+  <!-- Collapse button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="basicExampleNav">
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">	
+      <li class="nav-item">
+        <a class="nav-link" href="window.history.back();"><i class="fas fa-reply"></i>&nbsp;Nazad</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#text-9">Kontakt</a>
+      </li>
+      <!-- Dropdown -->
+      <li class="nav-item">
+        <a class="nav-link" href="https://redirex.rs/kako-se-oglasiti.html">Kako se oglasiti?</a>
+      </li>
+    </ul>
+    <!-- Links -->
+    <form class="form-inline">
+      <div class="md-form my-0">
+        <input id="myInput" type="text" placeholder="Pretraga">
+      </div>
+    </form>
+  </div>
+  <!-- Collapsible content -->
+</nav>
+<!--/.Navbar--><div class="center" >
 	  <img src="../800px-Grb_pozarevca.svg.png" alt="" class="" style="width: 9em">
 	 
 	</div>
@@ -98,42 +121,41 @@ h9 {
 	<h1>Požarevac</h1> 
 	<h2>- Zanatske usluge -</h2>
 </div>
-<hr class="solid" style="border-top: 1px solid gray; width: 100%; margin: auto; padding-bottom: 0.5em">	
-  
-<input id="myInput" type="text" placeholder="Pretraga">
-
-<div class="masonry" id="Lista" style="list-style-type:none;margin-top: 8em" >
-
-<!--Montaža I Remont Pekarske Opreme Jenet DOO-->
-    <div class="column">
-    <div class="col s12 m7 " >
-	<i class="fas fa-thumbs-up fa-3x" style="transform: rotate(-15deg)"></i>	
-        <div class="card-image" style="text-align: center">
-          </div>
-        <div class="card-content" style="color: black">
-<img style="display:block;margin:auto;width: 90%" src="../Delatnosti/Usluge/Jole- kotao/IMG_20201201_005840[1].jpg"><p1>Požarevac</p1> <hr>			
-          <p1><h6>Jocić Grejanje : majstor Jocić Dejan-Jole </h6> <br>
-<i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Prizrenska 3<br>
-<i class="fas fa-phone"></i>&nbsp;&nbsp;063/860-88-14<br>
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;012/7213-452 <br> 
-<br> <br>
--Centalno, solarno i podno grejanje- <br>
+<hr class="solid" style="border-top: 1px solid gray; width: 100%; margin: auto; padding-bottom: 0.5em">
+	<div class="kartice-glavno">
+	<div class="kartice-sve">
+		
+<!--Jocić Grejanje : majstor Jocić Dejan-Jole-->
+    <div id="82" class="kartica-telo -telo">
+		<div class="kartica-content content-m">
+		  <div  class="kartica-slika" style="background: white">
+			<img src="../Delatnosti/Usluge/Jole- kotao/IMG_20201201_005840[1].jpg" alt="">
+			</div>
+	<div class="kartica-info">
+			<h2><center>Jocić Grejanje : majstor Jocić Dejan-Jole</center></h2>
+			  
+		<hr class="solid" style="border-top: 1px solid gray; width: 70%; margin: auto; padding-bottom: 0.5em; margin-bottom: 0.4em">	  
+			  
+		<div class="kartica-kontakt">
+<i class="fas fa-map-marker-alt"></i>&nbsp;Prizrenska 3<br><br>
+<i class="fas fa-phone"></i>&nbsp;063/860-88-14<br>
+012/7213-452 <br>
+		</div> 
+	</div>
+	<div class="kartica-slogan" >
+			<center><i>-Centalno, solarno i podno grejanje- <br>
 -Vodovodne instalacjie- <br><br>
-<b>POZOVITE NAS DA VAM UTOPLIMO DOM, SA NAMA NEMA ZIME</b> <br> <br>
-<b>Kvalitetan rad i povoljne cene</b>			  
-</p1>
-        
-        
-        <br><br>
-           
-        </div>
-      </div>
-    </div>
+POZOVITE NAS DA VAM UTOPLIMO DOM, SA NAMA NEMA ZIME <br> <br>
+Kvalitetan rad i povoljne cene</i></center>  
+	</div>
+	
+		</div>
+</div>
 	
 	
 	
   </div>
-
+</div>
 
 	
 	

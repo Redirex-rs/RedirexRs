@@ -4,7 +4,11 @@
 <head>
 	<meta charset="utf-8">
 <!--Import Google Icon Font-->
-
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet"> 	
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:ital,wght@0,700;1,900&display=swap" rel="stylesheet"> <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:ital,wght@0,700;1,900&display=swap" rel="stylesheet"> 
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <!--Import materialize.css-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -31,31 +35,46 @@
 <link rel="stylesheet" href="../../../../css/footercss.css">	
 <link rel="stylesheet" href="../../../../css/GlavniCss-zajecar.css" class="">
 <link rel="stylesheet" href="../../../../css/floatingdugme.css" class="">	
-<link rel="stylesheet" href="../../../../css/masonry.css"> 
+<link rel="stylesheet" href="../../../../css/kartice-css-novo.css"> 
 <link rel="stylesheet" href="../../../../css/myInput.css">
 
 		</head>
 
-		<body style="background-image:image " id="math.min">
-
-		
-
-  <nav id="vrh-navbar" class="navbar" style="background-color:rgba(12,64,118,1.00);">
-  	 <div class="navbar-brand" style="text-align: left; color: white" href="#">
-	   <a href="../../../../index.html">	
-		 <p><h1><strong>Redirex</strong></h1></p>
-	   </a>		
-	 </div>
-			
-<ul class="navbar-ul">
-
-</ul>
-	
-</nav> 
- 
- 
-<div class="center">
-	  <img src="../COA_Šabac_(big).png" alt="" class="" style="width: 9em">
+		<body style="background-image:image " id="math.min"><!--Navbar-->
+<nav  class="navbar navbar-expand-lg navbar-dark primary-color">
+  <!-- Navbar brand -->
+  <a style="font-family: 'Russo One', sans-serif;" class="navbar-brand" href="https://redirex.rs">REDIREX</a>
+  <!-- Collapse button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="basicExampleNav">
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">	
+      <li class="nav-item">
+        <a class="nav-link" href="window.history.back();"><i class="fas fa-reply"></i>&nbsp;Nazad</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#text-9">Kontakt</a>
+      </li>
+      <!-- Dropdown -->
+      <li class="nav-item">
+        <a class="nav-link" href="https://redirex.rs/kako-se-oglasiti.html">Kako se oglasiti?</a>
+      </li>
+    </ul>
+    <!-- Links -->
+    <form class="form-inline">
+      <div class="md-form my-0">
+        <input id="myInput" type="text" placeholder="Pretraga">
+      </div>
+    </form>
+  </div>
+  <!-- Collapsible content -->
+</nav>
+<!--/.Navbar--><div class="center">
+	  <img src="../COA_Šabac_(big).png" alt="" class="" style="width: 6em">
 	 
 	</div>
 	
@@ -71,49 +90,49 @@
 <!-- Use any element to open/show the overlay navigation menu --> 
 
 
-<input id="myInput" type="text" placeholder="Pretraga">
+<input style="margin-bottom: 10em" id="myInput" type="text" placeholder="Pretraga">
 
-<div class="masonry" id="Lista" style="list-style-type:none;" >
-<!--Stomatološka ordinacija DR MATIĆ-->	
-	<div class="column" style="width: rem">
-   <div class="col s12 m7">
-       <div class="card-image" style="text-align: center">
-        </div>
-        <div class="card-content" id="31" style="color: black">
- <img style="display:block;margin:auto;width: 100%" src="zdravlje i medicina/stom. Dr. Matic/Who-regulates-your-dentists-practice-612x409.jpg"><p1>Šabac
-</p1> <hr>			
-          <p1><h6>Stomatološka ordinacija DR MATIĆ</h6> <br>
-<i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp; Hilandarska 9a, Šabac<br>
-<i class="fas fa-phone"></i>&nbsp;&nbsp;061/6342-055<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;015/314-106<br>
+<div class="kartice-glavno">
+  <div class="kartice-sve">
+	  
+<!--Stomatološka ordinacija DR MATIĆ-->
+<div id="31" class="kartica-telo -telo">
+		<div class="kartica-content content-l">
+		  <div  class="kartica-slika" style="background: white">
+			<img src="zdravlje i medicina/stom. Dr. Matic/Who-regulates-your-dentists-practice-612x409.jpg" alt="">
+			</div>
+	<div class="kartica-info">
+			<h2><center>Stomatološka ordinacija DR MATIĆ</center></h2>
 			  
-<i class="fas fa-envelope"></i>&nbsp;&nbsp;matictatjana80@gmail.com<br>
-<i class="fas fa-clock"></i>&nbsp;&nbsp;Radnim danima: 09:00 - 19:00 <br>
-			  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subotom: po pozivu
-<br> <br>			  
-Svi pregledi i konsultacije koji su BESPLATNI se zakazuju.
+		<hr class="solid" style="border-top: 1px solid gray; width: 70%; margin: auto; padding-bottom: 0.5em; margin-bottom: 0.4em">	  
+			  
+		<div class="kartica-kontakt">
+<i class="fas fa-map-marker-alt"></i>&nbsp; Hilandarska 9a, Šabac<br><br>
+<i class="fas fa-phone"></i>&nbsp;061/6342-055<br>
+015/314-106<br><br>		  
+<i class="fas fa-envelope"></i>&nbsp;matictatjana80@gmail.com<br><br>
+<i class="fas fa-clock"></i>&nbsp;Radnim danima: 09:00 - 19:00 <br>
+Subotom: po pozivu
+		</div> 
+	</div>
+	<div class="kartica-slogan" >
+			<center><i>Svi pregledi i konsultacije koji su BESPLATNI se zakazuju.
 Nudimo pogodnosti odloženog plaćanja na VI-mesečnih rata (putem administrativne zabrane ili čekovima gradjana). <br><br>
 
 Usluge koje pružamo iz domena stomatologije i estetske medicine obuhvataju:<br>
 -sve vrste rekonstruktivnih i estetskih stomatoloških zahvata<br>
 -protetike<br>
 -ortopedije vilica<br>
--dečije i preventivne stomatologije i ANTIAGING program<br><br>
-
-ANTIAGING program obuhvata:<br>
- -hijaluronske filere<br>
--botox tretmane<br>
--mezoterapije lica i tela<br>
--lipolize<br>
--hem.pilinge<br>
--PLAZMA PEN tretmane.<br>	
-</p1>
-        </div>
-        
-      </div>
-    </div>
-  </div>
+-dečije i preventivne stomatologije i ANTIAGING program<br><br></i></center>  
+	</div>
 	
+		</div>
+</div>	  
+	  
+	  
+	  
+  </div>
+</div>
 
 
 

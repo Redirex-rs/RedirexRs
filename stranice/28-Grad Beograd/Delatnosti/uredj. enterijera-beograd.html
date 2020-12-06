@@ -4,7 +4,11 @@
 <head>
 	<meta charset="utf-8">
 <!--Import Google Icon Font-->
-
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet"> 	
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:ital,wght@0,700;1,900&display=swap" rel="stylesheet"> <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:ital,wght@0,700;1,900&display=swap" rel="stylesheet"> 
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <!--Import materialize.css-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -35,7 +39,7 @@
 <link rel="stylesheet" href="../../../css/footercss.css">	
 <link rel="stylesheet" href="../../../css/GlavniCss-zajecar.css" class="">
 <link rel="stylesheet" href="../../../css/floatingdugme.css" class="">	
-<link rel="stylesheet" href="../../../css/masonry.css"> 
+<link rel="stylesheet" href="../../../css/kartice-css-novo.css"> 
 <link rel="stylesheet" href="../../../css/myInput.css">
 
 
@@ -89,57 +93,41 @@ h9 {
 	<h1>Beograd</h1> 
 	<h2>- uređivanje enterijera -</h2>
 </div>
-<hr class="solid" style="border-top: 1px solid gray; width: 100%; margin: auto; padding-bottom: 0.5em">	
- 
-  
-<input id="myInput" type="text" placeholder="Pretraga">
-
-<div class="masonry" id="Lista" style="list-style-type:none;" >
+<hr class="solid" style="border-top: 1px solid gray; width: 100%; margin: auto; padding-bottom: 0.5em">
+	<div class="kartice-glavno">
+	<div class="kartice-sve">
 
      <!--Izrada nameštaja i kuhinja po meri SIMONIKS DOO-->	
-	<div class="column" style="width: rem">
-    <div class="col s12 m7">
-        <div class="card-image" style="text-align: center">
-         </div>
-        <div class="card-content" id="75" style="color: black">
- <img style="display:block;margin:auto;width: 90%" src="../../Severnobacki okrug/Subotica/Delatnosti/Uredjivanje enterijera/Simoniks doo/apartment-architecture-ceiling-276554-1064x709.jpg"><p1>Beograd (Subotica)</p1> <hr>			
-          <p1><h6>Izrada nameštaja i kuhinja po meri SIMONIKS DOO</h6> <br>
+<div class="kartica-telo -telo">
+		<div class="kartica-content content-m">
+		  <div  class="kartica-slika" style="background: white">
+			<img src="../../Severnobacki okrug/Subotica/Delatnosti/Uredjivanje enterijera/Simoniks doo/apartment-architecture-ceiling-276554-1064x709.jpg" alt="">
+			</div>
+	<div class="kartica-info">
+			<h2><center>Izrada nameštaja i kuhinja po meri SIMONIKS DOO</center></h2>
 			  
-<i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Jovana Mikića 124, Subotica<br>
-<i class="fas fa-phone"></i>&nbsp;&nbsp;060/366-9875<br>
+		<hr class="solid" style="border-top: 1px solid gray; width: 70%; margin: auto; padding-bottom: 0.5em; margin-bottom: 0.4em">	  
+			  
+		<div class="kartica-kontakt">
+<i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Jovana Mikića 124, Subotica<br><br>
+<i class="fas fa-phone"></i>&nbsp;&nbsp;060/366-9875<br><br>
 <i class="fas fa-envelope"></i>&nbsp;&nbsp;simoniks23@gmail.com
-<br> <br>
+		</div> 
+	</div>
+	<div class="kartica-slogan" >
+			<center><i>
 Simoniks iz Subotice je kompanija koja se bavi izradom i ugradnjom kuhinja po meri.
-Kuhinje po meri je naša primarna delatnost. <br> <br>
-Savremene kuhinje danas moraju da zadovolje više uslova: <br>
--Moraju biti funkcionalne,<br>
--Dobro organizovane kao i <br>
--Estetski modernog dizajna. <br><br>
-Izradjujemo nameštaj od: <br>
--Pločastog materijala,<br>
--Medijapana i <br>
--Masiva. <br> <br>
-Naši proizvodi su izradjeni od najkvalitetnijih materijala vrhunskog kvaliteta po najvišim standardima. <br> <br>
-Po želji i meri klijenata možemo izraditi: <br>
--Kuhinje <br>
--Elemente<br>
--Ormare<br>
--Ostali nameštaj po meri<br> <br>
-Izaćićemo u susret svakoj Vašoj želji. <br>
-Poslujemo na području Subotice, Novog Sada i Beograda. <br>
-Dostupni smo non stop za sve informacije i porudžbine.			  
-</p1>
-        
-        
-        <br><hr><br>
-        	
-			
-	   	
-		</div>	
-        </div>
-      </div>
-    </div>
+Kuhinje po meri je naša primarna delatnost. <br> Poslujemo na području Subotice, Novog Sada i Beograda. <br>
+Dostupni smo non stop za sve informacije i porudžbine.</i></center>  
+	</div>
 	
+		</div>
+</div>		
+		
+		
+	
+    </div>
+	</div>
 			
 			
 <div class="footer">
@@ -314,7 +302,7 @@ Dostupni smo non stop za sve informacije i porudžbine.
 <script src="ostalo/scrypts.js"></script> 
 
 <script>
-		var cards = $(".column");
+		var cards = $(".kartica-telo");
 for(var i = 0; i < cards.length; i++){
     var target = Math.floor(Math.random() * cards.length -1) + 1;
     var target2 = Math.floor(Math.random() * cards.length -1) +1;

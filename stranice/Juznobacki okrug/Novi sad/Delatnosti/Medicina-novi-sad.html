@@ -4,7 +4,11 @@
 <head>
 	<meta charset="utf-8">
 <!--Import Google Icon Font-->
-
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet"> 	
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:ital,wght@0,700;1,900&display=swap" rel="stylesheet"> <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:ital,wght@0,700;1,900&display=swap" rel="stylesheet"> 
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <!--Import materialize.css-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -35,7 +39,7 @@
 <link rel="stylesheet" href="../../../../css/footercss.css">	
 <link rel="stylesheet" href="../../../../css/GlavniCss-zajecar.css" class="">
 <link rel="stylesheet" href="../../../../css/floatingdugme.css" class="">	
-<link rel="stylesheet" href="../../../../css/masonry.css"> 
+<link rel="stylesheet" href="../../../../css/kartice-css-novo.css"> 
 <link rel="stylesheet" href="../../../../css/myInput.css">
 
 
@@ -64,23 +68,41 @@ h9 {
 	  <!--- <div class="#" style="margin-bottom: 3%;margin-left: 4%; margin-right: 4%; background-color: rgb(255, 255, 255);">	--->
 		
 
-	   <!-- Meni s leve strane vidljiv na dektop--->
-  <nav id="vrh-navbar" class="navbar" style="background-color:rgba(12,64,118,1.00);">
-  	 <div class="navbar-brand" style="text-align: left; color: white" href="#">
-	   <a href="../../../../index.html">	
-		 <p><h1><strong>Redirex</strong></h1></p>
-	   </a>		
-	 </div>
-			
-<ul class="navbar-ul">
-
-</ul>
-	
-</nav> 
- 
- 
-<div class="center" >
-	  <img src="../800px-Novi_Sad_Coat_of_Arms.svg.png" alt="" class="" style="width: 9em">
+	   <!-- Meni s leve strane vidljiv na dektop---><!--Navbar-->
+<nav  class="navbar navbar-expand-lg navbar-dark primary-color">
+  <!-- Navbar brand -->
+  <a style="font-family: 'Russo One', sans-serif;" class="navbar-brand" href="https://redirex.rs">REDIREX</a>
+  <!-- Collapse button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="basicExampleNav">
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">	
+      <li class="nav-item">
+        <a class="nav-link" href="window.history.back();"><i class="fas fa-reply"></i>&nbsp;Nazad</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#text-9">Kontakt</a>
+      </li>
+      <!-- Dropdown -->
+      <li class="nav-item">
+        <a class="nav-link" href="https://redirex.rs/kako-se-oglasiti.html">Kako se oglasiti?</a>
+      </li>
+    </ul>
+    <!-- Links -->
+    <form class="form-inline">
+      <div class="md-form my-0">
+        <input id="myInput" type="text" placeholder="Pretraga">
+      </div>
+    </form>
+  </div>
+  <!-- Collapsible content -->
+</nav>
+<!--/.Navbar--><div class="center" >
+	  <img src="../800px-Novi_Sad_Coat_of_Arms.svg.png" alt="" class="" style="width: 5em">
 	</div>
 	
 <div class="naslov">
@@ -93,113 +115,131 @@ h9 {
 			
 			
 			
-<!-- Use any element to open/show the overlay navigation menu --> 
-<input id="myInput" type="text" placeholder="Pretraga"> 
-			
-			
-			
-<div class="masonry" id="Lista" style="list-style-type:none;" >
-<!--Otorinolaringologija, interna medicina, radiologija NADA DIVA MED PLUS-->	
-	<div class="column" style="width: rem">
-    <div class="col s12 m7">
-        <div class="card-image" style="text-align: center">
-          </div>
-        <div class="card-content" id="50" style="color: black">
-<img style="display:block;margin:auto;width: 90%" src="medicina/polikl. NADA DIVA/50445796_2161417113901855_2442955004005318656_n.png"><p1>Novi Sad</p1> <hr>			
-          <p1><h6>Otorinolaringologija, interna medicina, radiologija NADA DIVA MED PLUS</h6> <br>
-<i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Vase Stajića 25, 21000 Novi Sad, Srbija<br> <br>
-
-<i class="fas fa-phone"></i>&nbsp;&nbsp;063/585 000<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;021/382-9955<br><br>
-    
-<i class="fas fa-envelope"></i>&nbsp;&nbsp;klinika@nadadiva.rs<br><br>
-<i class="fas fa-clock"></i>&nbsp;&nbsp;Radnim danima: 08:00 - 20:00 <br>
-			  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subotom: 08:00-13:30		  
-<br> <br>
-Vrhunski doktori, najsavremenija medicinska oprema, prijatnost i komfor ambijenta,
+<!-- Use any element to open/show the overlay navigation menu -->
+	<div class="kartice-glavno">
+	<div class="kartice-sve">
+		
+<!--Otorinolaringologija, interna medicina, radiologija NADA DIVA MED PLUS-->
+<div id="50" class="kartica-telo -telo">
+		<div class="kartica-content content-m">
+		  <div  class="kartica-slika" style="background: white">
+			<img src="medicina/polikl. NADA DIVA/50445796_2161417113901855_2442955004005318656_n.png" alt="">
+			</div>
+	<div class="kartica-info">
+			<h2><center>Otorinolaringologija, interna medicina, radiologija NADA DIVA MED PLUS</center></h2>
+			  
+		<hr class="solid" style="border-top: 1px solid gray; width: 70%; margin: auto; padding-bottom: 0.5em; margin-bottom: 0.4em">	  
+			  
+		<div class="kartica-kontakt">
+<i class="fas fa-map-marker-alt"></i>&nbsp;Vase Stajića 25, 21000 Novi Sad, Srbija<br> <br>
+<i class="fas fa-phone"></i>&nbsp;063/585 000<br>
+021/382-9955<br><br>
+<i class="fas fa-envelope"></i>&nbsp;klinika@nadadiva.rs<br><br>
+<i class="fas fa-clock"></i>&nbsp;Radnim danima: 08:00 - 20:00 <br>
+Subotom: 08:00-13:30	
+		</div> 
+	</div>
+	<div class="kartica-slogan" >
+			<center><i>Vrhunski doktori, najsavremenija medicinska oprema, prijatnost i komfor ambijenta,
 stručno i ljubazno osoblje Poliklinike Nada Diva MED PLUS postavljaju standarde u oblastima: <br> <br>
 -otorinolaringologije, <br>
 -interne medicine, <br>
--radiologije. <br>
-</p1>
-        <br><br><hr>
-        
-       <a href="https://www.facebook.com/PoliklinikaNadaDiva" target="_blank"><i class="fab fa-facebook-square fa-3x" style="color: dodgerblue; "></i></a>
-			
-	   <a href="https://www.instagram.com/poliklinika.nada.diva/" target="_blank"><i class="fab fa-instagram-square fa-3x" style="color: rebeccapurple; "></i></a>
-			
-	   <a href="https://www.youtube.com/watch?time_continue=5&v=XxWYCRgu16Y&feature=emb_logo" target="_blank"><i class="fab fa-youtube-square fa-3x" style="color: red; "></i></a>		
-			
-	   <a href="http://www.nadadivamedplus.rs" target="_blank"><i class="fas fa-globe fa-3x" style="color:rgba(57,171,235,1.00); "></i></a>	
+-radiologije.</i></center>  
+	</div>
+	<div class="drustvene-mreze" style="">
+		<hr class="solid" style="border-top: 1px solid gray; width: 100%; margin: auto; padding-bottom: 0.5em; margin-bottom: 0.4em">
 		
-      </div>
-    </div>
-  </div>
-<!--Ordinacija Opšte Medicine Porodični Lekar Slavica-->	
-	<div class="column" style="width: rem">
-    <div class="col s12 m7">
-        <div class="card-image" style="text-align: center">
-           </div>
-        <div class="card-content" id="51" style="color: black">
-<img style="display:block;margin:auto;width: 90%" src="medicina/Porodicni lekar Slavica/34506070_627758160897145_8962284187566473216_n.png"><p1>Novi Sad</p1> <hr>			
-          <p1><h6>Ordinacija Opšte Medicine Porodični Lekar Slavica</h6> <br>
-<i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Laze Telečkog 19, Novi Sad<br> <br>
-
-<i class="fas fa-phone"></i>&nbsp;&nbsp;021 66 12 999<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;063 93 93 113<br><br>
-    
-<i class="fas fa-envelope"></i>&nbsp;&nbsp;ordinacija@drslavica.com<br><br>
-<i class="fas fa-clock"></i>&nbsp;&nbsp;Radnim danima: 08:00 - 18:00 <br>
-			  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subotom: 08:00-12:00		  
-<br> <br>
-Mi smo mala privatna lekarska ordinacija opšte prakse. Ohrabrujemo Vas da zakažete pregled kod nas kako ne biste čekali. <br>
-Nudimo Vam medicinske usluge u srcu Novog Sada u prijatnom ambijentu uz ljubazno osoblje potpuno posvećeno Vama. <br>
-Volimo posao kojim se bavimo i rado stavljamo naše znanje, stručnost i iskustvo u službu našim pacijentima.
-</p1>
-        <br><br><hr>
-        
-       <a href="https://www.facebook.com/porodicnilekarslavica/" target="_blank"><i class="fab fa-facebook-square fa-3x" style="color: dodgerblue; "></i></a>
+<a href="https://www.facebook.com/PoliklinikaNadaDiva" target="_blank"><i class="fab fa-facebook-square fa-2x" style="color:#4F4F4F "></i></a>
 			
-	   <a href="https://www.youtube.com/watch?v=IOvfsuIy1Lk&feature=emb_logo" target="_blank"><i class="fab fa-youtube-square fa-3x" style="color: red; "></i></a>		
+<a href="https://www.instagram.com/poliklinika.nada.diva/" target="_blank"><i class="fab fa-instagram-square fa-2x" style="color:#4F4F4F "></i></a>
 			
-	   <a href="http://drslavica.com" target="_blank"><i class="fas fa-globe fa-3x" style="color:rgba(57,171,235,1.00); "></i></a>	
+<a href="https://www.youtube.com/watch?time_continue=5&v=XxWYCRgu16Y&feature=emb_logo" target="_blank"><i class="fab fa-youtube-square fa-2x" style="color:#4F4F4F "></i></a>		
 			
-        </div>
-      </div>
-    </div>
-<!--Feri Dent Stomatološka ordinacija-->	
-	<div class="column" style="width: rem">
-    <div class="col s12 m7">
-        <div class="card-image" style="text-align: center">
-          </div>
-        <div class="card-content" id="52" style="color: black">
-	<img style="display:block;margin:auto;width: 90% " src="medicina/Feri Dent/1521937681akcije-SEPTEMBAR-2017.jpg"><p1>Novi Sad</p1> <hr>		
-          <p1><h6>Feri Dent Stomatološka ordinacija</h6> <br>
-<i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Gogoljeva 20/5, Grbavica, Novi Sad<br> <br>
-
-<i class="fas fa-phone"></i>&nbsp;&nbsp;021 545 972<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;063 566 996<br><br>
-    
-<i class="fas fa-envelope"></i>&nbsp;&nbsp;ferident90@gmail.com<br><br>
-<i class="fas fa-clock"></i>&nbsp;&nbsp;Radnim danima: 11:00 - 20:00		  
-<br> <br>
-Osnovana je krajem 2005. godine, i od tada pa sve do danas uspešno posluje i napreduje.<br><br>
-Osnivač i vlasnik je ortodont, dr Farzad Mohammadzadeh Eidgahi.<br><br> Iako specijalizovani ortodont, Dr Fazrad, ili kako ga vecina kolega i pacijenata zove, Dr Feri, u svom dugogodišnjem iskustvu specijalizovao se i za druga polja stomatologije, te Feri Dent danas nudi manje-više, sve vrste stomatoloških usluga, od protetike, dečije stomatologije, lečenja zuba i svega ostalog što Vam može zatrebati.
+<a href="http://www.nadadivamedplus.rs" target="_blank"><i class="fas fa-globe fa-2x" style="color:#4F4F4F "></i></a>
+			
+			  </div>
+		</div>
+</div>	
+<!--Ordinacija Opšte Medicine Porodični Lekar Slavica-->
+<div id="51" class="kartica-telo -telo">
+		<div class="kartica-content content-m">
+		  <div  class="kartica-slika" style="background: white">
+			<img src="medicina/Porodicni lekar Slavica/34506070_627758160897145_8962284187566473216_n.png" alt="">
+			</div>
+	<div class="kartica-info">
+			<h2><center>Ordinacija Opšte Medicine Porodični Lekar Slavica</center></h2>
 			  
-</p1>
-		<br><br><hr>
-        
-       <a href="https://www.facebook.com/stomatologferidentnovisad/" target="_blank"><i class="fab fa-facebook-square fa-3x" style="color: dodgerblue; "></i></a>
+		<hr class="solid" style="border-top: 1px solid gray; width: 70%; margin: auto; padding-bottom: 0.5em; margin-bottom: 0.4em">	  
+			  
+		<div class="kartica-kontakt">
 			
-	   <a href="https://twitter.com/FeriDent" target="_blank"><i class="fab fa-twitter-square fa-3x" style="color:dodgerblue; "></i></a>
+<i class="fas fa-map-marker-alt"></i>&nbsp;Laze Telečkog 19, Novi Sad<br> <br>
+
+<i class="fas fa-phone"></i>&nbsp;021 66 12 999<br>
+063 93 93 113<br><br>
+    
+<i class="fas fa-envelope"></i>&nbsp;ordinacija@drslavica.com<br><br>
+<i class="fas fa-clock"></i>&nbsp;Radnim danima: 08:00 - 18:00 <br>
+Subotom: 08:00-12:00	
 			
-	   <a href="https://ferident.rs" target="_blank"><i class="fas fa-globe fa-3x" style="color:rgba(57,171,235,1.00); "></i></a>	
+		</div> 
+	</div>
+	<div class="kartica-slogan" >
+			<center><i>Mi smo mala privatna lekarska ordinacija opšte prakse. <br>
+Nudimo Vam medicinske usluge u srcu Novog Sada u prijatnom ambijentu uz ljubazno osoblje potpuno posvećeno Vama. <br>
+Volimo posao kojim se bavimo i rado stavljamo naše znanje, stručnost i iskustvo u službu našim pacijentima.</i></center>  
+	</div>
+	<div class="drustvene-mreze" style="">
+		<hr class="solid" style="border-top: 1px solid gray; width: 100%; margin: auto; padding-bottom: 0.5em; margin-bottom: 0.4em">
+		
+<a href="https://www.facebook.com/porodicnilekarslavica/" target="_blank"><i class="fab fa-facebook-square fa-2x" style="color:#4F4F4F "></i></a>
 			
-        </div>
-      </div>
-    </div>
+<a href="https://www.youtube.com/watch?v=IOvfsuIy1Lk&feature=emb_logo" target="_blank"><i class="fab fa-youtube-square fa-2x" style="color:#4F4F4F "></i></a>		
+			
+<a href="http://drslavica.com" target="_blank"><i class="fas fa-globe fa-2x" style="color:#4F4F4F "></i></a>
+			
+			  </div>
+		</div>
+</div>		
+<!--Feri Dent Stomatološka ordinacija-->
+<div id="52" class="kartica-telo -telo">
+		<div  class="kartica-content content-m">
+		  <div  class="kartica-slika" style="background: white">
+			<img src="medicina/Feri Dent/1521937681akcije-SEPTEMBAR-2017.jpg" alt="">
+			</div>
+	<div class="kartica-info">
+			<h2><center>Feri Dent Stomatološka ordinacija</center></h2>
+			  
+		<hr class="solid" style="border-top: 1px solid gray; width: 70%; margin: auto; padding-bottom: 0.5em; margin-bottom: 0.4em">	  
+			  
+		<div class="kartica-kontakt">
+<i class="fas fa-map-marker-alt"></i>&nbsp;Gogoljeva 20/5, Grbavica, Novi Sad<br> <br>
+<i class="fas fa-phone"></i>&nbsp;021 545 972<br>
+063 566 996<br><br>
+<i class="fas fa-envelope"></i>&nbsp;ferident90@gmail.com<br><br>
+<i class="fas fa-clock"></i>&nbsp;Radnim danima: 11:00 - 20:00
+		</div> 
+	</div>
+	<div class="kartica-slogan" >
+			<center><i>Osnovana je krajem 2005. godine, i od tada pa sve do danas uspešno posluje i napreduje.<br><br>
+Osnivač i vlasnik je ortodont, dr Farzad Mohammadzadeh Eidgahi. </i></center>  
+	</div>
+	<div class="drustvene-mreze" style="">
+		<hr class="solid" style="border-top: 1px solid gray; width: 100%; margin: auto; padding-bottom: 0.5em; margin-bottom: 0.4em">
+		
+       <a href="https://www.facebook.com/stomatologferidentnovisad/" target="_blank"><i class="fab fa-facebook-square fa-2x" style="color:#4F4F4F "></i></a>
+			
+	   <a href="https://twitter.com/FeriDent" target="_blank"><i class="fab fa-twitter-square fa-2x" style="color:#4F4F4F "></i></a>
+			
+	   <a href="https://ferident.rs" target="_blank"><i class="fas fa-globe fa-2x" style="color:#4F4F4F "></i></a>
+			
+			  </div>
+		</div>
+</div>		
+		
+		
  </div>	
-	
+	</div>
 
 
  <button class="float" style="background-color: cornflowerblue" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up fa-2x"></i></button>
