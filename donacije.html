@@ -1,677 +1,384 @@
 <!DOCTYPE html>
-
-<html>
-<head>
-	<meta charset="utf-8">
-<!--Import Google Icon Font-->
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet"> 	
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:ital,wght@0,700;1,900&display=swap" rel="stylesheet"> <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:ital,wght@0,700;1,900&display=swap" rel="stylesheet"> 
-<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-<!--Import materialize.css-->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>	
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">	
-<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script> 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
-<script src="https://kit.fontawesome.com/3429f72bdb.js" crossorigin="anonymous"></script>
-<!--Let browser know website is optimized for mobile-->
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta https-equiv="X-UA-Compatible" content="IE=edge">
-
-
-<title>Zdravlje i medicina - Beograd: Redirex</title>
-<link rel="shortcut icon" href="zdravstvo/favicon.ico" >
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
-	
-	
-<script src="../../../JSS/Filterovanje.js"></script>
-<script src="../../../JSS/backtotop.js"></script>
-<link rel="stylesheet" href="css/footercss.css">	
-<link rel="stylesheet" href="css/GlavniCss-zajecar.css" class="">
-<link rel="stylesheet" href="css/floatingdugme.css" class="">	
-<link rel="stylesheet" href="css/masonry.css"> 
-<link rel="stylesheet" href="css/myInput.css">
-
-
-
-<style>
-
-
-h9 {
-  font-size: 0.6em;
-  color: white;
-}
-	
-	h4 {
-		font-size: 3em;
-		color: white;
-	}	
-</style>
-<style>
-@media (max-width: 768px){
-	.kartice-glavno{
-		display: block;
-		width: 100;
-		height: auto;
-		padding: auto;
-	}
-	.kartice-sve{
-		display: block;
-		padding: auto;
-		width: auto;
-		padding-top: 5em;
-		padding-bottom: 10em;
-	}
-	.kartica-telo{
-		display: block;
-		width: 24em;
-		height: 15em;
-	    position: relative;
-		margin: auto;
-		margin-bottom: 9em;
-		margin-top: 2em
-		
-	}
-	.kartica-content{
-		display: block;
-		width: 25em;
-		height: 20em;
-		position: absolute; 
-		right: 0; 
-		bottom: 0;
-		background: rgba(240,240,240,1.00);
-		font-family: 'Oswald', sans-serif;
-		border-radius: 0.7em;
-	}
-	.kartica-slika{
-		width: 10em;
-		height: 7em;
-		position: absolute;
-		left: 1em;
-		top: -2em;
-		border-radius: 0.7em;
-		-webkit-box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.55);
-	-moz-box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.55);
-	box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.55);
-	}
-	.kartica-slika>img {
-		width: 10em;
-		height: 7em;
-		border-radius: 0.7em;
-	}
-	.kartica-info{
-		position: absolute; 
-		right: 0;
-		width: 17em;
-		height: 100%;
-		font-size: 0.7em;
-		padding: 0.5em;
-		
-	}
-	.kartica-kontakt{
-		position: absolute; 
-		right: 0;
-		width: 15.5em;
-		font-size: 1em;
-	}
-	
-	h2{
-		font-size: 2em
-	}
-	
-	.kartica-slogan{
-		position: absolute; 
-		left: 0;
-		bottom: 4em;
-		width: 11em;
-		height: 6em;
-		margin: 0.5em;
-		margin-bottom: 0.9em;
-	}
-	.drustvene-mreze{
-		position: absolute; 
-		left: 0;
-		bottom: 0;
-		width: 100%;
-		margin-bottom: 0.9em;
-	}
-	.drustvene-mreze a {
-		float: left;
-		margin-left: 0.9em;
-		margin-right: 0.9em;
-	}
-	.drustvene-mreze a:hover{
-		border: 1px solid white;
-		border-radius: 0.4em
-	}
-	
-	.drustvene-mreze .redirex-stranica{
-		display: block;	
-		float: right;
-	}
-	
-	h1{
-		font-size: 1.3em;
-		
-		font-family: 'Oswald', sans-serif;
-	}
-	h2{
-		font-size: 1.3em;
-		
-		font-family: 'Oswald', sans-serif;
-	}
-	
-	.navbar-brand strong {
-		font-size: 1.4em;
-	}
-	
-	#mini-orhideja{
-		
-		margin-top: 15em;
-	}
-	#mini-orhideja-content{
-		height: 25em;
-	}
-	#mini-orhideja-slogan{
-		top: 6em;
-		font-size: 0.8em;
-		width: 13em
-	}
-	}
-@media (min-width: 768px){
-	.kartice-glavno{
-		display: block;
-		width: 100;
-		height: auto;
-		padding: auto;
-	}
-	.kartice-sve{
-		display: flex;
-		flex-wrap: wrap;
-		padding: auto;
-		width: auto;
-		padding-top: 5em;
-		padding-bottom: 10em
-	}
-	.kartica-telo{
-		display: flex;
-		width: 36em;
-		height: 21em;
-	    position: relative;
-		margin: auto;
-		
-	}
-	.kartica-content{
-		display: block;
-		width: 33em;
-		height: 17em;
-		position: absolute; 
-		right: 0; 
-		bottom: 0;
-		background: rgba(240,240,240,1.00);
-		margin: 1em;
-		font-family: 'Oswald', sans-serif;
-		border-radius: 0.7em;
-	}
-	.kartica-slika{
-		width: 17em;
-		height: 10em;
-		position: absolute;
-		left: 1em;
-		top: -2em;
-		border-radius: 0.7em;
-		-webkit-box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.55);
-	-moz-box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.55);
-	box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.55);
-	}
-	.kartica-slika>img {
-		width: 17em;
-		height: 10em;
-		border-radius: 0.7em;
-	}
-	.kartica-info{
-		position: absolute; 
-		right: 0;
-		width: 14em;
-		height: 100%;
-		
-	}
-	.kartica-kontakt{
-		position: absolute; 
-		right: 0;
-		width: 18em;
-		font-size: 0.8em;
-	}
-	.kartica-slogan{
-		position: absolute; 
-		left: 0;
-		bottom: 3em;
-		width: 17em;
-		height: 5em;
-		margin: 0.5em;
-		margin-bottom: 0.9em;
-		padding: 1em
-	}
-	.drustvene-mreze{
-		position: absolute; 
-		left: 0;
-		bottom: 0;
-		width: 17em;
-		height: 2.5em;
-		margin: 0.5em;
-		margin-bottom: 0.9em;
-	}
-	.drustvene-mreze a {
-		float: right;
-		margin: auto;
-		margin-left: 0.9em;
-		margin-right: 0.9em
-	}
-	.drustvene-mreze a:hover{
-		border: 1px solid white;
-		border-radius: 0.4em
-	}
-	
-	.navbar-brand strong {
-		font-size: 1em
-	}
-	
-	h1{
-		font-size: 1.3em;
-		
-		font-family: 'Oswald', sans-serif;
-	}
-	h2{
-		font-size: 1.3em;
-		
-		font-family: 'Oswald', sans-serif;
-	}
-	
-	#mini-orhideja{
-		
-		margin-top: 9em;
-	}
-	#mini-orhideja-content{
-		height: 25em;
-	}
-	#mini-orhideja-slogan{
-		top: 10em;
-		font-size: 0.8em;
-		width: 20em;
-		left: 1em;
-	}
-	}
-	
-	#DITEKS{
-		background: #333
-	}
-	
-	
-</style>
-
-		</head>
-
-		<body style="background-image:image " id="math.min">
-
-	  <!--- <div class="#" style="margin-bottom: 3%;margin-left: 4%; margin-right: 4%; background-color: rgb(255, 255, 255);">	--->
-		
-
-	   <!-- Meni s leve strane vidljiv na dektop--->
-  <nav id="vrh-navbar" class="navbar" style="background-color:rgba(12,64,118,1.00);">
-  	 <div class="navbar-brand" style="text-align: left; color: white" href="#">
-	   <a href="index.html">	
-		 <p><h1><strong> < Redirex </strong></h1></p>
-	   </a>		
-	 </div>
-			
-<ul class="navbar-ul">
-
-</ul>
-	
-</nav>
- 
-
- 
-<div class="center" >
-	  <img src="../1024px-Flag_of_Belgrade,_Serbia.svg.png" alt="" class="" style="width: 15vw">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://kit.fontawesome.com/bdd89edb33.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Flipping Cards</title>
 	 
-	</div>
-	
-<div class="naslov">
-	<h1>Beograd</h1> 
-	<h2>- zdravlje i medicina -</h2>
-</div>
-<hr class="solid" style="border-top: 1px solid gray; width: 100%; margin: auto; padding-bottom: 0.5em">	
- 
-  
-<!-- Use any element to open/show the overlay navigation menu -->
-	<div class="kartice-glavno">
-	<div class="kartice-sve">
-		
-		
-<div class="kartica-telo">
-		<div class="kartica-content">
-		  <div id="DITEKS" class="kartica-slika">
-			<img src="stranice/28-Grad Beograd/Delatnosti/Tekstil/ditekstekstil/logobelisim-768x425.png" alt="">
-			</div>
-		  <div class="kartica-info">
-			<h2><center>Diteks tekstil</center></h2>
-			  
-		<hr class="solid" style="border-top: 1px solid gray; width: 70%; margin: auto; padding-bottom: 0.5em; margin-bottom: 0.4em">	  
-			  
-			 <div class="kartica-kontakt"> 
-			  <i style="color: black" class="fas fa-map-marker-alt"></i>	&nbsp;Proizvodnja:  Oslobođenja 22, Beograd<br>
-			  Maloprodaja:  Vidikovačka pijaca, tezge br. 13/14 <br> <br>
-              <i style="color: black" class="fas fa-phone"></i>&nbsp;
-              Telefoni:  +381 11 35 64255 <br>
-              +381 63 23 6054              <br><br>
-              <i style="color: black" class="fas fa-envelope"></i>&nbsp;
-              Email:<br>
-              ditekstekstil@yahoo.com<br>
-              diteksknezevac@gmail.com
-			 </div> 
-		  </div>
-			<div class="kartica-slogan">
-			  <center><i>Diteks tekstil je porodična firma koja se bavi proizvodnjom tekstila</i></center>
-			</div>
-			
-			
-			  <div class="drustvene-mreze" style="
-												  
-		"><hr class="solid" style="border-top: 1px solid gray; width: 100%; margin: auto; padding-bottom: 0.5em; margin-bottom: 0.4em">
-				  
-			  <a href="https://www.facebook.com/ditekstekstil" target="_blank"><i class="fab fa-facebook-square fa-2x" style="color:#4F4F4F"></i></a>
-			
-	          <a href="https://www.instagram.com/diteks_tekstil" target="_blank"><i class="fab fa-instagram-square fa-2x" style="color: #4F4F4F "></i></a>	
-				  
-	          <a href="https://ditekstekstil.rs/" target="_blank"><i class="fas fa-globe fa-2x" style="color:#4F4F4F"></i></a>
-				  
-<a style="margin-top: 0.em; color: #4F4F4F; font-size: 1.2em" href="" class="redirex-stranica">Redirex</a>	  
-				  
-			  </div>
-			
-		</div>
-	  </div>
-		
-<div id="13" class="kartica-telo">
-		<div class="kartica-content">
-		  <div  class="kartica-slika">
-			<img src="stranice/28-Grad Beograd/Delatnosti/Usluge/Servis gitara Zarko/AS-39.jpg" alt="">
-			</div>
-		  <div class="kartica-info">
-			<h2><center>Servis Gitara Žarko</center></h2>
-			  
-		<hr class="solid" style="border-top: 1px solid gray; width: 70%; margin: auto; padding-bottom: 0.5em; margin-bottom: 0.4em">	  
-			  
-			 <div class="kartica-kontakt"> 
-			  <i style="color: black" class="fas fa-map-marker-alt"></i>&nbsp;Ustanička 189 , Beograd<br><br>
-              <i style="color: black" class="fas fa-phone"></i>&nbsp;
-              Telefoni:  065 397 39 74 <br><br>
-              <i style="color: black" class="fas fa-envelope"></i>&nbsp;
-              Email:<br>
-              zarkoB80@gmail.com <br>
-			 </div> 
-		  </div>
-			<div class="kartica-slogan">
-			  <center><i>Nudimo profesionalan i povoljan servis</i></center>
-			</div>
-			
-			
-		</div>
-	  </div>
-		
-<div class="kartica-telo" id="mini-orhideja">
-		<div class="kartica-content" id="mini-orhideja-content">
-		  <div class="kartica-slika">
-			<img src="stranice/28-Grad Beograd/Delatnosti/Usluge/Mini orhideja/mala-mini-orhideja-cvecara-popust-foto.jpg" alt="">
-			</div>
-		  <div class="kartica-info">
-			<h2><center>Cvećara Mini Orhideja</center></h2>
-			  
-		<hr class="solid" style="border-top: 1px solid gray; width: 70%; margin: auto; padding-bottom: 0.5em; margin-bottom: 0.4em">	  
-			  
-			 <div class="kartica-kontakt"> 
-			  <i style="color: black" class="fas fa-map-marker-alt"></i>&nbsp;Beogradska 73, Sremčica<br>
-			  <i class="fas fa-clock"></i>&nbsp;Radnim danima: 08:00 - 20:00 <br>
-			   Subotom: 08:00 - 20:00 <br>
-			   Nedeljom: 08:00 - 19:30 <br><br>	 
-				<i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp; Lole Ribara 157, Železnik<br>
-<i class="fas fa-clock"></i>&nbsp;&nbsp;Radnim danima: 08:00 - 20:00 <br>
-			   Subotom: 08:00 - 20:00	<br>	  
-               Nedeljom: 08:00 - 20:00 <br><br> 
-				 
-				 
-              <i style="color: black" class="fas fa-phone"></i>
-              Telefoni:  063 1934 071 <br><br>
-              <i style="color: black" class="fas fa-envelope"></i>
-              Email:<br>
-              brankatabakovic@gmail.com <br>
-			 </div> 
-		  </div>
-			<div class="kartica-slogan" id="mini-orhideja-slogan">
-			  <center><i>Ono po čemu smo poznati jeste planiranje i uređenje dvorišta. Nudimo usluge saksijskog i rezanog cveća, kao i keramike za cveće i korpe.</i></center>
-			</div>
-			
-			
-			  <div class="drustvene-mreze" style="
-												  
-		"><hr class="solid" style="border-top: 1px solid gray; width: 100%; margin: auto; padding-bottom: 0.5em; margin-bottom: 0.4em">
-				  
-			  <a href="https://www.facebook.com/ditekstekstil" target="_blank"><i class="fab fa-facebook-square fa-2x" style="color:#4F4F4F"></i></a>
-			
-	          <a href="https://www.instagram.com/diteks_tekstil" target="_blank"><i class="fab fa-instagram-square fa-2x" style="color: #4F4F4F "></i></a>	
-				  
-				    
-				  
-			  </div>
-			
-		</div>
-</div>
-		
-		
-		
-		
-		
+	  <style>
+	  .u-center-text {
+  text-align: center !important;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important;
+}
+
+.u-margin-top-big {
+  margin-top: 5rem !important;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #fff;
+  background: #000;
+}
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  margin-bottom: 6rem;
+}
+
+.heading-primary--main {
+  display: block;
+  font-size: 6rem;
+  font-weight: 400;
+  letter-spacing: 3.5rem;
+  -webkit-animation-name: moveInLeft;
+          animation-name: moveInLeft;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  /*
+        animation-delay: 3s;
+        animation-iteration-count: 3;
+        */
+}
+
+.heading-primary--sub {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1.75rem;
+  -webkit-animation: moveInRight 1s ease-out;
+          animation: moveInRight 1s ease-out;
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: transparent;
+  letter-spacing: 0.2rem;
+  line-height: 1;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  color: #eee;
+}
+
+.btn, .btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 0.5rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  position: relative;
+  font-size: 1.6rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover::after {
+  -webkit-transform: scaleX(1.4) scaleY(1.6);
+          transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn:active, .btn:focus {
+  outline: none;
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.btn--white {
+  background-color: #fff;
+  color: #777;
+}
+
+.btn--white::after {
+  background-color: #fff;
+}
+
+.btn--green {
+  background: -webkit-gradient(linear, left top, right top, from(#fc466b), to(#3f5efb));
+  background: linear-gradient(to right, #fc466b, #3f5efb);
+  color: #fff;
+}
+
+.btn--green::after {
+  background-color: #55c57a;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.section-plans {
+  background-color: #000;
+  padding: 4rem 0 4rem 0;
+}
+
+.card {
+  width: 20em;
+  display: block;
+	margin: 6em;
+	font-size: 1em;
+border: 1px solid #4F4F4F;
+}
+
+.card__side {
+  height: 52rem;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-radius: 3px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+}
+
+.card__side--front {
+  background-color: #4F4F4F;
+}
+
+.card__side--front-2 {
+  background: linear-gradient(-45deg, #000, #4F4F4F , #000);
+}
+
+.card__side--back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.card__side--back-1 {
+  background: linear-gradient(-45deg, #64b5f6, #f403d1);
+}
+
+
+.card__side--back-2 {
+  background: linear-gradient(-45deg, #ffec61, #f321d7);
+}
+
+.card__side--back-3 {
+  background: linear-gradient(-45deg, #9a4eff, #24ff72);
+}
+
+.card:hover .card__side--front-1,
+.card:hover .card__side--front-2,
+.card:hover .card__side--front-3 {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.card:hover .card__side--back {
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+}
+
+.card__title {
+  height: 10em;
+  padding: 4em 2em 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__title--1 .fas {
+  font-size: 5rem;
+}
+
+.card__title--2 .fas {
+  font-size: 5rem;
+}
+
+.card__title--3 .fas {
+  font-size: 5rem;
+}
+
+.card__heading {
+  font-size: 4rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  width: 75%;
+}
+
+.card__heading-span {
+  padding: 1rem 1.5rem;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.card__details {
+  padding: 0 2rem 2rem;
+}
+
+.card__details ul {
+  list-style: none;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.card__details ul li {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.card__details ul li:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+.card__cta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 90%;
+  text-align: center;
+}
+
+.card__price-box {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 8rem;
+}
+
+.card__price-only {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.card__price-value {
+  font-size: 6rem;
+  font-weight: 100;
+}
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+}
+
+.row:not(:last-child) {
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row [class^="col-"] {
+  float: left;
+}
+
+.row [class^="col-"]:not(:last-child) {
+  margin-right: 6rem;
+}
+
+.row .col-1-of-3 {
+  width: calc((100% - 2 * 6rem) / 3);
+}
+
+	  </style>
 	  
+  </head>
+  <body>
+   
+
+
+          <div class="card">
+            <div class="card__side card__side--front-2">
+              <div class="card__title card__title--2">
+                <i class="fas fa-plane"></i>
+                <h4 class="card__heading">Plus</h4>
+              </div>
+
+              <div class="card__details">
+                <ul>
+                  <li>Includes Basic Package Features</li>
+                  <li>Unlimited Websites</li>
+                  <li>Unlimited SSD Storage</li>
+                  <li>Unlimited Domains</li>
+                  <li>Unlimited Parked Domains</li>
+                  <li>Unlimited Sub Domains</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card__side card__side--back card__side--back-2">
+              <div class="card__cta">
+                <div class="card__price-box">
+                  <p class="card__price-only">Only</p>
+                  <p class="card__price-value">$5.45/mo*</p>
+                </div>
+                <a href="#popup" class="btn btn--white">Select</a>
+              </div>
+            </div>
+          </div>
+
+      
 	
-	</div>
-	</div>
-			
-	
-
-
- <button class="float" style="background-color: cornflowerblue" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up fa-2x"></i></button> 
-
-
-<!-- ^^^vidljivo na telefonima ^^^--> 
-
-<div class="footer">
-<p><h3 style="margin-bottom: em"></h3></p>	
-<div class="row">
-	
-<div class="col-sm-3">
-									
-<div class="widget widget_inventor_boxes">
-<div class="widget-inner">
-<h2 class="widgettitle">
-<strong>USLUGE SAJTA</strong></h2>
-	
-	
-<div class="row"> 
-
-
-<div class="col-sm-12 col-lg-12 col-md-6" style="display: table ;margin: auto;padding-bottom: 0.5em">
-   <div class="box">
-     <div class="box-inner">
-        <div class="box-icon">
-        <i class="fa fa-suitcase"></i>
-		</div>
-        <div class="box-body">
-              <h6 class="box-title">Besplatno oglašavanje</h6>
-			  <div class="box-content">Ukolike želite da se i vas oglas nadje na sajtu, dovoljno se samo da nam posaljete osnovne informacije</div>
-         </div><!-- /.box-body -->
-     </div><!-- /.box-inner -->
-
-    </div><!-- /.box -->       
-</div><!-- /.col-* -->
-	
-<hr class="solid" style="border-top: 1px solid white; width: 70%; margin: auto; padding-bottom: 0.5em">  
-	 
- <div class="col-sm-12 col-lg-12 col-md-6" style="display: table;margin: auto;padding-bottom: 0.5em">
-     <div class="box ">
-         <div class="box-inner">
-             <div class="box-icon">
-                <i class="fa fa-link"></i>            
-			 </div><!-- /.box-icon -->
-        
-             <div class="box-body">
-                   <h6 class="box-title">Povezivanje vasih stranica</h6><!-- /.box-title -->
-                     <div class="box-content">
-                    Sajt i sve vaše društvene mreže na jednom mestu             
-				     </div><!-- /.box-content -->
-            
-             </div><!-- /.box-body -->
-         </div><!-- /.box-inner -->
-
-    </div><!-- /.box -->        
-</div><!-- /.col-* -->
-
-<hr class="solid" style="border-top: 1px solid white; width: 70%; margin: auto; padding-bottom: 0.5em">	
-	
- <div class="col-sm-12 col-lg-12 col-md-6" style="display: table;margin: auto; padding-bottom: 2em">
-     <div class="box ">
-         <div class="box-inner">
-             <div class="box-icon">
-                <i class="fa fa-book"></i>            
-			 </div><!-- /.box-icon -->
-        
-             <div class="box-body">
-                   <h6 class="box-title">Vaša lična stranica</h6><!-- /.box-title -->
-                     <div class="box-content">
-                    Kreiranje lične stranice vaše usluge na kojoj se može nači sve sto želite             
-				     </div><!-- /.box-content -->
-            
-             </div><!-- /.box-body -->
-         </div><!-- /.box-inner -->
-
-    </div><!-- /.box -->        
-</div><!-- /.col-* -->	
-	 
-	 
-</div><!-- /.row -->        
-</div><!-- /.widget-inner -->
-</div>								
-</div><!-- /.cols-sm-3 -->
-
-<!-- /.cols-sm-3 -->
-
-<div class="col-sm-3">
-    <div id="text-9" class="widget widget_text"><h2 class="widgettitle"><strong>KONTAKT INFORMACIJE</strong></h2>
-        <div class="textwidget">
-			<hr>
-			<dl>
-
-<dt style="padding-bottom: em"><i class="fa fa-envelope" style="margin-right: 0.5em"></i> redirexrs@gmail.com</dt><dd></dd>
-<dt style="padding-bottom: 1em"><i class="fa fa-envelope" style="margin-right: 0.5em"></i> redirex.srb@gmail.com</dt><dd></dd>
-				
-<a href="https://www.facebook.com/redirexx" target="_blank" class="">
-<dt><i class="fab fa-facebook-square fa-3x" style="color: white"></i></dt><dd></dd></a>
-<a href="linkedin.com/in/redirex-rs-9a24a11b5" target="_blank" class="">
-<dt><i class="fab fa-linkedin fa-3x" style="color: white"></i></dt><dd></dd></a>				
-            </dl>   
-		</div>
-    </div>					           
-</div><!-- /.cols-sm-3 -->
-	
-	<div class="col-sm-3">
-<h2 class="widgettitle"><strong>LINKOVI SAJTA</strong></h2>
-<div class="listing-container">
-    <div class="listing-small">
-
-
-<div class="listing-small-content">
-
-<a href="../../../index.html#okruzi" class="">Okruzi i opstine</a><br>
-<a href="../../../index.html#najnovije" class="">Najnovije</a><br>
-<a href="../../../index.html#pretraga" class="">Pretraga</a><br>	
-<a href="../../../kako-se-oglasiti.html" class="" onclick="openNav()">Kako se oglasiti na redirex</a><br>
-<a href="https://www.facebook.com/groups/363068485078057/" target="_blank" class="">Redirex facebook oglasi</a><br>
-        
-        </div>
-    </div>
-</div> 
-		</div>
-	
-<!--	
-<div class="listing-container">
-<div class="listing-small">
-
-<a href="" class="">Pretraga</a>
-	
-</div><!-- /.listing-small 
-</div><!-- /.listing-container 
-<div class="listing-container">
-                                        
-
-<div class="listing-small">
-<div class="listing-small-image" style="background-image: url('https://www.biznisgroup.rs/wp-content/uploads/2018/06/22-1-292x200.jpg');">
-<a href="https://www.biznisgroup.rs/automobili/jovic-servis-i-remont-doo-backa-palanka/"></a>
-</div><!-- /.listing-small-image 
-
-<div class="listing-small-content">
-        <h4 class="listing-small-title"><a href="https://www.biznisgroup.rs/automobili/jovic-servis-i-remont-doo-backa-palanka/">JOVIĆ – servis i remont doo Bačka Palanka</a></h4>
-
-<div class="listing-small-location"><a href="https://www.biznisgroup.rs/location/srbija/backa-palanka/">Bačka Palanka</a></div>
-</div><!-- /.listing-small-content 
-</div><!-- /.listing-small 
-</div><!-- /.listing-container 
-</div><!-- /.listing-row 
-
-</div> -->
-
-					            
-<div class="footer-img">				            
-	<img src="../../../banneri/73081046_108934263856788_4915437994069983232_o.jpg" alt="" style="width: 18em; height: 4em">
-</div>	
-	</div>
-	
-	<hr class="solid" style="border-top: 1px solid gray; width: 100%; margin: auto; padding-bottom: 0.5em">
-
-<div class="sub-footer align-left">
- <a href="sitemap.xml" class="">Sitemap</a>
- <a href="ads.txt">Ads</a>	
-</div>
-<div style="margin-bottom: 1em">	
-&copy Redirex team, 2020.	
-</div>	
-	
-</div>
-
-
-
-
-<!--Import jQuery before materialize.js-->  
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> 
-<!--JavaScript at end of body for optimized loading--> 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
-<script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js?ver=5.4.2"></script>
-
-<script>var cards = $(".kartica-telo");
-for(var i = 0; i < cards.length; i++){
-    var target = Math.floor(Math.random() * cards.length -1) + 1;
-    var target2 = Math.floor(Math.random() * cards.length -1) +1;
-    cards.eq(target).before(cards.eq(target2));
-}
-			</script>	
-</body>
+     
+  </body>
 </html>
