@@ -815,10 +815,9 @@ margin-left: -2.5em
 .section-plans {
   background-color: #000;
 	display: block;
-	width: 20em;
-	padding: em;
-	margin:auto;
-	border: 1px solid red
+	width: 15em;
+	margin-top: 5em;
+	height: 65em;
 }
 	.kartica-11{
 		display: block;
@@ -834,20 +833,20 @@ margin-left: -2.5em
           perspective: 150em;
   -moz-perspective: 150em;
   position: relative;
-  height: 40em;
-  width: inherit;	
-	
+  height: 31em;
+  width:15em;	
   background: black;
+  margin-top: 1em
 }
 
 .card__side {
-	margin: 1em;
-  height: 32em;
+	margin: auto;
+  height: 31em;
   -webkit-transition: all 0.8s ease;
   transition: all 0.8s ease;
   position: absolute;
 display: block;
-  width: 18em;
+  width: inherit;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   border-radius: 3px;
@@ -946,12 +945,17 @@ display: block;
 }
 
 .card__details {
-  padding: 0 2em 2em;
 	display: block;
-	padding: inherit;
-	  
+	padding: inherit;  
 }
+	.card-11-details{
+		font-size: 0.8em
+	}
 
+	.card__details p {
+		font-size: 0.8em;
+	}	
+	
 .card__details ul {
   list-style: none;
   width: 10em;
@@ -964,7 +968,6 @@ display: block;
 	margin: auto;
   text-align: center;
   font-size: 1em;
-  padding: 0.7em;	
 }
 	
 .card__details2 ul li {
@@ -1030,24 +1033,30 @@ margin-left: -2.5em
   margin-right: 6em;
 }
 
-.card-11{
+	.card-22{
+		margin-bottom: 4em
 	}
 		
 .card__side--back-1 img {
 		display: block;
 	    margin: auto;
-		width: 17em;
+		width: 14em;
 		margin-top: 50%
 		
 	}
 	
 .card__side--back-2 img {
 		display: block;
-		width: 20em;
-		margin: auto;
+		width: 13.5em;
 		margin-top: 0.5em
 		
 	}	
+	
+	.footer-img img {
+		margin-top: 3em;
+		margin-bottom: 3em
+	}
+	
 	}
 	</style>
 
@@ -1061,25 +1070,14 @@ margin-left: -2.5em
 <nav  class="navbar navbar-expand-lg navbar-dark primary-color">
   <!-- Navbar brand -->
   <a style="font-family: 'Russo One', sans-serif;" class="navbar-brand" href="https://redirex.rs">REDIREX</a>
-  <!-- Collapse button -->
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
-    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <!-- Collapsible content -->
-  <div class="collapse navbar-collapse" id="basicExampleNav">
+	
     <!-- Links -->
-    <ul class="navbar-nav mr-auto">	
-      <li class="nav-item">
-        <a class="nav-link" href="javascript:history.back()"><i class="fas fa-reply"></i>&nbsp;Nazad</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#text-9">Kontakt</a>
-      </li>
-    </ul>
-    <!-- Links -->
-  </div>
-  <!-- Collapsible content -->
+		
+        <a style="color: white" class="nav-link" href="javascript:history.back()"><i class="fas fa-reply"></i>&nbsp;Nazad</a>
+     
+        <a style="color: white" class="nav-link" href="#text-9">Kontakt</a>
+     
+  
 </nav>
 <!--/.Navbar-->
 <!-- The overlay -->
@@ -1095,7 +1093,7 @@ margin-left: -2.5em
                 <h4 class="card__heading">Info-Kartica</h4>
               </div>
 
-              <div class="card__details">
+              <div class="card__details card-11-details">
                 <ul>
                   <li>Slika/logo</li>
                   <li>Naslov</li>
@@ -1105,7 +1103,7 @@ margin-left: -2.5em
                 </ul>
               </div>
             </div>
-            <div class="card__side card__side--back card__side--back-1">
+            <div class="card__side card__side--back card__side--back-1 slika-1">
               
                 <img src="primer123123123(3).png" alt="">
               
@@ -1116,138 +1114,32 @@ margin-left: -2.5em
 		
 			   
 	  <div class="stranica-11">	   
-		<div class="col-1-of-3">
+        <div class="col-1-of-3">
           <div class="card card-22">
-            <div class="card__side card__side--front-2">
-              <div class="card__title card__title--2">
-                <i class="fas fa-plane"></i>
-                <h4 class="card__heading">Plus</h4>
+            <div class="card__side card__side--front-1">
+              <div class="card__title card__title--1">
+                <i class="fas fa-book-open"></i>
+                <h4 class="card__heading">Redirex Stranica</h4>
               </div>
 
-              <div class="card__details2">
+              <div class="card__details">
                 <ul>
-                  <li>Includes Basic Package Features</li>
-                  <li>Unlimited Websites</li>
-                  <li>Unlimited SSD Storage</li>
-                  <li>Unlimited Domains</li>
-                  <li>Unlimited Parked Domains</li>
-                  <li>Unlimited Sub Domains</li>
+                 <p><center>Lična stranica može sadržati neograničenu količinu informacija, teksta, slika,itd.. <br> Dovoljno je samo poslati nam vašu internet stranicu, profil bilo koje društvene mreže ili direktno mailom sve što želite da se nađe na vašoj redirex stranici.</center></p>
                 </ul>
               </div>
             </div>
             <div class="card__side card__side--back card__side--back-2">
-				<div class="card__cta">
-              <img src="banneri/primer-stranice.png" alt="">
-				</div>	
+              
+                <img src="banneri/primer-stranice.png" alt="">
+              
             </div>
-          </div>
-        </div>		   
+			</div>
+      </div>	   
       </div>
     </section>
         
 
 	
-	
-	
-	
-<!--
-          <div class="card">
-            <div class="card__side card__side--front-1">
-              <div class="card__title card__title--1">
-                <img src="primer123123123(3).png" alt="">
-                <h4 class="card__heading"><b>Info-kartica</b></h4>
-              </div>
-
-              <div class="card__details">
-                <ul>
-                  <li>Slika/logo</li>
-                  <li>Naslov</li>
-                  <li>Kontakt informacije</li>
-                  <li>Kratak tekst opisa</li>
-                  <li>Društvene mreže</li>
-                </ul>
-              </div>
-            </div>
-          </div>	
-	
-	
-
-	
-
-<div class="Tekst" style="">
-	
-	<p class="tekst-p" style="color: white; margin-top: 5em">
-	<div class="info-title">	
-	<h1><strong>Info-Kartica</strong></h1></div>
-	<hr class="solid" style="border-top: 1px solid white; width: 10em; margin: auto; padding-bottom: 0.5em"> <br> <br>
-	<h4>Kako bismo dodali vašu info karticu, potrebno je samo poslati vaše informacije:</h4>
-	<br> 
-	<div class="row">	
-		<div class="informacije" style="">
-	<p>	
-		
-		
-		- Fotografija ili logo<br>
-		- Naziv preduzeća<br>
-        - Grad<br>
-        - Adresa<br>
-        - Broj telefona<br>
-		- E-mail<br>
-		- Radno veme<br>
-		- Kratak tekst<br>
-		- Linkovi ka društvenim mrežama<br>
-	</p>		
-		</div>
-		
-			<div class="informacije2" style="border:">
-				
-	<div class="slika-kartica" style="display: inline-flex">			
-	<img src="banneri/primer-kartice.png" alt="">	
-		</div>
-				
-	</div>
-	</div>
-	 
-    </p>
-	
-</div>
-
-<div class="informacije-4" style="margin: em; margin-top: em">
-	
-	<p><h9>Dodavanje info kartica na sajt je besplatno i sve informacije nam možete poslati na mail ili preko facebook stranice ili profila.</h9></p>
-</div>	
-<br>
-<hr class="solid" style="border-top: 1px solid white; width: 95%; margin: auto; padding-bottom: 0.5em">
-
-<div class="Tekst" style="">
-	
-<p class="tekst-p" style="color: white; margin-top: 5em">
-<div class="info-title">	
-	<h1><strong>Lična stranica</strong></h1> <hr class="solid" style="border-top: 1px solid white; width: 10em; margin: auto; padding-bottom: 0.5em">
-</div> <br> <br>
-	
-  <div class="ls-tekst">
-	 <p>Lična stranica može sadržati neograničenu količinu informacija, teksta, slika,itd.. <br> Dovoljno je samo poslati nam vašu internet stranicu, profil bilo koje društvene mreže ili direktno mailom sve što želite da se nađe na vašoj redirex stranici.</p>
-  </div>
-	
-	<br> 
-	
-<div class="row">	
-		
-			<div class="informacije3">
-	<p style="color: #898989">Primer stranice <br> ( stranicu mozete posetiti <a href="stranice/Nisavski okrug/Nis/Delatnosti/nekretnine/MEGA nekretnine/MEGA-nekretnine.html">ovde</a> )</p>			
-	<div class="slika-stranica">			
-	<img src="banneri/primer-stranice.png" alt="">	
-		</div>
-				
-	</div>
-</div>
-	 
-    </p>
-	
-</div>
-
-
 <hr class="solid" style="border-top: 1px solid white; width: 95%; margin: auto; padding-bottom: 0.5em; margin-top: 3em">
 
 
@@ -1274,15 +1166,149 @@ margin-left: -2.5em
 <dt style="padding-bottom: em; " > redirexrs@gmail.com</dt> <br>
 <dt style="padding-bottom: 1em; " > redirex.srb@gmail.com</dt>	
 </div>
+</div>		
+</div>
 </div>	
 	
+
+	
+	
+	
+	
+	<div style="margin-top: 5em" class="footer">
+	<p><h3 style="margin-bottom: em"></h3></p>	
+	<div class="row">
+
+	<div class="col-sm-3">
+
+	<div class="widget widget_inventor_boxes">
+	<div class="widget-inner">
+	<h2 class="widgettitle">
+	<strong>USLUGE SAJTA</strong></h2>
+
+
+	<div class="row"> 
+
+
+	<div class="col-sm-12 col-lg-12 col-md-6" style="display: table ;margin: auto;padding-bottom: 0.5em">
+	   <div class="box">
+		 <div class="box-inner">
+			<div class="box-icon">
+			<i class="fa fa-suitcase"></i>
+			</div>
+			<div class="box-body">
+				  <h6 class="box-title">Besplatno oglašavanje</h6>
+				  <div class="box-content">Ukolike želite da se i vas oglas nadje na sajtu, dovoljno se samo da nam posaljete osnovne informacije</div>
+			 </div><!-- /.box-body -->
+		 </div><!-- /.box-inner -->
+
+		</div><!-- /.box -->       
+	</div><!-- /.col-* -->
+
+	<hr class="solid" style="border-top: 1px solid white; width: 70%; margin: auto; padding-bottom: 0.5em">  
+
+	 <div class="col-sm-12 col-lg-12 col-md-6" style="display: table;margin: auto;padding-bottom: 0.5em">
+		 <div class="box ">
+			 <div class="box-inner">
+				 <div class="box-icon">
+					<i class="fa fa-link"></i>            
+				 </div><!-- /.box-icon -->
+
+				 <div class="box-body">
+					   <h6 class="box-title">Povezivanje vasih stranica</h6><!-- /.box-title -->
+						 <div class="box-content">
+						Sajt i sve vaše društvene mreže na jednom mestu             
+						 </div><!-- /.box-content -->
+
+				 </div><!-- /.box-body -->
+			 </div><!-- /.box-inner -->
+
+		</div><!-- /.box -->        
+	</div><!-- /.col-* -->
+
+	<hr class="solid" style="border-top: 1px solid white; width: 70%; margin: auto; padding-bottom: 0.5em">	
+
+	 <div class="col-sm-12 col-lg-12 col-md-6" style="display: table;margin: auto; padding-bottom: 2em">
+		 <div class="box ">
+			 <div class="box-inner">
+				 <div class="box-icon">
+					<i class="fa fa-book"></i>            
+				 </div><!-- /.box-icon -->
+
+				 <div class="box-body">
+					   <h6 class="box-title">Vaša lična stranica</h6><!-- /.box-title -->
+						 <div class="box-content">
+						Kreiranje lične stranice vaše usluge na kojoj se može nači sve sto želite             
+						 </div><!-- /.box-content -->
+
+				 </div><!-- /.box-body -->
+			 </div><!-- /.box-inner -->
+
+		</div><!-- /.box -->        
+	</div><!-- /.col-* -->	
+
+
+	</div><!-- /.row -->        
+	</div><!-- /.widget-inner -->
+	</div>								
+	</div><!-- /.cols-sm-3 -->
+
+	<!-- /.cols-sm-3 -->
+
+	<div class="col-sm-3">
+		<div id="text-9" class="widget widget_text"><h2 class="widgettitle"><strong>KONTAKT INFORMACIJE</strong></h2>
+			<div class="textwidget">
+				<hr>
+				<dl>
+
+	<dt style="padding-bottom: em"><i class="fa fa-envelope" style="margin-right: 0.5em"></i> redirexrs@gmail.com</dt><dd></dd>
+<dt style="padding-bottom: 1em"><i class="fa fa-envelope" style="margin-right: 0.5em"></i> redirex.srb@gmail.com</dt><dd></dd>
+
+	<a href="https://www.facebook.com/redirexx" target="_blank" class="">
+	<dt><i class="fab fa-facebook-square fa-3x" style="color: white"></i></dt><dd></dd></a>
+	<a href="linkedin.com/in/redirex-rs-9a24a11b5" target="_blank" class="">
+	<dt><i class="fab fa-linkedin fa-3x" style="color: white"></i></dt><dd></dd></a>				
+				</dl>   
+			</div>
+		</div>					           
+	</div><!-- /.cols-sm-3 -->
+
+		<div class="col-sm-3">
+	<h2 class="widgettitle"><strong>LINKOVI SAJTA</strong></h2>
+	<div class="listing-container">
+		<div class="listing-small">
+
+
+	<div class="listing-small-content">
+
+	<a style="color: white" href="index.html#okruzi" class="">Okruzi i opštine</a><br>
+	<a style="color: white" href="index.html#najnovije" class="">Najnovije</a><br>
+	<a style="color: white" href="index.html#pretraga" class="">Pretraga</a><br>	
+	<a style="color: white" href="kako-se-oglasiti.html" class="">Kako se oglasiti na redirex</a><br>
+
+			</div>
+		</div>
+	</div> 
+			</div>
+
+
+
+
+	<div class="footer-img">				            
+		<img src="banneri/73081046_108934263856788_4915437994069983232_o.jpg" alt="" style="width: 18em; height: 4em">
+	</div>	
+		</div>
+
+		<hr class="solid" style="border-top: 1px solid gray; width: 100%; margin: auto; padding-bottom: 0.5em">
+
+	<div class="sub-footer align-left">
+	 <a href="../../../../../../sitemap.xml" class="">Sitemap</a>
 	</div>
-	
-</div>	
-</div>	-->
-	
-	
-	
+	<div style="margin-bottom: 1em">	
+	&copy Redirex team, 2020.	
+	</div>	
+
+	</div>
 	
 	
 
