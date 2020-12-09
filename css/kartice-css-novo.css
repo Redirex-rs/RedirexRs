@@ -373,13 +373,34 @@
 		height: 26em;
 	}
 	.content-l{
-		height: 30em
+		height: 30em;
 	}
 	.soko-css{
 		margin-top: 5em;
 	}
+	.ortoplus-telo{
+		margin-top: 7em
+	}
+	.orpavlovic-telo{
+		margin-top: 7em
+	}
+	.nikolicopt-telo{
+		margin-top: 7em;
+	}
+	.mega-telo{
+		margin-top: 7em
+	}
+	.mega-plus-telo{
+		margin-top: 12em
+	}	
 	}
 
 #DITEKS{
 		background: #333
 	}
+#myInput{
+			height: 2em;
+			width: 15em;
+			padding: 1em;
+			border-radius: 15px
+		}
