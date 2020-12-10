@@ -13,137 +13,55 @@
     <title>Flipping Cards</title>
 	 
 	  <style>
-
-
-
-
-.card {
-  width: 20em;
-  display: block;
-	margin: 6em;
-	font-size: 1em;
-border: 1px solid #4F4F4F;
+		  body{
+			  border: 1px solid red;
+			  width: 50em;
+			  height: 60em
+		  }	 
+		  .mapa{
+			  display: block;
+		  }
+		  .mapa img {
+			  position: absolute;
+				background: red;
+		  }
+		  .pozarevac1{
+			  width: 5em;
+			  height: 2em;
+			  background: red;
+			  z-index: 2;
+				  
+			  
+		  }
+		  .pozarevac{
+			  width: 1em;
+			  height: 1em;
+			  position: absolute;
+			  z-index: 2;
+			  background: black;
+			  top: 20em;
+			  left: 23em;
+			  border-radius: 50%
+				
+		  }
+		  	#a:hover ~ #b {
+    background: red;
+	border: 2px solid red			
 }
-
-
-
-.card__side--front {
-  background-color: #4F4F4F;
-}
-
-.card__side--front-1 {
-  background: linear-gradient(-45deg, #000, #4F4F4F , #000);
-}
-
-
-
-
-.card__title {
-  height: 10em;
-  padding: 4em 2em 2em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.card__title--1 .fas {
-  font-size: 3em;
-}
-		 .card__title img{
-			 width: 18em;
-			 padding-top: 3em;
-			 padding-bottom: 1em
-		 }		 
-
-.card__heading {
-  font-size: 2em;
-  text-transform: uppercase;
-  text-align: center;
-  color: #fff;
-	 
-}
-
-
-
-.card__details {
-display: block;		
-}
-
-.card__details ul {
-	display: block;
-  list-style: none;
-  width: 15em;
-  margin: auto;
-padding-top: 5em;
-padding-bottom: 2em	
-}
-
-.card__details ul li {
-	display: block;
-  text-align: center;
-  padding: 1em;
-  width: 10em;
-}
-
-.card__details ul li:not(:last-child) {
-  border-bottom: 1px solid #eee;
-}
-
-body {
-  color: #fff;
-  background: #000;
-}
-
-	
-
+		  
 </style>
 	  
   </head>
   <body>
-   
-
-
-          <div class="card">
-            <div class="card__side card__side--front-2">
-              <div class="card__title card__title--2">
-                <i class="fas fa-plane"></i>
-                <h4 class="card__heading">Plus</h4>
-              </div>
-
-              <div class="card__details">
-                <ul>
-                  <li>Includes Basic Package Features</li>
-                  <li>Unlimited Websites</li>
-                  <li>Unlimited SSD Storage</li>
-                  <li>Unlimited Domains</li>
-                  <li>Unlimited Parked Domains</li>
-                  <li>Unlimited Sub Domains</li>
-                </ul>
-              </div>
-            </div>
-            <div class="card__side card__side--back card__side--back-2">
-              <div class="card__cta">
-                <div class="card__price-box">
-                  <p class="card__price-only">Only</p>
-                  <p class="card__price-value">$5.45/mo*</p>
-                </div>
-                <a href="#popup" class="btn btn--white">Select</a>
-              </div>
-            </div>
-          </div>
-
-      
-	
+	  <div class="mapa">
+		 
+<div id="a" class="pozarevac1">Pozarevac</div> 
+	   <img src="mapa/srbija-mapa.png" alt="">
+		<div id="b" class="pozarevac">asd</div>  
+		  
+	  </div>
+	  
+	  
      
   </body>
 </html>

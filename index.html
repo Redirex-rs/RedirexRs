@@ -5,13 +5,12 @@
 <meta charset="utf-8">
 <!--Import Google Icon Font-->
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet"> 	
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:ital,wght@0,700;1,900&display=swap" rel="stylesheet"> <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>	
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>	
 <script data-ad-client="ca-pub-2077196854990037" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!--Import materialize.css-->
 	
-	
+
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:ital,wght@0,700;1,900&display=swap" rel="stylesheet"> 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -60,7 +59,7 @@
 <script src="JSS/backtotop.js"></script>
 <script src="JSS/Filterovanje1.js"></script>
 <script src="src/selectstyle.js"></script>	
-<script src="JSS/pop-up-modal.js"></script>
+<script src="JSS/pop-up-modal.js"></script>	
 	
 <style>
 	*{
@@ -626,15 +625,7 @@ html {
         transform: scale(1.0);
         transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
     }
-.dropdown {
-  background: rgba(12,64,118,1.00);
-  color: white;
-  font-size: 1em;
-  border: none;
-  cursor: pointer;
-  height: 2.5em;
-  width: 100%;
-}
+
 .inactiveLink {
    pointer-events: none;
    cursor: default;
@@ -658,10 +649,7 @@ html {
 	outline: none
 	}
 /* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-	
-}
+
 .dropdown img {
 		float: right;
 		margin-right: em
@@ -834,10 +822,7 @@ h3{
 	
 	}
 
-	.flex-container3 > .dropdown >.dropdown{
-		border: 0.1em solid gray;
-		height: 100%
-	}
+
 	
 	
 	@media (max-width: 768px){
@@ -962,7 +947,52 @@ h3{
 		border-radius: 10px;
 		padding: 1em
 	}
+	#okruzi{
+	}
+	.okruzi-i-opstine
+	{
+		display: flex;
+		width: 100%;
+		flex-wrap: wrap;
+		padding: 2em
+	}
+	.dropdown{
+		width: 14em;
+		height: 2.5em;
+		color: white;
+		margin: 0.5em;
+		text-align: center;
+		padding-top: 0.4em;
+		background: black;
+		border: 0.5px solid #4f4f4f;
+		
+	}
 	
+	
+	.dropdown img {
+		width: 2em;
+		height: 2em;
+	}
+	
+	.lista-okruga{
+		display: flex;
+		flex-wrap: wrap;
+		width: 80em;
+		margin: auto;
+		padding: 2em;
+			
+		
+		
+	}
+	.mapa{
+		position: absolute;
+		width: 24em;
+		height: 38em;	
+		right: 0
+	}
+	.mapa img {
+		width: inherit
+	}
 	</style>
 
 	
@@ -1023,11 +1053,6 @@ h3{
 </nav>
 <!--/.Navbar-->	
 	
-
-
-	
-	
-
 <div class="hover_bkgr_fricc">
     <span class="helper"></span>
     <div>
@@ -1089,21 +1114,20 @@ h3{
             <h3>Poslovni Katalog Srbije</h3>
         </div>
       </div>
-    
-  
+   
 
- 		
-	
-	
+
 	
 	
 	
 <div id="okruzi" class="glavni-menu" style="margin-top: -0.5em; color: white"><strong>OKRUZI I OPŠTINE</strong></div>
-  	
-<div id="myDIV" class="flex-container3" style="margin-bottom: 10em; margin-top: 3em; ">
+
+<div class="okruzi-i-opstine">
+	
+<div class="lista-okruga">	
 <!--Borski  -->	
-<div class="dropdown" style="margin-bottom: 1em">
-	<button class="dropdown">Borski okrug (1) &nbsp;<img src="stranice/Bor Okrug/Bor/Veliki_grb_Bora.png" alt=""> </button>
+<div id="bor" class="dropdown" >	
+	Borski okrug (1)&nbsp;<img src="stranice/Bor Okrug/Bor/Veliki_grb_Bora.png" alt=""> 
             <div id="myDropdown-bor" class="dropdown-menu">
 			
 				<i class="fas fa-chevron-up fa-2x arrowup"></i>
@@ -1112,19 +1136,18 @@ h3{
                <a href="stranice/Bor Okrug/Kladovo/Kladovo.html">Kladovo (1)</a>
                <a class="inactiveLink" href="#">Majdanpek</a>
 			   <a class="inactiveLink" href="#">Negotin</a>
-            </div>
+            </div>	
 </div>
-<!--Beograd  -->		
-<div class="dropdown"  style="margin-bottom: 1em;">	
-		<button class="dropdown">
+<!--Beograd  -->
+<div class="dropdown" >		
 	<a class="beograd-dugme" href="stranice/28-Grad Beograd/index-beograd.html" style="font-size: 1em;">		
 	    <i style="color: red" class="fas fa-exclamation"></i>&nbsp;Grad Beograd (33)&nbsp;<img src="stranice/28-Grad Beograd/1024px-Flag_of_Belgrade,_Serbia.svg.png" alt="" >
 		
-	</a> 	</button>
-</div>	
+	</a> 
+</div>
 <!--Braničevski  -->			
-<div class="dropdown" style="margin-bottom: 1em;">
-	<button  class="dropdown">Braničevski okrug (3)&nbsp;<img src="stranice/Branicevo Okrug/Pozarevac/800px-Grb_pozarevca.svg.png" alt=""> </button>
+<div id="pozarevac" class="dropdown">
+	Braničevski okrug (3)&nbsp;<img src="stranice/Branicevo Okrug/Pozarevac/800px-Grb_pozarevca.svg.png" alt="">
             <div id="myDropdown-branicevo" class="dropdown-menu">
 				<i class="fas fa-chevron-up fa-2x arrowup"></i>
                <a href="stranice/Branicevo Okrug/Pozarevac/Pozarevac.html">Požarevac (2)</a>
@@ -1135,11 +1158,11 @@ h3{
                <a class="inactiveLink" href="#">Veliko Gradište</a>
                <a class="inactiveLink" href="#">Žabari</a>
 			   <a class="inactiveLink" href="#">Žagubica</a>	
-            </div>
+            </div>		
 </div>		
 <!--Zaječarski  -->				
-<div class="dropdown" style="margin-bottom: 1em">
-	<button  class="dropdown">Zaječarski okrug (2)&nbsp;<img src="stranice/Zajecarski okrug/Zajecar/COA_zajecar.png" alt=""> </button>
+<div id="zajecar" class="dropdown" >
+Zaječarski okrug (2)&nbsp;<img src="stranice/Zajecarski okrug/Zajecar/COA_zajecar.png" alt=""> 
             <div id="myDropdown-zajecar" class="dropdown-menu">
 				<i class="fas fa-chevron-up fa-2x arrowup"></i>
                <a class="inactiveLink" href="#">Boljevac</a>
@@ -1149,8 +1172,8 @@ h3{
             </div>
 </div>	
  <!--Zapadno backi -->       
-<div class="dropdown" style="margin-bottom: 1em">
-	<button class="dropdown-disabled">Zapadnobački okrug &nbsp;<img src="stranice/Zapadnobacki okrug/COA_Sombor.png" alt=""> </button>
+<div id="sombor" class="dropdown" >
+Zapadnobački okrug &nbsp;<img src="stranice/Zapadnobacki okrug/COA_Sombor.png" alt="">
             <div id="myDropdown-zbacka" class="dropdown-menu">
 				<i class="fas fa-chevron-up fa-2x arrowup"></i>
 			   <a class="inactiveLink" href="stranice/Zapadnobacki okrug/Apatin/Apatin.html">Apatin</a>	
@@ -1158,10 +1181,10 @@ h3{
                <a class="inactiveLink" href="stranice/Zapadnobacki okrug/Odzaci/Odzaci.html">Odžaci</a>
                <a class="inactiveLink" href="stranice/Zapadnobacki okrug/Sombor/Sombor.html">Sombor</a>
             </div>
-</div>	          
+	</div>
 <!--Zlatiborski  -->            
-<div class="dropdown" style="margin-bottom: 1em">
-	<button  class="dropdown">Zlatiborski okrug (2)&nbsp;<img src="stranice/Zlatiborski okrug/Uzice/Uzice_COA_small.gif" alt=""> </button>
+<div id="uzice" class="dropdown" >
+Zlatiborski okrug (2)&nbsp;<img src="stranice/Zlatiborski okrug/Uzice/Uzice_COA_small.gif" alt=""> 
             <div id="myDropdown-zlatibor" class="dropdown-menu">
 				<i class="fas fa-chevron-up fa-2x arrowup"></i>
                <a href="stranice/Zlatiborski okrug/Arilje/Arilje.html">Arilje (1)</a>
@@ -1175,10 +1198,10 @@ h3{
 			   <a class="inactiveLink" href="#">Sjenica</a>
 			   <a href="stranice/Zlatiborski okrug/Uzice/Uzice.html">Užice (1)</a>	
             </div>
-</div>	
+	</div>
 <!--Jablanički  -->           
-<div class="dropdown" style="margin-bottom: 1em"	>
-	<button  class="dropdown-disabled">Jablanički okrug &nbsp;<img src="stranice/Jablanicki okrug/Leskovac/Leskovac-grb-srednji.png" alt=""> </button>
+<div id="leskovac" class="dropdown" 	>
+Jablanički okrug &nbsp;<img src="stranice/Jablanicki okrug/Leskovac/Leskovac-grb-srednji.png" alt="">
             <div id="myDropdown-jablan" class="dropdown-menu">
 				<i class="fas fa-chevron-up fa-2x arrowup"></i>
                <a class="inactiveLink" href="stranice/Jablanicki okrug/Bojnik/Bojnik.html">Bojnik</a>
@@ -1188,10 +1211,10 @@ h3{
 			   <a class="inactiveLink" href="stranice/Jablanicki okrug/Medvedja/Medvedja.html">Medvedja</a>
                <a class="inactiveLink" href="stranice/Jablanicki okrug/Vlasotince/Vlasotince.html">Vlasotince</a>	
             </div>
-</div>      
+	</div>
  <!--Južnobanatski  -->     
-<div class="dropdown" style="margin-bottom: 1em">
-	<button  class="dropdown">Južnobanatski okrug (1)&nbsp;<img src="stranice/Juznobanatski okrug/Pancevo/Pancevo-coat_of_arms.png" alt=""> </button>
+<div id="pancevo" class="dropdown" >
+Južnobanatski okrug (1)&nbsp;<img src="stranice/Juznobanatski okrug/Pancevo/Pancevo-coat_of_arms.png" alt=""> 
             <div id="myDropdown-jbanat" class="dropdown-menu">
 				<i class="fas fa-chevron-up fa-2x arrowup"></i>
                <a class="inactiveLink" href="stranice/Juznobanatski okrug/Alibunar/Alibunar.html">Alibunar</a>
@@ -1204,9 +1227,8 @@ h3{
                <a class="inactiveLink"  href="stranice/Juznobanatski okrug/Vrsac/Vrsac.html">Vršac</a>	
             </div>
 </div>  
-<!--Južnobački  -->		
-<div class="dropdown" style="margin-bottom: 1em">
-	<button  class="dropdown">Južnobački okrug (6)&nbsp;<img src="stranice/Juznobacki okrug/Novi sad/800px-Novi_Sad_Coat_of_Arms.svg.png" alt=""> </button>
+<!--Južnobački -->		
+<div id="novi_sad" class="dropdown" >Južnobački okrug (6)&nbsp;<img src="stranice/Juznobacki okrug/Novi sad/800px-Novi_Sad_Coat_of_Arms.svg.png" alt="">
             <div id="myDropdown-jbacka" class="dropdown-menu">
 				<i class="fas fa-chevron-up fa-2x arrowup"></i>
                <a class="inactiveLink" href="#">Bač</a>
@@ -1222,10 +1244,10 @@ h3{
 			   <a class="inactiveLink" href="#">Vrbas</a>
 			   <a class="inactiveLink" href="#">Žabalj</a>
             </div>
-</div>		
+	</div>
 <!--Kolubarski  -->          
-<div class="dropdown" style="margin-bottom: 1em">
-	<button  class="dropdown">Kolubarski okrug (2)&nbsp;<img src="stranice/Kolubarski okrug/Valjevo/COA_Valjevo.gif" alt=""> </button>
+<div id="valjevo" class="dropdown" >
+Kolubarski okrug (2)&nbsp;<img src="stranice/Kolubarski okrug/Valjevo/COA_Valjevo.gif" alt="">
             <div id="myDropdown-kolubarski" class="dropdown-menu">
 				<i class="fas fa-chevron-up fa-2x arrowup"></i>
                <a class="inactiveLink" href="#">Lajkovac</a>
@@ -1234,11 +1256,11 @@ h3{
 			   <a href="stranice/Kolubarski okrug/Osecina/Osecina.html">Osecina (1)</a>
 			   <a class="inactiveLink" href="#">Ub</a>
                <a href="stranice/Kolubarski okrug/Valjevo/Valjevo.html">Valjevo (1)</a>
-            </div>
-</div>          
+            </div> 
+	</div>
 <!--Kosovski  -->		
-<div class="dropdown" style="margin-bottom: 1em">
-	<button  class="dropdown-disabled">Kosovski okrug &nbsp;</button>
+<div id="pristina" class="dropdown" >
+	Kosovski okrug &nbsp;
             <div id="myDropdown-kosovski" class="dropdown-menu">
 				<i class="fas fa-chevron-up fa-2x arrowup"></i>
                <a class="inactiveLink" href="stranice/Kosovski okrug/Glogovac/Glogovac.html">Glogovac</a>
@@ -1252,10 +1274,10 @@ h3{
                <a class="inactiveLink" href="stranice/8-Kosovski okrug/Strpce/">Štrpce</a>
 			   <a class="inactiveLink" href="stranice/8-Kosovski okrug/Urosevac/">Uroševac</a>	
             </div>
-</div> 
+	</div>
 <!--Kosovsko-mitrovački  -->		
-<div class="dropdown" style="margin-bottom: 1em">
-	<button  class="dropdown-disabled">Kosovsko-mitrovački okrug &nbsp;</button>
+<div id="kosovska_mitrovica" class="dropdown" >
+	Kosovsko-mitrovački okrug &nbsp;
             <div id="myDropdown-kosmitrovacki" class="dropdown-menu">
 				<i class="fas fa-chevron-up fa-2x arrowup"></i>
                <a class="inactiveLink" href="stranice/Kosovsko-mitrovacki okrug/Kosovska mitrovica/Kosovska-mitrovica.html">Kosovska Mitrovica</a>
@@ -1267,8 +1289,8 @@ h3{
             </div>
 </div>		
 <!--Kosovsko-pomoravski  -->		
-<div class="dropdown" style="margin-bottom: 1em">
-	<button  class="dropdown-disabled">Kosovsko-pomoravski okrug &nbsp;</button>
+<div id="gnjilane" class="dropdown" >
+	Kosovsko-pomoravski okrug &nbsp;
       <div id="myDropdown-kospomoravski" class="dropdown-menu">
 		  <i class="fas fa-chevron-up fa-2x arrowup"></i>
               <a class="inactiveLink" href="stranice/Kosovsko-pomoravski okrug/Gnjilane/Gnjilane.html">Gnjilane</a>
@@ -1278,8 +1300,8 @@ h3{
       </div>
 </div>         
 <!--Mačvanski  -->               
-<div class="dropdown" style="margin-bottom: 1em">
-	<button  class="dropdown">Mačvanski okrug (1)&nbsp;<img src="stranice/Macvanski okrug/Sabac/COA_Šabac_(big).png" alt=""> </button>
+<div id="zajecar" class="dropdown" >
+	Mačvanski okrug (1)&nbsp;<img src="stranice/Macvanski okrug/Sabac/COA_Šabac_(big).png" alt=""> 
             <div id="myDropdown-macva" class="dropdown-menu">
 				<i class="fas fa-chevron-up fa-2x arrowup"></i>
                <a class="inactiveLink" href="#">Bogatić</a>
@@ -1291,10 +1313,11 @@ h3{
 			   <a href="stranice/Macvanski okrug/Sabac/Sabac.html">Šabac (1)</a>
                <a class="inactiveLink" href="#">Vladimirci</a>
             </div>
+
 </div>
  <!--Moravički  -->       
-<div class="dropdown" style="margin-bottom: 1em">
-	<button  class="dropdown">Moravički okrug (1)&nbsp;<img src="stranice/Moravicki okrug/Cacak/Čačak_-_grb.png" alt=""> </button>
+<div id="zajecar" class="dropdown" >
+	Moravički okrug (1)&nbsp;<img src="stranice/Moravicki okrug/Cacak/Čačak_-_grb.png" alt=""> 
             <div id="myDropdown-moravicki" class="dropdown-menu">
 				<i class="fas fa-chevron-up fa-2x arrowup"></i>
                <a href="stranice/Moravicki okrug/Cacak/Cacak.html">Čačak (1)</a>
@@ -1304,8 +1327,8 @@ h3{
             </div>
 </div>		
 <!--Nišavski  -->		
-<div class="dropdown" style="margin-bottom: 1em">
-	<button  class="dropdown">&nbsp;Nišavski okrug (10)&nbsp;<img src="stranice/Nisavski okrug/Nis/Nis_Coat_of_Arms.png" alt=""> </button>
+<div id="zajecar" class="dropdown" >
+	&nbsp;Nišavski okrug (10)&nbsp;<img src="stranice/Nisavski okrug/Nis/Nis_Coat_of_Arms.png" alt=""> 
             <div id="myDropdown-nis" class="dropdown-menu">
 				<i class="fas fa-chevron-up fa-2x arrowup"></i>
                <a href="stranice/Nisavski okrug/Doljevac/Doljevac.html">Doljevac (1)</a>
@@ -1316,10 +1339,11 @@ h3{
                <a class="inactiveLink" href="#">Ražanj</a>
 			   <a class="inactiveLink" href="#">Svrljig</a>
             </div>
+
 </div>
  <!--Pećki  -->            
-<div class="dropdown" style="margin-bottom: 1em">
-	<button  class="dropdown-disabled">Pećki okrug &nbsp; </button>
+<div id="zajecar" class="dropdown" >
+	Pećki okrug &nbsp; 
             <div id="myDropdown-pec" class="dropdown-menu">
 				<i class="fas fa-chevron-up fa-2x arrowup"></i>
                <a class="inactiveLink" href="stranice/Pecki okrug/Decani/Decani.html">Dečani</a>
@@ -1328,10 +1352,11 @@ h3{
 			   <a class="inactiveLink" href="stranice/Pecki okrug/Klina/Klina.html">Klina</a>
 			   <a class="inactiveLink" href="stranice/Pecki okrug/Pec/Pec.html">Peć</a>
             </div>
+
 </div>         
 <!--Pirotski  -->		
-<div class="dropdown" style="margin-bottom: 1em">
-	<button  class="dropdown">Pirotski okrug (1)&nbsp;<img src="stranice/Pirotski okrug/Pirot/Blason_de_Pirot.png" alt=""> </button>
+<div class="dropdown" >
+	Pirotski okrug (1)&nbsp;<img src="stranice/Pirotski okrug/Pirot/Blason_de_Pirot.png" alt=""> 
             <div id="myDropdown-pirot" class="dropdown-menu">
 				<i class="fas fa-chevron-up fa-2x arrowup"></i>
                <a class="inactiveLink" href="#">Babušnica</a>
@@ -1341,8 +1366,8 @@ h3{
             </div>
 </div>           
  <!--Podunavski  -->                  
-<div class="dropdown" style="margin-bottom: 1em">
-	<button  class="dropdown">Podunavski okrug (1)&nbsp;<img src="stranice/Podunavski okrug/Smederevo/Smederevo_coat_of_arms.gif" alt=""> </button>
+<div class="dropdown" >
+	Podunavski okrug (1)&nbsp;<img src="stranice/Podunavski okrug/Smederevo/Smederevo_coat_of_arms.gif" alt=""> 
             <div id="myDropdown-podunavski" class="dropdown-menu">
 				<i class="fas fa-chevron-up fa-2x arrowup"></i>
                <a class="inactiveLink" href="#">Smederevo</a>
@@ -1351,8 +1376,8 @@ h3{
             </div>
 </div>          
 <!--Pomoravski  -->       
-<div class="dropdown" style="margin-bottom: 1em">
-	<button  class="dropdown-disabled">Pomoravski okrug &nbsp;<img src="stranice/Pomoravski okrug/Jagodina/Grb_opstine_Jagodina.png" alt=""> </button>
+<div class="dropdown" >
+	Pomoravski okrug &nbsp;<img src="stranice/Pomoravski okrug/Jagodina/Grb_opstine_Jagodina.png" alt=""> 
             <div id="myDropdown-pomoravski" class="dropdown-menu">
 				<i class="fas fa-chevron-up fa-2x arrowup"></i>
                <a class="inactiveLink" href="stranice/Pomoravski okrug/Cuprija/Cuprija.html">Ćuprija</a>
@@ -1364,8 +1389,8 @@ h3{
             </div>
 </div>            
  <!--Prizrenski  -->      
-<div class="dropdown" style="margin-bottom: 1em">
-	<button  class="dropdown-disabled">Prizrenski okrug &nbsp; </button>
+<div class="dropdown" >
+	Prizrenski okrug &nbsp; 
             <div id="myDropdown-prizrenski" class="dropdown-menu">
 				<i class="fas fa-chevron-up fa-2x arrowup"></i>
                <a class="inactiveLink" href="stranice/Prizrenski okrug/Dragas/Dragas.html">Dragaš</a>
@@ -1375,8 +1400,8 @@ h3{
             </div>
 </div>  
 <!--Pčinjski  -->		
-<div class="dropdown" style="margin-bottom: 1em">
-	<button  class="dropdown">Pčinjski okrug (3)&nbsp;<img src="stranice/Pcinjski okrug/Vranje/800px-Veliki_grb-vranja.png" alt=""> </button>
+<div class="dropdown" >
+	Pčinjski okrug (3)&nbsp;<img src="stranice/Pcinjski okrug/Vranje/800px-Veliki_grb-vranja.png" alt=""> 
             <div id="myDropdown-pcinj" class="dropdown-menu">
 				<i class="fas fa-chevron-up fa-2x arrowup"></i>
                <a class="inactiveLink" href="#">Bosilegrad</a>
@@ -1389,8 +1414,8 @@ h3{
             </div>
 </div>           
  <!--Rasinski  -->      
-<div class="dropdown" style="margin-bottom: 1em">
-	<button  class="dropdown">Rasinski okrug (1)&nbsp;<img src="stranice/Rasinski okrug/Krusevac/Grb_ks.png" alt=""> </button>
+<div class="dropdown" >
+	Rasinski okrug (1)&nbsp;<img src="stranice/Rasinski okrug/Krusevac/Grb_ks.png" alt=""> 
             <div id="myDropdown-rasinski" class="dropdown-menu">
 				<i class="fas fa-chevron-up fa-2x arrowup"></i>
                <a class="inactiveLink" href="#">Aleksandrovac</a>
@@ -1402,8 +1427,8 @@ h3{
             </div>
 </div>           
 <!--Raški  -->       
-<div class="dropdown" style="margin-bottom: 1em">
-	<button  class="dropdown">Raški okrug (3)&nbsp;<img src="stranice/Raski okrug/Kraljevo/Coat_of_arms_of_Kraljevo.png" alt=""> </button>
+<div class="dropdown" >
+	Raški okrug (3)&nbsp;<img src="stranice/Raski okrug/Kraljevo/Coat_of_arms_of_Kraljevo.png" alt=""> 
             <div id="myDropdown-raski" class="dropdown-menu">
 				<i class="fas fa-chevron-up fa-2x arrowup"></i>
                <a href="stranice/Raski okrug/Kraljevo/Kraljevo.html">Kraljevo (1)</a>
@@ -1414,8 +1439,8 @@ h3{
             </div>
 </div>          
 <!--Severnobanatski  -->       
-<div class="dropdown" style="margin-bottom: 1em">
-	<button  class="dropdown" style="font-size: 0.9em">Severnobanatski okrug (1)&nbsp;<img src="stranice/Severnobanatski okrug/Kikinda/Wappen_Kikinda.png" alt=""> </button>
+<div class="dropdown" >
+	Severnobanatski okrug (1)&nbsp;<img src="stranice/Severnobanatski okrug/Kikinda/Wappen_Kikinda.png" alt=""> 
             <div id="myDropdown-sbanat" class="dropdown-menu">
 				<i class="fas fa-chevron-up fa-2x arrowup"></i>
                <a class="inactiveLink" href="#">Ada</a>
@@ -1427,8 +1452,8 @@ h3{
             </div>
 </div>         
 <!--Severnobački  -->       
-<div class="dropdown" style="margin-bottom: 1em">
-	<button  class="dropdown">Severnobački okrug (3)&nbsp;<img src="stranice/Severnobacki okrug/Subotica/Grb_subotice.png" alt=""> </button>
+<div class="dropdown" >
+	Severnobački okrug (3)&nbsp;<img src="stranice/Severnobacki okrug/Subotica/Grb_subotice.png" alt=""> 
             <div id="myDropdown-sbacki" class="dropdown-menu">
 				<i class="fas fa-chevron-up fa-2x arrowup"></i>
                <a class="inactiveLink" href="#">Bačka Topola</a>
@@ -1437,8 +1462,8 @@ h3{
             </div>
 </div>         
 <!--Srednjobanatski  -->       
-<div class="dropdown" style="margin-bottom: 1em">
-	<button  class="dropdown-disabled">Srednjobanatski okrug &nbsp;<img src="stranice/Srednjobanatski okrug/Zrenjanin/Coat_of_Arms_of_Zrenjanin.png" alt=""> </button>
+<div class="dropdown" >
+	Srednjobanatski okrug &nbsp;<img src="stranice/Srednjobanatski okrug/Zrenjanin/Coat_of_Arms_of_Zrenjanin.png" alt=""> 
             <div id="myDropdown-sredbanat" class="dropdown-menu">
 				<i class="fas fa-chevron-up fa-2x arrowup"></i>
                <a class="inactiveLink" href="stranice/Srednjobanatski okrug/Nova crnja/Nova-crnja.html">Nova Crnja</a>
@@ -1449,8 +1474,8 @@ h3{
             </div>
 </div>          
  <!--Sremski  -->      
-<div class="dropdown" style="margin-bottom: 1em">
-	<button  class="dropdown">Sremski okrug (2)&nbsp;<img src="stranice/Sremski okrug/Sremska mitrovica/1200px-Grb_sremska_mitrovica.svg.png" alt=""> </button>
+<div class="dropdown" >
+	Sremski okrug (2)&nbsp;<img src="stranice/Sremski okrug/Sremska mitrovica/1200px-Grb_sremska_mitrovica.svg.png" alt=""> 
             <div id="myDropdown-srem" class="dropdown-menu">
 				<i class="fas fa-chevron-up fa-2x arrowup"></i>
                <a class="inactiveLink" href="#">Indjija</a>
@@ -1463,8 +1488,8 @@ h3{
             </div>
 </div>          
 <!--Toplički  -->       
-<div class="dropdown" style="margin-bottom: 1em">
-	<button  class="dropdown">Toplički okrug (1)&nbsp;<img src="stranice/Toplicki okrug/Prokuplje/COA_Prokuplje.png" alt=""> </button>
+<div class="dropdown" >
+	Toplički okrug (1)&nbsp;<img src="stranice/Toplicki okrug/Prokuplje/COA_Prokuplje.png" alt=""> 
             <div id="myDropdown-toplicki" class="dropdown-menu">
 				<i class="fas fa-chevron-up fa-2x arrowup"></i>
                <a class="inactiveLink" href="#">Blace</a>
@@ -1474,8 +1499,8 @@ h3{
             </div>
 </div>         
  <!--Šumadijski  -->  
-<div class="dropdown" style="margin-bottom: 1em">
-	<button  class="dropdown">Šumadijski okrug (4)&nbsp;<img src="stranice/27-Sumadijski okrug/Kragujevac/Grb-Kragujevac.png" alt=""> </button>
+<div class="dropdown" >
+	Šumadijski okrug (4)&nbsp;<img src="stranice/27-Sumadijski okrug/Kragujevac/Grb-Kragujevac.png" alt=""> 
             <div id="myDropdown-sumadijski" class="dropdown-menu">
 				<i class="fas fa-chevron-up fa-2x arrowup"></i>
                <a class="inactiveLink" href="#">Arandjelovac</a>
@@ -1487,8 +1512,9 @@ h3{
                <a class="inactiveLink" href="#">Topola</a>
             </div>
 </div>          
-       	     
- </div>	
+    	
+ </div> 
+</div>
      
 	
 <div id="najnovije" class="glavni-menu"><p><strong>NAJNOVIJE</strong></p></div>	
@@ -1768,7 +1794,9 @@ h3{
 	
 var towns = ["Bor","Kladovo","Majdanpek","Negotin","Beograd","Požarevac","Kučevo","Malo Crniće","Petrovac","Golubac","Veliko Gradište","Žabari","Žagubica","Boljevac","Knjaževac","Sokobanja","Zaječar","Apatin","Kula","Odžaci","Sombor","Bajina Bašta","Čajetina","Kosjerić","Nova Varoš","Požega","Priboj","Prijepolje","Sjenica","Užice","Bojnik","Crna Trava","Lebane","Leskovac","Medveđa","Vlasotince","Alibunar","Bela Crkva","Kovačica","Kovin","Opovo","Pančevo","Plandište","Vršac","Bač","Bačka Palanka","Bački Petrovac","Bečej","Beočin","Novi Sad","Srbobran","Sremski Karlovci","Temerin","Titel","Vrbas","Žabalj","Lajkovac","Ljig","Mionica","Osecina","Ub","Valjevo","Glogovac","Kačanik","Kosovo Polje","Ljipljan","Obilić","Podujevo","Priština","Štimlje","Štrpce","Uroševac","Kosovska Mitrovica","Leposavić","Srbica","Vučitrn","Zubin Potok","Zvečan","Gnjilane","Kosovska Kamenica","Novo Brdo","Vitina","Bogatić","Koceljevo","Krupanj","Ljubovija","Loznica","Mali Zvornik","Šabac","Vladimirci","Čačak","Gornji Milanovac","Ivanjica","Lučani","Doljevac","Gadzin Han","Merošina","Niš","Niška Banja","Ražanj","Svrljig","Dečani","Đakovica","Istok","Klina","Peć","Babušnica","Bela Palanka","Dimitrovgrad","Pirot","Smederevo","Smederevska Palanka","Velika Plana","Ćuprija","Despotovac","Jagodina","Paraćin","Rekovac","Svilajnac","Dragaš","Orahovac","Prizren","Suva Reka","Bosilegrad","Bujanovac","Preševo","Surdulica","Trgovište","Vladičin Han","Vranje","Aleksandrovac","Brus","Ćićevac","Kruševac","Trstenik","Varvarin","Kraljevo","Novi Pazar","Raška","Tutin","Vrnjačka Banja","Ada","Čoka","Kanjiža","Kikinda","Novi Kneževac","Senta","Bačka Topola","Mali Idjos","Subotica","Nova Crnja","Novi Bečej","Sečanj","Žitište","Zrenjanin","Indjija","Irig","Pećnici","Ruma","Šid","Sremska Mitrovica","Stara Pazova","Blace","Kuršumlija","Prokuplje","Žitoradja","Arandjelovac","Batočina","Knić","Kragujevac","Lapovo","Rača","Topola"];	
 
-
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});
 
 
 window.addEventListener("load", function () {
@@ -1796,19 +1824,7 @@ function openNav2() {
 function closeNav2() {
   document.getElementById("mySidenav2").style.width = "0";
 }	
-	
-	
-	
-$(window).load(function () {
-    $(".trigger_popup_fricc").click(function(){
-       $('.hover_bkgr_fricc').show();
-    });
-    
-    $('.popupCloseButton').click(function(){
-        $('.hover_bkgr_fricc').hide();
-    });
-});
-	
+
 	</script>
 	
 

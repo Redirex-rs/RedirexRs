@@ -1,0 +1,181 @@
+@charset "utf-8";
+/* CSS Document */
+.mapa-lokacija{
+	width: 1.5em;
+	height: 1.5em;
+	position: absolute;
+	z-index: 2;
+	border-radius: 50%;
+	border: 1px solid rgba(117,117,117,0.68);
+	color: white;
+	font-family: 'Oswald', sans-serif;   
+}
+.mapa-lokacija p {
+	margin-top: 0.6em;
+	margin-right: 0.6em;
+	background: #4f4f4f;
+	width: 5em;
+	font-size: 0.9em
+}
+
+
+#beograd1{
+			  top: 14.2em;
+			  left: 40.3em;
+	}
+
+#beograd:hover ~ #beograd1 {
+    background: rgba(17,93,172,1.00)
+}
+
+#beograd-p{
+	margin-top: 1em;
+}
+
+#bor1{
+			  top: 22.2em;
+			  left: 65.5em;
+	}
+
+#bor:hover #bor1 {
+    background: rgba(17,93,172,1.00)
+}
+
+#bor-p{
+	margin-top: 1em;
+}
+
+#pozarevac1{
+			  top: 16.2em;
+			  left: 30em;
+	}
+
+#pozarevac:hover #pozarevac1 {
+    background: rgba(17,93,172,1.00)
+}
+
+#zajecar1{
+			  top: 17.2em;
+			  left: 68em;
+	}
+
+#zajecar:hover #zajecar1 {
+    background: rgba(17,93,172,1.00)
+}
+
+#zajecar-p {
+	margin-bottom: 2em;
+	margin-left: 1em;
+}
+
+
+#sombor1{
+			  top: 0.2em;
+			  left: 32em;
+	}
+
+#sombor:hover #sombor1 {
+    background: rgba(17,93,172,1.00)
+}
+
+#uzice1{
+			  top: 19.5em;
+			  left: 21.5em;
+	}
+
+#uzice:hover #uzice1 {
+    background: rgba(17,93,172,1.00)
+}
+
+#leskovac1{
+			  top: 23em;
+			  left: 65em;
+	}
+
+#leskovac:hover #leskovac1 {
+    background: rgba(17,93,172,1.00)
+}
+
+#pancevo1{
+			  top: 3.6em;
+			  left: 42em;
+	}
+
+#pancevo:hover #pancevo1 {
+    background: rgba(17,93,172,1.00)
+}
+
+#pancevo-p {
+	margin-bottom: 2em;
+	margin-left: 1em;
+	bottom: 3em
+}
+
+
+#novi_sad1{
+			  top: 1em;
+			  left: 22em;
+	}
+
+#novi_sad:hover #novi_sad1 {
+    background: rgba(17,93,172,1.00)
+}
+
+#valjevo1{
+			  top: 5.3em;
+			  left: 52.3em;
+	}
+
+#valjevo:hover #valjevo1 {
+    background: rgba(17,93,172,1.00)
+}
+#pristina1{
+			  top: 21.4em;
+			  left: 45.2em;
+	}
+
+#pristina:hover #pristina1 {
+    background: rgba(17,93,172,1.00)
+}
+#kosovska_mitrovica1{
+			  top: 19em;
+			  left: 28em;
+	}
+
+#kosovska_mitrovica:hover #kosovska_mitrovica1 {
+    background: rgba(17,93,172,1.00)
+}
+
+#gnjilane1{
+			  top: 18.6em;
+			  left: 61.7em;
+	}
+
+#gnjilane:hover #gnjilane1 {
+    background: rgba(17,93,172,1.00)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
