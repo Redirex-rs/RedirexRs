@@ -640,31 +640,23 @@ html {
   position: absolute;
   background-color: black;
   width: 100%;
-  z-index: 4;
-  border: 4px solid white	
+  border: 4px solid white;
+	overflow: hidden;
 }
 	
 /* Links inside the dropdown */
 .dropdown-menu a {
+	position: absolute;
   color: white;
   padding: 0.5em 16px;
   text-decoration: none;
-  display: block;
-  z-index: 4;
 margin: auto;	
   border-top: 1px solid #db6400;
 	background: black;
+	z-index: 222
 }
 	
-.dropdown-menu li {
-  color: black;
-  padding: 0.5em 16px;
-  text-decoration: none;
-  display: block;
-  z-index: 4;
-  margin-left: 1%;	
-	
-}	
+
 .dropdown-menu i {
 	 color: #db6400;
 	}
@@ -967,18 +959,27 @@ h3{
 		font-size: 1em;
 		font-family:'Russo One';
 		padding-left: 1em;
+		z-index: 1
+	}
+	.dropdown-menu {
 		z-index: 1;
+		visibility: visible;
 		
-			
+	}
+	.dropdown-menu a {
+	 display: block;
+  text-align: left;
+  position: relative;
+  z-index: 1;
 	}
 	
 	.dropdown img {
 		position: absolute;
 	    bottom: 0;
 		right: 0;
-		height: 5em;
-		width: 5em;
-		margin: auto;
+		height: 4em;
+		width: 4em;
+		margin: 0.3em;
 		opacity: 0.5;
 		z-index: -1
 	}
@@ -1139,7 +1140,7 @@ h3{
 	Borski okrug (1)&nbsp;
 	
 <div class="slika-overlay">	
-	<img id="Bor-slika" src="stranice/Bor Okrug/Bor/Veliki_grb_Bora.png" alt=""> 
+	<img src="stranice/Bor Okrug/Bor/Veliki_grb_Bora.png" alt=""> 
 </div>	
 	
             <div id="myDropdown-bor" class="dropdown-menu">
@@ -1453,7 +1454,7 @@ Kolubarski okrug (2)&nbsp;<img src="stranice/Kolubarski okrug/Valjevo/COA_Valjev
             </div>
 </div>          
 <!--Severnobanatski  -->       
-<div class="dropdown" id="Sbanatski" >
+<div class="dropdown" >
 	Severnobanatski okrug (1)&nbsp;<img src="stranice/Severnobanatski okrug/Kikinda/Wappen_Kikinda.png" alt=""> 
             <div id="myDropdown-sbanat" class="dropdown-menu">
 				<i class="fas fa-chevron-up fa-2x arrowup"></i>
