@@ -384,6 +384,7 @@ section {
 	}
 	
 	*{
+		font-family:  'Russo One', sans-serif;
 		box-sizing: border-box
 	}
 	
@@ -474,6 +475,7 @@ section {
 	
 	@media (min-width: 768px){
 .glavni-menu{
+	
 		width: 100%;
 		height: 2em;
 		background-color: rgba(0,0,0,0.02);
@@ -612,7 +614,9 @@ html {
 }
 /* Dropdown button on hover & focus */
 .dropdown:hover {
-  background-color: rgba(17,93,172,1.00)
+  background-color: rgba(17,93,172,0.6);
+border: 1px solid white;
+	border-radius: 4px
 }
 .dropdown.clicked{
 		border: 2px solid green;
@@ -912,7 +916,26 @@ h3{
 		display: block;
 		width: 90%;
 		margin: auto;
-			
+	}
+		.dropdown{
+		width: 20%;
+		height: 5em;
+		color: white;
+		padding-top: 0.4em;
+		background: black;
+		border: 0.1em solid #4f4f4f;
+		font-size: 1em;
+		font-family:'Russo One';
+		padding-left: 1em;
+	}
+		.dropdown img {
+		position: absolute;
+	    bottom: 0;
+		right: 0;
+		height: 4em;
+		width: 4em;
+		margin: 0.3em;
+		opacity: 0.5;
 	}
 	}
 	@media (min-width: 768px){
@@ -923,17 +946,33 @@ h3{
 		flex-wrap: wrap;
 		padding: 2em
 	}
-		
+		.dropdown img {
+		position: absolute;
+	    bottom: 0;
+		right: 0;
+		height: 4em;
+		width: 4em;
+		margin: 0.3em;
+		opacity: 0.5;
+	}
 		.lista-okruga{
 		display: flex;
 		flex-wrap: wrap;
 		width: 100%;
 		margin: auto;
 		padding: 2em;
-			
-		
-		
 	}
+		
+		.dropdown{
+		width: 20%;
+		height: 5em;
+		color: white;
+		padding-top: 0.4em;
+		background: black;
+		border: 0.1em solid #4f4f4f;
+		font-size: 1em;
+		font-family:'Russo One';
+		padding-left: 1em;
 	}
 	.donacije{
 		border: 1px solid gray;
@@ -949,16 +988,7 @@ h3{
 		flex-wrap: wrap;
 		
 	}
-	.dropdown{
-		width: 20%;
-		height: 5em;
-		color: white;
-		padding-top: 0.4em;
-		background: black;
-		border: 0.1em solid #4f4f4f;
-		font-size: 1em;
-		font-family:'Russo One';
-		padding-left: 1em;
+	
 	}
 	.dropdown-menu {
 		z-index: 1;
@@ -971,15 +1001,7 @@ h3{
   position: relative;
 	}
 	
-	.dropdown img {
-		position: absolute;
-	    bottom: 0;
-		right: 0;
-		height: 4em;
-		width: 4em;
-		margin: 0.3em;
-		opacity: 0.5;
-	}
+
 	
 	
 	
