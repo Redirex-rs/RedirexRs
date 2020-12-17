@@ -199,6 +199,139 @@ section {
 </style>
 <style>
 	
+	.row-novo{
+		display: block;
+		margin: auto;
+		
+	}	
+
+.clrd-font{
+	background: #FF512F;
+	background: -webkit-linear-gradient(to right, #F09819, #FF512F);
+	background: linear-gradient(to right, #F09819, #FF512F);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.btn-primary-kart {
+	background-color:transparent;
+	color: #fff;
+	border: 2px solid #fff;
+	font-size:20px;
+	text-transform: uppercase;
+	border-radius: 0px;	
+}
+.btn-primary:hover {
+	background-color:transparent;
+	border-color: #d6962c;
+	color: #d6962c;
+	border-radius: 20px;
+}
+
+.single_portfolio_text{
+	display:inline-block;
+	padding:1em;
+	position:relative;
+	overflow:hidden;
+	height: 30em;
+	width: 19em;
+	margin: em;
+	
+	background: white
+}
+	.single_portfolio_text p{
+	padding: 0.em;
+	font-size: 0.9em	
+}
+.single_portfolio_text img{
+	width:100%;	
+}
+
+.single_portfolio_text:hover .portfolio_images_overlay{
+	top:5%;
+	left: 5%;
+}
+
+.portfolio_images_overlay{
+	width: 90%;
+	height: 90%;
+	background: rgba(0, 0, 0, 0.9);
+	padding: 20px;
+	margin: 0 auto;
+	top: -100%;
+	left: 5%;
+	position: absolute;
+	transition:.6s;
+	
+}
+.portfolio_images_overlay h6{
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 30px;
+	font-weight: 900;
+	border: 2px solid #fff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.portfolio_images_overlay .product_price{
+	font-size: 35px;
+	color: #fff;
+	font-weight:800;
+	line-height:30px;
+}
+.portfolio_images_overlay .product_price i{
+    margin-right: -10px;
+}
+.zoom{
+	width: 5em;
+    height: 5em;
+    position: absolute;
+    bottom: -1.5em;
+    right: -1.5em;
+    border-radius: 50%;
+
+	background: #FF512F;
+	background: -webkit-linear-gradient(to right, #F09819, #FF512F);
+	background: linear-gradient(to right, #F09819, #FF512F);
+    box-shadow:0px 0px 0px 10px rgba(0,0,0,0.5);
+	opacity:0.9;
+}
+.zoom:before {
+	content: "\f00e";
+    font-family: FontAwesome;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 2em;
+    padding-right: 20px;
+    position: absolute;
+    top: 6px;
+    left: 16px;
+}
+@media (min-width:769px) and (max-width:991px) {
+	.portfolio_images_overlay {
+		padding: 0px;
+	}
+}
+@media (max-width:768px) {
+	.portfolio_images_overlay{
+		padding: 170px 20px;
+	}
+}
+@media (max-width:580px) {
+	.portfolio_images_overlay{
+		padding: 100px 20px;
+	}
+}
+@media (max-width:480px) {
+	.portfolio_images_overlay{
+		padding: 40px 20px;
+	}
+}
+@media (max-width:320px) {
+	.portfolio_images_overlay{
+		padding: 20px;
+	}
+}
+
 
 	
 	.table{
@@ -730,27 +863,32 @@ margin: auto;
   top: 0;
   text-align: center;	
 }
+	
 @media (min-width: 768px) {
 	.banner-title {
+		display: block;
   font-size: 1em;
   background: rgba(0, 0, 0, 0.00);
-  width: 100%;
-  height: 10em	;
+  width: 30em;
+  height: 15em;
   position: absolute;
   color: rgb(245, 245, 245);
-  text-shadow: 5px 5px 5px #000, 5px 5px 5px #000, 5px 5px 5px #000;
-  top: 0;
+  text-shadow:7px7px7px #000,7px7px7px #000,7px7px7px #000;
+  top: 15%;
+  right: 10%;
   text-align: center;
+			
 }
 }
+	
 @media (min-width: 768px) {
 	.banner-text > img {
-  height: 12em;
+  height: 22em;
   border: 1px solid pink		
 }
 	
   .banner-text {
-    height: 14em;
+    height: 24em;
   }
 h1{
 		font-size: 3em;
@@ -929,6 +1067,7 @@ h3{
 		padding-left: 1em;
 			margin: auto
 	}
+		
 		.dropdown img {
 		position: absolute;
 	    bottom: 0;
@@ -1002,8 +1141,43 @@ h3{
   position: relative;
 	}
 	
-
+	.banner-kartica{
+		position: absolute;
+		width: 25em;
+		height: 15em;
+		border: 2px solid white;
+		top: 15%;
+		left: 5%;
+		background: white;
+		border-radius: 4px;
+	}
+	.section-title-1{
+		margin-top: 3em;
+		color: white;
+	}
+	.section-title-2{
+		margin-top: 5em;
+	}
+	.section-title-2 h2{
+		color: white;
+		font-size: 2em;
+		padding: 1em;
+		margin-top: 2em
+	}
+	h1{
+		font-family: 'Russo One', sans-serif;]
+		margin-top: 5em;
+		padding-left: 0.5em
+		}
 	
+	.banner img {
+		position: absolute;
+		width: 100%;
+		height: 27.5em;
+		z-index: -3333
+		
+		
+	}
 	
 	
 	.mapa{
@@ -1024,6 +1198,46 @@ h3{
 		width: 30%;
 		opacity: 0.5;
 	}
+	
+	.banner-kartica > h6{
+		display: block;
+		padding-top: 1em;
+		text-align: center;
+		font-size: 0.8em
+	}
+	.banner-kartica > h3{
+		display: block;
+		text-align: center;
+		font-size: 2em
+	}
+	.banner-kartica > p{
+		display: block;
+		text-align: center;
+		font-size: 1em;
+		padding-top:0.5em;
+		width: 80%;
+		margin: auto;
+	}
+	.banner-kartica > h5 {
+		position: absolute;
+		text-align: center;
+		display: block;
+		width: 12em;
+		height: 2em;
+		bottom: 5%;
+		left: 20%;
+		padding: 0.4em;
+		color: white;
+		background: rgba(3,108,12,1.00);
+		border-radius: 5px
+	}
+	.nav-item:hover{
+		color: white
+	}
+	.navbar:hover{
+		background: rgba(0,0,0,1.00)
+	}
+	
 	</style>
 
 	
@@ -1039,7 +1253,28 @@ h3{
 </div>
 
 <!--Navbar-->
-<nav style="background: black" class="navbar navbar-expand-lg navbar-dark primary-color">
+
+<!--/.Navbar-->	
+	
+<div class="hover_bkgr_fricc">
+    <span class="helper"></span>
+    <div>
+        <div class="popupCloseButton">&times;</div>
+		
+        <p><!--Dinarski račun: <br>265-0000004820768-15 <br> <br> <br> -->	
+           BTC: <br> 1NwjUBUFCvvKpEEyjSjDbNwjr8Rcfgeu77 <br> <br> <br>
+		   ETH: <br> <p class="ETH">0x240fe17CF5893325c96D47e93A7EC2CEE8b60d75</p></p>
+    </div>
+</div>
+	
+	
+
+<!-- Carousel--->
+<div class="banner">
+	
+	<img src="banneri/winter-3970434.jpg" alt="">
+	
+<nav class="navbar navbar-expand-lg navbar-dark">
 
   <!-- Navbar brand -->
   <a style="font-family: 'Russo One', sans-serif;" class="navbar-brand" href="#">REDIREX</a>
@@ -1082,63 +1317,17 @@ h3{
   <!-- Collapsible content -->
 
 </nav>
-<!--/.Navbar-->	
 	
-<div class="hover_bkgr_fricc">
-    <span class="helper"></span>
-    <div>
-        <div class="popupCloseButton">&times;</div>
-		
-        <p><!--Dinarski račun: <br>265-0000004820768-15 <br> <br> <br> -->	
-           BTC: <br> 1NwjUBUFCvvKpEEyjSjDbNwjr8Rcfgeu77 <br> <br> <br>
-		   ETH: <br> <p class="ETH">0x240fe17CF5893325c96D47e93A7EC2CEE8b60d75</p></p>
-    </div>
-</div>
-	
-	
-
-<!-- Carousel--->
 <div class="banner-text" style="width: 100%; background: rgba(0,0,0,0.00)">
-<section>
 	
-   <div class="set">
 	
-	  <div class="leaf-fall" style=" width: 5em; height: 5em"><img style="" src="fall-anim/list-1.png" alt="1"></div>
-	   
-	   <div class="leaf-fall" style=" width: 5em; height: 5em"><img style="" src="fall-anim/list-2.png" alt="2"></div>
-	   
-	   <div class="leaf-fall-1" style="width: 5em; height: 5em"><img style="" src="fall-anim/list-3.png" alt="3"></div>
-	   
-	   <div class="leaf-fall" style=" width: 5em; height: 5em"><img style="" src="fall-anim/list-2.png" alt="4"></div>
-	   
-	   <div class="leaf-fall" style="width: 5em; height: 5em"><img style="" src="fall-anim/list-1.png" alt="5"></div>
-	   
-	   <div class="leaf-fall" style=" width: 5em; height: 5em"><img style="" src="fall-anim/list-2.png" alt="6"></div>
-	   
-	   <div class="leaf-fall" style="width: 5em; height: 5em"><img style="" src="fall-anim/list-1.png" alt="7"></div>
-	   
-	   <div class="leaf-fall" style=" width: 5em; height: 5em"><img style="" src="fall-anim/list-2.png" alt="8"></div>
-	   
-	   <div class="leaf-fall" style="width: 5em; height: 5em"><img style="" src="fall-anim/list-1.png" alt="9"></div>
-	   
-	   <div class="leaf-fall-1" style=" width: 5em; height: 5em"><img style="" src="fall-anim/list-3.png" alt="10"></div>
-	   
-	   <div class="leaf-fall-1" style="width: 5em; height: 5em"><img style="" src="fall-anim/list-3.png" alt="11"></div>
-	   
-	   <div class="leaf-fall" style="width: 5em; height: 5em"><img style="" src="fall-anim/list-1.png" alt="12"></div>
-	   
-	   <div class="leaf-fall" style="width: 5em; height: 5em"><img style="" src="fall-anim/list-1.png" alt="13"></div>
-	   
-	   <div class="leaf-fall-1" style="width: 5em; height: 5em"><img style="" src="fall-anim/list-3.png" alt="14"></div>
-	   
-	   <div class="leaf-fall-1" style="width: 5em; height: 5em"><img style="" src="fall-anim/list-3.png" alt="15"></div>
-	   
-	   <div class="leaf-fall-1" style="width: 5em; height: 5em"><img style="" src="fall-anim/list-3.png" alt="16"></div>
-	   
-
-   </div>
+   <div class="banner-kartica">
+	<h6>poslovni katalog Srbije</h6>
+	<h3>OGLAŠAVANJE</h3>
+	   <p>Oglašavanje je potpuno besplatno i sve informacije možete naći na stranici "kako se oglasiti"</p> <br><br>
+	   <h5><a href="kako-se-oglasiti.html" style="color: white">Kako se oglasiti?</a></h5>
+	</div>
 	
-</section>
 	<div class="banner-title ">
    
           <h1 style="text-decoration: none"><strong>REDIREX</strong></h1>
@@ -1146,14 +1335,12 @@ h3{
         </div>
       </div>
    
-
+</div>
 
 	
-	<a href="/banneri/delatnosti-slike/buildings.jpg" download>
-  <img src="/banneri/delatnosti-slike/buildings.jpg" alt="W3Schools" width="104" height="142">
-</a>
-	
 
+		
+<h2 class="section-title-1" style="color: white">OKRUZI I OPSTINE</h2>
 <div class="okruzi-i-opstine">
 		
 <!--Borski  -->	
@@ -1549,72 +1736,72 @@ Kolubarski okrug (2)&nbsp;<img src="stranice/Kolubarski okrug/Valjevo/COA_Valjev
 </div>          
     	 
 </div>
-     
-	
-	
+   
+<div class="section-title-2">
+	<h2>NAJNOVIJI</h2>
 <div class="najnovije">
-    <div class="row " style=""> 
+    <div class="row-novo"> 
 		
- <div class="col-sm-6 col-lg-2 col-md-3" style="margin: auto; margin-top: 1em;display: table ;padding-bottom: 0.5em">
-   <div class="container" style="margin: auto">
-  <div class="card" style="">
-    <img class="card-img-top" src="stranice/Nisavski okrug/Nis/Delatnosti/nekretnine/MEGA nekretnine/logo.png" alt="Card image">
-    <div class="card-body">
-      <h6 class="card-title">MEGA Nekretnine - Niš</h6>
-      <p class="card-text"></p>
-      <a href="stranice/Nisavski okrug/Nis/Delatnosti/nekretnine-nis.html#79" class="btn btn-primary">Detaljnije <i class="fas fa-external-link-alt"></i></a>
-    </div>
-  </div>
-    </div><!-- /.box -->        
-</div><!-- /.col-* -->
+					<div style="border: 1px solid red;" class="col-md-3 col-sm-4 col-xs-12 single_portfolio_text">
+							<img src="banneri/MEGANEKRT.jpg" alt="" />
+						<h5 style="color:red;padding-top: 1em"><center>Agencija MEGA Nekretnine Niš</center></h5>
+						<p><center>je osnovana sa ciljem da svojim klijentima uz punu pravnu zaštitu pruži kvalitetnu i kompletnu uslugu u prometu nekretnina. <br>Uz našu asistenciju možete brzo i sigurno da dobijete sve informacije o nekretnini koja Vas zanima.</center></p>
+							<div class="portfolio_images_overlay text-center">
+								<h5 class="clrd-font">MEGA Nekretnine - Niš</h5>
+								<p class="clrd-font product_price"> </p>
+								<a href="stranice/Nisavski okrug/Nis/Delatnosti/nekretnine/MEGA nekretnine/MEGA-nekretnine.html" class="btn btn-primary-kart">Redirex stranica</a>
+							</div>
+								<div class="zoom"></div>
+							
+					</div>
+		
+		
+					<div style="border: 1px solid red; width: " class="col-md-3 col-sm-4 col-xs-12 single_portfolio_text">
+							<img style="width: 75%" src="stranice/28-Grad Beograd/Delatnosti/Tekstil/ditekstekstil/unnamed.png" alt="" />
+						<h5 style="padding-top: 1em"><center>DITEKS TEKSTIL - Beograd</center></h5>
+						<p><center>Diteks tekstil je porodična firma koja se bavi proizvodnjom tekstila</center></p>
+							<div class="portfolio_images_overlay text-center">
+								<h5 class="clrd-font">DITEKS TEKSTIL - Beograd</h5>
+								<p class="clrd-font product_price"> </p>
+								<a href="stranice/28-Grad Beograd/Delatnosti/Tekstil/ditekstekstil/Diteks-tekstil.html" class="btn btn-primary-kart">Redirex stranica</a>
+							</div>
+								<div class="zoom"></div>
+					</div>		
 	
 		
-<div class="col-sm-6 col-lg-2 col-md-3" style="margin: auto; margin-top: 1em;display: table ;padding-bottom: 0.5em">
-   <div class="container" style="margin: auto">
-  <div class="card" style="">
-    <img class="card-img-top" src="stranice/28-Grad Beograd/Delatnosti/Tekstil/ditekstekstil/unnamed.png" alt="Card image">
-    <div class="card-body">
-      <h6 class="card-title">DITEKS TEKSTIL - Beograd</h6>
-      <p class="card-text"></p>
-      <a href="stranice/28-Grad Beograd/Delatnosti/tekstil-industrija-beograd.html#80" class="btn btn-primary">Detaljnije <i class="fas fa-external-link-alt"></i></a>
-    </div>
-  </div>
-    </div><!-- /.box -->        
-</div><!-- /.col-* -->		
+					<div style="border: 1px solid red; width: " class="col-md-3 col-sm-4 col-xs-12 single_portfolio_text">
+							<img style="width: 75%" src="stranice/28-Grad Beograd/Delatnosti/maloprodaja/vodoinst petrovic/mimaks-vodovodni-i-kanalizacioni-materijal-mimaks-5076-11502969290734.jpg" alt="" />
+						<h5 style="padding-top: 1em"><center>Vodovodni i Elektromaterijal Petrović - Beograd</center></h5>
+						
+							<div class="portfolio_images_overlay text-center">
+								<h5 class="clrd-font">Vodovodni i Elektromaterijal Petrović - Beograd</h5>
+								<p class="clrd-font product_price"> </p>
+								<a href="stranice/28-Grad Beograd/Delatnosti/ostalo-beograd.html#81" class="btn btn-primary-kart">Redirex stranica</a>
+							</div>
+								<div class="zoom"></div>
+					</div>	
 		
 
-<div class="col-sm-6 col-lg-2 col-md-3" style="margin: auto; margin-top: 1em ;display: table ;padding-bottom: 0.5em">
-   <div class="container" style="margin: auto">
-  <div class="card" style="">
-    <img class="card-img-top" src="stranice/28-Grad Beograd/Delatnosti/maloprodaja/vodoinst petrovic/mimaks-vodovodni-i-kanalizacioni-materijal-mimaks-5076-11502969290734.jpg" alt="Card image">
-    <div class="card-body">
-      <h6 class="card-title">Vodovodni i Elektromaterijal Petrović - Beograd</h6>
-      <p class="card-text"></p>
-      <a href="stranice/28-Grad Beograd/Delatnosti/maloprodaja-beograd.html#81" class="btn btn-primary">Detaljnije <i class="fas fa-external-link-alt"></i></a>
-    </div>
-  </div>
-    </div><!-- /.box -->        
-</div><!-- /.col-* -->			
+					<div style="border: 1px solid red; width: " class="col-md-3 col-sm-4 col-xs-12 single_portfolio_text">
+							<img style="width: " src="stranice/Branicevo Okrug/Pozarevac/Delatnosti/usluge/Jole- kotao/IMG_20201201_005840[1].jpg" alt="" />
+						<h5 style="padding-top: 1em"><center>Jocić Grejanje : CENTRALNO, SOLARNO I PODNO GREJANJE - Požarevac</center></h5>
+						<p><center>Pozovite nas da vam utoplimo dom. Sa nama nema zime</center></p>
+							<div class="portfolio_images_overlay text-center">
+								<h5 class="clrd-font">Jocić Grejanje : CENTRALNO, SOLARNO I PODNO GREJANJE - Požarevac</h5>
+								<p class="clrd-font product_price"> </p>
+								<a href="stranice/Branicevo Okrug/Pozarevac/Delatnosti/ostalo-pozarevac.html#82" class="btn btn-primary-kart">Redirex stranica</a>
+							</div>
+								<div class="zoom"></div>
+					</div>				
 
 		
 	
-<div class="col-sm-6 col-lg-2 col-md-3" style="margin: auto; margin-top: 1em ;display: table ;padding-bottom: 0.5em">
-   <div class="container" style="margin: auto">
-  <div class="card" style="">
-    <img class="card-img-top" src="stranice/Branicevo Okrug/Pozarevac/Delatnosti/usluge/Jole- kotao/IMG_20201201_005840[1].jpg" alt="Card image">
-    <div class="card-body">
-      <h6 class="card-title">Jocić Grejanje : CENTRALNO, SOLARNO I PODNO GREJANJE - Požarevac</h6>
-      <p class="card-text"></p>
-      <a href="stranice/Branicevo Okrug/Pozarevac/Delatnosti/ostalo-pozarevac.html#82" class="btn btn-primary">Detaljnije <i class="fas fa-external-link-alt"></i></a>
-    </div>
-  </div>
-    </div><!-- /.box -->        
-</div><!-- /.col-* -->			
+			
 		
 		
     </div><!-- /.row -->    						
 </div><!-- /.cols-sm-3 -->
-	   
+</div>	   
 
 	
 
@@ -1728,8 +1915,8 @@ Kolubarski okrug (2)&nbsp;<img src="stranice/Kolubarski okrug/Valjevo/COA_Valjev
 			<hr>
 			<dl>
 
-<dt style="padding-bottom: em"><i class="fa fa-envelope" style="margin-right: 0.5em"></i> redirexrs@gmail.com</dt><dd></dd>
-<dt style="padding-bottom: 1em"><i class="fa fa-envelope" style="margin-right: 0.5em"></i> redirex.srb@gmail.com</dt><dd></dd>				
+<dt style="padding-bottom: em"><i class="fa fa-envelope" style="margin-right: 0.5em"></i> redirexrs@gmail.com</dt>
+<dt style="padding-bottom: 1em"><i class="fa fa-envelope" style="margin-right: 0.5em"></i> redirex.srb@gmail.com</dt>				
 				
 <a href="https://www.facebook.com/redirexx" target="_blank" class="">
 <dt><i class="fab fa-facebook-square fa-3x" style="color: white"></i></dt><dd></dd></a>			
@@ -1856,7 +2043,12 @@ function openNav2() {
 function closeNav2() {
   document.getElementById("mySidenav2").style.width = "0";
 }	
-
+$(document).ready(function(){
+    $(".fancybox").fancybox({
+        openEffect: "none",
+        closeEffect: "none"
+    });
+});
 	</script>
 	
 
