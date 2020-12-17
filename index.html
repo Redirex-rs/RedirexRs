@@ -853,17 +853,7 @@ margin: auto;
   border-bottom: 1px solid gray
 }
 
-.banner-title {
-  font-size: 1em;
-  background: rgba(0, 0, 0, 0.00);
-  width: 90%;
-  position: absolute;
-  color: rgb(245, 245, 245);
-  text-shadow: 5px 5px 5px #000, 5px 5px 5px #000, 5px 5px 5px #000;
-  top: 0;
-  text-align: center;	
-}
-	
+
 @media (min-width: 768px) {
 	.banner-title {
 		display: block;
@@ -873,7 +863,7 @@ margin: auto;
   height: 15em;
   position: absolute;
   color: rgb(245, 245, 245);
-  text-shadow:7px7px7px #000,7px7px7px #000,7px7px7px #000;
+  text-shadow: 5px 5px 5px #000, 5px 5px 5px #000, 5px 5px 5px #000;
   top: 15%;
   right: 10%;
   text-align: center;
@@ -927,6 +917,7 @@ h3{
 	
 	
 	@media (max-width: 768px){
+		
 		/* Popup box BEGIN */
 .hover_bkgr_fricc{
     background:rgba(0,0,0,.4);
@@ -1043,19 +1034,103 @@ h3{
 /* Popup box BEGIN */
 	}
 	
-	@media (max-width: 768px)	{
+	@media (max-width: 768px){
+	
+	.section-title-2{
+		margin-top: 5em;
+	}
+	.section-title-2 h2{
+		color: white;
+		font-size: 2em;
+		padding: 1em;
+		margin-top: 2em
+	}	
+	.okruzi-i-opstine{
+		width: 100%;
+		padding: 2em;
+		margin-top: 5em
+	}	
+	.banner img {
+		position: absolute;
+		width: 100%;
+		height: 30em;
+		z-index: -3333
 		
-		.okruzi-i-opstine
-	{
+		
+	}
+	.banner-title {
+color: white;
+display: block;
+text-align: center;	
+text-shadow: 5px 5px 5px #000, 5px 5px 5px #000, 5px 5px 5px #000;
+width: 100%;
+height: 10em;
+padding-top: 2em		
+			
+}	
+	.banner-kartica{
+		display: block;
+			width: 20em;
+			height: 15em;
+		background: white;
+		margin: auto
+	}
+	.section-title-1{
+		margin-top: 13em;
+		color: white;
+	}
+	.section-title-2{
+		margin-top: 5em;
+	}	
+	.banner-kartica > h6{
+		display: block;
+		padding-top: 1em;
+		text-align: center;
+		font-size: 0.7em
+	}
+	.banner-kartica > h3{
+		display: block;
+		text-align: center;
+		font-size: 1.5em
+	}
+	.banner-kartica > p{
+		display: block;
+		text-align: center;
+		font-size: 0.8em;
+		padding-top:0.5em;
+		width: 80%;
+		margin: auto;
+	}
+	.banner-kartica > h5 {
+		position: absolute;
+		text-align: center;
+		display: block;
+		width: 10em;
+		height: 2em;
+		bottom: %;
+		left: 30%;
+		padding: 0.4em;
+		color: white;
+		background: rgba(3,108,12,1.00);
+		border-radius: 5px;
+		font-size: 0.9em
+	}
+	.nav-item:hover{
+		color: white
+	}
+	.navbar:hover{
+		background: rgba(0,0,0,1.00)
+	}
+	.okruzi-i-opstine{
 		
 		padding: 2em
 	}
-		.lista-okruga{
+	.lista-okruga{
 		display: block;
 		width: 90%;
 		margin: auto;
 	}
-		.dropdown{
+	.dropdown{
 		width: 90%;
 		height: 5em;
 		color: white;
@@ -1067,8 +1142,7 @@ h3{
 		padding-left: 1em;
 			margin: auto
 	}
-		
-		.dropdown img {
+	.dropdown img {
 		position: absolute;
 	    bottom: 0;
 		right: 0;
@@ -1078,7 +1152,81 @@ h3{
 		opacity: 0.5;
 	}
 	}
+	
+	
 	@media (min-width: 768px){
+		.banner img {
+		position: absolute;
+		width: 100%;
+		height: 27.5em;
+		z-index: -3333
+		
+		
+	}
+		
+			.banner-kartica{
+		position: absolute;
+		width: 25em;
+		height: 15em;
+		border: 2px solid white;
+		top: 15%;
+		left: 5%;
+		background: white;
+		border-radius: 4px;
+	}
+	.section-title-1{
+		margin-top: 3em;
+		color: white;
+	}
+	.section-title-2{
+		margin-top: 5em;
+	}
+	.section-title-2 h2{
+		color: white;
+		font-size: 2em;
+		padding: 1em;
+		margin-top: 2em
+	}
+	.banner-kartica > h6{
+		display: block;
+		padding-top: 1em;
+		text-align: center;
+		font-size: 0.8em
+	}
+	.banner-kartica > h3{
+		display: block;
+		text-align: center;
+		font-size: 2em
+	}
+	.banner-kartica > p{
+		display: block;
+		text-align: center;
+		font-size: 1em;
+		padding-top:0.5em;
+		width: 80%;
+		margin: auto;
+	}
+	.banner-kartica > h5 {
+		position: absolute;
+		text-align: center;
+		display: block;
+		width: 12em;
+		height: 2em;
+		bottom: 5%;
+		left: 20%;
+		padding: 0.4em;
+		color: white;
+		background: rgba(3,108,12,1.00);
+		border-radius: 5px
+	}
+	.nav-item:hover{
+		color: white
+	}
+	.navbar:hover{
+		background: rgba(0,0,0,1.00)
+	}
+		
+		
 		.okruzi-i-opstine
 	{
 		display: flex;
@@ -1141,44 +1289,14 @@ h3{
   position: relative;
 	}
 	
-	.banner-kartica{
-		position: absolute;
-		width: 25em;
-		height: 15em;
-		border: 2px solid white;
-		top: 15%;
-		left: 5%;
-		background: white;
-		border-radius: 4px;
-	}
-	.section-title-1{
-		margin-top: 3em;
-		color: white;
-	}
-	.section-title-2{
-		margin-top: 5em;
-	}
-	.section-title-2 h2{
-		color: white;
-		font-size: 2em;
-		padding: 1em;
-		margin-top: 2em
-	}
+
 	h1{
 		font-family: 'Russo One', sans-serif;]
 		margin-top: 5em;
 		padding-left: 0.5em
 		}
 	
-	.banner img {
-		position: absolute;
-		width: 100%;
-		height: 27.5em;
-		z-index: -3333
-		
-		
-	}
-	
+
 	
 	.mapa{
 		position: absolute;
@@ -1199,45 +1317,6 @@ h3{
 		opacity: 0.5;
 	}
 	
-	.banner-kartica > h6{
-		display: block;
-		padding-top: 1em;
-		text-align: center;
-		font-size: 0.8em
-	}
-	.banner-kartica > h3{
-		display: block;
-		text-align: center;
-		font-size: 2em
-	}
-	.banner-kartica > p{
-		display: block;
-		text-align: center;
-		font-size: 1em;
-		padding-top:0.5em;
-		width: 80%;
-		margin: auto;
-	}
-	.banner-kartica > h5 {
-		position: absolute;
-		text-align: center;
-		display: block;
-		width: 12em;
-		height: 2em;
-		bottom: 5%;
-		left: 20%;
-		padding: 0.4em;
-		color: white;
-		background: rgba(3,108,12,1.00);
-		border-radius: 5px
-	}
-	.nav-item:hover{
-		color: white
-	}
-	.navbar:hover{
-		background: rgba(0,0,0,1.00)
-	}
-	
 	</style>
 
 	
@@ -1251,11 +1330,6 @@ h3{
    <img  src="banneri/ezgif.com-crop.gif" alt="">
 </div>	
 </div>
-
-<!--Navbar-->
-
-<!--/.Navbar-->	
-	
 <div class="hover_bkgr_fricc">
     <span class="helper"></span>
     <div>
@@ -1742,7 +1816,7 @@ Kolubarski okrug (2)&nbsp;<img src="stranice/Kolubarski okrug/Valjevo/COA_Valjev
 <div class="najnovije">
     <div class="row-novo"> 
 		
-					<div style="border: 1px solid red;" class="col-md-3 col-sm-4 col-xs-12 single_portfolio_text">
+					<div class="col-md-3 col-sm-4 col-xs-12 single_portfolio_text">
 							<img src="banneri/MEGANEKRT.jpg" alt="" />
 						<h5 style="color:red;padding-top: 1em"><center>Agencija MEGA Nekretnine Niš</center></h5>
 						<p><center>je osnovana sa ciljem da svojim klijentima uz punu pravnu zaštitu pruži kvalitetnu i kompletnu uslugu u prometu nekretnina. <br>Uz našu asistenciju možete brzo i sigurno da dobijete sve informacije o nekretnini koja Vas zanima.</center></p>
@@ -1756,7 +1830,7 @@ Kolubarski okrug (2)&nbsp;<img src="stranice/Kolubarski okrug/Valjevo/COA_Valjev
 					</div>
 		
 		
-					<div style="border: 1px solid red; width: " class="col-md-3 col-sm-4 col-xs-12 single_portfolio_text">
+					<div class="col-md-3 col-sm-4 col-xs-12 single_portfolio_text">
 							<img style="width: 75%" src="stranice/28-Grad Beograd/Delatnosti/Tekstil/ditekstekstil/unnamed.png" alt="" />
 						<h5 style="padding-top: 1em"><center>DITEKS TEKSTIL - Beograd</center></h5>
 						<p><center>Diteks tekstil je porodična firma koja se bavi proizvodnjom tekstila</center></p>
@@ -1769,7 +1843,7 @@ Kolubarski okrug (2)&nbsp;<img src="stranice/Kolubarski okrug/Valjevo/COA_Valjev
 					</div>		
 	
 		
-					<div style="border: 1px solid red; width: " class="col-md-3 col-sm-4 col-xs-12 single_portfolio_text">
+					<div class="col-md-3 col-sm-4 col-xs-12 single_portfolio_text">
 							<img style="width: 75%" src="stranice/28-Grad Beograd/Delatnosti/maloprodaja/vodoinst petrovic/mimaks-vodovodni-i-kanalizacioni-materijal-mimaks-5076-11502969290734.jpg" alt="" />
 						<h5 style="padding-top: 1em"><center>Vodovodni i Elektromaterijal Petrović - Beograd</center></h5>
 						
@@ -1782,7 +1856,7 @@ Kolubarski okrug (2)&nbsp;<img src="stranice/Kolubarski okrug/Valjevo/COA_Valjev
 					</div>	
 		
 
-					<div style="border: 1px solid red; width: " class="col-md-3 col-sm-4 col-xs-12 single_portfolio_text">
+					<div class="col-md-3 col-sm-4 col-xs-12 single_portfolio_text">
 							<img style="width: " src="stranice/Branicevo Okrug/Pozarevac/Delatnosti/usluge/Jole- kotao/IMG_20201201_005840[1].jpg" alt="" />
 						<h5 style="padding-top: 1em"><center>Jocić Grejanje : CENTRALNO, SOLARNO I PODNO GREJANJE - Požarevac</center></h5>
 						<p><center>Pozovite nas da vam utoplimo dom. Sa nama nema zime</center></p>
