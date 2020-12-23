@@ -34,7 +34,8 @@
 	<![endif]-->
 	
 	
-<script src="../../../JSS/Filterovanje.js"></script>
+<script src="../../../JSS/Filterovanje.js"></script>	
+<script src="../../../JSS/Filterovanje1.js"></script>
 <script src="../../../JSS/backtotop.js"></script>
 <link rel="stylesheet" href="../../../css/footercss.css">	
 <link rel="stylesheet" href="../../../css/GlavniCss-zajecar.css" class="">
@@ -66,7 +67,9 @@ h9 {
 	h6{
 		text-align: center
 	}
-	 
+	
+	
+
 </style>
 
 
@@ -78,27 +81,65 @@ h9 {
 		
 
 	   <!-- Meni s leve strane vidljiv na dektop--->
-  <nav id="vrh-navbar" class="navbar" style="background-color:rgba(12,64,118,1.00);">
-  	 <div class="navbar-brand" style="text-align: left; color: white" href="#">
-	   <a href="../../../index.html">	
-		 <p><h1><strong>Redirex</strong></h1></p>
-	   </a>		
-	 </div>
-			
-<ul class="navbar-ul">
-
-</ul>
-	
+  <nav  class="navbar navbar-expand-lg navbar-dark primary-color">
+  <!-- Navbar brand -->
+  <a style="font-family: 'Russo One', sans-serif;" class="navbar-brand" href="https://redirex.rs">REDIREX</a>
+  <!-- Collapse button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="basicExampleNav">
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">	
+      <li class="nav-item">
+        <a class="nav-link" href="javascript:history.back()"><i class="fas fa-reply"></i>&nbsp;Nazad</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#text-9">Kontakt</a>
+      </li>
+      <!-- Dropdown -->
+      <li class="nav-item">
+        <a class="nav-link" href="https://redirex.rs/kako-se-oglasiti.html">Kako se oglasiti?</a>
+      </li>
+    </ul>
+    <!-- Links -->
+    <form class="form-inline">
+      <div class="md-form my-0">
+        <input id="myInput" type="text" placeholder="Pretraga">
+      </div>
+    </form>
+  </div>
+  <!-- Collapsible content -->
 </nav>
  
- <div class="center" >
-	  <img src="../1024px-Flag_of_Belgrade,_Serbia.svg.png" alt="" class="" style="width: 7em">
-	 
-	</div>
+<div class="banner-delat">
+<div class="filteri-delat">
+	
+   <div class="mybtncont" id="myBtnContainer">
+        <button class="btn btn-primary filter-button" data-filter="all">Sve</button>
+        <button class="btn btn-default filter-button" data-filter="online">Online</button>
+        <button class="btn btn-default filter-button" data-filter="dostava">Dostava</button>
+        <button class="btn btn-default filter-button" data-filter="zanatske">Zanatske</button>
+	   <button class="btn btn-default filter-button" data-filter="usluzne">Uslužne</button>
+	   <button class="btn btn-default filter-button" data-filter="trgovine">Trgovine</button>
+	   <button class="btn btn-default filter-button" data-filter="servis">Servis</button>
+	   <button class="btn btn-default filter-button" data-filter="edukacija">Edukacija</button>
+	   <button class="btn btn-default filter-button" data-filter="transport">Transport</button>
+</div>
+</div>	
+	
+		
 <div class="naslov">
 	<h1>Beograd</h1> 
-	<h2>- usluge -</h2>
+	<h2>- raznovrsne usluge -</h2>
 </div>
+	
+	
+	
+</div>	
+			
 <hr class="solid" style="border-top: 1px solid gray; width: 100%; margin: auto; padding-bottom: 0.5em">
 	<div class="kartice-glavno">
 	<div class="kartice-sve">
@@ -106,7 +147,7 @@ h9 {
 		
 		
     <!--Servis Gitara Žarko-->
-<div id="13" class="kartica-telo">
+<div id="13" class="kartica-telo filter zanatske servis">
 		<div class="kartica-content">
 		  <div  class="kartica-slika">
 			<img src="../Delatnosti/Usluge/Servis gitara Zarko/AS-39.jpg" alt="">
@@ -133,7 +174,7 @@ h9 {
 		</div>
 	  </div>	
 	<!--Cvećara Mini Orhideja-->
-<div class="kartica-telo MIMI-orh" id="14">
+<div class="kartica-telo MIMI-orh filter trgovine" id="14">
 		<div class="kartica-content" id="mini-orhideja-content">
 		  <div class="kartica-slika">
 			<img src="../Delatnosti/Usluge/Mini orhideja/mala-mini-orhideja-cvecara-popust-foto.jpg" alt="">
@@ -181,7 +222,7 @@ h9 {
 		</div>
 </div>
 	<!--Restauracija Klavira Predrag Puhača -->
-<div class="kartica-telo" id="15">
+<div class="kartica-telo filter zanatske servis" id="15">
 		<div class="kartica-content">
 		  <div class="kartica-slika">
 			<img src="../Delatnosti/Usluge/Restauracija klavira Puhaca/klavir1-1.jpg" alt="">
@@ -208,7 +249,7 @@ h9 {
 		</div>
 </div>	
 	<!--Mašinska Obrada Metala Dva Čekića -->
-<div id="16" class="kartica-telo">
+<div id="16" class="kartica-telo filter zanatske">
 		<div class="kartica-content">
 		  <div  class="kartica-slika">
 			<img src="../Delatnosti/Zanatsko usluzne/Dva cekica/DSC_0008.jpg" alt="">
@@ -237,7 +278,7 @@ h9 {
 		</div>
 </div>
 	<!--Časovi matematike i statistike Vojvodić Markov -->
-<div id="17" class="kartica-telo">
+<div id="17" class="kartica-telo filter edukacija">
 		<div class="kartica-content">
 		  <div  class="kartica-slika">
 			<img src="../Delatnosti/Usluge/Matematika Vojvodic Marko/1-math.jpg" alt="">
@@ -264,7 +305,7 @@ h9 {
 		</div>
 </div>
 	<!--Dubinsko pranje MIMI -->
-<div id="18" class="kartica-telo">
+<div id="18" class="kartica-telo filter servis zanatske usluzne">
 		<div class="kartica-content">
 		  <div  class="kartica-slika">
 			<img src="../Delatnosti/Usluge/Dubinsko pranje Mimi/41303397_10213880584943198_735805147086585856_n.jpg" alt="">
@@ -292,7 +333,7 @@ h9 {
 		</div>
 </div>		
 	<!--PC Ultimate servis računara i periferne opreme -->
-<div class="kartica-telo">
+<div class="kartica-telo filter servis trgovine">
 		<div class="kartica-content">
 		  <div  class="kartica-slika">
 			<img src="../Delatnosti/Racunari/Servis i prodaja racunara PC ultimate/MG_2321.jpg" alt="">
@@ -328,7 +369,7 @@ h9 {
 		</div>
 </div>	
 	<!--Odgajivačnica Egzotičnih Pataka, Gusaka i Labudova -->
-<div id="20" class="kartica-telo odgajiv-telo">
+<div id="20" class="kartica-telo odgajiv-telo filter trgovine ">
 		<div class="kartica-content" id="odgajiv-content">
 		  <div  class="kartica-slika">
 			<img src="../Delatnosti/Usluge/Odgajivacnica pataka,gusaka,itd/utva_Ivan-Dević-1.png" alt="">
@@ -354,7 +395,7 @@ h9 {
 		</div>
 </div>
 	<!--Uklanjanje vlage u vašem domu, lokalu i poslovnom prostoru -->
-<div id="21" class="kartica-telo">
+<div id="21" class="kartica-telo filter usluzne servis">
 		<div class="kartica-content">
 		  <div  class="kartica-slika">
 			<img src="../Delatnosti/Usluge/Izvlacenje vlage bg/cropped-Slajder-final-web-2a.png" alt="">
@@ -385,7 +426,7 @@ h9 {
 		</div>
 </div>
 	<!--Servis i Prodaja Fiskalnih Kasa Obrenovac – Shrooms Soft d.o.o -->
-<div id="22" class="kartica-telo">
+<div id="22" class="kartica-telo filter usluzne zanatske trgovine">
 		<div class="kartica-content">
 		  <div  class="kartica-slika">
 			<img src="../Delatnosti/Usluge/Servis i prodaja fiskalnih kasa shrooms/12321186_806795579451706_2598658693904081970_n.png" alt="">
@@ -419,7 +460,7 @@ h9 {
 		</div>
 </div>	
 	<!--Trubači za veselja Orkestar Siniše Stankovića -->
-<div id="23" class="kartica-telo SS-telo">
+<div id="23" class="kartica-telo SS-telo filter usluzne">
 		<div class="kartica-content SS-content">
 		  <div  class="kartica-slika">
 			<img src="../Delatnosti/Usluge/Orkestar S. Stankovic/IMG-712f71391ae401441fa02749f24617b8-V-1024x683.jpg" alt="">
@@ -457,7 +498,7 @@ Srbija<br><br>
 		</div>
 </div>	
 	<!--Dostava Pečene Ribe Fish Bar Gogi -->
-<div id="24" class="kartica-telo gogi-telo">
+<div id="24" class="kartica-telo gogi-telo filter dostava usluzne trgovine">
 		<div class="kartica-content gogi-content">
 		  <div  class="kartica-slika">
 			<img src="../Delatnosti/Usluge/Fish bar gogi/viber_slika_2019-06-05_1dsfa3-35-15.jpg" alt="">
@@ -491,7 +532,7 @@ Srbija<br><br>
 		</div>
 </div>
 	<!--Servis pumpi za vodu Elper -->
-<div id="25" class="kartica-telo">
+<div id="25" class="kartica-telo filter zanatske usluzne">
 		<div class="kartica-content">
 		  <div  class="kartica-slika">
 			<img src="../Delatnosti/Usluge/Elper elas/12038967_162161357458901_7334477653608432146_o.jpg" alt="">
@@ -525,7 +566,7 @@ Srbija<br><br>
 		</div>
 </div>
 	<!--Cvećara i Pogrebne Usluge CRN BOR -->
-<div id="26" class="kartica-telo 	crnibor-telo">
+<div id="26" class="kartica-telo crnibor-telo filter usluzne trgovine">
 		<div class="kartica-content crnibor-content">
 		  <div  class="kartica-slika">
 			<img src="../Delatnosti/Usluge/Crn Bor/16996435_781714861977285_467432157130049648_n.jpg" alt="">
@@ -559,7 +600,7 @@ Srbija<br><br>
 		</div>
 </div>
 	<!--Pangolin-->	
-<div id="27" class="kartica-telo -telo">
+<div id="27" class="kartica-telo -telo filter usluzne online">
 		<div class="kartica-content -content">
 		  <div  class="kartica-slika">
 			<img src="../Delatnosti/Usluge/Pangolin/10599244_268005496732045_7885504854919989867_n.jpg" alt="">
@@ -590,7 +631,7 @@ Srbija<br><br>
 		</div>
 </div>
 	<!--TRANSPORTER ONE-->
-<div id="28" class="kartica-telo -telo">
+<div id="28" class="kartica-telo -telo filter transport">
 		<div class="kartica-content -content">
 		  <div  class="kartica-slika">
 			<img src="../Delatnosti/Usluge/Transporter one/robson-hatsukami-morgan-134764-unsplash-1-1064x709.jpg" alt="">
@@ -616,7 +657,7 @@ Srbija<br><br>
 		</div>
 </div>  
 	<!--DITEKS TEKSTIL -->
-<div class="kartica-telo">
+<div class="kartica-telo filter trgovine usluzne">
 		<div class="kartica-content">
 		  <div class="kartica-slika" style="background: #333">
 			<img src="Tekstil/ditekstekstil/logobelisim-768x425.png" alt="">
@@ -660,7 +701,7 @@ Srbija<br><br>
 		</div>
 </div>  
 	<!--VODOVODNI I ELEKTROMATERIJAL PETROVIĆ -->
-<div id="81" class="kartica-telo elek-petrovic-telo">
+<div id="81" class="kartica-telo elek-petrovic-telo filter zanatske ">
 		<div class="kartica-content elek-petrovic-content">
 		  <div  class="kartica-slika">
 			<img src="maloprodaja/vodoinst petrovic/mimaks-vodovodni-i-kanalizacioni-materijal-mimaks-5076-11502969290734.jpg" alt="">

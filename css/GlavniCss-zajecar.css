@@ -1,3 +1,74 @@
+/*dugmici delatnosti*/
+@media (min-width: 768px){
+	.banner-delat{
+		height: 20em;
+		display: flex;
+		flex-wrap: wrap;
+	} 
+	
+.naslov{
+		display: block;
+		width: 50%;
+		margin-right:5em; 
+		right:10%;
+		top: 0%;
+		float: right;
+	}
+.mybtncont{
+		display: inline-block;
+		width: 30em;
+		height: 100%;
+	}
+	
+.btn{
+	width: 7em!important;
+	border-radius: 25px;
+    text-decoration: none;
+    color: #FFF;
+    background: rgba(0,0,0,0.24);
+	margin: 1em;
+	border: 1px solid #4f4f4f	
+	}
+.btn:hover{
+		background: rgba(255,255,255,0.72)
+	}
+}
+
+@media (max-width: 768px){
+	.banner-delat{
+		height: 20em;
+		display: flex;
+		flex-wrap: wrap;
+	} 
+	
+.naslov{
+		display: block;
+		width: 100%;
+		top: 0%;
+		float: right;
+	margin-top: 1em;
+	}
+.mybtncont{
+		display: inline-block;
+		width: 30em;
+		height: 100%;
+	}
+	
+.btn{
+	width: 6em!important;
+	border-radius: 25px;
+    text-decoration: none;
+    color: #FFF;
+    background: rgba(0,0,0,0.24);
+	margin: 0.2em;
+	border: 1px solid #4f4f4f	
+	}
+.btn:hover{
+		background: rgba(255,255,255,0.72)
+	}
+}
+
+/*-----------------------------------------------------------*/
 
 .navbar:hover{
 	 }
