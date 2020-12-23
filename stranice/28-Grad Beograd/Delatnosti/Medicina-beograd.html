@@ -34,6 +34,7 @@
 	
 	
 <script src="../../../JSS/Filterovanje.js"></script>
+<script src="../../../JSS/Filterovanje1.js"></script>
 <script src="../../../JSS/backtotop.js"></script>
 <link rel="stylesheet" href="../../../css/footercss.css">	
 <link rel="stylesheet" href="../../../css/GlavniCss-zajecar.css" class="">
@@ -101,21 +102,28 @@ h9 {
 <!--/.Navbar-->
 			
 			
-
-	   <!-- Meni s leve strane vidljiv na dektop--->
-
- 
-
- 
-<div class="center" >
-	  <img src="../1024px-Flag_of_Belgrade,_Serbia.svg.png" alt="" class="" style="width: 7em">
-	 
-	</div>
+<div class="banner-delat">
+<div class="filteri-delat">
+	
+<div class="mybtncont" id="myBtnContainer">
+<button class="btn btn-primary filter-button" data-filter="all">Sve</button>
+<button class="btn btn-default filter-button" data-filter="ordinacija">Ordinacije</button>
+<button class="btn btn-default filter-button" data-filter="stomatologija">Stomatologija</button>
+<button class="btn btn-default filter-button" data-filter="optika">Optika</button>
+<button class="btn btn-default filter-button" data-filter="veterina">Veterina</button>
+<button class="btn btn-default filter-button" data-filter="logopedija">Logopedija</button>
+<button class="btn btn-default filter-button" data-filter="ginekologija">Ginekologija</button>
+<button class="btn btn-default filter-button" data-filter="lab">Laboratorija</button>
+<button class="btn btn-default filter-button" data-filter="domzastare">Dom za stara lica</button>
+<button class="btn btn-default filter-button" data-filter="domzdravlja">Dom zdravlja</button>
+</div>
+</div>
 	
 <div class="naslov">
 	<h1>Beograd</h1> 
 	<h2>- zdravlje i medicina -</h2>
 </div>
+</div>	
 <hr class="solid" style="border-top: 1px solid gray; width: 100%; margin: auto; padding-bottom: 0.5em">	
  
   
@@ -128,7 +136,7 @@ h9 {
 	<div class="kartice-sve">
 
 <!--Dom za stara i odrasla lica NAJMILIJI-->
-<div id="0" class="kartica-telo -telo">
+<div id="0" class="kartica-telo -telo filter domzastare">
 		<div class="kartica-content content-">
 		  <div  class="kartica-slika" style="background: white">
 			<img src="../Delatnosti/Zdravlje i medicina/dom za starije - najmiliji/mali-logo.png" alt="">
@@ -162,7 +170,7 @@ h9 {
 		</div>
 </div>
 <!--Logopedski centar Lingua Logos-->
-<div id="1" class="kartica-telo crnibor-telo">
+<div id="1" class="kartica-telo crnibor-telo filter logopedija">
 		<div class="kartica-content crnibor-content">
 		  <div  class="kartica-slika" style="background: white">
 			<img src="../Delatnosti/Zdravlje i medicina/logoped. lingua/razvoj-govora-1024x576.png" alt="">
@@ -205,7 +213,7 @@ h9 {
 		</div>
 </div>
 <!--Optičarska Radnja Optika Soko-->
-<div id="2" class="kartica-telo crbinor-telo soko-mob-telo soko-css">
+<div id="2" class="kartica-telo crbinor-telo soko-mob-telo soko-css filter optika">
 		<div class="kartica-content crnibor-content soko-mob-content">
 		  <div  class="kartica-slika" style="background: white">
 			<img src="../Delatnosti/Zdravlje i medicina/Optika Soko/optika-soko-radnja-1064x531.jpg" alt="">
@@ -247,7 +255,7 @@ h9 {
 		</div>
 </div>
 <!--GALA DENT – Stomatološka ordinacija-->	
-<div id="3" class="kartica-telo crnibor-telo">
+<div id="3" class="kartica-telo crnibor-telo filter stomatologija">
 		<div class="kartica-content crnibor-content">
 		  <div  class="kartica-slika" style="background: white">
 			<img src="../Delatnosti/Zdravlje i medicina/GALA DENT/28576094_886908381471409_8581742138858738753_n.png" alt="">
@@ -287,7 +295,7 @@ Osmesi ne liče jedni na druge – svaki osmeh je svojstven samo osobi koja ga n
 		</div>
 </div>	
 <!--Ginekološka ordinacija dr Biljana Živaljević-->
-<div id="4" class="kartica-telo biljanaginek-telo">
+<div id="4" class="kartica-telo biljanaginek-telo filter ginekologija ordinacija">
 		<div class="kartica-content biljanaginek-content">
 		  <div  class="kartica-slika" style="background: white">
 			<img src="../Delatnosti/Zdravlje i medicina/Ginek. Biljana Živaljvić/83201594_2806292849416842_6648127697920720896_n.jpg" alt="">
@@ -335,7 +343,7 @@ Adolescentna ginekologija i savetovalište za kontracepciju
 		</div>
 </div>
 <!--Veterinarska ordinacija SALI VET-->	
-<div id="5" class="kartica-telo crnibor-telo">
+<div id="5" class="kartica-telo crnibor-telo filter veterina ordinacija">
 		<div class="kartica-content crnibor-content">
 		  <div  class="kartica-slika" style="background: white">
 			<img src="../Delatnosti/Zdravlje i medicina/vet Sali/veterinarska-ambulanta-sali-vet-10-4-1-300x120.jpg" alt="">
@@ -375,7 +383,7 @@ Subotom: 09:00-14:00
 		</div>
 </div>	
 <!--Biohemijska i mikro biološka labaratorija Mak Lab-->	
-<div id="6" class="kartica-telo maklab-telo">
+<div id="6" class="kartica-telo maklab-telo filter lab">
 		<div class="kartica-content maklab-content">
 		  <div  class="kartica-slika" style="background: white">
 			<img src="../Delatnosti/Zdravlje i medicina/lab. Mak Lab/louis-reed-747388-unsplash-1064x709-1-1064x709.jpg" alt="">
@@ -433,7 +441,7 @@ Subotom: 09:00-14:00
 		</div>
 </div>	
 <!--Internističko kardiološka ordinacija MEDISIN 59-->	
-<div id="7" class="kartica-telo crnibor-telo">
+<div id="7" class="kartica-telo crnibor-telo filter ordinacija">
 		<div class="kartica-content crnibor-content">
 		  <div  class="kartica-slika" style="background: white">
 			<img src="../Delatnosti/Zdravlje i medicina/Medisin 59/header.jpg" alt="">
@@ -465,7 +473,7 @@ a klasična u smislu posvećenosti bolesniku u naporu da se poboljša i unapredi
 		</div>
 </div>	
 <!--Psihološko savetovalište Filipović-->
-<div id="8" class="kartica-telo crnibor-telo">
+<div id="8" class="kartica-telo crnibor-telo filter ordinacija">
 		<div class="kartica-content crnibor-content">
 		  <div  class="kartica-slika" style="background: white">
 			<img src="../Delatnosti/Zdravlje i medicina/psih. Filipovic/49815667_2706526782705631_9134687915744428032_n.png" alt="">
@@ -497,7 +505,7 @@ Geštalt terapije,  znanja iz  komunikacionih i emocionalnih veština, i  po pot
 		</div>
 </div>	
 <!--Dom Zdravlja Hemikal-->	
-<div id="9" class="kartica-telo hemikal-telo">
+<div id="9" class="kartica-telo hemikal-telo filter ordinacija domzdravlja">
 		<div class="kartica-content hemikal-content">
 		  <div  class="kartica-slika" style="background: white">
 			<img src="../Delatnosti/Zdravlje i medicina/Hemikal/12074596_623475731089460_3441508267015762564_n.jpg" alt="">
@@ -537,7 +545,7 @@ holterom krvnog pritiska i laboratorijskim instrumentima za uzimanje uzoraka krv
 		</div>
 </div>	
 <!--Ordinacija Horus DR.Mirko Đorđević-->	
-<div id="10" class="kartica-telo crnibor-telo">
+<div id="10" class="kartica-telo crnibor-telo filter ordinacija">
 		<div class="kartica-content crnibor-content">
 		  <div  class="kartica-slika" style="background: white">
 			<img src="../Delatnosti/Zdravlje i medicina/Ordin. Horus/1-11-971x728.jpg" alt="">
@@ -570,7 +578,7 @@ Subotom: 09:00-15:00
 		</div>
 </div>	
 <!--Specijalistička ginekološko akušerska ordinacija EVA-->	
-<div id="11" class="kartica-telo crnibor-telo">
+<div id="11" class="kartica-telo crnibor-telo filter ordinacija ginekologija">
 		<div class="kartica-content crnibor-content">
 		  <div  class="kartica-slika" style="background: white">
 			<img src="../Delatnosti/Zdravlje i medicina/spec. gin. Eva/19511160_314005035687714_5381718251021212730_n.jpg" alt="">
@@ -602,7 +610,7 @@ Zalažemo se za siguran i pouzdan način rada zbog čega smo stekli veliki ugled
 		</div>
 </div>	
 <!--Salon za otklanjanje vaški i gnjida Beovaškica-->	
-<div id="12" class="kartica-telo beovas-telo">
+<div id="12" class="kartica-telo beovas-telo filter ordinacija">
 		<div class="kartica-content beovas-content">
 		  <div  class="kartica-slika" style="background: white">
 			<img src="../Delatnosti/Zdravlje i medicina/beovaskica/salon-za-uklanjanje-vaski-i-gnjda-1.jpg" alt="">

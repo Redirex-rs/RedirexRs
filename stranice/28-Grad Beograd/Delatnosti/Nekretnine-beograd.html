@@ -33,12 +33,14 @@
 	
 	
 <script src="../../../JSS/Filterovanje.js"></script>
+<script src="../../../JSS/Filterovanje1.js"></script>
 <script src="../../../JSS/backtotop.js"></script>
 <link rel="stylesheet" href="../../../css/footercss.css">	
 <link rel="stylesheet" href="../../../css/GlavniCss-zajecar.css" class="">
 <link rel="stylesheet" href="../../../css/floatingdugme.css" class="">	
-<link rel="stylesheet" href="../../../css/masonry.css"> 
-<link rel="stylesheet" href="../../../css/myInput.css">
+<link rel="stylesheet" href="../../../css/kartice-css-novo.css"> 
+<link rel="stylesheet" href="../../../css/myInpu.css">
+<link rel="stylesheet" href="../../../css/">
 
 
 
@@ -67,23 +69,39 @@ h9 {
 		
 
 	   <!-- Meni s leve strane vidljiv na dektop--->
-  <nav id="vrh-navbar" class="navbar" style="background-color:rgba(12,64,118,1.00);">
-  	 <div class="navbar-brand" style="text-align: left; color: white" href="#">
-	   <a href="../../../index.html">	
-		 <p><h1><strong>Redirex</strong></h1></p>
-	   </a>		
-	 </div>
-			
-<ul class="navbar-ul">
-
-</ul>
-	
+  <nav  class="navbar navbar-expand-lg navbar-dark primary-color">
+  <!-- Navbar brand -->
+  <a style="font-family: 'Russo One', sans-serif;" class="navbar-brand" href="https://redirex.rs">REDIREX</a>
+  <!-- Collapse button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="basicExampleNav">
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">	
+      <li class="nav-item">
+        <a class="nav-link" href="javascript:history.back()"><i class="fas fa-reply"></i>&nbsp;Nazad</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#text-9">Kontakt</a>
+      </li>
+      <!-- Dropdown -->
+      <li class="nav-item">
+        <a class="nav-link" href="https://redirex.rs/kako-se-oglasiti.html">Kako se oglasiti?</a>
+      </li>
+    </ul>
+    <!-- Links -->
+    <form class="form-inline">
+      <div class="md-form my-0">
+        <input id="myInput" type="text" placeholder="Pretraga">
+      </div>
+    </form>
+  </div>
+  <!-- Collapsible content -->
 </nav>
- 
- <div class="center" >
-	  <img src="../1024px-Flag_of_Belgrade,_Serbia.svg.png" alt="" class="" style="width: 15vw">
-	 
-	</div>
+
 <div class="naslov">
 	<h1>Beograd</h1> 
 	<h2>- nekretnine -</h2>
@@ -91,41 +109,49 @@ h9 {
 <hr class="solid" style="border-top: 1px solid gray; width: 100%; margin: auto; padding-bottom: 0.5em">	
  
 	
-<input id="myInput" type="text" placeholder="Pretraga">
 
-<div class="masonry" id="Lista" style="list-style-type:none;" >
+	<div class="kartice-glavno">
+	<div class="kartice-sve">
 
      <!--Simonović Nekretnine-->
-      <div class="column" style="width: rem">
-    <div class="col s12 m7 ">
-        <div class="card-image" style="text-align: center">
-         </div>
-        <div class="card-content" id="29-beograd" style="color: black">
- <img style="display:block;margin:auto;width: 90%" src="../Delatnosti/Nekretnine/Simonovic/logo_.png"><p1>Beograd</p1> <hr>			
-          <p1><h6>Simonović Nekretnine</h6> <br>
-<i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp; Novopazarska 18, Beograd<br>
-<i class="fas fa-phone"></i>&nbsp;&nbsp;011/344-32-36; 064/115-4-999 <br>
-<i class="fas fa-envelope"></i>&nbsp;&nbsp;kancelarija@simonovic-nekretnine.com<br>
-<i class="fas fa-clock"></i>&nbsp;&nbsp;Radnim danima: 10:00 - 18:00 <br>
-			  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Subotom: 10:00 - 18:00
-<br> <br>
-Više od dve decenije u svetu nekretnina, više hiljada uspešno završenih kupoprodajnih ugovora, i još više zadovoljnih i nasmejanih lica, bili su odlučujući faktori za osnivanje ovog preduzeća. <br> <br>
-U slozenom i često veoma stresnom poslu kupovine ili prodaje nekretnine, veoma je važno da uz sebe imate profesionalce koji znaju kako da vaše želje postanu stvarnost, kako da put od nauma do krajnjeg cilja bude laganiji, bezbrižniji, i sigurniji.
-</p1>
-        
-        <br><br><hr>
-        
-           <a href="https://www.facebook.com/agencija.simonovic.nekretnine/" target="_blank"><i class="fab fa-facebook-square fa-3x" style="color: dodgerblue; "></i></a>
+<div id="29" class="kartica-telo mega-telo filter domzastare">
+		<div class="kartica-content content-l">
+		  <div  class="kartica-slika" style="background: white">
+			<img src="../Delatnosti/Nekretnine/Simonovic/logo_.png" alt="">
+			</div>
+	<div class="kartica-info">
+			<h2><center>Simonović Nekretnine</center></h2>
+			  
+		<hr class="solid" style="border-top: 1px solid gray; width: 70%; margin: auto; padding-bottom: 0.5em; margin-bottom: 0.4em">	  
+			  
+		<div class="kartica-kontakt">
+<i class="fas fa-map-marker-alt"></i>&nbsp;Novopazarska 18, Beograd<br><br>
+<i class="fas fa-phone"></i>&nbsp;011/344-32-36; 064/115-4-999 <br><br>
+<i class="fas fa-envelope"></i>&nbsp;kancelarija@simonovic-nekretnine.com<br><br>
+<i class="fas fa-clock"></i>&nbsp;Radnim danima: 10:00 - 18:00 <br>
+Subotom: 10:00 - 18:00
+		</div> 
+	</div>
+	<div class="kartica-slogan" >
+			<center><i>Više od dve decenije u svetu nekretnina, više hiljada uspešno završenih kupoprodajnih ugovora, i još više zadovoljnih i nasmejanih lica, bili su odlučujući faktori za osnivanje ovog preduzeća. <br> <br>
+U slozenom i često veoma stresnom poslu kupovine ili prodaje nekretnine, veoma je važno da uz sebe imate profesionalce koji znaju kako da vaše želje postanu stvarnost, kako da put od nauma do krajnjeg cilja bude laganiji, bezbrižniji, i sigurniji.</i></center>  
+	</div>
+	<div class="drustvene-mreze" style="">
+		<hr class="solid" style="border-top: 1px solid gray; width: 100%; margin: auto; padding-bottom: 0.5em; margin-bottom: 0.4em">
+		
+           <a href="https://www.facebook.com/agencija.simonovic.nekretnine/" target="_blank"><i class="fab fa-facebook-square fa-2x" style="color:#4F4F4F"></i></a>
 			
-	   <a href="https://www.simonovic-nekretnine.com" target="_blank"><i class="fas fa-globe fa-3x" style="color:rgba(57,171,235,1.00); "></i></a>			
+	   <a href="https://www.simonovic-nekretnine.com" target="_blank"><i class="fas fa-globe fa-2x" style="color:#4F4F4F "></i></a>	
 			
-        
-        </div>
-      </div>
-    </div>
+			  </div>
+		</div>
+</div>		
+		
+      
 	
 	
-  </div>	
+  </div>
+	</div>	
 		
 		
 	
