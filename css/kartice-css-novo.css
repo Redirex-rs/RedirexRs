@@ -23,7 +23,7 @@
 	.kartica-content{
 		display: block;
 		width: 25em;
-		height: 30em;
+		height: inherit;
 		position: absolute; 
 		right: 0; 
 		bottom: 0;
@@ -159,7 +159,7 @@
 		margin-bottom: em;
 	}
 	.hemikal-content{
-		height: 35em;
+		height: 50em;
 	}
 	.beovas-tel{
 		margin-top: 10em;
