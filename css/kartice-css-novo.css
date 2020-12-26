@@ -1,4 +1,14 @@
 @media (max-width: 768px){
+	
+	.icon-bar {
+ position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: -0.8em;
+}
+	
 	.kartice-glavno{
 		display: block;
 		width: 100;
@@ -13,8 +23,8 @@
 	}
 	.kartica-telo{
 		display: block;
-		width: 24em;
-		height: 30em;
+		width: 22em;
+		height: 20em;
 	    position: relative;
 		margin-bottom: 6em;
 		margin-top: 3em;
@@ -22,18 +32,19 @@
 	}
 	.kartica-content{
 		display: block;
-		width: 25em;
+		width: 22em;
 		height: inherit;
 		position: absolute; 
-		right: 0; 
+		left: 0; 
 		bottom: 0;
 		background: rgba(240,240,240,1.00);
 		font-family: 'Oswald', sans-serif;
-		border-radius: 0.7em;
+		border-radius: 0.6em;
+		font-size: 0.8em
 	}
 	.kartica-slika{
-		width: 10em;
-		height: 7em;
+		width: 7em;
+		height: 4em;
 		position: absolute;
 		left: 1em;
 		top: -2em;
@@ -43,7 +54,7 @@
 	box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.55);
 	}
 	.kartica-slika>img {
-		width: 10em;
+		width: 12em;
 		height: 7em;
 		border-radius: 0.7em;
 	}
@@ -52,7 +63,7 @@
 		right: 0;
 		width: 17em;
 		height: 100%;
-		font-size: 0.7em;
+		font-size: 0.8em;
 		padding: 0.5em;
 		
 	}
@@ -60,7 +71,7 @@
 		position: absolute; 
 		right: 0;
 		width: 15.5em;
-		font-size: 1em;
+		font-size: 0.8em;
 	}
 	
 	h2{
@@ -169,6 +180,16 @@
 	}
 	}
 @media (min-width: 768px){
+	
+	.icon-bar {
+ position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: -5em
+}
+	
 	.kartice-glavno{
 		display: block;
 		width: 100;
