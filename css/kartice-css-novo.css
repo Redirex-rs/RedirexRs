@@ -37,8 +37,8 @@ height: 15em;
   background-color: #000;
  z-index: 99999999
 }
-}
-		.icon-bar:hover{
+
+.icon-bar:hover{
 			z-index: 9999999
 		}
 
@@ -231,93 +231,137 @@ padding-top: 35%
 	
 	}
 @media (min-width: 768px){
-	.icon-bar a {
+	
+	
+.icon-bar a {
   display: block;
   text-align: center;
-  padding: 16px;
   transition: all 0.3s ease;
   color: white;
-  font-size: 20px;
-}
-
+  font-size: 20px;	
+}		
 /* Style the social media icons with color, if you want */
 .icon-bar a:hover {
   background-color: #000;
  z-index: 99999999
 }
-		.icon-bar:hover{
+
+.icon-bar:hover{
 			z-index: 9999999
-		}	
+		}
 
 .facebook {
   background: #3B5998;
   color: white;
+width: 2.3em;
+height: 2em;	
+padding: 5px;
 }
 
 .twitter {
   background: #55ACEE;
   color: white;
+  padding: 16px;
+ width: 3em;
 }
+	
+.instagram {
+background: rgba(94,15,140,1.00);
+color: white;	
+padding: 5px;
+width: 2.3em;
+height: 2em;
+	}
+
+.web{
+background: black;
+color: black;
+border: 1px solid white;
+ width: 5em;
+height: 5em;	
+padding: 10px;
+padding-top: 25%
+	}
 
 .google {
   background: #dd4b39;
-  color: white;
+  color: white;	
+padding: 5px;
+width: 2.3em;
+height: 2em;
 }
 
 .linkedin {
   background: #007bb5;
-  color: white;
+  color: white;	
+padding: 5px;
+width: 2.3em;
+height: 2em;
 }
 
 .youtube {
-  background: black;
-	border: 1px solid white;
-  color: white;
-	text-decoration: none;
-} 	
-	.icon-bar {
+  background: red;
+  color: white;	
+padding: 5px;
+width: 2.3em;
+height: 2em;
+} 
+
+.redirex{
+background: black;
+color: black;
+border: 1px solid white;
+width: 5em;
+height: 5em;	
+padding: 5px;
+padding-top: 30%
+	}
+	
+.icon-bar {
  position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  right: -5em
+  right: -4.2em;
 }
+
 	
 	.kartice-glavno{
 		display: block;
-		width: 100;
+		width: 100%;
 		height: auto;
-		padding: auto;
 	}
 	.kartice-sve{
 		display: flex;
 		flex-wrap: wrap;
-		padding: auto;
 		width: auto;
-		padding-top: 5em;
+		padding-top: 3em;
 		padding-bottom: 10em;
+		margin-top: 10em;
 	}
 	.kartica-telo{
 		display: flex;
-		width: 36em;
-		height: 21em;
+		width: 33em;
+		height: 40em;
 	    position: relative;
-		margin: auto;
-		margin-top: 2.5em;
-		margin-bottom: 2.5em;
+		margin-left: 0;
+		font-size: 0.7em;
+		margin-bottom: 4em;
 		
 	}
 	.kartica-content{
 		display: block;
-		width: 33em;
-		height: 17em;
+		width: 32em;
+		height: 15em;
 		position: absolute; 
 		right: 0; 
 		bottom: 0;
 		background: rgba(240,240,240,1.00);
 		font-family: 'Oswald', sans-serif;
 		border-radius: 0.7em;
+		margin-top: 5em;
+		font-size: 1em;
 	}
 	.kartica-slika{
 		width: 17em;
@@ -338,8 +382,9 @@ padding-top: 35%
 	.kartica-info{
 		position: absolute; 
 		right: 0;
-		width: 14em;
+		width: 11em;
 		height: 100%;
+		font-size: 1em;
 		
 	}
 	.kartica-kontakt{
@@ -360,28 +405,48 @@ padding-top: 35%
 		font-size: 0.8em;
 		top: 9em;
 	}
-	.drustvene-mreze{
-		position: absolute; 
-		left: 0;
-		bottom: 0;
-		width: 17em;
-		height: 2.5em;
-		margin: 0.5em;
-		margin-bottom: 0.9em;
+	
+}
+@media (min-width: 768px){
+	.malo {
+		height: 25em;
+		margin-left: 2em;
+		margin-right: 2em;
+		margin-top:5em;
+		
 	}
-	.drustvene-mreze a {
-		float: right;
-		margin: auto;
-		margin-left: 0.9em;
-		margin-right: 0.9em
+	.malo-plus {
+		height: 25em;
+		margin-left: 2em;
+		margin-right: 2em;
+		margin-top:5em;
 	}
-	.drustvene-mreze a:hover{
-		border: 1px solid white;
-		border-radius: 0.4em;
-		padding-left: 2px;
-		padding-right: 2px;
-		background: white;
+	.srednje{
+height: 25em;
+		margin-top:5em;
+		margin-left: 2em;
+		margin-right: 2em;
 	}
+	.srednje-plus{
+		height: 25em;
+		margin-left: 2em;
+		margin-right: 2em;
+		margin-top:5em;
+	}
+	.veliko{
+		height: 25em;
+		margin-left: 2em;
+		margin-right: 2em;
+		margin-top:5em;
+	}
+	.veliko-plus{
+		height: 25em;
+		margin-left: 2em;
+		margin-right: 2em;
+		margin-top:5em;
+	}
+	
+}
 	
 	.navbar-brand strong {
 		font-size: 1em
@@ -398,61 +463,10 @@ padding-top: 35%
 		font-family: 'Oswald', sans-serif;
 	}
 	
-	.MIMI-orh{
-		
-		margin-top: 9em;
-	}
-	#mini-orhideja-content{
-		height: 25em;
-	}
-	#mini-orhideja-slogan{
-		top: 10em;
-		font-size: 0.8em;
-		width: 20em;
-		left: 1em;
-	}
-	#odgajiv-content{
-		height: 20em
-	}
 	
-	#odgajiv-slogan{
-		top: 10em;
-		font-size: 0.8em;
-		width: 20em;
-		left: 1em;
-	}
 	
-	.content-s{
-		height: 10em
-	}
-	.content-m{
-		height: 22em;
-	}
-	.content-m-plus{
-		height: 26em;
-	}
-	.content-l{
-		height: 30em;
-	}
-	.soko-css{
-		margin-top: 5em;
-	}
-	.ortoplus-telo{
-		margin-top: 7em
-	}
-	.orpavlovic-telo{
-		margin-top: 7em
-	}
-	.nikolicopt-telo{
-		margin-top: 7em;
-	}
-	.mega-telo{
-		margin-top: 7em
-	}
-	.mega-plus-telo{
-		margin-top: 12em
-	}	
-	}
+	
+
 
 #DITEKS{
 		background: #333
