@@ -1,12 +1,57 @@
 @media (max-width: 768px){
 	
+	.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
+ z-index: 99999999
+}
+		.icon-bar:hover{
+			z-index: 9999999
+		}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: black;
+	border: 1px solid white;
+  color: white;
+	text-decoration: none;
+} 	
+	
 	.icon-bar {
  position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  right: -0.8em;
+  right: -5.8em;
 }
 	
 	.kartice-glavno{
@@ -43,7 +88,7 @@
 		font-size: 0.8em
 	}
 	.kartica-slika{
-		width: 7em;
+		width: 10em;
 		height: 4em;
 		position: absolute;
 		left: 1em;
@@ -54,16 +99,16 @@
 	box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.55);
 	}
 	.kartica-slika>img {
-		width: 12em;
+		width: 15em;
 		height: 7em;
 		border-radius: 0.7em;
 	}
 	.kartica-info{
 		position: absolute; 
 		right: 0;
-		width: 17em;
+		width: 11em;
 		height: 100%;
-		font-size: 0.8em;
+		font-size: 0.9em;
 		padding: 0.5em;
 		
 	}
@@ -180,7 +225,50 @@
 	}
 	}
 @media (min-width: 768px){
-	
+	.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
+ z-index: 99999999
+}
+		.icon-bar:hover{
+			z-index: 9999999
+		}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: black;
+	border: 1px solid white;
+  color: white;
+	text-decoration: none;
+} 	
 	.icon-bar {
  position: absolute;
   top: 50%;
