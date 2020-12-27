@@ -14,7 +14,7 @@ height: 15em;
 		height: 17em;
 	}
 	.veliko{
-		height: 22em;
+		height: 21em;
 	}
 	.veliko-plus{
 		height: 24em;
@@ -22,6 +22,10 @@ height: 15em;
 	
 }
 @media (max-width: 768px){
+	
+	.naslov h2{
+		font-size: 0.9em;
+	}
 	
 	.icon-bar a {
   display: block;
@@ -45,69 +49,70 @@ height: 15em;
 .facebook {
   background: #3B5998;
   color: white;
-  padding: 16px;
- width: 3em;
+  padding: 4px;
+ width: 25%;
+	
 }
 
 .twitter {
   background: #55ACEE;
   color: white;
-  padding: 16px;
- width: 3em;
+  padding: 4px;
+ width: 25%;
 }
 	
 	.instagram {
 background: rgba(94,15,140,1.00);
 color: white;
-  padding: 16px;
- width: 3em;
+  padding: 4px;
+ width: 25%;
 	}
 
 .web{
-background: black;
+background: #4f4f4f;
 color: black;
-border: 1px solid white;
- width: 5.9em;
-height: 6em;	
-padding: 10px;
-padding-top: 35%
+ width: 25%;	
+padding: 4px;
 	}
 
 .google {
   background: #dd4b39;
   color: white;
-  padding: 16px;
- width: 3em;
+  padding: 4px;
+ width: 25%;
 }
 
 .linkedin {
   background: #007bb5;
   color: white;
-  padding: 16px;
- width: 3em;
+  padding: 4px;
+ width: 25%;
 }
 
 .youtube {
   background: red;
   color: white;
-  padding: 16px;
- width: 3em;
+  padding: 4px;
+ width: 25%;
 } 
 
 	.redirex{
 		  background: black;
-	border: 1px solid white;
   color: white;
 	text-decoration: none;
+		width: 25%;
+		padding-top: 5%;
 	}
 	
 	.icon-bar {
- position: absolute;
-  top: 50%;
+display: flex;
+	position: absolute;
+	width: 100%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  right: -4.8em;
+	bottom: -1.4em;
+	left: 0;
 }
 	
 	
@@ -116,15 +121,17 @@ padding-top: 35%
 		width: 100;
 		height: auto;
 		padding: auto;
+		margin-top: 15em
 	}
 	.kartice-sve{
 		display: block;
 		width: auto;
 		padding-bottom: 10em;
+		margin-top: 5em
 	}
 	.kartica-telo{
 		display: block;
-		width: 22em;
+		width: 35em;
 	    position: relative;
 		margin-bottom: 4em;
 		margin-top: 2em;
@@ -133,7 +140,7 @@ padding-top: 35%
 	}
 	.kartica-content{
 		display: block;
-		width: 22em;
+		width: 27em;
 		height: inherit;
 		position: absolute; 
 		left: 0; 
@@ -162,16 +169,14 @@ padding-top: 35%
 	.kartica-info{
 		position: absolute; 
 		right: 0;
-		width: 11em;
+		width: 13.5em;
 		height: 100%;
-		font-size: 0.9em;
-		padding: 0.5em;
-		
+		font-size: 1.1em;
 	}
 	.kartica-kontakt{
 		position: absolute; 
 		right: 0;
-		width: 15.5em;
+		width: 100%;
 		font-size: 0.8em;
 	}
 	
@@ -253,77 +258,80 @@ padding-top: 35%
 .facebook {
   background: #3B5998;
   color: white;
-width: 2.3em;
-height: 2em;	
-padding: 5px;
+width: 25%;
+height: 1.8em;	
+padding: 2px;
 }
 
 .twitter {
   background: #55ACEE;
   color: white;
-  padding: 16px;
- width: 3em;
+padding: 5px;
+width: 25%;	
+padding: 2px;
+height: 1.8em;
 }
 	
 .instagram {
 background: rgba(94,15,140,1.00);
 color: white;	
 padding: 5px;
-width: 2.3em;
-height: 2em;
+width: 25%;	
+padding: 2px;
+height: 1.8em;
 	}
 
 .web{
-background: black;
+background: #4f4f4f;
 color: black;
-border: 1px solid white;
- width: 5em;
-height: 5em;	
-padding: 10px;
-padding-top: 25%
+width: 25%;	
+padding: 5px;
+height: 1.8em;
 	}
 
 .google {
   background: #dd4b39;
   color: white;	
-padding: 5px;
-width: 2.3em;
-height: 2em;
+width: 1.7em;	
+padding: 2px;
+height: 1.8em;
 }
 
 .linkedin {
   background: #007bb5;
   color: white;	
-padding: 5px;
-width: 2.3em;
-height: 2em;
+width: 1.7em;
+padding: 2px;
+height: 1.8em;
 }
 
 .youtube {
   background: red;
   color: white;	
-padding: 5px;
-width: 2.3em;
-height: 2em;
+width: 25%;
+padding: 2px;
+height: 1.8em;
 } 
 
 .redirex{
 background: black;
 color: black;
-border: 1px solid white;
-width: 5em;
-height: 5em;	
+width: 25%;
 padding: 5px;
-padding-top: 30%
+padding-top: 7%;
+	font-size: 0.6em
 	}
 	
 .icon-bar {
- position: absolute;
-  top: 50%;
+display: flex;
+	position: absolute;
+	width: 100%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  right: -4.2em;
+	bottom: -1.4em;
+	left: 0;
+	
 }
 
 	
@@ -338,7 +346,9 @@ padding-top: 30%
 		width: auto;
 		padding-top: 3em;
 		padding-bottom: 10em;
-		margin-top: 10em;
+		margin-top: 1em;
+		padding-left: 0.5em;
+		padding: 2em
 	}
 	.kartica-telo{
 		display: flex;
@@ -346,13 +356,14 @@ padding-top: 30%
 		height: 40em;
 	    position: relative;
 		margin-left: 0;
+		margin-right: 0;
 		font-size: 0.7em;
 		margin-bottom: 4em;
 		
 	}
 	.kartica-content{
 		display: block;
-		width: 32em;
+		width: inherit;
 		height: 15em;
 		position: absolute; 
 		right: 0; 
@@ -361,14 +372,14 @@ padding-top: 30%
 		font-family: 'Oswald', sans-serif;
 		border-radius: 0.7em;
 		margin-top: 5em;
-		font-size: 1em;
+		font-size: 1.05em;
 	}
 	.kartica-slika{
 		width: 17em;
 		height: 10em;
 		position: absolute;
-		left: 1em;
-		top: -2em;
+		left: -0.5em;
+		top: -1em;
 		border-radius: 0.7em;
 		-webkit-box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.55);
 	-moz-box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.55);
@@ -382,68 +393,65 @@ padding-top: 30%
 	.kartica-info{
 		position: absolute; 
 		right: 0;
-		width: 11em;
+		width: 12.5em;
 		height: 100%;
-		font-size: 1em;
+		font-size: 1.1em;
 		
 	}
 	.kartica-kontakt{
 		position: absolute; 
 		right: 0;
-		width: 18em;
+		width: 17em;
 		font-size: 0.8em;
 	}
 	.kartica-slogan{
 		position: absolute; 
 		left: 1em;
 		bottom: 3em;
-		width: 21em;
-		height: 5em;
-		margin: 0.5em;
-		margin-bottom: 0.9em;
-		padding: 1em;
-		font-size: 0.8em;
-		top: 9em;
+		width: 18em;
+		height: 10em;
+		padding: 0.4em;
+		font-size: 0.9em;
+		top: 10em;
 	}
 	
 }
 @media (min-width: 768px){
 	.malo {
 		height: 25em;
-		margin-left: 2em;
-		margin-right: 2em;
+		margin-left: 1em;
+		margin-right: 1em;
 		margin-top:5em;
 		
 	}
 	.malo-plus {
 		height: 25em;
-		margin-left: 2em;
-		margin-right: 2em;
+		margin-left: 1em;
+		margin-right: 1em;
 		margin-top:5em;
 	}
 	.srednje{
 height: 25em;
 		margin-top:5em;
-		margin-left: 2em;
-		margin-right: 2em;
+		margin-left: 1em;
+		margin-right: 1em;
 	}
 	.srednje-plus{
-		height: 25em;
-		margin-left: 2em;
-		margin-right: 2em;
+		height: 27.5em;
+		margin-left: 1em;
+		margin-right: 1em;
 		margin-top:5em;
 	}
 	.veliko{
 		height: 25em;
-		margin-left: 2em;
-		margin-right: 2em;
+		margin-left: 1em;
+		margin-right: 1em;
 		margin-top:5em;
 	}
 	.veliko-plus{
-		height: 25em;
-		margin-left: 2em;
-		margin-right: 2em;
-		margin-top:5em;
+		height: 33em;
+		margin-left: 1em;
+		margin-right: 1em;
 	}
 	
 }
