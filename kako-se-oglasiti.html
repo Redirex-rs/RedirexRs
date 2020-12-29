@@ -56,7 +56,7 @@
 <script src="JSS/w3-sidenav.js"></script>
 <link rel="stylesheet" href="GlavniCss.css">	
 <link rel="stylesheet" href="css/w3-sidenav.css">
-	
+<link rel="stylesheet" href="css/formular.css">	
 <link rel="stylesheet" href="../../../css/GlavniCss-zajecar.css" class="">	
 
 <style>
@@ -1071,10 +1071,7 @@ margin-left: -2.5em
 	
 	}
 	
-	.slikaprimera1{
-		width: 95%;
-		height: 90%;
-	}
+
 	</style>
 
 
@@ -1100,7 +1097,7 @@ margin-left: -2.5em
 <!-- The overlay -->
 	
    <div class="slikakarticeprimer">
-	<center><img class="slikaprimera1" src="banneri/karticaa.jpg" alt=""></center>
+	<img class="slikaprimera1" src="banneri/karticaa.jpg" alt="">
 	</div>
         
 
@@ -1108,40 +1105,130 @@ margin-left: -2.5em
 <hr class="solid" style="border-top: 1px solid white; width: 95%; margin: auto; padding-bottom: 0.5em; margin-top: 3em">
 
 
-
-<div id="info-1" class="informacije1-stranica">
-<div class="informacije1">
-<p style="margin-bottom: 2.5em">Sve informacije kao i sva dodatna pitanja nam možete poslati na: </p>	
+ <div class="testbox">
+      <form action="https://formspree.io/f/mayllayz" method="POST">
+        <div class="banner">
+          <h1>REDIREX RS</h1>
+			<h2>Formular za oglašavanje</h2>
+        </div>
+        <br/>
+        <p>
+        <center>Hvala Vam što ste se odlučili da se oglasite na Redirex.rs. Svaki vid oglašavanja je besplatan, dovoljno je samo da popunite obrazac.
+        </center>
+        </p>
+        <br/>
+        <div class="colums">
+          <div class="item">
+            <label for="fname"> Naziv Preduzeća/Ime preduzetnika<span>*</span></label>
+            <input id="fname" type="text" name="fname" required/>
+          </div>
+          <div class="item">
+            <label for="grad">Grad<span>*</span>&nbsp; (Ukoliko poslujete u više gradova, možete ih navesti u zagradi)</label>
+            <input id="grad" type="text" name="1grad" required/>
+          </div>
+          <div class="item">
+            <label for="adresa">Adresa<span>*</span></label>
+            <input id="adresa" type="text" name="2adresa" required/>
+          </div>
+          <div class="item">
+            <label for="delatnost">Delatnost<span>*</span></label>
+            <input id="delatnost" type="text"   name="3delatnost" required/>
+          </div>
+          <div class="item">
+            <label for="eaddress">Email Adresa<span>*</span></label>
+            <input id="eaddress" type="text"   name="4eadresa" required/>
+          </div>
+          <div class="item">
+            <label for="phone">Kontakt telefoni<span>*</span>&nbsp; (fiksni i mobilni)</label>
+            <input id="phone" type="tel"   name="5telefon" required/>
+          </div>
+	<div class="radno-vreme">		
+          <div style="width: 100%" class="item">
+            <label for="radnovraddan">Radno vreme pon-pet<span>*</span>&nbsp; (Ukoliko nemate određeno radno vreme ostavite polje prazno. Ukoliko radite po pozivu, upišite "po pozivu".)</label>
+            <input placeholder="Primeri: od 8h do 16h;  po pozivu;  ne radimo" type="ttext" id="radnovraddan" name="6radnovreme-ponpet" required>
+          </div>	
+          <div style="width: 100%" class="item">
+            <label for="radnovsub">Radno vreme subotom<span>*</span>&nbsp; (Ukoliko nemate određeno radno vreme ostavite polje prazno. Ukoliko radite po pozivu, upišite "po pozivu".)</label>
+            <input placeholder="Primeri: od 8h do 16h;  po pozivu;  ne radimo" type="ttext" id="radnovsub" name="7radnovreme-sub" required>
+          </div>	
+          <div style="width: 100%" class="item">
+            <label for="radnovned">Radno vreme nedeljom<span>*</span>&nbsp; (Ukoliko nemate određeno radno vreme ostavite polje prazno. Ukoliko radite po pozivu, upišite "po pozivu".)</label>
+            <input placeholder="Primeri: od 8h do 16h;  po pozivu;  ne radimo" type="ttext" id="radnovned" name="8radnovreme-ned" required>
+          </div>	
+        </div>
 	
-	<div class="soc-mreze">
-<div class="soc-mreze-inner">		
-<div class="soc-mreze-link">		
-	Link profila:
-<a href="https://www.facebook.com/redirex.rs.7" target="_blank" class="">
-<dt><i class="fab fa-facebook-square fa-4x" style="color: white"></i></dt><dd></dd></a>	</div>
-		
-<div class="soc-mreze-link">		
-	Link stranice:	
-<a href="https://www.facebook.com/redirexx" target="_blank" class="" style="margin-top: 1em; margin-bottom: 1em">
-<dt><i class="fab fa-facebook-square fa-4x" style="color: white"></i></dt><dd></dd></a>
-</div>
-		
-<div class="soc-mreze-link">		
-	E-mail:	<br><br>
-<dt style="padding-bottom: em; " > redirexrs@gmail.com</dt> <br>
-<dt style="padding-bottom: 1em; " > redirex.srb@gmail.com</dt>	
-</div>
-</div>		
-</div>
-</div>
-
-<div class="formular">
-	<p>	Formular koji je potreban za vašu stranicu možete preuzeti ispod. <br><br>
-	<a href="Redirex-formular.docx" download><i class="fas fa-file-word fa-3x"></i>&nbsp;Redirex-form</a>
-	</p>
-</div>
+		  <div class="item">
+            <label for="krataktekst">Kratak opis do 400 karaktera<span>*</span></label>
+            <textarea class="kratak-tekst" type="ttext" id="krataktekst" name="krataktekst" maxlength="400" required></textarea>
+          </div>
+	</div>
+		  
+		 <div class="posebni-att">
+			 
+	<label for="atributi">Specifični atributi (ukoliko nudite i online kupovinu, radite iskljucivo po pozivu, nudite dostavu, dolazak na kućnu adresu, popusti, akcije, itd..)</label>
+    <textarea placeholder="Možete navesti koliko god želite: Online; Dostava; po pozivu; Popusti; ..." class="kratak-tekst" type="ttext" id="atributi" name="atributi" ></textarea>
+		     
+		 </div> 
+		  
+		 <hr class="solid" style="border-top: 1px solid gray; width: 100%; margin: auto; padding-bottom: 0.5em; margin-bottom: 0.4em">  
+		  		  
+          <label>Društvene mreže. Linkovi ka Vašim profilima na društvenim mrežama. Ukoliko nemate neke, ostavite prazno polje ili stavite "/".</label>
+            
+          <div class="item"><i class="fa fa-facebook fa-lg"></i>
+            <label for="facebook"> - Facebook</label>
+            <input id="facebook" type="text" name="facebook" required/>
+          </div>
+          <div class="item"><i class="fab fa-instagram fa-lg"></i>
+            <label for="instagram"> - Instagram</label>
+            <input id="instagram" type="text" name="instagram" required/>
+          </div>
+          <div class="item"><i class="fab fa-youtube fa-lg"></i>
+            <label for="youtube"> - Youtube</label>
+            <input id="youtube" type="text"   name="youtube" required/>
+          </div>
+          <div class="item"><i class="fab fa-linkedin-in fa-lg"></i>
+            <label for="Linkedin"> - LinkedIn</label>
+            <input id="Linkedin" type="text"   name="linkedin" required/>
+          </div>
+          <div class="item"><i class="fab fa-pinterest fa-lg"></i>
+            <label for="pinterest"> - Pinterest</label>
+            <input id="pinterest" type="tel"   name="pinterest" required/>
+          </div>
+          <div class="item"><i class="fas fa-globe fa-lg"></i>
+            <label for="websajt"> - Vaša web-stranica</label>
+            <input id="websajt" type="tel"   name="websajt" required/>
+          </div>
 	
-</div>	
+       
+        
+        <div class="item">
+          <label for="visit">Napomene: </label>
+          <textarea id="visit" rows="3"></textarea>
+        </div>
+		  
+		  <div style="border: 3px solid #4f4f4f; padding: 3em" class="pitanje-polje">
+			  <h3>Redirex stranica</h3>
+		  <p>Ukoliko zelite i Vašu ličnu redirex stranicu, napišite u polju "Da" i mi ćemo Vas kontaktirati u najkraćem roku putem emaila. Redirex Stranice su potpuno besplatne i mogu sadržati neograničen broj podataka.<br> Takođe možemo iskoristiti bitly.com kako bismo napravili skraćenu verziju linka ka Vašoj stranici (primer: bit.ly/redirexrs)</p>
+		     <div class="stranica-pitanje">
+			  
+			  
+          <div class="item">
+            <label for="stranicadane">Da li želite Redirex stranicu?<span>*</span>&nbsp;</label>
+            <input id="stranicadane" type="text" name="stranicadane" required/>
+          </div>
+				 
+			  </div>
+			  
+		  </div>
+		  
+        
+        <div class="btn-block">
+          <button type="submit" href="/">Pošalji</button>
+        </div>		  
+		  
+		  
+      </form>	
+</div>
 
 	
 	
@@ -1154,7 +1241,7 @@ margin-left: -2.5em
 	<div class="col-sm-3">
 
 	<div class="widget widget_inventor_boxes">
-	<div class="widget-inner">
+	<div style="color: white;" class="widget-inner">
 	<h2 class="widgettitle">
 	<strong>USLUGE SAJTA</strong></h2>
 
@@ -1165,12 +1252,12 @@ margin-left: -2.5em
 	<div class="col-sm-12 col-lg-12 col-md-6" style="display: table ;margin: auto;padding-bottom: 0.5em">
 	   <div class="box">
 		 <div class="box-inner">
-			<div class="box-icon">
+			<div style="color: white;" class="box-icon">
 			<i class="fa fa-suitcase"></i>
 			</div>
-			<div class="box-body">
+			<div style="color: white;" class="box-body">
 				  <h6 class="box-title">Besplatno oglašavanje</h6>
-				  <div class="box-content">Ukolike želite da se i vas oglas nadje na sajtu, dovoljno se samo da nam posaljete osnovne informacije</div>
+				  <div style="color: white;" class="box-content">Ukolike želite da se i vas oglas nadje na sajtu, dovoljno se samo da nam posaljete osnovne informacije</div>
 			 </div><!-- /.box-body -->
 		 </div><!-- /.box-inner -->
 
@@ -1182,13 +1269,13 @@ margin-left: -2.5em
 	 <div class="col-sm-12 col-lg-12 col-md-6" style="display: table;margin: auto;padding-bottom: 0.5em">
 		 <div class="box ">
 			 <div class="box-inner">
-				 <div class="box-icon">
+				 <div style="color: white;" class="box-icon">
 					<i class="fa fa-link"></i>            
 				 </div><!-- /.box-icon -->
 
-				 <div class="box-body">
+				 <div style="color: white;" class="box-body">
 					   <h6 class="box-title">Povezivanje vasih stranica</h6><!-- /.box-title -->
-						 <div class="box-content">
+						 <div style="color: white;" class="box-content">
 						Sajt i sve vaše društvene mreže na jednom mestu             
 						 </div><!-- /.box-content -->
 
@@ -1203,13 +1290,13 @@ margin-left: -2.5em
 	 <div class="col-sm-12 col-lg-12 col-md-6" style="display: table;margin: auto; padding-bottom: 2em">
 		 <div class="box ">
 			 <div class="box-inner">
-				 <div class="box-icon">
+				 <div style="color: white;" class="box-icon">
 					<i class="fa fa-book"></i>            
 				 </div><!-- /.box-icon -->
 
-				 <div class="box-body">
+				 <div style="color: white;" class="box-body">
 					   <h6 class="box-title">Vaša lična stranica</h6><!-- /.box-title -->
-						 <div class="box-content">
+						 <div style="color: white;" class="box-content">
 						Kreiranje lične stranice vaše usluge na kojoj se može nači sve sto želite             
 						 </div><!-- /.box-content -->
 
@@ -1228,13 +1315,13 @@ margin-left: -2.5em
 	<!-- /.cols-sm-3 -->
 
 	<div class="col-sm-3">
-		<div id="text-9" class="widget widget_text"><h2 class="widgettitle"><strong>KONTAKT INFORMACIJE</strong></h2>
+		<div style="color: white;" id="text-9" class="widget widget_text"><h2 class="widgettitle"><strong>KONTAKT INFORMACIJE</strong></h2>
 			<div class="textwidget">
 				<hr>
 				<dl>
 
-	<dt style="padding-bottom: em"><i class="fa fa-envelope" style="margin-right: 0.5em"></i> redirexrs@gmail.com</dt><dd></dd>
-<dt style="padding-bottom: 1em"><i class="fa fa-envelope" style="margin-right: 0.5em"></i> redirex.srb@gmail.com</dt><dd></dd>
+	<dt style="color: white;" style="padding-bottom: em"><i class="fa fa-envelope" style="margin-right: 0.5em"></i> redirexrs@gmail.com</dt><dd></dd>
+<dt style="color: white; padding-bottom: 1em"><i class="fa fa-envelope" style="margin-right: 0.5em"></i> redirex.srb@gmail.com</dt><dd></dd>
 
 	<a href="https://www.facebook.com/redirexx" target="_blank" class="">
 	<dt><i class="fab fa-facebook-square fa-3x" style="color: white"></i></dt><dd></dd></a>
@@ -1244,7 +1331,7 @@ margin-left: -2.5em
 		</div>					           
 	</div><!-- /.cols-sm-3 -->
 
-		<div class="col-sm-3">
+		<div style="color: white;" class="col-sm-3">
 	<h2 class="widgettitle"><strong>LINKOVI SAJTA</strong></h2>
 	<div class="listing-container">
 		<div class="listing-small">
