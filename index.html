@@ -13,21 +13,25 @@
 
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:ital,wght@0,700;1,900&display=swap" rel="stylesheet"> 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>	
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><style>
+
+	
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	
+<style>
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 </style>	
-<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script> 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
 <script src="https://kit.fontawesome.com/3429f72bdb.js" crossorigin="anonymous"></script>
 <!--Let browser know website is optimized for mobile-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta https-equiv="X-UA-Compatible" content="IE=edge">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
 
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 
 <title>Redirex: Poslovni Katalog Srbije</title>
 <meta name="Description" content="Poslovni katalog firmi i svih ostalih usluga na teritoriji Srbije. Struktura sajta je podeljena na okruge i opštine radi lakšeg pretraživanja i oglašavanja" >	
@@ -54,7 +58,6 @@
 	<![endif]-->
 <script src="JSS/loading screen kao.js"></script>	
 <script src="JSS/abc-sortiranje.js"></script>	
-<script src="JSS/W3-dropdown-onclick.js"></script>
 <script src="JSS/W3-search.js"></script>	
 <script src="JSS/backtotop.js"></script>
 <script src="JSS/Filterovanje1.js"></script>
@@ -199,11 +202,7 @@ section {
 </style>
 <style>
 	
-	.row-novo{
-		display: block;
-		margin: auto;
-		
-	}	
+	
 
 .clrd-font{
 	background: #FF512F;
@@ -408,23 +407,8 @@ section {
 		color: white
 	}
 	
-	.najnovije .row{
-		box-sizing: border-box;
-	    text-align: center;
-		padding-top: 3em;
-		padding-bottom: 5em;
-		display: flex;
-		margin: auto
-		
-	}
 	
-	.najnovije{
-		box-sizing: border-box;
-	    text-align: center;
-		margin: auto;
-		display: flex;
-		
-	}
+	
 	
 	.card-img-top-1{
 		margin:auto;
@@ -437,10 +421,7 @@ section {
 		margin-top: 0.5em	
 	}
 	
-	.container{
-		margin-bottom: 1em;
-		display:inline-block
-	}
+	
 	
 	
 	.right{
@@ -734,27 +715,10 @@ html {
 .inactiveLink {
    pointer-events: none;
    cursor: default;
-   color: black;
+   color: black;	
 }
-.dropdown-disabled {
-  background: rgba(95,95,95,0.91);
-  color:black;
-  font-size: 1em;
-  border: none;
-  cursor: pointer;
-  height: 2.5em;
-  width: 100%;
-}
-/* Dropdown button on hover & focus */
-.dropdown:hover {
-  background-color: rgba(17,93,172,0.6);
-border: 1px solid white;
-	border-radius: 4px
-}
-.dropdown.clicked{
-		border: 2px solid green;
-	outline: none
-	}
+
+
 /* The container <div> - needed to position the dropdown content */
 
 
@@ -771,34 +735,6 @@ border: 1px solid white;
 		color: white
 	}
 	
-/* Dropdown Content (Hidden by Default) */
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  background-color: black;
-  width: 100%;
-  border: 4px solid white;
-	overflow: hidden;
-}
-	
-/* Links inside the dropdown */
-.dropdown-menu a {
-	position: absolute;
-  color: white;
-  padding: 0.5em 16px;
-  text-decoration: none;
-margin: auto;	
-  border-top: 1px solid #db6400;
-	background: black;
-	z-index: 222
-}
-	
-
-.dropdown-menu i {
-	 color: #db6400;
-	}
-/* Change color of dropdown links on hover */
-.dropdown-menu a:hover {background-color:#db6400}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;} 
@@ -1044,12 +980,7 @@ h3{
 		font-size: 2em;
 		padding: 1em;
 		margin-top: 2em
-	}	
-	.okruzi-i-opstine{
-		width: 100%;
-		padding: 2em;
-		margin-top: em
-	}	
+	}		
 	.banner img {
 		position: absolute;
 		width: 100%;
@@ -1070,7 +1001,7 @@ padding-top: 2em
 }	
 	.banner-kartica{
 		display: block;
-			width: 20em;
+			width: 25em;
 			height: 15em;
 		background: white;
 		margin: auto
@@ -1121,38 +1052,115 @@ padding-top: 2em
 	.navbar:hover{
 		background: rgba(0,0,0,1.00)
 	}
-	.okruzi-i-opstine{
-		
-		padding: 2em
-	}
+	
 	.lista-okruga{
 		display: block;
 		width: 90%;
 		margin: auto;
 	}
-	.dropdown{
-		width: 90%;
-		height: 5em;
-		color: white;
-		padding-top: 0.4em;
-		background: black;
-		border: 0.1em solid #4f4f4f;
-		font-size: 1em;
-		font-family:'Russo One';
-		padding-left: 1em;
-			margin: auto
-	}
-	.dropdown img {
-		position: absolute;
-	    bottom: 0;
-		right: 0;
-		height: 4em;
-		width: 4em;
-		margin: 0.3em;
-		opacity: 0.5;
-	}
 	}
 	
+@media (min-width: 768px){
+	
+	
+.najnovije-kontakt a {
+  display: block;
+  text-align: center;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;	
+}		
+/* Style the social media icons with color, if you want */
+.najnovije-kontakt a:hover {
+  background-color: #000;
+ z-index: 99999999
+}
+
+.najnovije-kontakt:hover{
+			z-index: 9999999
+		}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+width: 25%;
+height: 1.8em;	
+padding: 2px;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+padding: 5px;
+width: 25%;	
+padding: 2px;
+height: 1.8em;
+}
+	
+.instagram {
+background: rgba(94,15,140,1.00);
+color: white;	
+padding: 5px;
+width: 25%;	
+padding: 2px;
+height: 1.8em;
+	}
+
+.web{
+background: #4f4f4f;
+color: black;
+width: 25%;	
+padding: 5px;
+height: 1.8em;
+	}
+
+.google {
+  background: #dd4b39;
+  color: white;	
+width: 1.7em;	
+padding: 2px;
+height: 1.8em;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;	
+width: 1.7em;
+padding: 2px;
+height: 1.8em;
+}
+
+.youtube {
+  background: red;
+  color: white;	
+width: 25%;
+padding: 2px;
+height: 1.8em;
+} 
+
+.redirex{
+background: black;
+color: black;
+width: 25%;
+padding: 5px;
+padding-top: 4%;
+	font-size: 0.6em;
+	border: 1px solid orange
+		
+	}
+	
+.najnovije-kontakt {
+display: flex;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+border-top: 3px solid white;	
+	left: 0;
+	
+}
+
+	
+}
 	
 	@media (min-width: 768px){
 		.banner img {
@@ -1166,11 +1174,10 @@ padding-top: 2em
 		
 			.banner-kartica{
 		position: absolute;
-		width: 25em;
-		height: 15em;
+		width: 30em;
 		border: 2px solid white;
-		top: 15%;
-		left: 5%;
+		top: 2%;
+		left: 2%;
 		background: white;
 		border-radius: 4px;
 	}
@@ -1212,8 +1219,8 @@ padding-top: 2em
 		display: block;
 		width: 12em;
 		height: 2em;
-		bottom: 5%;
-		left: 20%;
+		bottom: 40%;
+		left: 25%;
 		padding: 0.4em;
 		color: white;
 		background: rgba(3,108,12,1.00);
@@ -1274,19 +1281,11 @@ padding-top: 2em
 		display: flex;
 		width: 100%;
 		flex-wrap: wrap;
+		margin: auto;
+		padding: 3em;
 		
 	}
 	
-	}
-	.dropdown-menu {
-		z-index: 1;
-		visibility: visible;
-		
-	}
-	.dropdown-menu a {
-	 display: block;
-  text-align: left;
-  position: relative;
 	}
 	
 
@@ -1315,6 +1314,215 @@ padding-top: 2em
 		height: 100%;
 		width: 30%;
 		opacity: 0.5;
+	}
+	
+	@media (min-width: 768px){
+		.form-control{
+			border: 1px solid red;
+			width: 15em;
+		}
+		.row-novo{
+		display: flex;
+		margin: auto;
+		
+	}	
+		.najnovije{
+		box-sizing: border-box;
+	    text-align: center;
+		margin: auto;
+		display: flex;
+		
+	}
+		.najnovije-kartica{
+			width: 17em;
+			height: 30em;
+			background: black;
+			margin: 0.5em;
+			border-bottom: 3px solid gray
+		}
+		.najnovije-kartica:hover{
+			border: 1px solid #4f4f4f;
+		}
+		.najnovije-slika img{
+			width: 100%;
+		}
+		.najnovije-title{
+			color: white;
+			padding: 0.3em;
+		}
+		.najnovije-tekst p{
+			color: white;
+			padding: 0.6em
+		}
+		.okrug-ime{
+		display: block;
+		margin: 0.5em;
+		border-radius: 10px;
+		background: black;
+		border: 1px solid #4f4f4f;
+		padding: 2px;
+		width: 11em;
+		height: 11em;	
+	}	
+.card-container {
+    perspective: 25em;
+}
+			.pretraga-okruga{
+		left: 15%;
+		width: 30em;
+	}
+	.container{
+		width: 50em;
+		margin: auto;
+	}
+	.form-control{
+		width: 30em
+	}
+	}
+	@media (max-width: 768px){
+		.row-novo{
+		display: block;
+		margin: auto;
+		
+	}	
+		.najnovije{
+		box-sizing: border-box;
+	    text-align: center;
+		margin: auto;
+		display: flex;
+		
+	}
+		
+		.najnovije-kartica{
+			width: 20em;
+			height: 30em;
+			background: black;
+			margin: 0.5em;
+			border-bottom: 3px solid gray
+		}
+		.najnovije-kartica:hover{
+			border: 1px solid #4f4f4f;
+		}
+		.najnovije-slika img{
+			width: 100%;
+		}
+		.najnovije-title{
+			color: white;
+			padding: 0.3em;
+		}
+		.najnovije-tekst p{
+			color: white;
+			padding: 0.6em
+		}
+		.okrug-ime{
+		margin: 0.5em;
+		border-radius: 10px;
+		background: black;
+		border: 1px solid #4f4f4f;
+		padding: 2px;
+		width: 10em;
+		height: 10em;
+			
+	}	
+		.okruzi-i-opstine{
+			
+		display: flex;
+			flex-wrap: wrap;
+		}
+.card-container {
+	
+    perspective: 25em;
+}
+			.pretraga-okruga{
+		width: 10em;
+	}
+	.container{
+		width: 50em;
+		margin: auto;
+	}
+	.form-control{
+		width: 18em
+	}
+	
+	d}
+	
+	.okrug-ime img{
+		display: block;
+		width: 3em;
+		height: 3em;
+		margin: auto
+	}
+	.ime-slika-okruga{
+		display: block;
+		background: black;
+		color: white;
+		padding: 1em;
+		font-size: 1em;
+			
+	}
+	.gradovi-okruga{
+		display: flex;
+		flex-wrap: wrap;
+		width:100%;
+		top: 0;
+		left: 0;
+		background: #000000;
+		border-radius: 10px;
+		color: white;
+		font-size: 0.65em;
+	}
+	.gradovi-okruga a{
+		width: 50%;
+		padding: 5px;
+		padding-bottom: 2px;
+		padding-top: 2px;
+		color: white;
+		margin: auto;
+		border-radius: 10px
+	}
+	.gradovi-okruga a:hover{
+		background: #4f4f4f
+	}
+	.gradovi-okruga-beograd{
+		width: 100%;
+		background: #000000;
+		padding: 5px;
+	} 
+
+
+.card-flip, .card-container {
+    transform-style: preserve-3d;
+    transition: all 0.7s ease;
+}
+
+.card-flip div {
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+.card-flip {
+    display: grid; grid-template: 1fr / 1fr;
+    grid-template-areas: "frontAndBack";
+    transform-style: preserve-3d;
+    transition: all 0.7s ease;
+}
+
+.front {
+    grid-area: frontAndBack;
+}
+
+.back {
+    grid-area: frontAndBack;
+    transform: rotateY(-180deg);
+}
+
+.card-container:hover .card-flip {
+    transform: rotateY(180deg);
+}
+	#exampleInputEmail1{
+		width: 20em;
+	}
+	#forma-email{
+		margin: 1em
 	}
 	
 	</style>
@@ -1400,6 +1608,20 @@ padding-top: 2em
 	<h3>OGLAŠAVANJE</h3>
 	   <p>Oglašavanje je potpuno besplatno i sve informacije možete naći na stranici "kako se oglasiti"</p> <br><br>
 	   <h5><a href="kako-se-oglasiti.html" style="color: white">Kako se oglasiti?</a></h5>
+      <form id="forma-email" action="https://formspree.io/f/mayllayz" method="POST">
+      
+    <label for="exampleInputEmail1">Ili nam možete ostaviti svoju e'mail adresu i mi ćemo vas kontaktirati</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+   
+		</form>		 
+			  
+		  
+		  
+        
+        <div class="btn-block">
+          <button type="submit" href="/">Pošalji</button>
+        </div>
+</div>
 	</div>
 	
 	<div class="banner-title ">
@@ -1409,42 +1631,270 @@ padding-top: 2em
         </div>
       </div>
    
-</div>
+
 
 
 		
 <h2 id="okruzi" class="section-title-1" style="color: white">OKRUZI I OPSTINE</h2>
+	
+  <div class="container">
+	<div class="row">
+	    <form class="col-md-5 pretraga-okruga">
+	        <select class="form-control select2" onChange="window.location.href=this.value">
+				<option>Biranje grada</option>
+			
+			   <option><a class="inactiveLink" href="#">Bor</a></option>
+               <option value="https://redirex.rs/stranice/Bor%20Okrug/Kladovo/Kladovo.html">Kladovo (1)</option>
+               <option><a class="inactiveLink" href="#">Majdanpek</a></option>
+			   <option><a class="inactiveLink" href="#">Negotin</a> </option>
+		<option value="https://redirex.rs/stranice/28-Grad%20Beograd/index-beograd.html"><center>Beograd (33)</center></option>
+				
+               <option value="https://redirex.rs/stranice/Branicevo%20Okrug/Pozarevac/Pozarevac.html">Požarevac (2)</option>
+				
+               <option><a class="inactiveLink" href="#">Kučevo</a></option>
+               <option><a class="inactiveLink" href="#">Malo Crnice</a></option>
+				
+			   <option value="https://redirex.rs/stranice/Branicevo%20Okrug/Petrovac/Petrovac.html">Petrovac (1)</option>
+				
+			   <option><a class="inactiveLink" href="#">Golubac</a></option>
+               <option><a class="inactiveLink" href="#">Veliko Gradište</a></option>
+               <option><a class="inactiveLink" href="#">Žabari</a></option>
+			   <option><a class="inactiveLink" href="#">Žagubica</a></option>
+               <option><a class="inactiveLink" href="#">Boljevac</a></option>
+				
+               <option value="https://redirex.rs/stranice/Zajecarski%20okrug/Knjazevac/Knjazevac.html">Knjaževac (1)</option>
+				
+               <option><a class="inactiveLink" href="#">Sokobanja</a></option>
+				
+			   <option value="https://redirex.rs/stranice/Zajecarski%20okrug/Zajecar/Zajecar.html">Zaječar (1)</option>
+				
+			   <option><a class="inactiveLink" href="stranice/Zapadnobacki okrug/Apatin/Apatin.html">Apatin</a>	</option>
+               <option><a class="inactiveLink" href="stranice/Zapadnobacki okrug/Kula/Kula.html">Kula</a></option>
+              <option> <a class="inactiveLink" href="stranice/Zapadnobacki okrug/Odzaci/Odzaci.html">Odžaci</a></option>
+              <option> <a class="inactiveLink" href="stranice/Zapadnobacki okrug/Sombor/Sombor.html">Sombor</a>	</option>
+				
+               <option value="https://redirex.rs/stranice/Zlatiborski%20okrug/Arilje/Arilje.html">Arilje (1)</option>
+				
+               <option><a class="inactiveLink" href="#">Bajina Bašta</a></option>
+               <option><a class="inactiveLink" href="#">Čajetina</a></option>
+			   <option><a class="inactiveLink" href="#">Kosjerić</a></option>
+			   <option><a class="inactiveLink" href="#">Nova Varoš</a></option>
+               <option><a class="inactiveLink" href="#">Požega</a></option>
+               <option><a class="inactiveLink" href="#">Priboj</a></option>
+			   <option><a class="inactiveLink" href="#">Prijepolje</a></option>
+			   <option><a class="inactiveLink" href="#">Sjenica</a></option>
+				
+			   <option value="https://redirex.rs/stranice/Zlatiborski%20okrug/Uzice/Uzice.html">Užice (1)</option>
+				
+               <option><a class="inactiveLink" href="stranice/Jablanicki okrug/Bojnik/Bojnik.html">Bojnik</a></option>
+               <option><a class="inactiveLink" href="stranice/Jablanicki okrug/Crna trava/Crna-trava.html">Crna Trava</a></option>
+               <option><a class="inactiveLink" href="stranice/Jablanicki okrug/Lebane/Lebane.html">Lebane</a></option>
+			   <option><a class="inactiveLink" href="stranice/Jablanicki okrug/Leskovac/Leskovac.html">Leskovac</a></option>
+			   <option><a class="inactiveLink" href="stranice/Jablanicki okrug/Medvedja/Medvedja.html">Medvedja</a></option>
+               <option><a class="inactiveLink" href="stranice/Jablanicki okrug/Vlasotince/Vlasotince.html">Vlasotince</a></option>
+               <option><a class="inactiveLink" href="stranice/Juznobanatski okrug/Alibunar/Alibunar.html">Alibunar</a></option>
+               <option><a class="inactiveLink"  href="stranice/Juznobanatski okrug/Bela crkva/Bela-crkva.html">Bela Crkva</a></option>
+               <option><a class="inactiveLink"  href="stranice/Juznobanatski okrug/Kovacica/Kovacica.html">Kovačica</a></option>
+			   <option><a class="inactiveLink"  href="stranice/Juznobanatski okrug/Kovin/Kovin.html">Kovin</a></option>
+			   <option><a class="inactiveLink"  href="stranice/Juznobanatski okrug/Opovo/Opovo.html">Opovo</a></option>
+				
+               <option value="https://redirex.rs/stranice/Juznobanatski%20okrug/Pancevo/Pancevo.html">Pančevo (1)</option>
+				
+			   <option><a class="inactiveLink"  href="stranice/Juznobanatski okrug/Plandiste/Plandiste.html">Plandište</a></option>
+				
+               <option value="https://redirex.rs/stranice/Juznobanatski%20okrug/Vrsac/Vrsac.html">Vršac (1)</option>
+				
+               <option><a class="inactiveLink" href="#">Bač</a></option>
+				
+               <option value="https://redirex.rs/stranice/Juznobacki%20okrug/Backa%20palanka/Backa-palanka.html">Bačka Palanka (1)</option>
+				
+               <option><a class="inactiveLink" href="#">Bački Petrovac</a></option>
+			   <option><a class="inactiveLink" href="#">Bečej</a></option>
+			   <option><a class="inactiveLink" href="#">Beočin</a></option>
+				
+               <option value="https://redirex.rs/stranice/Juznobacki%20okrug/Novi%20sad/Novi-sad.html">Novi Sad (5)</option>
+				
+			   <option><a class="inactiveLink" href="#">Srbobran</a></option>
+               <option><a class="inactiveLink" href="#">Sremski Karlovci</a></option>
+			   <option><a class="inactiveLink" href="#">Temerin</a></option>
+               <option><a class="inactiveLink" href="#">Titel</a></option>
+			   <option><a class="inactiveLink" href="#">Vrbas</a></option>
+			   <option><a class="inactiveLink" href="#">Žabalj</a></option>	
+               <option><a class="inactiveLink" href="#">Lajkovac</a></option>
+               <option><a class="inactiveLink" href="#">Ljig</a></option>
+               <option><a class="inactiveLink" href="#">Mionica</a></option>
+				
+			   <option value="https://redirex.rs/stranice/Kolubarski%20okrug/Osecina/Osecina.html">Osecina (1)</option>
+				
+			   <option value="https://redirex.rs/stranice/Kolubarski%20okrug/Ub/Ub.html">Ub (1)</option>
+				
+               <option value="https://redirex.rs/stranice/Kolubarski%20okrug/Valjevo/Valjevo.html">Valjevo (1)</option>
+				
+               <option><a class="inactiveLink" href="stranice/Kosovski okrug/Glogovac/Glogovac.html">Glogovac</a></option>
+               <option><a class="inactiveLink" href="stranice/Kosovski okrug/Kacanik/Kacanik.html">Kačanik</a></option>
+               <option><a class="inactiveLink" href="stranice/Kosovski okrug/Kosovo polje/Kosovo-polje.html">Kosovo Polje</a></option>
+			   <option><a class="inactiveLink" href="stranice/Kosovski okrug/Lipljan/Lipljan.html">Ljipljan</a></option>
+			  <option> <a class="inactiveLink" href="stranice/Kosovski okrug/Obilic/Obilic.html">Obilić</a></option>
+               <option><a class="inactiveLink" href="stranice/Kosovski okrug/Podujevo/Podujevo.html">Podujevo</a></option>
+			   <option><a class="inactiveLink" href="stranice/Kosovski okrug/Pristina/Pristina.html">Priština</a></option>
+               <option><a class="inactiveLink" href="stranice/Kosovski okrug/Stimlje/Stimlje.html">Štimlje</a></option>
+               <option><a class="inactiveLink" href="stranice/8-Kosovski okrug/Strpce/">Štrpce</a></option>
+			   <option><a class="inactiveLink" href="stranice/8-Kosovski okrug/Urosevac/">Uroševac</a></option>	
+               <option><a class="inactiveLink" href="stranice/Kosovsko-mitrovacki okrug/Kosovska mitrovica/Kosovska-mitrovica.html">Kosovska Mitrovica</a></option>
+               <option><a class="inactiveLink" href="stranice/Kosovsko-mitrovacki okrug/Leposavic/Leposavic.html">Leposavić</a></option>
+               <option><a class="inactiveLink" href="stranice/Kosovsko-mitrovacki okrug/Srbica/Srbica.html">Srbica</a></option>
+			   <option><a class="inactiveLink" href="stranice/Kosovsko-mitrovacki okrug/Vucitrn/Vucitrn.html">Vučitrn</a></option>
+			   <option><a class="inactiveLink" href="stranice/Kosovsko-mitrovacki okrug/Zubin potok/Zubin-potok.html">Zubin Potok</a></option>
+               <option><a class="inactiveLink" href="stranice/Kosovsko-mitrovacki okrug/Zvecan/Zvecan.html">Zvečan</a></option>	
+              <option><a class="inactiveLink" href="stranice/Kosovsko-pomoravski okrug/Gnjilane/Gnjilane.html">Gnjilane</a></option>
+              <option><a class="inactiveLink" href="stranice/Kosovsko-pomoravski okrug/Kosovska kamenica/Kosovska-kamenica.html">Kosovska Kamenica</a></option>
+              <option><a class="inactiveLink" href="stranice/Kosovsko-pomoravski okrug/Novo brdo/Novo-brdo.html">Novo Brdo</a></option>
+			  <option><a class="inactiveLink" href="stranice/Kosovsko-pomoravski okrug/Vitina/Vitina.html">Vitina</a></option>
+               <option><a class="inactiveLink" href="#">Bogatić</a></option>
+               <option><a class="inactiveLink" href="#">Koceljevo</a></option>
+               <option><a class="inactiveLink" href="#">Krupanj</a></option>
+			   <option><a class="inactiveLink" href="#">Ljubovija</a></option>
+			   <option><a class="inactiveLink" href="#">Loznica</a></option>
+               <option><a class="inactiveLink" href="#">Mali Zvornik</a></option>
+				
+			   <option value="https://redirex.rs/stranice/Macvanski%20okrug/Sabac/Sabac.html">Šabac (1)</option>
+				
+               <option><a class="inactiveLink" href="#">Vladimirci</a></option>
+				
+               <option value="https://redirex.rs/stranice/Moravicki%20okrug/Cacak/Cacak.html">Čačak (1)</option>
+				
+               <option><a class="inactiveLink" href="#">Gornji Milanovac</a></option>
+               <option><a class="inactiveLink" href="#">Ivanjica</a></option>
+			   <option><a class="inactiveLink" href="#">Lučani</a></option>
+				
+               <option value="https://redirex.rs/stranice/Nisavski%20okrug/Doljevac/Doljevac.html">Doljevac (1)</option>
+				
+               <option><a class="inactiveLink" href="#">Gadzin Han</a></option>
+               <option><a class="inactiveLink" href="#">Merošina</a></option>
+				
+			   <option value="https://redirex.rs/stranice/Nisavski%20okrug/Nis/Nis.html">Niš (9)</option>
+				
+			   <option><a class="inactiveLink" href="#">Niška Banja</a></option>
+               <option><a class="inactiveLink" href="#">Ražanj</a></option>
+			   <option><a class="inactiveLink" href="#">Svrljig</a>	</option>
+               <option><a class="inactiveLink" href="stranice/Pecki okrug/Decani/Decani.html">Dečani</a></option>
+               <option><a class="inactiveLink" href="stranice/Pecki okrug/Djakovica/Djakovica.html">Djakovica</a></option>
+               <option><a class="inactiveLink" href="stranice/Pecki okrug/Istok/Istok.html">Istok</a></option>
+			   <option><a class="inactiveLink" href="stranice/Pecki okrug/Klina/Klina.html">Klina</a></option>
+			   <option><a class="inactiveLink" href="stranice/Pecki okrug/Pec/Pec.html">Peć</a></option>
+               <option><a class="inactiveLink" href="#">Babušnica</a></option>
+				
+               <option value="https://redirex.rs/stranice/Pirotski%20okrug/Bela%20palanka/Bela-palanka.html">Bela Palanka (1)</option>
+				
+               <option><a class="inactiveLink" href="#">Dimitrovgrad</a></option>
+			   <option><a class="inactiveLink" href="#">Pirot</a></option>
+               <option><a class="inactiveLink" href="#">Smederevo</a></option>
+               <option><a class="inactiveLink" href="#">Smederevska Palanka</a></option>
+               <option value="https://redirex.rs/stranice/Podunavski%20okrug/Velika%20plana/Velika-plana.html">Velika Plana (1)</option>
+              <option> <a class="inactiveLink" href="stranice/Pomoravski okrug/Cuprija/Cuprija.html">Ćuprija</a></option>
+              <option> <a class="inactiveLink" href="stranice/Pomoravski okrug/Despotovac/Despotovac.html">Despotovac</a></option>
+              <option> <a class="inactiveLink" href="stranice/Pomoravski okrug/Jagodina/Jagodina.html">Jagodina</a></option>
+			   <option><a class="inactiveLink" href="stranice/Pomoravski okrug/Paracin/Paracin.html">Paraćin</a></option>
+			   <option><a class="inactiveLink" href="stranice/Pomoravski okrug/Rekovac/Rekovac.html">Rekovac</a></option>
+               <option><a class="inactiveLink" href="stranice/Pomoravski okrug/Svilajnac/Svilajnac.html">Svilajnac</a></option>
+               <option><a class="inactiveLink" href="stranice/Prizrenski okrug/Dragas/Dragas.html">Dragaš</a></option>
+               <option><a class="inactiveLink" href="stranice/Prizrenski okrug/Orahovac/Orahovac.html">Orahovac</a></option>
+               <option><a class="inactiveLink" href="stranice/Prizrenski okrug/Prizren/Prizren.html">Prizren</a></option>
+			   <option><a class="inactiveLink" href="stranice/Prizrenski okrug/Suva reka/Suva-reka.html">Suva Reka</a></option>
+               <option><a class="inactiveLink" href="#">Bosilegrad</a></option>
+               <option><a class="inactiveLink" href="#">Bujanovac</a></option>
+               <option><a class="inactiveLink" href="#">Preševo</a></option>
+			   <option><a class="inactiveLink" href="#">Surdulica</a></option>
+			  <option> <a class="inactiveLink" href="#">Trgovište</a></option>
+              <option> <a class="inactiveLink" href="#">Vladičin Han</a></option>
+			  <option value="https://redirex.rs/stranice/Pcinjski%20okrug/Vranje/Vranje.html">Vranje (3)</option>
+              <option> <a class="inactiveLink" href="#">Aleksandrovac</a></option>
+              <option> <a class="inactiveLink" href="#">Brus</a></option>
+              <option> <a class="inactiveLink" href="#">Ćićevac</a></option>
+			  <option value="https://redirex.rs/stranice/Rasinski%20okrug/Krusevac/Krusevac.html">Kruševac (1)</option>
+			  <option> <a class="inactiveLink" href="#">Trstenik</a></option>
+              <option> <a class="inactiveLink" href="#">Varvarin</a></option>
+              <option value="https://redirex.rs/stranice/Raski%20okrug/Kraljevo/Kraljevo.html">Kraljevo (1)</option>
+              <option> <a class="inactiveLink" href="#">Novi Pazar</a></option>
+              <option> <a class="inactiveLink" href="#">Raška</a></option>
+			  <option value="https://redirex.rs/stranice/Raski%20okrug/Tutin/Tutin.html">Tutin (1)</option>
+			  <option value="https://redirex.rs/stranice/Raski%20okrug/Vrnjacka%20banja/Vrnjacka-banja.html">Vrnjačka Banja (1)</option>
+              <option> <a class="inactiveLink" href="#">Ada</a></option>
+               <option><a class="inactiveLink" href="#">Čoka</a></option>
+              <option> <a class="inactiveLink" href="#">Kanjiža</a></option>
+			  <option value="https://redirex.rs/stranice/Severnobanatski%20okrug/Kikinda/Kikinda.html">Kikinda (1)</option>
+			  <option> <a class="inactiveLink" href="#">Novi Kneževac</a></option>
+              <option> <a class="inactiveLink" href="#">Senta</a></option>
+                 <option><a class="inactiveLink" href="#">Bačka Topola</a></option>
+               <option><a class="inactiveLink" href="#">Mali Idjos</a></option>
+               <option value="https://redirex.rs/stranice/Severnobacki%20okrug/Subotica/Subotica.html">Subotica (3)</option>
+              <option> <a class="inactiveLink" href="stranice/Srednjobanatski okrug/Nova crnja/Nova-crnja.html">Nova Crnja</a></option>
+              <option> <a class="inactiveLink" href="stranice/Srednjobanatski okrug/Novi becej/Novi-becej.html">Novi Bečej</a></option>
+              <option> <a class="inactiveLink" href="stranice/Srednjobanatski okrug/Secanj/Secanj.html">Sečanj</a></option>
+			  <option> <a class="inactiveLink" href="stranice/Srednjobanatski okrug/Zitiste/Zitiste.html">Žitište</a></option>
+			  <option> <a class="inactiveLink" href="stranice/Srednjobanatski okrug/Zrenjanin/Zrenjanin.html">Zrenjanin</a></option>
+              <option> <a class="inactiveLink" href="#">Indjija</a></option>
+              <option> <a class="inactiveLink" href="#">Irig</a></option>
+              <option> <a class="inactiveLink" href="#">Pećnici</a></option>
+			  <option> <a class="inactiveLink" href="#">Ruma</a></option>
+			  <option> <a class="inactiveLink" href="#">Šid</a></option>
+              <option value="https://redirex.rs/stranice/Sremski%20okrug/Sremska%20mitrovica/Sremska-mitrovica.html">Sremska Mitrovica (1)</option>
+              <option value="https://redirex.rs/stranice/Sremski%20okrug/Stara%20pazova/Stara-pazova.html">Stara Pazova (2)</option>
+               <option><a class="inactiveLink" href="#">Blace</a></option>
+               <option><a class="inactiveLink" href="#">Kuršumlija</a></option>
+               <option value="https://redirex.rs/stranice/Toplicki%20okrug/Prokuplje/Prokuplje.html">Prokuplje (1)</option>
+			  <option> <a class="inactiveLink" href="#">Žitoradja</a></option>
+              <option> <a class="inactiveLink" href="#">Arandjelovac</a></option>
+              <option> <a class="inactiveLink" href="#">Batočina</a></option>
+              <option> <a class="inactiveLink" href="#">Knić</a></option>
+			  <option value="https://redirex.rs/stranice/27-Sumadijski%20okrug/Kragujevac/Kragujevac.html">Kragujevac (4)</option>
+			  <option> <a class="inactiveLink" href="#">Lapovo</a></option>
+              <option> <a class="inactiveLink" href="#">Rača</a></option>
+              <option> <a class="inactiveLink" href="#">Topola</a></option>
+				
+				
+				
+	        </select>
+	    </form>
+ 	</div>
+</div> 
+	
 <div class="okruzi-i-opstine">
 		
-<!--Borski  -->	
-<div id="bor" class="dropdown" >	
-	Borski okrug (1)&nbsp;
-	
-	<img src="stranice/Bor Okrug/Bor/Veliki_grb_Bora.png" alt=""> 
-
-	
-            <div id="myDropdown-bor" class="dropdown-menu">
-			
-				<i class="fas fa-chevron-up fa-2x arrowup"></i>
-				
-               <a class="inactiveLink" href="#">Bor</a>
+        <!-- Team item -->
+<div class="card-container">	
+<div class="okrug-ime card-flip">
+     <div class="ime-slika-okruga front">
+		<center><img src="stranice/Bor Okrug/Bor/Veliki_grb_Bora.png" alt="">Borski okrug</center>
+	 </div>
+	 <div class="gradovi-okruga back">
+			   <a class="inactiveLink" href="#">Bor</a>
                <a href="stranice/Bor Okrug/Kladovo/Kladovo.html">Kladovo (1)</a>
                <a class="inactiveLink" href="#">Majdanpek</a>
 			   <a class="inactiveLink" href="#">Negotin</a>
-            </div>	
+	 </div>
 </div>
-<!--Beograd  -->
-<div class="dropdown" >		
-	<a class="beograd-dugme" href="stranice/28-Grad Beograd/index-beograd.html" style="font-size: 1em;">		
-	    &nbsp;Grad Beograd (33)&nbsp;<img src="stranice/28-Grad Beograd/1024px-Flag_of_Belgrade,_Serbia.svg.png" alt="" >
-		
-	</a> 
+	</div><!-- End -->		
+	
+        <!-- Team item -->
+<div class="card-container">
+<div class="okrug-ime card-flip">
+     <div class="ime-slika-okruga front">
+		<center><img src="stranice/28-Grad Beograd/1024px-Flag_of_Belgrade,_Serbia.svg.png" alt="">Grad Beograd</center>
+	 </div>
+	 <div class="gradovi-okruga-beograd back">
+		<a style="color: white" href="stranice/28-Grad Beograd/index-beograd.html"><center>Beograd (33)</center></a>
+	 </div>
 </div>
-<!--Braničevski  -->			
-<div id="pozarevac" class="dropdown">
-	Braničevski okrug (3)&nbsp;<img src="stranice/Branicevo Okrug/Pozarevac/800px-Grb_pozarevca.svg.png" alt="">
-            <div id="myDropdown-branicevo" class="dropdown-menu">
-				<i class="fas fa-chevron-up fa-2x arrowup"></i>
+		</div><!-- End -->	
+	
+        <!-- Team item -->
+<div class="card-container">
+<div class="okrug-ime card-flip">
+     <div class="ime-slika-okruga front">
+		<center><img src="stranice/Branicevo Okrug/Pozarevac/800px-Grb_pozarevca.svg.png" alt="">Braničevski okrug</center>
+	 </div>
+	 <div class="gradovi-okruga back">
                <a href="stranice/Branicevo Okrug/Pozarevac/Pozarevac.html">Požarevac (2)</a>
                <a class="inactiveLink" href="#">Kučevo</a>
                <a class="inactiveLink" href="#">Malo Crnice</a>
@@ -1453,35 +1903,44 @@ padding-top: 2em
                <a class="inactiveLink" href="#">Veliko Gradište</a>
                <a class="inactiveLink" href="#">Žabari</a>
 			   <a class="inactiveLink" href="#">Žagubica</a>	
-            </div>		
-</div>		
-<!--Zaječarski  -->				
-<div id="zajecar" class="dropdown" >
-Zaječarski okrug (2)&nbsp;<img src="stranice/Zajecarski okrug/Zajecar/COA_zajecar.png" alt=""> 
-            <div id="myDropdown-zajecar" class="dropdown-menu">
-				<i class="fas fa-chevron-up fa-2x arrowup"></i>
+	 </div>
+</div></div><!-- End -->
+	
+        <!-- Team item -->
+<div class="card-container">	
+<div class="okrug-ime card-flip">
+     <div class="ime-slika-okruga front">
+		<center><img src="stranice/Zajecarski okrug/Zajecar/COA_zajecar.png" alt="">Zaječarski okrug</center>
+	 </div>
+	 <div class="gradovi-okruga back">
                <a class="inactiveLink" href="#">Boljevac</a>
                <a href="stranice/Zajecarski okrug/Knjazevac/Knjazevac.html">Knjaževac (1)</a>
                <a class="inactiveLink" href="#">Sokobanja</a>
 			   <a href="stranice/Zajecarski okrug/Zajecar/Zajecar.html">Zaječar (1)</a>	
-            </div>
-</div>	
- <!--Zapadno backi -->       
-<div id="sombor" class="dropdown" >
-Zapadnobački okrug &nbsp;<img src="stranice/Zapadnobacki okrug/COA_Sombor.png" alt="">
-            <div id="myDropdown-zbacka" class="dropdown-menu">
-				<i class="fas fa-chevron-up fa-2x arrowup"></i>
+	 </div>
+</div></div><!-- End -->	
+	
+        <!-- Team item -->
+<div class="card-container">
+<div class="okrug-ime card-flip">
+     <div class="ime-slika-okruga front">
+		<center><img src="stranice/Zapadnobacki okrug/COA_Sombor.png" alt="">Zapadnobački okrug</center>
+	 </div>
+	 <div class="gradovi-okruga back">
 			   <a class="inactiveLink" href="stranice/Zapadnobacki okrug/Apatin/Apatin.html">Apatin</a>	
                <a class="inactiveLink" href="stranice/Zapadnobacki okrug/Kula/Kula.html">Kula</a>
                <a class="inactiveLink" href="stranice/Zapadnobacki okrug/Odzaci/Odzaci.html">Odžaci</a>
                <a class="inactiveLink" href="stranice/Zapadnobacki okrug/Sombor/Sombor.html">Sombor</a>
-            </div>
-	</div>
-<!--Zlatiborski  -->            
-<div id="uzice" class="dropdown" >
-Zlatiborski okrug (2)&nbsp;<img src="stranice/Zlatiborski okrug/Uzice/Uzice_COA_small.gif" alt=""> 
-            <div id="myDropdown-zlatibor" class="dropdown-menu">
-				<i class="fas fa-chevron-up fa-2x arrowup"></i>
+	 </div>
+</div></div><!-- End -->	
+	
+        <!-- Team item -->
+<div class="card-container">
+<div class="okrug-ime card-flip">
+     <div class="ime-slika-okruga front">
+		<center><img src="stranice/Zlatiborski okrug/Uzice/Uzice_COA_small.gif" alt="">Zlatiborski okrug</center>
+	 </div>
+	 <div class="gradovi-okruga back">
                <a href="stranice/Zlatiborski okrug/Arilje/Arilje.html">Arilje (1)</a>
                <a class="inactiveLink" href="#">Bajina Bašta</a>
                <a class="inactiveLink" href="#">Čajetina</a>
@@ -1491,27 +1950,33 @@ Zlatiborski okrug (2)&nbsp;<img src="stranice/Zlatiborski okrug/Uzice/Uzice_COA_
                <a class="inactiveLink" href="#">Priboj</a>
 			   <a class="inactiveLink" href="#">Prijepolje</a>
 			   <a class="inactiveLink" href="#">Sjenica</a>
-			   <a href="stranice/Zlatiborski okrug/Uzice/Uzice.html">Užice (1)</a>	
-            </div>
-	</div>
-<!--Jablanički  -->           
-<div id="leskovac" class="dropdown" 	>
-Jablanički okrug &nbsp;<img src="stranice/Jablanicki okrug/Leskovac/Leskovac-grb-srednji.png" alt="">
-            <div id="myDropdown-jablan" class="dropdown-menu">
-				<i class="fas fa-chevron-up fa-2x arrowup"></i>
+			   <a href="stranice/Zlatiborski okrug/Uzice/Uzice.html">Užice (1)</a>
+	 </div>
+</div></div><!-- End -->
+	
+        <!-- Team item -->
+<div class="card-container">
+<div class="okrug-ime card-flip">
+     <div class="ime-slika-okruga front">
+		<center><img src="stranice/Jablanicki okrug/Leskovac/Leskovac-grb-srednji.png" alt="">Jablanički okrug</center>
+	 </div>
+	 <div class="gradovi-okruga back">
                <a class="inactiveLink" href="stranice/Jablanicki okrug/Bojnik/Bojnik.html">Bojnik</a>
                <a class="inactiveLink" href="stranice/Jablanicki okrug/Crna trava/Crna-trava.html">Crna Trava</a>
                <a class="inactiveLink" href="stranice/Jablanicki okrug/Lebane/Lebane.html">Lebane</a>
 			   <a class="inactiveLink" href="stranice/Jablanicki okrug/Leskovac/Leskovac.html">Leskovac</a>
 			   <a class="inactiveLink" href="stranice/Jablanicki okrug/Medvedja/Medvedja.html">Medvedja</a>
                <a class="inactiveLink" href="stranice/Jablanicki okrug/Vlasotince/Vlasotince.html">Vlasotince</a>	
-            </div>
-	</div>
- <!--Južnobanatski  -->     
-<div id="pancevo" class="dropdown" >
-Južnobanatski okrug (2)&nbsp;<img src="stranice/Juznobanatski okrug/Pancevo/Pancevo-coat_of_arms.png" alt=""> 
-            <div id="myDropdown-jbanat" class="dropdown-menu">
-				<i class="fas fa-chevron-up fa-2x arrowup"></i>
+	 </div>
+</div></div><!-- End -->
+
+        <!-- Team item -->
+<div class="card-container">
+<div class="okrug-ime card-flip">
+     <div class="ime-slika-okruga front">
+		<center><img src="stranice/Juznobanatski okrug/Pancevo/Pancevo-coat_of_arms.png" alt="">Južnobanatski okrug</center>
+	 </div>
+	 <div class="gradovi-okruga back">
                <a class="inactiveLink" href="stranice/Juznobanatski okrug/Alibunar/Alibunar.html">Alibunar</a>
                <a class="inactiveLink"  href="stranice/Juznobanatski okrug/Bela crkva/Bela-crkva.html">Bela Crkva</a>
                <a class="inactiveLink"  href="stranice/Juznobanatski okrug/Kovacica/Kovacica.html">Kovačica</a>
@@ -1521,12 +1986,16 @@ Južnobanatski okrug (2)&nbsp;<img src="stranice/Juznobanatski okrug/Pancevo/Pan
 			   <a class="inactiveLink"  href="stranice/Juznobanatski okrug/Plandiste/Plandiste.html">Plandište</a>
 				
                <a href="stranice/Juznobanatski okrug/Vrsac/Vrsac.html">Vršac (1)</a>	
-            </div>
-</div>  
-<!--Južnobački -->		
-<div id="novi_sad" class="dropdown" >Južnobački okrug (6)&nbsp;<img src="stranice/Juznobacki okrug/Novi sad/800px-Novi_Sad_Coat_of_Arms.svg.png" alt="">
-            <div id="myDropdown-jbacka" class="dropdown-menu">
-				<i class="fas fa-chevron-up fa-2x arrowup"></i>
+	 </div>
+</div></div><!-- End -->
+
+        <!-- Team item -->
+<div class="card-container">
+<div class="okrug-ime card-flip">
+     <div class="ime-slika-okruga front">
+		<center><img src="stranice/Juznobacki okrug/Novi sad/800px-Novi_Sad_Coat_of_Arms.svg.png" alt="">Južnobački okrug</center>
+	 </div>
+	 <div class="gradovi-okruga back">
                <a class="inactiveLink" href="#">Bač</a>
                <a href="stranice/Juznobacki okrug/Backa palanka/Backa-palanka.html">Bačka Palanka (1)</a>
                <a class="inactiveLink" href="#">Bački Petrovac</a>
@@ -1539,26 +2008,32 @@ Južnobanatski okrug (2)&nbsp;<img src="stranice/Juznobanatski okrug/Pancevo/Pan
                <a class="inactiveLink" href="#">Titel</a>
 			   <a class="inactiveLink" href="#">Vrbas</a>
 			   <a class="inactiveLink" href="#">Žabalj</a>
-            </div>
-	</div>
-<!--Kolubarski  -->          
-<div id="valjevo" class="dropdown" >
-Kolubarski okrug (3)&nbsp;<img src="stranice/Kolubarski okrug/Valjevo/COA_Valjevo.gif" alt="">
-            <div id="myDropdown-kolubarski" class="dropdown-menu">
-				<i class="fas fa-chevron-up fa-2x arrowup"></i>
+	 </div>
+</div></div><!-- End -->
+	
+        <!-- Team item -->
+<div class="card-container">
+<div class="okrug-ime card-flip">
+     <div class="ime-slika-okruga front">
+		<center><img src="stranice/Kolubarski okrug/Valjevo/COA_Valjevo.gif" alt="">Kolubarski okrug</center>
+	 </div>
+	 <div class="gradovi-okruga back">
                <a class="inactiveLink" href="#">Lajkovac</a>
                <a class="inactiveLink" href="#">Ljig</a>
                <a class="inactiveLink" href="#">Mionica</a>
 			   <a href="stranice/Kolubarski okrug/Osecina/Osecina.html">Osecina (1)</a>
 			   <a href="stranice/Kolubarski okrug/Ub/Ub.html">Ub (1)</a>
                <a href="stranice/Kolubarski okrug/Valjevo/Valjevo.html">Valjevo (1)</a>
-            </div> 
-	</div>
-<!--Kosovski  -->		
-<div id="pristina" class="dropdown" >
-	Kosovski okrug &nbsp;
-            <div id="myDropdown-kosovski" class="dropdown-menu">
-				<i class="fas fa-chevron-up fa-2x arrowup"></i>
+	 </div>
+</div></div><!-- End -->
+
+        <!-- Team item -->
+<div class="card-container">
+<div class="okrug-ime card-flip">
+     <div class="ime-slika-okruga front">
+		<center>Kosovski okrug</center>
+	 </div>
+	 <div class="gradovi-okruga back">
                <a class="inactiveLink" href="stranice/Kosovski okrug/Glogovac/Glogovac.html">Glogovac</a>
                <a class="inactiveLink" href="stranice/Kosovski okrug/Kacanik/Kacanik.html">Kačanik</a>
                <a class="inactiveLink" href="stranice/Kosovski okrug/Kosovo polje/Kosovo-polje.html">Kosovo Polje</a>
@@ -1569,37 +2044,46 @@ Kolubarski okrug (3)&nbsp;<img src="stranice/Kolubarski okrug/Valjevo/COA_Valjev
                <a class="inactiveLink" href="stranice/Kosovski okrug/Stimlje/Stimlje.html">Štimlje</a>
                <a class="inactiveLink" href="stranice/8-Kosovski okrug/Strpce/">Štrpce</a>
 			   <a class="inactiveLink" href="stranice/8-Kosovski okrug/Urosevac/">Uroševac</a>	
-            </div>
-	</div>
-<!--Kosovsko-mitrovački  -->		
-<div id="kosovska_mitrovica" class="dropdown" >
-	Kosovsko-mitrovački okrug &nbsp;
-            <div id="myDropdown-kosmitrovacki" class="dropdown-menu">
-				<i class="fas fa-chevron-up fa-2x arrowup"></i>
+	 </div>
+</div></div><!-- End -->
+
+        <!-- Team item -->
+<div class="card-container">
+<div class="okrug-ime card-flip">
+     <div class="ime-slika-okruga front">
+		<center>Kosovsko-mitrovački okrug</center>
+	 </div>
+	 <div class="gradovi-okruga back">
                <a class="inactiveLink" href="stranice/Kosovsko-mitrovacki okrug/Kosovska mitrovica/Kosovska-mitrovica.html">Kosovska Mitrovica</a>
                <a class="inactiveLink" href="stranice/Kosovsko-mitrovacki okrug/Leposavic/Leposavic.html">Leposavić</a>
                <a class="inactiveLink" href="stranice/Kosovsko-mitrovacki okrug/Srbica/Srbica.html">Srbica</a>
 			   <a class="inactiveLink" href="stranice/Kosovsko-mitrovacki okrug/Vucitrn/Vucitrn.html">Vučitrn</a>
 			   <a class="inactiveLink" href="stranice/Kosovsko-mitrovacki okrug/Zubin potok/Zubin-potok.html">Zubin Potok</a>
-               <a class="inactiveLink" href="stranice/Kosovsko-mitrovacki okrug/Zvecan/Zvecan.html">Zvečan</a>
-            </div>
-</div>		
-<!--Kosovsko-pomoravski  -->		
-<div id="gnjilane" class="dropdown" >
-	Kosovsko-pomoravski okrug &nbsp;
-      <div id="myDropdown-kospomoravski" class="dropdown-menu">
-		  <i class="fas fa-chevron-up fa-2x arrowup"></i>
+               <a class="inactiveLink" href="stranice/Kosovsko-mitrovacki okrug/Zvecan/Zvecan.html">Zvečan</a>	
+	 </div>
+</div></div><!-- End -->
+	
+        <!-- Team item -->
+<div class="card-container">
+<div class="okrug-ime card-flip">
+     <div class="ime-slika-okruga front">
+		<center>Kosovsko-pomoravski okrug</center>
+	 </div>
+	 <div class="gradovi-okruga back">
               <a class="inactiveLink" href="stranice/Kosovsko-pomoravski okrug/Gnjilane/Gnjilane.html">Gnjilane</a>
               <a class="inactiveLink" href="stranice/Kosovsko-pomoravski okrug/Kosovska kamenica/Kosovska-kamenica.html">Kosovska Kamenica</a>
               <a class="inactiveLink" href="stranice/Kosovsko-pomoravski okrug/Novo brdo/Novo-brdo.html">Novo Brdo</a>
 			  <a class="inactiveLink" href="stranice/Kosovsko-pomoravski okrug/Vitina/Vitina.html">Vitina</a>
-      </div>
-</div>         
-<!--Mačvanski  -->               
-<div id="zajecar" class="dropdown" >
-	Mačvanski okrug (1)&nbsp;<img src="stranice/Macvanski okrug/Sabac/COA_Šabac_(big).png" alt=""> 
-            <div id="myDropdown-macva" class="dropdown-menu">
-				<i class="fas fa-chevron-up fa-2x arrowup"></i>
+	 </div>
+</div></div><!-- End -->
+
+        <!-- Team item -->
+<div class="card-container">
+<div class="okrug-ime card-flip">
+     <div class="ime-slika-okruga front">
+		<center><img src="stranice/Macvanski okrug/Sabac/COA_Šabac_(big).png" alt="">Mačvanski okrug</center>
+	 </div>
+	 <div class="gradovi-okruga back">
                <a class="inactiveLink" href="#">Bogatić</a>
                <a class="inactiveLink" href="#">Koceljevo</a>
                <a class="inactiveLink" href="#">Krupanj</a>
@@ -1608,98 +2092,119 @@ Kolubarski okrug (3)&nbsp;<img src="stranice/Kolubarski okrug/Valjevo/COA_Valjev
                <a class="inactiveLink" href="#">Mali Zvornik</a>
 			   <a href="stranice/Macvanski okrug/Sabac/Sabac.html">Šabac (1)</a>
                <a class="inactiveLink" href="#">Vladimirci</a>
-            </div>
+	 </div>
+</div></div><!-- End -->
 
-</div>
- <!--Moravički  -->       
-<div id="zajecar" class="dropdown" >
-	Moravički okrug (1)&nbsp;<img src="stranice/Moravicki okrug/Cacak/Čačak_-_grb.png" alt=""> 
-            <div id="myDropdown-moravicki" class="dropdown-menu">
-				<i class="fas fa-chevron-up fa-2x arrowup"></i>
+        <!-- Team item -->
+<div class="card-container">
+<div class="okrug-ime card-flip">
+     <div class="ime-slika-okruga front">
+		<center><img src="stranice/Moravicki okrug/Cacak/Čačak_-_grb.png" alt="">Moravički okrug</center>
+	 </div>
+	 <div class="gradovi-okruga back">
                <a href="stranice/Moravicki okrug/Cacak/Cacak.html">Čačak (1)</a>
                <a class="inactiveLink" href="#">Gornji Milanovac</a>
                <a class="inactiveLink" href="#">Ivanjica</a>
 			   <a class="inactiveLink" href="#">Lučani</a>
-            </div>
-</div>		
-<!--Nišavski  -->		
-<div id="zajecar" class="dropdown" >
-	&nbsp;Nišavski okrug (10)&nbsp;<img src="stranice/Nisavski okrug/Nis/Nis_Coat_of_Arms.png" alt=""> 
-            <div id="myDropdown-nis" class="dropdown-menu">
-				<i class="fas fa-chevron-up fa-2x arrowup"></i>
+	 </div>
+</div></div><!-- End -->
+
+        <!-- Team item -->
+<div class="card-container">
+<div class="okrug-ime card-flip">
+     <div class="ime-slika-okruga front">
+		<center><img src="stranice/Nisavski okrug/Nis/Nis_Coat_of_Arms.png" alt="">Nišavski okrug</center>
+	 </div>
+	 <div class="gradovi-okruga back">
                <a href="stranice/Nisavski okrug/Doljevac/Doljevac.html">Doljevac (1)</a>
                <a class="inactiveLink" href="#">Gadzin Han</a>
                <a class="inactiveLink" href="#">Merošina</a>
-			   <a href="stranice/Nisavski okrug/Nis/Nis.html"><i style="color: red" class="fas fa-exclamation"></i>&nbsp;Niš (9)</a>
+			   <a href="stranice/Nisavski okrug/Nis/Nis.html">&nbsp;Niš (9)</a>
 			   <a class="inactiveLink" href="#">Niška Banja</a>
                <a class="inactiveLink" href="#">Ražanj</a>
 			   <a class="inactiveLink" href="#">Svrljig</a>
-            </div>
+	 </div>
+</div></div><!-- End -->
 
-</div>
- <!--Pećki  -->            
-<div id="zajecar" class="dropdown" >
-	Pećki okrug &nbsp; 
-            <div id="myDropdown-pec" class="dropdown-menu">
-				<i class="fas fa-chevron-up fa-2x arrowup"></i>
+        <!-- Team item -->
+<div class="card-container">
+<div class="okrug-ime card-flip">
+     <div class="ime-slika-okruga front">
+		<center>Pećki okrug</center>
+	 </div>
+	 <div class="gradovi-okruga back">
                <a class="inactiveLink" href="stranice/Pecki okrug/Decani/Decani.html">Dečani</a>
                <a class="inactiveLink" href="stranice/Pecki okrug/Djakovica/Djakovica.html">Djakovica</a>
                <a class="inactiveLink" href="stranice/Pecki okrug/Istok/Istok.html">Istok</a>
 			   <a class="inactiveLink" href="stranice/Pecki okrug/Klina/Klina.html">Klina</a>
 			   <a class="inactiveLink" href="stranice/Pecki okrug/Pec/Pec.html">Peć</a>
-            </div>
+	 </div>
+</div></div><!-- End -->
 
-</div>         
-<!--Pirotski  -->		
-<div class="dropdown" >
-	Pirotski okrug (1)&nbsp;<img src="stranice/Pirotski okrug/Pirot/Blason_de_Pirot.png" alt=""> 
-            <div id="myDropdown-pirot" class="dropdown-menu">
-				<i class="fas fa-chevron-up fa-2x arrowup"></i>
+        <!-- Team item -->
+<div class="card-container">
+<div class="okrug-ime card-flip">
+     <div class="ime-slika-okruga front">
+		<center><img src="stranice/Pirotski okrug/Pirot/Blason_de_Pirot.png" alt="">Pirotski okrug</center>
+	 </div>
+	 <div class="gradovi-okruga back">
                <a class="inactiveLink" href="#">Babušnica</a>
                <a href="stranice/Pirotski okrug/Bela palanka/Bela-palanka.html">Bela Palanka (1)</a>
                <a class="inactiveLink" href="#">Dimitrovgrad</a>
 			   <a class="inactiveLink" href="#">Pirot</a>
-            </div>
-</div>           
- <!--Podunavski  -->                  
-<div class="dropdown" >
-	Podunavski okrug (1)&nbsp;<img src="stranice/Podunavski okrug/Smederevo/Smederevo_coat_of_arms.gif" alt=""> 
-            <div id="myDropdown-podunavski" class="dropdown-menu">
-				<i class="fas fa-chevron-up fa-2x arrowup"></i>
+	 </div>
+</div></div><!-- End -->
+
+        <!-- Team item -->
+<div class="card-container">
+<div class="okrug-ime card-flip">
+     <div class="ime-slika-okruga front">
+		<center><img src="stranice/Podunavski okrug/Smederevo/Smederevo_coat_of_arms.gif" alt="">Podunavski okrug</center>
+	 </div>
+	 <div class="gradovi-okruga back">
                <a class="inactiveLink" href="#">Smederevo</a>
                <a class="inactiveLink" href="#">Smederevska Palanka</a>
                <a href="stranice/Podunavski okrug/Velika plana/Velika-plana.html">Velika Plana (1)</a>
-            </div>
-</div>          
-<!--Pomoravski  -->       
-<div class="dropdown" >
-	Pomoravski okrug &nbsp;<img src="stranice/Pomoravski okrug/Jagodina/Grb_opstine_Jagodina.png" alt=""> 
-            <div id="myDropdown-pomoravski" class="dropdown-menu">
-				<i class="fas fa-chevron-up fa-2x arrowup"></i>
+	 </div>
+</div></div><!-- End -->
+
+        <!-- Team item -->
+<div class="card-container">
+<div class="okrug-ime card-flip">
+     <div class="ime-slika-okruga front">
+		<center><img src="stranice/Pomoravski okrug/Jagodina/Grb_opstine_Jagodina.png" alt="">Pomoravski okrug</center>
+	 </div>
+	 <div class="gradovi-okruga back">
                <a class="inactiveLink" href="stranice/Pomoravski okrug/Cuprija/Cuprija.html">Ćuprija</a>
                <a class="inactiveLink" href="stranice/Pomoravski okrug/Despotovac/Despotovac.html">Despotovac</a>
                <a class="inactiveLink" href="stranice/Pomoravski okrug/Jagodina/Jagodina.html">Jagodina</a>
 			   <a class="inactiveLink" href="stranice/Pomoravski okrug/Paracin/Paracin.html">Paraćin</a>
 			   <a class="inactiveLink" href="stranice/Pomoravski okrug/Rekovac/Rekovac.html">Rekovac</a>
                <a class="inactiveLink" href="stranice/Pomoravski okrug/Svilajnac/Svilajnac.html">Svilajnac</a>
-            </div>
-</div>            
- <!--Prizrenski  -->      
-<div class="dropdown" >
-	Prizrenski okrug &nbsp; 
-            <div id="myDropdown-prizrenski" class="dropdown-menu">
-				<i class="fas fa-chevron-up fa-2x arrowup"></i>
+	 </div>
+</div></div><!-- End -->
+
+        <!-- Team item -->
+<div class="card-container">
+<div class="okrug-ime card-flip">
+     <div class="ime-slika-okruga front">
+		<center>Prizrenski okrug</center>
+	 </div>
+	 <div class="gradovi-okruga back">
                <a class="inactiveLink" href="stranice/Prizrenski okrug/Dragas/Dragas.html">Dragaš</a>
                <a class="inactiveLink" href="stranice/Prizrenski okrug/Orahovac/Orahovac.html">Orahovac</a>
                <a class="inactiveLink" href="stranice/Prizrenski okrug/Prizren/Prizren.html">Prizren</a>
 			   <a class="inactiveLink" href="stranice/Prizrenski okrug/Suva reka/Suva-reka.html">Suva Reka</a>
-            </div>
-</div>  
-<!--Pčinjski  -->		
-<div class="dropdown" >
-	Pčinjski okrug (3)&nbsp;<img src="stranice/Pcinjski okrug/Vranje/800px-Veliki_grb-vranja.png" alt=""> 
-            <div id="myDropdown-pcinj" class="dropdown-menu">
-				<i class="fas fa-chevron-up fa-2x arrowup"></i>
+	 </div>
+</div></div><!-- End -->
+
+        <!-- Team item -->
+<div class="card-container">
+<div class="okrug-ime card-flip">
+     <div class="ime-slika-okruga front">
+		<center><img src="stranice/Pcinjski okrug/Vranje/800px-Veliki_grb-vranja.png" alt="">Pčinjski okrug</center>
+	 </div>
+	 <div class="gradovi-okruga back">
                <a class="inactiveLink" href="#">Bosilegrad</a>
                <a class="inactiveLink" href="#">Bujanovac</a>
                <a class="inactiveLink" href="#">Preševo</a>
@@ -1707,73 +2212,91 @@ Kolubarski okrug (3)&nbsp;<img src="stranice/Kolubarski okrug/Valjevo/COA_Valjev
 			   <a class="inactiveLink" href="#">Trgovište</a>
                <a class="inactiveLink" href="#">Vladičin Han</a>
 			   <a href="stranice/Pcinjski okrug/Vranje/Vranje.html">Vranje (3)</a>
-            </div>
-</div>           
- <!--Rasinski  -->      
-<div class="dropdown" >
-	Rasinski okrug (1)&nbsp;<img src="stranice/Rasinski okrug/Krusevac/Grb_ks.png" alt=""> 
-            <div id="myDropdown-rasinski" class="dropdown-menu">
-				<i class="fas fa-chevron-up fa-2x arrowup"></i>
+	 </div>
+</div></div><!-- End -->
+
+        <!-- Team item -->
+<div class="card-container">
+<div class="okrug-ime card-flip">
+     <div class="ime-slika-okruga front">
+		<center><img src="stranice/Rasinski okrug/Krusevac/Grb_ks.png" alt="">Rasinski okrug</center>
+	 </div>
+	 <div class="gradovi-okruga back">
                <a class="inactiveLink" href="#">Aleksandrovac</a>
                <a class="inactiveLink" href="#">Brus</a>
                <a class="inactiveLink" href="#">Ćićevac</a>
 			   <a href="stranice/Rasinski okrug/Krusevac/Krusevac.html">Kruševac (1)</a>
 			   <a class="inactiveLink" href="#">Trstenik</a>
                <a class="inactiveLink" href="#">Varvarin</a>
-            </div>
-</div>           
-<!--Raški  -->       
-<div class="dropdown" >
-	Raški okrug (3)&nbsp;<img src="stranice/Raski okrug/Kraljevo/Coat_of_arms_of_Kraljevo.png" alt=""> 
-            <div id="myDropdown-raski" class="dropdown-menu">
-				<i class="fas fa-chevron-up fa-2x arrowup"></i>
+	 </div>
+</div></div><!-- End -->
+
+        <!-- Team item -->
+<div class="card-container">
+<div class="okrug-ime card-flip">
+     <div class="ime-slika-okruga front">
+		<center><img src="stranice/Raski okrug/Kraljevo/Coat_of_arms_of_Kraljevo.png" alt="">Raški okrug</center>
+	 </div>
+	 <div class="gradovi-okruga back">
                <a href="stranice/Raski okrug/Kraljevo/Kraljevo.html">Kraljevo (1)</a>
                <a class="inactiveLink" href="#">Novi Pazar</a>
                <a class="inactiveLink" href="#">Raška</a>
 			   <a href="stranice/Raski okrug/Tutin/Tutin.html">Tutin (1)</a>
 			   <a href="stranice/Raski okrug/Vrnjacka banja/Vrnjacka-banja.html">Vrnjačka Banja (1)</a>
-            </div>
-</div>          
-<!--Severnobanatski  -->       
-<div class="dropdown" >
-	Severnobanatski okrug (1)&nbsp;<img src="stranice/Severnobanatski okrug/Kikinda/Wappen_Kikinda.png" alt=""> 
-            <div id="myDropdown-sbanat" class="dropdown-menu">
-				<i class="fas fa-chevron-up fa-2x arrowup"></i>
+	 </div>
+</div></div><!-- End -->
+
+        <!-- Team item -->
+<div class="card-container">
+<div class="okrug-ime card-flip">
+     <div class="ime-slika-okruga front">
+		<center><img src="stranice/Severnobanatski okrug/Kikinda/Wappen_Kikinda.png" alt="">Severnobanatski okrug</center>
+	 </div>
+	 <div class="gradovi-okruga back">
                <a class="inactiveLink" href="#">Ada</a>
                <a class="inactiveLink" href="#">Čoka</a>
                <a class="inactiveLink" href="#">Kanjiža</a>
 			   <a href="stranice/Severnobanatski okrug/Kikinda/Kikinda.html">Kikinda (1)</a>
 			   <a class="inactiveLink" href="#">Novi Kneževac</a>
                <a class="inactiveLink" href="#">Senta</a>
-            </div>
-</div>         
-<!--Severnobački  -->       
-<div class="dropdown" >
-	Severnobački okrug (3)&nbsp;<img src="stranice/Severnobacki okrug/Subotica/Grb_subotice.png" alt=""> 
-            <div id="myDropdown-sbacki" class="dropdown-menu">
-				<i class="fas fa-chevron-up fa-2x arrowup"></i>
-               <a class="inactiveLink" href="#">Bačka Topola</a>
+	 </div>
+</div></div><!-- End -->
+
+        <!-- Team item -->
+<div class="card-container">
+<div class="okrug-ime card-flip">
+     <div class="ime-slika-okruga front">
+		<center><img src="stranice/Severnobacki okrug/Subotica/Grb_subotice.png" alt="">Severnobački okrug</center>
+	 </div>
+	 <div class="gradovi-okruga back">
+                 <a class="inactiveLink" href="#">Bačka Topola</a>
                <a class="inactiveLink" href="#">Mali Idjos</a>
                <a href="stranice/Severnobacki okrug/Subotica/Subotica.html">Subotica (3)</a>
-            </div>
-</div>         
-<!--Srednjobanatski  -->       
-<div class="dropdown" >
-	Srednjobanatski okrug &nbsp;<img src="stranice/Srednjobanatski okrug/Zrenjanin/Coat_of_Arms_of_Zrenjanin.png" alt=""> 
-            <div id="myDropdown-sredbanat" class="dropdown-menu">
-				<i class="fas fa-chevron-up fa-2x arrowup"></i>
+	 </div>
+</div></div><!-- End -->
+
+        <!-- Team item -->
+<div class="card-container">
+<div class="okrug-ime card-flip">
+     <div class="ime-slika-okruga front">
+		<center><img src="stranice/Srednjobanatski okrug/Zrenjanin/Coat_of_Arms_of_Zrenjanin.png" alt="">Srednjobanatski okrug</center>
+	 </div>
+	 <div class="gradovi-okruga back">
                <a class="inactiveLink" href="stranice/Srednjobanatski okrug/Nova crnja/Nova-crnja.html">Nova Crnja</a>
                <a class="inactiveLink" href="stranice/Srednjobanatski okrug/Novi becej/Novi-becej.html">Novi Bečej</a>
                <a class="inactiveLink" href="stranice/Srednjobanatski okrug/Secanj/Secanj.html">Sečanj</a>
 			   <a class="inactiveLink" href="stranice/Srednjobanatski okrug/Zitiste/Zitiste.html">Žitište</a>
 			   <a class="inactiveLink" href="stranice/Srednjobanatski okrug/Zrenjanin/Zrenjanin.html">Zrenjanin</a>
-            </div>
-</div>          
- <!--Sremski  -->      
-<div class="dropdown" >
-	Sremski okrug (3)&nbsp;<img src="stranice/Sremski okrug/Sremska mitrovica/1200px-Grb_sremska_mitrovica.svg.png" alt=""> 
-            <div id="myDropdown-srem" class="dropdown-menu">
-				<i class="fas fa-chevron-up fa-2x arrowup"></i>
+	 </div>
+</div></div><!-- End -->
+
+        <!-- Team item -->
+<div class="card-container">
+<div class="okrug-ime card-flip">
+     <div class="ime-slika-okruga front">
+		<center><img src="stranice/Sremski okrug/Sremska mitrovica/1200px-Grb_sremska_mitrovica.svg.png" alt="">Sremski okrug</center>
+	 </div>
+	 <div class="gradovi-okruga back">
                <a class="inactiveLink" href="#">Indjija</a>
                <a class="inactiveLink" href="#">Irig</a>
                <a class="inactiveLink" href="#">Pećnici</a>
@@ -1781,24 +2304,30 @@ Kolubarski okrug (3)&nbsp;<img src="stranice/Kolubarski okrug/Valjevo/COA_Valjev
 			   <a class="inactiveLink" href="#">Šid</a>
                <a href="stranice/Sremski okrug/Sremska mitrovica/Sremska-mitrovica.html">Sremska Mitrovica (1)</a>
                <a href="stranice/Sremski okrug/Stara pazova/Stara-pazova.html">Stara Pazova (2)</a>
-            </div>
-</div>          
-<!--Toplički  -->       
-<div class="dropdown" >
-	Toplički okrug (1)&nbsp;<img src="stranice/Toplicki okrug/Prokuplje/COA_Prokuplje.png" alt=""> 
-            <div id="myDropdown-toplicki" class="dropdown-menu">
-				<i class="fas fa-chevron-up fa-2x arrowup"></i>
+	 </div>
+</div></div><!-- End -->
+
+        <!-- Team item -->
+<div class="card-container">
+<div class="okrug-ime card-flip">
+     <div class="ime-slika-okruga front">
+		<center><img src="stranice/Toplicki okrug/Prokuplje/COA_Prokuplje.png" alt="">Toplički okrug</center>
+	 </div>
+	 <div class="gradovi-okruga back">
                <a class="inactiveLink" href="#">Blace</a>
                <a class="inactiveLink" href="#">Kuršumlija</a>
                <a href="stranice/Toplicki okrug/Prokuplje/Prokuplje.html">Prokuplje (1)</a>
 			   <a class="inactiveLink" href="#">Žitoradja</a>
-            </div>
-</div>         
- <!--Šumadijski  -->  
-<div class="dropdown" >
-	Šumadijski okrug (4)&nbsp;<img src="stranice/27-Sumadijski okrug/Kragujevac/Grb-Kragujevac.png" alt=""> 
-            <div id="myDropdown-sumadijski" class="dropdown-menu">
-				<i class="fas fa-chevron-up fa-2x arrowup"></i>
+	 </div>
+</div></div><!-- End -->
+
+        <!-- Team item -->
+<div class="card-container">
+<div class="okrug-ime card-flip">
+     <div class="ime-slika-okruga front">
+		<center><img src="stranice/27-Sumadijski okrug/Kragujevac/Grb-Kragujevac.png" alt="">Šumadijski okrug</center>
+	 </div>
+	 <div class="gradovi-okruga back">
                <a class="inactiveLink" href="#">Arandjelovac</a>
                <a class="inactiveLink" href="#">Batočina</a>
                <a class="inactiveLink" href="#">Knić</a>
@@ -1806,9 +2335,10 @@ Kolubarski okrug (3)&nbsp;<img src="stranice/Kolubarski okrug/Valjevo/COA_Valjev
 			   <a class="inactiveLink" href="#">Lapovo</a>
                <a class="inactiveLink" href="#">Rača</a>
                <a class="inactiveLink" href="#">Topola</a>
-            </div>
-</div>          
-    	 
+	 </div>
+</div></div><!-- End -->
+	
+	
 </div>
    
 <div id="najnovije" class="section-title-2">
@@ -1816,61 +2346,64 @@ Kolubarski okrug (3)&nbsp;<img src="stranice/Kolubarski okrug/Valjevo/COA_Valjev
 <div class="najnovije">
     <div class="row-novo"> 
 		
-					<div class="col-md-3 col-sm-4 col-xs-12 single_portfolio_text">
-							<img src="banneri/MEGANEKRT.jpg" alt="" />
-						<h5 style="color:red;padding-top: 1em"><center>Agencija MEGA Nekretnine Niš</center></h5>
-						<p><center>je osnovana sa ciljem da svojim klijentima uz punu pravnu zaštitu pruži kvalitetnu i kompletnu uslugu u prometu nekretnina. <br>Uz našu asistenciju možete brzo i sigurno da dobijete sve informacije o nekretnini koja Vas zanima.</center></p>
-							<div class="portfolio_images_overlay text-center">
-								<h5 class="clrd-font">MEGA Nekretnine - Niš</h5>
-								<p class="clrd-font product_price"> </p>
-								<a href="stranice/Nisavski okrug/Nis/Delatnosti/nekretnine/MEGA nekretnine/MEGA-nekretnine.html" class="btn btn-primary-kart">Redirex stranica</a>
-							</div>
-								<div class="zoom"></div>
-							
-					</div>
+		<div class="najnovije-kartica">
+		<a href="stranice/Nisavski okrug/Nis/Delatnosti/nekretnine/MEGA nekretnine/MEGA-nekretnine.html" class="">	
+		   <div class="najnovije-slika">
+			<img src="banneri/MEGANEKRT.jpg" alt="">
+		   </div>
+		<div class="najnovije-title">
+			<h3>Agencija MEGA Nekretnine Niš</h3>
+		</div>
+		<div class="najnovije-tekst">
+		 <p>je osnovana sa ciljem da svojim klijentima uz punu pravnu zaštitu pruži kvalitetnu i kompletnu uslugu u prometu nekretnina. <br>Uz našu asistenciju možete brzo i sigurno da dobijete sve informacije o nekretnini koja Vas zanima.</p>	
+		</div>
+						  		
+			</a>
+		</div>
 		
-		
-					<div class="col-md-3 col-sm-4 col-xs-12 single_portfolio_text">
-							<img style="width: 75%" src="stranice/28-Grad Beograd/Delatnosti/Tekstil/ditekstekstil/unnamed.png" alt="" />
-						<h5 style="padding-top: 1em"><center>DITEKS TEKSTIL - Beograd</center></h5>
-						<p><center>Diteks tekstil je porodična firma koja se bavi proizvodnjom tekstila</center></p>
-							<div class="portfolio_images_overlay text-center">
-								<h5 class="clrd-font">DITEKS TEKSTIL - Beograd</h5>
-								<p class="clrd-font product_price"> </p>
-								<a href="Diteks-tekstil.html" class="btn btn-primary-kart">Redirex stranica</a>
-							</div>
-								<div class="zoom"></div>
-					</div>		
-	
-		
-					<div class="col-md-3 col-sm-4 col-xs-12 single_portfolio_text">
-							<img style="width: 75%" src="stranice/28-Grad Beograd/Delatnosti/maloprodaja/vodoinst petrovic/mimaks-vodovodni-i-kanalizacioni-materijal-mimaks-5076-11502969290734.jpg" alt="" />
-						<h5 style="padding-top: 1em"><center>Vodovodni i Elektromaterijal Petrović - Beograd</center></h5>
-						
-							<div class="portfolio_images_overlay text-center">
-								<h5 class="clrd-font">Vodovodni i Elektromaterijal Petrović - Beograd</h5>
-								<p class="clrd-font product_price"> </p>
-								<a href="stranice/28-Grad Beograd/Delatnosti/ostalo-beograd.html#81" class="btn btn-primary-kart">Redirex stranica</a>
-							</div>
-								<div class="zoom"></div>
-					</div>	
-		
-
-					<div class="col-md-3 col-sm-4 col-xs-12 single_portfolio_text">
-							<img style="width: " src="stranice/Branicevo Okrug/Pozarevac/Delatnosti/usluge/Jole- kotao/IMG_20201201_005840[1].jpg" alt="" />
-						<h5 style="padding-top: 1em"><center>Jocić Grejanje : CENTRALNO, SOLARNO I PODNO GREJANJE - Požarevac</center></h5>
-						<p><center>Pozovite nas da vam utoplimo dom. Sa nama nema zime</center></p>
-							<div class="portfolio_images_overlay text-center">
-								<h5 class="clrd-font">Jocić Grejanje : CENTRALNO, SOLARNO I PODNO GREJANJE - Požarevac</h5>
-								<p class="clrd-font product_price"> </p>
-								<a href="stranice/Branicevo Okrug/Pozarevac/Delatnosti/ostalo-pozarevac.html#82" class="btn btn-primary-kart">Redirex stranica</a>
-							</div>
-								<div class="zoom"></div>
-					</div>				
-
-		
-	
+		<div class="najnovije-kartica">
+	<a href="Diteks-tekstil.html">	
+		   <div class="najnovije-slika">
+			<img src="stranice/28-Grad Beograd/Delatnosti/Tekstil/ditekstekstil/unnamed.png" alt="">
+		   </div>
+		<div class="najnovije-title">
+			<h3>DITEKS TEKSTIL - Beograd</h3>
+		</div>
+		<div class="najnovije-tekst">
+		 <p>Diteks tekstil je porodična firma koja se bavi proizvodnjom tekstila</p>
 			
+		</div>
+			</a>
+			
+			
+		</div>
+		
+		<div class="najnovije-kartica">
+		<a href="stranice/28-Grad Beograd/Delatnosti/ostalo-beograd.html#81">	
+		   <div class="najnovije-slika">
+			<img src="stranice/28-Grad Beograd/Delatnosti/maloprodaja/vodoinst petrovic/mimaks-vodovodni-i-kanalizacioni-materijal-mimaks-5076-11502969290734.jpg" alt="">
+		   </div>
+		<div class="najnovije-title">
+			<h3>Vodovodni i Elektromaterijal Petrović - Beograd</h3>
+		</div>
+		<div class="najnovije-tekst">
+		 <p></p>	
+		</div>
+			</a>
+		</div>
+		
+		<div class="najnovije-kartica">
+		<a href="stranice/Branicevo Okrug/Pozarevac/Delatnosti/ostalo-pozarevac.html#82">	
+		   <div class="najnovije-slika">
+			<img src="stranice/Branicevo Okrug/Pozarevac/Delatnosti/usluge/Jole- kotao/IMG_20201201_005840[1].jpg" alt="">
+		   </div>
+		<div class="najnovije-title">
+			<h3>Jocić Grejanje : CENTRALNO, SOLARNO I PODNO GREJANJE - Požarevac</h3>
+		</div>
+		<div class="najnovije-tekst">
+		 <p>Pozovite nas da vam utoplimo dom. Sa nama nema zime</p>	
+		</div>	</a>
+		</div>
 		
 		
     </div><!-- /.row -->    						
@@ -2073,58 +2606,19 @@ Kolubarski okrug (3)&nbsp;<img src="stranice/Kolubarski okrug/Valjevo/COA_Valjev
 
 
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://code.jquery.com/jquery.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files 
-        as needed -->
-  <script src="js/bootstrap.min.js"></script>
-
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 
 <script>
 	
-	
-	
-	
-var towns = ["Bor","Kladovo","Majdanpek","Negotin","Beograd","Požarevac","Kučevo","Malo Crniće","Petrovac","Golubac","Veliko Gradište","Žabari","Žagubica","Boljevac","Knjaževac","Sokobanja","Zaječar","Apatin","Kula","Odžaci","Sombor","Bajina Bašta","Čajetina","Kosjerić","Nova Varoš","Požega","Priboj","Prijepolje","Sjenica","Užice","Bojnik","Crna Trava","Lebane","Leskovac","Medveđa","Vlasotince","Alibunar","Bela Crkva","Kovačica","Kovin","Opovo","Pančevo","Plandište","Vršac","Bač","Bačka Palanka","Bački Petrovac","Bečej","Beočin","Novi Sad","Srbobran","Sremski Karlovci","Temerin","Titel","Vrbas","Žabalj","Lajkovac","Ljig","Mionica","Osecina","Ub","Valjevo","Glogovac","Kačanik","Kosovo Polje","Ljipljan","Obilić","Podujevo","Priština","Štimlje","Štrpce","Uroševac","Kosovska Mitrovica","Leposavić","Srbica","Vučitrn","Zubin Potok","Zvečan","Gnjilane","Kosovska Kamenica","Novo Brdo","Vitina","Bogatić","Koceljevo","Krupanj","Ljubovija","Loznica","Mali Zvornik","Šabac","Vladimirci","Čačak","Gornji Milanovac","Ivanjica","Lučani","Doljevac","Gadzin Han","Merošina","Niš","Niška Banja","Ražanj","Svrljig","Dečani","Đakovica","Istok","Klina","Peć","Babušnica","Bela Palanka","Dimitrovgrad","Pirot","Smederevo","Smederevska Palanka","Velika Plana","Ćuprija","Despotovac","Jagodina","Paraćin","Rekovac","Svilajnac","Dragaš","Orahovac","Prizren","Suva Reka","Bosilegrad","Bujanovac","Preševo","Surdulica","Trgovište","Vladičin Han","Vranje","Aleksandrovac","Brus","Ćićevac","Kruševac","Trstenik","Varvarin","Kraljevo","Novi Pazar","Raška","Tutin","Vrnjačka Banja","Ada","Čoka","Kanjiža","Kikinda","Novi Kneževac","Senta","Bačka Topola","Mali Idjos","Subotica","Nova Crnja","Novi Bečej","Sečanj","Žitište","Zrenjanin","Indjija","Irig","Pećnici","Ruma","Šid","Sremska Mitrovica","Stara Pazova","Blace","Kuršumlija","Prokuplje","Žitoradja","Arandjelovac","Batočina","Knić","Kragujevac","Lapovo","Rača","Topola"];	
-
-$(document).ready(function(){
-  $('[data-toggle="tooltip"]').tooltip();
-});
-
-
 window.addEventListener("load", function () {
     const loader = document.querySelector(".loader");
     loader.className += " hidden"; // class "loader hidden"
 });
 		  
-		  /* Open when someone clicks on the span element */
-/* Open when someone clicks on the span element */
-function openNav1() {
-  document.getElementById("mySidenav1").style.width = "100%";	
-}
 
-function closeNav1() {
-  document.getElementById("mySidenav1").style.width = "0";
-}
 	
-
-		  /* Open when someone clicks on the span element */
-/* Open when someone clicks on the span element */
-function openNav2() {
-  document.getElementById("mySidenav2").style.width = "100%";	
-}
-
-function closeNav2() {
-  document.getElementById("mySidenav2").style.width = "0";
-}	
-$(document).ready(function(){
-    $(".fancybox").fancybox({
-        openEffect: "none",
-        closeEffect: "none"
-    });
-});
-	
-	
+ $('.select2').select2();
 	
 	</script>
 	
