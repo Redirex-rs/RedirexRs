@@ -809,12 +809,12 @@ html {
 	
 @media (min-width: 768px) {
 	.banner-text > img {
-  height: 22em;
+  height: 24em;
   border: 1px solid pink		
 }
 	
   .banner-text {
-    height: 24em;
+    height: 26em;
   }
 h1{
 		font-size: 3em;
@@ -996,18 +996,19 @@ text-align: center;
 text-shadow: 5px 5px 5px #000, 5px 5px 5px #000, 5px 5px 5px #000;
 width: 100%;
 height: 10em;
-padding-top: 2em		
+padding-top: 2em;
+		top: 150%
 			
 }	
 	.banner-kartica{
 		display: block;
-			width: 25em;
-			height: 15em;
+			width: 20em;
+			height: 25em;
 		background: white;
 		margin: auto
 	}
 	.section-title-1{
-		margin-top: 15em;
+		margin-top: 5em;
 		color: white;
 	}
 	.section-title-2{
@@ -1038,7 +1039,7 @@ padding-top: 2em
 		display: block;
 		width: 10em;
 		height: 2em;
-		bottom: %;
+		top: 100%;
 		left: 30%;
 		padding: 0.4em;
 		color: white;
@@ -1166,7 +1167,7 @@ border-top: 3px solid white;
 		.banner img {
 		position: absolute;
 		width: 100%;
-		height: 27.5em;
+		height: 29.5em;
 		z-index: -3333
 		
 		
@@ -1176,7 +1177,7 @@ border-top: 3px solid white;
 		position: absolute;
 		width: 30em;
 		border: 2px solid white;
-		top: 2%;
+		top: %;
 		left: 2%;
 		background: white;
 		border-radius: 4px;
@@ -1219,7 +1220,7 @@ border-top: 3px solid white;
 		display: block;
 		width: 12em;
 		height: 2em;
-		bottom: 40%;
+		bottom: 34%;
 		left: 25%;
 		padding: 0.4em;
 		color: white;
@@ -1317,8 +1318,16 @@ border-top: 3px solid white;
 	}
 	
 	@media (min-width: 768px){
+			#exampleInputEmail1{
+		width: 27.5em;
+	}
+	#forma-email{
+		margin: 1em
+	}
+	.btn-block{
+		margin-bottom: 1em
+	}
 		.form-control{
-			border: 1px solid red;
 			width: 15em;
 		}
 		.row-novo{
@@ -1380,6 +1389,16 @@ border-top: 3px solid white;
 	}
 	}
 	@media (max-width: 768px){
+			#exampleInputEmail1{
+		width: 15em;
+	}
+	#forma-email{
+		margin: 1em
+	}
+	.btn-block{
+		margin-bottom: 1em
+	}
+		
 		.row-novo{
 		display: block;
 		margin: auto;
@@ -1518,13 +1537,7 @@ border-top: 3px solid white;
 .card-container:hover .card-flip {
     transform: rotateY(180deg);
 }
-	#exampleInputEmail1{
-		width: 20em;
-	}
-	#forma-email{
-		margin: 1em
-	}
-	
+
 	</style>
 
 	
@@ -1607,20 +1620,15 @@ border-top: 3px solid white;
 	<h6>poslovni katalog Srbije</h6>
 	<h3>OGLAŠAVANJE</h3>
 	   <p>Oglašavanje je potpuno besplatno i sve informacije možete naći na stranici "kako se oglasiti"</p> <br><br>
-	   <h5><a href="kako-se-oglasiti.html" style="color: white">Kako se oglasiti?</a></h5>
-      <form id="forma-email" action="https://formspree.io/f/mayllayz" method="POST">
-      
-    <label for="exampleInputEmail1">Ili nam možete ostaviti svoju e'mail adresu i mi ćemo vas kontaktirati</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-   
-		</form>		 
-			  
+	   <h5 style="margin-bottom: 1em"><a href="kako-se-oglasiti.html" style="color: white">Kako se oglasiti?</a></h5>		 
+	<form style="margin: 1em" action="https://formspree.io/f/mayllayz" method="POST">
+		
+    <label for="exampleInputEmail1">Ili nam možete ostaviti Vašu e-mail adresu i mi ćemo vas kontaktirati</label>	
+  <input type="email" name="_replyto-mail-index-stranice" id="exampleInputEmail1">
+  <input type="submit" value="Posalji">
+		
+</form>		  
 		  
-		  
-        
-        <div class="btn-block">
-          <button type="submit" href="/">Pošalji</button>
-        </div>
 </div>
 	</div>
 	
