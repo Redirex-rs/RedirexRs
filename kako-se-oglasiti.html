@@ -4,18 +4,25 @@
 <head>
 <meta charset="utf-8">
 <!--Import Google Icon Font-->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet"> 	
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:ital,wght@0,700;1,900&display=swap" rel="stylesheet"> <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>	
-<script data-ad-client="ca-pub-2077196854990037" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!--Import materialize.css-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">	
-<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script> 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:ital,wght@0,700;1,900&display=swap" rel="stylesheet"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:ital,wght@0,700;1,900&display=swap" rel="stylesheet"> 
+<!-- Popper Js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/3429f72bdb.js" crossorigin="anonymous"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha256-CjSoeELFOcH0/uxWu6mC/Vlrc1AARqbm/jiiImDGV3s=" crossorigin="anonymous"></script>
+
+<!-- Bootstrap CSS -->
+<!-- Hierarchy Select CSS -->
+<link rel="stylesheet" href="css/hierarchy-select.min.css">
+
+<!-- Hierarchy Select Js -->
+<script src="js/hierarchy-select.min.js"></script>	
 <!--Let browser know website is optimized for mobile-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta https-equiv="X-UA-Compatible" content="IE=edge">
@@ -45,1038 +52,68 @@
 	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
-	
-<script src="JSS/abc-sortiranje.js"></script>	
-<script src="JSS/W3-dropdown-onclick.js"></script>
-<script src="JSS/W3-search.js"></script>	
-<script src="JSS/backtotop.js"></script>
-<script src="JSS/Filterovanje1.js"></script>
-<script src="src/selectstyle.js"></script>	
-<script src="JSS/pop-up-modal.js"></script>
-<script src="JSS/w3-sidenav.js"></script>
-<link rel="stylesheet" href="GlavniCss.css">	
-<link rel="stylesheet" href="css/w3-sidenav.css">
+
+<link rel="stylesheet" href="css/footercss.css">		
 <link rel="stylesheet" href="css/formular.css">	
 <link rel="stylesheet" href="../../../css/GlavniCss-zajecar.css" class="">	
 
 <style>
-	*{
-		outline: none;
+	body{
+		background: black;
 	}
-		
-		
-	.informacije-4{
-		box-sizing: border-box;
-	    text-align: center;
-		width: 100%;
-		align-content: center center;
-		margin: auto;
-		display: table;
+	.footer{
 		color: white;
 	}
-	
-	
-	
-	@media (max-width: 768px){
-		.informacije1{
-	        text-align: center;
-		    margin: auto;
-		    display: block;
-		    color: white;
-		}
-		.informacije1-stranica{
-			margin: 1.5em;
-			margin-bottom: 5em
-		}
-		
-		.soc-mreze-link{
-			display: block;
-			width: 15em;
-			margin: auto;
-			padding: 1em
-		}
-		
-		.ls-tekst{
-			display: block;
-			margin-top: -2em;
-		}
-		.ls-tekst p {
-			font-size: 1em;
-		}
-		
-		.informacije2{
-		width: 50%;
-		margin: auto;
-		display: block;
-	}
-	
-	.informacije{
-		box-sizing: border-box;
-	    text-align: left;
-		width: 50%;
-		display: flex;
-		padding-top: 2.5em;
-		padding-left: 0.5em;
-	}
-		.slika-kartica{
-			width: 10em;
-		}
-		.slika-stranica{
-			display: block;
-			
-		}
-		.slika-stranica img {
-			width: 21em;
-			border: 1px solid white
-			
-		}
-		.informacije3{
-		width: 100%;
-		margin: auto;
-		display: block;
-	}
-		.informacije1{
-		display: block;
-		margin: auto;
-	}
-	}	
-	
-	
-	@media (min-width: 768px){
-		.soc-mreze {
-			display: flex;
-			margin: auto;
-		}
-		.soc-mreze-link{
-			width: 20em;
-			padding: 1em;
-		}
-		
-		.soc-mreze-inner{
-			display: inline-flex;
-			margin: auto;
-			width: 60em;
-		}
-		.informacije1{
-			margin: auto;
-		    display: block;
-	        text-align: center;
-		    color: white;
-			margin-top: 6em
-		}
-		.informacije1-stranica{
-			height: 30em;
-			margin: auto;
-			display: block;
-		}
-		.informacije1 p {
-			font-size: 1.4em
-		}
-	.ls-tekst{
-		display: block;
-		margin-top: -2em;
-		}
-		.ls-tekst p {
-		font-size: 1.2em;
-		padding: 1em;
-		}	
-		
-	.informacije2{
-		width: 50%;
-		margin: auto;
-		display: block;
-	}
-	
-	.informacije{
-	    text-align: left;
-		width: 50%;
-		display: block;
-		margin: auto;
-	}
-	.informacije p {
-		display: block;
-		margin: auto;
-		width: 50%;
-		font-size: 1.5em;
-		float: right
-		}
-	.slika-kartica{
-			width: 18em;
-		float: left
-		}		
-	.slika-stranica{
-		display: block;
-		}
-		.slika-stranica img {
-		width: 40em;
-		border: 1px solid white;
-			
-		}
-		.informacije3{
-		width: 50%;
-		margin: auto;
-		display: block;
-	}	
-	}
-		
-	
-	.tekst-p{
-		color: white;
-		display: row;		
-		align-content: center center;
-	}
-	
-	.Tekst{
-		box-sizing: border-box;
-	    text-align: center;
-		width: 100%;
-		align-content: center center;
-		margin: auto;
-		display: table;
-		color: white;
-	}
-	
-	
-	.dropdown-1{
-		display: inline-block;
-		width: 10em
-	}
-	.navbar-ul .dropdown{
-		float: right;
-		display:inline-flex:;
-		width: 10em;
-		
-		
-	}
-	
-	.navbar-ul{
-		
-	}
-	
-	.container{
-		margin-bottom: 1em;
-		display:inline-block
-	}
-	
-	.navbar{
-		height: 3em;
-	}
-	
-	.navbar > div{
-	display: block;
-		height: 1em;
-	}
-	
-	.navbar-brand{
-		height: 1.5em;
-	}
-	
-	.navbar-brand p {
-		margin-top: -2em
-	}
-	
-	.right{
-	  position: absolute;
-      top: 0.5%;
-	  right: 0px;
-	  float: right;
-	  margin: auto;
-	  padding: 5em
-		  
-		
-	}
-	
-	.banner-text{
- 	   position: relative;
-       text-align: center;
-       color: white;
-	   margin: auto	
-	}
-	
-	.banner-text img {
-		width: 100%;
-		height: 20em;
-		z-index: -1;	
-	}
-	
-	
-	.sub-footer{
-		padding: 1em;
-		padding-bottom: 2em;
-		align-content: left;
-		display: table;
-	}
-	
-	.sub-footer > a {
-		display: inline-block;
-		color: white;
-		margin-left: 4em;
-		font-size: 0.9em
-	}
-	
-	.footer-img{
-		margin: auto
-	}
-	
-	
-	.pretrage{
-		
-		margin: auto;
-	}
-	
-	.pretrage   {
-		margin: auto;
-		box-sizing: border-box;
-		displa	
-	}
-	
-	
-	
-	*{
-		box-sizing: border-box
-	}
-	
-	.dropdown1{
-		display: table;
-		margin: auto;
-	}
-	
-	.col- {
-		padding-bottom: 1em
-	}
-	
 	.widgettitle{
-		width: auto;
+		color: white;
 	}
-	.widget .widget-inner {
-    background-size: cover;
-    background-position: center center;
-}
-	
-	.row {
-		margin: auto;
-		padding-bottom: 1em
-	}
-	.row .row{
-		box-sizing: border-box;
-	    text-align: center;
-		width: 100%;
-		align-content: center center;
-		margin: auto;
-		display: table
-	}
-	
-	.box-content{
-		align-content: left;
-		font-size: 0.9em;
-		margin: auto;
-		display: table
-			
-	}
-	
 	.box-body{
+		width: 100%;
 		margin: auto;
-		align-items: center
 	}
-	
-	.box{
-		margin: 0px;
-		display: table
-	
-	} 
-	
-	
-	
-	.box-inner{
-		align-content: left;
-		display: table;
+	.row{
+		margin: auto;
+		align-content: center
+	}
+	.box-body-stranice{
 		margin: auto
 	}
-	
-	.search-container{
-		display:flex;
+	.row{
+	}
+	.column{
+		width: 50%;
+		padding: 1em;
+	}
+	.rvreme{
+		width: 40em;
+	}
+	#radnovraddan{
+		width: 40em;
+	}
+	#radnovsub{
+		width: 40em;
+	}
+	#radnovned{
+		width: 40em;
+	}
+	.btn-primary{
+		margin: 1em;
+		width: 20em;
+		align-content: center
 		
 	}
-	
-	
-
-html {
-  scroll-behavior: smooth;
-}
-
-
-.column  a {
-	margin: 1em
-}
-
-.masonry { /* Masonry container */
-  column-count: 3;
-  column-gap: 1em;
-}
-
-.column {
-	background-color: #eee;
-  display: inline-block;
-  margin: 0 0 1em;
-  width: 100%;
-}
-
-
-.dropdown-sadrzaj{
-	position: relative;
-}
-
-      .footer {
-  margin-top: auto;
-  border-top: 1px solid white;
-  width: 100%;		  
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  bottom: 0px		  
-}
+	.footer{
+		margin-top: 15em;
+		border-top: 1px solid #4f4f4f;
+		width: 100%;
+	}
 </style>
 	
-<style>
-
-	
-	.u-center-text {
-  text-align: center !important;
-}
-
-.u-margin-bottom-small {
-  margin-bottom: 1.5em !important;
-}
-
-.u-margin-bottom-medium {
-  margin-bottom: 4em !important;
-}
-
-.u-margin-top-big {
-  margin-top: 5em !important;
-}
-
-body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  line-height: 1.7;
-  color: #fff;
-  background: #000;
-}
-
-.heading-primary {
-  color: ;
-  text-transform: uppercase;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  margin-bottom: 6em;
-}
-
-.heading-primary--main {
-  display: block;
-  font-size: 6em;
-  font-weight: 400;
-  letter-spacing: 3.5em;
-  -webkit-animation-name: moveInLeft;
-          animation-name: moveInLeft;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
-  /*
-        animation-delay: 3s;
-        animation-iteration-count: 3;
-        */
-}
-
-.heading-primary--sub {
-  display: block;
-  font-size: 2em;
-  font-weight: 700;
-  letter-spacing: 1.75em;
-  -webkit-animation: moveInRight 1s ease-out;
-          animation: moveInRight 1s ease-out;
-}
-
-.heading-secondary {
-  font-size: 3.5em;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: transparent;
-  letter-spacing: 0.2em;
-  line-height: 1;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-  color: black;
-}
-
-.btn, .btn:link, .btn:visited {
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 1.5em 4em;
-  display: inline-block;
-  border-radius: 0.5em;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-  position: relative;
-  font-size: 1.6em;
-  border: none;
-  cursor: pointer;
-}
-
-.btn:hover {
-  -webkit-transform: translateY(-3px);
-          transform: translateY(-3px);
-  -webkit-box-shadow: 0 1em 2em rgba(0, 0, 0, 0.2);
-          box-shadow: 0 1em 2em rgba(0, 0, 0, 0.2);
-}
-
-.btn:hover::after {
-  -webkit-transform: scaleX(1.4) scaleY(1.6);
-          transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0;
-}
-
-.btn:active, .btn:focus {
-  outline: none;
-  -webkit-transform: translateY(-1px);
-          transform: translateY(-1px);
-  -webkit-box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
-}
-
-.btn--white {
-  background-color: #fff;
-  color: #777;
-}
-
-.btn--white::after {
-  background-color: black;
-}
-
-.btn--green {
-  background: -webkit-gradient(linear, left top, right top, from(#fc466b), to(#3f5efb));
-  background: linear-gradient(to right, #fc466b, #3f5efb);
-  color: #fff;
-}
-
-.btn--green::after {
-  background-color: #55c57a;
-}
-
-.section-plans {
-  background-color: #000;
-	display: flex;
-	width: 70em;
-	padding: em;
-	margin:auto;
-}
-	.stranica-11{
-		display: block;
-		margin: auto
-	}
-	.kartica-11{
-		display: block;
-		margin: auto
-	}
-
-.card {
-  -webkit-perspective: 150em;
-          perspective: 150em;
-  -moz-perspective: 150em;
-  position: relative;
-  height: 52em;
-  width: 25em;	
-	
-  background: black;
-}
-
-.card__side {
-  height: 52em;
-  -webkit-transition: all 0.8s ease;
-  transition: all 0.8s ease;
-  position: absolute;
-
-  width: 25em;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  border-radius: 3px;
-  overflow: hidden;
-  -webkit-box-shadow: 0 1.5em 4em rgba(0, 0, 0, 0.15);
-          box-shadow: 0 1.5em 4em rgba(0, 0, 0, 0.15);
-}
-
-.card__side--front {
-  background-color: black;
-}
-
-.card__side--front-1 {
-  background: linear-gradient(-45deg, #f403d1, #64b5f6);
-}
-
-.card__side--front-2 {
-  background: linear-gradient(-45deg, #f321d7, #ffec61);
-}
-
-.card__side--front-3 {
-  background: linear-gradient(-45deg, #24ff72, #9a4eff);
-}
-
-.card__side--back {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-}
-
-.card__side--back-1 {
-  background: linear-gradient(-45deg, #64b5f6, #f403d1);
-}
-
-
-.card__side--back-2 {
-  background: linear-gradient(-45deg, #ffec61, #f321d7);
-}
-
-.card__side--back-3 {
-  background: linear-gradient(-45deg, #9a4eff, #24ff72);
-}
-
-.card:hover .card__side--front-1,
-.card:hover .card__side--front-2,
-.card:hover .card__side--front-3 {
-  -webkit-transform: rotateY(-180deg);
-          transform: rotateY(-180deg);
-}
-
-.card:hover .card__side--back {
-  -webkit-transform: rotateY(0);
-          transform: rotateY(0);
-}
-
-.card__title {
-  height: 20em;
-  padding: 4em 2em 2em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.card__title--1 .fas {
-  font-size: 5em;
-}
-
-.card__title--2 .fas {
-  font-size: 5em;
-}
-
-.card__title--3 .fas {
-  font-size: 5em;
-}
-
-.card__heading {
-  font-size: 2em;
-  font-weight: 300;
-  text-transform: uppercase;
-  text-align: center;
-  color: #fff;
-  width: 75%;
-}
-
-.card__heading-span {
-  padding: 1em 1.5em;
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
-}
-
-.card__details {
-	display: block;
-}
-	
-	
-	.card__details_para{
-		font-size: 2em
-	}		
-
-.card__details ul {
-  list-style: none;
-  width: 20em;
-  margin: auto;
-	
-}
-
-.card__details ul li {
-	display: block;
-	margin: auto;
-  text-align: center;
-  font-size: 1.5em;
-  padding: 1em;
-margin-left: -2.5em	
-}
-.card__details2 ul {
-	display: block;
-	margin: auto;
-  text-align: center;
-  font-size: 1em;
-  padding: 1em;
-}	
-
-.card__details ul li:not(:last-child) {
-  border-bottom: 1px solid #eee;
-}
-
-.card__cta {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 90%;
-  text-align: center;
-}
-
-.card__price-box {
-  text-align: center;
-  color:black;
-  margin-bottom: 8em;
-}
-
-.card__price-only {
-  font-size: 1.4em;
-  text-transform: uppercase;
-}
-
-.card__price-value {
-  font-size: 2em;
-  font-weight: 100;
-}
-
-.row1 {
-  max-width: 100em;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 5em;
-  padding-left: -2em
-}
-
-.row1:not(:last-child) {
-  margin-bottom: 5em;
-  margin-top: 5em;
-}
-
-.row1::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.row1 [class^="col-"] {
-  float: left;
-}
-
-.row1 [class^="col-"]:not(:last-child) {
-  margin-right: 6em;
-}
-
-.row1 .col-1-of-3 {
-}
-	
-	
-	
-	.card-11{
-	}
-	
-	
-	.card__side--back-1 img {
-		display: block;
-		width: 22em;
-		margin: auto;
-		margin-top: 0.5em
-		
-	}
-	
-	.card__side--back-2 img {
-		display: block;
-		width: 20em;
-		margin: auto;
-		margin-top: 0.5em
-		
-	}	
-	.formular{
-		padding: 2em
-	}
-	.formular > p{
-		text-align: center;
-	}
-	.formular > p i{
-	}	
-/*TELEFON*/	
-	
-@media (max-width: 768px)	{
-.section-plans {
-  background-color: #000;
-	display: block;
-	width: 15em;
-	margin-top: 5em;
-	height: 65em;
-}
-	.kartica-11{
-		display: block;
-		margin: auto
-	}
-	.stranica-11{
-		display: block;
-		margin: auto
-	}
-
-.card {
-  -webkit-perspective: 150em;
-          perspective: 150em;
-  -moz-perspective: 150em;
-  position: relative;
-  height: 31em;
-  width:15em;	
-  background: black;
-  margin-top: 1em
-}
-
-.card__side {
-	margin: auto;
-  height: 34em;
-  -webkit-transition: all 0.8s ease;
-  transition: all 0.8s ease;
-  position: absolute;
-display: block;
-  width: inherit;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  border-radius: 3px;
-  overflow: hidden;
-  -webkit-box-shadow: 0 1.5em 4em rgba(0, 0, 0, 0.15);
-          box-shadow: 0 1.5em 4em rgba(0, 0, 0, 0.15);
-}
-
-.card__side--front {
-  background-color: black;
-}
-
-.card__side--front-1 {
-  background: linear-gradient(-45deg, #f403d1, #64b5f6);
-}
-
-.card__side--front-2 {
-  background: linear-gradient(-45deg, #f321d7, #ffec61);
-}
-
-.card__side--front-3 {
-  background: linear-gradient(-45deg, #24ff72, #9a4eff);
-}
-
-.card__side--back {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-}
-
-.card__side--back-1 {
-  background: linear-gradient(-45deg, #64b5f6, #f403d1);
-}
-
-.card__side--back-2 {
-  background: linear-gradient(-45deg, #ffec61, #f321d7);
-}
-
-.card__side--back-3 {
-  background: linear-gradient(-45deg, #9a4eff, #24ff72);
-}
-
-.card:hover .card__side--front-1,
-.card:hover .card__side--front-2,
-.card:hover .card__side--front-3 {
-  -webkit-transform: rotateY(-180deg);
-          transform: rotateY(-180deg);
-}
-.card__details_para > p{
-		font-size: 0.8em
-	}
-.card:hover .card__side--back {
-  -webkit-transform: rotateY(0);
-          transform: rotateY(0);
-}
-
-.card__title {
-  height: 13em;
-  padding: 1em 1em 1em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.card__title--1 .fas {
-  font-size: 4em;
-}
-
-.card__title--2 .fas {
-  font-size: 5em;
-}
-
-.card__title--3 .fas {
-  font-size: 5em;
-}
-
-.card__heading {
-  font-size: 1.3em;
-  font-weight: 300;
-  text-transform: uppercase;
-  text-align: center;
-  color: #fff;
-  width: 75%;
-}
-
-.card__heading-span {
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
-}
-
-.card__details {
-	display: block;
-	padding: inherit;  
-}
-	.card-11-details{
-		font-size: 0.8em
-	}
-
-	.card__details p {
-		font-size: 0.8em;
-	}	
-	
-.card__details ul {
-  list-style: none;
-  width: 10em;
-  margin: auto;
-	
-}
-
-.card__details ul li {
-	display: block;
-	margin: auto;
-  text-align: center;
-  font-size: 1em;
-}
-	
-.card__details2 ul li {
-	display: block;
-	margin: auto;
-  text-align: center;
-  font-size: 1em;
-  padding: 1em;
-margin-left: -2.5em	
-}	
-
-.card__details ul li:not(:last-child) {
-  border-bottom: 1px solid #eee;
-}
-
-.card__cta {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 50%;
-  text-align: center;
-}
-
-.card__price-box {
-  text-align: center;
-  color:black;
-  margin-bottom: 8em;
-}
-
-.card__price-only {
-  font-size: 1.4em;
-  text-transform: uppercase;
-}
-
-.card__price-value {
-  font-size: 2em;
-  font-weight: 100;
-}
-
-.row1 {
-  max-width: 30em;
-	margin-left: 0
-}
-
-.row1:not(:last-child) {
-  margin-bottom: 5em;
-  margin-top: 5em;
-}
-
-.row1::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.row1 [class^="col-"] {
-  float: left;
-}
-
-.row1 [class^="col-"]:not(:last-child) {
-  margin-right: 6em;
-}
-
-	.card-22{
-		margin-bottom: 4em
-	}
-		
-.card__side--back-1 img {
-		display: block;
-	    margin: auto;
-		width: 14em;
-		margin-top: 50%
-		
-	}
-	
-.card__side--back-2 img {
-		display: block;
-		width: 13.5em;
-		margin-top: 0.5em
-		
-	}	
-	
-	.footer-img img {
-		margin-top: 3em;
-		margin-bottom: 3em
-	}
-	
-	}
-	
-
-	</style>
-
-
 	
 </head>
+
+	
+	
 <body>
 
 
@@ -1095,6 +132,8 @@ margin-left: -2.5em
 </nav>
 <!--/.Navbar-->
 <!-- The overlay -->
+
+	
 	
    <div class="slikakarticeprimer">
 	<img class="slikaprimera1" src="banneri/karticaa.jpg" alt="">
@@ -1105,7 +144,7 @@ margin-left: -2.5em
 <hr class="solid" style="border-top: 1px solid white; width: 95%; margin: auto; padding-bottom: 0.5em; margin-top: 3em">
 
 
- <div class="testbox">
+<div class="testbox">
       <form action="https://formspree.io/f/mayllayz" method="POST">
         <div class="banner">
           <h1>REDIREX RS</h1>
@@ -1117,7 +156,9 @@ margin-left: -2.5em
         </center>
         </p>
         <br/>
-        <div class="colums">
+        <div class="row">
+			
+		<div class="column">
           <div class="item">
             <label for="fname"> Naziv Preduzeća/Ime preduzetnika<span>*</span></label>
             <input id="fname" type="text" name="fname" required/>
@@ -1142,35 +183,46 @@ margin-left: -2.5em
             <label for="phone">Kontakt telefoni<span>*</span>&nbsp; (fiksni i mobilni)</label>
             <input id="phone" type="tel"   name="5telefon" required/>
           </div>
+		</div>		
+	<div class="column">	  	  
 	<div class="radno-vreme">		
           <div style="width: 100%" class="item">
-            <label for="radnovraddan">Radno vreme pon-pet<span>*</span>&nbsp; (Ukoliko nemate određeno radno vreme ostavite polje prazno. Ukoliko radite po pozivu, upišite "po pozivu".)</label>
+            <label class="rvreme" for="radnovraddan">Radno vreme pon-pet<span>*</span>&nbsp; (Ukoliko nemate određeno radno vreme ostavite polje prazno. Ukoliko radite po pozivu, upišite "po pozivu".)</label>
             <input placeholder="Primeri: od 8h do 16h;  po pozivu;  ne radimo" type="ttext" id="radnovraddan" name="6radnovreme-ponpet" required>
           </div>	
           <div style="width: 100%" class="item">
-            <label for="radnovsub">Radno vreme subotom<span>*</span>&nbsp; (Ukoliko nemate određeno radno vreme ostavite polje prazno. Ukoliko radite po pozivu, upišite "po pozivu".)</label>
+            <label class="rvreme" for="radnovsub">Radno vreme subotom<span>*</span>&nbsp; (Ukoliko nemate određeno radno vreme ostavite polje prazno. Ukoliko radite po pozivu, upišite "po pozivu".)</label>
             <input placeholder="Primeri: od 8h do 16h;  po pozivu;  ne radimo" type="ttext" id="radnovsub" name="7radnovreme-sub" required>
           </div>	
           <div style="width: 100%" class="item">
-            <label for="radnovned">Radno vreme nedeljom<span>*</span>&nbsp; (Ukoliko nemate određeno radno vreme ostavite polje prazno. Ukoliko radite po pozivu, upišite "po pozivu".)</label>
+            <label class="rvreme" for="radnovned">Radno vreme nedeljom<span>*</span>&nbsp; (Ukoliko nemate određeno radno vreme ostavite polje prazno. Ukoliko radite po pozivu, upišite "po pozivu".)</label>
             <input placeholder="Primeri: od 8h do 16h;  po pozivu;  ne radimo" type="ttext" id="radnovned" name="8radnovreme-ned" required>
           </div>	
         </div>
+	</div>		
+	</div>
 	
-		  <div class="item">
+	<div class="column">	  
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    Dodatne informacije (društvene mreže, napomene,..)
+  </button>
+	</div>	  
+  
+	<!--dropdown-->
+		  
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">	  
+			  <div class="item">
             <label for="krataktekst">Kratak opis do 400 karaktera<span>*</span></label>
             <textarea class="kratak-tekst" type="ttext" id="krataktekst" name="krataktekst" maxlength="400" required></textarea>
-          </div>
-	</div>
-		  
+          </div>	  
 		 <div class="posebni-att">
 			 
 	<label for="atributi">Specifični atributi (ukoliko nudite i online kupovinu, radite iskljucivo po pozivu, nudite dostavu, dolazak na kućnu adresu, popusti, akcije, itd..)</label>
     <textarea placeholder="Možete navesti koliko god želite: Online; Dostava; po pozivu; Popusti; ..." class="kratak-tekst" type="ttext" id="atributi" name="atributi" ></textarea>
 		     
 		 </div> 
-		  
-		 <hr class="solid" style="border-top: 1px solid gray; width: 100%; margin: auto; padding-bottom: 0.5em; margin-bottom: 0.4em">  
+		    
 		  		  
           <label>Društvene mreže. Linkovi ka Vašim profilima na društvenim mrežama. Ukoliko nemate neke, ostavite prazno polje ili stavite "/".</label>
             
@@ -1199,9 +251,7 @@ margin-left: -2.5em
             <input id="websajt" type="tel"   name="websajt" required/>
           </div>
 	
-       
-        
-        <div class="item">
+          <div class="item">
           <label for="visit">Napomene: </label>
           <textarea id="visit" rows="3"></textarea>
         </div>
@@ -1220,153 +270,189 @@ margin-left: -2.5em
 			  </div>
 			  
 		  </div>
+	
+	</div>	  
+	</div>	  
 		  
-        
+		<!--dropdown/-->  
+		  
+		  
+		  
         <div class="btn-block">
           <button type="submit" href="/">Pošalji</button>
         </div>		  
 		  
-		  
-      </form>	
+		  	
+	  
+
+	
+	  
+		  </form>
 </div>
-
 	
 	
 	
 	
-	<div style="margin-top: 5em" class="footer">
-	<p><h3 style="margin-bottom: em"></h3></p>	
-	<div class="row">
-
-	<div class="col-sm-3">
-
-	<div class="widget widget_inventor_boxes">
-	<div style="color: white;" class="widget-inner">
-	<h2 class="widgettitle">
-	<strong>USLUGE SAJTA</strong></h2>
-
-
-	<div class="row"> 
-
-
-	<div class="col-sm-12 col-lg-12 col-md-6" style="display: table ;margin: auto;padding-bottom: 0.5em">
-	   <div class="box">
-		 <div class="box-inner">
-			<div style="color: white;" class="box-icon">
-			<i class="fa fa-suitcase"></i>
-			</div>
-			<div style="color: white;" class="box-body">
-				  <h6 class="box-title">Besplatno oglašavanje</h6>
-				  <div style="color: white;" class="box-content">Ukolike želite da se i vas oglas nadje na sajtu, dovoljno se samo da nam posaljete osnovne informacije</div>
-			 </div><!-- /.box-body -->
-		 </div><!-- /.box-inner -->
-
-		</div><!-- /.box -->       
-	</div><!-- /.col-* -->
-
-	<hr class="solid" style="border-top: 1px solid white; width: 70%; margin: auto; padding-bottom: 0.5em">  
-
-	 <div class="col-sm-12 col-lg-12 col-md-6" style="display: table;margin: auto;padding-bottom: 0.5em">
-		 <div class="box ">
-			 <div class="box-inner">
-				 <div style="color: white;" class="box-icon">
-					<i class="fa fa-link"></i>            
-				 </div><!-- /.box-icon -->
-
-				 <div style="color: white;" class="box-body">
-					   <h6 class="box-title">Povezivanje vasih stranica</h6><!-- /.box-title -->
-						 <div style="color: white;" class="box-content">
-						Sajt i sve vaše društvene mreže na jednom mestu             
-						 </div><!-- /.box-content -->
-
-				 </div><!-- /.box-body -->
-			 </div><!-- /.box-inner -->
-
-		</div><!-- /.box -->        
-	</div><!-- /.col-* -->
-
-	<hr class="solid" style="border-top: 1px solid white; width: 70%; margin: auto; padding-bottom: 0.5em">	
-
-	 <div class="col-sm-12 col-lg-12 col-md-6" style="display: table;margin: auto; padding-bottom: 2em">
-		 <div class="box ">
-			 <div class="box-inner">
-				 <div style="color: white;" class="box-icon">
-					<i class="fa fa-book"></i>            
-				 </div><!-- /.box-icon -->
-
-				 <div style="color: white;" class="box-body">
-					   <h6 class="box-title">Vaša lična stranica</h6><!-- /.box-title -->
-						 <div style="color: white;" class="box-content">
-						Kreiranje lične stranice vaše usluge na kojoj se može nači sve sto želite             
-						 </div><!-- /.box-content -->
-
-				 </div><!-- /.box-body -->
-			 </div><!-- /.box-inner -->
-
-		</div><!-- /.box -->        
-	</div><!-- /.col-* -->	
+<div class="footer">
+<p><h3 style="margin-bottom: em"></h3></p>	
+<div class="row">
+	
+<div class="col-sm-3">
+									
+<div class="widget widget_inventor_boxes">
+<div class="widget-inner">
+<h2 class="widgettitle">
+<strong><center>USLUGE SAJTA</center></strong></h2>
+	
+	
+<div class="row"> 
 
 
-	</div><!-- /.row -->        
-	</div><!-- /.widget-inner -->
-	</div>								
-	</div><!-- /.cols-sm-3 -->
-
-	<!-- /.cols-sm-3 -->
-
-	<div class="col-sm-3">
-		<div style="color: white;" id="text-9" class="widget widget_text"><h2 class="widgettitle"><strong>KONTAKT INFORMACIJE</strong></h2>
-			<div class="textwidget">
-				<hr>
-				<dl>
-
-	<dt style="color: white;" style="padding-bottom: em"><i class="fa fa-envelope" style="margin-right: 0.5em"></i> redirexrs@gmail.com</dt><dd></dd>
-<dt style="color: white; padding-bottom: 1em"><i class="fa fa-envelope" style="margin-right: 0.5em"></i> redirex.srb@gmail.com</dt><dd></dd>
-
-	<a href="https://www.facebook.com/redirexx" target="_blank" class="">
-	<dt><i class="fab fa-facebook-square fa-3x" style="color: white"></i></dt><dd></dd></a>
-					
-				</dl>   
-			</div>
-		</div>					           
-	</div><!-- /.cols-sm-3 -->
-
-		<div style="color: white;" class="col-sm-3">
-	<h2 class="widgettitle"><strong>LINKOVI SAJTA</strong></h2>
-	<div class="listing-container">
-		<div class="listing-small">
-
-
-	<div class="listing-small-content">
-
-	<a style="color: white" href="index.html#okruzi" class="">Okruzi i opštine</a><br>
-	<a style="color: white" href="index.html#najnovije" class="">Najnovije</a><br>
-	<a style="color: white" href="index.html#pretraga" class="">Pretraga</a><br>	
-	<a style="color: white" href="kako-se-oglasiti.html" class="">Kako se oglasiti na redirex</a><br>
-
-			</div>
+<div class="col-sm-12 col-lg-12 col-md-6" style="display: table ;margin: auto;padding-bottom: 0.5em">
+   <div class="box">
+     <div class="box-inner">
+        <div style="color: white" class="box-icon">
+        <i class="fa fa-suitcase"></i>
 		</div>
-	</div> 
-			</div>
+        <div class="box-body">
+              <h6 style="color: white" class="box-title">Besplatno oglašavanje</h6>
+			  <div style="color: white" class="box-content">Ukolike želite da se i vas oglas nadje na sajtu, dovoljno se samo da nam posaljete osnovne informacije</div>
+         </div><!-- /.box-body -->
+     </div><!-- /.box-inner -->
 
+    </div><!-- /.box -->       
+</div><!-- /.col-* -->
+	
+<hr class="solid" style="border-top: 1px solid white; width: 70%; margin: auto; padding-bottom: 0.5em">  
+	 
+ <div class="col-sm-12 col-lg-12 col-md-6" style="display: table;margin: auto;padding-bottom: 0.5em">
+     <div class="box ">
+         <div class="box-inner">
+             <div style="color: white" class="box-icon">
+                <i class="fa fa-link"></i>            
+			 </div><!-- /.box-icon -->
+        
+             <div class="box-body-stranice">
+                   <h6 style="color: white" class="box-title">Povezivanje vasih stranica</h6><!-- /.box-title -->
+                     <div style="color: white" class="box-content">
+                    Sajt i sve vaše društvene mreže na jednom mestu             
+				     </div><!-- /.box-content -->
+            
+             </div><!-- /.box-body -->
+         </div><!-- /.box-inner -->
 
+    </div><!-- /.box -->        
+</div><!-- /.col-* -->
 
+<hr class="solid" style="border-top: 1px solid white; width: 70%; margin: auto; padding-bottom: 0.5em">	
+	
+ <div class="col-sm-12 col-lg-12 col-md-6" style="display: table;margin: auto; padding-bottom: 2em">
+     <div class="box ">
+         <div class="box-inner">
+             <div style="color: white" class="box-icon">
+                <i class="fa fa-book"></i>            
+			 </div><!-- /.box-icon -->
+        
+             <div class="box-body">
+                   <h6 style="color: white" class="box-title">Vaša lična stranica</h6><!-- /.box-title -->
+                     <div style="color: white"	 class="box-content">
+                    Kreiranje lične stranice vaše usluge na kojoj se može nači sve sto želite             
+				     </div><!-- /.box-content -->
+            
+             </div><!-- /.box-body -->
+         </div><!-- /.box-inner -->
 
-	<div class="footer-img">				            
-		<img src="banneri/73081046_108934263856788_4915437994069983232_o.jpg" alt="" style="width: 18em; height: 4em">
-	</div>	
+    </div><!-- /.box -->        
+</div><!-- /.col-* -->	
+	 
+	 
+</div><!-- /.row -->        
+</div><!-- /.widget-inner -->
+</div>								
+</div><!-- /.cols-sm-3 -->
+
+<!-- /.cols-sm-3 -->
+
+<div class="col-sm-3">
+    <div id="text-9" class="widget widget_text"><h2 class="widgettitle"><strong>KONTAKT INFORMACIJE</strong></h2>
+        <div class="textwidget">
+			<hr>
+			<dl>
+
+<dt style="color: white;padding-bottom: em"><i class="fa fa-envelope" style="margin-right: 0.5em"></i> redirexrs@gmail.com</dt>
+<dt style="color: white;padding-bottom: 1em"><i class="fa fa-envelope" style="margin-right: 0.5em"></i> redirex.srb@gmail.com</dt>				
+				
+<a href="https://www.facebook.com/redirexx" target="_blank" class="">
+<dt><i class="fab fa-facebook-square fa-3x" style="color: white"></i></dt><dd></dd></a>			
+            </dl>   
 		</div>
+    </div>					           
+</div><!-- /.cols-sm-3 -->
+	
+	<div class="col-sm-3">
+<h2 class="widgettitle"><strong>LINKOVI SAJTA</strong></h2>
+<div class="listing-container">
+    <div class="listing-small">
 
-		<hr class="solid" style="border-top: 1px solid gray; width: 100%; margin: auto; padding-bottom: 0.5em">
 
-	<div class="sub-footer align-left">
-	 <a href="../../../../../../sitemap.xml" class="">Sitemap</a>
+<div class="listing-small-content">
+
+<a href="#okruzi" class="">Okruzi i opštine</a><br>
+<a href="#najnovije" class="">Najnovije</a><br>
+<a href="#pretraga" class="">Pretraga</a><br>	
+<a href="#vrh-navbar" class="" onclick="openNav()">Kako se oglasiti na redirex</a><br>
+<a href="https://www.facebook.com/groups/363068485078057/" target="_blank" class="">Redirex facebook oglasi</a><br>
+<a  style="color: white;" class="trigger_popup_fricc">Donacije</a>	
+        
+        </div>
+    </div>
+</div> 
+		</div>
+	
+<!--	
+<div class="listing-container">
+<div class="listing-small">
+
+<a href="" class="">Pretraga</a>
+	
+</div><!-- /.listing-small 
+</div><!-- /.listing-container 
+<div class="listing-container">
+                                        
+
+<div class="listing-small">
+<div class="listing-small-image" style="background-image: url('https://www.biznisgroup.rs/wp-content/uploads/2018/06/22-1-292x200.jpg');">
+<a href="https://www.biznisgroup.rs/automobili/jovic-servis-i-remont-doo-backa-palanka/"></a>
+</div><!-- /.listing-small-image 
+
+<div class="listing-small-content">
+        <h4 class="listing-small-title"><a href="https://www.biznisgroup.rs/automobili/jovic-servis-i-remont-doo-backa-palanka/">JOVIĆ – servis i remont doo Bačka Palanka</a></h4>
+
+<div class="listing-small-location"><a href="https://www.biznisgroup.rs/location/srbija/backa-palanka/">Bačka Palanka</a></div>
+</div><!-- /.listing-small-content 
+</div><!-- /.listing-small 
+</div><!-- /.listing-container 
+</div><!-- /.listing-row 
+
+</div> -->
+
+					            
+<div class="footer-img">				            
+	<img src="banneri/73081046_108934263856788_4915437994069983232_o.jpg" alt="" style="width: 18em; height: 4em">
+</div>	
 	</div>
-	<div style="margin-bottom: 1em">	
-	&copy Redirex team, 2020.	
-	</div>	
+	
+	<hr class="solid" style="border-top: 1px solid gray; width: 100%; margin: auto; padding-bottom: 0.5em">
 
-	</div>
+<div class="sub-footer align-left">
+ <a href="sitemap.xml" class="">Sitemap</a>
+ <a href="ads.txt">Ads</a>	
+</div>
+<div style="padding-bottom: 1em">	
+<center>&copy Redirex team, 2020.	</center>
+</div>	
+	
+</div>	
 	
 	
 
@@ -1392,16 +478,7 @@ margin-left: -2.5em
 
 <script>
 	
-		  
-		  /* Open when someone clicks on the span element */
-/* Open when someone clicks on the span element */
-function openNav() {
-  document.getElementById("mySidenav").style.width = "45%";	
-}
 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
 	</script>
 	
 

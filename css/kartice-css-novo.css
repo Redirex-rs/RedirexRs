@@ -331,6 +331,8 @@ display: flex;
   transform: translateY(-50%);
 	bottom: -1.4em;
 	left: 0;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
 	
 }
 

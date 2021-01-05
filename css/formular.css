@@ -46,7 +46,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: inherit;
       padding: 20px;
       }
       form {
@@ -58,7 +57,7 @@
       }
       .banner {
       position: relative;
-      height: 300px;
+      height: 10em;
       background-image: url("/uploads/media/default/0001/02/2d2ed84e0a2678357d5885b627ccd03a35d3c54c.jpeg");  
       background-size: cover;
       display: flex;
@@ -109,13 +108,13 @@
       display:flex;
       justfiy-content:space-between;
       }
-      .colums {
+      .column {
       display:flex;
       justify-content:space-between;
       flex-direction:row;
       flex-wrap:wrap;
       }
-      .colums div {
+      .column div {
       width:48%;
       }
       input[type="date"]::-webkit-inner-spin-button {

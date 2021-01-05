@@ -68,6 +68,34 @@ h9 {
 		text-align: center
 	}
 	
+.card-flip, .card-container {
+    transform-style: preserve-3d;
+    transition: all 0.7s ease;
+}
+
+.card-flip div {
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+.card-flip {
+    display: grid; grid-template: 1fr / 1fr;
+    grid-template-areas: "frontAndBack";
+    transform-style: preserve-3d;
+    transition: all 0.7s ease;
+}
+
+.front {
+    grid-area: frontAndBack;
+}
+
+.back {
+    grid-area: frontAndBack;
+    transform: rotateY(-180deg);
+}
+
+.card-container:hover .card-flip {
+    transform: rotateY(180deg);
+}
 	
 
 </style>
@@ -142,7 +170,6 @@ h9 {
 			
 	<div class="kartice-glavno">
 	<div class="kartice-sve">
-
 		
 		
     <!--Servis Gitara Žarko-->
@@ -166,13 +193,13 @@ h9 {
 			 </div> 
 		  </div>
 			<div class="kartica-slogan">
-			  <center><i>Nudimo profesionalan i povoljan servis</i></center>
+			  <center>Nudimo profesionalan i povoljan servis</center>
 			</div>
 			
 			
 		</div>
 	  </div>	
-	<!--Cvećara Mini Orhideja-->
+	<!--Cvećara Mini Orhideja-->		
 <div class="kartica-telo veliko MIMI-orh filter trgovine" id="14">
 		<div class="kartica-content srednje" id="mini-orhideja-content">
 		  <div class="kartica-slika">
@@ -191,28 +218,27 @@ h9 {
 				<i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp; Lole Ribara 157, Železnik<br>
 <i class="fas fa-clock"></i>&nbsp;&nbsp;Radnim danima: 08:00 - 20:00 <br>
 			   Subotom: 08:00 - 20:00	<br>	  
-               Nedeljom: 08:00 - 20:00 <br><br> 
-				 
+               Nedeljom: 08:00 - 20:00 <br><br>
 				 
               <i style="color: black" class="fas fa-phone"></i>
               Telefoni:  063 1934 071 <br><br>
               <i style="color: black" class="fas fa-envelope"></i>
               Email:<br>
               brankatabakovic@gmail.com <br>
-			 </div> 	
+			 </div> 
 		<div class="icon-bar">
   <a href="https://www.facebook.com/cvecaraminiorhideja/" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
   <a href="https://www.instagram.com/miniorhideja/?hl=sr" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
 			
 </div>	
-		  </div>
+		</div>	  
+		  
 			<div class="kartica-slogan">
-			  <center><i>Ono po čemu smo poznati jeste planiranje i uređenje dvorišta. Nudimo usluge saksijskog i rezanog cveća, kao i keramike za cveće i korpe.</i></center>
+			  <center>Ono po čemu smo poznati jeste planiranje i uređenje dvorišta. Nudimo usluge saksijskog i rezanog cveća, kao i keramike za cveće i korpe.</center>
 			</div>
 			
-			
+			</div>
 		</div>
-</div>
 	<!--Restauracija Klavira Predrag Puhača -->
 <div class="kartica-telo malo filter zanatske servis" id="15">
 		<div class="kartica-content srednje">
@@ -234,7 +260,7 @@ h9 {
 			 </div> 
 		  </div>
 			<div class="kartica-slogan">
-			  <center><i>Restauracija klavira u Beogradu – Predrag Puhača, kvalitetno izvršava sve vrste poslova vezanih za klavire</i></center>
+			  <center>Restauracija klavira u Beogradu – Predrag Puhača, kvalitetno izvršava sve vrste poslova vezanih za klavire</center>
 			</div>
 			
 			
@@ -263,7 +289,7 @@ h9 {
 			 </div> 
 		  </div>
 			<div class="kartica-slogan">
-			  <center><i>Dva čekića Mala porodična firma sa iskustvom preko 20 godina u mašinskoj izradi delova od metala i plastike, sa velikom stručnošću i preciznošću.</i></center>
+			  <center>Dva čekića Mala porodična firma sa iskustvom preko 20 godina u mašinskoj izradi delova od metala i plastike, sa velikom stručnošću i preciznošću.</center>
 			</div>
 			
 			
@@ -318,7 +344,7 @@ h9 {
 		</div> 
 	</div>
 	<div class="kartica-slogan">
-			<center><i>Dubinsko pranje MIMI svojim klijentima uvek pruži najbolju uslugu. Ponuda naših usluga se konstantno širi u skladu sa Vašim zahtevima i sugestijama.</i></center>  
+			<center>Dubinsko pranje MIMI svojim klijentima uvek pruži najbolju uslugu. Ponuda naših usluga se konstantno širi u skladu sa Vašim zahtevima i sugestijama.</center>  
 	</div>
 			
 			
@@ -353,7 +379,7 @@ h9 {
 </div>	
 	</div>
 	<div class="kartica-slogan">
-			<center><i>Servisiramo i popravljamo sve vrste i modele laptop računara poznatih svetskih brendova.</i></center>  
+			<center>Servisiramo i popravljamo sve vrste i modele laptop računara poznatih svetskih brendova.</center>  
 	</div>	
 			
 		</div>
@@ -380,7 +406,7 @@ h9 {
 		</div> 
 	</div>
 	<div class="kartica-slogan" id="odgajiv-slogan">
-			<center><i>Odgajivačnica egzotičnih pataka, gusaka i labudova. Bavimo se profesionalnim uzgojem i prodajom ukrasnih pataka i gusaka, labudova i utve, kao i fazana, guski, pilića i ćurića.</i></center>  
+			<center>Odgajivačnica egzotičnih pataka, gusaka i labudova. Bavimo se profesionalnim uzgojem i prodajom ukrasnih pataka i gusaka, labudova i utve, kao i fazana, guski, pilića i ćurića.</center>  
 	</div>
 	
 		</div>
@@ -411,7 +437,7 @@ h9 {
 </div>	
 	</div>
 	<div class="kartica-slogan">
-			<center><i>Ako Vam je potrebna efikasna i brza usluga uklanjanja i izvlačenja vlage u Vašem poslovnom i ili stambenom prostoru pozovite nas ODMAH</i></center>  
+			<center>Ako Vam je potrebna efikasna i brza usluga uklanjanja i izvlačenja vlage u Vašem poslovnom i ili stambenom prostoru pozovite nas ODMAH</center>  
 	</div>	
 		</div>
 </div>
@@ -443,7 +469,7 @@ h9 {
 </div>	
 	</div>
 	<div class="kartica-slogan">
-			<center><i>Prodaja novih fiskalnih kasa i fiskalnih printera.</i></center>  
+			<center>Prodaja novih fiskalnih kasa i fiskalnih printera.</center>  
 	</div>
 		</div>
 </div>	
@@ -477,7 +503,7 @@ Srbija<br><br>
 </div>	
 	</div>
 	<div class="kartica-slogan" >
-			<center><i>Siniša Stanković, majstor trube, rođen je u romskom selu Zagužanje, selo sa ne više od pet stotina stanovnika, ali selo sa dvanaest aktivnih orkestara čiji članovi žive od muzike.</i></center>  
+			<center>Siniša Stanković, majstor trube, rođen je u romskom selu Zagužanje, selo sa ne više od pet stotina stanovnika, ali selo sa dvanaest aktivnih orkestara čiji članovi žive od muzike.</center>  
 	</div>
 				
 			
@@ -513,7 +539,7 @@ Srbija<br><br>
 </div>	
 	</div>
 	<div class="kartica-slogan" >
-			<center><i>Dostava pečene ribe u Zemunu – Fish bar Gogi. <br> Kod nas ćete pronaći veliki broj ribljih specijaliteta spremljenih od najsvežije rečne i morske ribe. U ponudi imamo svežu i pečenu ribu, kao i veliki broj salata i posnih jela sa morskim plodovima.</i></center>  
+			<center>Dostava pečene ribe u Zemunu – Fish bar Gogi. <br> Kod nas ćete pronaći veliki broj ribljih specijaliteta spremljenih od najsvežije rečne i morske ribe. U ponudi imamo svežu i pečenu ribu, kao i veliki broj salata i posnih jela sa morskim plodovima.</center>  
 	</div>
 				
 		</div>
@@ -548,7 +574,7 @@ Srbija<br><br>
 </div>	
 	</div>
 	<div class="kartica-slogan" >
-			<center><i>Servisiranje pumpi za vodu i hidro sistema svih vrsta, izrada elektro instalacija i automatike, izrada elektro energetskih mreža i remont trafo stanica.</i></center>  
+			<center>Servisiranje pumpi za vodu i hidro sistema svih vrsta, izrada elektro instalacija i automatike, izrada elektro energetskih mreža i remont trafo stanica.</center>  
 	</div>
 					
 		</div>
@@ -581,7 +607,7 @@ Srbija<br><br>
 </div>	
 	</div>
 	<div class="kartica-slogan" >
-			<center><i>Crni Bor sa sedištem u Sopotu posluje još od 1990 godine.Već više od 25 godina radimo kvalitetno i postojano i zbog toga smo stekli veliki uzgled. <br> Nalazimo se u Sopotu i već dugi niz godina se bavimo pogrebnim uslugama širom Srbije i u inostranstvu.</i></center>  
+			<center>Crni Bor sa sedištem u Sopotu posluje još od 1990 godine.Već više od 25 godina radimo kvalitetno i postojano i zbog toga smo stekli veliki uzgled. <br> Nalazimo se u Sopotu i već dugi niz godina se bavimo pogrebnim uslugama širom Srbije i u inostranstvu.</center>  
 	</div>
 					
 		</div>
@@ -611,7 +637,7 @@ Srbija<br><br>
 </div>
 	</div>
 	<div class="kartica-slogan" >
-			<center><i>Grafički studio Creative filter je počelo sa radom 2007. godine u Beogradu. Nama je na prvom mestu kreativnost i kvalitet.</i></center>  
+			<center>Grafički studio Creative filter je počelo sa radom 2007. godine u Beogradu. Nama je na prvom mestu kreativnost i kvalitet.</center>  
 	</div>
 						
 		</div>
@@ -637,7 +663,7 @@ Srbija<br><br>
 		</div> 
 	</div>
 	<div class="kartica-slogan" >
-			<center><i>Osnovna delatnost našeg preduzeća jeste drumski prevoz tereta, te Vam nudimo pouzdan i brz prevoz na teritoriji cele Srbije</i></center>  
+			<center>Osnovna delatnost našeg preduzeća jeste drumski prevoz tereta, te Vam nudimo pouzdan i brz prevoz na teritoriji cele Srbije</center>  
 	</div>
 	
 		</div>
@@ -676,7 +702,7 @@ Srbija<br><br>
 </div>
 		  </div>
 			<div class="kartica-slogan">
-			  <center><i>Diteks tekstil je porodična firma koja se bavi proizvodnjom tekstila</i></center>
+			  <center>Diteks tekstil je porodična firma koja se bavi proizvodnjom tekstila</center>
 			</div>
 			
 			
@@ -708,7 +734,7 @@ Srbija<br><br>
 		</div> 
 	</div>
 	<div class="kartica-slogan" >
-			<center><i>Izvođenje svih vodovodnih radova</i></center>  
+			<center>Izvođenje svih vodovodnih radova</center>  
 	</div>
 	
 		</div>
