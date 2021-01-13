@@ -307,6 +307,67 @@
 		margin-bottom: 2vw
 		
 	}
+	
+	/*BOX-naslov*/
+		.box1 {
+	
+	display: block;
+	 transform: translate3d(-0%, -0%, 0);
+	 background-color: rgba(0, 0, 0, 0.5);
+	 width: 90%;
+	 padding: 5px;
+	 border: 2px solid #b78846;
+	margin: auto;
+}
+ .box1:before, .box1:after {
+	 content: "•";
+	 position: absolute;
+	 width: 14px;
+	 height: 14px;
+	 font-size: 14px;
+	 color: #b78846;
+	 border: 2px solid #b78846;
+	 line-height: 12px;
+	 top: 5px;
+	 text-align: center;
+}
+	.box-inner1{
+		width: 100%;
+		
+	}
+ .box1:before {
+	 left: 5px;
+}
+ .box1:after {
+	 right: 5px;
+}
+ .box1 .box-inner1 {
+	 border: 2px solid #b78846;
+	 padding: 1em;
+	 width: 100%;
+}
+ .box1 .box-inner1:before, .box1 .box-inner1:after {
+	 content: "•";
+	 position: absolute;
+	 width: 14px;
+	 height: 14px;
+	 font-size: 14px;
+	 color: #b78846;
+	 border: 2px solid #b78846;
+	 line-height: 12px;
+	 bottom: -px;
+	 text-align: center;
+	 bottom: 2%;
+	 
+}
+ .box1 .box-inner1:before {
+	 left: 5px;
+}
+ .box1 .box-inner1:after {
+	 right: 5px;
+}
+	/*BOX-naslov*/
+	
 	.box {
 	
 	display: block;
@@ -355,7 +416,7 @@
 	 line-height: 12px;
 	 bottom: -px;
 	 text-align: center;
-	 bottom: 2%;
+	 bottom: 1.2%;
 	 
 }
  .box .box-inner:before {
@@ -419,8 +480,8 @@
 	
 	
 <div class="title-banner-glavni">
-	<div class="box">
-	<div class="banner-tekst box-inner">
+	<div class="box1">
+	<div class="banner-tekst box-inner1">
 		<center><h1>Galerija</h1></center>
 	   <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo eligendi porro commodi culpa quae vel provident nihil, eos quod quisquam omnis consectetur, nesciunt pariatur tempore eius ea delectus, dolore aliquam!</h2>
 	</div>
@@ -433,7 +494,11 @@
     <div class="row photos">
 		<div class="container-slika">		
         <div class="item">
+			<div class="box">
+				<div class="box-inner">
 			<a href="galerijaa/fantasy-2506830_1920.jpg" data-lightbox="photos"><img class="img-fluid" src="galerijaa/fantasy-2506830_1920.jpg"></a>
+			</div>
+			</div>
 			<div class="ivica-kartice"></div>		
 				<div class="slika-tekst">
 					<h2>Naziv</h2>
@@ -447,8 +512,11 @@
 		
 		<div class="container-slika">		
         <div class="item">
+			<div class="box">
+				<div class="box-inner">
 			<a href="galerijaa/deer-3275594_1920.jpg" data-lightbox="photos"><img class="img-fluid" src="galerijaa/deer-3275594_1920.jpg"></a>
-					
+				</div>
+				</div>	
 				<div class="slika-tekst">
 					<h2>Naziv</h2>
 				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, accusantium numquam ad repellat quam nobis omnis officia dignissimos tempore similique. Repellendus excepturi neque sint ex aut voluptates, perspiciatis nihil possimus!</p>
@@ -462,8 +530,11 @@
 		
 		<div class="container-slika">		
         <div class="item">
+			<div class="box">
+				<div class="box-inner">
 			<a href="galerijaa/composing-2391033_1920.jpg" data-lightbox="photos"><img class="img-fluid" src="galerijaa/composing-2391033_1920.jpg"></a>
-					
+					</div>
+					</div>
 				<div class="slika-tekst">
 					<h2>Naziv</h2>
 				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, accusantium numquam ad repellat quam nobis omnis officia dignissimos tempore similique. Repellendus excepturi neque sint ex aut voluptates, perspiciatis nihil possimus!</p>
@@ -477,8 +548,11 @@
 			<div class="podvlaka"></div>
 		<div class="container-slika">		
         <div class="item">
+			<div class="box">
+				<div class="box-inner">
 			<a href="galerijaa/fantasy-2964231_1920.jpg" data-lightbox="photos"><img class="img-fluid" src="galerijaa/fantasy-2964231_1920.jpg"></a>
-					
+				</div>	
+				</div>	
 				<div class="slika-tekst">
 					<h2>Naziv</h2>
 				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, accusantium numquam ad repellat quam nobis omnis officia dignissimos tempore similique. Repellendus excepturi neque sint ex aut voluptates, perspiciatis nihil possimus!</p>
