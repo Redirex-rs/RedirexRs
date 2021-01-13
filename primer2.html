@@ -263,6 +263,7 @@
 	}
 	.banner-tekst h2{
 		text-align: center;
+		color: white;
 	}
 	h1{
 		font-size: 5em
@@ -270,7 +271,7 @@
 	.item{
 		display: flex;
 		width: 100%;
-		padding: 1em;
+		padding: em;
 		margin: auto
 	}
 	.slika-tekst{
@@ -284,14 +285,17 @@
 		margin: auto;
 	}
 	.img-fluid{
-		width: 50vw;
+		width: 60em;
+		margin:auto;
 	}
 	.podvlaka{
 		margin: auto;
 		position: relative;
-		width: 97%;
+		width: 100%;
 		border: 1px solid #4f4f4f;
-		top: -1em
+		top: -2em;
+		margin-bottom: 2vw
+		
 	}
 	.box {
 	
@@ -351,7 +355,12 @@
 	 right: 5px;
 }
 	.container{
+		min-width: 1140px;
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
 		margin-top: 10em;
+		padding: 5em
 	}
 	.container-slika{
 		margin-bottom: 2em
@@ -362,9 +371,13 @@
 		bottom: -3em;
 	}
 	.slika-tekst{
+		color:black;
+		background: rgba(214,214,214,1.00)
 	}	
 }
-
+	.container-slika{
+		color:black;
+	}
 	</style>
 
 	
@@ -423,8 +436,8 @@
 					</div>
 				</div>	
 		</div>
-			<div class="podvlaka"></div>
 		</div>	
+			<div class="podvlaka"></div>
 		
 		<div class="container-slika">		
         <div class="item">
@@ -438,8 +451,8 @@
 					</div>
 				</div>	
 		</div>
-			<div class="podvlaka"></div>
 		</div>
+			<div class="podvlaka"></div>
 		
 		<div class="container-slika">		
         <div class="item">
@@ -453,9 +466,9 @@
 					</div>
 				</div>	
 		</div>
-			<div class="podvlaka"></div>
 		</div>
 		
+			<div class="podvlaka"></div>
 		<div class="container-slika">		
         <div class="item">
 			<a href="galerijaa/fantasy-2964231_1920.jpg" data-lightbox="photos"><img class="img-fluid" src="galerijaa/fantasy-2964231_1920.jpg"></a>
@@ -468,9 +481,9 @@
 					</div>
 				</div>	
 		</div>
-			<div class="podvlaka"></div>
+			
 		</div>	
-				
+				<div class="podvlaka"></div>
 				
     </div>
 </div>
