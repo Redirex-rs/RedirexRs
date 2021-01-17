@@ -32,8 +32,7 @@
     background-position: center center;
 }
 	
-	.row {
-		margin: auto;
+	.row1 {
 		padding-bottom: 1em
 	}
 	.row .row{
@@ -41,7 +40,6 @@
 	    text-align: center;
 		width: 100%;
 		align-content: center center;
-		margin: auto;
 		display: table
 	}
 	
