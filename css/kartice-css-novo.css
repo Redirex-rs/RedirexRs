@@ -253,13 +253,22 @@ display: flex;
 .icon-bar:hover{
 			z-index: 9999999
 		}
-
+	.facebook, .instagram, .youtube, .twitter, .web {
+		
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	}	
+	
+	
 .facebook {
   background: #3B5998;
   color: white;
 width: 25%;
 height: 1.8em;	
 padding: 2px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	
 }
 
 .twitter {
