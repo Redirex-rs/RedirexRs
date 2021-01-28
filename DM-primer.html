@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
 
-<title>Galerija</title>
+<title>DM security</title>
 <meta name="Description" content="Poslovni katalog firmi i svih ostalih usluga na teritoriji Srbije. Struktura sajta je podeljena na okruge i opštine radi lakšeg pretraživanja i oglašavanja" >	
 <meta name="google-site-verification" content="googlea157b9b90b885cb9.html"> 
 <link rel="canonical" href="https://redirex.rs">	
@@ -50,6 +50,18 @@
 	
 <!--FOOTER-->	
 	<style>
+		@media (max-height: 768px){
+		.footer{
+			width: 100%;
+			display: block;
+			background: #212529	;
+			margin-top: 15vh;
+			padding-top: 3vh;
+			text-align: center;
+			
+		}
+		}
+		@media (min-height: 768px)	{
 		.footer{
 			width: 100%;
 			display: flex;
@@ -59,6 +71,7 @@
 			text-align: center;
 			
 		}	
+		}
 	</style>
 	
 <!--FOOTER-->	
@@ -66,9 +79,15 @@
 		html{
 			scroll-behavior: smooth;
 		}
-		@media(max-height: 768px){
+		
+		@media (max-height: 768px){
+			
 		body{
-			background: white
+background-image: url("tech-3041437.jpg");
+	background-size:auto;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
 		}
 		.navbar{
 			background: black;
@@ -81,15 +100,19 @@
 			background: rgba(229,229,229,1.00)
 		}
 		.banner{
-			width: 100%;
 			padding: 1em;
-			display: block;
+			background: rgba(255,255,255,0.76);
 		}
 		.banner img{
+			width: 100%;
 		display: block;
-		margin: auto;
-		width: inherit;
+			
 		}
+			
+.card{
+	display: block;
+	width: 21em;
+}
 			.main-body{
 				display: flex;
 				width: 95%;
@@ -98,25 +121,19 @@
 			.body-left{
 				display: flex;
 				flex-wrap: wrap;
-				width: 70%;
-				margin: 0.5em;
-			}
-			.body-right{
-				display: block;
-				border: 1px solid red;
-				width: 30%;
+				width: 100%;
 				margin: 0.5em;
 			}
 			.kartica-info{
 				background: white;
-				border-bottom: 2px solid black;
-				border-right: 2px solid black;
-				border-top: 1px solid black;
-				border-left: 1px solid black;
+				border-bottom: 3px solid #4f4f4f;
+				border-right: 3px solid #4f4f4f;
+				border-top: 1px solid #4f4f4f;
+				border-left: 1px solid #4f4f4f;
 				display: block;
-				width: 45%;
+				width: 100%;
 				padding: 0.5em;
-				margin: 1em;
+				margin: 0.5em;
 				font-weight: 600;
 				border-radius: 5px;
 			}
@@ -140,8 +157,77 @@
 				font-family: 'Yanone Kaffeesatz', sans-serif;
 				text-align: center;
 			}
+			.detaljnije a{
+				color: black;
+				float: right;
+				margin-right:1em; 
+			}
+			.footer-kontakt{
+				display: block;
+				width: 100%;
+				padding: 1em;
+				padding-right: 2em;
+			}
+			.footer-kontakt p{
+				color: #fff;
+				font-size: 0.7em;
+				
+			}
+			.kontakt-title{
+				color: #868e96;
+				font-size: 2em;
+				
+			}
+			.footer-link{
+				display: block;
+				width: 100%;
+				padding: 1em;
+				border-bottom: 1px solid #4f4f4f
+			}
+			.footer-link a{
+				display: block;
+				color: #fff;
+				
+			}
+			.link-title{
+				color: #868e96;
+				font-size: 2em;
+				
+			}
+			.footer-filijale{
+				width: 100%;
+				display: flex;
+				flex-wrap: wrap;
+				padding: 0.6em;
+				
+			}
+			.petrovac, .pozarevac, .gradiste, .kucevo {
+				width: 45%;
+				margin: auto;
+				
+			}
+			.petrovac, .pozarevac, .gradiste, .kucevo p{
+				color: #fff;
+				
+			}
+			.title-fil{
+				color: #868e96;
+				margin-bottom: 0.3em;
+			}
+			.footer-content{
+				margin: auto;
+				display: block;
+				flex-wrap: wrap;
+				width: 100%;
+			}
 		}
-		@media(min-height: 768px){
+		
+		@media (min-height: 768px){
+			
+.card{
+	display: block;
+	width: 28vw;
+}
 		body{
 background-image: url("tech-3041437.jpg");
 	background-size:cover;
@@ -275,10 +361,6 @@ background-image: url("tech-3041437.jpg");
 			}
 		}
 		
-.card{
-	display: block;
-	width: 28vw;
-}
 .grid__item {
 	margin: 1rem;
   background-color: #fff;
@@ -433,7 +515,7 @@ background-image: url("tech-3041437.jpg");
 </nav>
 	
 <div class="banner">
-	<img src="galerijaa/naslovna.jpg" alt="">	
+	<img style="banner-img" src="galerijaa/naslovna.jpg" alt="">	
 </div>
 	
 	
