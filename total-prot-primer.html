@@ -81,46 +81,82 @@
 		
 		@media (max-height: 768px){
 			
+.card{
+	display: block;
+	width: 28vw;
+}
 		body{
-background-image: url("tech-3041437.jpg");
-	background-size:auto;
+background-image: url("#");
+	background-size:cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-position: center;
+			background-position: center;
 		}
-		.navbar{
+			.navbar{
 			background: black;
 			border-bottom: 1px solid #4f4f4f;
 		}
 		.navbar-brand img{
-			width: 10em;
+			width: 3em;
 		}
+			.navbar ul{
+				padding-left: 4em;
+				
+			}
 		.dropdown-menu .dropdown-item:hover{
 			background: rgba(229,229,229,1.00)
 		}
 		.banner{
-			padding: 1em;
-			background: rgba(255,255,255,0.76);
-		}
-		.banner img{
 			width: 100%;
-		display: block;
-			
+			padding: 1em;
+			background: #212529;
+			text-align: center;
+			font-family: 'Yanone Kaffeesatz', sans-serif;
 		}
-.card{
-	display: block;
-	width: 18.5em;
-}
+			
+			h9{
+				font-size: 4em;
+				color: #fff
+			}
+			h4{
+				color: #fff;
+			}
+			
 			.main-body{
 				display: flex;
 				width: 95%;
 				margin: auto;
+				margin-top: 5em;
 			}
 			.body-left{
 				display: flex;
 				flex-wrap: wrap;
 				width: 100%;
 				margin: 0.5em;
+			}
+			
+			.main-text p{
+				width: 90%;
+				margin: auto;
+				text-align: center;
+				padding: 0.5em;
+				
+			}
+			.kartice{
+				display: block;
+				width: 90%;
+				margin: auto;
+				margin-top: 5em;
+			}
+			.kartica-main{
+				width: 90%;
+				margin: auto;
+				height: 15em;
+				text-align: center;	
+			}
+			.kartica-main p{
+				font-size: 1.5em;
+				font-family: 'Yanone Kaffeesatz', sans-serif;
 			}
 			.kartica-info{
 				background: white;
@@ -129,42 +165,55 @@ background-image: url("tech-3041437.jpg");
 				border-top: 1px solid #4f4f4f;
 				border-left: 1px solid #4f4f4f;
 				display: block;
-				width: 100%;
+				width: 45%;
 				padding: 0.5em;
 				margin: 0.5em;
 				font-weight: 600;
 				border-radius: 5px;
 			}
-			.title-info{
-				font-family: 'Yanone Kaffeesatz', sans-serif;
-				font-size: 2em;
-				text-align: center;
+			.onama{
+				margin-top: 15em;	
+				display: block;
+				width: 100%;
+				height: 20em;
+				position: relative;
 			}
-			.kartica-content{
-				display: flex;
+			.onama-banner{
+				display: block;
+				width: 100%;
+				height: 20em;
+				top: -20%;
+				background-image: url("galerijaa/logo-01-ayylmao.png");
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: center;
+				transform: rotate(30deg);
+				opacity: 0.4;
+				position: absolute;
+				
+			}
+			h1{
+				font-size: 4em;
+				font-family: 'Yanone Kaffeesatz', sans-serif;
+			}
+			.onama-tekst{
+				display: block;
+				bottom:2%;
 				padding: 1em;
-			}
-			.kartica-content img{
-				display: block;
-				height: 3.5em;
-			}
-			.kartica-content p{
-				display: block;
-				padding: 0.5em;
-				font-size: 1em;
-				font-family: 'Yanone Kaffeesatz', sans-serif;
+				position: absolute;
+				z-index: 2;
 				text-align: center;
+				font-size: 1.5em;
+				font-family: 'Yanone Kaffeesatz', sans-serif;
 			}
-			.detaljnije a{
-				color: black;
-				float: right;
-				margin-right:1em; 
-			}
+			
 			.footer-kontakt{
 				display: block;
 				width: 100%;
+				height: 20em;
 				padding: 1em;
-				padding-right: 2em;
+				margin: auto;
+				text-align: center;
 			}
 			.footer-kontakt p{
 				color: #fff;
@@ -179,8 +228,14 @@ background-image: url("tech-3041437.jpg");
 			.footer-link{
 				display: block;
 				width: 100%;
-				padding: 1em;
-				border-bottom: 1px solid #4f4f4f
+				height: 20em;
+				margin: auto;
+				text-align: center;
+			}
+			.footer-link p{
+				display: block;
+				color: #fff;
+				
 			}
 			.footer-link a{
 				display: block;
@@ -193,15 +248,13 @@ background-image: url("tech-3041437.jpg");
 				
 			}
 			.footer-filijale{
-				width: 100%;
+				width: 50%;
 				display: flex;
 				flex-wrap: wrap;
-				padding: 0.6em;
 				
 			}
 			.petrovac, .pozarevac, .gradiste, .kucevo {
-				width: 45%;
-				margin: auto;
+				width: 50%;
 				
 			}
 			.petrovac, .pozarevac, .gradiste, .kucevo p{
@@ -299,11 +352,11 @@ background-image: url("#");
 				display: flex;
 				width: 90%;
 				margin: auto;
-				margin-top: 2em;
+				margin-top: 5em;
 			}
 			.kartica-main{
 				width: 30%;
-				margin: 1em;
+				margin: auto;
 				height: 15em;
 				text-align: center;	
 				
@@ -327,31 +380,46 @@ background-image: url("#");
 				border-radius: 5px;
 			}
 			.onama{
-				
+				margin-top: 10em;	
 				display: block;
 				width: 100%;
 				height: 20em;
+				position: relative;
 			}
 			.onama-banner{
 				display: block;
 				width: 100%;
 				height: 20em;
-				border: 1px solid red;
 				background-image: url("galerijaa/logo-01-ayylmao.png");
 				background-size: contain;
 				background-repeat: no-repeat;
 				background-position: center;
-				opacity: 0.5;
+				transform: rotate(30deg);
+				opacity: 0.4;
+				position: absolute;
 				
 			}
+			h1{
+				font-size: 4em;
+				font-family: 'Yanone Kaffeesatz', sans-serif;
+			}
 			.onama-tekst{
+				display: block;
+				bottom: 2%;
+				padding: 1em;
 				position: absolute;
+				z-index: 2;
+				text-align: center;
+				font-size: 1.5em;
+				font-family: 'Yanone Kaffeesatz', sans-serif;
 			}
 			
 			.footer-kontakt{
 				display: block;
-				width: 25%;
+				width: 30%;
+				height: 20em;
 				padding: 1em;
+				margin: auto;
 				padding-right: 2em;
 			}
 			.footer-kontakt p{
@@ -366,8 +434,15 @@ background-image: url("#");
 			}
 			.footer-link{
 				display: block;
-				width: 25%;
+				width: 30%;
+				height: 20em;
 				padding: 1em;
+				margin: auto;
+			}
+			.footer-link p{
+				display: block;
+				color: #fff;
+				
 			}
 			.footer-link a{
 				display: block;
@@ -474,7 +549,7 @@ background-image: url("#");
 <body>
 	
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="DM-primer.html"><img src="galerijaa/total-prot-logo.jpg" alt=""></a>
+  <a class="navbar-brand" href="total-prot-primer.html"><img src="galerijaa/total-prot-logo.jpg" alt=""></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -541,14 +616,16 @@ background-image: url("#");
 	   
    </div>
 		
-
+</div> 
 	
-</div> 	
-	
+<div class="#" id="onama"></div>
 <div class="onama">
 	
    <div class="onama-banner"></div>	
-   <div class="onama-tekst">asdfasdfasdfasdfasdf</div>
+   <div class="onama-tekst"><h1>O nama</h1>
+	<p>Visoko profesionalna agencija za pružanje usluga fizičko-tehničkog obezbeđenja. Osnovana 2008. godine u Požarevcu. U samom početku agencija je zapošljavala dva lica. Vremenom, agencija je poprimila veličinu manje kompanije. Veštim odabirom profesionalne opreme i ljudstva stvorili smo jednu od najjačih firmi za obezbeđenje lica i objekata na ovom prostoru sa tendencijom rasta i širenja naših filijala i broja korisnika. Trenutno obezbeđujemo teritoriju Požarevca, Velikog Gradišta, Golubca, Smedereva, Žabara i Kučeva.</p>
+	
+	</div>
 </div>	
 
 <div class="footer">
@@ -558,62 +635,41 @@ background-image: url("#");
 	   
 			 <hr class="solid" style="border-top: 1px solid gray; width: 90%; margin: auto;margin-bottom: 1em; padding-bottom: 0.5em">
 	   <p>
-<b>Poslovno ime:</b> Privredno društvo DM OBEZBEĐENJE d.o.o. Petrovac
-<br>
-<b>Skraćeno poslovno ime:</b> DM OBEZBEĐENJE d.o.o.
-<br>
-<b>PIB:</b> 101586468
-<br>
-<b>DM OBEZBEĐENJE d.o.o. je obveznik PDV-a, PDV identifikacioni broj:</b> 123467709
-<br>
-<b>Registarski broj:</b> 0786607772
-<br>
-<b>Matični broj:</b> 06607772
-<br>
-<b>Sedište preduzeća:</b> ul. Srpskih vladara 288, 12300 Petrovac na Mlavi
-<br>
-<b>NLB BANKA:</b> 310-155647-36</p>
+Adresa: <br>
+Nemanje Tomića 1/15
+12000 Požarevac <br><br>
+Email: <br>
+totalprotectorpo@gmail.com<br>
+total_protector@open.telekom.rs<br><br>
+Kontakt Telefoni:<br>
+069/35-95-157; 069/13-23-233<br>
+064/35-95-157; 012/722-55-08
+	  </p>
    </div>	
+   <div class="footer-link">
+	   <div class="link-title"><b>Radno vreme</b></div>
+	   
+			 <hr class="solid" style="border-top: 1px solid gray; width: 90%; margin: auto;margin-bottom: 1em; padding-bottom: 0.5em">
+	
+<p>Administracija 08-17h <br><br>
+Tehnička Služba 08-17h<br><br>
+Dežurna Služba Služba 00-24h<br><br>
+Nedelja neradan dan osim dežurne službe, tehnical support</p>
+	   
+	</div>		
    <div class="footer-link">
 	   <div class="link-title"><b>Linkovi sajta</b></div>
 	   
 			 <hr class="solid" style="border-top: 1px solid gray; width: 90%; margin: auto;margin-bottom: 1em; padding-bottom: 0.5em">
 	
 	   <a href="#vrh">Vrh stranice</a>
-	   <a href="#">O nama</a>
+	   <a href="#">Servisi</a>
+	   <a href="#">Usluge</a>
 	   <a href="#">Kontakt</a>
+	   <a href="#onama">O nama</a>
 	   
 	</div>	
-   <div class="footer-filijale">
-	    <div class="petrovac">
-		<div class="title-fil"><b>PETROVAC NA MLAVI</b></div>
-			<p>
-12300 Petrovac na Mlavi <br>
-Srpskih vladara 288 <br>
-+381 (0)12 334 505;<br> +381 (0)12 334 805</p>
-		</div>
-	    <div class="pozarevac">
-		<div class="title-fil"><b>POŽAREVAC</b></div>
-			<p>
-12000 Požarevac <br>
-Čede Vasovića 23/1<br>
-+381 (0)12 532-287;<br> +381 (0)12 532-297</p>
-		</div>
-	    <div class="gradiste">
-		<div class="title-fil"><b>VELIKO GRADIŠTE</b></div>
-			<p>
-12220 Veliko Gradište<br>
-Voje Bogdanovića 3<br>
-+381 (0)12 61-399;<br> +381 (0)64 825 36 26</p>
-		</div>
-	    <div class="kucevo">
-		<div class="title-fil"><b>KUČEVO</b></div>
-			<p>
-12240 Kučevo<br>
-Svetog Save 100<br>
-+381 (0)12 850-669</p>
-		</div>
-	</div>
+   
 </div>
 </div>	
 
