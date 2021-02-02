@@ -15,7 +15,6 @@
 			width: 100%;
 			display: flex;
 			background: #212529	;
-			margin-top: 15vh;
 			padding-top: 3vh;
 			text-align: center;
 			
@@ -108,7 +107,7 @@
 			}
 			.o-nama{
 				display: block;
-				width: 90%;
+				width: 100%;
 				margin: auto;
 				padding: 1em;
 				background: #fff;
@@ -275,7 +274,7 @@
 			}
 			.o-nama{
 				display: block;
-				width: 90%;
+				width: 100%;
 				margin: auto;
 				padding: 2em;
 				background: #fff;
