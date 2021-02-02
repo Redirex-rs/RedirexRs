@@ -1,5 +1,5 @@
 
-		@media (max-height: 768px){
+		@media (max-width: 768px){
 		.footer{
 			width: 100%;
 			display: block;
@@ -10,7 +10,7 @@
 			
 		}
 		}
-		@media (min-height: 768px)	{
+		@media (min-width: 768px)	{
 		.footer{
 			width: 100%;
 			display: flex;
@@ -29,7 +29,7 @@
 			scroll-behavior: smooth;
 		}
 		
-		@media (max-height: 768px){
+		@media (max-width: 768px){
 			
 			.banner img{
 				display: block;
@@ -101,6 +101,7 @@
 			}
 			.tekst-deo p{
 				margin: 1vw;
+				padding: 1.2em;
 				display: block;
 			}
 			.slika-deo img{
@@ -200,7 +201,7 @@
 			}
 		}
 		
-		@media (min-height: 768px){
+		@media (min-width: 768px){
 			.banner img{
 				display: block;
 				margin: auto;
