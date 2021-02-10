@@ -314,7 +314,7 @@
 	.novosti{
 		display: flex;
 		width: 100%;
-		background-image: url("galerijaa/prirod muzej/fog-3622519_1920.jpg");
+		background: white;
 		border-bottom: 3px solid #212529;
 	}
 	.novosti-deo{
