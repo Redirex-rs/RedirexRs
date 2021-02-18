@@ -63,1247 +63,169 @@
 <script src="JSS/Filterovanje1.js"></script>
 <script src="src/selectstyle.js"></script>	
 <script src="JSS/pop-up-modal.js"></script>	
-	
-<style>
-	*{
-		outline: none;
-	}
-	body{
-		background-image: repeating-linear-gradient(90deg, hsla(57,0%,42%,0.09) 0px, hsla(57,0%,42%,0.09) 1px,transparent 1px, transparent 60px),repeating-linear-gradient(0deg, hsla(57,0%,42%,0.09) 0px, hsla(57,0%,42%,0.09) 1px,transparent 1px, transparent 60px),repeating-linear-gradient(0deg, hsla(57,0%,42%,0.09) 0px, hsla(57,0%,42%,0.09) 1px,transparent 1px, transparent 10px),repeating-linear-gradient(90deg, hsla(57,0%,42%,0.09) 0px, hsla(57,0%,42%,0.09) 1px,transparent 1px, transparent 10px),linear-gradient(90deg, rgb(20,20,20),rgb(20,20,20));
-		overflow-x: hidden
-	}
-	
-
-
-  
-</style>
-<style>
-	
-	
-
-	body{
-		width: 100%;
-	}
-
-	
-	.table{
-		color: white;
-	}
-
-	a {
-    text-decoration: none !important;
-}
-	
-	
-
-	.btn-primary{
-		left: 0;
-		bottom: 0;
-		position: absolute;
-		width: 100%
-	}
-
-	
-	.side-content1{
-		margin: auto;
-		display: table
-	}
-	
-@media (max-width: 768px){
-		
-		body{
-			background-color: black;
-		}
-		
-	           	.logo-img-nav{
-	           	height: 2em;
-	           	z-index: 5	
-	           }
-		
-                .flex-container3  img {
-            	height: 1.5em;
-                width: 1.5em;
-                align-content: right;
-            }
-
-                .flex-container3 {
-                        display:inline-flex;
-                        justify-content: center;
-		                padding-bottom:m;
-	                    padding-top: 0.5em;
-                        margin: auto;
-	                    flex-wrap: wrap;
-                 	}
-	
-                .flex-container3 > div {
-                		 width: 13em;
-					margin: 0.3em;
-					font-size: 0.75em
-                	 }
-                .flex-container3 > a > text {
-                		vertical-align: middle
-                	}
-                		
-	}
-	
-	.card{
-		width: 13em;
-		height: 17em;
-		margin: auto
-	}
-	
-	.col-*{
-		border: 5px solid red
-	}
-	
-	.listing-small-content a {
-		color: white
-	}
-	
-	
-	
-	
-	.card-img-top-1{
-		margin:auto;
-	    width:10em;	
-	}
-	
-	.card-img-top{
-		margin:auto;
-	    width:10em;
-		margin-top: 0.5em	
-	}
-	
-	
-	
-	
-	.right{
-	  position: absolute;
-      top: 0.5%;
-	  right: 0px;
-	  float: right;
-	  margin: auto;
-	  padding: 5em
-		  
-		
-	}
-	
-	.sub-footer{
-		padding: 1em;
-		padding-bottom: 2em;
-		align-content: left;
-		display: table;
-	}
-	
-	.sub-footer > a {
-		display: inline-block;
-		color: white;
-		margin-left: 4em;
-		font-size: 0.9em
-	}
-	
-	.footer-img{
-		margin: auto
-	}
-	
-	.dugme-search{
-	display: block;	
-	height: 100%;
-}
-	@media (min-width: 768px){
-		.dugme-search i {
-	width: 20em;
-	color: white;
-	display:block;
-	margin:auto;
-    border-radius: 7px;
-	box-shadow: 0 0 5px #db6400;
-	padding: 1em;
-	background: black		
-	}
-		
-		.dugme-search{
-	display: block;	
-	height: 100%;
-			padding-top: 5em
-	}
-	}
-	
-	@media (max-width: 768px){
-.dugme-search i {
-	width: 10em;
-	color: white;
-	display:block;
-	margin:auto;
-	border: 2px solid #dadada;
-    border-radius: 7px;
-	box-shadow: 0 0 5px #9ecaed;
-	padding: 1em
-	}
-}
-	.pretrage {
-		display: block;
-		width: 100%;
-		height: 20em;
-	}
-	.pretrage-stranica{
-		display: block;
-	}
-	
-	*{
-		font-family:  'Russo One', sans-serif;
-		box-sizing: border-box
-	}
-	
-	
-	.col- {
-		padding-bottom: 1em
-	}
-	
-	.widgettitle{
-		width: auto;
-	}
-	.widget .widget-inner {
-    background-size: cover;
-    background-position: center center;
-}
-	
-	.row {
-		margin: auto;
-		padding-bottom: 1em
-	}
-	.row .row{
-		box-sizing: border-box;
-	    text-align: center;
-		width: 100%;
-		align-content: center center;
-		margin: auto;
-		display: table
-	}
-	
-	.box-content{
-		align-content: left;
-		font-size: 0.9em;
-		margin: auto;
-		display: table
-			
-	}
-	
-	.box-body{
-		margin: auto;
-		align-items: center
-	}
-	
-	.box{
-		margin: 0px;
-		display: table
-	
-	} 
-	
-	.box-inner{
-		align-content: left;
-		display: table;
-		margin: auto
-	}
-	
-	.search-container{
-		display:flex;
-		
-	}
-	
-	@media (max-width: 768px){
-.glavni-menu{
-		width: 100%;
-		height: 2em;
-		background-color: rgba(0,0,0,0.022);
-		font-size: 2em;
-		border-bottom: 1px solid white;
-		justify-content: center;
-		display: block;
-		text-align: center;
-		background: #db6400;
-		text-shadow:
-    -1.1px -1.1px 0 #000,
-    1.1px -1.1px 0 #000,
-    -1.1px 1.1px 0 #000,
-    1.1px 1.1px 0 #000; 
-		
-	}
-	
-.glavni-menu > p {
-		width: 10em;
-		vertical-align: middle;
-		justify-content: center;
-		color: white;
-		display: block;
-		margin: auto
-	}
-	}
-	
-	@media (min-width: 768px){
-.glavni-menu{
-	
-		width: 100%;
-		height: 2em;
-		background-color: rgba(0,0,0,0.02);
-		font-size: 2em;
-		border-bottom: 1px solid white;
-		justify-content: center;
-		display: block;
-		text-align: center;
-		color: white;
-		background: black;
-		border-bottom:2px solid #db6400;
-    text-shadow:
-    -1.1px -1.1px 0 #000,
-    1.1px -1.1px 0 #000,
-    -1.1px 1.1px 0 #000,
-    1.1px 1.1px 0 #000; 
-	}
-	
-.glavni-menu > p {
-		width: 20em;
-		vertical-align: middle;
-		justify-content: center;
-		color: white;
-		display: block;
-		margin: auto
-	}
-	}
-	
-	
-*{padding:0;margin:0;}
-
-.float{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:40px;
-	background-color:#0C9;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-	box-shadow: 2px 2px 3px #999;
-}
-
-.my-float{
-	margin-top:22px;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-	
-.column  a {
-	margin: 1em
-}
-
-.masonry { /* Masonry container */
-  column-count: 3;
-  column-gap: 1em;
-}
-
-.column {
-	background-color: #eee;
-  display: inline-block;
-  margin: 0 0 1em;
-  width: 100%;
-}
-
-
-.footer {
-  margin-top: auto;
-  border-top: 5px solid #db6400;
-  width: 100%;		  
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  bottom: 0	
-}
-
-	
-.modal {
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        opacity: 0;
-        visibility: hidden;
-        transform: scale(1.1);
-        transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
-	z-index: 99
-    }
-.modal-content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: white;
-        padding: 1rem 1.5rem;
-        width: 24rem;
-        border-radius: 0.5rem;
-    }
-.close-button {
-        float: right;
-        width: 1.5rem;
-        line-height: 1.5rem;
-        text-align: center;
-        cursor: pointer;
-        border-radius: 0.25rem;
-        background-color: lightgray;
-    }
-.close-button:hover {
-        background-color: darkgray;
-    }
-.show-modal {
-        opacity: 1;
-        visibility: visible;
-        transform: scale(1.0);
-        transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
-    }
-
-.inactiveLink {
-   pointer-events: none;
-   cursor: default;
-   color: black;	
-}
-
-
-/* The container <div> - needed to position the dropdown content */
-
-
-	
-.beograd-dugme{
-		background: rgba(12,64,118,0000);
-  color: white;
-  font-size: 1em;
-  border: none;
-  cursor: pointer;
-	}
-	.beograd-dugme:hover{
-		background-color: rgba(17,93,172,1.00);
-		color: white
-	}
-	
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;} 
-
-.arrowup{
-		display: table;
-		margin:auto;
-		margin-bottom: 0.2em
-	}
-	
-.loader {
-     position: fixed;
-    z-index: 99;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.load-slike{
-		width: 20em
-	}	
-
-.load-slike > img {
-    width: 20em;
-	display: block;
-	margin: auto;
-	position: relative;
-}
-	
-
-.loader.hidden {
-    animation: fadeOut 1.3s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes fadeOut {
-    100% {
-        opacity: 0;
-        visibility: hidden;
-    }
-}
-	
-.banner-text {
-  position: relative;
-  width: 100%;
-  margin-bottom: 1rem;
-  border-bottom: 1px solid gray
-}
-
-
-@media (min-width: 768px) {
-	.banner-title {
-		display: block;
-  font-size: 1em;
-  background: rgba(0, 0, 0, 0.00);
-  width: 30em;
-  height: 15em;
-  position: absolute;
-  color: rgb(245, 245, 245);
-  text-shadow: 5px 5px 5px #000, 5px 5px 5px #000, 5px 5px 5px #000;
-  top: 15%;
-  right: 10%;
-  text-align: center;
-			
-}
-}
-	
-@media (min-width: 768px) {
-	.banner-text > img {
-  height: 24em;
-  border: 1px solid pink		
-}
-	
-  .banner-text {
-    height: 26em;
-  }
-h1{
-		font-size: 3em;
-	    margin-top: 1em;
-	    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"
-	}
-h3{
-		font-size: 2em
-	}	
-	}
-@media (max-width: 768px) {
-	li{
-		font-size: 0.9em
-	}	
-	
-	.banner-text > img {
-  height: 10em
-}
-	
-  .banner-text {
-    height: 150px;
-  }
-	h2{
-		font-size: 1.5em;
-		margin-top: 1em
-	}	
-	body{
-		background-image: repeating-linear-gradient(90deg, hsla(57,0%,42%,0.09) 0px, hsla(57,0%,42%,0.09) 1px,transparent 1px, transparent 60px),repeating-linear-gradient(0deg, hsla(57,0%,42%,0.09) 0px, hsla(57,0%,42%,0.09) 1px,transparent 1px, transparent 60px),repeating-linear-gradient(0deg, hsla(57,0%,42%,0.09) 0px, hsla(57,0%,42%,0.09) 1px,transparent 1px, transparent 10px),repeating-linear-gradient(90deg, hsla(57,0%,42%,0.09) 0px, hsla(57,0%,42%,0.09) 1px,transparent 1px, transparent 10px),linear-gradient(90deg, rgb(20,20,20),rgb(20,20,20));
-		height: 90%;
-		background-repeat: repeat;
-	}
-	
-	}
-
-
-	
-	
-	@media (max-width: 768px){
-		
-		/* Popup box BEGIN */
-.hover_bkgr_fricc{
-    background:rgba(0,0,0,.4);
-    display:none;
-    height:100%;
-    position:fixed;
-    text-align:center;
-    top:0;
-    width:100%;
-    z-index:10000;
-}
-.hover_bkgr_fricc .helper{
-    display:inline-block;
-    height:100%;
-    vertical-align:middle;
-}
-.hover_bkgr_fricc > div {
-    background-color: #fff;
-    box-shadow: 10px 10px 60px #555;
-    display: inline-block;
-    height: auto;
-    max-width: 90%;
-    min-height: 10em;
-    vertical-align: middle;
-    position: relative;
-    border-radius: 8px;
-    padding: 15px 5%;
-}
-.popupCloseButton {
-    background-color: #fff;
-    border: 3px solid #999;
-    border-radius: 50px;
-    cursor: pointer;
-    display: inline-block;
-    font-family: arial;
-    font-weight: bold;
-    position: absolute;
-    top: -20px;
-    right: -20px;
-    font-size: 25px;
-    line-height: 30px;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-}
-.popupCloseButton:hover {
-    background-color: #ccc;
-}
-.trigger_popup_fricc {
-    cursor: pointer;
-    display: inline-block;	
-}
-/* Popup box BEGIN */
-		
-		.ETH{
-			font-size: 0.9em
-		}
-	}
-
-	@media (min-width: 768px){	
-/* Popup box BEGIN */
-.hover_bkgr_fricc{
-    background:rgba(0,0,0,.4);
-    display:none;
-    height:100%;
-    position:fixed;
-    text-align:center;
-    top:0;
-    width:100%;
-    z-index:10000;
-}
-.hover_bkgr_fricc .helper{
-    display:inline-block;
-    height:100%;
-    vertical-align:middle;
-}
-.hover_bkgr_fricc > div {
-    background-color: #fff;
-    box-shadow: 10px 10px 60px #555;
-    display: inline-block;
-    height: auto;
-    max-width: 230em;
-    min-height: 10em;
-    vertical-align: middle;
-    width: 60%;
-    position: relative;
-    border-radius: 8px;
-    padding: 15px 5%;
-}
-.popupCloseButton {
-    background-color: #fff;
-    border: 3px solid #999;
-    border-radius: 50px;
-    cursor: pointer;
-    display: inline-block;
-    font-family: arial;
-    font-weight: bold;
-    position: absolute;
-    top: -20px;
-    right: -20px;
-    font-size: 25px;
-    line-height: 30px;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-}
-.popupCloseButton:hover {
-    background-color: #ccc;
-}
-.trigger_popup_fricc {
-    cursor: pointer;
-    display: inline-block;	
-}
-/* Popup box BEGIN */
-	}
-	
-	@media (max-width: 768px){
-	
-	.section-title-2{
-		margin-top: 5em;
-	}
-	.section-title-2 h2{
-		color: white;
-		font-size: 2em;
-		padding: 1em;
-		margin-top: 2em
-	}		
-	.banner img {
-		position: absolute;
-		width: 100%;
-		height: 30em;
-		z-index: -3333
-		
-		
-	}
-	.banner-title {
-color: white;
-display: block;
-text-align: center;	
-text-shadow: 5px 5px 5px #000, 5px 5px 5px #000, 5px 5px 5px #000;
-width: 100%;
-height: 10em;
-padding-top: 2em;
-		top: 150%
-			
-}	
-	.banner-kartica{
-		display: block;
-			width: 20em;
-			height: 25em;
-		background: white;
-		margin: auto
-	}
-	.section-title-1{
-		margin-top: 5em;
-		color: white;
-	}
-	.section-title-2{
-		margin-top: 5em;
-	}	
-	.banner-kartica > h6{
-		display: block;
-		padding-top: 1em;
-		text-align: center;
-		font-size: 0.7em
-	}
-	.banner-kartica > h3{
-		display: block;
-		text-align: center;
-		font-size: 1.5em
-	}
-	.banner-kartica > p{
-		display: block;
-		text-align: center;
-		font-size: 0.8em;
-		padding-top:0.5em;
-		width: 80%;
-		margin: auto;
-	}
-	.banner-kartica > h5 {
-		position: absolute;
-		text-align: center;
-		display: block;
-		width: 10em;
-		height: 2em;
-		top: 100%;
-		left: 30%;
-		padding: 0.4em;
-		color: white;
-		background: rgba(3,108,12,1.00);
-		border-radius: 5px;
-		font-size: 0.9em
-	}
-	.nav-item:hover{
-		color: white
-	}
-	.navbar:hover{
-		background: rgba(0,0,0,1.00)
-	}
-	
-	.lista-okruga{
-		display: block;
-		width: 90%;
-		margin: auto;
-	}
-	}
-	
-@media (min-width: 768px){
-	
-	
-.najnovije-kontakt a {
-  display: block;
-  text-align: center;
-  transition: all 0.3s ease;
-  color: white;
-  font-size: 20px;	
-}		
-/* Style the social media icons with color, if you want */
-.najnovije-kontakt a:hover {
-  background-color: #000;
- z-index: 99999999
-}
-
-.najnovije-kontakt:hover{
-			z-index: 9999999
-		}
-
-.facebook {
-  background: #3B5998;
-  color: white;
-width: 25%;
-height: 1.8em;	
-padding: 2px;
-}
-
-.twitter {
-  background: #55ACEE;
-  color: white;
-padding: 5px;
-width: 25%;	
-padding: 2px;
-height: 1.8em;
-}
-	
-.instagram {
-background: rgba(94,15,140,1.00);
-color: white;	
-padding: 5px;
-width: 25%;	
-padding: 2px;
-height: 1.8em;
-	}
-
-.web{
-background: #4f4f4f;
-color: black;
-width: 25%;	
-padding: 5px;
-height: 1.8em;
-	}
-
-.google {
-  background: #dd4b39;
-  color: white;	
-width: 1.7em;	
-padding: 2px;
-height: 1.8em;
-}
-
-.linkedin {
-  background: #007bb5;
-  color: white;	
-width: 1.7em;
-padding: 2px;
-height: 1.8em;
-}
-
-.youtube {
-  background: red;
-  color: white;	
-width: 25%;
-padding: 2px;
-height: 1.8em;
-} 
-
-.redirex{
-background: black;
-color: black;
-width: 25%;
-padding: 5px;
-padding-top: 4%;
-	font-size: 0.6em;
-	border: 1px solid orange
-		
-	}
-	
-.najnovije-kontakt {
-display: flex;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-border-top: 3px solid white;	
-	left: 0;
-	
-}
-
-	
-}
-	
-	@media (min-width: 768px){
-		.banner img {
-		position: absolute;
-		width: 100%;
-		height: 29.5em;
-		z-index: -3333
-		
-		
-	}
-		
-			.banner-kartica{
-		position: absolute;
-		width: 30em;
-		border: 2px solid white;
-		top: %;
-		left: 2%;
-		background: white;
-		border-radius: 4px;
-	}
-	.section-title-1{
-		margin-top: 3em;
-		color: white;
-	}
-	.section-title-2{
-		margin-top: 5em;
-	}
-	.section-title-2 h2{
-		color: white;
-		font-size: 2em;
-		padding: 1em;
-		margin-top: 2em
-	}
-	.banner-kartica > h6{
-		display: block;
-		padding-top: 1em;
-		text-align: center;
-		font-size: 0.8em
-	}
-	.banner-kartica > h3{
-		display: block;
-		text-align: center;
-		font-size: 2em
-	}
-	.banner-kartica > p{
-		display: block;
-		text-align: center;
-		font-size: 1em;
-		padding-top:0.5em;
-		width: 80%;
-		margin: auto;
-	}
-	.banner-kartica > h5 {
-		position: absolute;
-		text-align: center;
-		display: block;
-		width: 12em;
-		height: 2em;
-		bottom: 34%;
-		left: 25%;
-		padding: 0.4em;
-		color: white;
-		background: rgba(3,108,12,1.00);
-		border-radius: 5px
-	}
-	.nav-item:hover{
-		color: white
-	}
-	.navbar:hover{
-		background: rgba(0,0,0,1.00)
-	}
-		
-		
-		.okruzi-i-opstine
-	{
-		display: flex;
-		width: 100%;
-		flex-wrap: wrap;
-		padding: 2em
-	}
-		.dropdown img {
-		position: absolute;
-	    bottom: 0;
-		right: 0;
-		height: 4em;
-		width: 4em;
-		margin: 0.3em;
-		opacity: 0.5;
-	}
-		.lista-okruga{
-		display: flex;
-		flex-wrap: wrap;
-		width: 100%;
-		margin: auto;
-		padding: 2em;
-	}
-		
-		.dropdown{
-		width: 20%;
-		height: 5em;
-		color: white;
-		padding-top: 0.4em;
-		background: black;
-		border: 0.1em solid #4f4f4f;
-		font-size: 1em;
-		font-family:'Russo One';
-		padding-left: 1em;
-	}
-	.donacije{
-		border: 1px solid gray;
-		border-radius: 10px;
-		padding: 1em
-	}
-	#okruzi{
-	}
-	.okruzi-i-opstine
-	{
-		display: flex;
-		width: 100%;
-		flex-wrap: wrap;
-		margin: auto;
-		padding: 3em;
-		
-	}
-	
-	}
-	
-
-	h1{
-		font-family: 'Russo One', sans-serif;]
-		margin-top: 5em;
-		padding-left: 0.5em
-		}
-	
-
-	
-	.mapa{
-		position: absolute;
-		width: 24em;
-		height: 38em;	
-		right: 0
-	}
-	.mapa img {
-		width: inherit
-	}
-	#Sbanatski{
-		font-size: 0.7em;
-		height: 6.4em;
-	}
-	#Bor-slika{
-		height: 100%;
-		width: 30%;
-		opacity: 0.5;
-	}
-	
-	@media (min-width: 768px){
-			#exampleInputEmail1{
-		width: 27.5em;
-	}
-	#forma-email{
-		margin: 1em
-	}
-	.btn-block{
-		margin-bottom: 1em
-	}
-		.form-control{
-			width: 15em;
-		}
-		.row-novo{
-		display: flex;
-		margin: auto;
-		
-	}	
-		.najnovije{
-		box-sizing: border-box;
-	    text-align: center;
-		margin: auto;
-		display: flex;
-		
-	}
-		.najnovije-kartica{
-			width: 17em;
-			height: 30em;
-			background: black;
-			margin: 0.5em;
-			border-bottom: 3px solid gray
-		}
-		.najnovije-kartica:hover{
-			border: 1px solid #4f4f4f;
-		}
-		.najnovije-slika img{
-			width: 100%;
-		}
-		.najnovije-title{
-			color: white;
-			padding: 0.3em;
-		}
-		.najnovije-tekst p{
-			color: white;
-			padding: 0.6em
-		}
-		.okrug-ime{
-		display: block;
-		margin: 0.5em;
-		border-radius: 10px;
-		background: black;
-		border: 1px solid #4f4f4f;
-		padding: 2px;
-		width: 11em;
-		height: 11em;	
-	}	
-.card-container {
-    perspective: 25em;
-}
-			.pretraga-okruga{
-		left: 15%;
-		width: 30em;
-	}
-	.container{
-		width: 50em;
-		margin: auto;
-	}
-	.form-control{
-		width: 30em
-	}
-	}
-	@media (max-width: 768px){
-			#exampleInputEmail1{
-		width: 15em;
-	}
-	#forma-email{
-		margin: 1em
-	}
-	.btn-block{
-		margin-bottom: 1em
-	}
-		
-		.row-novo{
-		display: block;
-		margin: auto;
-		
-	}	
-		.najnovije{
-		box-sizing: border-box;
-	    text-align: center;
-		margin: auto;
-		display: flex;
-		
-	}
-		
-		.najnovije-kartica{
-			width: 20em;
-			height: 30em;
-			background: black;
-			margin: 0.5em;
-			border-bottom: 3px solid gray
-		}
-		.najnovije-kartica:hover{
-			border: 1px solid #4f4f4f;
-		}
-		.najnovije-slika img{
-			width: 100%;
-		}
-		.najnovije-title{
-			color: white;
-			padding: 0.3em;
-		}
-		.najnovije-tekst p{
-			color: white;
-			padding: 0.6em
-		}
-		.okrug-ime{
-		margin: 0.5em;
-		border-radius: 10px;
-		background: black;
-		border: 1px solid #4f4f4f;
-		padding: 2px;
-		width: 10em;
-		height: 10em;
-			
-	}	
-		.okruzi-i-opstine{
-			
-		display: flex;
-			flex-wrap: wrap;
-		}
-.card-container {
-	
-    perspective: 25em;
-}
-			.pretraga-okruga{
-		width: 10em;
-	}
-	.container{
-		width: 50em;
-		margin: auto;
-	}
-	.form-control{
-		width: 18em
-	}
-	
-	d}
-	
-	.okrug-ime img{
-		display: block;
-		width: 3em;
-		height: 3em;
-		margin: auto
-	}
-	.ime-slika-okruga{
-		display: block;
-		background: black;
-		color: white;
-		padding: 1em;
-		font-size: 1em;
-			
-	}
-	.gradovi-okruga{
-		display: flex;
-		flex-wrap: wrap;
-		width:100%;
-		top: 0;
-		left: 0;
-		background: #000000;
-		border-radius: 10px;
-		color: white;
-		font-size: 0.65em;
-	}
-	.gradovi-okruga a{
-		width: 50%;
-		padding: 5px;
-		padding-bottom: 2px;
-		padding-top: 2px;
-		color: white;
-		margin: auto;
-		border-radius: 10px
-	}
-	.gradovi-okruga a:hover{
-		background: #4f4f4f
-	}
-	.gradovi-okruga-beograd{
-		width: 100%;
-		background: #000000;
-		padding: 5px;
-	} 
-
-
-.card-flip, .card-container {
-    transform-style: preserve-3d;
-    transition: all 0.7s ease;
-}
-
-.card-flip div {
-    backface-visibility: hidden;
-    transform-style: preserve-3d;
-}
-.card-flip {
-    display: grid; grid-template: 1fr / 1fr;
-    grid-template-areas: "frontAndBack";
-    transform-style: preserve-3d;
-    transition: all 0.7s ease;
-}
-
-.front {
-    grid-area: frontAndBack;
-}
-
-.back {
-    grid-area: frontAndBack;
-    transform: rotateY(-180deg);
-}
-
-.card-container:hover .card-flip {
-    transform: rotateY(180deg);
-}
-
-	</style>
-
+<link rel="stylesheet" href="css/index-css.css">	
 	
 </head>
 <body>
 
+	<style>
+@media (max-width: 768px){	
+		.kartica-okruga{
+			display: block;
+			padding: 1em;
+			padding-top: 3em;
+			margin: auto;
+			height: 45vh;
+		}
+		.okrug-slika{
+			display: flex;
+			color: white;
+			padding: 1em;
+			border-bottom: 1px solid ;
+		}
+		.okrug-slika h3{
+			margin: auto;
+		}
+		.okrug-slika h4{
+			margin: auto;
+		}
+		.okrug-slika h5{
+			margin: auto;
+		}
+		.okrug-slika img{
+			display: block;
+			width: 4em;
+			height: 4em;
+		}
+		.okrug-kartica-sadrzaj{
+			display: block;
+			width: 100%;
+			height: 42vh;
+			background: #212529;
+			border-radius: 10px;
+			border: 5px solid #B8BCC1;
+		}
+		.okrug-gradovi{
+			display: flex;
+			flex-wrap: wrap;
+			padding: 1em;
+		}
+		.okrug-gradovi a{
+			display: block;
+			width: 45%;
+			margin: auto;
+			color: #B8BCC1;
+			padding: 0.3em;
+		}
+		.kartica-websajt{
+			display: block;
+			color: white;
+			text-align: center;
+			margin-top: 3em;
+			padding: 0.9em;
+		}
+		.kartica-websajt a{
+			color: white;
+		}
+		#JB-okrug a{
+			font-size: 0.91em;
+		}
+		.form-inline{
+			width: 100%;
+			display: block;
+			margin: auto;
+			padding: 1em;
+		}
+		.form-inline .md-form input{
+			padding: 0.7em;
+		}
+		.md-form #myInput{
+			width: 100%;
+			margin: auto;
+			padding: 0.7em;
+		}
+	}
+		
+@media (min-width: 768px){	
+		.kartica-okruga{
+			display: block;
+			padding: 1em;
+			padding-top: 3em;
+			margin: auto;
+			height: 45vh;
+		}
+		.okrug-slika{
+			display: flex;
+			color: white;
+			padding: 1em;
+			border-bottom: 1px solid ;
+		}
+		.okrug-slika h3{
+			margin: auto;
+		}
+		.okrug-slika h4{
+			margin: auto;
+		}
+		.okrug-slika h5{
+			margin: auto;
+		}
+		.okrug-slika img{
+			display: block;
+			width: 4em;
+			height: 4em;
+		}
+		.okrug-kartica-sadrzaj{
+			display: block;
+			width: 27vw;
+			height: 38vh;
+			background: #212529;
+			border-radius: 10px;
+			border: 5px solid #B8BCC1;
+		}
+		.okrug-gradovi{
+			display: flex;
+			flex-wrap: wrap;
+			padding: 1em;
+		}
+		.okrug-gradovi a{
+			display: block;
+			width: 45%;
+			margin: auto;
+			color: #B8BCC1;
+			padding: 0.3em;
+		}
+		.kartica-websajt{
+			display: block;
+			color: white;
+			text-align: center;
+			margin-top: 3em;
+			padding: 0.9em;
+		}
+		.kartica-websajt a{
+			color: white;
+		}
+		#JB-okrug a{
+			font-size: 0.91em;
+		}
+		.form-inline{
+			width: 20vw;
+			display: block;
+			margin: auto;
+			padding: 1em;
+		}
+		.form-inline .md-form input{
+			padding: 0.7em;
+		}
+	}
+	</style>
 	
 <div class="loader">
 <div class="load-slike">
    <img  src="banneri/73081046_108934263856788_4915437994069983232_o.jpg" alt="">
    <img  src="banneri/ezgif.com-crop.gif" alt="">
 </div>	
-</div>
+</div> 
+	
 <div class="hover_bkgr_fricc">
     <span class="helper"></span>
     <div>
@@ -1320,7 +242,6 @@ border-top: 3px solid white;
 <!-- Carousel--->
 <div class="banner">
 	
-	<img src="banneri/winter-3970434.jpg" alt="">
 	
 <nav class="navbar navbar-expand-lg navbar-dark">
 
@@ -1366,7 +287,7 @@ border-top: 3px solid white;
 
 </nav>
 	
-<div class="banner-text" style="width: 100%; background: rgba(0,0,0,0.00)">
+<div class="banner-text" style="width: 100%;">
 	
 	
    <div class="banner-kartica">
@@ -1383,9 +304,9 @@ border-top: 3px solid white;
 </form>		  
 		  
 </div>
-	</div>
+	</div> 
 	
-	<div class="banner-title ">
+<div class="banner-title">
    
           <h1 style="text-decoration: none"><strong>REDIREX</strong></h1>
             <h3>Poslovni Katalog Srbije</h3>
@@ -1395,10 +316,6 @@ border-top: 3px solid white;
 
 
 
-
-<div class="section-title-2">		
-<h2 id="okruzi" class="section-title-2" style="color: white">OKRUZI I OPSTINE</h2>
-</div>	
 <div class="container">
 	<div class="row">
 	    <form class="col-md-5 pretraga-okruga">
@@ -1620,43 +537,40 @@ border-top: 3px solid white;
 	    </form>
  	</div>
 </div> 
-	
+<div id="okruzi"></div>
+<form class="form-inline">
+      <div class="md-form my-0">
+        <input id="myInput" type="text" placeholder="Pretraga">
+      </div>
+    </form>	
 <div class="okruzi-i-opstine">
 		
         <!-- Team item -->
-<div class="card-container">	
-<div class="okrug-ime card-flip">
-     <div class="ime-slika-okruga front">
-		<center><img src="stranice/Bor Okrug/Bor/Veliki_grb_Bora.png" alt="">Borski okrug</center>
-	 </div>
-	 <div class="gradovi-okruga back">
+<div class="kartica-okruga">
+<div class="okrug-kartica-sadrzaj">
+	<div class="okrug-slika"><img src="stranice/Bor Okrug/Bor/Veliki_grb_Bora.png" alt=""><h3>Borski okrug</h3></div>
+	 <div class="okrug-gradovi">
 			   <a class="inactiveLink" href="#">Bor</a>
                <a href="stranice/Bor Okrug/Kladovo/Kladovo.html">Kladovo (1)</a>
                <a class="inactiveLink" href="#">Majdanpek</a>
 			   <a class="inactiveLink" href="#">Negotin</a>
-	 </div>
-</div>
-	</div><!-- End -->		
-	
+	 </div>	
+</div>	
+</div>			
         <!-- Team item -->
-<div class="card-container">
-<div class="okrug-ime card-flip">
-     <div class="ime-slika-okruga front">
-		<center><img src="stranice/28-Grad Beograd/1024px-Flag_of_Belgrade,_Serbia.svg.png" alt="">Grad Beograd</center>
+<div class="kartica-okruga">
+<div class="okrug-kartica-sadrzaj">
+	<div class="okrug-slika"><img src="stranice/28-Grad Beograd/1024px-Flag_of_Belgrade,_Serbia.svg.png" alt=""><h3>Grad Beograd</h3></div>
+	 <div class="okrug-gradovi">
+			<a style="color: white" href="stranice/28-Grad Beograd/index-beograd.html"><center>Beograd sa svim opštinama (34)</center></a>
 	 </div>
-	 <div class="gradovi-okruga-beograd back">
-		<a style="color: white" href="stranice/28-Grad Beograd/index-beograd.html"><center>Beograd (34)</center></a>
-	 </div>
-</div>
-		</div><!-- End -->	
+</div>	
+</div>			
 	
-        <!-- Team item -->
-<div class="card-container">
-<div class="okrug-ime card-flip">
-     <div class="ime-slika-okruga front">
-		<center><img src="stranice/Branicevo Okrug/Pozarevac/800px-Grb_pozarevca.svg.png" alt="">Braničevski okrug</center>
-	 </div>
-	 <div class="gradovi-okruga back">
+<div class="kartica-okruga">
+<div class="okrug-kartica-sadrzaj">
+	<div class="okrug-slika"><img src="stranice/Branicevo Okrug/Pozarevac/800px-Grb_pozarevca.svg.png" alt=""><h4>Braničevski okrug</h4></div>
+	 <div class="okrug-gradovi">
                <a href="stranice/Branicevo Okrug/Pozarevac/Pozarevac.html">Požarevac (2)</a>
                <a class="inactiveLink" href="#">Kučevo</a>
                <a class="inactiveLink" href="#">Malo Crnice</a>
@@ -1664,45 +578,43 @@ border-top: 3px solid white;
 			   <a class="inactiveLink" href="#">Golubac</a>
                <a class="inactiveLink" href="#">Veliko Gradište</a>
                <a class="inactiveLink" href="#">Žabari</a>
-			   <a class="inactiveLink" href="#">Žagubica</a>	
+			   <a class="inactiveLink" href="#">Žagubica</a>
 	 </div>
-</div></div><!-- End -->
+</div>	
+</div>		
 	
-        <!-- Team item -->
-<div class="card-container">	
-<div class="okrug-ime card-flip">
-     <div class="ime-slika-okruga front">
-		<center><img src="stranice/Zajecarski okrug/Zajecar/COA_zajecar.png" alt="">Zaječarski okrug</center>
-	 </div>
-	 <div class="gradovi-okruga back">
+<div class="kartica-okruga">
+<div class="okrug-kartica-sadrzaj">
+	<div class="okrug-slika"><img src="stranice/Zajecarski okrug/Zajecar/COA_zajecar.png" alt=""><h4>Zaječarski okrug</h4></div>
+	 <div class="okrug-gradovi">
                <a class="inactiveLink" href="#">Boljevac</a>
                <a href="stranice/Zajecarski okrug/Knjazevac/Knjazevac.html">Knjaževac (1)</a>
                <a class="inactiveLink" href="#">Sokobanja</a>
 			   <a href="stranice/Zajecarski okrug/Zajecar/Zajecar.html">Zaječar (1)</a>	
 	 </div>
-</div></div><!-- End -->	
+</div>	
+</div>	
 	
-        <!-- Team item -->
-<div class="card-container">
-<div class="okrug-ime card-flip">
-     <div class="ime-slika-okruga front">
-		<center><img src="stranice/Zapadnobacki okrug/COA_Sombor.png" alt="">Zapadnobački okrug</center>
-	 </div>
-	 <div class="gradovi-okruga back">
+<div class="kartica-okruga">
+<div class="okrug-kartica-sadrzaj">
+	<div class="okrug-slika">
+		<img src="stranice/Zapadnobacki okrug/COA_Sombor.png" alt="">
+		<h4>Zapadnobački okrug</h4></div>
+	 <div class="okrug-gradovi">
 			   <a class="inactiveLink" href="stranice/Zapadnobacki okrug/Apatin/Apatin.html">Apatin</a>	
                <a class="inactiveLink" href="stranice/Zapadnobacki okrug/Kula/Kula.html">Kula</a>
                <a class="inactiveLink" href="stranice/Zapadnobacki okrug/Odzaci/Odzaci.html">Odžaci</a>
                <a class="inactiveLink" href="stranice/Zapadnobacki okrug/Sombor/Sombor.html">Sombor</a>
 	 </div>
-</div></div><!-- End -->	
+</div>
+</div>	
 	
-        <!-- Team item -->
-<div class="card-container">
-<div class="okrug-ime card-flip">
-     <div class="ime-slika-okruga front">
-		<center><img src="stranice/Zlatiborski okrug/Uzice/Uzice_COA_small.gif" alt="">Zlatiborski okrug</center>
-	 </div>
-	 <div class="gradovi-okruga back">
+<div class="kartica-okruga">
+<div class="okrug-kartica-sadrzaj">
+	<div class="okrug-slika">
+		<img src="stranice/Zlatiborski okrug/Uzice/Uzice_COA_small.gif" alt="">
+		<h4>Zlatiborski okrug</h4></div>
+	 <div class="okrug-gradovi">
                <a href="stranice/Zlatiborski okrug/Arilje/Arilje.html">Arilje (1)</a>
                <a class="inactiveLink" href="#">Bajina Bašta</a>
                <a href="stranice/Zlatiborski okrug/Cajetina/Cajetina.html">Čajetina (1)</a>
@@ -1714,15 +626,15 @@ border-top: 3px solid white;
 			   <a class="inactiveLink" href="#">Sjenica</a>
 			   <a href="stranice/Zlatiborski okrug/Uzice/Uzice.html">Užice (1)</a>
 	 </div>
-</div></div><!-- End -->
+</div>
+</div>		
 	
-        <!-- Team item -->
-<div class="card-container">
-<div class="okrug-ime card-flip">
-     <div class="ime-slika-okruga front">
-		<center><img src="stranice/Jablanicki okrug/Leskovac/Leskovac-grb-srednji.png" alt="">Jablanički okrug</center>
-	 </div>
-	 <div class="gradovi-okruga back">
+<div class="kartica-okruga">
+<div class="okrug-kartica-sadrzaj">
+	<div class="okrug-slika">
+		<img src="stranice/Jablanicki okrug/Leskovac/Leskovac-grb-srednji.png" alt="">
+		<h4>Jablanički okrug</h4></div>
+	 <div class="okrug-gradovi">
                <a class="inactiveLink" href="stranice/Jablanicki okrug/Bojnik/Bojnik.html">Bojnik</a>
                <a class="inactiveLink" href="stranice/Jablanicki okrug/Crna trava/Crna-trava.html">Crna Trava</a>
                <a class="inactiveLink" href="stranice/Jablanicki okrug/Lebane/Lebane.html">Lebane</a>
@@ -1730,15 +642,15 @@ border-top: 3px solid white;
 			   <a class="inactiveLink" href="stranice/Jablanicki okrug/Medvedja/Medvedja.html">Medvedja</a>
                <a class="inactiveLink" href="stranice/Jablanicki okrug/Vlasotince/Vlasotince.html">Vlasotince</a>	
 	 </div>
-</div></div><!-- End -->
-
-        <!-- Team item -->
-<div class="card-container">
-<div class="okrug-ime card-flip">
-     <div class="ime-slika-okruga front">
-		<center><img src="stranice/Juznobanatski okrug/Pancevo/Pancevo-coat_of_arms.png" alt="">Južnobanatski okrug</center>
-	 </div>
-	 <div class="gradovi-okruga back">
+</div>
+</div>		
+	
+<div class="kartica-okruga">
+<div class="okrug-kartica-sadrzaj">
+	<div class="okrug-slika">
+		<img src="stranice/Juznobanatski okrug/Pancevo/Pancevo-coat_of_arms.png" alt="">
+		<h4>Južnobanatski okrug</h4></div>
+	 <div class="okrug-gradovi">
                <a class="inactiveLink" href="stranice/Juznobanatski okrug/Alibunar/Alibunar.html">Alibunar</a>
                <a class="inactiveLink"  href="stranice/Juznobanatski okrug/Bela crkva/Bela-crkva.html">Bela Crkva</a>
                <a class="inactiveLink"  href="stranice/Juznobanatski okrug/Kovacica/Kovacica.html">Kovačica</a>
@@ -1747,17 +659,17 @@ border-top: 3px solid white;
                <a href="stranice/Juznobanatski okrug/Pancevo/Pancevo.html">Pančevo (1)</a>
 			   <a class="inactiveLink"  href="stranice/Juznobanatski okrug/Plandiste/Plandiste.html">Plandište</a>
 				
-               <a href="stranice/Juznobanatski okrug/Vrsac/Vrsac.html">Vršac (2)</a>	
+               <a href="stranice/Juznobanatski okrug/Vrsac/Vrsac.html">Vršac (2)</a>
 	 </div>
-</div></div><!-- End -->
-
-        <!-- Team item -->
-<div class="card-container">
-<div class="okrug-ime card-flip">
-     <div class="ime-slika-okruga front">
-		<center><img src="stranice/Juznobacki okrug/Novi sad/800px-Novi_Sad_Coat_of_Arms.svg.png" alt="">Južnobački okrug</center>
-	 </div>
-	 <div class="gradovi-okruga back">
+</div>
+</div>			
+	
+<div class="kartica-okruga">
+<div class="okrug-kartica-sadrzaj">
+	<div class="okrug-slika">
+		<img src="stranice/Juznobacki okrug/Novi sad/800px-Novi_Sad_Coat_of_Arms.svg.png" alt="">
+		<h4>Južnobački okrug</h4></div>
+	 <div id="JB-okrug" class="okrug-gradovi">
                <a class="inactiveLink" href="#">Bač</a>
                <a href="stranice/Juznobacki okrug/Backa palanka/Backa-palanka.html">Bačka Palanka (1)</a>
                <a class="inactiveLink" href="#">Bački Petrovac</a>
@@ -1771,15 +683,16 @@ border-top: 3px solid white;
 			   <a class="inactiveLink" href="#">Vrbas</a>
 			   <a class="inactiveLink" href="#">Žabalj</a>
 	 </div>
-</div></div><!-- End -->
+</div>
+</div>	
+			
 	
-        <!-- Team item -->
-<div class="card-container">
-<div class="okrug-ime card-flip">
-     <div class="ime-slika-okruga front">
-		<center><img src="stranice/Kolubarski okrug/Valjevo/COA_Valjevo.gif" alt="">Kolubarski okrug</center>
-	 </div>
-	 <div class="gradovi-okruga back">
+<div class="kartica-okruga">
+<div class="okrug-kartica-sadrzaj">
+	<div class="okrug-slika">
+		<img src="stranice/Kolubarski okrug/Valjevo/COA_Valjevo.gif" alt="">
+		<h4>Kolubarski okrug</h4></div>
+	 <div class="okrug-gradovi">
                <a class="inactiveLink" href="#">Lajkovac</a>
                <a class="inactiveLink" href="#">Ljig</a>
                <a class="inactiveLink" href="#">Mionica</a>
@@ -1787,15 +700,14 @@ border-top: 3px solid white;
 			   <a href="stranice/Kolubarski okrug/Ub/Ub.html">Ub (1)</a>
                <a href="stranice/Kolubarski okrug/Valjevo/Valjevo.html">Valjevo (1)</a>
 	 </div>
-</div></div><!-- End -->
-
-        <!-- Team item -->
-<div class="card-container">
-<div class="okrug-ime card-flip">
-     <div class="ime-slika-okruga front">
-		<center>Kosovski okrug</center>
-	 </div>
-	 <div class="gradovi-okruga back">
+</div>
+</div>				
+	
+<div class="kartica-okruga">
+<div class="okrug-kartica-sadrzaj">
+	<div class="okrug-slika">
+		<h4>Kosovski okrug</h4></div>
+	 <div class="okrug-gradovi">
                <a class="inactiveLink" href="stranice/Kosovski okrug/Glogovac/Glogovac.html">Glogovac</a>
                <a class="inactiveLink" href="stranice/Kosovski okrug/Kacanik/Kacanik.html">Kačanik</a>
                <a class="inactiveLink" href="stranice/Kosovski okrug/Kosovo polje/Kosovo-polje.html">Kosovo Polje</a>
@@ -1807,45 +719,43 @@ border-top: 3px solid white;
                <a class="inactiveLink" href="stranice/8-Kosovski okrug/Strpce/">Štrpce</a>
 			   <a class="inactiveLink" href="stranice/8-Kosovski okrug/Urosevac/">Uroševac</a>	
 	 </div>
-</div></div><!-- End -->
-
-        <!-- Team item -->
-<div class="card-container">
-<div class="okrug-ime card-flip">
-     <div class="ime-slika-okruga front">
-		<center>Kosovsko-mitrovački okrug</center>
-	 </div>
-	 <div class="gradovi-okruga back">
+</div>
+</div>					
+	
+<div class="kartica-okruga">
+<div class="okrug-kartica-sadrzaj">
+	<div class="okrug-slika">
+		<h4>Kosovsko-mitrovački okrug</h4></div>
+	 <div class="okrug-gradovi">
                <a class="inactiveLink" href="stranice/Kosovsko-mitrovacki okrug/Kosovska mitrovica/Kosovska-mitrovica.html">Kosovska Mitrovica</a>
                <a class="inactiveLink" href="stranice/Kosovsko-mitrovacki okrug/Leposavic/Leposavic.html">Leposavić</a>
                <a class="inactiveLink" href="stranice/Kosovsko-mitrovacki okrug/Srbica/Srbica.html">Srbica</a>
 			   <a class="inactiveLink" href="stranice/Kosovsko-mitrovacki okrug/Vucitrn/Vucitrn.html">Vučitrn</a>
 			   <a class="inactiveLink" href="stranice/Kosovsko-mitrovacki okrug/Zubin potok/Zubin-potok.html">Zubin Potok</a>
-               <a class="inactiveLink" href="stranice/Kosovsko-mitrovacki okrug/Zvecan/Zvecan.html">Zvečan</a>	
+               <a class="inactiveLink" href="stranice/Kosovsko-mitrovacki okrug/Zvecan/Zvecan.html">Zvečan</a>
 	 </div>
-</div></div><!-- End -->
+</div>
+</div>					
 	
-        <!-- Team item -->
-<div class="card-container">
-<div class="okrug-ime card-flip">
-     <div class="ime-slika-okruga front">
-		<center>Kosovsko-pomoravski okrug</center>
-	 </div>
-	 <div class="gradovi-okruga back">
+<div class="kartica-okruga">
+<div class="okrug-kartica-sadrzaj">
+	<div class="okrug-slika">
+		<h4>Kosovsko-pomoravski okrug</h4></div>
+	 <div class="okrug-gradovi">
               <a class="inactiveLink" href="stranice/Kosovsko-pomoravski okrug/Gnjilane/Gnjilane.html">Gnjilane</a>
               <a class="inactiveLink" href="stranice/Kosovsko-pomoravski okrug/Kosovska kamenica/Kosovska-kamenica.html">Kosovska Kamenica</a>
               <a class="inactiveLink" href="stranice/Kosovsko-pomoravski okrug/Novo brdo/Novo-brdo.html">Novo Brdo</a>
 			  <a class="inactiveLink" href="stranice/Kosovsko-pomoravski okrug/Vitina/Vitina.html">Vitina</a>
 	 </div>
-</div></div><!-- End -->
-
-        <!-- Team item -->
-<div class="card-container">
-<div class="okrug-ime card-flip">
-     <div class="ime-slika-okruga front">
-		<center><img src="stranice/Macvanski okrug/Sabac/COA_Šabac_(big).png" alt="">Mačvanski okrug</center>
-	 </div>
-	 <div class="gradovi-okruga back">
+</div>
+</div>				
+	
+<div class="kartica-okruga">
+<div class="okrug-kartica-sadrzaj">
+	<div class="okrug-slika">
+		<img src="stranice/Macvanski okrug/Sabac/COA_Šabac_(big).png" alt="">
+		<h4>Mačvanski okrug</h4></div>
+	 <div class="okrug-gradovi">
                <a class="inactiveLink" href="#">Bogatić</a>
                <a class="inactiveLink" href="#">Koceljevo</a>
                <a class="inactiveLink" href="#">Krupanj</a>
@@ -1855,29 +765,29 @@ border-top: 3px solid white;
 			   <a href="stranice/Macvanski okrug/Sabac/Sabac.html">Šabac (1)</a>
                <a class="inactiveLink" href="#">Vladimirci</a>
 	 </div>
-</div></div><!-- End -->
-
-        <!-- Team item -->
-<div class="card-container">
-<div class="okrug-ime card-flip">
-     <div class="ime-slika-okruga front">
-		<center><img src="stranice/Moravicki okrug/Cacak/Čačak_-_grb.png" alt="">Moravički okrug</center>
-	 </div>
-	 <div class="gradovi-okruga back">
+</div>
+</div>				
+	
+<div class="kartica-okruga">
+<div class="okrug-kartica-sadrzaj">
+	<div class="okrug-slika">
+		<img src="stranice/Moravicki okrug/Cacak/Čačak_-_grb.png" alt="">
+		<h4>Moravički okrug</h4></div>
+	 <div class="okrug-gradovi">
                <a href="stranice/Moravicki okrug/Cacak/Cacak.html">Čačak (1)</a>
                <a class="inactiveLink" href="#">Gornji Milanovac</a>
                <a class="inactiveLink" href="#">Ivanjica</a>
 			   <a class="inactiveLink" href="#">Lučani</a>
 	 </div>
-</div></div><!-- End -->
-
-        <!-- Team item -->
-<div class="card-container">
-<div class="okrug-ime card-flip">
-     <div class="ime-slika-okruga front">
-		<center><img src="stranice/Nisavski okrug/Nis/Nis_Coat_of_Arms.png" alt="">Nišavski okrug</center>
-	 </div>
-	 <div class="gradovi-okruga back">
+</div>
+</div>				
+	
+<div class="kartica-okruga">
+<div class="okrug-kartica-sadrzaj">
+	<div class="okrug-slika">
+		<img src="stranice/Nisavski okrug/Nis/Nis_Coat_of_Arms.png" alt="">
+		<h4>Nišavski okrug</h4></div>
+	 <div class="okrug-gradovi">
                <a href="stranice/Nisavski okrug/Doljevac/Doljevac.html">Doljevac (1)</a>
                <a class="inactiveLink" href="#">Gadzin Han</a>
                <a class="inactiveLink" href="#">Merošina</a>
@@ -1886,57 +796,56 @@ border-top: 3px solid white;
                <a class="inactiveLink" href="#">Ražanj</a>
 			   <a class="inactiveLink" href="#">Svrljig</a>
 	 </div>
-</div></div><!-- End -->
-
-        <!-- Team item -->
-<div class="card-container">
-<div class="okrug-ime card-flip">
-     <div class="ime-slika-okruga front">
-		<center>Pećki okrug</center>
-	 </div>
-	 <div class="gradovi-okruga back">
+</div>
+</div>				
+	
+<div class="kartica-okruga">
+<div class="okrug-kartica-sadrzaj">
+	<div class="okrug-slika">
+		<h4>Pećki okrug</h4></div>
+	 <div class="okrug-gradovi">
                <a class="inactiveLink" href="stranice/Pecki okrug/Decani/Decani.html">Dečani</a>
                <a class="inactiveLink" href="stranice/Pecki okrug/Djakovica/Djakovica.html">Djakovica</a>
                <a class="inactiveLink" href="stranice/Pecki okrug/Istok/Istok.html">Istok</a>
 			   <a class="inactiveLink" href="stranice/Pecki okrug/Klina/Klina.html">Klina</a>
 			   <a class="inactiveLink" href="stranice/Pecki okrug/Pec/Pec.html">Peć</a>
 	 </div>
-</div></div><!-- End -->
-
-        <!-- Team item -->
-<div class="card-container">
-<div class="okrug-ime card-flip">
-     <div class="ime-slika-okruga front">
-		<center><img src="stranice/Pirotski okrug/Pirot/Blason_de_Pirot.png" alt="">Pirotski okrug</center>
-	 </div>
-	 <div class="gradovi-okruga back">
+</div>
+</div>					
+	
+<div class="kartica-okruga">
+<div class="okrug-kartica-sadrzaj">
+	<div class="okrug-slika">
+		<img src="stranice/Pirotski okrug/Pirot/Blason_de_Pirot.png" alt="">
+		<h4>Pirotski okrug</h4></div>
+	 <div class="okrug-gradovi">
                <a class="inactiveLink" href="#">Babušnica</a>
                <a href="stranice/Pirotski okrug/Bela palanka/Bela-palanka.html">Bela Palanka (1)</a>
                <a class="inactiveLink" href="#">Dimitrovgrad</a>
 			   <a class="inactiveLink" href="#">Pirot</a>
 	 </div>
-</div></div><!-- End -->
-
-        <!-- Team item -->
-<div class="card-container">
-<div class="okrug-ime card-flip">
-     <div class="ime-slika-okruga front">
-		<center><img src="stranice/Podunavski okrug/Smederevo/Smederevo_coat_of_arms.gif" alt="">Podunavski okrug</center>
-	 </div>
-	 <div class="gradovi-okruga back">
+</div>
+</div>					
+	
+<div class="kartica-okruga">
+<div class="okrug-kartica-sadrzaj">
+	<div class="okrug-slika">
+		<img src="stranice/Podunavski okrug/Smederevo/Smederevo_coat_of_arms.gif" alt="">
+		<h4>Pirotski okrug</h4></div>
+	 <div class="okrug-gradovi">
                <a class="inactiveLink" href="#">Smederevo</a>
                <a class="inactiveLink" href="#">Smederevska Palanka</a>
                <a href="stranice/Podunavski okrug/Velika plana/Velika-plana.html">Velika Plana (1)</a>
 	 </div>
-</div></div><!-- End -->
-
-        <!-- Team item -->
-<div class="card-container">
-<div class="okrug-ime card-flip">
-     <div class="ime-slika-okruga front">
-		<center><img src="stranice/Pomoravski okrug/Jagodina/Grb_opstine_Jagodina.png" alt="">Pomoravski okrug</center>
-	 </div>
-	 <div class="gradovi-okruga back">
+</div>
+</div>				
+	
+<div class="kartica-okruga">
+<div class="okrug-kartica-sadrzaj">
+	<div class="okrug-slika">
+		<img src="stranice/Pomoravski okrug/Jagodina/Grb_opstine_Jagodina.png" alt="">
+		<h4>Pomoravski okrug</h4></div>
+	 <div class="okrug-gradovi">
                <a class="inactiveLink" href="stranice/Pomoravski okrug/Cuprija/Cuprija.html">Ćuprija</a>
                <a class="inactiveLink" href="stranice/Pomoravski okrug/Despotovac/Despotovac.html">Despotovac</a>
                <a class="inactiveLink" href="stranice/Pomoravski okrug/Jagodina/Jagodina.html">Jagodina</a>
@@ -1944,29 +853,28 @@ border-top: 3px solid white;
 			   <a class="inactiveLink" href="stranice/Pomoravski okrug/Rekovac/Rekovac.html">Rekovac</a>
                <a class="inactiveLink" href="stranice/Pomoravski okrug/Svilajnac/Svilajnac.html">Svilajnac</a>
 	 </div>
-</div></div><!-- End -->
-
-        <!-- Team item -->
-<div class="card-container">
-<div class="okrug-ime card-flip">
-     <div class="ime-slika-okruga front">
-		<center>Prizrenski okrug</center>
-	 </div>
-	 <div class="gradovi-okruga back">
+</div>
+</div>				
+	
+<div class="kartica-okruga">
+<div class="okrug-kartica-sadrzaj">
+	<div class="okrug-slika">
+		<h4>Prizrenski okrug</h4></div>
+	 <div class="okrug-gradovi">
                <a class="inactiveLink" href="stranice/Prizrenski okrug/Dragas/Dragas.html">Dragaš</a>
                <a class="inactiveLink" href="stranice/Prizrenski okrug/Orahovac/Orahovac.html">Orahovac</a>
                <a class="inactiveLink" href="stranice/Prizrenski okrug/Prizren/Prizren.html">Prizren</a>
 			   <a class="inactiveLink" href="stranice/Prizrenski okrug/Suva reka/Suva-reka.html">Suva Reka</a>
 	 </div>
-</div></div><!-- End -->
-
-        <!-- Team item -->
-<div class="card-container">
-<div class="okrug-ime card-flip">
-     <div class="ime-slika-okruga front">
-		<center><img src="stranice/Pcinjski okrug/Vranje/800px-Veliki_grb-vranja.png" alt="">Pčinjski okrug</center>
-	 </div>
-	 <div class="gradovi-okruga back">
+</div>
+</div>					
+	
+<div class="kartica-okruga">
+<div class="okrug-kartica-sadrzaj">
+	<div class="okrug-slika">
+		<img src="stranice/Pcinjski okrug/Vranje/800px-Veliki_grb-vranja.png" alt="">
+		<h4>Pčinjski okrug</h4></div>
+	 <div class="okrug-gradovi">
                <a class="inactiveLink" href="#">Bosilegrad</a>
                <a class="inactiveLink" href="#">Bujanovac</a>
                <a class="inactiveLink" href="#">Preševo</a>
@@ -1975,15 +883,15 @@ border-top: 3px solid white;
                <a class="inactiveLink" href="#">Vladičin Han</a>
 			   <a href="stranice/Pcinjski okrug/Vranje/Vranje.html">Vranje (3)</a>
 	 </div>
-</div></div><!-- End -->
-
-        <!-- Team item -->
-<div class="card-container">
-<div class="okrug-ime card-flip">
-     <div class="ime-slika-okruga front">
-		<center><img src="stranice/Rasinski okrug/Krusevac/Grb_ks.png" alt="">Rasinski okrug</center>
-	 </div>
-	 <div class="gradovi-okruga back">
+</div>
+</div>					
+	
+<div class="kartica-okruga">
+<div class="okrug-kartica-sadrzaj">
+	<div class="okrug-slika">
+		<img src="stranice/Rasinski okrug/Krusevac/Grb_ks.png" alt="">
+		<h4>Rasinski okrug</h4></div>
+	 <div class="okrug-gradovi">
                <a class="inactiveLink" href="#">Aleksandrovac</a>
                <a class="inactiveLink" href="#">Brus</a>
                <a class="inactiveLink" href="#">Ćićevac</a>
@@ -1991,30 +899,30 @@ border-top: 3px solid white;
 			   <a class="inactiveLink" href="#">Trstenik</a>
                <a class="inactiveLink" href="#">Varvarin</a>
 	 </div>
-</div></div><!-- End -->
-
-        <!-- Team item -->
-<div class="card-container">
-<div class="okrug-ime card-flip">
-     <div class="ime-slika-okruga front">
-		<center><img src="stranice/Raski okrug/Kraljevo/Coat_of_arms_of_Kraljevo.png" alt="">Raški okrug</center>
-	 </div>
-	 <div class="gradovi-okruga back">
+</div>
+</div>					
+	
+<div class="kartica-okruga">
+<div class="okrug-kartica-sadrzaj">
+	<div class="okrug-slika">
+		<img src="stranice/Raski okrug/Kraljevo/Coat_of_arms_of_Kraljevo.png" alt="">
+		<h4>Raški okrug</h4></div>
+	 <div class="okrug-gradovi">
                <a href="stranice/Raski okrug/Kraljevo/Kraljevo.html">Kraljevo (1)</a>
                <a class="inactiveLink" href="#">Novi Pazar</a>
                <a class="inactiveLink" href="#">Raška</a>
 			   <a href="stranice/Raski okrug/Tutin/Tutin.html">Tutin (1)</a>
 			   <a href="stranice/Raski okrug/Vrnjacka banja/Vrnjacka-banja.html">Vrnjačka Banja (1)</a>
 	 </div>
-</div></div><!-- End -->
-
-        <!-- Team item -->
-<div class="card-container">
-<div class="okrug-ime card-flip">
-     <div class="ime-slika-okruga front">
-		<center><img src="stranice/Severnobanatski okrug/Kikinda/Wappen_Kikinda.png" alt="">Severnobanatski okrug</center>
-	 </div>
-	 <div class="gradovi-okruga back">
+</div>
+</div>					
+	
+<div class="kartica-okruga">
+<div class="okrug-kartica-sadrzaj">
+	<div class="okrug-slika">
+		<img src="stranice/Severnobanatski okrug/Kikinda/Wappen_Kikinda.png" alt="">
+		<h5>Severnobanatski okrug</h5></div>
+	 <div class="okrug-gradovi">
                <a class="inactiveLink" href="#">Ada</a>
                <a class="inactiveLink" href="#">Čoka</a>
                <a class="inactiveLink" href="#">Kanjiža</a>
@@ -2022,43 +930,43 @@ border-top: 3px solid white;
 			   <a class="inactiveLink" href="#">Novi Kneževac</a>
                <a class="inactiveLink" href="#">Senta</a>
 	 </div>
-</div></div><!-- End -->
-
-        <!-- Team item -->
-<div class="card-container">
-<div class="okrug-ime card-flip">
-     <div class="ime-slika-okruga front">
-		<center><img src="stranice/Severnobacki okrug/Subotica/Grb_subotice.png" alt="">Severnobački okrug</center>
-	 </div>
-	 <div class="gradovi-okruga back">
+</div>
+</div>					
+	
+<div class="kartica-okruga">
+<div class="okrug-kartica-sadrzaj">
+	<div class="okrug-slika">
+		<img src="stranice/Severnobacki okrug/Subotica/Grb_subotice.png" alt="">
+		<h5>Severnobački okrug</h5></div>
+	 <div class="okrug-gradovi">
                  <a class="inactiveLink" href="#">Bačka Topola</a>
                <a class="inactiveLink" href="#">Mali Idjos</a>
                <a href="stranice/Severnobacki okrug/Subotica/Subotica.html">Subotica (3)</a>
 	 </div>
-</div></div><!-- End -->
-
-        <!-- Team item -->
-<div class="card-container">
-<div class="okrug-ime card-flip">
-     <div class="ime-slika-okruga front">
-		<center><img src="stranice/Srednjobanatski okrug/Zrenjanin/Coat_of_Arms_of_Zrenjanin.png" alt="">Srednjobanatski okrug</center>
-	 </div>
-	 <div class="gradovi-okruga back">
+</div>
+</div>						
+	
+<div class="kartica-okruga">
+<div class="okrug-kartica-sadrzaj">
+	<div class="okrug-slika">
+		<img src="stranice/Srednjobanatski okrug/Zrenjanin/Coat_of_Arms_of_Zrenjanin.png" alt="">
+		<h5>Srednjobanatski okrug</h5></div>
+	 <div class="okrug-gradovi">
                <a class="inactiveLink" href="stranice/Srednjobanatski okrug/Nova crnja/Nova-crnja.html">Nova Crnja</a>
                <a class="inactiveLink" href="stranice/Srednjobanatski okrug/Novi becej/Novi-becej.html">Novi Bečej</a>
                <a class="inactiveLink" href="stranice/Srednjobanatski okrug/Secanj/Secanj.html">Sečanj</a>
 			   <a class="inactiveLink" href="stranice/Srednjobanatski okrug/Zitiste/Zitiste.html">Žitište</a>
 			   <a class="inactiveLink" href="stranice/Srednjobanatski okrug/Zrenjanin/Zrenjanin.html">Zrenjanin</a>
 	 </div>
-</div></div><!-- End -->
-
-        <!-- Team item -->
-<div class="card-container">
-<div class="okrug-ime card-flip">
-     <div class="ime-slika-okruga front">
-		<center><img src="stranice/Sremski okrug/Sremska mitrovica/1200px-Grb_sremska_mitrovica.svg.png" alt="">Sremski okrug</center>
-	 </div>
-	 <div class="gradovi-okruga back">
+</div>
+</div>						
+	
+<div class="kartica-okruga">
+<div class="okrug-kartica-sadrzaj">
+	<div class="okrug-slika">
+		<img src="stranice/Sremski okrug/Sremska mitrovica/1200px-Grb_sremska_mitrovica.svg.png" alt="">
+		<h4>Sremski okrug</h4></div>
+	 <div class="okrug-gradovi">
                <a class="inactiveLink" href="#">Indjija</a>
                <a class="inactiveLink" href="#">Irig</a>
                <a class="inactiveLink" href="#">Pećnici</a>
@@ -2067,29 +975,29 @@ border-top: 3px solid white;
                <a href="stranice/Sremski okrug/Sremska mitrovica/Sremska-mitrovica.html">Sremska Mitrovica (1)</a>
                <a href="stranice/Sremski okrug/Stara pazova/Stara-pazova.html">Stara Pazova (2)</a>
 	 </div>
-</div></div><!-- End -->
-
-        <!-- Team item -->
-<div class="card-container">
-<div class="okrug-ime card-flip">
-     <div class="ime-slika-okruga front">
-		<center><img src="stranice/Toplicki okrug/Prokuplje/COA_Prokuplje.png" alt="">Toplički okrug</center>
-	 </div>
-	 <div class="gradovi-okruga back">
+</div>
+</div>						
+	
+<div class="kartica-okruga">
+<div class="okrug-kartica-sadrzaj">
+	<div class="okrug-slika">
+		<img src="stranice/Toplicki okrug/Prokuplje/COA_Prokuplje.png" alt="">
+		<h4>Toplički okrug</h4></div>
+	 <div class="okrug-gradovi">
                <a class="inactiveLink" href="#">Blace</a>
                <a class="inactiveLink" href="#">Kuršumlija</a>
                <a href="stranice/Toplicki okrug/Prokuplje/Prokuplje.html">Prokuplje (1)</a>
 			   <a class="inactiveLink" href="#">Žitoradja</a>
 	 </div>
-</div></div><!-- End -->
-
-        <!-- Team item -->
-<div class="card-container">
-<div class="okrug-ime card-flip">
-     <div class="ime-slika-okruga front">
-		<center><img src="stranice/27-Sumadijski okrug/Kragujevac/Grb-Kragujevac.png" alt="">Šumadijski okrug</center>
-	 </div>
-	 <div class="gradovi-okruga back">
+</div>
+</div>						
+	
+<div class="kartica-okruga">
+<div class="okrug-kartica-sadrzaj">
+	<div class="okrug-slika">
+		<img src="stranice/27-Sumadijski okrug/Kragujevac/Grb-Kragujevac.png" alt="">
+		<h4>Šumadijski okrug</h4></div>
+	 <div class="okrug-gradovi">
                <a class="inactiveLink" href="#">Arandjelovac</a>
                <a class="inactiveLink" href="#">Batočina</a>
                <a class="inactiveLink" href="#">Knić</a>
@@ -2098,7 +1006,8 @@ border-top: 3px solid white;
                <a class="inactiveLink" href="#">Rača</a>
                <a class="inactiveLink" href="#">Topola</a>
 	 </div>
-</div></div><!-- End -->
+</div>
+</div>	
 	
 	
 </div>
@@ -2172,9 +1081,6 @@ border-top: 3px solid white;
 </div><!-- /.cols-sm-3 -->
 </div>	   
 
-	
-
-<!-- vidljivo na dektop---> 
 <hr> 
 	
 	
@@ -2189,13 +1095,6 @@ border-top: 3px solid white;
 </div>	
 </div>	
 	
-
-
-
-	
-
-		
-	
 <br> <hr> 
 	
 <div class="footer">
@@ -2206,14 +1105,14 @@ border-top: 3px solid white;
 									
 <div class="widget widget_inventor_boxes">
 <div class="widget-inner">
-<h2 class="widgettitle">
-<strong>USLUGE SAJTA</strong></h2>
+<h3 class="widgettitle">
+<strong>USLUGE SAJTA</strong></h3>
 	
 	
 <div class="row"> 
 
 
-<div class="col-sm-12 col-lg-12 col-md-6" style="display: table ;margin: auto;padding-bottom: 0.5em">
+<div class="col-sm-12 col-lg-12 col-md-6">
    <div class="box">
      <div class="box-inner">
         <div class="box-icon">
@@ -2228,30 +1127,27 @@ border-top: 3px solid white;
     </div><!-- /.box -->       
 </div><!-- /.col-* -->
 	
-<hr class="solid" style="border-top: 1px solid white; width: 70%; margin: auto; padding-bottom: 0.5em">  
-	 
- <div class="col-sm-12 col-lg-12 col-md-6" style="display: table;margin: auto;padding-bottom: 0.5em">
-     <div class="box ">
-         <div class="box-inner">
-             <div class="box-icon">
-                <i class="fa fa-link"></i>            
-			 </div><!-- /.box-icon -->
-        
-             <div class="box-body">
-                   <h6 class="box-title">Povezivanje vasih stranica</h6><!-- /.box-title -->
-                     <div class="box-content">
-                    Sajt i sve vaše društvene mreže na jednom mestu             
-				     </div><!-- /.box-content -->
-            
-             </div><!-- /.box-body -->
-         </div><!-- /.box-inner -->
+<hr class="solid" style="border-top: 1px solid white; width: 70%; margin: auto; padding-bottom: 0.5em">	
+	
+<div class="col-sm-12 col-lg-12 col-md-6">
+   <div class="box">
+     <div class="box-inner">
+        <div class="box-icon">
+        <i class="fa fa-link"></i>
+		</div>
+        <div class="box-body">
+              <h6 class="box-title">Povezivanje vasih stranica</h6>
+			  <div style="text-align: center" class="box-content">Sajt i sve vaše društvene mreže na jednom mestu radi lakšeg pristupa</div>
+         </div><!-- /.box-body -->
+     </div><!-- /.box-inner -->
 
-    </div><!-- /.box -->        
+    </div><!-- /.box -->       
 </div><!-- /.col-* -->
+	
 
 <hr class="solid" style="border-top: 1px solid white; width: 70%; margin: auto; padding-bottom: 0.5em">	
 	
- <div class="col-sm-12 col-lg-12 col-md-6" style="display: table;margin: auto; padding-bottom: 2em">
+ <div class="col-sm-12 col-lg-12 col-md-6">
      <div class="box ">
          <div class="box-inner">
              <div class="box-icon">
@@ -2279,13 +1175,13 @@ border-top: 3px solid white;
 <!-- /.cols-sm-3 -->
 
 <div class="col-sm-3">
-    <div id="text-9" class="widget widget_text"><h2 class="widgettitle"><strong>KONTAKT INFORMACIJE</strong></h2>
+    <div id="text-9" class="widget widget_text"><h3 class="widgettitle"><strong>KONTAKT INFORMACIJE</strong></h3>
         <div class="textwidget">
 			<hr>
 			<dl>
 
-<dt style="padding-bottom: em"><i class="fa fa-envelope" style="margin-right: 0.5em"></i> redirexrs@gmail.com</dt>
-<dt style="padding-bottom: 1em"><i class="fa fa-envelope" style="margin-right: 0.5em"></i> redirex.srb@gmail.com</dt>				
+<p style="padding-bottom: em"><i class="fa fa-envelope" style="margin-right: 0.5em"></i> redirexrs@gmail.com</p>
+<p style="padding-bottom: 1em"><i class="fa fa-envelope" style="margin-right: 0.5em"></i> redirex.srb@gmail.com</p>				
 				
 <a href="https://www.facebook.com/redirexx" target="_blank" class="">
 <dt><i class="fab fa-facebook-square fa-3x" style="color: white"></i></dt><dd></dd></a>			
@@ -2295,7 +1191,7 @@ border-top: 3px solid white;
 </div><!-- /.cols-sm-3 -->
 	
 	<div class="col-sm-3">
-<h2 class="widgettitle"><strong>LINKOVI SAJTA</strong></h2>
+<h3 class="widgettitle"><strong>LINKOVI SAJTA</strong></h3>
 <div class="listing-container">
     <div class="listing-small">
 
@@ -2360,14 +1256,6 @@ border-top: 3px solid white;
 </div>
 
 
-
-
-
-
-<!-- vidljivo na telefonima --->
-
-
-
 <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 
@@ -2381,6 +1269,16 @@ window.addEventListener("load", function () {
 
 	
  $('.select2').select2();
+	
+	
+$(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $(".kartica-okruga").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+}); 	
 	
 	</script>
 	
