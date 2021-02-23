@@ -1077,7 +1077,9 @@ border-top: 3px solid white;
 	.btn-block{
 		margin-bottom: 1em
 	}
-		
+		.form-inline{
+			display: none;
+		}
 		.row-novo{
 		display: block;
 		margin: auto;
@@ -1135,7 +1137,6 @@ border-top: 3px solid white;
 				margin: auto;
 	}
 	.container{
-		display: none;
 		width: 100%;
 		background:#111315;
 	}
