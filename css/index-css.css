@@ -1135,6 +1135,7 @@ border-top: 3px solid white;
 				margin: auto;
 	}
 	.container{
+		display: none;
 		width: 100%;
 		background:#111315;
 	}
