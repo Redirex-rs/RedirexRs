@@ -1013,6 +1013,7 @@ border-top: 3px solid white;
 		margin: auto;
 		
 	}	
+		
 		.najnovije{
 		box-sizing: border-box;
 	    text-align: center;
@@ -1059,7 +1060,7 @@ border-top: 3px solid white;
 		width: 30em;
 	}
 	.container{
-		width: 50em;
+		width: 90%;
 		margin: auto; 
 		background: #111315;
 	}
@@ -1077,9 +1078,7 @@ border-top: 3px solid white;
 	.btn-block{
 		margin-bottom: 1em
 	}
-		.form-inline{
-			display: none;
-		}
+		
 		.row-novo{
 		display: block;
 		margin: auto;
@@ -1133,8 +1132,9 @@ border-top: 3px solid white;
     perspective: 25em;
 }
 			.pretraga-okruga{
-		width: 90%;
-				margin: auto;
+		width: 100%;
+		margin: auto;
+				padding: 1em;
 	}
 	.container{
 		width: 100%;
