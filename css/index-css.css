@@ -8,10 +8,6 @@
 		background: #111315;
 	}
 
-	
-	.table{
-		color: white;
-	}
 
 	a {
     text-decoration: none !important;
@@ -31,80 +27,126 @@
 		margin: auto;
 		display: table
 	}
+/* BANNER */
+@media (min-width: 768px){
+	.banner{
+		display: flex;
+		width: 100%;
+		height: 30vh;
+	}
+	.banner-text{
+		display: block;
+		width: 40%;
+		background: url("../pozarevac-grb-opacity05.svg.png");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		opacity: ;
+	}
+	.banner-title{
+		text-align: center;
+		color: white;
+		margin-top: 5vh;
+	}
+	.banner-text h3,h5{
+		
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+
+	}
+	.banner-menu{
+		width: 60%;
+		display: block;
+		padding-top: 4em;
+	}
+	.container{
+		display: block;
+		height: 6vh;
+		margin: auto;
+	}
+	.container button{
+		display: block;
+		width: 25em;
+		height: 3vh;
+		margin-left: 3vw;
+		font-family:  'Russo One', sans-serif;
+	}
 	
+	.pretraga-okruga{
+		display: block;
+		height: 5vh;
+	}
+	.select2-*{
+		height: 5vh;
+		margin: auto;
+	}
+}
+
+
+
 @media (max-width: 768px){
 		
-		body{
-			background-color: black;
-		}
+	.banner{
+		display: block;
+		width: 100%;
+		background: black;
+		background: url("../pozarevac-grb-opacity05.svg.png");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	.banner-text{
+		display: block;
+		width: 100%;
+	}
+	.banner-title{
+		text-align: center;
+		color: white;
+		margin-top: 5vh;
+	}
+	.banner-text h3,h5{
 		
-	           	.logo-img-nav{
-	           	height: 2em;
-	           	z-index: 5	
-	           }
-		
-                .flex-container3  img {
-            	height: 1.5em;
-                width: 1.5em;
-                align-content: right;
-            }
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
 
-                .flex-container3 {
-                        display:inline-flex;
-                        justify-content: center;
-		                padding-bottom:m;
-	                    padding-top: 0.5em;
-                        margin: auto;
-	                    flex-wrap: wrap;
-                 	}
-	
-                .flex-container3 > div {
-                		 width: 13em;
-					margin: 0.3em;
-					font-size: 0.75em
-                	 }
-                .flex-container3 > a > text {
-                		vertical-align: middle
-                	}
-                		
+	}
+	.banner-menu{
+		width: 100%;
+		display: block;
+		padding-top: 1em;
+	}
+	.container{
+		display: block;
+		height: 6vh;
+		margin: auto;
+	}
+	.container button{
+		display: block;
+		width: 20em;
+		height: 4vh;
+		margin-left: 3vw;
+		font-family:  'Russo One', sans-serif;
 	}
 	
-	.card{
-		width: 13em;
-		height: 17em;
-		margin: auto
+	.pretraga-okruga{
+		display: block;
+		height: 5vh;
 	}
 	
-	.col-*{
-		border: 5px solid red
-	}
-	
-	.listing-small-content a {
-		color: white
-	}
-	
-	.card-img-top-1{
-		margin:auto;
-	    width:10em;	
-	}
-	
-	.card-img-top{
-		margin:auto;
-	    width:10em;
-		margin-top: 0.5em	
-	}
+
+}
+	    
 	
 	
-	.right{
-	  position: absolute;
-      top: 0.5%;
-	  right: 0px;
-	  float: right;
-	  margin: auto;
-	  padding: 5em
-		  
-		
-	}
+
 	
 	.sub-footer{
 		padding: 1em;
@@ -200,7 +242,6 @@
 		margin: auto;
 		display: table
 	}
-	banner-te
 	
 	.box-body{
 		margin: auto;
@@ -224,65 +265,9 @@
 		
 	}
 	
-	@media (max-width: 768px){
-.glavni-menu{
-		width: 100%;
-		height: 2em;
-		background-color: rgba(0,0,0,0.022);
-		font-size: 2em;
-		border-bottom: 1px solid white;
-		justify-content: center;
-		display: block;
-		text-align: center;
-		background: #db6400;
-		text-shadow:
-    -1.1px -1.1px 0 #000,
-    1.1px -1.1px 0 #000,
-    -1.1px 1.1px 0 #000,
-    1.1px 1.1px 0 #000; 
-		
-	}
+
 	
-.glavni-menu > p {
-		width: 10em;
-		vertical-align: middle;
-		justify-content: center;
-		color: white;
-		display: block;
-		margin: auto
-	}
-	}
 	
-	@media (min-width: 768px){
-.glavni-menu{
-	
-		width: 100%;
-		height: 2em;
-		background-color: rgba(0,0,0,0.02);
-		font-size: 2em;
-		border-bottom: 1px solid white;
-		justify-content: center;
-		display: block;
-		text-align: center;
-		color: white;
-		background: black;
-		border-bottom:2px solid #db6400;
-    text-shadow:
-    -1.1px -1.1px 0 #000,
-    1.1px -1.1px 0 #000,
-    -1.1px 1.1px 0 #000,
-    1.1px 1.1px 0 #000; 
-	}
-	
-.glavni-menu > p {
-		width: 20em;
-		vertical-align: middle;
-		justify-content: center;
-		color: white;
-		display: block;
-		margin: auto
-	}
-	}
 	
 	
 *{padding:0;margin:0;}
@@ -304,30 +289,11 @@
 	margin-top:22px;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-	
-.column  a {
-	margin: 1em
-}
-
-.masonry { /* Masonry container */
-  column-count: 3;
-  column-gap: 1em;
-}
-
-.column {
-	background-color: #eee;
-  display: inline-block;
-  margin: 0 0 1em;
-  width: 100%;
-}
 
 
 .footer {
   margin-top: auto;
-  border-top: 5px solid #db6400;
+  border-top: 5px solid #4f4f4f;
   width: 100%;		  
   background-color: black;
   color: #fff;
@@ -452,33 +418,9 @@ html {
 
 
 
-@media (min-width: 768px) {
-	.banner-title {
-		display: block;
-  font-size: 1em;
-  background: rgba(0, 0, 0, 0.00);
-  width: 30em;
-  height: 15em;
-  position: absolute;
-  color: rgb(245, 245, 245);
-  text-shadow: 5px 5px 5px #000, 5px 5px 5px #000, 5px 5px 5px #000;
-  top: 15%;
-  right: 10%;
-  text-align: center;
-			
-}
-}
 	
 @media (min-width: 768px) {
-	.banner-text > img {
-  height: 24em;		
-}
-	
-  .banner-text {
-	  display: block;
-    height: 26em;
-background:#111315;	
-  }
+
 h1{
 		font-size: 3em;
 	    margin-top: 1em;
@@ -492,24 +434,12 @@ h3{
 	li{
 		font-size: 0.9em
 	}	
-	
-	.banner-text > img {
-  height: 10em
-}
-	
-  .banner-text {
-    height: 150px;
-background-color: #212529;	
-  }
+
+
 	h2{
 		font-size: 1.5em;
 		margin-top: 1em
 	}	
-	body{
-		background-image: repeating-linear-gradient(90deg, hsla(57,0%,42%,0.09) 0px, hsla(57,0%,42%,0.09) 1px,transparent 1px, transparent 60px),repeating-linear-gradient(0deg, hsla(57,0%,42%,0.09) 0px, hsla(57,0%,42%,0.09) 1px,transparent 1px, transparent 60px),repeating-linear-gradient(0deg, hsla(57,0%,42%,0.09) 0px, hsla(57,0%,42%,0.09) 1px,transparent 1px, transparent 10px),repeating-linear-gradient(90deg, hsla(57,0%,42%,0.09) 0px, hsla(57,0%,42%,0.09) 1px,transparent 1px, transparent 10px),linear-gradient(90deg, rgb(20,20,20),rgb(20,20,20));
-		height: 90%;
-		background-repeat: repeat;
-	}
 	
 	}
 
@@ -517,11 +447,7 @@ background-color: #212529;
 	
 	
 	@media (max-width: 768px){
-			.banner{
-		display:block;
-		width: 100%;
-		height: 65vh;
-		}
+	
 		/* Popup box BEGIN */
 .hover_bkgr_fricc{
     background:rgba(0,0,0,.4);
@@ -835,24 +761,7 @@ border-top: 3px solid white;
 }
 	
 	@media (min-width: 768px){
-		.banner img {
-		position: absolute;
-		width: 100%;
-		height: 29.5em;
-		z-index: -3333
-		
-		
-	}
-		
-			.banner-kartica{
-		position: absolute;
-		width: 30em;
-		border: 2px solid white;
-		top: %;
-		left: 2%;
-		background: white;
-		border-radius: 4px;
-	}
+	
 	.section-title-1{
 		margin-top: 3em;
 		color: white;
@@ -865,38 +774,6 @@ border-top: 3px solid white;
 		font-size: 2em;
 		padding: 1em;
 		margin-top: 2em
-	}
-	.banner-kartica > h6{
-		display: block;
-		padding-top: 1em;
-		text-align: center;
-		font-size: 0.8em
-	}
-	.banner-kartica > h3{
-		display: block;
-		text-align: center;
-		font-size: 2em
-	}
-	.banner-kartica > p{
-		display: block;
-		text-align: center;
-		font-size: 1em;
-		padding-top:0.5em;
-		width: 80%;
-		margin: auto;
-	}
-	.banner-kartica > h5 {
-		position: absolute;
-		text-align: center;
-		display: block;
-		width: 12em;
-		height: 2em;
-		bottom: 34%;
-		left: 25%;
-		padding: 0.4em;
-		color: white;
-		background: rgba(3,108,12,1.00);
-		border-radius: 5px
 	}
 	.nav-item:hover{
 		color: white;
@@ -1055,15 +932,7 @@ border-top: 3px solid white;
 .card-container {
     perspective: 25em;
 }
-			.pretraga-okruga{
-		left: 15%;
-		width: 30em;
-	}
-	.container{
-		width: 90%;
-		margin: auto; 
-		background: #111315;
-	}
+		
 	.form-control{
 		width: 30em
 	}
@@ -1131,15 +1000,7 @@ border-top: 3px solid white;
 	
     perspective: 25em;
 }
-			.pretraga-okruga{
-		width: 100%;
-		margin: auto;
-				padding: 1em;
-	}
-	.container{
-		width: 100%;
-		background:#111315;
-	}
+
 	.form-control{
 		width: 18em
 	}
