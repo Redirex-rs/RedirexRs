@@ -1,6 +1,108 @@
 /*dugmici delatnosti*/
+@media (max-width: 768px){
+	.pretraga{
+		display: block;
+		width: 100%;
+		height: 4em;
+	}
+	.pretraga #myInput1{
+		display: block;
+		width: 30em;
+		margin: auto;
+		margin-top: 1em;
+	}
+	.svi-preduzetici-kartice{
+			background: rgba(23,94,134,1);
+	}
+	.banner{
+		display: flex;
+		width: 100%;
+		height: 30vh;
+					 background: rgb(23,94,134);
+background: linear-gradient(0deg, rgba(23,94,134,1) 0%, rgba(17,19,21,1) 100%);
+		border-bottom: 3px solid white;
+	}
+	.banner-text{
+		display: none;
+		width: 40%;
+		background: url("../pozarevac-grb-opacity05.svg.png");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	.banner-title{
+		text-align: center;
+		color: white;
+		margin-top: 5vh;
+	}
+	.banner-text h3,h5{
+		
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
 
+	}
+	.banner-menu{
+		width: 60%;
+		display: block;
+		padding-top: 4em;
+	}
+	.pretraga-okruga .form-control{
+		display: block;
+		height: 5vh;
+		width: 90%;
+	}
+		
+		.sajt-opis{
+			width: 100%;
+			display: flex;
+			margin-top: vh;
+			padding: 1em;
+			 background: rgb(23,94,134);
+background: linear-gradient(0deg, rgba(23,94,134,1) 0%, rgba(17,19,21,1) 100%);  
+		}	
+		.opis-deo{
+			display: block;
+			margin: auto;
+			padding: 1em;
+			width: 30%;
+			text-align: center;
+			height: 20vh;	
+		}
+		.opis-deo i{
+			width: 1.05em;
+			display: block;
+			color: white;
+			margin: auto;
+		}
+		.opis-deo p{
+			padding: 1em;
+			    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+		}
+}
 @media (min-width: 768px){
+	.pretraga{
+		display: block;
+		width: 100%;
+		height: 4em;
+	}
+	.pretraga #myInput1{
+		display: block;
+		width: 30em;
+		margin: auto;
+		margin-top: 1em;
+	}
+	.svi-preduzetici-kartice{
+			background: rgba(23,94,134,1)
+	}
 	.banner{
 		display: flex;
 		width: 100%;
