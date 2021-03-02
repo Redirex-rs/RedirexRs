@@ -2,12 +2,13 @@
 @media (max-width: 768px){
 	.pretraga{
 		display: block;
-		width: 100%;
+		width: 25em;
 		height: 4em;
+		margin: auto;
 	}
 	.pretraga #myInput1{
 		display: block;
-		width: 25rem;
+		width: 25em;
 		margin: auto;
 		margin-top: 1em;
 	}
