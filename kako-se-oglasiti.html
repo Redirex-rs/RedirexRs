@@ -58,6 +58,25 @@
 <link rel="stylesheet" href="../../../css/GlavniCss-zajecar.css" class="">	
 
 <style>
+	@media(min-width:768px){
+		.box-inner{
+			width:22vw;
+			margin: auto;
+		}
+		.widgettitle{
+			width: 100%;
+			
+		}
+		.widget{
+		}
+	}
+	@media(max-width:768px){
+		.box-inner{
+			width:30em
+		}
+	}
+		
+	
 	body{
 		background: black;
 	}
@@ -73,7 +92,15 @@
 	}
 	.row{
 		margin: auto;
-		align-content: center
+		align-content: center;
+		text-align: center;
+	}
+	.row1{
+		display: block;
+		border: 1px solid red;
+		margin: auto;
+		align-content: center;
+		text-align: center;
 	}
 	.box-body-stranice{
 		margin: auto
@@ -81,20 +108,20 @@
 	.row{
 	}
 	.column{
-		width: 50%;
+		width: 100%;
 		padding: 1em;
 	}
 	.rvreme{
-		width: 40em;
+		width: 28em;
 	}
 	#radnovraddan{
-		width: 40em;
+		width: 28em;
 	}
 	#radnovsub{
-		width: 40em;
+		width: 28em;
 	}
 	#radnovned{
-		width: 40em;
+		width: 28em;
 	}
 	.btn-primary{
 		margin: 1em;
@@ -144,63 +171,9 @@
 <!--/.Navbar-->
 <!-- The overlay -->
 
-	
-	
-   <div class="slikakarticeprimer">
-	<img class="slikaprimera1" src="banneri/karticaa.jpg" alt="">
-	</div>
-        
 
-	
 <hr class="solid" style="border-top: 1px solid white; width: 95%; margin: auto; padding-bottom: 0.5em; margin-top: 3em">
-
-<div class="tekst-deo">
-	<div class="redirex-oglasavanje">
-			<p><h2>ŠTA JE REDIREX?</h2></p>
-
-<p>Prateći potrebe naroda u daljoj digitalizaciji, prepoznali smo važnost pristupu tačnih i važnih informacija na internetu u svakom trenutku. Kako se danas svaka usluga prvobitno pretražuje preko interneta, sva preduzeća i preduzetnici koji nude bilo koju vrstu usluge koji nemaju nikakvo prisustvo na internetu biće izvan glavne konkurencije.<br><br>
-
-	Zato smo odlučili da napravimo sajt koji bi sadržao sve na jednom mestu.
-	Sve informacije o radu i uslugama od velikih firmi do najmanjih zanata, gde se mogu naći sve informacije o preduzecu, od kontakta i radnog vremena do asortimana ponude i cena. <br> <br>
 	
-	Redirex.rs web-stranica je u funkciji nepuna tri meseca i već imamo preko 80 oglašenih preduzeća iz svih krajeva Srbije i svakom danom nam raste broj preduzeća i pregleda. Dovoljno je samo popuniti obrazac na bit.ly/Kako-se-oglasiti, sve je potpuno besplatno.
-		
-
-	</p><br>
-		</div>
-	<hr class="solid" style="border-top: 1px solid grey; width: 100%; margin: auto; padding-bottom: 0.em">	
-
-
-		<div class="redirex-oglasavanje">
-		<p><h2>KOJI JE NAŠ CILJ?</h2></p>
-
-<p>Nudimo izlog svim preduzetnicima, malim i velikim, na celoj teritoriji Srbije, info-karticu kao i besplatnu web-stranicu koju sutradan možete iskoristiti za vaše poslovanje ili kao katalog vaših usluga.<br><br> Takođe aktivnim unapređivanjem i reklamiranjem želimo da pretvorimo redirex.rs u svakodnevno ime za pronalaženje svih informacija od popusta i akcija do informacija najmanjih zanatlija i online preduzetnika. Želimo da pomognemo svim domaćim preduzetnicima u poboljšanju rada, dobijanju svog predstavništva na internetu, mogućnost pronalaženja Vaših kontakt informacija i usluga i bilo koje doba dana ili noći.  <br> 
-	</p>
-
-		<br><br>
-	</div>
-	<hr class="solid" style="border-top: 1px solid grey; width: 100%; margin: auto; padding-bottom: 0.em">	
-
-
-		<div class="redirex-oglasavanje" style="padding-bottom: 2em">
-		<p><h2>PLANOVI ZA BUDUĆNOST</h2></p>
-
-	<p>
-		
-		-<u>Aktivnost na oglasnim grupama</u>: Imamo pristup na više oglasnih grupa na raznim društvenim grupama. Plan nam je da ukoliko nekome potrebna neka vrsta usluge (npr. "Zna li neko ko vrši uslužno šetanje pasa?") mi odgovorimo sa linkom ka našem sajtu gde može pronaći takvu vrstu usluge. Time bismo skrenuli paznju na našu stranicu i samim tim povećali posećenost. Radimo na tome da taj proces bude automatski.
-		<br><br>
-	    -<u>Mogućnost samooglašavanja</u>: Trenutno je potrebno popuniti formular koji mi dobijamo na našoj e-mail adresi kako bismo Vam napravili info-karticu i web-stranicu, cilj nam je da taj ceo proces bude automatizovan. Kako popunite formular i potvrdite u istom trenutku, na osnovu grada i delatnosti, tako se Vaša info-kartica pojavljuje na odabranoj stranici.
-		<br><br>
-		-<u>Redirex.rs aplikacija za mobilne telefone</u> <br><br>
-		-<u>Razvijanje rada i funkcionalnosti redirex.rs</u>
-		<br><br>
-	    ... i još mnogo toga.
-<br><br>
-	</p>
-	
-	</div>
-	
-</div>		
 
 <div class="testbox">
       <form action="https://formspree.io/f/mayllayz" method="POST">
@@ -209,12 +182,9 @@
 			<h2>Formular za oglašavanje</h2>
         </div>
         <br/>
-        <p>
-        <center>Hvala Vam što ste se odlučili da se oglasite na Redirex.rs. Svaki vid oglašavanja je besplatan, dovoljno je samo da popunite obrazac.
-        </center>
-        </p>
         <br/>
-        <div class="row">
+		  
+        <div class="row1">
 			
 		<div class="column">
           <div class="item">
@@ -246,15 +216,15 @@
 	<div class="radno-vreme">		
           <div style="width: 100%" class="item">
             <label class="rvreme" for="radnovraddan">Radno vreme pon-pet<span>*</span>&nbsp; (Ukoliko nemate određeno radno vreme ostavite polje prazno. Ukoliko radite po pozivu, upišite "po pozivu".)</label>
-            <input placeholder="Primeri: od 8h do 16h;  po pozivu;  ne radimo" type="ttext" id="radnovraddan" name="6radnovreme-ponpet" required>
+            <input placeholder="Primeri: od 8h do 16h;  po pozivu;  ne radimo" type="ttext" id="radnovraddan" name="6radnovreme-ponpet">
           </div>	
           <div style="width: 100%" class="item">
             <label class="rvreme" for="radnovsub">Radno vreme subotom<span>*</span>&nbsp; (Ukoliko nemate određeno radno vreme ostavite polje prazno. Ukoliko radite po pozivu, upišite "po pozivu".)</label>
-            <input placeholder="Primeri: od 8h do 16h;  po pozivu;  ne radimo" type="ttext" id="radnovsub" name="7radnovreme-sub" required>
+            <input placeholder="Primeri: od 8h do 16h;  po pozivu;  ne radimo" type="ttext" id="radnovsub" name="7radnovreme-sub">
           </div>	
           <div style="width: 100%" class="item">
             <label class="rvreme" for="radnovned">Radno vreme nedeljom<span>*</span>&nbsp; (Ukoliko nemate određeno radno vreme ostavite polje prazno. Ukoliko radite po pozivu, upišite "po pozivu".)</label>
-            <input placeholder="Primeri: od 8h do 16h;  po pozivu;  ne radimo" type="ttext" id="radnovned" name="8radnovreme-ned" required>
+            <input placeholder="Primeri: od 8h do 16h;  po pozivu;  ne radimo" type="ttext" id="radnovned" name="8radnovreme-ned">
           </div>	
         </div>
 	</div>		
@@ -314,20 +284,7 @@
           <textarea id="visit" rows="3"></textarea>
         </div>
 		  
-		  <div style="border: 3px solid #4f4f4f; padding: 3em" class="pitanje-polje">
-			  <h3>Redirex stranica</h3>
-		  <p>Ukoliko zelite i Vašu ličnu redirex stranicu, napišite u polju "Da" i mi ćemo Vas kontaktirati u najkraćem roku putem emaila. Redirex Stranice su potpuno besplatne i mogu sadržati neograničen broj podataka.<br> Takođe možemo iskoristiti bitly.com kako bismo napravili skraćenu verziju linka ka Vašoj stranici (primer: bit.ly/redirexrs)</p>
-		     <div class="stranica-pitanje">
-			  
-			  
-          <div class="item">
-            <label for="stranicadane">Da li želite Redirex stranicu?<span>*</span>&nbsp;</label>
-            <input id="stranicadane" type="text" name="stranicadane" required/>
-          </div>
-				 
-			  </div>
-			  
-		  </div>
+
 	
 	</div>	  
 	</div>	  
@@ -368,7 +325,7 @@
 <div class="row"> 
 
 
-<div class="col-sm-12 col-lg-12 col-md-6" style="display: table ;margin: auto;padding-bottom: 0.5em">
+<div class="col-sm-12 col-lg-12 col-md-6 footer-row" style=" ;margin: auto;padding-bottom: 0.5em">
    <div class="box">
      <div class="box-inner">
         <div style="color: white" class="box-icon">
@@ -385,7 +342,7 @@
 	
 <hr class="solid" style="border-top: 1px solid white; width: 70%; margin: auto; padding-bottom: 0.5em">  
 	 
- <div class="col-sm-12 col-lg-12 col-md-6" style="display: table;margin: auto;padding-bottom: 0.5em">
+ <div class="col-sm-12 col-lg-12 col-md-6 footer-row" style="display: table;margin: auto;padding-bottom: 0.5em">
      <div class="box ">
          <div class="box-inner">
              <div style="color: white" class="box-icon">
@@ -406,7 +363,7 @@
 
 <hr class="solid" style="border-top: 1px solid white; width: 70%; margin: auto; padding-bottom: 0.5em">	
 	
- <div class="col-sm-12 col-lg-12 col-md-6" style="display: table;margin: auto; padding-bottom: 2em">
+ <div class="col-sm-12 col-lg-12 col-md-6 footer-row" style="display: table;margin: auto; padding-bottom: 2em">
      <div class="box ">
          <div class="box-inner">
              <div style="color: white" class="box-icon">
@@ -449,7 +406,7 @@
     </div>					           
 </div><!-- /.cols-sm-3 -->
 	
-	<div class="col-sm-3">
+<div class="col-sm-3 widget">
 <h2 class="widgettitle"><strong>LINKOVI SAJTA</strong></h2>
 <div class="listing-container">
     <div class="listing-small">
@@ -465,7 +422,7 @@
         </div>
     </div>
 </div> 
-		</div>
+</div>
 	
 <!--	
 <div class="listing-container">
