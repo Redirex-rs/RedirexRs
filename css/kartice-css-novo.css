@@ -354,113 +354,78 @@ display: flex;
 		display: flex;
 		flex-wrap: wrap;
 		width: auto;
-		padding-top: 3em;
-		padding-bottom: 10em;
-		margin-top: 1em;
-		padding-left: 0.5em;
-		padding: 2em
+			background: rgba(23,94,134,1);
+			background-attachment: fixed;
+			background-size:cover;
+			background-repeat: no-repeat;
 	}
 	.kartica-telo{
-		display: flex;
-		width: 33em;
-		height: 40em;
-	    position: relative;
-		margin-left: 0;
-		margin-right: 0;
-		font-size: 0.7em;
-		margin-bottom: 4em;
+		width: 90%;
+		height: 45em;
+		margin: auto;
+		display: block;
+		background: white;
+		padding: 1em;
 		
 	}
-	.kartica-content{
-		display: block;
-		width: inherit;
-		height: 15em;
-		position: absolute; 
-		right: 0; 
-		bottom: 0;
-		background: rgba(240,240,240,1.00);
-		font-family: 'Oswald', sans-serif;
-		border-radius: 0.7em;
-		margin-top: 5em;
-		font-size: 1.05em;
-	}
 	.kartica-slika{
-		width: 17em;
-		height: 10em;
-		position: absolute;
-		left: -0.5em;
-		top: -1em;
+		display: flex;
+		width: 100%;
+		height: 12em;
 		border-radius: 0.7em;
-		-webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.55);
-	-moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.55);
-	box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.55);
+		padding: 1em;
 	}
-	.kartica-slika>img {
-		width: 17em;
-		height: 10em;
-		border-radius: 0.7em;
+	.kartica-slika h1{
+		font-size: 2em;
+		width: 80%;
+		text-align: center;
+	}
+	.kartica-slika img{
+		width: 30%;
 	}
 	.kartica-info{
-		position: absolute; 
-		right: 0;
-		width: 12.5em;
-		height: 100%;
-		font-size: 1.1em;
+		display: flex;
+		padding: 1em;
+		margin-top: 2em;
+		width: 100%;
 		
 	}
 	.kartica-kontakt{
-		position: absolute; 
-		right: 0;
-		width: 17em;
-		font-size: 0.8em;
+		width: 30%;
+		padding: 1em;
+		border-right: 3px solid #4f4f4f;
+
 	}
 	.kartica-slogan{
-		position: absolute; 
-		left: 1em;
-		bottom: 3em;
-		width: 18em;
-		padding: 0.4em;
-		font-size: 0.9em;
-		top: 10em;
+		width: 80%;
+		padding: 1em;
+
 	}
-	
-}
-@media (min-width: 768px){
-	.malo {
-		height: 25em;
-		margin-left: 1em;
-		margin-right: 1em;
-		margin-top:5em;
-		
+	.w3-containter{
+		cursor: pointer;
+		height: 3em;
 	}
-	.malo-plus {
-		height: 25em;
-		margin-left: 1em;
-		margin-right: 1em;
-		margin-top:5em;
+	.w3-button{
+		display: block;
+		width: 5em;
+		float: right;
 	}
-	.srednje{
-height: 25em;
-		margin-top:5em;
-		margin-left: 1em;
-		margin-right: 1em;
+	.slika-onclick{
+		display: block;
+		width: 100%;
+		height: 8em;
 	}
-	.srednje-plus{
-		height: 27.5em;
-		margin-left: 1em;
-		margin-right: 1em;
-		margin-top:5em;
+	.slika-onclick img{
+		display: block;
+		margin: auto;
+		width: 100%;
+		cursor: pointer;
 	}
-	.veliko{
-		height: 25em;
-		margin-left: 1em;
-		margin-right: 1em;
-		margin-top:5em;
-	}
-	.veliko-plus{
-		height: 33em;
-		margin-left: 1em;
-		margin-right: 1em;
+	.filter{
+		width: 20%;
+		height: 12em;
+		padding: 1em;
+		list-style-type: none;
 	}
 	
 }
