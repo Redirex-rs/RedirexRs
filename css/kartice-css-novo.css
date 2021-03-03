@@ -72,18 +72,18 @@
 	.slika-onclick{
 		display: block;
 		width: 100%;
-		height: 8em;
+		height: 14.5vh;
+		background: white;
 	}
 	.slika-onclick img{
 		display: block;
 		margin: auto;
 		width: 100%;
 		cursor: pointer;
-		border: 
 	}
 	.filter{
 		width: 50%;
-		height: 12em;
+		height: 22vh;
 		padding: 1em;
 		list-style-type: none;
 	}
@@ -186,6 +186,8 @@
 		width: 100%;
 		height: 12vh;
 		background: white;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
 	}
 	.slika-onclick img{
 		display: block;
@@ -193,6 +195,8 @@
 		height: 12vh;
 		width: 100%;
 		cursor: pointer;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px
 	}
 	.filter{
 		width: 20%;

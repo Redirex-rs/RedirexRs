@@ -192,31 +192,78 @@ background: linear-gradient(0deg, rgba(23,94,134,1) 0%, rgba(17,19,21,1) 100%);
 			background-attachment: fixed;
 			background-size:cover;
 			background-repeat: no-repeat;
-		}		
+		}
+			.glavni-menu-post{
+				display: flex;
+				flex-wrap: wrap;
+				width: 95%;
+				margin: auto;
+				margin-bottom: 3em;
+				background: rgba(0,0,0,0.85);
+				border-bottom: 3px solid #4f4f4f;
+				margin-top: 2vh;
+			}
+			.title-post{
+				width: 100%;
+				height: 6vh;
+			}
+			.title-post h3{
+				color: white;
+				padding: 0.4em;
+				border-bottom: 3px solid #4f4f4f;
+			}
+			
+			.post-slika{
+				display: flex;
+				width: 30%;
+				margin: auto;
+			}
+			.post-slika img{
+				display: block;
+				width: 25vh;
+				margin: auto;
+			}
+			.post-tekst{
+				display: flex;
+				flex-wrap: wrap;
+				width: 60%;
+				margin: auto;
+				color: white;
+				font-size: 1.5vh;
+				padding: 0.4em;
+			}
+			.post-tekst p{
+				display: block;
+				margin: auto;
+				padding: 0.5em;
+			}
+			.post-tekst a{
+				display: block;
+				border-top: 1px solid #4f4f4f;
+				width: 100%;
+				text-align: right;
+				color: white;
+				margin: 1em;
+				
+			}
 		.levi-main{
 			display: block;
 			width:15%;
-			border: 1px solid red;
 		}
 		.srednji-main{
 			display: block;
 			width: 85%;
-			background: url("under-construction-2891888_1920.jpg");
 			background-size: contain;
 			background-attachment: fixed;
+			margin: auto;
 		}
 		.desni-main{
 			display: block;
 			width:15%;
 		}
-		.desni-main img{
-			display: block;
-			width: 100%;
-			
-		}
 		}
 		
-		@media (max-width: 768px){
+@media (max-width: 768px){
 			html{
 				scroll-behavior: smooth;
 			}
@@ -270,27 +317,72 @@ background: linear-gradient(0deg, rgba(23,94,134,1) 0%, rgba(17,19,21,1) 100%);
 			background-size:cover;
 			background-repeat: no-repeat;
 		}		
+			.glavni-menu-post{
+				display: block;
+				width: 100%;
+				margin-bottom: 3em;
+				margin-left: 0.5em;
+				background: rgba(0,0,0,0.85);
+				border-bottom: 3px solid #4f4f4f;
+				margin-top: 2vh;
+			}
+			.title-post h3{
+				display: block;
+				color: white;
+				padding: 0.4em;
+				border-bottom: 3px solid #4f4f4f;
+			}
+			
+			.post-slika{
+				display: block;
+				width: 100%;
+				margin: auto;
+			}
+			.post-slika img{
+				display: block;
+				width: 25vh;
+				margin: auto;
+			}
+			.post-tekst{
+				display: block;
+				flex-wrap: wrap;
+				width: 100%;
+				margin: auto;
+				color: white;
+				font-size: 1.5vh;
+				padding: 0.4em;
+			}
+			.post-tekst p{
+				display: block;
+				margin: auto;
+				padding: 0.5em;
+			}
+			.post-tekst a{
+				display: block;
+				border-top: 1px solid #4f4f4f;
+				width: 90%;
+				text-align: right;
+				color: white;
+				margin: 1em;
+				
+			}
 		.levi-main{
 			display: block;
 			width:15%;
 		}
 		.srednji-main{
 			display: block;
-			width: 75%;
-			background: url("under-construction-2891888_1920.jpg");
+			width: 85%;
 			background-size: contain;
 			background-attachment: fixed;
+			margin: auto;
 		}
 		.desni-main{
 			display: block;
-			width:25%;
-		}
-		.desni-main img{
-			display: block;
-			width: 100%;
-			
+			width:15%;
 		}	
 		}
+		
 @media (min-width: 768px){
 		.kartica-websajt{
 			display: block;
@@ -396,8 +488,8 @@ background: linear-gradient(0deg, rgba(23,94,134,1) 0%, rgba(17,19,21,1) 100%);
 	        <select class="form-control select2" onChange="window.location.href=this.value">
 				<option>Biranje delatnosti</option>
 			
-			   <option value="stranice/Delatnosti/Medicina-i-zdravlje.html"><a href="stranice/Delatnosti/Medicina-i-zdravlje.html">Medicina</a></option>
-               
+			   <option value="stranice/Delatnosti/Medicina-i-zdravlje.html"><a href="stranice/Delatnosti/Medicina-i-zdravlje.html">Medicina</a></option>			
+			   <option value="stranice/Delatnosti/Zanatsko-uslužne.html">Zanatsko uslužne delatnosti</option>
 				
 				
 	        </select>
@@ -454,29 +546,70 @@ background: linear-gradient(0deg, rgba(23,94,134,1) 0%, rgba(17,19,21,1) 100%);
 <script>
 !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
 </script>
-	
-<div id="glavni-meni"></div>	
+		
 	
 <div class="glavni-menu">				
 	<div class="srednji-main">
-	  <p>Dobrodosli na redirex.rs</p>
-	</div>					
+		
+<div class="glavni-menu-post">
+<div class="title-post"><h3>NOVO - Jocić Grejanje : majstor Jocić Dejan-Jole</h3></div>	
+		<div class="post-slika">
+			<img src="stranice/Delatnosti/usluge/Jole-kotao/IMG_20201201_005840[1].jpg" alt="">
+	    </div>
+	    <div class="post-tekst">
+		<p>	
+-Centalno, solarno i podno grejanje- <br>
+-Vodovodne instalacjie- <br><br>
+POZOVITE NAS DA VAM UTOPLIMO DOM, SA NAMA NEMA ZIME <br> <br>
+Kvalitetan rad i povoljne cene
+		</p>
+			
+<a href="#" class="">Opširnije na stranici delatnosti</a>	
+	    </div>
+	</div>
+		
+<div class="glavni-menu-post">
+<div class="title-post"><h3>NOVO - Ordinacija Dr Žigić</h3></div>	
+		<div class="post-slika">
+			<img src="stranice/Delatnosti/medicina/zdravstvo i medicina/inter. Zigic/logo-7.jpg" alt="">
+	    </div>
+	    <div class="post-tekst">
+		<p>	
+			Specijalistička internistička ordinacija Žigić otvorena je marta 2016.godine i nalazi se u ulici Bratstva i jedinstva 100 u Požarevcu (put prema bolnici). <br> <br>
+Bavimo se dijagnostikom internističkih oboljenja, a posebno kardiovaskularnih bolesti. <br><br>Pregledi se zakazuju (osim hitnih).
+		</p>
+			
+<a href="stranice/Delatnosti/Medicina-i-zdravlje.html#id01" class="">Opširnije na stranici delatnosti</a>	
+	    </div>
+	</div> - 
+		
+<div class="glavni-menu-post">
+<div class="title-post"><h3>NOVO - Ordinacija Dr Marina</h3></div>	
+		<div class="post-slika">
+			<img src="stranice/Delatnosti/medicina/pedijatrija/Dr-marina/main_banner_marina.jpg" alt="">
+	    </div>
+	    <div class="post-tekst">
+		<p>	
+Ordinacija Dr Marina je privatna specijalistička ordinacija iz oblasti pedijatrije koja se nalazi u Požarevcu u ulici Njegoševa br 1/3. Osnovana je i počela sa radom 22.02. 2017. Osnivač je Dr Marina Žigić specijalista pedijatar – kardiolog.
+		</p>
+			
+<a href="stranice/Delatnosti/Medicina-i-zdravlje.html#id02" class="">Opširnije na stranici delatnosti</a>	
+	    </div>
+	</div>
+		
+		
+		
+</div>	
+				
+	
+	
+	
+	
 	<div class="desni-main">
-	 <img src="New Project.jpg" alt="">
-	 <img src="New Project.jpg" alt="">
-	 <img src="New Project.jpg" alt="">
-	 <img src="New Project.jpg" alt="">
 	</div>					
-
 	
 	
 </div>
-      
-
-<hr> 
-
-	
-<br> <hr> 
 	
 <div class="footer">
 <p><h3 style="margin-bottom: em"></h3></p>	

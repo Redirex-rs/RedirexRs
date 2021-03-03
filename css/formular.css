@@ -1,4 +1,23 @@
 @media (min-width: 768px) {
+		.btn-primary{
+		margin: 1em;
+		width: 20em;
+		align-content: center
+		
+	}
+		.rvreme{
+		width: 28em;
+	}
+	#radnovraddan{
+		width: 28em;
+	}
+	#radnovsub{
+		width: 28em;
+	}
+	#radnovned{
+		width: 28em;
+	}
+	
 		.slikaprimera1{
 		width: 70%;
 		height: 70%;
@@ -220,7 +239,25 @@
 	}
 }
 @media (max-width: 768px) {
-
+		.btn-primary{
+		margin: 1em;
+		width: 15em;
+		align-content: center
+		
+	}
+	
+	#radnovraddan{
+		width: 18em;
+	}
+	#radnovsub{
+		width: 18em;
+	}
+	#radnovned{
+		width: 18em;
+	}
+		.rvreme{
+		width: 18em;
+	}
 	.forma-telo{
 		display: block;
 		width: 40em;
