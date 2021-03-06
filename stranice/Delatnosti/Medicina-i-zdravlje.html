@@ -40,12 +40,14 @@
 	
 <script src="../../JSS/Filterovanje.js"></script>
 <script src="../../JSS/backtotop.js"></script>
+<script src="../../css/Overlay.js"></script>	
 <link rel="stylesheet" href="../../css/footercss.css">
 <link rel="stylesheet" href="../../css/GlavniCss-zajecar.css" class="">
 <link rel="stylesheet" href="../../css/floatingdugme.css" class="">	
 <link rel="stylesheet" href="../../css/kartice-css-novo.css"> 
 <link rel="stylesheet" href="../../css/redirex-stranica-link.css">
-<link rel="stylesheet" href="../../css/index-css.css">	
+<link rel="stylesheet" href="../../css/index-css.css">
+<link rel="stylesheet" href="../../css/overlay.css">	
 
 <style>
 	body{
@@ -127,7 +129,7 @@ h9 {
 		
 
 	   <!-- Meni s leve strane vidljiv na dektop---><!--Navbar-->
-<nav  class="navbar navbar-expand-lg navbar-dark primary-color">
+<nav class="navbar navbar-expand-lg navbar-dark primary-color">
   <!-- Navbar brand -->
   <a style="font-family: 'Russo One', sans-serif;" class="navbar-brand" href="https://redirex.rs">REDIREX</a>
   <!-- Collapse button -->
@@ -155,7 +157,29 @@ h9 {
   <!-- Collapsible content -->
 </nav>
 <!--/.Navbar-->
-	
+			
+ <!-- The overlay -->
+<div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="#">Automobilizam</a>
+    <a href="#">Industrija</a>
+    <a href="#">Maloprodaja</a>
+    <a href="#">Medicina i zdravlje</a>
+    <a href="#">Nekretnine</a>
+    <a href="#">Prodaja na veliko</a>
+    <a href="#">Proizvodnja i prodaja nameštaja</a>
+    <a href="#">Servis bele tehnike</a>
+    <a href="#">Sevis i prodaja računara</a>
+    <a href="#">Uslužne delatnosti</a>
+    <a href="#">Zanatsko uslužne</a>
+  </div>
+</div>
+			
 <div class="banner">
 <div class="banner-text" style="width: 50%; margin-bottom: 1em">
 	
@@ -165,50 +189,6 @@ h9 {
             <h5>Poslovni Katalog Požarevca</h5>
         </div>
 	</div> 
-	<div class="banner-menu">
-		
-	    <div class="container">
-	<div class="rowd">
-	    <form class="col-md-5 pretraga-okruga">
-	        <select class="form-control select2" onChange="window.location.href=this.value">
-				<option>Biranje delatnosti</option>
-			
-			   <option value="stranice/Delatnosti/Medicina-i-zdravlje.html"><a href="stranice/Delatnosti/Medicina-i-zdravlje.html">Medicina</a></option>
-               
-				
-				
-	        </select>
-	    </form>
- 	</div>
-</div>
-		
-	    <div class="container">
-	<div class="row">
-	    <form class="col-md-5 pretraga-okruga">
-	        <select class="form-control select2" onChange="window.location.href=this.value">
-				<option>Pretraga preduzetnika</option>
-			
-			   <option><a class="inactiveLink" href="#">Medicina</a></option>
-			   <option><a class="inactiveLink" href="#">Nameštaj</a></option>
-			   <option><a class="inactiveLink" href="#">Maloprodaja</a></option>
-			   <option><a class="inactiveLink" href="#">Usluge</a></option>
-			   <option><a class="inactiveLink" href="#">Usluge prevoza</a></option>
-			   <option><a class="inactiveLink" href="#">Medicina</a></option>
-			   <option><a class="inactiveLink" href="#">Nameštaj</a></option>
-			   <option><a class="inactiveLink" href="#">Maloprodaja</a></option>
-			   <option><a class="inactiveLink" href="#">Usluge</a></option>
-			   <option><a class="inactiveLink" href="#">Usluge prevoza</a></option>
-               
-				
-				
-	        </select>
-	    </form>
- 	</div>
-</div>
-		<div class="container">
-		<button><i class="fas fa-search"></i>&nbsp;Napredna pretraga svih info-kartica</button>
-			</div>
-	</div>
       </div>
    
 
@@ -217,6 +197,12 @@ h9 {
 	<!-- Button trigger modal -->
 <div class="pretraga">
 <input class="form-control" id="myInput1" type="text" placeholder="pretraga stranice">
+	
+	<span class="overlay-button" onclick="openNav()">
+	<i class="fas fa-chevron-left fa-2x"></i>
+	<p>Delatnosti</p>
+</span>
+	
 </div>	
 		
 <div class="svi-preduzetici-kartice" style="display: block;height: 50em;">	
