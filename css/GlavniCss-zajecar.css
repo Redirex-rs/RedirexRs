@@ -136,6 +136,21 @@ background: linear-gradient(0deg, rgba(23,94,134,1) 0%, rgba(17,19,21,1) 100%);
 	.svi-preduzetici-kartice{
 			background: rgba(23,94,134,1)
 	}
+	.redirex-stranica-dugme{
+	    display: block;
+		width: 90%;
+		margin: auto;
+		margin-top: 100%;
+		font-size: 1.2em;
+		border-radius: 5px;
+		background: #4f4f4f;
+	}
+	.redirex-stranica-dugme p{
+		margin: auto;
+		text-align: center;
+		color: aliceblue;
+		padding: 0.5em;
+	}
 	.banner{
 		display:block;
 		width: 100%;

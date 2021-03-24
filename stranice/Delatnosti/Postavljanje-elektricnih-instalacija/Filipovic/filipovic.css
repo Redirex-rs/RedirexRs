@@ -1,0 +1,497 @@
+
+		@media (max-width: 768px){
+		.footer{
+			width: 100%;
+			display: block;
+			background: #212529	;
+			margin-top: 15vh;
+			padding-top: 3vh;
+			text-align: center;
+			
+		}
+		}
+		@media (min-width: 768px)	{
+		.footer{
+			width: 100%;
+			display: flex;
+			background: #212529	;
+			padding-top: 3vh;
+			text-align: center;
+			
+		}	
+		}
+	
+		
+		html{
+			scroll-behavior: smooth;
+		}
+.industrijski-pogoni{
+	background-image: url("industr-pogon.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}	
+.pogon-zivina{
+	background-image: url("uzgoj-zivine.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.stambene-zgrade{
+	background-image: url("stam-pos-zgrada.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;	
+}
+.komerc-obj{
+	background-image: url("maksi-33211.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;	
+}
+.video-nadzor{
+	background-image: url("kamere.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;	
+}
+.protiv-poz{
+	background-image: url("protiv-pozarni-sistemi.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+		@media (max-width: 768px){
+			
+			.banner img{
+				display: block;
+				margin: auto;
+				z-index: -3;
+				width: 12em;
+			}
+			.banner p{
+		background:black ;
+		color: white;
+		font-size: 6vh;
+		text-align: center;
+		margin: auto;
+		font-family: 'Bebas Neue', cursive;
+	}
+				.main-deo-prelaz{
+		width: 90%;
+		display: flex;
+		background: #fff;
+		border-radius: 10px;
+		margin: auto;
+		
+	}
+	.main-deo-prelaz img{
+		display:block;
+		width: 12%;
+		margin: auto;
+		padding: 0.3em;
+	}
+			.navbar{
+				background: #4f4f4f;
+				
+			}
+			.navbar-nav{
+				margin: auto;
+			}
+			.navbar-nav li{
+				margin-left: 1em;
+				font-size: 1.1em;
+			}
+			.banner-divider{
+				display: block;
+				width: 100%;
+			}
+			.banner-divider img{
+				display: block;
+				width: inherit;
+				margin: auto;
+				margin-top: 2em;
+			}
+			.main-deo{
+				display: block;
+				flex-wrap: wrap;
+				width: 100%;
+				margin-top: 5em;
+			}
+			.deo{	
+				display: flex;
+				flex-wrap: wrap;
+				background: #fff;
+				margin: 1em;
+				border-radius: 10px;
+				width: 90%;
+				margin: auto;
+				margin-bottom: 5vw;
+			}
+			.d-mreze{
+				width: 7em;
+				display: flex;
+				margin: auto;
+			}
+			.d-mreze a{
+				margin: auto
+			}
+			.slika-deo{
+				display: block;
+				margin: auto;
+				width: 25%;
+				margin-left: 1em;
+				padding-right:1.5em;
+				padding-top:1em;
+			}
+			.tekst-deo{
+				display: block;
+				margin: 1em;
+				width: 60%;
+			}
+			.tekst-deo h1{
+				margin: 1vw;
+				display: block;
+				font-family: 'Yanone Kaffeesatz', sans-serif;
+			}
+			h1{
+				font-size: 2em;
+			}
+			.tekst-deo p{
+				margin: 1vw;
+				padding-right: 1.2em;
+				display: block;
+			}
+			.slika-deo i{
+				display: block;
+				margin: auto;
+			}
+			.o-nama{
+				display: block;
+				width: 100%;
+				margin: auto;
+				padding: 1em;
+				background: #fff;
+			}
+			.o-nama h1{
+				margin: 1em;
+				font-family: 'Yanone Kaffeesatz', sans-serif;
+			}
+			.o-nama p{
+				display: block;
+				margin: 1em;
+			}
+			.onama-banner{
+				display: block;
+				width: 100%;
+				height: 30em;
+				background-image: url("galerijaa/nav-logo.png");
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: center;
+				opacity: 0.15;
+				position: absolute;
+				
+			}
+				.footer-kontakt{
+				display: block;
+				width: 100%;
+				height: 20em;
+				padding: 1em;
+				margin: auto;
+				text-align: center;
+			}
+			.footer-kontakt p{
+				color: #fff;
+				font-size: 0.7em;
+				
+			}
+			.kontakt-title{
+				color: #868e96;
+				font-size: 2em;
+				
+			}
+			.footer-link{
+				display: block;
+				width: 100%;
+				height: 20em;
+				margin: auto;
+				text-align: center;
+			}
+			.footer-link p{
+				display: block;
+				color: #fff;
+				
+			}
+			.footer-link a{
+				display: block;
+				color: #fff;
+				
+			}
+			.link-title{
+				color: #868e96;
+				font-size: 2em;
+				
+			}
+			.footer-filijale{
+				width: 50%;
+				display: flex;
+				flex-wrap: wrap;
+				
+			}
+			.petrovac, .pozarevac, .gradiste, .kucevo {
+				width: 50%;
+				
+			}
+			.petrovac, .pozarevac, .gradiste, .kucevo p{
+				color: #fff;
+				
+			}
+			.title-fil{
+				color: #868e96;
+				margin-bottom: 0.3em;
+			}
+			.footer-content{
+				margin: auto;
+				display: block;
+				flex-wrap: wrap;
+				width: 100%;
+			}
+		}
+		
+		@media (min-width: 768px){
+			.banner img{
+				display: block;
+				margin: auto;
+				z-index: -3;
+				width: 18vw;
+				padding-bottom: 4em;
+				background: black;
+			}
+			.banner p{
+		background:black ;
+		color: white;
+		font-size: 12vh;
+		text-align: center;
+		margin: auto;
+		font-family: 'Bebas Neue', cursive;
+	}
+	.main-deo-prelaz{
+		width: 100%;
+		display: flex;
+		margin: auto;
+		background-image: url("bright-1851267.jpg");
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		
+	}
+	.main-deo-prelaz img{
+		display:block;
+		width: 12%;
+		margin: auto;
+		padding: 1em;
+	}
+	.main-deo-prelaz div{
+		display:block;
+		width: 25%;
+		margin: auto;
+		padding: 1em;
+		color: aliceblue;
+		background: rgba(0,0,0,0.35)
+	}
+			.main-deo-div{
+				display: block;
+				text-align: center;
+			}
+			.main-deo-div i{
+				display: block;
+				margin: 0.5em;
+			}		
+			.navbar{
+				background: #4f4f4f;
+				
+			}
+			.navbar-nav{
+				margin: auto;
+			}
+			.navbar-nav li{
+				margin-left: 1em;
+				font-size: 1.1em;
+			}
+			.banner-divider img{
+				display: block;
+				margin: auto;
+				margin-top: 5em;
+			}
+			
+			.main-deo{
+				display: flex;
+				flex-wrap: wrap;
+				width: 100%;
+				padding: 2em;
+				background-image: url("lightbulb-1875247.jpg");
+				background-position: center;
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-attachment: fixed;	
+				
+				
+					
+			}
+			.deo{	
+				display: flex;
+				flex-wrap: wrap;
+				margin: 1em;
+				border-radius: 10px;
+				width: 45%;
+				height: 30vh;
+				margin: auto;
+				margin-bottom: 5vw;
+				
+			}
+			.deo p{
+				margin: auto;
+				display: block;
+				font-size: 2vh;
+				padding-top: 2em;
+			}
+			.d-mreze{
+				width: 7em;
+				display: flex;
+				margin: auto;
+			}
+			.d-mreze a{
+				margin: auto
+			}
+			.slika-deo{
+				display: block;
+				width: 15%;
+				margin: auto;
+				margin-left: 2em;
+				padding:1em;
+			}
+			.tekst-deo{
+				display: block;
+				width: 100%;
+				padding:1em;
+				text-align: center;
+				color: white;
+				border-radius: 10px;
+				background: rgba(0,0,0,0.68)
+			}
+			.tekst-deo h2{
+				display: block;
+				border-bottom: 1px solid white;
+				padding-bottom: 0.5em;
+			}
+			.tekst-deo p{
+				margin: 1vw;
+				display: block;
+				color: white;
+			}
+			.slika-deo img{
+				width: 12vw;
+				display: block;
+			}
+			.o-nama{
+				display: block;
+				width: 100%;
+				margin: auto;
+				padding: 2em;
+			}
+			.o-nama p{
+				display: block;
+				margin: 2em;
+				text-align: center;
+			}
+			.onama-pozad{
+				background-image: url("EF-logo-1-plava-podloga-1024x1024-400x400.png");
+				background: white;
+			}
+			.footer-kontakt{
+				display: block;
+				width: 40%;
+				padding: 1em;
+				height: 25em;
+				margin: auto;
+				padding-right: 2em;
+			}
+			.footer-kontakt p{
+				color: #fff;
+				font-size: 1em;
+				
+			}
+			.kontakt-title{
+				color: #fff;
+				font-size: 2em;
+				
+			}
+			.footer-link{
+				display: block;
+				width: 40%;
+				height: 25em;
+				padding: 1em;
+				margin: auto;
+			}
+			.footer-link p{
+				color: #fff;
+				
+			}
+			.footer-link a{
+				display: block;
+				color: #fff;
+				margin-bottom: 0.5em;
+				
+			}
+			.link-title{
+				color: #fff;
+				font-size: 2em;
+				
+			}
+			.footer-filijale{
+				width: 50%;
+				display: flex;
+				flex-wrap: wrap;
+				
+			}
+			.petrovac, .pozarevac, .gradiste, .kucevo {
+				width: 50%;
+				
+			}
+			.petrovac, .pozarevac, .gradiste, .kucevo p{
+				color: #fff;
+				
+			}
+			.title-fil{
+				color: #868e96;
+				margin-bottom: 0.3em;
+			}
+			.footer-content{
+				margin: auto;
+				display: flex;
+				flex-wrap: wrap;
+				width: 100%;
+			}
+		}
+		
+.card__btn {
+  display: block;
+  width: 100%;
+	margin: auto;
+  padding: 1.5rem;
+  font-size: 1.2em;
+  text-align: center;
+  color: #3363ff;
+  background-color: #e6ecff;
+  border: none;
+  border-bottom-left-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.card__btn span {
+  margin-left: 1rem;
+  transition: 0.2s;
+}
+.card__btn:hover, .card__btn:active {
+  background-color: rgba(134,185,213,1.00);
+	color: white;
+}
+.card__btn:hover span, .card__btn:active span {
+  margin-left: 1.5rem;
+}
