@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<!--Import Google Icon Font-->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>	
+<!--Import materialize.css-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:ital,wght@0,700;1,900&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">	
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		
+	
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+</style>	
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+<script src="https://kit.fontawesome.com/3429f72bdb.js" crossorigin="anonymous"></script>
+<!--Let browser know website is optimized for mobile-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta https-equiv="X-UA-Compatible" content="IE=edge">
+<!------ Include the above in your HEAD tag ---------->
+
+<title>Postavljanje elektricnih instalacija - Redirex</title>
+<link rel="shortcut icon" href="zdravstvo/favicon.ico" >
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	
+<script src="../../JSS/Filterovanje.js"></script>
+<script src="../../JSS/backtotop.js"></script>
+<script src="../../css/Overlay.js"></script>	
+<link rel="stylesheet" href="../../css/footercss.css">
+<link rel="stylesheet" href="../../css/GlavniCss-zajecar.css" class="">
+<link rel="stylesheet" href="../../css/floatingdugme.css" class="">	
+<link rel="stylesheet" href="../../css/kartice-css-novo.css"> 
+<link rel="stylesheet" href="../../css/redirex-stranica-link.css">
+<link rel="stylesheet" href="../../css/index-css.css">
+<link rel="stylesheet" href="../../css/overlay.css">	
+
+<style>
+	body{
+		width: 100%;
+		background: #212529;
+	}
+	.filter>p{
+		padding: 0.5em;
+		text-align: center;
+		background: #495057;
+		color: #adb5bd;
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+	}
+h9 {
+  font-size: 0.6em;
+  color: white;
+}
+		
+	h4 {
+		font-size: 3em;
+		color: white;
+	}
+	 	
+	 /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+} 
+	.meta{
+		display: none;
+		background: white;
+	}
+	.meta p{
+		display: none;
+		background: white;
+	}
+</style>
+
+
+		
+</head>
+
+		<body style="background-image:image " id="math.min">
+
+	  <!--- 	--->
+		
+
+	   <!-- Meni s leve strane vidljiv na dektop---><!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark primary-color">
+  <!-- Navbar brand -->
+  <a style="font-family: 'Russo One', sans-serif;" class="navbar-brand" href="https://redirex.rs">REDIREX</a>
+  <!-- Collapse button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="basicExampleNav">
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">	
+      <li class="nav-item">
+        <a class="nav-link" href="javascript:history.back()"><i class="fas fa-reply"></i>&nbsp;Nazad</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#text-9">Kontakt</a>
+      </li>
+      <!-- Dropdown -->
+      <li class="nav-item">
+        <a class="nav-link" href="https://redirex.rs/kako-se-oglasiti.html">Kako se oglasiti?</a>
+      </li>
+    </ul>
+    <!-- Links -->
+  </div>
+  <!-- Collapsible content -->
+</nav>
+<!--/.Navbar-->
+			
+ <!-- The overlay -->
+<div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="#">Automobilizam</a>
+    <a href="#">Industrija</a>
+    <a href="#">Maloprodaja</a>
+    <a href="#">Medicina i zdravlje</a>
+    <a href="#">Nekretnine</a>
+    <a href="#">Prodaja na veliko</a>
+    <a href="#">Proizvodnja i prodaja nameštaja</a>
+    <a href="#">Servis bele tehnike</a>
+    <a href="#">Sevis i prodaja računara</a>
+    <a href="#">Uslužne delatnosti</a>
+    <a href="#">Zanatsko uslužne</a>
+  </div>
+</div>
+			
+<div class="banner">
+<div class="banner-text" style="width: 50%; margin-bottom: 1em">
+	
+        <div class="banner-title">
+   
+          <h3 style="text-decoration: none"><strong>REDIREX</strong></h3>
+            <h5>Poslovni Katalog Požarevca</h5>
+        </div>
+	</div> 
+      </div>
+   
+
+	
+			
+	<!-- Button trigger modal -->
+<div class="pretraga">
+<input class="form-control" id="myInput1" type="text" placeholder="pretraga stranice">
+	
+	<span class="overlay-button" onclick="openNav()">
+	<i class="fas fa-chevron-left fa-2x"></i>
+	<p>Delatnosti</p>
+</span>
+	
+</div>	
+		
+<div class="svi-preduzetici-kartice" style="display: block;height: 50em;">	
+	<ul id="myList" class="kartice-sve">
+		
+				
+<li class="filter">
+<div class="slika-onclick" style="background: black">	
+<!--IZMENITI SLIKU-->	
+<img onclick="document.getElementById('id04').style.display='block'" src="Postavljanje-elektricnih-instalacija/Filipovic/EF-logo-1-plava-podloga-1024x1024-400x400.jpeg" alt="">
+</div>	
+<!--IZMENITI ID-->	 
+<div id="id04" class="w3-modal">
+<div class="kartica-telo">
+<!--IZMENITI ID-->
+<span onclick="document.getElementById('id04').style.display='none'" 
+        class="w3-button"><i class="fas fa-times fa-2x"></i>
+</span>
+<!--IZMENITI SLIKU-->
+<div class="kartica-slika" style="background: black">
+			<img src="Postavljanje-elektricnih-instalacija/Filipovic/EF-logo-1-plava-podloga-1024x1024-400x400.jpeg" alt="">
+			 <h1 style="color: white">Elektromontaža Filipović</h1>
+</div>
+	<div class="kartica-info">
+		<div class="kartica-kontakt">
+<i class="fas fa-map-marker-alt"></i>&nbsp;12000 Požarevac<br><br>
+<i class="fas fa-phone"></i>&nbsp;060 / 588 – 6000 <br><br>
+<i class="fas fa-envelope"></i>&nbsp;kontakt@instalacije.rs<br>
+			
+<div class="redirex-stranica-dugme">
+	<a href="Postavljanje-elektricnih-instalacija/Elektromontaža-filipović.html"><p>Opširnije &nbsp;<i class="fas fa-chevron-right"></i></p></a>
+</div> 					
+		</div> 
+		
+	    <div class="kartica-slogan" >
+			<center>
+Elektromontaža Filipović je firma sa 35-o godišnjom tradicijom u izradi elektro instalacija (privatnih kuća, poslovnih prostora, stambenih zgrada, industrije i fabrika), sistema video nadzora, protivpožarnih i protivprovalnih sistema i automatizaciji. <br> <br> Ponosni smo što možemo da kažemo da smo u Požarevcu i Braničevskom okrugu sinonim za profesionalno, odgovorno i stručno obavljanje posla. Iza sebe imamo veliki broj realizovanih projekata, a s ponosom ističemo činjenicu da sa najvećim brojem klijenata sarađujemo i danas, na obostrano zadovoljstvo.
+
+
+			</center>  
+	    </div>	
+	</div>	
+<div class="drustvene-mreze">
+	
+<a href="https://www.facebook.com/instalacije.rs" target="_blank" class="fab">	
+	<i class="fab fa-facebook-f fa-2x"></i>
+</a>	
+<a href="https://www.instalacije.rs" target="_blank" class="fab">	
+	<i class="fab fa-internet-explorer fa-2x"></i>
+</a>	
+	
+</div>	
+</div>
+</div>
+	<p>Ordinacija Dr Marina</p>
+</li>	
+	
+		
+		
+		
+      </ul>
+</div>		   
+  
+  		
+			
+<div class="footer">
+<p><h3 style="margin-bottom: em"></h3></p>	
+<div class="row">
+	
+<div class="col-sm-3">
+									
+<div class="widget widget_inventor_boxes">
+<div class="widget-inner">
+<h3 class="widgettitle">
+<strong>USLUGE SAJTA</strong></h3>
+<hr class="solid" style="border-top: 1px solid white; width: 70%; margin: auto; padding-bottom: 0.5em">		
+	
+<div class="row"> 
+
+
+<div class="col-sm-12 col-lg-12 col-md-6">
+   <div class="box">
+     <div class="box-inner">
+        <div class="box-icon">
+        <i class="fa fa-suitcase"></i>
+		</div>
+        <div class="box-body">
+              <h6 class="box-title">Besplatno oglašavanje</h6>
+			  <div class="box-content">Ukolike želite da se i vas oglas nadje na sajtu, dovoljno se samo da nam posaljete osnovne informacije</div>
+         </div><!-- /.box-body -->
+     </div><!-- /.box-inner -->
+
+    </div><!-- /.box -->       
+</div><!-- /.col-* -->
+	
+
+	
+<div class="col-sm-12 col-lg-12 col-md-6">
+   <div class="box">
+     <div class="box-inner">
+        <div class="box-icon">
+        <i class="fa fa-link"></i>
+		</div>
+        <div class="box-body">
+              <h6 class="box-title">Povezivanje vasih stranica</h6>
+			  <div style="text-align: center" class="box-content">Sajt i sve vaše društvene mreže na jednom mestu radi lakšeg pristupa</div>
+         </div><!-- /.box-body -->
+     </div><!-- /.box-inner -->
+
+    </div><!-- /.box -->       
+</div><!-- /.col-* -->
+	
+	
+	
+ <div class="col-sm-12 col-lg-12 col-md-6">
+     <div class="box ">
+         <div class="box-inner">
+             <div class="box-icon">
+                <i class="fa fa-book"></i>            
+			 </div><!-- /.box-icon -->
+        
+             <div class="box-body">
+                   <h6 class="box-title">Vaša lična stranica</h6><!-- /.box-title -->
+                     <div class="box-content">
+                    Kreiranje lične stranice vaše usluge na kojoj se može nači sve sto želite             
+				     </div><!-- /.box-content -->
+            
+             </div><!-- /.box-body -->
+         </div><!-- /.box-inner -->
+
+    </div><!-- /.box -->        
+</div><!-- /.col-* -->	
+	 
+	 
+</div><!-- /.row -->        
+</div><!-- /.widget-inner -->
+</div>								
+</div><!-- /.cols-sm-3 -->
+
+<!-- /.cols-sm-3 -->
+
+<div class="col-sm-3">
+    <div id="text-9" class="widget widget_text"><h3 class="widgettitle"><strong>KONTAKT INFORMACIJE</strong></h3>
+        <div class="textwidget">
+			<hr>
+			<dl>
+
+<p style="padding-bottom: em"><i class="fa fa-envelope" style="margin-right: 0.5em"></i> redirexrs@gmail.com</p>
+<p style="padding-bottom: 1em"><i class="fa fa-envelope" style="margin-right: 0.5em"></i> redirex.srb@gmail.com</p>				
+				
+<a href="https://www.facebook.com/redirexx" target="_blank" class="">
+<dt><i class="fab fa-facebook-square fa-3x" style="color: white"></i></dt><dd></dd></a>			
+            </dl>   
+		</div>
+    </div>					           
+</div><!-- /.cols-sm-3 -->
+	
+	
+<!--	
+<div class="listing-container">
+<div class="listing-small">
+
+<a href="" class="">Pretraga</a>
+	
+</div><!-- /.listing-small 
+</div><!-- /.listing-container 
+<div class="listing-container">
+                                        
+
+<div class="listing-small">
+<div class="listing-small-image" style="background-image: url('https://www.biznisgroup.rs/wp-content/uploads/2018/06/22-1-292x200.jpg');">
+<a href="https://www.biznisgroup.rs/automobili/jovic-servis-i-remont-doo-backa-palanka/"></a>
+</div><!-- /.listing-small-image 
+
+<div class="listing-small-content">
+        <h4 class="listing-small-title"><a href="https://www.biznisgroup.rs/automobili/jovic-servis-i-remont-doo-backa-palanka/">JOVIĆ – servis i remont doo Bačka Palanka</a></h4>
+
+<div class="listing-small-location"><a href="https://www.biznisgroup.rs/location/srbija/backa-palanka/">Bačka Palanka</a></div>
+</div><!-- /.listing-small-content 
+</div><!-- /.listing-small 
+</div><!-- /.listing-container 
+</div><!-- /.listing-row 
+
+</div> -->
+
+					            
+<div class="footer-img">				            
+	<img src="../../banneri/73081046_108934263856788_4915437994069983232_o.jpg" alt="" style="width: 18em; height: 4em">
+</div>	
+	</div>
+	
+	<hr class="solid" style="border-top: 1px solid gray; width: 100%; margin: auto; padding-bottom: 0.5em">
+
+<div class="sub-footer align-left">
+ <a href="sitemap.xml" class="">Sitemap</a>
+ <a href="ads.txt">Ads</a>	
+</div>
+<div style="padding-bottom: 1em">	
+&copy Redirex team, 2020.	
+</div>	
+	
+</div>
+
+
+
+
+
+<script>
+		var cards = $(".kartica-container");
+for(var i = 0; i < cards.length; i++){
+    var target = Math.floor(Math.random() * cards.length -1) + 1;
+    var target2 = Math.floor(Math.random() * cards.length -1) +1;
+    cards.eq(target).before(cards.eq(target2));
+}
+	// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+} 
+</script>	
+</body>
+</html>
