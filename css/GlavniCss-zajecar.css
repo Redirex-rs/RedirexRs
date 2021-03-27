@@ -1,5 +1,22 @@
 /*dugmici delatnosti*/
 @media (max-width: 768px){
+	.redirex-stranica-dugme{
+	    display: block;
+		width: 90%;
+		margin: auto;
+		margin-top: 2vh;
+		font-size: 1.2em;
+		border-radius: 5px;
+		background: #4f4f4f;
+	}
+	.redirex-stranica-dugme p{
+		margin: auto;
+		text-align: center;
+		color: aliceblue;
+		padding: 0.5em;
+	}	
+	
+	
 	.overlay-button{
 		display: flex;
 		margin: auto;
