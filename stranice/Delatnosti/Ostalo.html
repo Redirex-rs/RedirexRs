@@ -2,29 +2,32 @@
 
 <html>
 <head>
-	<meta charset="utf-8">
+<meta charset="utf-8">
 <!--Import Google Icon Font-->
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet"> 	
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:ital,wght@0,700;1,900&display=swap" rel="stylesheet"> <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:ital,wght@0,700;1,900&display=swap" rel="stylesheet"> 
-<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>	
 <!--Import materialize.css-->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>	
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">	
-<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script> 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:ital,wght@0,700;1,900&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">	
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		
+	
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+</style>	
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
 <script src="https://kit.fontawesome.com/3429f72bdb.js" crossorigin="anonymous"></script>
 <!--Let browser know website is optimized for mobile-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta https-equiv="X-UA-Compatible" content="IE=edge">
+<!------ Include the above in your HEAD tag ---------->
 
-
-<title>Usluge - Požarevac: Redirex</title>
+<title>Usluge - Redirex</title>
 <link rel="shortcut icon" href="zdravstvo/favicon.ico" >
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -33,48 +36,81 @@
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 	
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	
-<script src="../../../../JSS/Filterovanje.js"></script>
-<script src="../../../../JSS/backtotop.js"></script>
-<link rel="stylesheet" href="../../../../css/footercss.css">	
-<link rel="stylesheet" href="../../../../css/GlavniCss-zajecar.css" class="">
-<link rel="stylesheet" href="../../../../css/floatingdugme.css" class="">	
-<link rel="stylesheet" href="../../../../css/kartice-css-novo.css"> 
-<link rel="stylesheet" href="../../../../css/myInput.css">
-
+<script src="../../JSS/Filterovanje.js"></script>
+<script src="../../JSS/backtotop.js"></script>
+<script src="../../css/Overlay.js"></script>	
+<link rel="stylesheet" href="../../css/overlay.css">	
+<link rel="stylesheet" href="../../css/footercss.css">
+<link rel="stylesheet" href="../../css/GlavniCss-zajecar.css" class="">
+<link rel="stylesheet" href="../../css/floatingdugme.css" class="">	
+<link rel="stylesheet" href="../../css/kartice-css-novo.css"> 
+<link rel="stylesheet" href="../../css/redirex-stranica-link.css">
+<link rel="stylesheet" href="../../css/index-css.css">	
 
 
 <style>
-
-		@media (max-width: 768px){
-		.kartice-glavno{
-			margin-top: 10em;
-		}
-		}
-
+	body{
+		width: 100%;
+		background: #212529;
+	}
+	.filter>p{
+		padding: 0.5em;
+		text-align: center;
+		background: #495057;
+		color: #adb5bd;
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+	}
 h9 {
   font-size: 0.6em;
   color: white;
 }
-	
+		
 	h4 {
 		font-size: 3em;
 		color: white;
-	}	
-	 
-	.fa-thumbs-up{
-		color: green;
-		display: block;
-		position: absolute;
-		right: 0;
-		right: -0.6em;
-		top: -0.7em;
-		border: 5px solid green;
-		padding: 0.2em;
-		border-radius: 50%;
-		background: rgba(255,255,255,1.00)		
-		
-	}	 
+	}
+	 	
+	 /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+} 
+
 </style>
 
 
@@ -85,7 +121,6 @@ h9 {
 	  
 	<body>	
 
-	   <!-- Meni s leve strane vidljiv na dektop---><!--Navbar-->
 <nav  class="navbar navbar-expand-lg navbar-dark primary-color">
   <!-- Navbar brand -->
   <a style="font-family: 'Russo One', sans-serif;" class="navbar-brand" href="https://redirex.rs">REDIREX</a>
@@ -107,62 +142,145 @@ h9 {
       <!-- Dropdown -->
       <li class="nav-item">
         <a class="nav-link" href="https://redirex.rs/kako-se-oglasiti.html">Kako se oglasiti?</a>
-      </li>
+	  </li>	  
+      <!-- Dropdown -->
     </ul>
+
     <!-- Links -->
-    <form class="form-inline">
-      <div class="md-form my-0">
-        <input id="myInput" type="text" placeholder="Pretraga">
-      </div>
-    </form>
   </div>
   <!-- Collapsible content -->
 </nav>
-		
 <!--/.Navbar-->
-<div class="naslov">
-	<h2>Požarevac</h2> 
-	<h2>- usluge -</h2>
+	
+<div class="banner">
+<div class="banner-text">
+	
+        <div class="banner-title">
+   
+          <h3 style="text-decoration: none"><strong>REDIREX</strong></h3>
+            <h5>Poslovni Katalog Požarevca</h5>
+        </div>
+	</div> 
+      </div>
+   
+
+ <!-- The overlay -->
+<div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+
+    <a href="Medicina-i-zdravlje.html">Zdravlje i medicina</a>
+    <a href="Postavljanje elektricnih instalacija.html">Postavljanje električnih instalacija</a>
+    <a href="Zanatsko-uslužne.html">Zanatsko uslužne</a>
+  </div>
 </div>
+	
+			
+	<!-- Button trigger modal -->
+<div class="pretraga">
+<input class="form-control" id="myInput1" type="text" placeholder="pretraga stranice">
+	
+<span class="overlay-button" onclick="openNav()">
+	<i class="fas fa-chevron-left fa-2x"></i>
+	<p>Delatnosti</p>
+</span>
+	
+</div>	
 		
-<hr class="solid" style="border-top: 1px solid gray; width: 100%; margin: auto; padding-bottom: 0.5em">
+<div class="svi-preduzetici-kartice" style="display: block;height: 50em;">	
+	<ul id="myList" class="kartice-sve">
 		
-	<div class="kartice-glavno">
-	<div class="kartice-sve">
-		
-<!--Jocić Grejanje : majstor Jocić Dejan-Jole-->
-<div id="82" class="kartica-telo srednje -telo">
-		<div class="kartica-content srednje content-m">
-		  <div  class="kartica-slika" style="background: white">
+<li class="filter">
+<div class="slika-onclick">	
+  <img onclick="document.getElementById('id03').style.display='block'" src="usluge/Jole-kotao/IMG_20201201_005840[1].jpg" alt="">
+	
+</div>
+	
+	 
+<div id="id03" class="w3-modal">
+<div class="kartica-telo">
+<span onclick="document.getElementById('id03').style.display='none'" 
+        class="w3-button"><i class="fas fa-times fa-2x"></i>
+</span>	
+<div class="kartica-slika" style="background: white">
 			<img src="usluge/Jole-kotao/IMG_20201201_005840[1].jpg" alt="">
-			</div>
+			 <h1>Jocić Grejanje : majstor Jocić Dejan-Jole</h1>
+</div>
 	<div class="kartica-info">
-			<h2><center>Jocić Grejanje : majstor Jocić Dejan-Jole</center></h2>
-			  
-		<hr class="solid" style="border-top: 1px solid gray; width: 70%; margin: auto; padding-bottom: 0.5em; margin-bottom: 0.4em">	  
-			  
 		<div class="kartica-kontakt">
 <i class="fas fa-map-marker-alt"></i>&nbsp;Prizrenska 3<br><br>
 <i class="fas fa-phone"></i>&nbsp;063/860-88-14<br>
-012/7213-452 <br>
-		</div> 
-	</div>
-	<div class="kartica-slogan" >
-			<center><i>-Centalno, solarno i podno grejanje- <br>
+012/7213-452<br><br>
+<i class="fas fa-envelope"></i>&nbsp;ordinacijazigic@gmail.com<br>
+		</div> 	
+	    <div class="kartica-slogan" >
+			<center>
+-Centalno, solarno i podno grejanje- <br>
 -Vodovodne instalacjie- <br><br>
-POZOVITE NAS DA VAM UTOPLIMO DOM, <br> SA NAMA NEMA ZIME <br> <br>
-Kvalitetan rad i povoljne cene</i></center>  
+POZOVITE NAS DA VAM UTOPLIMO DOM, SA NAMA NEMA ZIME <br> <br>
+Kvalitetan rad i povoljne cene</center>  
+	    </div>	
+	</div>	
+</div>
+</div>
+	<p>Jocić grejanje</p>
+</li>
+		
+<li class="filter">
+<div class="slika-onclick">	
+  <img onclick="document.getElementById('id05').style.display='block'" src="usluge/Dubinsko-pranje-namestaka012/banner - Copy.jpg" alt="">
+	
+</div>
+	
+	 
+<div id="id05" class="w3-modal">
+<div class="kartica-telo">
+<span onclick="document.getElementById('id05').style.display='none'" 
+        class="w3-button"><i class="fas fa-times fa-2x"></i>
+</span>	
+<div class="kartica-slika" style="background: white">
+			<img src="usluge/Dubinsko-pranje-namestaka012/banner.jpg" alt="">
+			 <h1>Dubinsko Pranje Nameštaja</h1>
+</div>
+	<div class="kartica-info">
+		<div class="kartica-kontakt">
+<i class="fas fa-phone"></i>&nbsp;067/752-5421<br><br>
+<i class="fas fa-envelope"></i>&nbsp;dubinskopranje012@yahoo.com<br>
+		</div> 	
+	    <div class="kartica-slogan" >
+			<center>
+-Centalno, solarno i podno grejanje- <br>
+-Vodovodne instalacjie- <br><br>
+POZOVITE NAS DA VAM UTOPLIMO DOM, SA NAMA NEMA ZIME <br> <br>
+Kvalitetan rad i povoljne cene</center>  
+	    </div>	
 	</div>
 	
-		</div>
-</div>		
-		
-  </div>
+<div class="drustvene-mreze">
+	
+<a href="https://www.facebook.com/dubinskopranje012" target="_blank" class="fab">	
+	<i class="fab fa-facebook-f fa-2x"></i>
+</a>
+	
 </div>
-
+</div>
+</div>
+	<p>Dubinsko Pranje Nameštaja 012</p>
+</li>
+				
+	
+		
+		
+		
+      </ul>
+</div>	
+		
 	
 	
- <button class="float" style="background-color: cornflowerblue" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up fa-2x"></i></button>	
 	
 	
 <div class="footer">
@@ -173,14 +291,14 @@ Kvalitetan rad i povoljne cene</i></center>
 									
 <div class="widget widget_inventor_boxes">
 <div class="widget-inner">
-<h2 class="widgettitle">
-<strong>USLUGE SAJTA</strong></h2>
-	
+<h3 class="widgettitle">
+<strong>USLUGE SAJTA</strong></h3>
+<hr class="solid" style="border-top: 1px solid white; width: 70%; margin: auto; padding-bottom: 0.5em">		
 	
 <div class="row"> 
 
 
-<div class="col-sm-12 col-lg-12 col-md-6" style="display: table ;margin: auto;padding-bottom: 0.5em">
+<div class="col-sm-12 col-lg-12 col-md-6">
    <div class="box">
      <div class="box-inner">
         <div class="box-icon">
@@ -195,30 +313,26 @@ Kvalitetan rad i povoljne cene</i></center>
     </div><!-- /.box -->       
 </div><!-- /.col-* -->
 	
-<hr class="solid" style="border-top: 1px solid white; width: 70%; margin: auto; padding-bottom: 0.5em">  
-	 
- <div class="col-sm-12 col-lg-12 col-md-6" style="display: table;margin: auto;padding-bottom: 0.5em">
-     <div class="box ">
-         <div class="box-inner">
-             <div class="box-icon">
-                <i class="fa fa-link"></i>            
-			 </div><!-- /.box-icon -->
-        
-             <div class="box-body">
-                   <h6 class="box-title">Povezivanje vasih stranica</h6><!-- /.box-title -->
-                     <div class="box-content">
-                    Sajt i sve vaše društvene mreže na jednom mestu             
-				     </div><!-- /.box-content -->
-            
-             </div><!-- /.box-body -->
-         </div><!-- /.box-inner -->
 
-    </div><!-- /.box -->        
-</div><!-- /.col-* -->
-
-<hr class="solid" style="border-top: 1px solid white; width: 70%; margin: auto; padding-bottom: 0.5em">	
 	
- <div class="col-sm-12 col-lg-12 col-md-6" style="display: table;margin: auto; padding-bottom: 2em">
+<div class="col-sm-12 col-lg-12 col-md-6">
+   <div class="box">
+     <div class="box-inner">
+        <div class="box-icon">
+        <i class="fa fa-link"></i>
+		</div>
+        <div class="box-body">
+              <h6 class="box-title">Povezivanje vasih stranica</h6>
+			  <div style="text-align: center" class="box-content">Sajt i sve vaše društvene mreže na jednom mestu radi lakšeg pristupa</div>
+         </div><!-- /.box-body -->
+     </div><!-- /.box-inner -->
+
+    </div><!-- /.box -->       
+</div><!-- /.col-* -->
+	
+	
+	
+ <div class="col-sm-12 col-lg-12 col-md-6">
      <div class="box ">
          <div class="box-inner">
              <div class="box-icon">
@@ -246,40 +360,21 @@ Kvalitetan rad i povoljne cene</i></center>
 <!-- /.cols-sm-3 -->
 
 <div class="col-sm-3">
-    <div id="text-9" class="widget widget_text"><h2 class="widgettitle"><strong>KONTAKT INFORMACIJE</strong></h2>
+    <div id="text-9" class="widget widget_text"><h3 class="widgettitle"><strong>KONTAKT INFORMACIJE</strong></h3>
         <div class="textwidget">
 			<hr>
 			<dl>
 
-<dt style="padding-bottom: em"><i class="fa fa-envelope" style="margin-right: 0.5em"></i> redirexrs@gmail.com</dt><dd></dd>
-<dt style="padding-bottom: 1em"><i class="fa fa-envelope" style="margin-right: 0.5em"></i> redirex.srb@gmail.com</dt><dd></dd>
+<p style="padding-bottom: em"><i class="fa fa-envelope" style="margin-right: 0.5em"></i> redirexrs@gmail.com</p>
+<p style="padding-bottom: 1em"><i class="fa fa-envelope" style="margin-right: 0.5em"></i> redirex.srb@gmail.com</p>				
 				
 <a href="https://www.facebook.com/redirexx" target="_blank" class="">
-<dt><i class="fab fa-facebook-square fa-3x" style="color: white"></i></dt><dd></dd></a>
-				
+<dt><i class="fab fa-facebook-square fa-3x" style="color: white"></i></dt><dd></dd></a>			
             </dl>   
 		</div>
     </div>					           
 </div><!-- /.cols-sm-3 -->
 	
-	<div class="col-sm-3">
-<h2 class="widgettitle"><strong>LINKOVI SAJTA</strong></h2>
-<div class="listing-container">
-    <div class="listing-small">
-
-
-<div class="listing-small-content">
-
-<a href="../../../../index.html#okruzi" class="">Okruzi i opstine</a><br>
-<a href="../../../../index.html#najnovije" class="">Najnovije</a><br>
-<a href="../../../../index.html#pretraga" class="">Pretraga</a><br>	
-<a href="../../../../kako-se-oglasiti.html" class="" onclick="openNav()">Kako se oglasiti na redirex</a><br>
-<a href="https://www.facebook.com/groups/363068485078057/" target="_blank" class="">Redirex facebook oglasi</a><br>
-        
-        </div>
-    </div>
-</div> 
-		</div>
 	
 <!--	
 <div class="listing-container">
@@ -310,7 +405,7 @@ Kvalitetan rad i povoljne cene</i></center>
 
 					            
 <div class="footer-img">				            
-	<img src="../../../../banneri/73081046_108934263856788_4915437994069983232_o.jpg" alt="" style="width: 18em; height: 4em">
+	<img src="../../banneri/73081046_108934263856788_4915437994069983232_o.jpg" alt="" style="width: 18em; height: 4em">
 </div>	
 	</div>
 	
@@ -320,7 +415,7 @@ Kvalitetan rad i povoljne cene</i></center>
  <a href="sitemap.xml" class="">Sitemap</a>
  <a href="ads.txt">Ads</a>	
 </div>
-<div style="margin-bottom: 1em">	
+<div style="padding-bottom: 1em">	
 &copy Redirex team, 2020.	
 </div>	
 	
@@ -340,6 +435,9 @@ for(var i = 0; i < cards.length; i++){
     var target = Math.floor(Math.random() * cards.length -1) + 1;
     var target2 = Math.floor(Math.random() * cards.length -1) +1;
     cards.eq(target).before(cards.eq(target2));
-}</script>	
+}
+	
+
+	</script>	
 </body>
 </html>
