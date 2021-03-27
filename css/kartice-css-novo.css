@@ -60,6 +60,9 @@
 		font-size: 0.85em;
 
 	}
+	.kartica-slogan img{
+		width: 25vh;
+	}
 	.w3-containter{
 		cursor: pointer;
 		height: 3em;
@@ -170,6 +173,9 @@
 		width: 80%;
 		padding: 1em;
 
+	}
+	.kartica-slogan img{
+		width: 100%;
 	}
 	.w3-containter{
 		cursor: pointer;
