@@ -1,4 +1,21 @@
-
+	.zigic{
+		background: url("../stranice/Delatnosti/medicina/zdravstvo i medicina/inter. Zigic/Zigic/Dr-zigicM-manji-banner1.jpg")
+	}
+	.zigic-marina{
+		background: url("../stranice/Delatnosti/medicina/pedijatrija/Dr-marina/main_banner_marina.jpg")
+	}
+.tr-pahuljica{
+	background: url("../stranice/Delatnosti/maloprodaja-i-veleprodaja/TR pahuljica/26904568_173284276776219_6964221468164328470_n.jpg")
+}
+.jocic-grejanje{
+	background: url("../stranice/Delatnosti/usluge/Jole-kotao/IMG_20201201_005840[1].jpg")
+}
+.dubinsko-pranje-012{
+	background: url("../stranice/Delatnosti/usluge/Dubinsko-pranje-namestaka012/banner - Copy.jpg")
+}
+.elektromontaza-filipovic{
+	background: url("../stranice/Delatnosti/Postavljanje-elektricnih-instalacija/Filipovic/EF-logo-1-plava-podloga-1024x1024-400x400.jpeg")
+}
 @media (max-width: 768px){
 	
 	.naslov h2{
@@ -14,103 +31,161 @@
 			background-size:cover;
 			background-repeat: no-repeat;
 	}
-	.kartica-telo{
-		width: 90%;
-		margin: auto;
-		display: block;
-		background: white;
-		padding-top: 1em;
-		padding-left: 1em;
-		padding-right: 1em;
-		
-	}
-	.kartica-slika{
-		display: block;
-		width: 100%;
-		border-radius: 0.7em;
-		padding: 1em;
-	}
-	.kartica-slika h1{
-		font-size: 2em;
-		width: 100%;
-		text-align: center;
-	}
-	.kartica-slika img{
-		width: 30%;
-	}
-	.kartica-info{
-		display: block;
-		padding-left: 1em;
-		padding-right: 1em;
-		padding-top: 1em;
-		width: 100%;
-		
-	}
-	.kartica-kontakt{
-		width: 100%;
-		padding: 1em;
-		font-size: 0.85em;
-		text-align: center;
-		border-bottom: 3px solid #4f4f4f;
 
+	 .blog-container {
+	 background: #fff;
+	 border-radius: 5px;
+	 box-shadow: rgba(0, 0, 0, .2) 0 4px 2px -2px;
+	 font-family: "adelle-sans", sans-serif;
+	 font-weight: 100;
+	 margin: 48px auto;
+	 width: 90%;
+	 padding-bottom: 1vh;	 
 	}
-	.kartica-slogan{
-		width: 100%;
-		padding: 1em;
-		font-size: 0.85em;
-
+ .blog-container a {
+	 color: #4d4dff;
+	 text-decoration: none;
+	 transition: 0.25s ease;
+}
+ .blog-container a:hover {
+	 border-color: #ff4d4d;
+	 color: #ff4d4d;
+}
+ .blog-cover {
+	 background-size: contain;
+	 background-repeat: no-repeat;
+	 background-position: center;
+	 border-radius: 5px 5px 0 0;
+	 height: 15rem;
+	 box-shadow: inset rgba(0, 0, 0, .2) 0 64px 64px 16px;
+}
+ .blog-author, .blog-author--no-cover {
+	 margin: 0 auto;
+	 padding-top: 0.125rem;
+	 width: 80%;
+}
+ .blog-author h3::before, .blog-author--no-cover h3::before {
+	 background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/17779/russ.jpeg");
+	 background-size: cover;
+	 border-radius: 50%;
+	 content: " ";
+	 display: inline-block;
+	 height: 32px;
+	 margin-right: 0.5rem;
+	 position: relative;
+	 top: 8px;
+	 width: 32px;
+}
+ .blog-author h3 {
+	 color: #fff;
+	 font-weight: 100;
+}
+ .blog-author--no-cover h3 {
+	 color: #999;
+	 font-weight: 100;
+}
+ .blog-body {
+	 margin: 0 auto;
+	 width: 80%;
+}
+ .video-body {
+	 height: 100%;
+	 width: 100%;
+}
+	.blog-header{
+	background: black;
+		border-top-left-radius:5px ;
+		border-top-right-radius:5px ;
 	}
-	.kartica-slogan img{
-		width: 25vh;
+	.blog-title h2 {
+		margin-bottom: 4vh;
 	}
-	.w3-containter{
-		cursor: pointer;
-		height: 3em;
-	}
-	.w3-button{
-		display: block;
-		width: 50%;
-		float: right;
-	}
-	.slika-onclick{
-		display: block;
-		width: 100%;
-		background: white;
-	}
-	.slika-onclick img{
-		display: block;
-		margin: auto;
-		width: 100%;
-		cursor: pointer;
-	}
-	.filter{
-		width: 50%;
-		height: 22vh;
-		padding: 1em;
-		list-style-type: none;
-	}
-	.drustvene-mreze{
-		width: 100%;
-		display: flex;
-		height: 3.6em;
-		margin-top: 2em;
-	}
-	.drustvene-mreze .fab{
-		display: block;
-		width: 1em;
-		margin: auto;
-	}
-	h1{
-		font-size: 1.3em;
-		
-		font-family: 'Oswald', sans-serif;
-	}
-	h2{
-		font-size: 1.3em;
-		
-		font-family: 'Oswald', sans-serif;
-	}
-	
+ .blog-title h2 a {
+	 font-weight: 100;
+}
+ .blog-summary p {
+	 color: #4d4d4d;
+	 text-align: center;
+}
+ .blog-tags ul {
+	 display: flex;
+	 flex-direction: row;
+	 flex-wrap: wrap;
+	 list-style: none;
+	 padding-left: 0;
+}
+ .blog-tags li + li {
+	 margin-left: 0.5rem;
+}
+ .blog-tags a {
+	 border: 1px solid #999;
+	 border-radius: 3px;
+	 color: #999;
+	 font-size: 0.75rem;
+	 height: 1.5rem;
+	 line-height: 1.5rem;
+	 letter-spacing: 1px;
+	 padding: 0 0.5rem;
+	 text-align: center;
+	 text-transform: uppercase;
+	 white-space: nowrap;
+	 width: 5rem;
+}
+ .blog-footer {
+	 border-top: 1px solid #e6e6e6;
+	 margin: 0 auto;
+	 padding-bottom: 0.125rem;
+	 width: 80%;
+}
+ .blog-footer ul {
+	 list-style: none;
+	 display: flex;
+	 flex: row wrap;
+	 justify-content: flex-end;
+	 padding-left: 0;
+}
+ .blog-footer li:first-child {
+	 margin-right: auto;
+}
+ .blog-footer li + li {
+	 margin-left: 0.5rem;
+}
+ .blog-footer li {
+	 color: #999;
+	 font-size: 0.75rem;
+	 height: 1.5rem;
+	 letter-spacing: 1px;
+	 line-height: 1.5rem;
+	 text-align: center;
+	 text-transform: uppercase;
+	 position: relative;
+	 white-space: nowrap;
+}
+ .blog-footer li a {
+	 color: #999;
+}
+ .comments {
+	 margin-right: 1rem;
+}
+ .published-date {
+	 border: 1px solid #999;
+	 border-radius: 3px;
+	 padding: 0 0.5rem;
+}
+ .numero {
+	 position: relative;
+	 top: -0.5rem;
+}
+ .icon-star, .icon-bubble {
+	 fill: #999;
+	 height: 24px;
+	 margin-right: 0.5rem;
+	 transition: 0.25s ease;
+	 width: 24px;
+}
+ .icon-star:hover, .icon-bubble:hover {
+	 fill: #ff4d4d;
+}
 	.navbar-brand strong {
 		font-size: 1.4em;
 	}
@@ -131,96 +206,163 @@
 			background-attachment: fixed;
 			background-size:cover;
 			background-repeat: no-repeat;
-	}
-	.kartica-telo{
-		width: 90%;
-		margin: auto;
-		display: block;
-		margin-bottom: 1em;
-		background: white;
-		padding: 1em;
-		
-	}
-	.kartica-slika{
-		display: flex;
-		width: 100%;
-		height: 12em;
-		border-radius: 0.7em;
-		padding: 1em;
-	}
-	.kartica-slika h1{
-		font-size: 2em;
-		width: 80%;
-		text-align: center;
-	}
-	.kartica-slika img{
-		width: 30%;
-	}
-	.kartica-info{
-		display: flex;
-		padding: 1em;
-		margin-top: 2em;
-		width: 100%;
-		
-	}
-	.kartica-kontakt{
-		width: 30%;
-		padding: 1em;
-		border-right: 3px solid #4f4f4f;
+	}	
+	
 
+	 .blog-container {
+	 background: #fff;
+	 border-radius: 5px;
+	 box-shadow: rgba(0, 0, 0, .2) 0 4px 2px -2px;
+	 font-family: "adelle-sans", sans-serif;
+	 font-weight: 100;
+	 margin: 48px auto;
+	 width: 45%;
+	 padding-bottom: 1vh;	 
 	}
-	.kartica-slogan{
-		width: 80%;
-		padding: 1em;
-
+ .blog-container a {
+	 color: #4d4dff;
+	 text-decoration: none;
+	 transition: 0.25s ease;
+}
+ .blog-container a:hover {
+	 border-color: #ff4d4d;
+	 color: #ff4d4d;
+}
+ .blog-cover {
+	 background-size: contain;
+	 background-repeat: no-repeat;
+	 background-position: center;
+	 border-radius: 5px 5px 0 0;
+	 height: 15rem;
+	 box-shadow: inset rgba(0, 0, 0, .2) 0 64px 64px 16px;
+}
+ .blog-author, .blog-author--no-cover {
+	 margin: 0 auto;
+	 padding-top: 0.125rem;
+	 width: 80%;
+}
+ .blog-author h3::before, .blog-author--no-cover h3::before {
+	 background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/17779/russ.jpeg");
+	 background-size: cover;
+	 border-radius: 50%;
+	 content: " ";
+	 display: inline-block;
+	 height: 32px;
+	 margin-right: 0.5rem;
+	 position: relative;
+	 top: 8px;
+	 width: 32px;
+}
+ .blog-author h3 {
+	 color: #fff;
+	 font-weight: 100;
+}
+ .blog-author--no-cover h3 {
+	 color: #999;
+	 font-weight: 100;
+}
+ .blog-body {
+	 margin: 0 auto;
+	 width: 80%;
+}
+ .video-body {
+	 height: 100%;
+	 width: 100%;
+}
+	.blog-header{
+	background: black;
+		border-top-left-radius:5px ;
+		border-top-right-radius:5px ;
 	}
-	.kartica-slogan img{
-		width: 100%;
+	.blog-title h2 {
+		margin-bottom: 4vh;
 	}
-	.w3-containter{
-		cursor: pointer;
-		height: 3em;
-	}
-	.w3-button{
-		display: block;
-		width: 5em;
-		float: right;
-	}
-	.slika-onclick{
-		display: block;
-		width: 100%;
-		height: 12vh;
-		background: white;
-		border-top-left-radius: 10px;
-		border-top-right-radius: 10px;
-	}
-	.slika-onclick img{
-		display: block;
-		margin: auto;
-		height: 12vh;
-		width: 100%;
-		cursor: pointer;
-		border-top-left-radius: 10px;
-		border-top-right-radius: 10px
-	}
-	.filter{
-		width: 20%;
-		height: 80%;
-		padding: 1em;
-		list-style-type: none;
-	}
-	.drustvene-mreze{
-		width: 100%;
-		display: flex;
-		height: 3.6em;
-		margin-top: 2em;
-		border-top: 1px solid #4f4f4f;
-	}
-	.drustvene-mreze .fab{
-		display: block;
-		width: 1em;
-		margin: auto;
-	}
+ .blog-title h2 a {
+	 font-weight: 100;
+}
+ .blog-summary p {
+	 color: #4d4d4d;
+	 text-align: center;
+}
+ .blog-tags ul {
+	 display: flex;
+	 flex-direction: row;
+	 flex-wrap: wrap;
+	 list-style: none;
+	 padding-left: 0;
+}
+ .blog-tags li + li {
+	 margin-left: 0.5rem;
+}
+ .blog-tags a {
+	 border: 1px solid #999;
+	 border-radius: 3px;
+	 color: #999;
+	 font-size: 0.75rem;
+	 height: 1.5rem;
+	 line-height: 1.5rem;
+	 letter-spacing: 1px;
+	 padding: 0 0.5rem;
+	 text-align: center;
+	 text-transform: uppercase;
+	 white-space: nowrap;
+	 width: 5rem;
+}
+ .blog-footer {
+	 border-top: 1px solid #e6e6e6;
+	 margin: 0 auto;
+	 padding-bottom: 0.125rem;
+	 width: 80%;
+}
+ .blog-footer ul {
+	 list-style: none;
+	 display: flex;
+	 flex: row wrap;
+	 justify-content: flex-end;
+	 padding-left: 0;
+}
+ .blog-footer li:first-child {
+	 margin-right: auto;
+}
+ .blog-footer li + li {
+	 margin-left: 0.5rem;
+}
+ .blog-footer li {
+	 color: #999;
+	 font-size: 0.75rem;
+	 height: 1.5rem;
+	 letter-spacing: 1px;
+	 line-height: 1.5rem;
+	 text-align: center;
+	 text-transform: uppercase;
+	 position: relative;
+	 white-space: nowrap;
+}
+ .blog-footer li a {
+	 color: #999;
+}
+ .comments {
+	 margin-right: 1rem;
+}
+ .published-date {
+	 border: 1px solid #999;
+	 border-radius: 3px;
+	 padding: 0 0.5rem;
+}
+ .numero {
+	 position: relative;
+	 top: -0.5rem;
+}
+ .icon-star, .icon-bubble {
+	 fill: #999;
+	 height: 24px;
+	 margin-right: 0.5rem;
+	 transition: 0.25s ease;
+	 width: 24px;
+}
+ .icon-star:hover, .icon-bubble:hover {
+	 fill: #ff4d4d;
+}
 	
 }
 	
@@ -233,23 +375,11 @@
 		
 		font-family: 'Oswald', sans-serif;
 	}
-	h2{
-		font-size: 1.3em;
-		
-		font-family: 'Oswald', sans-serif;
-	}
+h2{
+	text-align: center;
+}
 	
 	
 	
 	
 
-
-#DITEKS{
-		background: #333
-	}
-#myInput{
-			height: 2em;
-			width: 15em;
-			padding: 1em;
-			border-radius: 15px
-		}
