@@ -186,6 +186,10 @@ h2 {
     padding: 40px 30px;
 }
 
+.content-pad a{
+	margin-right: 0.4vh;
+}
+
 .page-width-1 {
     max-width: 810px;
 }
