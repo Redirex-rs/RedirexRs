@@ -196,13 +196,13 @@ background: linear-gradient(0deg, rgba(23,94,134,1) 0%, rgba(17,19,21,1) 100%);
 			.glavni-menu-post{
 				display: flex;
 				flex-wrap: wrap;
-				width: 95%;
+				width: 80%;
 				margin: auto;
 				margin-bottom: 3em;
-				background: black;
+				background:#1a1a1a;
 				border-bottom: 3px solid #4f4f4f;
 				margin-top: 2vh;
-				border-radius: 5px
+				border-radius: 5px;
 			}
 			.title-post{
 				width: 100%;
@@ -260,9 +260,26 @@ background: linear-gradient(0deg, rgba(23,94,134,1) 0%, rgba(17,19,21,1) 100%);
 			margin: auto;
 		}
 		.desni-main{
-			display: block;
-			width:15%;
+			display: flex;
+			flex-wrap: wrap;
+			width:25%;
+			height: 50vh;
+			margin-right: 5vh;
+			margin-top: 2vh;
+			position: sticky;
+			top: 5vh;
+			border-radius: 15px;
+			background: #1a1a1a
 		}
+				
+		.desni-main a{
+			width: 100%;
+			color: white;
+			text-align: center;
+			font-size: 2vh;
+			margin-top: 2vh;
+		}
+			
 		}
 		
 @media (max-width: 768px){
@@ -323,8 +340,7 @@ background: linear-gradient(0deg, rgba(23,94,134,1) 0%, rgba(17,19,21,1) 100%);
 				display: block;
 				width: 100%;
 				margin-bottom: 3em;
-				margin-left: 0.5em;
-				background: rgba(0,0,0,0.85);
+				background:#1a1a1a;
 				border-bottom: 3px solid #4f4f4f;
 				margin-top: 2vh;
 			}
@@ -381,9 +397,12 @@ background: linear-gradient(0deg, rgba(23,94,134,1) 0%, rgba(17,19,21,1) 100%);
 			margin: auto;
 		}
 		.desni-main{
-			display: block;
+			display: none;
 			width:15%;
-		}	
+		}
+	.desni-main a{
+		display: none;
+	}
 		}
 		
 @media (min-width: 768px){
@@ -645,6 +664,12 @@ Ordinacija Dr Marina je privatna specijalistička ordinacija iz oblasti pedijatr
 	
 	
 	<div class="desni-main">
+	<a href="stranice/Delatnosti/Maloprodaja-i-veleprodaja.html">Maloprodaja i veleprodaja</a>	
+	<a href="stranice/Delatnosti/Medicina-i-zdravlje.html">Medicina i zdravlje</a>	
+	<a href="stranice/Delatnosti/Postavljanje elektricnih instalacija.html">Postavljanje električnih instalacija</a>
+	<a href="stranice/Delatnosti/Ostalo.html">Usluge</a>	
+	<a href="stranice/Delatnosti/Zanatsko-uslužne.html">Zanatsko uslužne</a>	
+		
 	</div>					
 	
 	
