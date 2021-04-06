@@ -2,10 +2,11 @@
 		background: url("../stranice/Delatnosti/medicina/zdravstvo i medicina/inter. Zigic/Zigic/Dr-zigicM-manji-banner1.jpg")
 	}
 	.zigic-marina{
-		background: url("../stranice/Delatnosti/medicina/pedijatrija/Dr-marina/main_banner_marina.jpg")
+		background: url("../stranice/Delatnosti/medicina/pedijatrija/Dr-marina/main_banner_marina.jpg");
+		
 	}
 .tr-pahuljica{
-	background: url("../stranice/Delatnosti/maloprodaja-i-veleprodaja/TR pahuljica/26904568_173284276776219_6964221468164328470_n.jpg")
+	background: url("../stranice/Delatnosti/maloprodaja-i-veleprodaja/TR pahuljica/26904568_173284276776219_6964221468164328470_n.jpg");
 }
 .jocic-grejanje{
 	background: url("../stranice/Delatnosti/usluge/Jole-kotao/IMG_20201201_005840[1].jpg")
@@ -15,6 +16,21 @@
 }
 .elektromontaza-filipovic{
 	background: url("../stranice/Delatnosti/Postavljanje-elektricnih-instalacija/Filipovic/EF-logo-1-plava-podloga-1024x1024-400x400.jpeg")
+}
+.lider-plus{
+	background: url("../stranice/Lider Plus/405b.jpg")
+}
+.total-profil{
+	background: url("../stranice/totalprofil/index.png")
+}
+.security-home{
+	background: url("../stranice/security-home-doo/nav-logo.png")
+}
+.stari-mlin{
+	background: url("../stranice/stari mlin grk/558f232783de822feed5020620fd109c7429ecc3.jpeg")
+}
+.san-sebastijan{
+	background: url("../stranice/san sebastijan/c7ecc03ef3ad5e36aca9352e1e5ae81ebd3da577.jpeg")
 }
 @media (max-width: 768px){
 	
@@ -111,29 +127,12 @@
 	 text-align: center;
 	 font-size: 1.8vh;
 }
- .blog-tags ul {
+ .blog-tags {
 	 display: flex;
 	 flex-direction: row;
 	 flex-wrap: wrap;
 	 list-style: none;
 	 padding-left: 0;
-}
- .blog-tags li + li {
-	 margin-left: 0.5rem;
-}
- .blog-tags a {
-	 border: 1px solid #999;
-	 border-radius: 3px;
-	 color: #999;
-	 font-size: 0.75rem;
-	 height: 1.5rem;
-	 line-height: 1.5rem;
-	 letter-spacing: 1px;
-	 padding: 0 0.5rem;
-	 text-align: center;
-	 text-transform: uppercase;
-	 white-space: nowrap;
-	 width: 5rem;
 }
  .blog-footer {
 	 border-top: 1px solid #e6e6e6;
@@ -237,7 +236,7 @@
 	 background-repeat: no-repeat;
 	 background-position: center;
 	 border-radius: 5px 5px 0 0;
-	 height: 10rem;
+	 height: 20vh;
 	 box-shadow: inset rgba(0, 0, 0, .2) 0 64px 64px 16px;
 }
  .blog-author, .blog-author--no-cover {
@@ -289,33 +288,38 @@
 }
  .blog-summary p {
 	 color: #4d4d4d;
-	 text-align: center;
+	 text-align: left;
 	 font-size: 1.5vh;
 }
- .blog-tags ul {
-	 display: flex;
-	 flex-direction: row;
-	 flex-wrap: wrap;
-	 list-style: none;
-	 padding-left: 0;
+	.tag{
+		width: 5vw;
+		height: 3vh;
+		border: 1px solid black;
+		
+	}
+	.blog-tag{
+		margin-top: 1vh;
+	}
+ .blog-tag .fas{
+	 color: #4d4d4d;
+	 z-index: 3
 }
- .blog-tags li + li {
-	 margin-left: 0.5rem;
+ .blog-tag .fab{
+	 color: #4d4d4d;
+	 z-index: 3;
+	 padding: 0.2em;
+		 
 }
- .blog-tags a {
-	 border: 1px solid #999;
-	 border-radius: 3px;
-	 color: #999;
-	 font-size: 0.75rem;
-	 height: 1.5rem;
-	 line-height: 1.5rem;
-	 letter-spacing: 1px;
-	 padding: 0 0.5rem;
-	 text-align: center;
-	 text-transform: uppercase;
-	 white-space: nowrap;
-	 width: 5rem;
-}
+	
+	
+	/* 
+	<a href="#" target="_blank"><i class="fab fa-internet-explorer fa-lg"></i></a>
+	<a href="#" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+	<a href="#" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+	<a href="#" target="_blank"><i class="fab fa-youtube fa-lg"></i></a>
+	*/ 
+	
+	
  .comments {
 	 margin-right: 1rem;
 }
