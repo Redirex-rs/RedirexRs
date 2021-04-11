@@ -32,6 +32,24 @@
 .san-sebastijan{
 	background: url("../stranice/san sebastijan/c7ecc03ef3ad5e36aca9352e1e5ae81ebd3da577.jpeg")
 }
+.geo-zenit{
+	background: url("../stranice/Zenit/building-768815_1920.jpg")
+}
+.agencija-uspeh{
+	background: url("../stranice/agencija-uspeh/logo0001.png")
+}
+.kafana-merak{
+	background: url("../stranice/kafana-merak/index.jpg")
+}
+.laki-promet{
+	background: url("../stranice/laki-promet/49521141_2002200953162413_1854389788321251328_n.jpg")
+}
+.stakloform{
+	background: url("../stranice/stakloform/11401219_1074651222564213_692703642010585519_n.jpg")
+}
+.vitomir{
+	background: url("../stranice/zoran-vitomirac/tools-498202_1920.jpg")
+}
 @media (max-width: 768px){
 	
 	.naslov h2{
@@ -127,67 +145,32 @@
 	 text-align: center;
 	 font-size: 1.8vh;
 }
- .blog-tags {
-	 display: flex;
-	 flex-direction: row;
-	 flex-wrap: wrap;
-	 list-style: none;
-	 padding-left: 0;
+	.tag{
+		width: 5vw;
+		height: 3vh;
+		border: 1px solid black;
+		
+	}
+	.blog-tag{
+		margin-top: 1vh;
+	}
+ .blog-tag .fas{
+	 color: #4d4d4d;
+	 z-index: 3
+} 
+.blog-tag .fas:hover{
+	 color: red;
+	 z-index: 3
 }
- .blog-footer {
-	 border-top: 1px solid #e6e6e6;
-	 margin: 0 auto;
-	 padding-bottom: 0.125rem;
-	 width: 80%;
+ .blog-tag .fab{
+	 color: #4d4d4d;
+	 z-index: 3;
+	 padding: 0.2em;
 }
- .blog-footer ul {
-	 list-style: none;
-	 display: flex;
-	 flex: row wrap;
-	 justify-content: flex-end;
-	 padding-left: 0;
-}
- .blog-footer li:first-child {
-	 margin-right: auto;
-}
- .blog-footer li + li {
-	 margin-left: 0.5rem;
-}
- .blog-footer li {
-	 color: #999;
-	 font-size: 0.75rem;
-	 height: 1.5rem;
-	 letter-spacing: 1px;
-	 line-height: 1.5rem;
-	 text-align: center;
-	 text-transform: uppercase;
-	 position: relative;
-	 white-space: nowrap;
-}
- .blog-footer li a {
-	 color: #999;
-}
- .comments {
-	 margin-right: 1rem;
-}
- .published-date {
-	 border: 1px solid #999;
-	 border-radius: 3px;
-	 padding: 0 0.5rem;
-}
- .numero {
-	 position: relative;
-	 top: -0.5rem;
-}
- .icon-star, .icon-bubble {
-	 fill: #999;
-	 height: 24px;
-	 margin-right: 0.5rem;
-	 transition: 0.25s ease;
-	 width: 24px;
-}
- .icon-star:hover, .icon-bubble:hover {
-	 fill: #ff4d4d;
+ .blog-tag .fab:hover{
+	 color: royalblue;
+	 z-index: 3;
+	 padding: 0.2em;
 }
 	.navbar-brand strong {
 		font-size: 1.4em;
@@ -307,8 +290,12 @@
  .blog-tag .fab{
 	 color: #4d4d4d;
 	 z-index: 3;
+	 padding: 0.2em;	 
+}
+ .blog-tag .fab:hover{
+	 color: royalblue;
+	 z-index: 3;
 	 padding: 0.2em;
-		 
 }
 	
 	
