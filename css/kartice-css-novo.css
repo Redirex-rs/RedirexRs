@@ -50,6 +50,15 @@
 .vitomir{
 	background: url("../stranice/zoran-vitomirac/tools-498202_1920.jpg")
 }
+.servis-plus{
+	background: url("../stranice/Servis plus/modern-kitchen-1772638_1920.jpg")
+}
+.kolacic-doo{
+	background: url("../stranice/mmn kolacic/8883-mmn-kolacic-cover.jpg")
+}
+.plc-soft{
+	background: url("../stranice/PLC soft/technology-1283624_1920.jpg")
+}
 @media (max-width: 768px){
 	
 	.naslov h2{
