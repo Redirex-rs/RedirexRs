@@ -139,6 +139,13 @@ hr { border-top: 4px solid #CCC; }
 	justify-content: center;
 	margin-bottom: 100px;
 }
+.tm-brand-box a{
+    background: #006699;
+    color: white;
+    display: flex;
+    align-items: center;
+	justify-content: center;
+}
 
 #tm-main-nav {
 	padding: 0;
