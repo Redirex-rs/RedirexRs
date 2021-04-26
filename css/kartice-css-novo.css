@@ -235,6 +235,14 @@
 	
 	}
 @media (min-width: 768px){
+	
+	.oglasi-kartice{
+		display: flex;
+		flex-wrap: wrap;
+		padding: 2vh;
+		margin-top: 3vh;
+	}
+	
 	.kartice-glavno{
 		display: block;
 		width: 100%;
