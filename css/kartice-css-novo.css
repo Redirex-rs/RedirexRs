@@ -108,6 +108,11 @@
 
 @media (max-width: 768px){
 
+	.nav-link{
+		border-bottom: 2px solid #CCC;
+		font-size: 2vh;
+	}
+	
 		.oglasi-kartice{
 		display: flex;
 		flex-wrap: wrap;
