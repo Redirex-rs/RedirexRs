@@ -10,6 +10,27 @@
 .barfly{
 	background: url("../stranice/barfly/921413_898977770180424_1697202243834871322_o.jpg");
 }
+.poslednjigros{
+	background: url("../stranice/poslednji gros/index.jpg");
+}
+.cvecara-exclusive{
+	background: url("../stranice/cvecara exclusive/14542444_360853534246359_4482656095699680338_o.jpg");
+}
+.lesko{
+	background: url("../stranice/lesko doo/vrh.png");
+}
+.bohogrill{
+	background: url("../stranice/boho grill/boho-gril.png");
+}
+.pedjolino{
+	background: url("../stranice/PS pedjolino/52531064_468645803671996_4862975466765549568_n.jpg");
+}
+.pileipapaja{
+	background: url("../stranice/pile i papaja/38036785_635530560158116_1821774055783530496_n.jpg");
+}
+.servis-daja{
+	background: url("../stranice/Servis daja/919169_698265210184589_31914100_o.jpg");
+}
 .dobro-jutro{
 	background: url("../stranice/dobro jutro/43105914_333686390526895_7361775009942994944_n.jpg");
 }
@@ -446,16 +467,25 @@
 		
 	}
 	.blog-tag{
-		margin-top: 1vh;
+		margin-top: 2vh;
+		margin: auto;
+		display: flex;
+		border-top: 1px solid #4d4d4d 
 	}
  .blog-tag .fas{
 	 color: #4d4d4d;
-	 z-index: 3
+	 z-index: 3;
+	 margin: auto;
+	 align-self: center
+		
 }
+	.blog-tag a{
+		margin-top: 1vh;
+	}
  .blog-tag .fab{
 	 color: #4d4d4d;
 	 z-index: 3;
-	 padding: 0.2em;	 
+	 padding: 0.2em;
 }
  .blog-tag .fab:hover{
 	 color: royalblue;

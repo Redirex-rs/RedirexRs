@@ -30,7 +30,7 @@ $(document).ready(function () {
 
     /*************** Gallery ******************/
     
-    var itemSelector = ".tm-gallery-item"; 
+    var itemSelector = ".#"; 
     var responsiveIsotope = [ [480, 4], [720, 6], [1920, 9] ];
     var itemsPerPageDefault = 12;
     var itemsPerPage = defineItemsPerPage();
@@ -40,7 +40,7 @@ $(document).ready(function () {
     var filterValue = "";
     var pageAttribute = 'data-page';
     var pagerClass = 'tm-paging';    
-    var $container = $('.tm-gallery').isotope({ 
+    var $container = $('.oglasi-kartice').isotope({ 
         itemSelector: itemSelector
     });
 
