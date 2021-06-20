@@ -240,11 +240,27 @@
                         <h2 class="tm-text-primary">Automobilizam</h2>
                         <hr class="mb-5">					
 				
-	<input class="form-control" id="myInput1" type="text" placeholder="Pretraga">		
+	<input class="form-control" id="myInput1" type="text" placeholder="Pretraga">
+<p>
+  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Filteri
+  </a>
+</p>
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+<div class="filteri-delat">
+   <div class="mybtncont" id="myBtnContainer">
+        <button class="btn btn-default filter-button" data-filter="all">Sve</button>
+        <button class="btn btn-default filter-button" data-filter="servis">Servis</button>
+        <button class="btn btn-default filter-button" data-filter="odrzavanje">Odrzavanje vozila</button>
+   </div>
+</div>
+  </div>
+</div>			
 			
 		<ul id="myList" class="oglasi-kartice">	
 	
-<div id="113" class="blog-container">
+<div id="113" class="blog-container filter odrzavanje">
   <div style="display: none" class="tagovi">Hemijskog ciscenje enterijera
 Poliranje vozila
 Keramicke zastite i jos mnogo toga.</div>
@@ -273,7 +289,7 @@ Keramicke zastite i jos mnogo toga.</div>
   
 </div>	
 	
-<div id="107" class="blog-container">
+<div id="107" class="blog-container filter servis">
   <div style="display: none" class="tagovi">filteri pumpe amortizeri kocni sistemi delovi trap lageri tocak tocka</div>
   <div class="blog-header" style="background: black">
     <div class="blog-cover stojanov-t">
@@ -300,7 +316,7 @@ Keramicke zastite i jos mnogo toga.</div>
   
 </div>	
 	
-<div id="098" class="blog-container">
+<div id="098" class="blog-container filter servis">
   <div style="display: none" class="tagovi"></div>
   <div class="blog-header" style="background: black">
     <div class="blog-cover autoservis-misa">
@@ -325,7 +341,7 @@ Keramicke zastite i jos mnogo toga.</div>
   
 </div>	
 	
-<div id="091" class="blog-container">
+<div id="091" class="blog-container filter odrzavanje">
   <div style="display: none" class="tagovi">Poliranje vozila
 Keramicka zastita laka
 Dubinsko pranje vozila
@@ -357,7 +373,7 @@ Reparacija unutrasnjosti plastika-prekidaca</div>
   
 </div>				
 	
-<div id="090" class="blog-container">
+<div id="090" class="blog-container filter servis odrzavanje">
   <div style="display: none" class="tagovi">Autoservis Mercedes je osnovan 1988 godine,
 I bavi se popravkom, održavanjem i auto diagnostikom
 za sva Mercedes i Smart vozila naj savremenijom dijagnostikom prodajom i ugradnjom originalnih mercedesovih delova
@@ -388,7 +404,7 @@ BOSCH, LEMFORDER, SACHS, HELLA, LUCAS, TRW, MANN, MAHLE, HENGST, ELRING, SWAG, K
   
 </div>			
 	
-<div id="068" class="blog-container">
+<div id="068" class="blog-container filter servis odrzavanje">
   <div style="display: none" class="tagovi">lakiranje farbanje delovi servis rezervni </div>
   <div class="blog-header" style="background: white">
     <div class="blog-cover servis-daja">
@@ -415,7 +431,7 @@ BOSCH, LEMFORDER, SACHS, HELLA, LUCAS, TRW, MANN, MAHLE, HENGST, ELRING, SWAG, K
   
 </div>				
 			
-<div id="049" class="blog-container">
+<div id="049" class="blog-container filter servis">
   <div style="display: none" class="tagovi">
 Trgovina na malo delovima i opremom za vozila</div>
   <div class="blog-header" style="background: white">
@@ -441,7 +457,7 @@ POŽAREVAČKI PARTIZANSKI ODRED BB Požarevac <br>
   
 </div>		
 			
-<div id="001" class="blog-container">
+<div id="001" class="blog-container filter servis">
   <div style="display: none" class="tagovi">File service
 Chip tuninga + EGR Off, DPF Off, AdBlue Off...
 Šlep službe
@@ -474,7 +490,7 @@ Mehanike Autolimarije </div>
   
 </div>	
 			
-<div id="040" class="blog-container">
+<div id="040" class="blog-container filter servis">
   <div style="display: none" class="tagovi">autoelektrika, laka mehanika, automehanika, punjenje auto klime, servis i poravka auto klime, autodijagnostika. </div>				
 				
   <div class="blog-header">
@@ -528,6 +544,8 @@ Mehanike Autolimarije </div>
     <script src="../../templatemo_555_upright/js/jquery.magnific-popup.min.js"></script> <!-- https://dimsemenov.com/plugins/magnific-popup/ -->
     <script src="../../templatemo_555_upright/slick/slick.min.js"></script>              <!-- https://kenwheeler.github.io/slick/ -->
     <script src="../../templatemo_555_upright/js/templatemo-script.js"></script>
+    <script src="../../JSS/filter-type.js"></script>
+    <script src="../../JSS/randomizer.js"></script>
 </body>
 </html>
 	

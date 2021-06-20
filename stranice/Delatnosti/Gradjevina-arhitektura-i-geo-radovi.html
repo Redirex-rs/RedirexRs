@@ -240,12 +240,33 @@
                         <h2 class="tm-text-primary">Građevina, Arhitektura i Geo Radovi</h2>
                         <hr class="mb-5">					
 				
-	<input class="form-control" id="myInput1" type="text" placeholder="Pretraga">		
+	<input class="form-control" id="myInput1" type="text" placeholder="Pretraga">
+<p>
+  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Filteri
+  </a>
+</p>
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+<div class="filteri-delat">
+   <div class="mybtncont" id="myBtnContainer">
+        <button class="btn btn-default filter-button" data-filter="all">Sve</button>
+        <button class="btn btn-default filter-button" data-filter="alupvc">Alu/PVC</button>
+        <button class="btn btn-default filter-button" data-filter="gradjevina">Građevinske firme</button>
+        <button class="btn btn-default filter-button" data-filter="gradjmat">Građevinski materijal</button>
+        <button class="btn btn-default filter-button" data-filter="geodezija">Geodetske firme</button>
+        <button class="btn btn-default filter-button" data-filter="montaza">Montaža</button>
+        <button class="btn btn-default filter-button" data-filter="entekst">Enterijer/eksterijer</button>
+   </div>
+</div>
+  </div>
+</div>				
+						
 			
 		<ul id="myList" class="oglasi-kartice">	
 			
 
-<div id="116" class="blog-container">
+<div id="116" class="blog-container filter gradjevina gradjmat montaza">
    <div style="display: none" class="tagovi">solarnih panela, solarni ugradnja akumulatori moto baterija </div> 
   <div class="blog-header" style="background: white">
     <div class="blog-cover reaktor">
@@ -273,7 +294,7 @@
   </div>
 </div>			
 
-<div id="114" class="blog-container">
+<div id="114" class="blog-container filter gradjevina alupvc montaza">
    <div style="display: none" class="tagovi">PVC STOLARIJA alu ulazna vrata zatvaranje terase roletne komarnici garazna vrata ograde i kapije gelenderi</div> 
   <div class="blog-header" style="background: white">
     <div class="blog-cover alupvc-djordjevic">
@@ -303,7 +324,7 @@
   </div>
 </div>			
 
-<div id="100" class="blog-container">
+<div id="100" class="blog-container filter alupvc montaza ">
    <div style="display: none" class="tagovi">PVC PROZORI VRATA ROLETNE KOMARNICI   ROLO GARAŽNA VRATA SEGMENTNA GELENDERI ŠTITNICI ZA ZIDOVE ZASTAKLJIVANJE TERASE stitnici</div> 
   <div class="blog-header" style="background: white">
     <div class="blog-cover poimex">
@@ -332,7 +353,7 @@
   </div>
 </div>
 
-<div id="080" class="blog-container">
+<div id="080" class="blog-container filter gradjmat">
    <div style="display: none" class="tagovi"> je preduzeće koje postoji od 1990. godine, čija je osnovna delatnost veleprodaja i maloprodaja gradjevinskog materijala, kao i izgradnja poslovno – stambenih objekata.
 Bavimo se trgovinom gradjevinskog materijala od temelja do krova, kao i ispravljanje betonskog gvozdja i proizvodnjom fert gredica po meri kupca i velikog asortimana crne metalurgije..</div> 
   <div class="blog-header" style="background: white">
@@ -363,7 +384,7 @@ Bavimo se trgovinom gradjevinskog materijala od temelja do krova, kao i ispravlj
   </div>
 </div>	
 
-<div id="079" class="blog-container">
+<div id="079" class="blog-container filter alupvc ">
    <div style="display: none" class="tagovi">ALU i PVC prozori
 ulazna, sobna i balkonska vrata
 roletne, komarnike, venecijanere i žaluzine
@@ -398,7 +419,7 @@ ALU ograde i gelender</div>
   </div>
 </div>			
 			
-<div id="058" class="blog-container">
+<div id="058" class="blog-container filter entekst montaza">
   <div style="display: none" class="tagovi">enterijer eksterijer dekor</div>				
 				
   <div class="blog-header">
@@ -425,7 +446,7 @@ ALU ograde i gelender</div>
 </div>
 </div>			
 			
-<div id="057" class="blog-container">
+<div id="057" class="blog-container filter gradjevina ">
   <div style="display: none" class="tagovi">Grubi građevin gradjevinski radovi rusenje rušenje i odvoz otpada</div>  
   <div class="blog-header" style="background: white">
     <div class="blog-cover strugar-cop">
@@ -448,7 +469,7 @@ ALU ograde i gelender</div>
     </div>
 </div>
 			
-<div class="blog-container">
+<div class="blog-container filter montaza ">
   <div style="display: none" class="tagovi">instalacije elektro radovi nadzor ispitivanje dizalica</div>  
   <div class="blog-header" style="background: white">
     <div class="blog-cover elmont-gradnja">
@@ -473,7 +494,7 @@ ALU ograde i gelender</div>
     </div>
 </div>			
 			
-<div id="017" class="blog-container">
+<div id="017" class="blog-container filter geodezija">
   <div style="display: none" class="tagovi">geo radovi georadivi geoteska geodeti Geodetske usluge: - Snimanje objekata - Omedjavanje - Izrada situacionih planova - Deoba parcela - Formiranje građevinskih parcela - Snimanje vodova</div>  
   <div class="blog-header" style="background: white">
     <div class="blog-cover geo-zenit">
@@ -525,6 +546,8 @@ ALU ograde i gelender</div>
     <script src="../../templatemo_555_upright/js/jquery.magnific-popup.min.js"></script> <!-- https://dimsemenov.com/plugins/magnific-popup/ -->
     <script src="../../templatemo_555_upright/slick/slick.min.js"></script>              <!-- https://kenwheeler.github.io/slick/ -->
     <script src="../../templatemo_555_upright/js/templatemo-script.js"></script>
+    <script src="../../JSS/filter-type.js"></script>
+    <script src="../../JSS/randomizer.js"></script>
 </body>
 </html>
 	

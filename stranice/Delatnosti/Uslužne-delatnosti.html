@@ -120,11 +120,6 @@
                             <h1 class="tm-brand"><a href="../../index.html">Redirex</a></h1>
                         </div>  
 						
-						
-						
-						
-						
-						
                         <ul id="tm-main-nav">
 							
    <li onclick="location.href='Automobilizam.html';" class="nav-item">  
@@ -231,6 +226,7 @@
                             </li>
 							
                         </ul>
+						
                     </div>
                     <footer class="mb-3 tm-mt-100">
                         Redirex Rs
@@ -246,12 +242,35 @@
                         <h2 class="tm-text-primary">Uslužne Delatnosti</h2>
                         <hr class="mb-5">					
 				
-	<input class="form-control" id="myInput1" type="text" placeholder="Pretraga">		
+	<input class="form-control" id="myInput1" type="text" placeholder="Pretraga"><p>
+  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Filteri
+  </a>
+</p>
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+<div class="filteri-delat">
+   <div class="mybtncont" id="myBtnContainer">
+        <button class="btn btn-default filter-button" data-filter="all">Sve</button>
+        <button class="btn btn-default filter-button" data-filter="hotmot">Hoteli/moteli</button>
+        <button class="btn btn-default filter-button" data-filter="rest">Restorani</button>
+        <button class="btn btn-default filter-button" data-filter="pub">Pub</button>
+        <button class="btn btn-default filter-button" data-filter="bar">Bar</button>
+        <button class="btn btn-default filter-button" data-filter="posl">Poslastičarnice</button>
+        <button class="btn btn-default filter-button" data-filter="pek">Pekare</button>
+        <button class="btn btn-default filter-button" data-filter="kaf">Kafane</button>
+        <button class="btn btn-default filter-button" data-filter="brzah">Brza hrana</button>
+        <button class="btn btn-default filter-button" data-filter="vin">Vinarije</button>
+        <button class="btn btn-default filter-button" data-filter="pic">Picerije</button>
+   </div>
+</div>
+  </div>
+</div>			
 						
 	     					
 		<ul id="myList" class="oglasi-kartice">	
 
-<div id="120" class="blog-container portrait">
+<div id="120" class="blog-container filter pub">
   <div style="display: none" class="tagovi"></div>
   <div class="blog-header" style="background: rgba(142,127,78,1.00)">
     <div class="blog-cover underground-pub">
@@ -279,7 +298,7 @@
   
 </div>		
 
-<div id="119" class="blog-container portrait">
+<div id="119" class="blog-container filter bar">
   <div style="display: none" class="tagovi">kafic kafa bar</div>
   <div class="blog-header" style="background: black">
     <div class="blog-cover caffe-black-bar">
@@ -303,7 +322,7 @@
   
 </div>		
 
-<div id="115" class="blog-container portrait">
+<div id="115" class="blog-container filter posl">
   <div style="display: none" class="tagovi">kolaci torte sladoled</div>
   <div class="blog-header" style="background: white">
     <div class="blog-cover slatki-trg">
@@ -330,7 +349,7 @@
   
 </div>		
 
-<div id="095" class="blog-container portrait">
+<div id="095" class="blog-container filter pub bar">
   <div style="display: none" class="tagovi"></div>
   <div class="blog-header" style="background: white">
     <div class="blog-cover bilijar-klub-profesional">
@@ -357,7 +376,7 @@
   
 </div>		
 
-<div id="092" class="blog-container portrait">
+<div id="092" class="blog-container filter rest">
   <div style="display: none" class="tagovi">restoran italijanski restoran</div>
   <div class="blog-header" style="background: white">
     <div class="blog-cover pasta-bar-padrini">
@@ -386,7 +405,7 @@
   
 </div>		
 
-<div id="087" class="blog-container portrait">
+<div id="087" class="blog-container filter rest ">
   <div style="display: none" class="tagovi">dostava restoran </div>
   <div class="blog-header" style="background: white">
     <div class="blog-cover salas-dorat">
@@ -414,7 +433,7 @@
   
 </div>			
 
-<div id="086" class="blog-container portrait">
+<div id="086" class="blog-container filter rest">
   <div style="display: none" class="tagovi"></div>
   <div class="blog-header" style="background: #4d4d4d; padding: 0.5em;">
     <div class="blog-cover vila-jelena">
@@ -444,7 +463,7 @@
   
 </div>		
 
-<div id="073" class="blog-container portrait">
+<div id="073" class="blog-container filter brzah">
   <div style="display: none" class="tagovi">porucivanje narucivanje dostava rostilj</div>
   <div class="blog-header" style="background: white">
     <div class="blog-cover bohogrill">
@@ -472,7 +491,7 @@
   
 </div>	
 			
-<div id="071" class="blog-container nature">
+<div id="071" class="blog-container filter rest kaf">
   <div style="display: none" class="tagovi">kafana restoran dostava hrane kafa za poneti narudzbina narucivanje</div>
   <div class="blog-header" style="background: white">
     <div class="blog-cover poslednjigros">
@@ -498,7 +517,7 @@
   
 </div>			
 			
-<div id="065" class="blog-container">
+<div id="065" class="blog-container filter rest">
   <div style="display: none" class="tagovi"></div>  
   <div class="blog-header" style="background: white;">
     <div class="blog-cover dobro-jutro">
@@ -526,7 +545,7 @@
   
 </div>
 			
-<div id="062" class="blog-container">
+<div id="062" class="blog-container filter rest">
   <div style="display: none" class="tagovi"></div>  
   <div class="blog-header" style="background: white;">
     <div class="blog-cover venecija-dva">
@@ -554,7 +573,7 @@
   
 </div>
 			
-<div id="061" class="blog-container">
+<div id="061" class="blog-container filter pub">
   <div style="display: none" class="tagovi"></div>  
   <div class="blog-header" style="background: white;">
     <div class="blog-cover barfly">
@@ -582,7 +601,7 @@
   
 </div>	
 			
-<div id="060" class="blog-container">
+<div id="060" class="blog-container filter pek">
   <div style="display: none" class="tagovi">Hleb
 Peciva
 Koktel peciva
@@ -622,7 +641,7 @@ Krofne Slane uvijače</div>
     </div>
 </div>	
 			
-<div id="055" class="blog-container">
+<div id="055" class="blog-container filter kaf rest">
   <div style="display: none" class="tagovi">restoran svadbe krstenja proslava sala rucak jela </div>  
   <div class="blog-header" style="background: white">
     <div class="blog-cover kafana-miris-dunja">
@@ -647,7 +666,7 @@ Krofne Slane uvijače</div>
     </div>
 </div>		
 			
-<div id="048" class="blog-container">
+<div id="048" class="blog-container filter rest">
   <div style="display: none" class="tagovi"> </div>  
   <div class="blog-header" style="background: white">
     <div class="blog-cover alaske-zore">
@@ -670,7 +689,7 @@ Krofne Slane uvijače</div>
     </div>
 </div>	
 			
-<div id="045" class="blog-container">
+<div id="045" class="blog-container filter pic">
   <div style="display: none" class="tagovi">picerija teos pizza narucivanje dostava </div>  
   <div class="blog-header" style="background: white">
     <div class="blog-cover picerija-teos">
@@ -694,7 +713,7 @@ Krofne Slane uvijače</div>
     </div>
 </div>	
 			
-<div id="028" class="blog-container">
+<div id="028" class="blog-container filter kaf ">
   <div style="display: none" class="tagovi">rostilj Roštilj za poneti kilo </div>  
   <div class="blog-header" style="background: white">
     <div class="blog-cover kafana-merak">
@@ -717,7 +736,7 @@ Krofne Slane uvijače</div>
     </div>
 </div>
 			
-<div id="029" class="blog-container">
+<div id="029" class="blog-container filter brzah">
   <div style="display: none" class="tagovi">rostilj brza hrana pljeskavice </div>  
   <div class="blog-header" style="background: white">
     <div class="blog-cover stari-mlin">
@@ -741,7 +760,7 @@ Krofne Slane uvijače</div>
     </div>
 </div>
   
-<div id="030" class="blog-container">
+<div id="030" class="blog-container filter brzah">
   <div style="display: none" class="tagovi">brza hrana </div>
   <div class="blog-header" style="background: white">
     <div class="blog-cover orijent-expres">
@@ -766,7 +785,7 @@ Krofne Slane uvijače</div>
   
 </div>
 			
-<div id="031" class="blog-container">
+<div id="031" class="blog-container filter vin">
   <div style="display: none" class="tagovi">Vinograd vinarija</div>
   <div class="blog-header" style="background: white">
     <div class="blog-cover ambelos">
@@ -817,12 +836,20 @@ Krofne Slane uvijače</div>
             </div> <!-- .tm-main -->                      
         </div> <!-- .row -->
     </div> <!-- .container-fluid -->
-		        <!-- https://jquery.com/ -->
+	  <script src="../../JSS/Filterovanje.js"></script>	
+  <script src="../../NOVI-CSS/js/jquery-3.5.1.min.js"></script>
+  <script src="../../NOVI-CSS/js/bootstrap.min.js"></script>
+  <script src="../../NOVI-CSS/js/slick.js"></script>
+  <script src="../../NOVI-CSS/js/templatemo-script.js"></script>
+    <script src="../../templatemo_555_upright/js/jquery-3.4.1.min.js"></script>          <!-- https://jquery.com/ -->
     <script src="../../templatemo_555_upright/js/jquery.singlePageNav.min.js"></script>  <!-- https://github.com/ChrisWojcik/single-page-nav -->
     <script src="../../templatemo_555_upright/js/parallax/parallax.min.js"></script>     <!-- https://pixelcog.github.io/parallax.js/ -->    <!-- https://imagesloaded.desandro.com/ -->
     <script src="../../templatemo_555_upright/js/isotope.pkgd.min.js"></script>          <!-- https://isotope.metafizzy.co/ -->
     <script src="../../templatemo_555_upright/js/jquery.magnific-popup.min.js"></script> <!-- https://dimsemenov.com/plugins/magnific-popup/ -->
     <script src="../../templatemo_555_upright/slick/slick.min.js"></script>              <!-- https://kenwheeler.github.io/slick/ -->
+    <script src="../../templatemo_555_upright/js/templatemo-script.js"></script>
+    <script src="../../JSS/filter-type.js"></script>
+    <script src="../../JSS/randomizer.js"></script>
 </body>
 </html>
 	

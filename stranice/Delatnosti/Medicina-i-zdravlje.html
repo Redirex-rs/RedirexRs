@@ -240,12 +240,33 @@
                         <h2 class="tm-text-primary">Medicina i Zdravlje</h2>
                         <hr class="mb-5">					
 				
-	<input class="form-control" id="myInput1" type="text" placeholder="Pretraga">		
+	<input class="form-control" id="myInput1" type="text" placeholder="Pretraga"><p>
+  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Filteri
+  </a>
+</p>
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+<div class="filteri-delat">
+   <div class="mybtncont" id="myBtnContainer">
+        <button class="btn btn-default filter-button" data-filter="all">Sve</button>
+        <button class="btn btn-default filter-button" data-filter="ord">Ordinacije</button>
+        <button class="btn btn-default filter-button" data-filter="lab">Laboratorije</button>
+        <button class="btn btn-default filter-button" data-filter="malop">Maloprodaja</button>
+        <button class="btn btn-default filter-button" data-filter="logo">Logopedija</button>
+        <button class="btn btn-default filter-button" data-filter="derm">Dermatologija</button>
+        <button class="btn btn-default filter-button" data-filter="stom">Stomatologija</button>
+        <button class="btn btn-default filter-button" data-filter="vet">Veterina</button>
+        <button class="btn btn-default filter-button" data-filter="fit">Fitnes</button>
+   </div>
+</div>
+  </div>
+</div>		
 			
 		<ul id="myList" class="oglasi-kartice">	
 			
 	
-<div id="103" class="blog-container">
+<div id="103" class="blog-container filter logo">
    <div style="display: none" class="tagovi"></div> 
   <div class="blog-header" style="background: white">
     <div class="blog-cover prva-rec-ucionica">
@@ -274,7 +295,7 @@ Logopedska učionica "Prva reč"</h3>
 </div>
 </div>
 	
-<div id="097" class="blog-container">
+<div id="097" class="blog-container filter stom">
    <div style="display: none" class="tagovi"></div> 
   <div class="blog-header" style="background: white">
     <div class="blog-cover stomatolog-rankovic">
@@ -303,7 +324,7 @@ Stomatološka Ordinacija Ranković</h3>
 </div>
 </div>
 			
-<div id="094" class="blog-container">
+<div id="094" class="blog-container filter stom">
    <div style="display: none" class="tagovi">-botoks
 -anti-aging medicina
 -hijaluronske filere
@@ -338,7 +359,7 @@ PRIVATNA ZUBNA ORDINACIJA DR BOBAN PETROVIĆ</h3>
 </div>
 </div>
 			
-<div id="082" class="blog-container">
+<div id="082" class="blog-container filter lab">
    <div style="display: none" class="tagovi">Ekspertski tim na jednom mestu za vas! Najsavremenija ultrazvučna dijagnostika Najpovoljnije cene Kompletna laboratorija Rezultati istog dana Kućni pregledi za teško obolele, stare i nepokretne Stručna besplatna savetovanja Konzilijarni pregledi i davanje tzv. “drugog mišljenja”. Preventivni pregledi</div> 
   <div class="blog-header" style="background: white">
     <div class="blog-cover tectum">
@@ -368,8 +389,8 @@ TECTUM MED LABOR POŽAREVAC</h3>
 </div>
 </div>
 			
-<div id="078" class="blog-container">
-   <div style="display: none" class="tagovi">vet ordinacija pet shop Usluge za socijalne (kućni ljubimci) i farmske životinje.
+<div id="078" class="blog-container filter vet malop">
+   <div style="display: none" class="tagovi">vet ordinacija pet shop Usluge za socijalne (kućni ljubimci) životinje.
 Ishrana, lekovi, lečenje, igračke i ostala oprema za životinje.</div> 
   <div class="blog-header" style="background: white">
     <div class="blog-cover marko-pet-house">
@@ -401,7 +422,7 @@ Dr Marko – Pet House</h3>
 </div>
 </div>
 			
-<div id="076" class="blog-container">
+<div id="076" class="blog-container filter vet">
    <div style="display: none" class="tagovi">vet ordinacija pet shop Usluge za socijalne (kućni ljubimci) i farmske životinje.
 Ishrana, lekovi, lečenje, igračke i ostala oprema za životinje.</div> 
   <div class="blog-header" style="background: white">
@@ -431,7 +452,7 @@ Ishrana, lekovi, lečenje, igračke i ostala oprema za životinje.</div>
   </div>
 </div>
 			
-<div id="056" class="blog-container">
+<div id="056" class="blog-container filter derm">
    <div style="display: none" class="tagovi">ordinacija dermatologija</div> 
   <div class="blog-header" style="background: white">
     <div class="blog-cover dr-kazimir">
@@ -459,7 +480,7 @@ Ishrana, lekovi, lečenje, igračke i ostala oprema za životinje.</div>
   </div>
 </div>
 			
-<div id="018" class="blog-container">
+<div id="018" class="blog-container filter ord">
    <div style="display: none" class="tagovi">specijalisticka internisticka ordinacija kardio doktor lekar</div> 
   <div class="blog-header" style="background: white">
     <div class="blog-cover zigic">
@@ -489,7 +510,7 @@ Ishrana, lekovi, lečenje, igračke i ostala oprema za životinje.</div>
 
 </div>
 		
-<div id="019" class="blog-container">
+<div id="019" class="blog-container filter ord">
   <div style="display: none" class="tagovi">specijalisticka ordinacija pedijatrija pregled doktor lekar</div>  
   <div class="blog-header" style="background: white">
     <div class="blog-cover zigic-marina">
@@ -519,7 +540,7 @@ Ishrana, lekovi, lečenje, igračke i ostala oprema za životinje.</div>
 
 </div> 
 	
-<div id="020" class="blog-container">
+<div id="020" class="blog-container filter malop">
   <div style="display: none" class="tagovi"></div>
   <div class="blog-header" style="background: white">
     <div class="blog-cover apoteka-flos">
@@ -547,7 +568,7 @@ Ishrana, lekovi, lečenje, igračke i ostala oprema za životinje.</div>
   
 </div>			
 			
-<div id="021" class="blog-container">
+<div id="021" class="blog-container filter lab">
   <div style="display: none" class="tagovi"></div>
   <div class="blog-header" style="background: white">
     <div class="blog-cover farmakon-bhl">
@@ -575,7 +596,7 @@ Ishrana, lekovi, lečenje, igračke i ostala oprema za životinje.</div>
   
 </div>
 			
-<div id="022" class="blog-container">
+<div id="022" class="blog-container filter lab">
   <div style="display: none" class="tagovi"></div>
   <div class="blog-header" style="background: white">
     <div class="blog-cover paster-lab">
@@ -602,7 +623,7 @@ Ishrana, lekovi, lečenje, igračke i ostala oprema za životinje.</div>
   
 </div>			
 			
-<div id="023" class="blog-container">
+<div id="023" class="blog-container filter malop">
   <div style="display: none" class="tagovi"></div>
   <div class="blog-header" style="background: white">
     <div class="blog-cover optika-lux">
@@ -629,7 +650,7 @@ Ishrana, lekovi, lečenje, igračke i ostala oprema za životinje.</div>
   
 </div>			
 			
-<div id="036" class="blog-container">
+<div id="036" class="blog-container filter fitnes">
   <div style="display: none" class="tagovi">fitnes teretana vezbe</div>				
 				
   <div class="blog-header">
@@ -675,7 +696,11 @@ Ishrana, lekovi, lečenje, igračke i ostala oprema za životinje.</div>
             </div> <!-- .tm-main -->                      
         </div> <!-- .row -->
     </div> <!-- .container-fluid -->
-	
+	  <script src="../../JSS/Filterovanje.js"></script>	
+  <script src="../../NOVI-CSS/js/jquery-3.5.1.min.js"></script>
+  <script src="../../NOVI-CSS/js/bootstrap.min.js"></script>
+  <script src="../../NOVI-CSS/js/slick.js"></script>
+  <script src="../../NOVI-CSS/js/templatemo-script.js"></script>
     <script src="../../templatemo_555_upright/js/jquery-3.4.1.min.js"></script>          <!-- https://jquery.com/ -->
     <script src="../../templatemo_555_upright/js/jquery.singlePageNav.min.js"></script>  <!-- https://github.com/ChrisWojcik/single-page-nav -->
     <script src="../../templatemo_555_upright/js/parallax/parallax.min.js"></script>     <!-- https://pixelcog.github.io/parallax.js/ -->    <!-- https://imagesloaded.desandro.com/ -->
@@ -683,6 +708,8 @@ Ishrana, lekovi, lečenje, igračke i ostala oprema za životinje.</div>
     <script src="../../templatemo_555_upright/js/jquery.magnific-popup.min.js"></script> <!-- https://dimsemenov.com/plugins/magnific-popup/ -->
     <script src="../../templatemo_555_upright/slick/slick.min.js"></script>              <!-- https://kenwheeler.github.io/slick/ -->
     <script src="../../templatemo_555_upright/js/templatemo-script.js"></script>
+    <script src="../../JSS/filter-type.js"></script>
+    <script src="../../JSS/randomizer.js"></script>
 </body>
 </html>
 	
