@@ -129,8 +129,7 @@ body {
   color: #fff;
 }
 .logo img{
-	width: 15vh;
-	border: 1px solid red;
+	width: 10vh;
 }
 @media (max-width: 991px) {
   html, body {
