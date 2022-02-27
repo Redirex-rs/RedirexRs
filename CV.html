@@ -354,6 +354,17 @@
 		width: 12em;
 		padding: 0.5em;
 	}
+	.buduci-kursevi{
+		display: inline-grid;
+		grid-template-columns: repeat(2, [col-start] 10fr);
+		grid-gap: 0.5em;
+		width: 100%;
+		font-family:Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+	}
+	.buduci-kursevi li{
+		width: 12em;
+		padding: 0.5em;
+	}
 	.jezici{
 		display: block;
 		padding-left: 3em;
@@ -383,7 +394,8 @@
 	}
 		.img-fluid{
 			display: block;
-			width: 100%;
+			width: 80%;
+			margin: auto;
 		}
 		.primeri-stranica{
 			display: block;
@@ -476,7 +488,7 @@
 			<h3><strong>Kontakt</strong></h3>
 	
 		<div class="kontakt-informacije">
-		  <i class="fas fa-phone"></i>+381/669358484 <br>
+		  <i class="fas fa-phone"></i>(+381)66/935-8484 <br>
 		  <i class="fas fa-envelope"></i>stankovicv93@gmail.com <br>
 		  <i class="fas fa-home"></i>Slobodarska 16; Požarevac<br>
 		  <i class="fas fa-globe"></i> https://redirex.rs <br>
@@ -567,10 +579,21 @@
 	<h3><strong>KURSEVI</strong></h3>
 	<ul class="kursevi-lista">
 		
+	<li><p> <strong>HTML</strong></p></li>
+	<li><p><strong>CSS</strong></p></li>
+	<li><p><strong>SQL</strong></p></li>
+	<li><p><strong>PHP</strong><br> (Trenutno ne koristim na redirex.rs jer hostujem na GitHub a i nemam potrebe za php u ovom trenutku)</p></li>
+	
+	<p>Trenutno učim i planiram:</p> <br>	
+	<ul class="buduci-kursevi">	
+	<li><p><strong>Full-stack</strong></p></li>
+		<li><p><strong>Python</strong></p></li>
+	</ul>	
+<!--		
 	<li><img src="banneri/HTML-compl.png" style="#"  alt=""><br>www.codecademy.com</li>
 	<li><img src="banneri/CSS-compl.png" style="#"  alt=""><br>www.codecademy.com</li>
 	<li><img src="banneri/SQL-compl.png" style="#"  alt=""><br>www.codecademy.com</li>
-		
+-->		
 	</ul>
 </div>	
 	
@@ -604,7 +627,7 @@
 		</p>
 		
 	<hr style="color: rgba(195,195,195,0.70); width:100%; margin-top: 1.5em; margin-bottom: 1.5em;">	
-	    <p><strong>Auto perionica SJAJ - Sortiranje, popis i internet prodaja auto delova i guma : 2021 - 2021</strong>
+	    <p><strong>Auto perionica SJAJ - Sortiranje, popis i internet prodaja auto delova i guma : Jul 2021 - Avgust 2021</strong>
 		</p>			
 		
 	<hr style="color: rgba(195,195,195,0.70); width:100%; margin-top: 1.5em; margin-bottom: 1.5em;">	
@@ -655,7 +678,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
 
-
+</div>
 	
 </body>
 </html>
