@@ -1,0 +1,387 @@
+
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+body {
+background-image: url("file:///C|/Users/Thyrantt/Documents/GitHub/banneri/75247294_111626686959032_7162865256169996288_o.jpg");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;	
+background-color:black;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+}
+
+h4{
+	color: white
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+
+ 
+.loader {
+     position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+	.load-slike{
+		width: 20em
+	}	
+
+.load-slike > img {
+    width: 20em;
+	display: block;
+	margin: auto;
+	position: relative;
+}
+	
+
+.loader.hidden {
+    animation: fadeOut 1.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}	
+	
+	.gallery {
+-webkit-column-count: 3;
+-moz-column-count: 3;
+column-count: 3;
+-webkit-column-width: 33%;
+-moz-column-width: 33%;
+column-width: 33%; 
+background-color: black;
+	padding-top: 1em;
+	margin: 3em }
+.gallery .pics {
+-webkit-transition: all 350ms ease;
+transition: all 350ms ease; }
+.gallery .animation {
+-webkit-transform: scale(1);
+-ms-transform: scale(1);
+transform: scale(1);}
+
+@media (max-width: 450px) {
+.gallery {
+-webkit-column-count: 1;
+-moz-column-count: 1;
+column-count: 1;
+-webkit-column-width: 100%;
+-moz-column-width: 100%;
+column-width: 100%;
+}
+}
+
+@media (max-width: 400px) {
+.btn.filter {
+padding-left: 1.1rem;
+padding-right: 1.1rem;
+}
+} 
+
+
+/* Flex class that could be added to other items if needed */
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*============== Navbar ==============*/
+
+
+
+/*============== Banner ==============*/
+
+.banner {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.banner > img {
+  object-fit: cover;
+  min-width: 100%;
+  max-height: 100%;
+}
+
+.banner-title {
+  font-size: 1.3rem;
+  background: rgba(0, 0, 0, 0.404);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  color: rgb(245, 245, 245);
+  text-shadow: 5px 5px 5px #000, 5px 5px 5px #000, 5px 5px 5px #000;
+  top: 0;
+  text-align: center;
+}
+
+
+
+.grid-container > a > div  {
+		text-align: center;
+		height: 100%;
+	    vertical-align: middle;
+		line-height: 3em;
+}
+
+@media (min-width: 768px) {
+	.banner-title {
+  font-size: 0.7rem;
+  background: rgba(0, 0, 0, 0.404);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  color: rgb(245, 245, 245);
+  text-shadow: 5px 5px 5px #000, 5px 5px 5px #000, 5px 5px 5px #000;
+  top: 0;
+  text-align: center;
+}
+	
+
+}
+
+
+/*============== Page's Main section ==============*/
+
+.banner{
+	width:100%
+}
+
+
+.main-sec {
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.opis-slika {
+	width: 100%;
+  text-align: center;
+  margin-bottom: 2em;
+  box-shadow: 2px 2px 10px rgba(78, 92, 121, 1);
+}
+
+.opis,
+.radno-vreme,
+.adresa,
+.kontakt,
+.informacije {
+  width: 95%;
+  margin-bottom: 2em;
+  margin: 0.5em;	
+}
+
+.opis-tekst,
+.radno-vreme-lista,
+.adresa > p,
+.kontakt-lista {
+  width: 100%;
+  color: white;
+  background: rgba(0,0,0,0.00);
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.opis-tekst,
+.adresa > p {
+  padding: 1em;
+}
+
+.opis-tekst > h4 {
+  color: white;
+}
+
+.opis-naslov,
+.slideshow-title,
+.radno-vreme > h4,
+.adresa > h4,
+.kontakt > h4 {
+  color:white;
+  padding-left: 1em;
+  margin-bottom: 0.5em;
+}
+
+/*============== <768px ==============*/
+@media (max-width: 768px) {
+		.radno-vreme-lista,
+  .kontakt-lista {
+    border-radius: 5px;
+	 margin-left: 2.5em 
+	 
+}
+	
+	.adresa > p {
+	margin-left: 2.5em	
+	}
+}
+
+/*============== For width of 768px ++  ==============*/
+
+.grid-container > a > div  {
+		text-align: center;
+		height: 100%;
+	    vertical-align: middle;
+		line-height: 3em;
+}
+
+@media (min-width: 768px) {
+	
+  .banner {
+    height: 350px;
+  }
+  .main-sec {
+    width: 90%;
+    margin: 0 auto;
+  }
+	
+	
+.radno-vreme,
+.adresa,
+.kontakt {
+		border-left: 1px solid white
+	}	
+	
+	.opis-tekst{
+		border-left: 1px solid white
+	}	
+	
+  .opis-tekst,
+  .radno-vreme-lista,
+  .adresa > p,
+  .kontakt-lista {
+    border-radius: 5px;
+	 
+}
+	
+	.radno-vreme-lista,
+  .adresa > p,
+  .kontakt-lista {
+    border-radius: 5px;
+	 margin-left: 4em 
+	 
+}
+
+  /* Slideshow container */
+
+  .slideshow-title {
+    margin-left: 5%;
+  }
+  .slideshow-container {
+    width: 90%;
+    margin-left: 5%;
+    border: 1px rgb(78, 92, 121, 0.4) solid;
+    border-radius: 5px;
+  }
+}
+
+/*============== For width of 1300px ++  ==============*/
+
+
+
+/*============== Footer / Copyrights ==============*/
+	
+	.col- {
+		padding-bottom: 1em
+	}
+	
+	.widgettitle{
+		width: auto;
+	}
+	.widget .widget-inner {
+    background-size: cover;
+    background-position: center center;
+}
+	
+	.row {
+		margin: auto;
+		padding-bottom: 1em
+	}
+	.row .row{
+		box-sizing: border-box;
+	    text-align: center;
+		width: 100%;
+		align-content: center center;
+		margin: auto;
+		display: table
+	}
+	
+	.box-content{
+		align-content: left;
+		font-size: 0.9em;
+		margin: auto;
+		display: table
+			
+	}
+	
+	.box-body{
+		margin: auto;
+		align-items: center
+	}
+	
+	.box{
+		margin: 0px;
+		display: table
+	
+	} 
+	
+	
+	
+	.box-inner{
+		align-content: left;
+		display: table;
+		margin: auto
+	}
+.footer {
+margin-top: auto;
+
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+.footer a {
+	color: white
+}
+
+.sub-footer{
+		padding: 1em;
+		padding-bottom: 2em;
+		align-content: left;
+		display: table;
+	}
+	
+	.sub-footer > a {
+		display: inline-block;
+		color: white;
+		margin-left: 4em;
+		font-size: 0.9em
+	}
+	
+	.footer-img{
+		margin: auto
+	}
