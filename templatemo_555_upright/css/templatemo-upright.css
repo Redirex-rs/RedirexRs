@@ -26,6 +26,19 @@ a:hover {
 	color: #006699;
 	text-decoration: none;
 }
+
+.title-header{
+	width: 100%;
+	height: 180px;
+	text-align: center;
+}
+
+.title-header h1{
+	display: block;
+	margin: auto;
+	font-size: 5rem;
+}
+
 .cd-hero-slider{
 	display: flex;
 	flex-wrap: wrap;
@@ -150,6 +163,7 @@ hr { border-top: 4px solid #CCC; }
 #tm-main-nav {
 	padding: 0;
 	margin: 0;
+	
 }
 
 .nav-item {
@@ -164,6 +178,9 @@ hr { border-top: 4px solid #CCC; }
 	font-size: 1.4rem;
 	padding-top: 15px;
 	padding-bottom: 15px;
+}
+.nav-link:hover{
+	border-bottom: 1px solid #006699;
 }
 
 .triangle-right {
@@ -196,7 +213,6 @@ hr { border-top: 4px solid #CCC; }
 }
 
 /* Home section */
-#home { min-height: 100vh; }
 .tm-col-home-l { width: calc(100% - 300px); }
 
 .tm-img-home-container {

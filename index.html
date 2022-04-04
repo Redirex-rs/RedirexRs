@@ -55,12 +55,12 @@
 	<style>
 		.infog-img{
 			display: block;
-			width: 100%;
+			width: 50%;
 		}
 	</style>
 	
 </head>
-<body>    
+<body title="welcome to Redirex">    
     <div class="container-fluid">
         <div class="row">
             <!-- Leftside bar -->
@@ -70,43 +70,46 @@
                         <i class="fas fa-bars"></i>
                     </button>
                     <div>
-                        <div class="tm-brand-box">
+                        <div title="Redirex Glavna Strana" class="tm-brand-box">
                             <h1 class="tm-brand"><a href="index.html">Redirex</a></h1>
                         </div>                
                         <ul id="tm-main-nav">
-                            <li class="nav-item">                                
+                            <li title="Početna Stranica" class="nav-item">                                
                                 <a href="#home" class="nav-link current">
                                     <div class="triangle-right"></div>
                                     <i class="fas fa-home nav-icon"></i>
-                                    Početna
+                                    Početna stranica
                                 </a>
                             </li>
-                            <li class="nav-item">
+                            <li title="Najnoviji Preduzetnici" class="nav-item">
                                 <a href="#gallery" class="nav-link">
                                     <div class="triangle-right"></div>
                                     <i class="fas fa-images nav-icon"></i>
-                                    Najnovije
+                                    Najnoviji istaknuti oglasi
                                 </a>
                             </li>
- <li onclick="location.href='stranica-pretrage.html';" class="nav-item">
+ <li title="Stranica Pretrage Preduzetnika" onclick="location.href='stranica-pretrage.html';" class="nav-item">
                                 <a href="#" class="nav-link">
                                     <div class="triangle-right"></div>
                                     <i class="fas fa-user-friends nav-icon"></i>
-                                    Pretraga
+                                    Pretraga preduzetnika
                                 </a>
                             </li>
-                            <li class="nav-item">
+                            <li title="Kontakt Formular" class="nav-item">
                                 <a href="#contact" class="nav-link">
                                     <div class="triangle-right"></div>
                                     <i class="fas fa-envelope nav-icon"></i>
                                     Kontakt
                                 </a>
                             </li>
-                            <li class="nav-item">
+							
+                            <li aria-label="formular1" title="Formular za oglašavanje" class="nav-item">
+								
+								<p id="formular" hidden>Formular za oglašavanje </p>
                                 <a href="#formular" class="nav-link">
                                     <div class="triangle-right"></div>
                                     <i class="fas fa-address-card nav-icon"></i>
-                                    Formular
+                                    Formular za oglašavanje
                                 </a>
                             </li>
                         </ul>
@@ -116,114 +119,112 @@
                     </footer>
                 </nav>
             </div>      
+				
             <div class="tm-main">
                 <!-- Home section -->
                 <div class="tm-section-wrap">
-                    <div class="tm-parallax" data-parallax="scroll" data-image-src="templatemo_555_upright/img/img-01.jpg"></div>                   
+                    <div class="tm-parallax" data-parallax="scroll" name="paralax divider image" data-image-src="templatemo_555_upright/img/img-01.jpg" alt="paralax divider image"></div>                   
                     <section id="home" class="tm-section">
-                        <h2 class="tm-text-primary">Dobrodošli na Redirex</h2>
-                        <hr class="mb-5">
-                        <div class="row">
-  <img class="infog-img" src="infograph.jpg" alt="">
-                        </div>
+                        <header title="Dobrodošli na Redirex" class="tm-text-primary title-header"><h1><strong>Dobrodošli na Redirex</strong></h1></header> <p style="text-align: center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus repellendus minima, accusantium laudantium consequuntur quas dolores laboriosam quaerat praesentium minus nobis numquam ad. In eligendi assumenda tempora, natus accusamus, non. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus repellendus minima, accusantium laudantium consequuntur quas dolores laboriosam quaerat praesentium minus nobis numquam ad. In eligendi assumenda tempora, natus accusamus, non. </p>
                     </section>
                 </div>
+				
                 <!-- Gallery section -->
                 <div class="tm-section-wrap">
                     <div class="tm-parallax" data-parallax="scroll" data-image-src="templatemo_555_upright/img/img-02.jpg"></div>                   
                     <section id="gallery" class="tm-section">
-                        <h2 class="tm-text-primary">Najnovije</h2>
+                        <h2 title="Sekcija Najnovijih Oglasa" class="tm-text-primary">Najnovije</h2>
                         <hr class="mb-5">
                         
                         <div class="tm-gallery">
-                       
-                <figure class="effect-honey tm-gallery-item portrait">
+							
+                <figure id="dobrojutro" title="Kafana Dobro Jutro." class="effect-honey tm-gallery-item portrait">
                     <img src="pozarevac/dobro jutro/43105914_333686390526895_7361775009942994944_n.jpg" alt="Image">
                     <figcaption>
                        
                            <h2><i>Restoran Dobro Jutro</i></h2>
                         
-                        <a href="pozarevac/Delatnosti/Uslužne-delatnosti.html">View more</a>
+                        <a href="pozarevac/Delatnosti/Uslužne-delatnosti.html">Click here for more information </a>
                     </figcaption>
                 </figure>
-                       
+							
                 <figure class="effect-honey tm-gallery-item portrait">
                     <img src="pozarevac/pranje tepiha azuro/38614702_1792206180893515_4222202668740771840_n.png" alt="Image">
                     <figcaption>
                        
                            <h2><i>Dubinsko pranje i sušenje tepiha-Azuro</i></h2>
                         
-                        <a href="pozarevac/Delatnosti/Ostalo.html">View more</a>
+                        <a href="pozarevac/Delatnosti/Ostalo.html">Deep cleaning of carpets Azuro. Click here for more information </a>
                     </figcaption>
                 </figure>
                        
-                <figure class="effect-honey tm-gallery-item portrait">
+                <figure title="Foto Boban." class="effect-honey tm-gallery-item portrait">
                     <img src="pozarevac/foto boban/131902027_1308984432813581_4876128968389041502_n.png" alt="Image">
                     <figcaption>
                        
                            <h2><i>Foto Boban Plus</i></h2>
                         
-                        <a href="pozarevac/Delatnosti/Ostalo.html">View more</a>
+                        <a href="pozarevac/Delatnosti/Ostalo.html">Click here for more information </a>
                     </figcaption>
                 </figure>
                        
-                <figure class="effect-honey tm-gallery-item portrait">
+                <figure title="Pekara Duda." class="effect-honey tm-gallery-item portrait">
                     <img src="pozarevac/pekara duda/10863911_1606265629603566_1249314620467808692_o.jpg" alt="Image">
                     <figcaption>
                        
                            <h2><i>Pekara Duda</i></h2>
                         
-                        <a href="pozarevac/Delatnosti/Uslužne-delatnosti.html">View more</a>
+                        <a href="pozarevac/Delatnosti/Uslužne-delatnosti.html">Click here for more information </a>
                     </figcaption>
                 </figure>
                        
-                <figure class="effect-honey tm-gallery-item portrait">
+                <figure title="Kafana Miris Dunja." class="effect-honey tm-gallery-item portrait">
                     <img src="pozarevac/kafana miris dunja/12265549_608336592642102_3917040744105037679_o.jpg" alt="Image">
                     <figcaption>
                        
                            <h2><i>Kafana Miris Dunja</i></h2>
                         
-                        <a href="pozarevac/Delatnosti/Uslužne-delatnosti.html">View more</a>
+                        <a href="pozarevac/Delatnosti/Uslužne-delatnosti.html">Click here for more information </a>
                     </figcaption>
                 </figure>
                        
-                <figure class="effect-honey tm-gallery-item portrait">
+                <figure title="Farbara LG" class="effect-honey tm-gallery-item portrait">
                     <img src="pozarevac/farbara LG/unnamed.jpg" alt="Image">
                     <figcaption>
                        
                            <h2><i>Farbara LG</i></h2>
                         
-                        <a href="pozarevac/Delatnosti/Maloprodaja-i-veleprodaja.html">View more</a>
+                        <a href="pozarevac/Delatnosti/Maloprodaja-i-veleprodaja.html">Click here for more information </a>
                     </figcaption>
                 </figure>
                        
-                <figure class="effect-honey tm-gallery-item portrait">
+                <figure title="PD Elmont Gradnja" class="effect-honey tm-gallery-item portrait">
                     <img src="pozarevac/elmont/25311095_312081735975754_1020849204915012973_o.jpg" alt="Image">
                     <figcaption>
                        
                            <h2><i>PD Elmont Gradnja</i></h2>
                         
-                        <a href="pozarevac/Delatnosti/Postavljanje elektricnih instalacija.html">View more</a>
+                        <a href="pozarevac/Delatnosti/Postavljanje elektricnih instalacija.html">Click here for more information </a>
                     </figcaption>
                 </figure>
                        
-                <figure class="effect-honey tm-gallery-item portrait">
+                <figure title="RIBLJI RESTORAN ALASKE ZORE" class="effect-honey tm-gallery-item portrait">
                     <img src="pozarevac/alaske-zore/fish-2230852_1920.jpg" alt="Image">
                     <figcaption>
                        
                            <h2><i>RIBLJI RESTORAN ALASKE ZORE</i></h2>
                         
-                        <a href="pozarevac/Delatnosti/Uslužne-delatnosti.html">View more</a>
+                        <a href="pozarevac/Delatnosti/Uslužne-delatnosti.html">Click here for more information </a>
                     </figcaption>
                 </figure>
                        
-                <figure class="effect-honey tm-gallery-item portrait">
+                <figure title="PROFI Servis Bele Tehnike" class="effect-honey tm-gallery-item portrait">
                     <img src="pozarevac/profi servis 012/158866103_236423578179148_6838709534486122586_n.jpg" alt="Image">
                     <figcaption>
                        
                            <h2><i>PROFI Servis 012</i></h2>
                         
-                        <a href="pozarevac/Delatnosti/Servis-bele-tehnike.html">View more</a>
+                        <a href="pozarevac/Delatnosti/Servis-bele-tehnike.html">Click for more information </a>
                     </figcaption>
                 </figure>
                        
