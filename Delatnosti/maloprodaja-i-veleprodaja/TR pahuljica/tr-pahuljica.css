@@ -1,0 +1,989 @@
+
+		@media (max-width: 768px){
+	.radno-vreme{
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		height: 45vh;
+		background: black;
+		border-radius: 1vh;
+	}
+	.radno-vreme h6{
+		width: 100%;
+		text-align: center;
+		color: white;
+		font-size: 2.5vh;
+		padding: 1.5vh;
+		font-weight: bolder;
+	}
+	.radno-vreme p{
+		display: flex;
+		flex-wrap: wrap;
+		color: white;
+		width: 45%;
+		margin: auto;
+		font-size: 2vh;
+		padding: 0.5vh;
+		padding-left: 1.7vh;
+	}
+	
+	form{
+		width: 90%;
+		margin: auto;
+		margin-top: 8vh;
+		margin-bottom: 8vh;
+		padding: 2vh;
+		display: flex;
+		flex-wrap: wrap;
+		border: 1vh solid aliceblue;
+		border-bottom-right-radius: 15px;
+		border-bottom-left-radius: 15px;
+		border-top-right-radius: 15px;
+		border-top-left-radius: 15px;
+	}
+	.kontakt-ime{
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		color: white;
+		font-size: 2vh;
+	}
+	.kontakt-ime input{
+		width: 100%;
+		padding-left: 1vh;
+		display: block;
+	}
+	.tekt-poruke{
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		color: white;
+		font-size: 1.3vh;
+	}
+	.tekt-poruke textarea{
+		width: 100%;
+		height: 15vh;
+		padding: 1vh;
+		
+	}
+	.poslati{
+		display: block;
+		width: 30vw;
+		margin: auto;
+	}
+	form h6 {
+		display: block;
+		width: 100%;
+		font-size: 3vh;
+		color: aliceblue;
+		text-align: center;
+		border-bottom: 1px solid aliceblue;
+		margin-bottom: 2vh;
+	}			
+			
+			
+			
+	.industrijski-pogoni{
+	background-image: url("../../../pozarevac/Delatnosti/maloprodaja-i-veleprodaja/TR pahuljica/industr-pogon.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}	
+.pogon-zivina{
+	background-image: url("../../../pozarevac/Delatnosti/maloprodaja-i-veleprodaja/TR pahuljica/uzgoj-zivine.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.stambene-zgrade{
+	background-image: url("../../../pozarevac/Delatnosti/maloprodaja-i-veleprodaja/TR pahuljica/stam-pos-zgrada.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;	
+}
+.komerc-obj{
+	background-image: url("../../../pozarevac/Delatnosti/maloprodaja-i-veleprodaja/TR pahuljica/maksi-33211.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;	
+}
+.video-nadzor{
+	background-image: url("../../../pozarevac/Delatnosti/maloprodaja-i-veleprodaja/TR pahuljica/kamere.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;	
+}
+.protiv-poz{
+	background-image: url("../../../pozarevac/Delatnosti/maloprodaja-i-veleprodaja/TR pahuljica/protiv-pozarni-sistemi.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}		
+	.radne-ref-naslov{
+		display: block;
+		width: 100%;
+		border-bottom: 0.6vh solid aliceblue;
+		margin-bottom: 3vh;
+	}
+	.radne-ref-naslov>h1{
+		color: aliceblue;
+	}
+	.radne-ref{
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		background: url("wood-2045380.jpg");
+		background-attachment: fixed;
+		background-size:cover;
+		background-repeat: no-repeat;
+		padding-left: 1vh;
+		padding-right: 1vh;
+	}
+	.referenca{
+		display: block;	
+		width: 95%;
+		margin: auto;
+		background: aliceblue;
+		margin-bottom: 1vh;
+	}
+			.item{
+				padding: 0.4vh;
+			}
+			.broj-2, .broj-3{
+				display: flex;
+				flex-wrap: wrap;
+			}
+			.broj-2 .container-slika{
+				width: 25%;
+				margin: auto;
+			}
+			.broj-3 .container-slika{
+				width: 33.3%;
+				margin: auto;
+			}
+	.opis-posla{
+		display: block;
+		width: 100%;
+	}
+	.opis-posla > h12{
+		display: block;
+		font-size: 1.5vh;
+		padding: 0.6vh;
+		margin-bottom: 1vh;
+	}
+	.slika img{
+		width: 54vh;
+		height: 30vh;
+		margin: auto;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+	}
+	.ref-info{
+		display: flex;
+		flex-wrap: wrap;
+		background: aliceblue;
+		height: 10vh;
+	}
+	.ref-info p{
+		display: block;
+		width: 100%;
+		font-size: 2.5vh;
+		text-align: center;
+	}
+	.stat-info{
+		width: 33%;
+		margin: auto;
+		height: inherit;
+		background: aliceblue;
+	}
+	.stat-info h6{
+		color: #4f4f4f;
+		font-size: 1.5vh;
+		text-align: center;
+		margin-top: 0.4vh;
+	}
+	.stat-info>p{
+		margin-top: 0.8vh;
+		font-size: 1.5vh;
+	}
+	.divider-info{
+		display: block;
+		height: 2px;
+		width: 80%;
+		background: #4f4f4f;
+	    margin: auto;
+	}
+	.krug-granica{
+		width: 4.4vw;
+		height: 4.4vw;
+		border: 3px solid rgba(2,199,13,1.00);
+		border-bottom-left-radius: 50%;
+		border-bottom-right-radius: 50%;
+		border-top-left-radius: 50%;
+		border-top-right-radius: 50%;
+		margin-left: 0.3em;
+	}
+	.krug-granica>i{
+		margin: 15% 20%;
+	}	
+			
+			
+		.footer{
+			width: 100%;
+			display: block;
+			background: #212529	;
+			padding-top: 3vh;
+			text-align: center;
+			
+		}
+		}
+		@media (min-width: 768px)	{
+
+	
+	form{
+		width: 60vw;
+		height: 45vh;
+		margin: auto;
+		margin-top: 8vh;
+		margin-bottom: 8vh;
+		padding: 2vh;
+		display: flex;
+		flex-wrap: wrap;
+		border: 1vh solid aliceblue;
+		border-bottom-right-radius: 15px;
+		border-bottom-left-radius: 15px;
+		border-top-right-radius: 15px;
+		border-top-left-radius: 15px;
+	}
+	.kontakt-ime{
+		display: flex;
+		flex-wrap: wrap;
+		width: 55%;
+		color: white;
+		font-size: 2vh;
+	}
+	.kontakt-ime input{
+		height: ;
+		width: 100%;
+		padding-left: 1vh;
+		display: block;
+	}
+	.tekt-poruke{
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		color: white;
+		font-size: 1.9vh;
+	}
+	.tekt-poruke textarea{
+		width: 100%;
+		padding: 1vh;
+		
+	}
+	.poslati{
+		display: block;
+		width: 10vw;
+		margin: auto;
+	}
+	form h6 {
+		display: block;
+		width: 100%;
+		font-size: 3vh;
+		color: aliceblue;
+		text-align: center;
+		border-bottom: 1px solid aliceblue;
+		margin-bottom: 2vh;
+	}			
+			
+			
+.industrijski-pogoni{
+	background-image: url("../../../pozarevac/Delatnosti/maloprodaja-i-veleprodaja/TR pahuljica/industr-pogon.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-left: 2vh;
+	padding-top: 4vh;
+}	
+.pogon-zivina{
+	background-image: url("../../../pozarevac/Delatnosti/maloprodaja-i-veleprodaja/TR pahuljica/uzgoj-zivine.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 4vh;
+}
+.stambene-zgrade{
+	background-image: url("../../../pozarevac/Delatnosti/maloprodaja-i-veleprodaja/TR pahuljica/stam-pos-zgrada.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-right: 2vh;
+	padding-top: 4vh;
+}
+.komerc-obj{
+	background-image: url("../../../pozarevac/Delatnosti/maloprodaja-i-veleprodaja/TR pahuljica/maksi-33211.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;	
+}
+.video-nadzor{
+	background-image: url("../../../pozarevac/Delatnosti/maloprodaja-i-veleprodaja/TR pahuljica/kamere.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;	
+}
+.protiv-poz{
+	background-image: url("../../../pozarevac/Delatnosti/maloprodaja-i-veleprodaja/TR pahuljica/protiv-pozarni-sistemi.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}		
+			
+	.radne-ref-naslov{
+		display: block;
+		width: 100%;
+		border-bottom: 0.6vh solid aliceblue;
+		margin-bottom: 3vh;
+	}
+	.radne-ref-naslov>h1{
+		color: aliceblue;
+		margin-top: 3vh;
+	}
+	.radne-ref{
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		background: url("wood-2045380.jpg");
+		background-attachment: fixed;
+		background-size:cover;
+		background-repeat: no-repeat;
+		padding-left: 1vh;
+		padding-right: 1vh;
+	}
+	.referenca{
+		display: block;	
+		width: 80%;
+		margin: auto;
+		background: aliceblue;
+		margin-bottom: 2vh;
+	}
+	.radno-vreme{
+		display: block;
+		width: 18%;
+		height: 45vh;
+		background: black;
+		border-radius: 1vh;
+	}
+	.radno-vreme h6{
+				color: white;
+		font-size: 2.5vh;
+		padding: 1.5vh;
+		font-weight: bolder;
+	}
+	.radno-vreme p{
+				color: white;
+		font-size: 1.7vh;
+		padding: 0.5vh;
+		padding-left: 1.7vh;
+	}			
+			
+			.item{
+				padding: 0.4vh;
+			}
+			.broj-2, .broj-3{
+				display: flex;
+				flex-wrap: wrap;
+			}
+			.broj-2 .container-slika{
+				width: 25%;
+				margin: auto;
+			}
+			.broj-3 .container-slika{
+				width: 33.3%;
+				margin: auto;
+			}
+	.opis-posla{
+		display: block;
+		width: 100%;
+	}
+	.opis-posla > h12{
+		display: block;
+		height: 7vh;
+		font-size: 1.3vh;
+		padding: 0.6vh;
+		margin-bottom: 1vh;
+	}
+			.slike{
+				display: flex;
+			}
+	.slike img{
+		width: 100%;
+		height: 30vh;
+		margin: auto;
+	}
+	.ref-info{
+		display: flex;
+		flex-wrap: wrap;
+		background: aliceblue;
+		height: 10vh;
+	}
+	.ref-info p{
+		display: block;
+		width: 100%;
+		font-size: 2vh;
+		text-align: center;
+	}
+	.stat-info{
+		width: 33%;
+		margin: auto;
+		height: inherit;
+		background: aliceblue;
+	}
+	.stat-info h6{
+		color: #4f4f4f;
+		font-size: 1.5vh;
+		text-align: center;
+		margin-top: 0.4vh;
+	}
+	.stat-info>p{
+		margin-top: 0.8vh;
+		font-size: 1.5vh;
+	}
+	.divider-info{
+		display: block;
+		height: 2px;
+		width: 80%;
+		background: #4f4f4f;
+	    margin: auto;
+	}
+	.krug-granica{
+		width: 4.4vw;
+		height: 4.4vw;
+		border: 3px solid rgba(2,199,13,1.00);
+		border-bottom-left-radius: 50%;
+		border-bottom-right-radius: 50%;
+		border-top-left-radius: 50%;
+		border-top-right-radius: 50%;
+		margin-left: 0.3em;
+	}
+	.krug-granica>i{
+		margin: 15% 20%;
+	}	
+			
+			
+		.footer{
+			width: 100%;
+			display: flex;
+			background: #212529	;
+			padding-top: 3vh;
+			text-align: center;
+			
+		}	
+		}
+	
+		
+		html{
+			scroll-behavior: smooth;
+		}
+
+		@media (max-width: 768px){
+			
+			.banner img{
+				display: block;
+				margin: auto;
+				z-index: -3;
+				width: 100%;
+			}
+			.banner p{
+		background:black ;
+		color: white;
+		font-size: 6vh;
+		text-align: center;
+		margin: auto;
+		font-family: 'Bebas Neue', cursive;
+	}
+				.main-deo-prelaz{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;			
+		margin: auto;
+		background-image: url("../../../pozarevac/Delatnosti/maloprodaja-i-veleprodaja/TR pahuljica/bright-1851267.jpg");
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		
+	}
+		.main-deo-prelaz p{
+		margin: auto;
+		color: rgba(208,227,2,1.00);
+		padding-bottom: 5vh;
+		display: block;
+		text-align: center;
+		    text-shadow:
+    -0.5px -0.5px 0 #4f4f4f,
+    0.5px -0.5px 0 #4f4f4f,
+    -0.5px 0.5px 0 #4f4f4f,
+    0.5px 0.5px 0 #4f4f4f;
+	}
+	
+	.main-deo-prelaz h5{
+		margin: auto;
+		color: rgba(208,227,2,1.00);
+		padding-bottom: 5vh;
+		display: block;
+		text-align: center;
+	}		
+	.main-deo-prelaz div{
+		display:flex;
+		width: 50%;
+		height: 12vh;
+		margin: auto;
+		padding: 1em;
+		color: aliceblue;
+		background: rgba(0,0,0,0.35);
+		font-size: 2vh;
+	}
+			.main-deo-div{
+				display: block;
+				text-align: center;
+			}
+			.main-deo-div i{
+				width: 30%;
+				display: block;
+			}
+			.main-deo-div p{
+				width: 40%;
+			}
+			
+			.navbar{
+				background: #4f4f4f;
+				
+			}
+			.navbar-nav{
+				margin: auto;
+			}
+			.navbar-nav li{
+				margin-left: 1em;
+				font-size: 1.1em;
+			}
+			.banner-divider{
+				display: block;
+				width: 100%;
+			}
+			.banner-divider img{
+				display: block;
+				width: inherit;
+				margin: auto;
+				margin-top: 2em;
+			}
+			.main-deo{
+				display: flex;
+				flex-wrap: wrap;
+				width: 100%;
+				padding-top: 7vh;
+				background-image: url("../../../pozarevac/Delatnosti/maloprodaja-i-veleprodaja/TR pahuljica/textile-1866908.jpg");
+				background-position: center;
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-attachment: fixed;	
+			}
+			.deo{	
+				display: flex;
+				flex-wrap: wrap;
+				background: #fff;
+				margin: 1em;
+				border-radius: 10px;
+				width: 90%;
+				height: 50vh;
+				margin: auto;
+				margin-bottom: 5vw;
+			}
+			.d-mreze{
+				width: 7em;
+				display: flex;
+				margin: auto;
+			}
+			.d-mreze a{
+				margin: auto
+			}
+			.slika-deo{
+				display: block;
+				margin: auto;
+				width: 100%;
+				margin-left: 1em;
+				padding-right:1.5em;
+				padding-top:1em;
+			}
+			.tekst-deo{
+				display: block;
+				text-align: center;
+				margin: 1em;
+				width: 100%;
+			}
+			.tekst-deo h1{
+				margin: 1vw;
+				display: block;
+				font-family: 'Yanone Kaffeesatz', sans-serif;
+			}
+			h1{
+				font-size: 2em;
+			}
+			.tekst-deo p{
+				margin: 1vw;
+				padding-right: 1.2em;
+				display: block;
+			}
+			.slika-deo i{
+				display: block;
+				margin: auto;
+			}
+			.o-nama{
+				display: block;
+				width: 100%;
+				margin: auto;
+				padding: 1em;
+			}
+			.o-nama img{
+				width: inherit;
+				
+			}
+			.o-nama h1{
+				margin: 1em;
+				font-family: 'Yanone Kaffeesatz', sans-serif;
+			}
+			.o-nama p{
+				display: block;
+				margin: 1em;
+			}
+			.onama-pozad{
+				background-image: url("grocery-1232944.jpg");
+				background-attachment: fixed;
+				background-size: contain;
+			}
+			.onama-banner{
+				display: block;
+				width: 100%;
+				height: 30em;
+				background-image: url("../../../pozarevac/Delatnosti/maloprodaja-i-veleprodaja/TR pahuljica/galerijaa/nav-logo.png");
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: center;
+				opacity: 0.15;
+				position: absolute;
+				
+			}
+				.footer-kontakt{
+				display: block;
+				width: 100%;
+				height: 20em;
+				padding: 1em;
+				margin: auto;
+				text-align: center;
+			}
+			.footer-kontakt p{
+				color: #fff;
+				font-size: 0.7em;
+				
+			}
+			.kontakt-title{
+				color: #868e96;
+				font-size: 2em;
+				
+			}
+			.footer-link{
+				display: block;
+				width: 100%;
+				height: 20em;
+				margin: auto;
+				text-align: center;
+			}
+			.footer-link p{
+				display: block;
+				color: #fff;
+				
+			}
+			.footer-link a{
+				display: block;
+				color: #fff;
+				
+			}
+			.link-title{
+				color: #868e96;
+				font-size: 2em;
+				
+			}
+			.footer-filijale{
+				width: 50%;
+				display: flex;
+				flex-wrap: wrap;
+				
+			}
+			.petrovac, .pozarevac, .gradiste, .kucevo {
+				width: 50%;
+				
+			}
+			.petrovac, .pozarevac, .gradiste, .kucevo p{
+				color: #fff;
+				
+			}
+			.title-fil{
+				color: #868e96;
+				margin-bottom: 0.3em;
+			}
+			.footer-content{
+				margin: auto;
+				display: block;
+				flex-wrap: wrap;
+				width: 100%;
+			}
+		}
+		
+		@media (min-width: 768px){
+			.banner{
+				width: 100%;
+			}		
+			
+			.banner img{
+				display: block;
+				background: black;
+				margin: auto;
+			}
+			.banner p{
+		background:black ;
+		color: white;
+		font-size: 12vh;
+		text-align: center;
+		margin: auto;
+		font-family: 'Bebas Neue', cursive;
+	}
+	.main-deo-prelaz{
+		width: 100%;
+		display: block;
+		margin: auto;
+		font-size: 8vh;
+		text-align: center;
+		font-weight: 700;
+		background-image: url("../../../pozarevac/Delatnosti/maloprodaja-i-veleprodaja/TR pahuljica/bright-1851267.jpg");
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		
+	}
+	
+	.main-deo-prelaz p{
+		margin: auto;
+		color: rgba(208,227,2,1.00);
+		padding-bottom: 5vh;
+		display: block;
+		text-align: center;
+		    text-shadow:
+    -0.5px -0.5px 0 #4f4f4f,
+    0.5px -0.5px 0 #4f4f4f,
+    -0.5px 0.5px 0 #4f4f4f,
+    0.5px 0.5px 0 #4f4f4f;
+	}
+	
+	.main-deo-prelaz h5{
+		margin: auto;
+		color: rgba(208,227,2,1.00);
+		padding-bottom: 5vh;
+		display: block;
+		text-align: center;
+	}
+	.main-deo-prelaz div{
+		display:block;
+		width: 25%;
+		margin: auto;
+		padding: 1em;
+		color: aliceblue;
+		background: rgba(0,0,0,0.35)
+	}
+			.main-deo-div{
+				display: block;
+				text-align: center;
+			}
+			.main-deo-div i{
+				display: block;
+				margin: 0.5em;
+			}		
+			.navbar{
+				background: #4f4f4f;
+				
+			}
+			.navbar-nav{
+				margin: auto;
+			}
+			.navbar-nav li{
+				padding-left: 1em;
+				padding-right: 1em;
+				font-size: 1.1em;
+				margin: auto;
+			}
+			.banner-divider img{
+				display: block;
+				margin: auto;
+				margin-top: 5em;
+			}
+			
+			.main-deo{
+				display: flex;
+				flex-wrap: wrap;
+				width: 100%;
+				padding-top: 7vh;
+				background-image: url("../../../pozarevac/Delatnosti/maloprodaja-i-veleprodaja/TR pahuljica/textile-1866908.jpg");
+				background-position: center;
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-attachment: fixed;	
+			}
+			.deo{	
+				display: flex;
+				flex-wrap: wrap;
+				margin: 1em;
+				border-radius: 10px;
+				width: 32%;
+				height: 42vh;
+				margin: auto;
+				margin-bottom: 5vw;
+				
+			}
+			.deo p{
+				margin: auto;
+				display: block;
+				font-size: 2vh;
+				padding-top: 2em;
+			}
+			.d-mreze{
+				width: 7em;
+				display: flex;
+				margin: auto;
+			}
+			.d-mreze a{
+				margin: auto
+			}
+			.slika-deo{
+				display: block;
+				width: 15%;
+				margin: auto;
+				margin-left: 2em;
+				padding:1em;
+			}
+			.tekst-deo{
+				display: block;
+				width: 100%;
+				padding:1em;
+				text-align: center;
+				color: white;
+				border-radius: 10px;
+				background: rgba(0,0,0,0.68)
+			}
+			.tekst-deo h2{
+				display: block;
+				border-bottom: 1px solid white;
+				padding-bottom: 0.5em;
+			}
+			.tekst-deo p{
+				margin: 1vw;
+				display: block;
+				color: white;
+			}
+			.slika-deo img{
+				width: 12vw;
+				display: block;
+			}
+			.o-nama{
+				display: block;
+				width: 100%;
+				margin: auto;
+				padding: 2em;
+				background: rgba(0,0,0,0.29);
+			}
+			.o-nama img{
+				display: block;
+				margin: auto;
+				text-align: center;
+			}
+			.onama-pozad{
+				background-image: url("grocery-1232944.jpg");
+				background-attachment: fixed;
+				background-size: contain;
+			}
+			.footer-kontakt{
+				display: block;
+				width: 40%;
+				padding: 1em;
+				height: 25em;
+				margin: auto;
+				padding-right: 2em;
+			}
+			.footer-kontakt p{
+				color: #fff;
+				font-size: 1em;
+				
+			}
+			.kontakt-title{
+				color: #fff;
+				font-size: 2em;
+				
+			}
+			.footer-link{
+				display: block;
+				width: 40%;
+				height: 25em;
+				padding: 1em;
+				margin: auto;
+			}
+			.footer-link p{
+				color: #fff;
+				
+			}
+			.footer-link a{
+				display: block;
+				color: #fff;
+				margin-bottom: 0.5em;
+				
+			}
+			.link-title{
+				color: #fff;
+				font-size: 2em;
+				
+			}
+			.footer-filijale{
+				width: 50%;
+				display: flex;
+				flex-wrap: wrap;
+				
+			}
+			.petrovac, .pozarevac, .gradiste, .kucevo {
+				width: 50%;
+				
+			}
+			.petrovac, .pozarevac, .gradiste, .kucevo p{
+				color: #fff;
+				
+			}
+			.title-fil{
+				color: #868e96;
+				margin-bottom: 0.3em;
+			}
+			.footer-content{
+				margin: auto;
+				display: flex;
+				flex-wrap: wrap;
+				width: 100%;
+			}
+		}
+		
+.card__btn {
+  display: block;
+  width: 100%;
+	margin: auto;
+  padding: 1.5rem;
+  font-size: 1.2em;
+  text-align: center;
+  color: #3363ff;
+  background-color: #e6ecff;
+  border: none;
+  border-bottom-left-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.card__btn span {
+  margin-left: 1rem;
+  transition: 0.2s;
+}
+.card__btn:hover, .card__btn:active {
+  background-color: rgba(134,185,213,1.00);
+	color: white;
+}
+.card__btn:hover span, .card__btn:active span {
+  margin-left: 1.5rem;
+}

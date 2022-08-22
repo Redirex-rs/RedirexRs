@@ -1,0 +1,209 @@
+@media (max-width: 768px){
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+
+@font-face {
+    font-family: "Booter - Zero Zero";
+    src: url("../../../Fonts/Booter - Zero Zero.woff") format("woff"),
+url("../../../Fonts/Booter - Zero Zero.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.main-header {
+    background-color: rgba(0, 0, 0, .6);
+    background-image: url("../../../Images/Header Background.jpg");
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom: 30px;
+}
+
+.band-name {
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    font-family: "Booter - Zero Zero";
+    font-weight: normal;
+    color: white;
+}
+.container {
+	width: 100%;
+}
+.section-header {
+    font-family: "Metal Mania";
+    font-weight: normal;
+    color: white;
+	margin-bottom: 4vh;
+    text-align: center;
+    font-size: 8vw;
+	font-weight: bolder;
+	text-shadow: 
+    -1.2px -1.2px 0 black,
+    1.2px -1.2px 0 black,
+    -1.2px 1.2px 0 black,
+    1.2px 1.2px 0 black;
+}
+
+.tour-btn {
+    max-width: 19%;
+}
+
+.shop-item {
+    width: 45%;
+	height: 30vh;
+	background:white;
+	margin-bottom: 1vh;
+	border-bottom-left-radius:1vh ;
+	border-bottom-right-radius:1vh ;
+	border-top-left-radius:1vh ;
+	border-top-right-radius:1vh ;
+}
+
+.shop-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2vh;
+	margin-top: 5%;
+    color: #333;
+    margin-bottom: 15px;
+	height: 4vh;
+}
+
+.shop-item-image {
+	
+	display: block;
+    width: 25vw;
+	margin: auto;
+}
+
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.shop-item-price {
+	font-size: 2vh;
+	font-weight: bolder;
+	text-align: center;
+    color: #333;
+	margin: 0.3em;
+}
+
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}	
+	
+}
+
+
+@media (min-width: 768px){	
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+
+@font-face {
+    font-family: "Booter - Zero Zero";
+    src: url("../../../Fonts/Booter - Zero Zero.woff") format("woff"),
+url("../../../Fonts/Booter - Zero Zero.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.main-header {
+    background-color: rgba(0, 0, 0, .6);
+    background-image: url("../../../Images/Header Background.jpg");
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom: 30px;
+}
+
+.band-name {
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    font-family: "Booter - Zero Zero";
+    font-weight: normal;
+    color: white;
+}
+
+.band-name-large {
+    font-size: 8em;
+}
+
+.content-section {
+}
+
+.container {
+	width: 100%;
+}
+.section-header {
+    font-family: "Metal Mania";
+    font-weight: normal;
+    color: white;
+	margin-bottom: 4vh;
+    text-align: center;
+    font-size: 8vw;
+	font-weight: bolder;
+	text-shadow: 
+    -1.2px -1.2px 0 black,
+    1.2px -1.2px 0 black,
+    -1.2px 1.2px 0 black,
+    1.2px 1.2px 0 black;
+}
+
+.tour-btn {
+    max-width: 19%;
+}
+
+.shop-item {
+    width: 18%;
+	height: 44vh;
+	background:white;
+	margin-bottom: 1vh;
+	border-bottom-left-radius:1vh ;
+	border-bottom-right-radius:1vh ;
+	border-top-left-radius:1vh ;
+	border-top-right-radius:1vh ;
+}
+
+.shop-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2vh;
+	margin-top: 5%;
+    color: #333;
+    margin-bottom: 15px;
+	height: 4vh;
+}
+
+.shop-item-image {
+	
+	display: block;
+    width: 15vw;
+	margin: auto;
+}
+
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.shop-item-price {
+	font-size: 2vh;
+	font-weight: bolder;
+	text-align: center;
+    color: #333;
+	margin: 0.3em;
+}
+
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+}
