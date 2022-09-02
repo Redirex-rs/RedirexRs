@@ -743,6 +743,18 @@ Banner Style
 --------------------------------------------- 
 */
 
+@media(max-width: 768px){
+	.main-banner {
+  background-image: url("../mobile-banner1.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding-top: 290px;
+  padding-bottom: 240px;
+  background-color: #2a2a2a;
+}
+}
+@media(min-width: 768px){
 .main-banner {
   background-image: url("../mural-2769466.jpg");
   background-repeat: no-repeat;
@@ -752,7 +764,7 @@ Banner Style
   padding-bottom: 240px;
   background-color: #2a2a2a;
 }
-
+}
 .main-banner h6 {
   font-size: 20px;
   margin-bottom: 15px;
