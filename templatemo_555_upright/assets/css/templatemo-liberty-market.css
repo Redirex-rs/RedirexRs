@@ -385,6 +385,7 @@ Header Style
   display: flex;
   background-color: #fff;
   padding: 15px 30px;
+  margin: auto;
   border-radius: 50px;
 }
 
@@ -403,6 +404,7 @@ html {
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  margin: auto;
 }
 
 .header-area .main-nav .logo img {
@@ -431,6 +433,7 @@ html {
   transition: all 0.3s ease 0s;
   position: relative;
   z-index: 999;
+  margin: auto;
 }
 
 .header-area .main-nav .nav li {
