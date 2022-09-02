@@ -745,7 +745,7 @@ Banner Style
 
 @media(max-width: 768px){
 	.main-banner {
-  background-image: url("../mobile-banner1.jpg");
+  background-image: url("../mobile-banner.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
