@@ -1,32 +1,35 @@
-<!DOCTYPE html>
 
-<html>
-<head>
-<meta charset="utf-8">
-<!--Import Google Icon Font-->
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+	  
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">	
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/173324f0ea.js" crossorigin="anonymous"></script>
 <!--Import materialize.css-->
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">	
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
-</style>	
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
-<script src="https://kit.fontawesome.com/3429f72bdb.js" crossorigin="anonymous"></script>
+</style>
+	 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
 <!--Let browser know website is optimized for mobile-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta https-equiv="X-UA-Compatible" content="IE=edge">
-<!------ Include the above in your HEAD tag ---------->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 
-<title>Redirex: Poslovni Katalog</title>
+<title>Redirex</title>
 	
 <meta name="Description" content="Poslovni katalog firmi i svih ostalih usluga na teritoriji Srbije. Struktura sajta je podeljena na okruge i opštine radi lakšeg pretraživanja i oglašavanja" >	
 <meta name="google-site-verification" content="googlea157b9b90b885cb9.html"> 
 <link rel="canonical" href="https://redirex.rs">	
-<link rel="shortcut icon" href="favicon.ico" >
-<script src="default-s	rc 'self' cdn.script.googleusercontent.com"></script>
+<link rel="shortcut icon" href="templatemo_564_plot_listing/favicon.ico" >
+<script src="templatemo_564_plot_listing/default-s	rc 'self' cdn.script.googleusercontent.com"></script>
 <meta https-equiv="Content-Security-Policy" 
         content="default-src 'self' data: gap: 'unsafe-eval' ws: ; 
         style-src 'self' 'unsafe-inline'; 
@@ -35,321 +38,960 @@
         font-src *;
         connect-src *;
         img-src 'self' data: content:;">
-	
-	
+    <link href="templatemo_564_plot_listing/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
-    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/specimen/Kumbh+Sans -->
-    <link rel="stylesheet" href="templatemo_555_upright/fontawesome/css/all.min.css">  <!-- https://fontawesome.com/-->  
-    <link rel="stylesheet" href="templatemo_555_upright/css/magnific-popup.css">       <!-- https://dimsemenov.com/plugins/magnific-popup/ -->
-    <link rel="stylesheet" href="templatemo_555_upright/css/bootstrap.min.css">        <!-- https://getbootstrap.com/ -->
-    <link rel="stylesheet" href="templatemo_555_upright/slick/slick.min.css">          <!-- https://kenwheeler.github.io/slick/ -->
-    <link rel="stylesheet" href="templatemo_555_upright/slick/slick-theme.css">
-    <link rel="stylesheet" href="templatemo_555_upright/css/templatemo-upright.css">
-	
-	<style>
-		.infog-img{
-			display: block;
-			width: 50%;
-		}
-	</style>
-	
-</head>
-<body title="welcome to Redirex">    
-    <div class="container-fluid">
-        <div class="row">
-            <!-- Leftside bar -->
-            <div id="tm-sidebar" class="tm-sidebar"> 
-                <nav class="tm-nav">
-                    <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
-                        <i class="fas fa-bars"></i>
-                    </button>
+    <!-- Additional CSS Files -->
+	  <script src="JSS/Filterovanje.js"></script>
+    <link rel="stylesheet" href="templatemo_564_plot_listing/assets/css/fontawesome.css">
+    <link rel="stylesheet" href="templatemo_564_plot_listing/assets/css/templatemo-plot-listing.css">
+    <link rel="stylesheet" href="templatemo_564_plot_listing/assets/css/animated.css">
+    <link rel="stylesheet" href="templatemo_564_plot_listing/assets/css/owl.css">
+<!--
+
+TemplateMo 564 Plot Listing
+
+https://templatemo.com/tm-564-plot-listing
+
+-->
+	  
+	  <style> .logo1 > p{
+		  width: 166px;
+		  height: 58px;
+		  font-size: 2.2em;
+		  display: inline-block;
+          margin-top: 20px;
+		  padding-top: 10px;
+		  color: white
+		  }
+		  .wj-dropdown {
+  margin-bottom: 18px;
+}
+
+body {
+  margin-bottom: 24px;
+}
+		  .home-pretraga{
+  flex-direction: column;
+  flex-wrap: wrap;
+  display: flex;
+			  height: 10em;
+			  overflow: hidden;
+			  margin-top: 1em;
+		  }
+		  .home-pretraga li{
+			  width: 33%;
+		  }
+		  .home-pretraga li a{
+			   font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+			  color: #343a40;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+		  }
+		  .categories li {
+			  width: 3em;
+			  height: 7em;
+			  margin: 1px;
+		  }
+		  .popular-categories .naccs .menu div{
+			  font-size: 0.9em;
+		  }
+		  .popular-categories .naccs .menu .manje-slovo{
+			  font-size: 0.85em
+		  }
+		  .drustvene-mreze i{
+			  color: #8d99af
+		  }
+		  .info i{
+			  color: #8d99af
+		  }
+		  
+		 .icon>i{
+			  margin: auto;
+		  }
+</style> 
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="templatemo_564_plot_listing/index.html" class="logo1">
+				<p><b>REDIREX</b></p>
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li><a href="templatemo_564_plot_listing/index.html" class="active">Home</a></li>
+              <li><a href="#">Kategorije</a></li>
+              <li><a href="#">O nama</a></li>
+              <li><a href="#">Kontakt</a></li> 
+              <li><div class="main-white-button"><a href="#"><i class="fa fa-plus"></i> Istaknite vaše usluge</a></div></li> 
+            </ul>        
+            <a class="menu-trigger">
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="main-banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="top-text header-text">
+            <h6>Preduzetnici grada Požarevca</h6>
+            <h2>Pronađite sve preduezetnike i Usluge</h2>
+          </div>
+        </div>
+        <div style="height: 10em;" class="col-lg-12">
+          <form id="search-form" name="gs" method="submit" role="search" action="#">
+            <div style="z-index: 1" class="row">
+              
+              <div style="margin: 1em; padding-right: 5em" class="col-lg-12">
+                  <fieldset>
+                      <input style="border: 2px solid gray" class="form-control" id="myInput1" type="text" placeholder="Pretraga">
+                  </fieldset>
+ 		<ul id="myList" class="home-pretraga">
+			<li>&nbsp; </li>
+			<li>&nbsp; </li>
+			<li>&nbsp; </li>
+			<li>&nbsp; </li>
+			<li>&nbsp; </li>
+			<li>&nbsp; </li>
+			<li>&nbsp; </li>
+			<li>&nbsp; </li>
+			<li>&nbsp; </li>
+			<li>&nbsp; </li>
+			<li>&nbsp; </li>
+			<li>&nbsp; </li>
+			<li>&nbsp; </li>
+			<li>&nbsp; </li>
+			<li>&nbsp; </li>
+			<li>&nbsp; </li>
+			<li>&nbsp; </li>
+			<li>&nbsp; </li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Automobilizam.html#001">SM SPORT</a></li>		
+<li><a href="templatemo_564_plot_listing/Delatnosti/Maloprodaja-i-veleprodaja.html#002">MMN Kolačić Doo</a></li>		
+<li><a href="templatemo_564_plot_listing/Delatnosti/Maloprodaja-i-veleprodaja.html#003">SZR STAKLOFORM SALAKOVAC</a></li>		
+<li><a href="templatemo_564_plot_listing/Delatnosti/Maloprodaja-i-veleprodaja.html#004">LAKI-PROMET</a></li>		
+<li><a href="templatemo_564_plot_listing/Delatnosti/Maloprodaja-i-veleprodaja.html#005">TR Pahuljica KN</a></li>		
+<li><a href="templatemo_564_plot_listing/Delatnosti/Maloprodaja-i-veleprodaja.html#006">TOTAL PROFIL</a></li>		
+<li><a href="templatemo_564_plot_listing/Delatnosti/Maloprodaja-i-veleprodaja.html#007">BRILIANTTEX PLUS</a></li>		
+<li><a href="templatemo_564_plot_listing/Delatnosti/Maloprodaja-i-veleprodaja.html#008">TV SERVIS TESLA-G</a></li>		
+<li><a href="templatemo_564_plot_listing/Delatnosti/Maloprodaja-i-veleprodaja.html#009">ALU PVC OSTOJIĆ DOO</a></li>		
+<li><a href="templatemo_564_plot_listing/Delatnosti/Maloprodaja-i-veleprodaja.html#010">AMBELOS D.O.O.</a></li>		
+<li><a href="templatemo_564_plot_listing/Delatnosti/Maloprodaja-i-veleprodaja.html#011">ALUMORAVAC</a></li>		
+<li><a href="templatemo_564_plot_listing/Delatnosti/Maloprodaja-i-veleprodaja.html#012">Apoteka Flos Živković Verica</a></li>		
+<li><a href="templatemo_564_plot_listing/Delatnosti/Maloprodaja-i-veleprodaja.html#013">KRAJINA DRVO DOO</a></li>		
+<li><a href="templatemo_564_plot_listing/Delatnosti/Maloprodaja-i-veleprodaja.html#014">STR MAJA</a></li>		
+<li><a href="templatemo_564_plot_listing/Delatnosti/Maloprodaja-i-veleprodaja.html#015">Sigma tm d.o.o.</a></li>		
+<li><a href="templatemo_564_plot_listing/Delatnosti/Maloprodaja-i-veleprodaja.html#016">OPTIKA LUX-PO</a></li>		
+<li><a href="templatemo_564_plot_listing/Delatnosti/Gradjevina-arhitektura-i-geo-radovi.html#017">GEODETSKA RADNJA ZENIT</a></li>		
+<li><a href="templatemo_564_plot_listing/Delatnosti/Medicina-i-zdravlje.html#018">Ordinacija Žigić</a></li>		
+<li><a href="templatemo_564_plot_listing/Delatnosti/Medicina-i-zdravlje.html#019">Ordinacija Dr Marina</a></li>		
+<li><a href="templatemo_564_plot_listing/Delatnosti/Medicina-i-zdravlje.html#020">Apoteka Flos</a></li>		
+<li><a href="templatemo_564_plot_listing/Delatnosti/Medicina-i-zdravlje.html#021">LABORATORIJA "FARMAKON BHL"</a></li>		
+<li><a href="templatemo_564_plot_listing/Delatnosti/Medicina-i-zdravlje.html#022">PASTER LAB - TEAM LABORATORIJA</a></li>		
+<li><a href="templatemo_564_plot_listing/Delatnosti/Medicina-i-zdravlje.html#023">OPTIKA LUX-PO</a></li>		
+<li><a href="templatemo_564_plot_listing/Delatnosti/Postavljanje-elektricnih-instalacija.html#024">Elektromontaža Filipović</a></li>		
+<li><a href="templatemo_564_plot_listing/Delatnosti/Računarstvo-i-programiranje.html#025">PLC SOFT</a></li>		
+<li><a href="templatemo_564_plot_listing/Delatnosti/Servis-bele-tehnike.html#026">Servis bele tehnike "SERVIS PLUS"</a></li>		
+<li><a href="templatemo_564_plot_listing/Delatnosti/Turističke-agencije.html#027">AGENCIJA USPEH</a></li>		
+<li><a href="templatemo_564_plot_listing/Delatnosti/Uslužne-delatnosti.html#028">"Moj Merak" Kafana</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Uslužne-delatnosti.html#029">Stari Mlin - Grk</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Uslužne-delatnosti.html#030">ORIJENT EXPRESS GIROS I POMFRITARA</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Uslužne-delatnosti.html#031">AMBELOS D.O.O.</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Ostalo.html#032">Jocić Grejanje : Majstor Jocić Dejan-Jole</a></li>	
+<li><a href="templatemo_564_plot_listing/Delatnosti/Ostalo.html#033">Dubinsko Pranje Nameštaja</a></li>	
+<li><a href="templatemo_564_plot_listing/Delatnosti/Ostalo.html#034">SECURITY HOME DOO</a></li>	
+<li><a href="templatemo_564_plot_listing/Delatnosti/Škole-i-usavršavanja.html#035">Škola Stranih Jezika San Sebastian</a></li>	
+<li><a href="templatemo_564_plot_listing/Delatnosti/Medicina-i-zdravlje.html#036">FITNES CENTAR 24</a></li>	
+<li><a href="templatemo_564_plot_listing/Delatnosti/Zanatsko-uslužne.html#037">Venetian Fashion</a></li>	
+<li><a href="templatemo_564_plot_listing/Delatnosti/Ostalo.html#038">VIN.Co.O.D.</a></li>	
+<li><a href="templatemo_564_plot_listing/Delatnosti/Maloprodaja-i-veleprodaja.html#039">Slatki Bonbon</a></li>	
+<li><a href="templatemo_564_plot_listing/Delatnosti/Automobilizam.html#040">Auto Start</a></li>	
+<li><a href="templatemo_564_plot_listing/Delatnosti/Maloprodaja-i-veleprodaja.html#041">Str Bebino</a></li>	
+<li><a href="templatemo_564_plot_listing/Delatnosti/Maloprodaja-i-veleprodaja.html#042">Slavuj Građa-Pelet</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Izrada-i-prodaja-namestaja.html#043">STEFISTIL doo</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Turističke-agencije.html#044">AGENCY M TURIST TRAVEL</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Uslužne-delatnosti.html#045">Picerija Teos</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Turističke-agencije.html#046">Agencija Za Turističke Usluge Uspeh</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Servis-bele-tehnike.html#047">PROFI Servis 012</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Uslužne-delatnosti.html#048">RIBLJI RESTORAN ALASKE ZORE</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Automobilizam.html#049">MINI SERVIS DEJAN ČAKARA</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Maloprodaja-i-veleprodaja.html#050">ADRIA KOMERC</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Postavljanje-elektricnih-instalacija.html#051">PD Elmont Gradnja</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Maloprodaja-i-veleprodaja.html#052">doo Svilen Konac</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Ostalo.html#053">doo Svilen Konac</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Maloprodaja-i-veleprodaja.html#054">Farbara LG</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Uslužne-delatnosti.html#055">Kafana Miris Dunja</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Medicina-i-zdravlje.html#056">Dr Andrun</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Gradjevina-arhitektura-i-geo-radovi.html#057">Strugar.cop Lučica</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Gradjevina-arhitektura-i-geo-radovi.html#058">LA - Požarevac</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Zanatsko-uslužne.html#059">Dizel Servis Arandjelovic</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Uslužne-delatnosti.html#060">Pekara Duda</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Ostalo.html#61">Foto Boban Plus</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Uslužne-delatnosti.html#062">Barfly PUB</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Uslužne-delatnosti.html#063">VENECIJA DVA DOO</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Ostalo.html#064">Dubinsko pranje i sušenje tepiha-Azuro</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Uslužne-delatnosti.html#065">Restoran Dobro Jutro</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Ostalo.html#066">Foto-Gile</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Maloprodaja-i-veleprodaja.html#067">Cvecara Dekoracije Proslava Exclusive</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Automobilizam.html#068">Auto Servis DAJA</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Maloprodaja-i-veleprodaja.html#069">Pile i Papaja</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Maloprodaja-i-veleprodaja.html#070">Party service Pedjolino</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Uslužne-delatnosti.html#071">Kafana Poslednji Groš</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Maloprodaja-i-veleprodaja.html#072">Lesko DOO</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Uslužne-delatnosti.html#073">Boho Grill</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Ostalo.html#074">Via Verde</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Ostalo.html#075">Knjigovodstvene usluge Bilans MG</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Medicina-i-zdravlje.html#076">Vet Ambulanta i Pet Šop "Dr Mišić"</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Ostalo.html#077">"SPEDEKS" d.o.o.</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Medicina-i-zdravlje.html#078">Dr Marko – Pet House</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Gradjevina-arhitektura-i-geo-radovi.html#079">AluPo Jankovic</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Gradjevina-arhitektura-i-geo-radovi.html#080">EVROTRGOVINA Sapine</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Maloprodaja-i-veleprodaja.html#081">VIGOR</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Medicina-i-zdravlje.html#082">TECTUM MED LABOR</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Ostalo.html#083">ANEX PLUS DOO</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Maloprodaja-i-veleprodaja.html#084">T.R. Sarenica</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Maloprodaja-i-veleprodaja.html#085">LAZZARO</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Uslužne-delatnosti.html#086">Restoran Vila Jelena 012</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Uslužne-delatnosti.html#087">Salaš "Dorat"</a></li>				
+<li><a href="templatemo_564_plot_listing/Delatnosti/Ostalo.html#088">SZR Komi Tabanovac</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Ostalo.html#089">Red Dragon Tattoo</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Automobilizam.html#090">Mercedes Servis Pozarevac</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Automobilizam.html#091">Poliranje Vozila Dubinsko Pranje Car Effect</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Uslužne-delatnosti.html#092">Pasta bar Padrini</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Škole-i-usavršavanja.html#093">Eduaktivni centar Parlare</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Medicina-i-zdravlje.html#094">PRIVATNA ZUBNA ORDINACIJA DR BOBAN PETROVIĆ</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Uslužne-delatnosti.html#095">Bilijar Klub Profesional</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Ostalo.html#096">TS Hemija</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Medicina-i-zdravlje.html#097">Stomatološka ordinacija Ranković</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Automobilizam.html#098">Auto Servis MISA</a></li><li><a href="templatemo_564_plot_listing/Delatnosti/Ostalo.html#099">Vodoprivreda Požarevac</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Gradjevina-arhitektura-i-geo-radovi.html#100">Poimex</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Maloprodaja-i-veleprodaja.html#101">Voćni Biseri Požarevac</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Ostalo.html#102">AGENCIJA ZA KNJIGOVODSTVENE USLUGE</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Medicina-i-zdravlje.html#103">Logopedska učionica "Prva reč"</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Maloprodaja-i-veleprodaja.html#104">Market parket</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Ostalo.html#105">BlackJack band Požarevac</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Maloprodaja-i-veleprodaja.html#106">Asortiman Požarevac</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Automobilizam.html#107">Stojanov-T</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Ostalo.html#108">AGENCIJA EXCELLENT</a></li>
+				
+<li><a href="templatemo_564_plot_listing/Delatnosti/Maloprodaja-i-veleprodaja.html#109">Polj. gazdinstvo Budić Nikola Ćirikovac,Požarevac</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Ostalo.html#110">House of beauty</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Ostalo.html#111">Kozmeticki salon Beauty and Life</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Maloprodaja-i-veleprodaja.html#112">tri_oks</a></li>
+<li><a href="templatemo_564_plot_listing/Delatnosti/Automobilizam.html#113">Cardetailing012</a></li>
+				
+<li><a href="templatemo_564_plot_listing/Delatnosti/Gradjevina-arhitektura-i-geo-radovi.html#114">Aluminijumska i PVC stolarija Djordjevic</a></li>				
+<li><a href="templatemo_564_plot_listing/Delatnosti/Uslužne-delatnosti.html#115">Poslastičarnica "Slatki trg"</a></li>				
+<li><a href="templatemo_564_plot_listing/Delatnosti/Gradjevina-arhitektura-i-geo-radovi.html#116">REAKTOR Pozarevac</a></li>				
+<li><a href="templatemo_564_plot_listing/Delatnosti/Izrada-i-prodaja-namestaja.html#117">Namestaj Stevic</a></li>				
+<li><a href="templatemo_564_plot_listing/Delatnosti/Izrada-i-prodaja-namestaja.html#118">Stevic MG</a></li>				
+<li><a href="templatemo_564_plot_listing/Delatnosti/Uslužne-delatnosti.html#119">Caffe Black Bar</a></li>				
+<li><a href="templatemo_564_plot_listing/Delatnosti/Uslužne-delatnosti.html#120">Underground Pub Požarevac</a></li>				
+<li><a href="templatemo_564_plot_listing/Delatnosti/Ostalo.html#121">Milan Vićić: Književni Prevodilac za Ruski i Engleski Jezik</a></li>
+				  </ul>	
+
+              </div>
+             
+              
+            </div>
+          </form>
+        </div>
+        <div style="margin-top: 3em" class="col-lg-10 offset-lg-1">
+          <ul class="categories">
+            <li><a href="#"><span class="icon"><i class="fa-solid fa-shop fa-xl"></i></span> Prodaja &amp; Trgovina</a></li>
+            <li><a href="#"><span class="icon"><i class="fa-solid fa-plane-departure fa-xl"></i></span> Turizam &amp; Ugostiteljstvo</a></li>
+            <li><a href="#"><span class="icon"><i class="fa-solid fa-screwdriver-wrench fa-xl"></i></span> Tehničke Usluge</a></li>
+            <li><a href="#"><span class="icon"><i class="fa-solid fa-truck fa-xl"></i></span> Transport</a></li>
+            <li><a href="#"><span class="icon"><i class="fa-solid fa-piggy-bank fa-xl"></i></span> Računovodstvo</a></li>
+            <li><a href="#"><span class="icon"><i class="fa-solid fa-laptop-code fa-xl"></i></span> IT</a></li>
+            <li><a href="#"><span class="icon"><i class="fa-solid fa-house-medical fa-xl"></i></span> Medicina i Zdravlje</a></li>
+            <li><a href="#"><span class="icon"><i class="fa-solid fa-shirt fa-xl"></i></span> Tekstilna Industrija</a></li>
+            <li><a href="#"><span class="icon"><i class="fa-solid fa-shield-dog fa-xl"></i></span> Veterina</a></li>
+            <li><a href="#"><span class="icon"><i class="fa-solid fa-globe fa-xl"></i></span> Ostalo</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="popular-categories">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12">
+          <div class="section-heading">
+            <h2>Kategorije</h2>
+            <h6>Kratak opis kategorija</h6>
+          </div>
+        </div>
+          <div class="naccs">
+            <div class="grid">
+              <div class="row">
+              <div class="col-md-3">
+                  <div class="menu">
+					  
+                    <div class="first-thumb active">
+                      <div class="thumb">
+                        <span class="icon"><i class="fa-solid fa-shop fa-2xl"></i></span>
+                        Prodaja &amp; Trgovina
+                      </div>
+                    </div>
                     <div>
-                        <div title="Redirex Glavna Strana" class="tm-brand-box">
-                            <h1 class="tm-brand"><a href="index.html">Redirex</a></h1>
-                        </div>                
-                        <ul id="tm-main-nav">
-                            <li title="Početna Stranica" class="nav-item">                                
-                                <a href="#home" class="nav-link active">
-                                    <div class="triangle-right"></div>
-                                    <i class="fas fa-home nav-icon"></i>
-                                    Početna stranica
-                                </a>
-                            </li>
-                            <li title="Najnoviji Preduzetnici" class="nav-item">
-                                <a href="#gallery" class="nav-link">
-                                    <div class="triangle-right"></div>
-                                    <i class="fas fa-images nav-icon"></i>
-                                    Najnoviji istaknuti oglasi
-                                </a>
-                            </li>
- <li title="Stranica Pretrage Preduzetnika" onclick="location.href='stranica-pretrage.html';" class="nav-item">
-                                <a href="#" class="nav-link">
-                                    <div class="triangle-right"></div>
-                                    <i class="fas fa-user-friends nav-icon"></i>
-                                    Pretraga preduzetnika
-                                </a>
-                            </li>
-                            <li title="Kontakt Formular" class="nav-item">
-                                <a href="#contact" class="nav-link">
-                                    <div class="triangle-right"></div>
-                                    <i class="fas fa-envelope nav-icon"></i>
-                                    Kontakt
-                                </a>
-                            </li>
-							
-                      <!--      <li aria-label="formular1" title="Formular za oglašavanje" class="nav-item">
-								
-								<p id="formular" hidden>Formular za oglašavanje </p>
-                                <a href="#formular" class="nav-link">
-                                    <div class="triangle-right"></div>
-                                    <i class="fas fa-address-card nav-icon"></i>
-                                    Formular za oglašavanje
-                                </a>
-                            </li> -->
-                        </ul>
+                      <div class="thumb manje-slovo">                 
+                        <span class="icon"><i class="fa-solid fa-plane-departure fa-2xl"></i></span>
+                        Turizam i Ugostiteljstvo
+                      </div>
                     </div>
-                    <footer class="mb-3 tm-mt-100">
-                        Redirex Rs
-                    </footer>
-                </nav>
-            </div>      
-				
-            <div class="tm-main">
-                <!-- Home section -->
-                <div class="tm-section-wrap">
-                    <div class="tm-parallax" data-parallax="scroll" name="paralax divider image" data-image-src="templatemo_555_upright/img/img-01.jpg" alt="paralax divider image"></div>                   
-                    <section id="home" class="tm-section">
-                        <header title="Dobrodošli na Redirex" class="tm-text-primary title-header"><h1>Dobrodošli na Redirex</h1></header> <p style="text-align: center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus repellendus minima, accusantium laudantium consequuntur quas dolores laboriosam quaerat praesentium minus nobis numquam ad. In eligendi assumenda tempora, natus accusamus, non. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus repellendus minima, accusantium laudantium consequuntur quas dolores laboriosam quaerat praesentium minus nobis numquam ad. In eligendi assumenda tempora, natus accusamus, non. </p>
-                    </section>
-                </div>
-				
-                <!-- Gallery section -->
-                <div class="tm-section-wrap">
-                    <div class="tm-parallax" data-parallax="scroll" data-image-src="templatemo_555_upright/img/img-02.jpg"></div>                   
-                    <section id="gallery" class="tm-section">
-                        <h2 title="Sekcija Najnovijih Oglasa" class="tm-text-primary">Najnovije</h2>
-                        <hr class="mb-5">
-                        
-                        <div class="tm-gallery">
-							
-                <figure id="dobrojutro" title="Kafana Dobro Jutro." class="effect-honey tm-gallery-item portrait">
-                    <img src="pozarevac/dobro jutro/43105914_333686390526895_7361775009942994944_n.jpg" alt="Image">
-                    <figcaption>
-                       
-                           <h2><i>Restoran Dobro Jutro</i></h2>
-                        
-                        <a href="Delatnosti/Uslužne-delatnosti.html">Click here for more information </a>
-                    </figcaption>
-                </figure>
-							
-                <figure class="effect-honey tm-gallery-item portrait">
-                    <img src="pozarevac/pranje tepiha azuro/38614702_1792206180893515_4222202668740771840_n.png" alt="Image">
-                    <figcaption>
-                       
-                           <h2><i>Dubinsko pranje i sušenje tepiha-Azuro</i></h2>
-                        
-                        <a href="Delatnosti/Ostalo.html">Deep cleaning of carpets Azuro. Click here for more information </a>
-                    </figcaption>
-                </figure>
-                       
-                <figure title="Foto Boban." class="effect-honey tm-gallery-item portrait">
-                    <img src="pozarevac/foto boban/131902027_1308984432813581_4876128968389041502_n.png" alt="Image">
-                    <figcaption>
-                       
-                           <h2><i>Foto Boban Plus</i></h2>
-                        
-                        <a href="Delatnosti/Ostalo.html">Click here for more information </a>
-                    </figcaption>
-                </figure>
-                       
-                <figure title="Pekara Duda." class="effect-honey tm-gallery-item portrait">
-                    <img src="pozarevac/pekara duda/10863911_1606265629603566_1249314620467808692_o.jpg" alt="Image">
-                    <figcaption>
-                       
-                           <h2><i>Pekara Duda</i></h2>
-                        
-                        <a href="Delatnosti/Uslužne-delatnosti.html">Click here for more information </a>
-                    </figcaption>
-                </figure>
-                       
-                <figure title="Kafana Miris Dunja." class="effect-honey tm-gallery-item portrait">
-                    <img src="pozarevac/kafana miris dunja/12265549_608336592642102_3917040744105037679_o.jpg" alt="Image">
-                    <figcaption>
-                       
-                           <h2><i>Kafana Miris Dunja</i></h2>
-                        
-                        <a href="Delatnosti/Uslužne-delatnosti.html">Click here for more information </a>
-                    </figcaption>
-                </figure>
-                       
-                <figure title="Farbara LG" class="effect-honey tm-gallery-item portrait">
-                    <img src="pozarevac/farbara LG/unnamed.jpg" alt="Image">
-                    <figcaption>
-                       
-                           <h2><i>Farbara LG</i></h2>
-                        
-                        <a href="Delatnosti/Maloprodaja-i-veleprodaja.html">Click here for more information </a>
-                    </figcaption>
-                </figure>
-                       
-                <figure title="PD Elmont Gradnja" class="effect-honey tm-gallery-item portrait">
-                    <img src="pozarevac/elmont/25311095_312081735975754_1020849204915012973_o.jpg" alt="Image">
-                    <figcaption>
-                       
-                           <h2><i>PD Elmont Gradnja</i></h2>
-                        
-                        <a href="Delatnosti/Postavljanje-elektricnih-instalacija.html">Click here for more information </a>
-                    </figcaption>
-                </figure>
-                       
-                <figure title="RIBLJI RESTORAN ALASKE ZORE" class="effect-honey tm-gallery-item portrait">
-                    <img src="pozarevac/alaske-zore/fish-2230852_1920.jpg" alt="Image">
-                    <figcaption>
-                       
-                           <h2><i>RIBLJI RESTORAN ALASKE ZORE</i></h2>
-                        
-                        <a href="Delatnosti/Uslužne-delatnosti.html">Click here for more information </a>
-                    </figcaption>
-                </figure>
-                       
-                <figure title="PROFI Servis Bele Tehnike" class="effect-honey tm-gallery-item portrait">
-                    <img src="pozarevac/profi servis 012/158866103_236423578179148_6838709534486122586_n.jpg" alt="Image">
-                    <figcaption>
-                       
-                           <h2><i>PROFI Servis 012</i></h2>
-                        
-                        <a href="Delatnosti/Servis-bele-tehnike.html">Click for more information </a>
-                    </figcaption>
-                </figure>
-                       
-                        </div>
-                    </section>
-                </div>
-                <!-- Contact section -->
-                <div class="tm-section-wrap">
-                    <div class="tm-parallax" data-parallax="scroll" data-image-src="templatemo_555_upright/img/img-04.jpg"></div>
-                    <div id="contact" class="tm-section">
-                        <h2 class="tm-text-primary">Kontakt</h2>
-                        <hr class="mb-5">
-                        <div class="row">
-                            <div class="col-xl-6 tm-contact-col-l mb-4">
-                  <form id="contact-form" action="https://formspree.io/f/mayllayz" method="POST" target="_blank" class="tm-contact-form">
-                                    <div class="form-group">
-                                        <input type="text" name="name" class="form-control rounded-0" placeholder="Ime" required />
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="email" name="email" class="form-control rounded-0" placeholder="Email" required />
-                                    </div>
-                                    <div class="form-group">
-                                        <textarea rows="8" name="message" class="form-control rounded-0" placeholder="Tekst" required=></textarea>
-                                    </div>
-            
-                                    <div class="form-group tm-text-right">
-                                        <button type="submit" class="btn btn-primary">Send</button>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="col-xl-6 tm-contact-col-r">
-                                <!-- Map -->
-            
-                                <!-- Address -->
-                                <address class="mb-4">
-                                    Potrudićemo se da odgovorimo u najkračem mogućem roku. Takođe nas možete kontaktirati i preko naše <a href="https://www.facebook.com/redirexx" target="_blank"><u>Facebook stranice</u></a>
-                                </address>
-            
-                                <!-- Links -->
-                                <ul class="tm-contact-links mb-4">
-                                    <li class="mb-2">
-                                    </li>
-                                    <li>
-                                        <a href="mailto:info@company.com">
-                                            <i class="fas fa-at mr-2 tm-contact-link-icon"></i>
-                                            Email: redirexrs@gmail.com
-                                        </a>
-                                    </li>
-                                </ul>
-                                <ul class="tm-contact-social">
-                                </ul>
-                            </div>
-                        </div>
+                    <div>
+                      <div class="thumb">                 
+                        <span class="icon"><i class="fa-solid fa-screwdriver-wrench fa-2xl"></i></span>
+                        Tehničke Usluge
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">                 
+                        <span class="icon"><i class="fa-solid fa-truck fa-2xl"></i></span>
+                        Transport
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">                 
+                        <span class="icon"><i class="fa-solid fa-piggy-bank fa-2xl"></i></span>
+                        Računovodstvo
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">                 
+                        <span class="icon"><i class="fa-solid fa-laptop-code fa-2xl"></i></span>
+                        IT
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">                 
+                        <span class="icon"><i class="fa-solid fa-house-medical fa-2xl"></i></span>
+                        Medicina i Zdravlje
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">                 
+                        <span class="icon"><i class="fa-solid fa-shirt fa-2xl"></i></span>
+                        Tekstilna Industrija
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">                 
+                        <span class="icon"><i class="fa-solid fa-shield-dog fa-2xl"></i></span>
+                        Veterina
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">                 
+                        <span class="icon"><i class="fa-solid fa-globe fa-2xl"></i></span>
+                        Ostalo
+                      </div>
                     </div>
                 </div>
+				  </div>
+                <div class="col-lg-9 align-self-center">
+                  <ul class="nacc">
+                    <li class="active">
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-5 align-self-center">
+                              <div class="left-text">
+                                <h4>Prodaja i Trgovina</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quaerat sunt, iste a repellat aperiam, vitae temporibus iure numquam animi quod provident nulla magni tempora itaque eaque laborum hic porro!</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quaerat sunt, iste a repellat aperiam, vitae temporibus iure numquam animi quod provident nulla magni tempora itaque eaque laborum hic porro!</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quaerat sunt, iste a repellat aperiam, vitae temporibus iure numquam animi quod provident nulla magni tempora itaque eaque laborum hic porro!</p>
+                                <div class="main-white-button"><a href="#"><i class="fa fa-eye"></i> Pogledaj sve preduzetnike</a></div>
+                              </div>
+                            </div>
+                            <div class="col-lg-7 align-self-center">
+                              <div class="right-image">
+                                <img src="templatemo_564_plot_listing/assets/images/trgovina.jpg" alt="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-5 align-self-center">
+                              <div class="left-text">
+                                <h4>Turizam i ugostiteljstvo</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse et, possimus vero tempora itaque maxime perspiciatis, temporibus doloribus eum fuga facere culpa eos autem quas ea a maiores cum aperiam.</p>
+                                <div class="main-white-button"><a href="#"><i class="fa fa-eye"></i> Pogledaj sve preduzetnike</a></div>
+                              </div>
+                            </div>
+                            <div class="col-lg-7 align-self-center">
+                              <div class="right-image">
+                                <img src="templatemo_564_plot_listing/assets/images/plaza.jpg" alt="Foods on the table">
+                              </div>
+                              <div class="right-image">
+                                <img src="templatemo_564_plot_listing/assets/images/restoran.jpg" alt="Foods on the table">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-5 align-self-center">
+                              <div class="left-text">
+                                <h4>Tehničke usluge i Održavanje</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, sit consequatur! Nam ratione dolorum similique autem tenetur aliquam accusantium maxime labore quibusdam numquam soluta, eligendi aut, a veritatis alias debitis.</p>
+                                <div class="main-white-button"><a href="templatemo_564_plot_listing/listing.html"><i class="fa fa-eye"></i> Pogledaj sve preduzetnike</a></div>
+                              </div>
+                            </div>
+                            <div class="col-lg-7 align-self-center">
+                              <div class="right-image">
+                                <img src="templatemo_564_plot_listing/assets/images/mehanicar.jpg" alt="Foods on the table">
+                              </div>
+                              <div class="right-image">
+                                <img src="templatemo_564_plot_listing/assets/images/zanatlija.jpg" alt="Foods on the table">
+                              </div>
+                              <div class="right-image">
+                                <img src="templatemo_564_plot_listing/assets/images/teh1.jpg" alt="Foods on the table">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-5 align-self-center">
+                              <div class="left-text">
+                                <h4>Transport i Logistika</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum mollitia perferendis quisquam quo esse. Doloremque, totam magnam odio repellendus, vel modi reprehenderit quasi iste sequi. Eius nesciunt, earum suscipit labore!</p>
+                                <div class="main-white-button"><a href="#"><i class="fa fa-eye"></i> Pogledaj sve preduzetnike</a></div>
+                              </div>
+                            </div>
+                            <div class="col-lg-7 align-self-center">
+                              <div class="right-image">
+                                <img src="templatemo_564_plot_listing/assets/images/transport.jpg" alt="Shopping Girl">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-5 align-self-center">
+                              <div class="left-text">
+                                <h4>Računovodstvo i Revizija</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus tempore sit dicta iste ducimus, voluptatum, modi perspiciatis eos eveniet molestiae, dolorem deleniti assumenda recusandae odio? Exercitationem reprehenderit iusto, obcaecati!</p>
+                                <div class="main-white-button"><a rel="nofollow" href="https://templatemo.com/contact"><i class="fa fa-eye"></i> Pogledaj sve preduzetnike</a></div>
+                              </div>
+                            </div>
+                            <div class="col-lg-7 align-self-center">
+                              <div class="right-image">
+                                <img src="templatemo_564_plot_listing/assets/images/racun1.jpg" alt="Traveling Beach">
+                              </div>
+                              <div class="right-image">
+                                <img src="templatemo_564_plot_listing/assets/images/racun2.jpg" alt="Traveling Beach">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-5 align-self-center">
+                              <div class="left-text">
+                                <h4>IT</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae unde suscipit tenetur rem perferendis tempore, quasi, deserunt molestiae culpa cupiditate totam id repellat incidunt commodi cum fuga minima labore eveniet.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae unde suscipit tenetur rem perferendis tempore, quasi, deserunt molestiae culpa cupiditate totam id repellat incidunt commodi cum fuga minima labore eveniet.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae unde suscipit tenetur rem perferendis tempore, quasi, deserunt molestiae culpa cupiditate totam id repellat incidunt commodi cum fuga minima labore eveniet.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae unde suscipit tenetur rem perferendis tempore, quasi, deserunt molestiae culpa cupiditate totam id repellat incidunt commodi cum fuga minima labore eveniet.</p>
+                                <div class="main-white-button"><a rel="nofollow" href="https://templatemo.com/contact"><i class="fa fa-eye"></i> Pogledaj sve preduzetnike</a></div>
+                              </div>
+                            </div>
+                            <div class="col-lg-7 align-self-center">
+                              <div class="right-image">
+                                <img src="templatemo_564_plot_listing/assets/images/it1.jpg" alt="Traveling Beach">
+                              </div>
+                              <div class="right-image">
+                                <img src="templatemo_564_plot_listing/assets/images/it2.jpg" alt="Traveling Beach">
+                              </div>
+                              <div class="right-image">
+                                <img src="templatemo_564_plot_listing/assets/images/it3.jpg" alt="Traveling Beach">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-5 align-self-center">
+                              <div class="left-text">
+                                <h4>Medicina i Zdravlje</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat laudantium corporis, unde dolore ab, dignissimos eveniet, nihil sequi voluptatibus repudiandae autem. Voluptatem ipsa voluptate magnam distinctio atque facilis minus porro!</p>
+                                <div class="main-white-button"><a href="templatemo_564_plot_listing/listing.html"><i class="fa fa-eye"></i> Pogledaj sve preduzetnike</a></div>
+                              </div>
+                            </div>
+                            <div class="col-lg-7 align-self-center">
+                              <div class="right-image">
+                                <img src="templatemo_564_plot_listing/assets/images/med1.jpg" alt="cars in the city">
+                              </div>
+                              <div class="right-image">
+                                <img src="templatemo_564_plot_listing/assets/images/med2.jpg" alt="cars in the city">
+                              </div>
+                              <div class="right-image">
+                                <img src="templatemo_564_plot_listing/assets/images/med3.jpg" alt="cars in the city">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-5 align-self-center">
+                              <div class="left-text">
+                                <h4>Tekstilna Industrija</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quis nisi ipsum ad libero dolores aliquam, maiores, fuga est corporis illo dolorem, tempore, in autem quibusdam iusto maxime excepturi voluptate.</p>
+                                <div class="main-white-button"><a href="#"><i class="fa fa-eye"></i> Pogledaj sve preduzetnike</a></div>
+                              </div>
+                            </div>
+                            <div class="col-lg-7 align-self-center">
+                              <div class="right-image">
+                                <img src="templatemo_564_plot_listing/assets/images/tex1.jpg" alt="Shopping Girl">
+                              </div>
+                              <div class="right-image">
+                                <img src="templatemo_564_plot_listing/assets/images/tex2.jpg" alt="Shopping Girl">
+                              </div>
+                              <div class="right-image">
+                                <img src="templatemo_564_plot_listing/assets/images/tex3.jpg" alt="Shopping Girl">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-5 align-self-center">
+                              <div class="left-text">
+                                <h4>Veterina</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, eaque cumque, minima, pariatur porro molestiae non inventore temporibus nemo quisquam aperiam! Dolores aliquam soluta distinctio tempora, corrupti alias totam, neque.</p>
+                                <div class="main-white-button"><a rel="nofollow" href="https://templatemo.com/contact"><i class="fa fa-eye"></i> Pogledaj sve preduzetnike</a></div>
+                              </div>
+                            </div>
+                            <div class="col-lg-7 align-self-center">
+                              <div class="right-image">
+                                <img src="templatemo_564_plot_listing/assets/images/vet1.jpg" alt="Traveling Beach">
+                              </div>
+                              <div class="right-image">
+                                <img src="templatemo_564_plot_listing/assets/images/vet2.jpg" alt="Traveling Beach">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="thumb">
+                          <div class="row">
+                            <div class="col-lg-5 align-self-center">
+                              <div class="left-text">
+                                <h4>Ostalo</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi voluptates magnam, ullam vero corporis esse odit saepe temporibus perspiciatis commodi voluptatem culpa cupiditate molestias itaque, fuga officia eveniet harum, quas.</p>
+                                <div class="main-white-button"><a rel="nofollow" href="https://templatemo.com/contact"><i class="fa fa-eye"></i> Pogledaj sve preduzetnike</a></div>
+                              </div>
+                            </div>
+                            <div class="col-lg-7 align-self-center">
+                              <div class="right-image">
+                                <img src="templatemo_564_plot_listing/assets/images/work1.jpg" alt="Traveling Beach">
+                              </div>
+                              <div class="right-image">
+                                <img src="templatemo_564_plot_listing/assets/images/work2.jpg" alt="Traveling Beach">
+                              </div>
+                              <div class="right-image">
+                                <img src="templatemo_564_plot_listing/assets/images/work3.jpg" alt="Traveling Beach">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>          
+              </div>
+            </div>
+          </div>
+        
+      </div>
+    </div>
+  </div>
 
-                <!-- Contact section -->
-                <div class="tm-section-wrap">
-                    <div class="tm-parallax" data-parallax="scroll" data-image-src="banneri/typewriter-210640_1920.jpg"></div>
-                    <div id="formular" class="tm-section">
-                        <h2 class="tm-text-primary">Formular</h2>
-                        <hr class="mb-5">
-						
-			<p>Primere stranica možete videti <a href="emailhtml.html" class=""><u>Ovde</u></a>.</p>			
-						
-                        <div class="tm-contact-formular">
-                            <div class="col-xl-12 tm-contact-col-l mb-4" >
-                  <form id="contact-for" action="https://formspree.io/f/mayllayz" method="POST" target="_blank" class="tm-contact-formular">
-					 
-                                    <div class="form-group">
-                                        <input type="text" name="Naziv" class="form-control rounded-0" placeholder="Ime/Naziv Preduzeća" required />
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" name="adresa" class="form-control rounded-0" placeholder="Adresa" />
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" name="text" class="form-control rounded-0" placeholder="Broj Telefona"  />
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" name="email" class="form-control rounded-0" placeholder="Email"  />
-                                    </div>
-					  <!--Drustvene mreze-->
-					  <p>Linkovi ka društvenim mrežama (Websajt/Facebook/Instagram/..) <br> Ukoliko nemate, ostavite polje prazno.
-</p>
-                                    <div class="form-group">
-                                        <input type="text" name="druš-mreza" class="form-control rounded-0" placeholder=""  />
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" name="druš-mreza" class="form-control rounded-0" placeholder=""  />
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" name="druš-mreza" class="form-control rounded-0" placeholder=""  />
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" name="druš-mreza" class="form-control rounded-0" placeholder=""  />
-                                    </div>
-            
-                                    <div class="form-group tm-text-right">
-                                        <button type="submit" class="btn btn-primary">Send</button>
-                                    </div>
-<input type="checkbox" id="vehicle1" name="vehicle1" value="Stranica: da">
-<label style="border-bottom: 3px solid #CCC" for="vehicle1">Da li želite Vašu stranicu na RedirexRs?</label><br>
-                                </form>
-                            </div>
-                        </div>
+	
+  <div class="recent-listing">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <h2>Najnovije</h2>
+            <h6>Najnoviji istaknuti preduzetnici</h6>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="owl-carousel owl-listing">
+            <div class="item">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="listing-item">
+                    <div class="left-image">
+                      <a href="#"><img style="background-color:black; width: 500px; height: 380px" src="Delatnosti/Postavljanje-elektricnih-instalacija/Filipovic/EF-logo-1-plava-podloga-1024x1024-400x400.jpeg" alt=""></a>
                     </div>
+                    <div class="right-content align-self-center">
+                      <a href="#"><h4>Elektromontaža Filipović</h4></a>
+                      <h6>&nbsp;  </h6>
+                      <ul class="rate">
+                        <li><a class="drustvene-mreze" href="https://www.instalacije.rs" target="_blank"><i class="fa-brands fa-internet-explorer fa-2xl"></i></a></li>
+                        <li><a class="drustvene-mreze" href="https://www.instagram.com/instalacije_rs_/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li> 
+                      </ul> 
+                      <span class="price"></span>
+                      <span class="details">Informacije: <em>Izrada, održavanje i reparacija elektro instalacija. </em></span>
+                      <ul class="info">
+                        <li><i class="fas fa-map-marker-alt"></i>&nbsp; 12000 Požarevac</li>
+                        <li><i class="fas fa-phone"></i>&nbsp; 060 / 588 – 6000</li>
+                        <li><i class="fas fa-envelope"></i>&nbsp; kontakt@instalacije.rs</li>
+                      </ul>
+                      <div class="main-white-button">
+                        <a href="#"><i class="fa fa-eye"></i> Poseti stranicu</a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-
-                <!-- Copyright -->                
-                <div class="tm-section-wrap tm-copyright row">
-                    <div class="col-12">
-                        <div class="text-right">
-                            Redirex RS 2021
-                        </div> 
+                <div class="col-lg-12">
+                  <div class="listing-item">
+                    <div class="left-image">
+                      <a href="#"><img style="background-color:black; width: 500px; height: 380px" src="Delatnosti/Postavljanje-elektricnih-instalacija/Filipovic/EF-logo-1-plava-podloga-1024x1024-400x400.jpeg" alt=""></a>
                     </div>
-                </div>                 
-            </div> <!-- .tm-main -->                      
-        </div> <!-- .row -->
-    </div> <!-- .container-fluid -->
-    <script src="templatemo_555_upright/js/jquery-3.4.1.min.js"></script>          <!-- https://jquery.com/ -->
-    <script src="templatemo_555_upright/js/jquery.singlePageNav.min.js"></script>  <!-- https://github.com/ChrisWojcik/single-page-nav -->
-    <script src="templatemo_555_upright/js/parallax/parallax.min.js"></script>     <!-- https://pixelcog.github.io/parallax.js/ -->    <!-- https://imagesloaded.desandro.com/ -->
-    <script src="templatemo_555_upright/js/isotope.pkgd.min.js"></script>          <!-- https://isotope.metafizzy.co/ -->
-    <script src="templatemo_555_upright/js/jquery.magnific-popup.min.js"></script> <!-- https://dimsemenov.com/plugins/magnific-popup/ -->
-    <script src="templatemo_555_upright/slick/slick.min.js"></script>              <!-- https://kenwheeler.github.io/slick/ -->
-    <script src="templatemo_555_upright/js/templatemo-script.js"></script>
+                    <div class="right-content align-self-center">
+                      <a href="#"><h4>Elektromontaža Filipović</h4></a>
+                      <h6>&nbsp;  </h6>
+                      <ul class="rate">
+                        <li><a class="drustvene-mreze" href="https://www.instalacije.rs" target="_blank"><i class="fa-brands fa-internet-explorer fa-2xl"></i></a></li>
+                        <li><a class="drustvene-mreze" href="https://www.instagram.com/instalacije_rs_/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li> 
+                      </ul> 
+                      <span class="price"></span>
+                      <span class="details">Informacije: <em>Izrada, održavanje i reparacija elektro instalacija. </em></span>
+                      <ul class="info">
+                        <li><i class="fas fa-map-marker-alt"></i>&nbsp; 12000 Požarevac</li>
+                        <li><i class="fas fa-phone"></i>&nbsp; 060 / 588 – 6000</li>
+                        <li><i class="fas fa-envelope"></i>&nbsp; kontakt@instalacije.rs</li>
+                      </ul>
+                      <div class="main-white-button">
+                        <a href="#"><i class="fa fa-eye"></i> Poseti stranicu</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="listing-item">
+                    <div class="left-image">
+                      <a href="#"><img style="background-color:black; width: 500px; height: 380px" src="Delatnosti/Postavljanje-elektricnih-instalacija/Filipovic/EF-logo-1-plava-podloga-1024x1024-400x400.jpeg" alt=""></a>
+                    </div>
+                    <div class="right-content align-self-center">
+                      <a href="#"><h4>Elektromontaža Filipović</h4></a>
+                      <h6>&nbsp;  </h6>
+                      <ul class="rate">
+                        <li><a class="drustvene-mreze" href="https://www.instalacije.rs" target="_blank"><i class="fa-brands fa-internet-explorer fa-2xl"></i></a></li>
+                        <li><a class="drustvene-mreze" href="https://www.instagram.com/instalacije_rs_/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li> 
+                      </ul> 
+                      <span class="price"></span>
+                      <span class="details">Informacije: <em>Izrada, održavanje i reparacija elektro instalacija. </em></span>
+                      <ul class="info">
+                        <li><i class="fas fa-map-marker-alt"></i>&nbsp; 12000 Požarevac</li>
+                        <li><i class="fas fa-phone"></i>&nbsp; 060 / 588 – 6000</li>
+                        <li><i class="fas fa-envelope"></i>&nbsp; kontakt@instalacije.rs</li>
+                      </ul>
+                      <div class="main-white-button">
+                        <a href="#"><i class="fa fa-eye"></i> Poseti stranicu</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="listing-item">
+                    <div class="left-image">
+                      <a href="#"><img style="background-color:black; width: 500px; height: 380px" src="Delatnosti/Postavljanje-elektricnih-instalacija/Filipovic/EF-logo-1-plava-podloga-1024x1024-400x400.jpeg" alt=""></a>
+                    </div>
+                    <div class="right-content align-self-center">
+                      <a href="#"><h4>Elektromontaža Filipović</h4></a>
+                      <h6>&nbsp;  </h6>
+                      <ul class="rate">
+                        <li><a class="drustvene-mreze" href="https://www.instalacije.rs" target="_blank"><i class="fa-brands fa-internet-explorer fa-2xl"></i></a></li>
+                        <li><a class="drustvene-mreze" href="https://www.instagram.com/instalacije_rs_/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li> 
+                      </ul> 
+                      <span class="price"></span>
+                      <span class="details">Informacije: <em>Izrada, održavanje i reparacija elektro instalacija. </em></span>
+                      <ul class="info">
+                        <li><i class="fas fa-map-marker-alt"></i>&nbsp; 12000 Požarevac</li>
+                        <li><i class="fas fa-phone"></i>&nbsp; 060 / 588 – 6000</li>
+                        <li><i class="fas fa-envelope"></i>&nbsp; kontakt@instalacije.rs</li>
+                      </ul>
+                      <div class="main-white-button">
+                        <a href="#"><i class="fa fa-eye"></i> Poseti stranicu</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="listing-item">
+                    <div class="left-image">
+                      <a href="#"><img style="background-color:black; width: 500px; height: 380px" src="Delatnosti/Postavljanje-elektricnih-instalacija/Filipovic/EF-logo-1-plava-podloga-1024x1024-400x400.jpeg" alt=""></a>
+                    </div>
+                    <div class="right-content align-self-center">
+                      <a href="#"><h4>Elektromontaža Filipović</h4></a>
+                      <h6>&nbsp;  </h6>
+                      <ul class="rate">
+                        <li><a class="drustvene-mreze" href="https://www.instalacije.rs" target="_blank"><i class="fa-brands fa-internet-explorer fa-2xl"></i></a></li>
+                        <li><a class="drustvene-mreze" href="https://www.instagram.com/instalacije_rs_/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li> 
+                      </ul> 
+                      <span class="price"></span>
+                      <span class="details">Informacije: <em>Izrada, održavanje i reparacija elektro instalacija. </em></span>
+                      <ul class="info">
+                        <li><i class="fas fa-map-marker-alt"></i>&nbsp; 12000 Požarevac</li>
+                        <li><i class="fas fa-phone"></i>&nbsp; 060 / 588 – 6000</li>
+                        <li><i class="fas fa-envelope"></i>&nbsp; kontakt@instalacije.rs</li>
+                      </ul>
+                      <div class="main-white-button">
+                        <a href="#"><i class="fa fa-eye"></i> Poseti stranicu</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="listing-item">
+                    <div class="left-image">
+                      <a href="#"><img style="background-color:black; width: 500px; height: 380px" src="Delatnosti/Postavljanje-elektricnih-instalacija/Filipovic/EF-logo-1-plava-podloga-1024x1024-400x400.jpeg" alt=""></a>
+                    </div>
+                    <div class="right-content align-self-center">
+                      <a href="#"><h4>Elektromontaža Filipović</h4></a>
+                      <h6>&nbsp;  </h6>
+                      <ul class="rate">
+                        <li><a class="drustvene-mreze" href="https://www.instalacije.rs" target="_blank"><i class="fa-brands fa-internet-explorer fa-2xl"></i></a></li>
+                        <li><a class="drustvene-mreze" href="https://www.instagram.com/instalacije_rs_/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li> 
+                      </ul> 
+                      <span class="price"></span>
+                      <span class="details">Informacije: <em>Izrada, održavanje i reparacija elektro instalacija. </em></span>
+                      <ul class="info">
+                        <li><i class="fas fa-map-marker-alt"></i>&nbsp; 12000 Požarevac</li>
+                        <li><i class="fas fa-phone"></i>&nbsp; 060 / 588 – 6000</li>
+                        <li><i class="fas fa-envelope"></i>&nbsp; kontakt@instalacije.rs</li>
+                      </ul>
+                      <div class="main-white-button">
+                        <a href="#"><i class="fa fa-eye"></i> Poseti stranicu</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="listing-item">
+                    <div class="left-image">
+                      <a href="#"><img style="background-color:black; width: 500px; height: 380px" src="Delatnosti/Postavljanje-elektricnih-instalacija/Filipovic/EF-logo-1-plava-podloga-1024x1024-400x400.jpeg" alt=""></a>
+                    </div>
+                    <div class="right-content align-self-center">
+                      <a href="#"><h4>Elektromontaža Filipović</h4></a>
+                      <h6>&nbsp;  </h6>
+                      <ul class="rate">
+                        <li><a class="drustvene-mreze" href="https://www.instalacije.rs" target="_blank"><i class="fa-brands fa-internet-explorer fa-2xl"></i></a></li>
+                        <li><a class="drustvene-mreze" href="https://www.instagram.com/instalacije_rs_/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li> 
+                      </ul> 
+                      <span class="price"></span>
+                      <span class="details">Informacije: <em>Izrada, održavanje i reparacija elektro instalacija. </em></span>
+                      <ul class="info">
+                        <li><i class="fas fa-map-marker-alt"></i>&nbsp; 12000 Požarevac</li>
+                        <li><i class="fas fa-phone"></i>&nbsp; 060 / 588 – 6000</li>
+                        <li><i class="fas fa-envelope"></i>&nbsp; kontakt@instalacije.rs</li>
+                      </ul>
+                      <div class="main-white-button">
+                        <a href="#"><i class="fa fa-eye"></i> Poseti stranicu</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="listing-item">
+                    <div class="left-image">
+                      <a href="#"><img style="background-color:black; width: 500px; height: 380px" src="Delatnosti/Postavljanje-elektricnih-instalacija/Filipovic/EF-logo-1-plava-podloga-1024x1024-400x400.jpeg" alt=""></a>
+                    </div>
+                    <div class="right-content align-self-center">
+                      <a href="#"><h4>Elektromontaža Filipović</h4></a>
+                      <h6>&nbsp;  </h6>
+                      <ul class="rate">
+                        <li><a class="drustvene-mreze" href="https://www.instalacije.rs" target="_blank"><i class="fa-brands fa-internet-explorer fa-2xl"></i></a></li>
+                        <li><a class="drustvene-mreze" href="https://www.instagram.com/instalacije_rs_/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li> 
+                      </ul> 
+                      <span class="price"></span>
+                      <span class="details">Informacije: <em>Izrada, održavanje i reparacija elektro instalacija. </em></span>
+                      <ul class="info">
+                        <li><i class="fas fa-map-marker-alt"></i>&nbsp; 12000 Požarevac</li>
+                        <li><i class="fas fa-phone"></i>&nbsp; 060 / 588 – 6000</li>
+                        <li><i class="fas fa-envelope"></i>&nbsp; kontakt@instalacije.rs</li>
+                      </ul>
+                      <div class="main-white-button">
+                        <a href="#"><i class="fa fa-eye"></i> Poseti stranicu</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="listing-item">
+                    <div class="left-image">
+                      <a href="#"><img style="background-color:black; width: 500px; height: 380px" src="Delatnosti/Postavljanje-elektricnih-instalacija/Filipovic/EF-logo-1-plava-podloga-1024x1024-400x400.jpeg" alt=""></a>
+                    </div>
+                    <div class="right-content align-self-center">
+                      <a href="#"><h4>Elektromontaža Filipović</h4></a>
+                      <h6>&nbsp;  </h6>
+                      <ul class="rate">
+                        <li><a class="drustvene-mreze" href="https://www.instalacije.rs" target="_blank"><i class="fa-brands fa-internet-explorer fa-2xl"></i></a></li>
+                        <li><a class="drustvene-mreze" href="https://www.instagram.com/instalacije_rs_/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li> 
+                      </ul> 
+                      <span class="price"></span>
+                      <span class="details">Informacije: <em>Izrada, održavanje i reparacija elektro instalacija. </em></span>
+                      <ul class="info">
+                        <li><i class="fas fa-map-marker-alt"></i>&nbsp; 12000 Požarevac</li>
+                        <li><i class="fas fa-phone"></i>&nbsp; 060 / 588 – 6000</li>
+                        <li><i class="fas fa-envelope"></i>&nbsp; kontakt@instalacije.rs</li>
+                      </ul>
+                      <div class="main-white-button">
+                        <a href="#"><i class="fa fa-eye"></i> Poseti stranicu</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="about">
+            <p>Redirex je katalog svih preduzetnika sa prostora Požarevca i okoline. <br> Ukoliko želite i Vi da se nadjete na sajtu, slobodno nas <a href="#">kontaktirajte</a> s svim potrebnim informacijama.</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="helpful-links">
+            <h4>Stranice Websajta</h4>
+            <div class="row">
+              <div class="col-lg-6 col-sm-6">
+                <ul>
+                  <li><a href="#">Glavna stranica</a></li>
+                  <li><a href="#">Kategorije</a></li>
+                  <li><a href="#">Kontakt</a></li>
+                  <li><a href="#">O nama</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="contact-us">
+            <h4>Kontaktirajte Nas</h4>
+            <p>Srbija, 12000 Požarevac</p>
+            <div class="row">
+              <div class="col-lg-6">
+                <a href="#">###-###-####</a>
+              </div>
+              <div class="col-lg-6">
+                <a href="#">###-###-####</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="sub-footer">
+            <p>#
+            <br>
+			#</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <script src="templatemo_564_plot_listing/vendor/jquery/jquery.min.js"></script>
+  <script src="templatemo_564_plot_listing/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="templatemo_564_plot_listing/assets/js/owl-carousel.js"></script>
+  <script src="templatemo_564_plot_listing/assets/js/animation.js"></script>
+  <script src="templatemo_564_plot_listing/assets/js/imagesloaded.js"></script>
+  <script src="templatemo_564_plot_listing/assets/js/custom.js"></script>
+	  <script src="JSS/Filterovanje.js"></script>	
+
 </body>
+
 </html>
