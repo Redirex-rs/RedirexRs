@@ -912,6 +912,7 @@ Banner Style
 	}
 	.home-pretraga li{
 		width: 100%;
+		-webkit-overflow-scrolling: touch;
 	}	
 .home-pretraga li a{
 	font-size: 0.5em;
