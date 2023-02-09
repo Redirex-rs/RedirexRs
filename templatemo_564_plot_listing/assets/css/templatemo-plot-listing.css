@@ -722,7 +722,7 @@ Banner Style
 
 @media (max-width: 767px) {
 	.lista-preduzetnika{
-		
+		display: block;
 	}
 	.main-banner {
   background-repeat: no-repeat;
@@ -749,6 +749,9 @@ Banner Style
   position: relative;
   overflow: hidden;
 }
+	.home-pretraga li{
+		width: 33%;
+	}
 }
 
 
@@ -859,7 +862,6 @@ Banner Style
   color: #fff;
   text-align: center;
   width: 100%;
-	border: 1px solid red;
 }
 }
 
@@ -897,6 +899,51 @@ Banner Style
 
 .main-banner ul.categories li .icon img {
   max-width: 27px;
+}
+
+@media (max-width: 767px){
+	.home-pretraga{
+		display: block;
+  flex-direction: row;
+			  height: 10em;
+			  overflow: hidden;
+		-webkit-overflow-scrolling: touch;
+			  margin-top: 1em;
+	}
+	.home-pretraga li{
+		width: 100%;
+	}	
+.home-pretraga li a{
+	font-size: 0.5em;
+	height: 4.5em;
+	border-bottom: 1px solid #2a2a2a;
+	padding: 0.2em;
+			   font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+			  color: #343a40;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+}
+
+@media (min-width: 767px){
+	.home-pretraga{
+  flex-direction: column;
+  flex-wrap: wrap;
+  display: flex;
+			  height: 10em;
+			  overflow: hidden;
+			  margin-top: 1em;
+		  }
+		  .home-pretraga li a{
+			   font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+			  color: #343a40;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+		  }
 }
 
 form#search-form {
