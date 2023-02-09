@@ -1024,27 +1024,38 @@ Popular Categories
 }
 
 .popular-categories .naccs {
-  position: relative;
   background-color: #2b2d42;
   border-radius: 7px;
 }
 
+.kategorija-info{
+	display: inline-block;
+	width: 100%;
+}
+
 .popular-categories .icon {
-  display: inline-block;
-  width: 66px;
-  height: 66px;
-  border-radius: 50%;
   text-align: center;
-  line-height: 62px;
   color: #8d99af;
-  background-color: #fff;
-  margin-right: 15px;
+	width: 1em;
+	margin: auto;
+}
+.popular-categories .icon i{
+	display: block;
+	width: 1em;
+	height: 1em;
+}
+.popular-categories .icon i{
+	display: block;
+	width: 1em;
+	height: 1em;
 }
 
-.popular-categories .icon img {
-  max-width: 27px;
+.popular-categories .naccs .menu {
+	display: inline-flex;
+  width: 100%;
+	margin: 0.5em;
+	margin-top: 1em;
 }
-
 .popular-categories .naccs .menu div.first-thumb {
   border-top-left-radius: 7px;
 }
@@ -1056,14 +1067,11 @@ Popular Categories
 
 .popular-categories .naccs .menu div {
   color: #fff;
-  font-size: 15px;
-  background-color: #8d99af;
-  height: 126px;
-  text-align: left;
+	width: 0.5em;
+	margin: auto;
+  text-align: center;
   padding: 0px 15px;
-  line-height: 126px;
   cursor: pointer;
-  position: relative;
   transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
@@ -1116,6 +1124,7 @@ Popular Categories
 .popular-categories .nacc .thumb .left-text p {
   color: #fff;
   margin-bottom: 30px;
+  padding: 2em;
 }
 
 .popular-categories .nacc .thumb .right-image {
@@ -1130,6 +1139,7 @@ Popular Categories
 .popular-categories .nacc .thumb .left-text .main-white-button a{
   width: 100%;
   text-align: center;
+  margin-bottom: 3em;	
 }
 
 
