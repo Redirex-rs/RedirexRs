@@ -801,7 +801,7 @@ Banner Style
 
 @media (max-width: 767px){
 .main-banner ul.categories {
-	margin-top: 5em;
+	margin-top: 7em;
   text-align: center;
 }
 }
@@ -906,7 +906,7 @@ Banner Style
 		display: block;
   flex-direction: row;
 			  height: 10em;
-			  overflow: hidden;
+			  overflow: auto;
 		-webkit-overflow-scrolling: touch;
 			  margin-top: 1em;
 	}
