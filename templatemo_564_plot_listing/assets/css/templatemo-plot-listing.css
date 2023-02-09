@@ -1124,7 +1124,8 @@ Popular Categories
 .popular-categories .nacc .thumb .left-text p {
   color: #fff;
   margin-bottom: 30px;
-  padding: 2em;
+  padding: 1em;
+  font-size: 0.7em;
 }
 
 .popular-categories .nacc .thumb .right-image {
