@@ -72,7 +72,7 @@
 		 * Animation speed in milliseconds.
 		 * @protected
 		 */
-		this._speed = 3600;
+		this._speed = 360;
 
 		/**
 		 * Coordinates of all items in pixel.
@@ -205,7 +205,7 @@
 		startPosition: 0,
 		rtl: false,
 
-		smartSpeed: 250,
+		smartSpeed: 2500,
 		fluidSpeed: false,
 		dragEndSpeed: false,
 
