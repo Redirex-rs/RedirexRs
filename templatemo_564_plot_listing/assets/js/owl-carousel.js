@@ -72,7 +72,7 @@
 		 * Animation speed in milliseconds.
 		 * @protected
 		 */
-		this._speed = 360;
+		this._speed = 3600;
 
 		/**
 		 * Coordinates of all items in pixel.
