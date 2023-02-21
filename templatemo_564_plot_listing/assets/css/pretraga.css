@@ -1180,7 +1180,8 @@ Recent Listing
   width: 90%;
   position: relative;
   margin-bottom: 30px;
-	border: 2px solid red;
+	margin: auto;
+	margin-top: 2em;
 }
 
 .recent-listing .item .left-image {
@@ -1189,7 +1190,6 @@ Recent Listing
 	width: 10em;
 	height: 15em;
 	object-fit: contain;
-	border: 2px solid green
 	}
 	
 .recent-listing .item .left-image img {
@@ -1198,7 +1198,6 @@ Recent Listing
 	width: 100%;
 	height: 100%;
   border-bottom-left-radius: 7px;
-	border: 2px solid pink;
 }
 	
 }
