@@ -875,9 +875,7 @@ ul.categories li p {
 ul.categories li .icon {
   display: block;
   margin: 0 auto 12px auto;
-  width: 66px;
-  height: 66px;
-  border-radius: 50%;
+  width: 8em;
   text-align: center;
   line-height: 5em;
   color: #8d99af;
@@ -1203,7 +1201,7 @@ Recent Listing
 
 .recent-listing {
   margin-top: 120px;
-  padding-top: 120px;
+  padding-top: 20px;
   margin-bottom: 120px;
   border-top: 1px solid #eee;
 }
@@ -1213,12 +1211,12 @@ Recent Listing
   margin-bottom: 80px;
 }
 
-.recent-listing .item .listing-item {
-  display: inline-flex;
+.recent-listing .item .listing-item-pretraga {
+  display: block;
+	width: 15em;
+	height: 32em;
   background-color: #f7f7f7;
   border-radius: 7px;
-  width: 100%;
-  position: relative;
   margin-bottom: 30px;
 }
 
@@ -1234,13 +1232,7 @@ Recent Listing
 	margin-top: 2em;
 }
 
-.recent-listing .item .left-image {
-  border-top-left-radius: 7px;
-  border-bottom-left-radius: 7px;
-	width: 10em;
-	height: 15em;
-	object-fit: contain;
-	}
+
 	
 .recent-listing .item .left-image img {
   border-top-left-radius: 7px;
@@ -1252,11 +1244,11 @@ Recent Listing
 	
 }
 
-
 .recent-listing .item .left-image {
   border-top-left-radius: 7px;
   border-bottom-left-radius: 7px;
 	object-fit: contain;
+	display: block;
 	}
 
 .recent-listing .item .left-image img {
@@ -1267,17 +1259,22 @@ Recent Listing
 
 .recent-listing .item .right-content {
   display: inline-block;
-  padding: 60px;
+  padding: 6px;
+	font-size: 0.8em;
+	margin-bottom: 1em;
+	margin-top: 1em;
 }
 
 .recent-listing .item .right-content ul.rate {
-  position: absolute;
   right: 60px;
   top: 60px;
+	margin-bottom: 1em;
+	margin-top: 1em;
 }
 
 .recent-listing .item .right-content ul.rate li {
   display: inline-block;
+	margin: auto;
 }
 
 .recent-listing .item .right-content ul.rate li:last-child {
@@ -1285,14 +1282,15 @@ Recent Listing
 }
 
 .recent-listing .item .right-content h4 {
-  font-size: 20px;
+  font-size: 1.1em;
   color: #2a2a2a;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .recent-listing .item .right-content h6 {
-  font-size: 15px;
+  font-size: 0.8px;
   font-weight: 500;
   color: #8d99af;
 }
@@ -1325,7 +1323,7 @@ Recent Listing
 .recent-listing .item .right-content span.details {
   display: block;
   margin-bottom: 30px;
-  font-size: 15px;
+  font-size: 0.8;
   color: #8d99af;
 }
 
@@ -1336,9 +1334,10 @@ Recent Listing
 
 .recent-listing .item .right-content ul.info li {
   display: inline-block;
-  margin-bottom: 15px;
+  margin-bottom: 11px;
   margin-right: 30px;
   width: 100%;
+  text-align: center;	
 }
 
 .recent-listing .item .right-content ul.info li:last-child {
@@ -1352,9 +1351,9 @@ Recent Listing
 }
 
 .recent-listing .item .right-content .main-white-button {
-  position: absolute;
   right: 60px;
   bottom: 60px;
+	margin-top: 20px;
 }
 
 .recent-listing .owl-dots {
