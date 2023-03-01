@@ -710,6 +710,9 @@ header
   .header-area .main-nav .nav {
     display: flex !important;
   }
+	.categories{
+		display: none;
+	}
 }
 
 

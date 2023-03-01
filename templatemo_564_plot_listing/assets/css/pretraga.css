@@ -734,8 +734,68 @@ Banner Style
   overflow: hidden;
 }
 }
+@media (max-width: 767px){
+.main-banner .top-text h6 {
+  color: #fff;
+  font-size: 1em;
+  font-weight: 500;
+  text-transform: uppercase;
+} 
+}
+@media (max-width: 767px){
+.main-banner .top-text h2 {
+  color: #fff;
+  font-size: 2em;
+  font-weight: 800;
+  text-transform: capitalize;
+  margin-top: 15px;
+  margin-bottom: 45px;
+}
+}
+@media (max-width: 767px){
+.main-banner ul.categories {
+	display: inline-flex;
+	margin-top: 7em;
+  text-align: center;
+}
+}
+@media (max-width: 767px){
+.main-banner ul.categories li {
+	display: inline-flex;
+  width: 30%;
+	height: 8rem;
+}
+}
+@media (max-width: 767px){
+.main-banner ul.categories li p {
+  width: 100%;
+  font-size: 0.75em;
+  text-align: center;
+  color: #fff;
+}
+}
+@media (max-width: 767px){
+.main-banner ul.categories li a {
+  color: #fff;
+  text-align: center;
+  width: 100%;
+}
+}
+@media (max-width: 767px){
+.main-banner ul.categories li .icon {
+  display: block;
+  height: 50%;
+  width: 100%;
+  text-align: center;
+  line-height: 4em;
+  color: #8d99af;
+  background-color: #fff;
+  transition: all .5s;
+}
+}
 
-@media (min-width: 767px) {
+
+@media (min-width: 767px){
 	.lista-preduzetnika{
 		margin: 1em; 
 		padding-right: 5em;
@@ -753,43 +813,16 @@ Banner Style
 		width: 33%;
 	}
 }
-
-
-.main-banner .top-text {
-  text-align: center;
-}
-
-@media (max-width: 767px){
-.main-banner .top-text h6 {
-  color: #fff;
-  font-size: 1em;
-  font-weight: 500;
-  text-transform: uppercase;
-} 
-}
-
 @media (min-width: 767px){
-.main-banner .top-text h6 {
+.top-text h6 {
   color: #fff;
   font-size: 15px;
   font-weight: 500;
   text-transform: uppercase;
 } 
 }
-
-@media (max-width: 767px){
-.main-banner .top-text h2 {
-  color: #fff;
-  font-size: 2em;
-  font-weight: 800;
-  text-transform: capitalize;
-  margin-top: 15px;
-  margin-bottom: 45px;
-}
-}
-
 @media (min-width: 767px){
-.main-banner .top-text h2 {
+.top-text h2 {
   color: #fff;
   font-size: 45px;
   font-weight: 800;
@@ -798,46 +831,126 @@ Banner Style
   margin-bottom: 45px;
 }
 }
-
-@media (max-width: 767px){
-.main-banner ul.categories {
-	margin-top: 7em;
-  text-align: center;
-}
-}
-
-@media (max-width: 767px){
-.main-banner ul.categories li {
-	display: inline-flex;
-  width: 30%;
-	height: 8rem;
-}
-}
-
 @media (min-width: 767px){
-.main-banner ul.categories {
+ul.categories {
   width: 100%;
   margin-top: 60px;
+  padding: 1em;
   text-align: center;
+	
+}
+}
+@media (min-width: 767px){
+ ul.categories li {
+  display: inline-flex;
+  text-align: center;
+  width: 9em;
+  height: 11em;
+  border-radius: 5%;
+  margin: auto;
+  padding: 0.5em;	  
+	 border: 2px solid #C2C2C2;
+	 
+}
+}
+@media (min-width: 767px){
+ul.categories li p {
+  width: 100%;
+  font-size: 1em;
+	font-weight: 700;
+  text-align: center;
+  color: #2a2a2a;
+}
+}
+@media (min-width: 767px){
+ ul.categories li a {
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 5px;
+}
+}
+@media (min-width: 767px){
+ul.categories li .icon {
+  display: block;
+  margin: 0 auto 12px auto;
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 5em;
+  color: #8d99af;
+  background-color: #fff;
+  transition: all .5s;
+}
+}
+
+
+.main-banner .top-text {
+  text-align: center;
+}
+.main-banner ul.categories li a:hover .icon {
+  background-color: #2b2d42;
+}
+.main-banner ul.categories li .icon img {
+  max-width: 27px;
+}
+@media (max-width: 767px){
+.home-pretraga{
+		display: block;
+  flex-direction: row;
+			  height: 10em;
+			  overflow: auto;
+		-webkit-overflow-scrolling: touch;
+			  margin-top: 1em;
+	}
+.home-pretraga li{
+		width: 100%;
+		-webkit-overflow-scrolling: touch;
+	}	
+.home-pretraga li a{
+	font-size: 0.5em;
+	height: 4.5em;
+	border-bottom: 1px solid #2a2a2a;
+	padding: 0.2em;
+			   font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+			  color: #343a40;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 }
 
 @media (min-width: 767px){
-.main-banner ul.categories li {
-  display: inline-block;
-  text-align: center;
-  width: 18%;
-}
+	.home-pretraga{
+  flex-direction: column;
+  flex-wrap: wrap;
+  display: flex;
+			  height: 10em;
+			  overflow: hidden;
+			  margin-top: 1em;
+		  }
+		  .home-pretraga li a{
+			   font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+			  color: #343a40;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+		  }
 }
 
-@media (max-width: 767px){
-.main-banner ul.categories li p {
+form#search-form {
+  background-color: #fff;
+  padding: 0px 0px 0px 30px;
   width: 100%;
-  font-size: 0.75em;
+  border-radius: 7px;
+  display: inline-block;
   text-align: center;
-  color: #fff;
 }
-}
+
 @media (min-width: 767px){
 .main-banner ul.categories li p {
   width: 100%;
@@ -891,69 +1004,6 @@ Banner Style
   background-color: #fff;
   transition: all .5s;
 }
-}
-
-.main-banner ul.categories li a:hover .icon {
-  background-color: #2b2d42;
-}
-
-.main-banner ul.categories li .icon img {
-  max-width: 27px;
-}
-
-@media (max-width: 767px){
-	.home-pretraga{
-		display: block;
-  flex-direction: row;
-			  height: 10em;
-			  overflow: auto;
-		-webkit-overflow-scrolling: touch;
-			  margin-top: 1em;
-	}
-	.home-pretraga li{
-		width: 100%;
-		-webkit-overflow-scrolling: touch;
-	}	
-.home-pretraga li a{
-	font-size: 0.5em;
-	height: 4.5em;
-	border-bottom: 1px solid #2a2a2a;
-	padding: 0.2em;
-			   font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-			  color: #343a40;
-  -ms-text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-}
-
-@media (min-width: 767px){
-	.home-pretraga{
-  flex-direction: column;
-  flex-wrap: wrap;
-  display: flex;
-			  height: 10em;
-			  overflow: hidden;
-			  margin-top: 1em;
-		  }
-		  .home-pretraga li a{
-			   font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-			  color: #343a40;
-  -ms-text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-		  }
-}
-
-form#search-form {
-  background-color: #fff;
-  padding: 0px 0px 0px 30px;
-  width: 100%;
-  border-radius: 7px;
-  display: inline-block;
-  text-align: center;
 }
 
 form#search-form select,
