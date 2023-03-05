@@ -735,6 +735,7 @@ Banner Style
   padding: 10em 0px 180px 0px;
   position: relative;
   overflow: hidden;
+		height: 50rem;
 }
 }
 
@@ -763,7 +764,7 @@ Banner Style
 }
 
 @media (max-width: 767px){
-.main-banner .top-text h6 {
+.top-text h6 {
   color: #fff;
   font-size: 1em;
   font-weight: 500;
@@ -781,7 +782,7 @@ Banner Style
 }
 
 @media (max-width: 767px){
-.main-banner .top-text h2 {
+.top-text h2 {
   color: #fff;
   font-size: 2em;
   font-weight: 800;
@@ -803,14 +804,14 @@ Banner Style
 }
 
 @media (max-width: 767px){
-.main-banner ul.categories {
-	margin-top: 7em;
+ul.categories {
+	display: inline-block;
   text-align: center;
 }
 }
 
 @media (max-width: 767px){
-.main-banner ul.categories li {
+ul.categories li {
 	display: inline-flex;
   width: 30%;
 	height: 8rem;
@@ -834,11 +835,11 @@ Banner Style
 }
 
 @media (max-width: 767px){
-.main-banner ul.categories li p {
+ul.categories li p {
   width: 100%;
   font-size: 0.75em;
   text-align: center;
-  color: #fff;
+  color: #848484;
 }
 }
 @media (min-width: 767px){
@@ -861,7 +862,7 @@ Banner Style
 }
 
 @media (max-width: 767px){
-.main-banner ul.categories li a {
+ul.categories li a {
   color: #fff;
   text-align: center;
   width: 100%;
@@ -869,7 +870,7 @@ Banner Style
 }
 
 @media (max-width: 767px){
-.main-banner ul.categories li .icon {
+ul.categories li .icon {
   display: block;
   height: 50%;
   width: 100%;

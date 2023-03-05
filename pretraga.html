@@ -1,8 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en">
-
-  <head>
+<html lang="en"><head>
 
     <meta charset="UTF-8">
 	  
@@ -21,7 +19,6 @@
     <meta name="author" content="">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
 
 <title>Redirex</title>
 	
@@ -86,6 +83,42 @@ body {
 		 .icon>i{
 			  margin: auto;
 		  }
+
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  z-index: 1;
+  width: 8.8em;
+  min-height: 10.75em;
+  margin: -0.5em;
+  border-radius:2%;
+	padding: 0.4em;
+	border: 1px solid #EFEFEF
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #2a2a2a;
+  text-decoration: none;
+  display: block;
+	margin: auto;
+	border-bottom:1px solid #BFBCBC;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+	background-color: #ddd;
+	cursor: pointer;
+		  }
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;} 
+		  
+		  
 </style> 
   </head>
 
@@ -103,7 +136,6 @@ body {
     </div>
   </div>
   <!-- ***** Preloader End ***** -->
-
   <!-- ***** Header Area Start ***** -->
   <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
     <div class="container">
@@ -133,7 +165,6 @@ body {
     </div>
   </header>
   <!-- ***** Header Area End ***** -->
-
   <div class="main-banner">
     <div class="container">
       <div class="row">
@@ -148,31 +179,160 @@ body {
   	 
     </div>
   </div>
-
-        <div style="margin-top: 3em" class="col-lg-10 offset-lg-1">
-          <ul class="categories">
-            <li><a href="#"><span class="icon"><i class="fa-solid fa-shop fa-2xl"></i></span><p> Prodaja &amp; Trgovina</p></a></li>
-            <li><a href="#"><span class="icon"><i class="fa-solid fa-plane-departure fa-2xl"></i></span><p> Turizam &amp; Ugostiteljstvo</p></a></li>
-            <li><a href="#"><span class="icon"><i class="fa-solid fa-screwdriver-wrench fa-2xl"></i></span><p> Tehničke Usluge</p></a></li>
-            <li><a href="#"><span class="icon"><i class="fa-solid fa-truck fa-2xl"></i></span><p> Transport &amp; automobilizam</p></a></li>
-            <li><a href="#"><span class="icon"><i class="fa-solid fa-piggy-bank fa-2xl"></i></span><p> Računovodstvo</p></a></li>
-            <li><a href="#"><span class="icon"><i class="fa-solid fa-laptop-code fa-2xl"></i></span><p> IT</p></a></li>
-            <li><a href="#"><span class="icon"><i class="fa-solid fa-house-medical fa-2xl"></i></span><p> Medicina i Zdravlje</p></a></li>
-            <li><a href="#"><span class="icon"><i class="fa-solid fa-shirt fa-2xl"></i></span><p> Tekstilna Industrija</p></a></li>
-            <li><a href="#"><span class="icon"><i class="fa-solid fa-shield-dog fa-2xl"></i></span><p> Veterina</p></a></li>
-            <li><a href="#"><span class="icon"><i class="fa-solid fa-globe fa-2xl"></i></span> <p>Ostalo</p></a></li>
+	
+  <div style="margin-top: 3em" class="col-lg-10 offset-lg-1">
+          <ul class="categories"> 
+			 
+            <li class="dropbtn">
+				<a onclick="myFunction(this)" class="icon dropbtn">
+					<span class="icon dropbtn">
+						<i class="dropbtn fa-solid fa-shop fa-2xl"></i>
+					</span>
+					<p class="dropbtn"> Prodaja &amp; Trgovina</p>
+				</a>
+			        <div class="dropdown-content">
+                       <a data-toggle="portfilter" data-target="all">Sve Kategorije</a>
+                       <a data-toggle="portfilter" data-target="maloprodaja">Maloprodaja</a>
+                       <a data-toggle="portfilter" data-target="veleprodaja">Veleprodaja</a>
+                       <a data-toggle="portfilter" data-target="onlineprodaja">Online Prodaja</a>
+                    </div>
+		    </li>
+			  
+            <li class="dropbtn">
+				<a onclick="myFunction(this)" class="icon dropbtn">
+					<span class=" icon dropbtn">
+						<i class="dropbtn fa-solid fa-plane-departure fa-2xl"></i>
+					</span>
+					<p class="dropbtn"> Turizam &amp; Ugostiteljstvo</p>
+				</a>
+			        <div class="dropdown-content">
+                       <a data-toggle="portfilter" data-target="all">Sve Kategorije</a>
+                       <a data-toggle="portfilter" data-target="hotelmotel">Hoteli & Moteli</a>
+                       <a data-toggle="portfilter" data-target="restoran">Restorani</a>
+                       <a data-toggle="portfilter" data-target="kafic">Kafići</a>
+                    </div>
+			</li>
+			  
+            <li class="dropbtn">
+				<a onclick="myFunction(this)" class="icon dropbtn">
+					<span class=" icon dropbtn">
+						<i class="dropbtn fa-solid fa-screwdriver-wrench fa-2xl"></i>
+					</span>
+					<p class="dropbtn">Tehničke Usluge</p>
+				</a>
+			        <div class="dropdown-content">
+                       <a data-toggle="portfilter" data-target="all">Sve Kategorije</a>
+                       <a data-toggle="portfilter" data-target="bela_teh">Servis Bele Tehnike</a>
+                       <a data-toggle="portfilter" data-target="kucni_ap">Servis Kućnih Aparata</a>
+                       <a data-toggle="portfilter" data-target="elektro_servis">Elektro Instalacije</a>
+                       <a data-toggle="portfilter" data-target="gradjevina">Građevinske Usluge</a>
+                       <a data-toggle="portfilter" data-target="zanatske">Zanatske Usluge</a>
+                    </div>
+			</li>
+			
+            <li class="dropbtn">
+				<a onclick="myFunction(this)" class="icon dropbtn">
+					<span class=" icon dropbtn">
+						<i class="dropbtn fa-solid fa-truck fa-2xl"></i>
+					</span>
+					<p class="dropbtn"> Transport &amp; automobilizam</p>
+				</a>
+			        <div class="dropdown-content">
+                       <a data-toggle="portfilter" data-target="all">Sve Kategorije</a>
+                       <a data-toggle="portfilter" data-target="transport">Transport</a>
+                       <a data-toggle="portfilter" data-target="auto_servis">Auto Servis</a>
+                       <a data-toggle="portfilter" data-target="rentacar">Rent-a-Car</a>
+                    </div>
+			  </li>
+			  
+            <li class="dropbtn">
+				<a class="icon dropbtn" data-toggle="portfilter" data-target="racunovodstvo">
+					<span class="icon dropbtn">
+						<i class="dropbtn fa-solid fa-piggy-bank fa-2xl"></i>
+					</span>
+					<p class="dropbtn"> Računovodstvo</p>
+				</a>
+			  </li>
+			  
+            <li class="dropbtn">
+				<a onclick="myFunction(this)" class="icon dropbtn">
+					<span class=" icon dropbtn">
+						<i class="dropbtn fa-solid fa-laptop-code fa-2xl"></i>
+					</span>
+					<p class="dropbtn"> IT</p>
+				</a>
+			        <div class="dropdown-content">
+                       <a data-toggle="portfilter" data-target="all">Sve Kategorije</a>
+                       <a data-toggle="portfilter" data-target="web_sajtovi">Izrada Web Sajtova</a>
+                       <a data-toggle="portfilter" data-target="pc_servis">Servis i Održavanje</a>
+                       <a data-toggle="portfilter" data-target="it_ostalo">Ostale Usluge</a>
+                    </div>
+			  </li>
+			  
+            <li class="dropbtn">
+				<a onclick="myFunction(this)" class="icon dropbtn">
+					<span class=" icon dropbtn">
+						<i class="dropbtn fa-solid fa-house-medical fa-2xl"></i>
+					</span>
+					<p class="dropbtn"> Medicina i Zdravlje</p>
+				</a>
+			        <div class="dropdown-content">
+                       <a data-toggle="portfilter" data-target="all">Sve Kategorije</a>
+                       <a data-toggle="portfilter" data-target="ambulante">Ambulante</a>
+                       <a data-toggle="portfilter" data-target="opsta_praksa">Pregledi Opšte Prakse</a>
+                       <a data-toggle="portfilter" data-target="specijalisticke">Specijalistički Pregledi</a>
+                       <a data-toggle="portfilter" data-target="medic_ostalo">Ostalo</a>
+                    </div>
+			  </li>
+			  
+            <li class="dropbtn">
+				<a class="icon dropbtn" data-toggle="portfilter" data-target="tekstil">
+					<span class=" icon dropbtn">
+						<i class="dropbtn fa-solid fa-shirt fa-2xl"></i>
+					</span>
+					<p class="dropbtn"> Tekstilna Industrija</p>
+				</a>
+			  </li>
+			  
+            <li class="dropbtn">
+				<a onclick="myFunction(this)" class="icon dropbtn">
+					<span class=" icon dropbtn">
+						<i class="dropbtn fa-solid fa-shield-dog fa-2xl"></i>
+					</span>
+					<p class="dropbtn"> Veterina</p>
+				</a>
+			        <div class="dropdown-content">
+                       <a data-toggle="portfilter" data-target="all">Sve Kategorije</a>
+                       <a data-toggle="portfilter" data-target="vet_ambulante">Veterinarske Ambulante</a>
+                       <a data-toggle="portfilter" data-target="sve_za_ljubimce">Sve za Vašeg Ljubimca</a>
+                       <a data-toggle="portfilter" data-target="vet_ostalo">Ostalo</a>
+                    </div>
+			  </li>
+			  
+            <li class="dropbtn">
+				<a class="icon dropbtn" data-toggle="portfilter" data-target="sve_ostalo">
+					<span class="icon dropbtn">
+						<i class="dropbtn fa-solid fa-globe fa-2xl"></i>
+					</span> 
+					<p class="dropbtn">Ostalo</p>
+				</a>
+			  </li>
+			  
           </ul>
-        </div>
+        </div> 
 
+
+
+
+	
 <div class="recent-listing">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
+    <div class="listing-pretraga">
      <!--     <div class="owl-carousel owl-listing"> -->
-            <div class="item">
-              <div class="row">
+            <div class="item container">
+              <div style="margin: auto" class="row">
 				  
-                  <div class="listing-item-pretraga">
+				  
+				  <div class="listing-item-pretraga" data-tag="elektro_servis">
                     <div class="left-image">
                       <a href="#"><img style="background-color:black;" src="Delatnosti/Postavljanje-elektricnih-instalacija/Filipovic/EF-logo-1-plava-podloga-1024x1024-400x400.jpeg" alt=""></a>
                     </div>
@@ -189,732 +349,19 @@ body {
                         <li><i class="fas fa-envelope"></i>&nbsp; kontakt@instalacije.rs</li>
                       </ul>
                       <div class="main-white-button">
-                        <a href="#"><i class="fa fa-eye"></i> Poseti stranicu</a>
+                        <a href="#"> Poseti stranicu</a>
                       </div>
                     </div>
                   </div>
-                  <div class="listing-item-pretraga">
-                    <div class="left-image">
-                      <a href="#"><img style="background-color:black;" src="Delatnosti/Postavljanje-elektricnih-instalacija/Filipovic/EF-logo-1-plava-podloga-1024x1024-400x400.jpeg" alt=""></a>
-                    </div>
-                    <div class="right-content align-self-center">
-                      <a href="#"><h4>Elektromontaža Filipović</h4></a>
-                      <ul class="rate">
-                        <li><a class="drustvene-mreze" href="https://www.instalacije.rs" target="_blank"><i class="fa-brands fa-internet-explorer fa-2xl"></i></a></li>
-                        <li><a class="drustvene-mreze" href="https://www.instagram.com/instalacije_rs_/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li> 
-                      </ul> 
-                      <span class="details">Informacije: <em>Izrada, održavanje i reparacija elektro instalacija. </em></span>
-                      <ul class="info">
-                        <li><i class="fas fa-map-marker-alt"></i>&nbsp; 12000 Požarevac</li>
-                        <li><i class="fas fa-phone"></i>&nbsp; 060 / 588 – 6000</li>
-                        <li><i class="fas fa-envelope"></i>&nbsp; kontakt@instalacije.rs</li>
-                      </ul>
-                      <div class="main-white-button">
-                        <a href="#"><i class="fa fa-eye"></i> Poseti stranicu</a>
-                      </div>
-                    </div>
+                  
+				  
                   </div>
-                  <div class="listing-item-pretraga">
-                    <div class="left-image">
-                      <a href="#"><img style="background-color:black;" src="Delatnosti/Postavljanje-elektricnih-instalacija/Filipovic/EF-logo-1-plava-podloga-1024x1024-400x400.jpeg" alt=""></a>
-                    </div>
-                    <div class="right-content align-self-center">
-                      <a href="#"><h4>Elektromontaža Filipović</h4></a>
-                      <ul class="rate">
-                        <li><a class="drustvene-mreze" href="https://www.instalacije.rs" target="_blank"><i class="fa-brands fa-internet-explorer fa-2xl"></i></a></li>
-                        <li><a class="drustvene-mreze" href="https://www.instagram.com/instalacije_rs_/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li> 
-                      </ul> 
-                      <span class="details">Informacije: <em>Izrada, održavanje i reparacija elektro instalacija. </em></span>
-                      <ul class="info">
-                        <li><i class="fas fa-map-marker-alt"></i>&nbsp; 12000 Požarevac</li>
-                        <li><i class="fas fa-phone"></i>&nbsp; 060 / 588 – 6000</li>
-                        <li><i class="fas fa-envelope"></i>&nbsp; kontakt@instalacije.rs</li>
-                      </ul>
-                      <div class="main-white-button">
-                        <a href="#"><i class="fa fa-eye"></i> Poseti stranicu</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="listing-item-pretraga">
-                    <div class="left-image">
-                      <a href="#"><img style="background-color:black;" src="Delatnosti/Postavljanje-elektricnih-instalacija/Filipovic/EF-logo-1-plava-podloga-1024x1024-400x400.jpeg" alt=""></a>
-                    </div>
-                    <div class="right-content align-self-center">
-                      <a href="#"><h4>Elektromontaža Filipović</h4></a>
-                      <ul class="rate">
-                        <li><a class="drustvene-mreze" href="https://www.instalacije.rs" target="_blank"><i class="fa-brands fa-internet-explorer fa-2xl"></i></a></li>
-                        <li><a class="drustvene-mreze" href="https://www.instagram.com/instalacije_rs_/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li> 
-                      </ul> 
-                      <span class="details">Informacije: <em>Izrada, održavanje i reparacija elektro instalacija. </em></span>
-                      <ul class="info">
-                        <li><i class="fas fa-map-marker-alt"></i>&nbsp; 12000 Požarevac</li>
-                        <li><i class="fas fa-phone"></i>&nbsp; 060 / 588 – 6000</li>
-                        <li><i class="fas fa-envelope"></i>&nbsp; kontakt@instalacije.rs</li>
-                      </ul>
-                      <div class="main-white-button">
-                        <a href="#"><i class="fa fa-eye"></i> Poseti stranicu</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="listing-item-pretraga">
-                    <div class="left-image">
-                      <a href="#"><img style="background-color:black;" src="Delatnosti/Postavljanje-elektricnih-instalacija/Filipovic/EF-logo-1-plava-podloga-1024x1024-400x400.jpeg" alt=""></a>
-                    </div>
-                    <div class="right-content align-self-center">
-                      <a href="#"><h4>Elektromontaža Filipović</h4></a>
-                      <ul class="rate">
-                        <li><a class="drustvene-mreze" href="https://www.instalacije.rs" target="_blank"><i class="fa-brands fa-internet-explorer fa-2xl"></i></a></li>
-                        <li><a class="drustvene-mreze" href="https://www.instagram.com/instalacije_rs_/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li> 
-                      </ul> 
-                      <span class="details">Informacije: <em>Izrada, održavanje i reparacija elektro instalacija. </em></span>
-                      <ul class="info">
-                        <li><i class="fas fa-map-marker-alt"></i>&nbsp; 12000 Požarevac</li>
-                        <li><i class="fas fa-phone"></i>&nbsp; 060 / 588 – 6000</li>
-                        <li><i class="fas fa-envelope"></i>&nbsp; kontakt@instalacije.rs</li>
-                      </ul>
-                      <div class="main-white-button">
-                        <a href="#"><i class="fa fa-eye"></i> Poseti stranicu</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="listing-item-pretraga">
-                    <div class="left-image">
-                      <a href="#"><img style="background-color:black;" src="Delatnosti/Postavljanje-elektricnih-instalacija/Filipovic/EF-logo-1-plava-podloga-1024x1024-400x400.jpeg" alt=""></a>
-                    </div>
-                    <div class="right-content align-self-center">
-                      <a href="#"><h4>Elektromontaža Filipović</h4></a>
-                      <ul class="rate">
-                        <li><a class="drustvene-mreze" href="https://www.instalacije.rs" target="_blank"><i class="fa-brands fa-internet-explorer fa-2xl"></i></a></li>
-                        <li><a class="drustvene-mreze" href="https://www.instagram.com/instalacije_rs_/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li> 
-                      </ul> 
-                      <span class="details">Informacije: <em>Izrada, održavanje i reparacija elektro instalacija. </em></span>
-                      <ul class="info">
-                        <li><i class="fas fa-map-marker-alt"></i>&nbsp; 12000 Požarevac</li>
-                        <li><i class="fas fa-phone"></i>&nbsp; 060 / 588 – 6000</li>
-                        <li><i class="fas fa-envelope"></i>&nbsp; kontakt@instalacije.rs</li>
-                      </ul>
-                      <div class="main-white-button">
-                        <a href="#"><i class="fa fa-eye"></i> Poseti stranicu</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="listing-item-pretraga">
-                    <div class="left-image">
-                      <a href="#"><img style="background-color:black;" src="Delatnosti/Postavljanje-elektricnih-instalacija/Filipovic/EF-logo-1-plava-podloga-1024x1024-400x400.jpeg" alt=""></a>
-                    </div>
-                    <div class="right-content align-self-center">
-                      <a href="#"><h4>Elektromontaža Filipović</h4></a>
-                      <ul class="rate">
-                        <li><a class="drustvene-mreze" href="https://www.instalacije.rs" target="_blank"><i class="fa-brands fa-internet-explorer fa-2xl"></i></a></li>
-                        <li><a class="drustvene-mreze" href="https://www.instagram.com/instalacije_rs_/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li> 
-                      </ul> 
-                      <span class="details">Informacije: <em>Izrada, održavanje i reparacija elektro instalacija. </em></span>
-                      <ul class="info">
-                        <li><i class="fas fa-map-marker-alt"></i>&nbsp; 12000 Požarevac</li>
-                        <li><i class="fas fa-phone"></i>&nbsp; 060 / 588 – 6000</li>
-                        <li><i class="fas fa-envelope"></i>&nbsp; kontakt@instalacije.rs</li>
-                      </ul>
-                      <div class="main-white-button">
-                        <a href="#"><i class="fa fa-eye"></i> Poseti stranicu</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="listing-item-pretraga">
-                    <div class="left-image">
-                      <a href="#"><img style="background-color:black;" src="Delatnosti/Postavljanje-elektricnih-instalacija/Filipovic/EF-logo-1-plava-podloga-1024x1024-400x400.jpeg" alt=""></a>
-                    </div>
-                    <div class="right-content align-self-center">
-                      <a href="#"><h4>Elektromontaža Filipović</h4></a>
-                      <ul class="rate">
-                        <li><a class="drustvene-mreze" href="https://www.instalacije.rs" target="_blank"><i class="fa-brands fa-internet-explorer fa-2xl"></i></a></li>
-                        <li><a class="drustvene-mreze" href="https://www.instagram.com/instalacije_rs_/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li> 
-                      </ul> 
-                      <span class="details">Informacije: <em>Izrada, održavanje i reparacija elektro instalacija. </em></span>
-                      <ul class="info">
-                        <li><i class="fas fa-map-marker-alt"></i>&nbsp; 12000 Požarevac</li>
-                        <li><i class="fas fa-phone"></i>&nbsp; 060 / 588 – 6000</li>
-                        <li><i class="fas fa-envelope"></i>&nbsp; kontakt@instalacije.rs</li>
-                      </ul>
-                      <div class="main-white-button">
-                        <a href="#"><i class="fa fa-eye"></i> Poseti stranicu</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="listing-item-pretraga">
-                    <div class="left-image">
-                      <a href="#"><img style="background-color:black;" src="Delatnosti/Postavljanje-elektricnih-instalacija/Filipovic/EF-logo-1-plava-podloga-1024x1024-400x400.jpeg" alt=""></a>
-                    </div>
-                    <div class="right-content align-self-center">
-                      <a href="#"><h4>Elektromontaža Filipović</h4></a>
-                      <ul class="rate">
-                        <li><a class="drustvene-mreze" href="https://www.instalacije.rs" target="_blank"><i class="fa-brands fa-internet-explorer fa-2xl"></i></a></li>
-                        <li><a class="drustvene-mreze" href="https://www.instagram.com/instalacije_rs_/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li> 
-                      </ul> 
-                      <span class="details">Informacije: <em>Izrada, održavanje i reparacija elektro instalacija. </em></span>
-                      <ul class="info">
-                        <li><i class="fas fa-map-marker-alt"></i>&nbsp; 12000 Požarevac</li>
-                        <li><i class="fas fa-phone"></i>&nbsp; 060 / 588 – 6000</li>
-                        <li><i class="fas fa-envelope"></i>&nbsp; kontakt@instalacije.rs</li>
-                      </ul>
-                      <div class="main-white-button">
-                        <a href="#"><i class="fa fa-eye"></i> Poseti stranicu</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="listing-item-pretraga">
-                    <div class="left-image">
-                      <a href="#"><img style="background-color:black;" src="Delatnosti/Postavljanje-elektricnih-instalacija/Filipovic/EF-logo-1-plava-podloga-1024x1024-400x400.jpeg" alt=""></a>
-                    </div>
-                    <div class="right-content align-self-center">
-                      <a href="#"><h4>Elektromontaža Filipović</h4></a>
-                      <ul class="rate">
-                        <li><a class="drustvene-mreze" href="https://www.instalacije.rs" target="_blank"><i class="fa-brands fa-internet-explorer fa-2xl"></i></a></li>
-                        <li><a class="drustvene-mreze" href="https://www.instagram.com/instalacije_rs_/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li> 
-                      </ul> 
-                      <span class="details">Informacije: <em>Izrada, održavanje i reparacija elektro instalacija. </em></span>
-                      <ul class="info">
-                        <li><i class="fas fa-map-marker-alt"></i>&nbsp; 12000 Požarevac</li>
-                        <li><i class="fas fa-phone"></i>&nbsp; 060 / 588 – 6000</li>
-                        <li><i class="fas fa-envelope"></i>&nbsp; kontakt@instalacije.rs</li>
-                      </ul>
-                      <div class="main-white-button">
-                        <a href="#"><i class="fa fa-eye"></i> Poseti stranicu</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="listing-item-pretraga">
-                    <div class="left-image">
-                      <a href="#"><img style="background-color:black;" src="Delatnosti/Postavljanje-elektricnih-instalacija/Filipovic/EF-logo-1-plava-podloga-1024x1024-400x400.jpeg" alt=""></a>
-                    </div>
-                    <div class="right-content align-self-center">
-                      <a href="#"><h4>Elektromontaža Filipović</h4></a>
-                      <ul class="rate">
-                        <li><a class="drustvene-mreze" href="https://www.instalacije.rs" target="_blank"><i class="fa-brands fa-internet-explorer fa-2xl"></i></a></li>
-                        <li><a class="drustvene-mreze" href="https://www.instagram.com/instalacije_rs_/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li> 
-                      </ul> 
-                      <span class="details">Informacije: <em>Izrada, održavanje i reparacija elektro instalacija. </em></span>
-                      <ul class="info">
-                        <li><i class="fas fa-map-marker-alt"></i>&nbsp; 12000 Požarevac</li>
-                        <li><i class="fas fa-phone"></i>&nbsp; 060 / 588 – 6000</li>
-                        <li><i class="fas fa-envelope"></i>&nbsp; kontakt@instalacije.rs</li>
-                      </ul>
-                      <div class="main-white-button">
-                        <a href="#"><i class="fa fa-eye"></i> Poseti stranicu</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="listing-item-pretraga">
-                    <div class="left-image">
-                      <a href="#"><img style="background-color:black;" src="Delatnosti/Postavljanje-elektricnih-instalacija/Filipovic/EF-logo-1-plava-podloga-1024x1024-400x400.jpeg" alt=""></a>
-                    </div>
-                    <div class="right-content align-self-center">
-                      <a href="#"><h4>Elektromontaža Filipović</h4></a>
-                      <ul class="rate">
-                        <li><a class="drustvene-mreze" href="https://www.instalacije.rs" target="_blank"><i class="fa-brands fa-internet-explorer fa-2xl"></i></a></li>
-                        <li><a class="drustvene-mreze" href="https://www.instagram.com/instalacije_rs_/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li> 
-                      </ul> 
-                      <span class="details">Informacije: <em>Izrada, održavanje i reparacija elektro instalacija. </em></span>
-                      <ul class="info">
-                        <li><i class="fas fa-map-marker-alt"></i>&nbsp; 12000 Požarevac</li>
-                        <li><i class="fas fa-phone"></i>&nbsp; 060 / 588 – 6000</li>
-                        <li><i class="fas fa-envelope"></i>&nbsp; kontakt@instalacije.rs</li>
-                      </ul>
-                      <div class="main-white-button">
-                        <a href="#"><i class="fa fa-eye"></i> Poseti stranicu</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="listing-item-pretraga">
-                    <div class="left-image">
-                      <a href="#"><img style="background-color:black;" src="Delatnosti/Postavljanje-elektricnih-instalacija/Filipovic/EF-logo-1-plava-podloga-1024x1024-400x400.jpeg" alt=""></a>
-                    </div>
-                    <div class="right-content align-self-center">
-                      <a href="#"><h4>Elektromontaža Filipović</h4></a>
-                      <ul class="rate">
-                        <li><a class="drustvene-mreze" href="https://www.instalacije.rs" target="_blank"><i class="fa-brands fa-internet-explorer fa-2xl"></i></a></li>
-                        <li><a class="drustvene-mreze" href="https://www.instagram.com/instalacije_rs_/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li> 
-                      </ul> 
-                      <span class="details">Informacije: <em>Izrada, održavanje i reparacija elektro instalacija. </em></span>
-                      <ul class="info">
-                        <li><i class="fas fa-map-marker-alt"></i>&nbsp; 12000 Požarevac</li>
-                        <li><i class="fas fa-phone"></i>&nbsp; 060 / 588 – 6000</li>
-                        <li><i class="fas fa-envelope"></i>&nbsp; kontakt@instalacije.rs</li>
-                      </ul>
-                      <div class="main-white-button">
-                        <a href="#"><i class="fa fa-eye"></i> Poseti stranicu</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="listing-item-pretraga">
-                    <div class="left-image">
-                      <a href="#"><img style="background-color:black;" src="Delatnosti/Postavljanje-elektricnih-instalacija/Filipovic/EF-logo-1-plava-podloga-1024x1024-400x400.jpeg" alt=""></a>
-                    </div>
-                    <div class="right-content align-self-center">
-                      <a href="#"><h4>Elektromontaža Filipović</h4></a>
-                      <ul class="rate">
-                        <li><a class="drustvene-mreze" href="https://www.instalacije.rs" target="_blank"><i class="fa-brands fa-internet-explorer fa-2xl"></i></a></li>
-                        <li><a class="drustvene-mreze" href="https://www.instagram.com/instalacije_rs_/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li> 
-                      </ul> 
-                      <span class="details">Informacije: <em>Izrada, održavanje i reparacija elektro instalacija. </em></span>
-                      <ul class="info">
-                        <li><i class="fas fa-map-marker-alt"></i>&nbsp; 12000 Požarevac</li>
-                        <li><i class="fas fa-phone"></i>&nbsp; 060 / 588 – 6000</li>
-                        <li><i class="fas fa-envelope"></i>&nbsp; kontakt@instalacije.rs</li>
-                      </ul>
-                      <div class="main-white-button">
-                        <a href="#"><i class="fa fa-eye"></i> Poseti stranicu</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="listing-item-pretraga">
-                    <div class="left-image">
-                      <a href="#"><img style="background-color:black;" src="Delatnosti/Postavljanje-elektricnih-instalacija/Filipovic/EF-logo-1-plava-podloga-1024x1024-400x400.jpeg" alt=""></a>
-                    </div>
-                    <div class="right-content align-self-center">
-                      <a href="#"><h4>Elektromontaža Filipović</h4></a>
-                      <ul class="rate">
-                        <li><a class="drustvene-mreze" href="https://www.instalacije.rs" target="_blank"><i class="fa-brands fa-internet-explorer fa-2xl"></i></a></li>
-                        <li><a class="drustvene-mreze" href="https://www.instagram.com/instalacije_rs_/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li> 
-                      </ul> 
-                      <span class="details">Informacije: <em>Izrada, održavanje i reparacija elektro instalacija. </em></span>
-                      <ul class="info">
-                        <li><i class="fas fa-map-marker-alt"></i>&nbsp; 12000 Požarevac</li>
-                        <li><i class="fas fa-phone"></i>&nbsp; 060 / 588 – 6000</li>
-                        <li><i class="fas fa-envelope"></i>&nbsp; kontakt@instalacije.rs</li>
-                      </ul>
-                      <div class="main-white-button">
-                        <a href="#"><i class="fa fa-eye"></i> Poseti stranicu</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="listing-item-pretraga">
-                    <div class="left-image">
-                      <a href="#"><img style="background-color:black;" src="Delatnosti/Postavljanje-elektricnih-instalacija/Filipovic/EF-logo-1-plava-podloga-1024x1024-400x400.jpeg" alt=""></a>
-                    </div>
-                    <div class="right-content align-self-center">
-                      <a href="#"><h4>Elektromontaža Filipović</h4></a>
-                      <ul class="rate">
-                        <li><a class="drustvene-mreze" href="https://www.instalacije.rs" target="_blank"><i class="fa-brands fa-internet-explorer fa-2xl"></i></a></li>
-                        <li><a class="drustvene-mreze" href="https://www.instagram.com/instalacije_rs_/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li> 
-                      </ul> 
-                      <span class="details">Informacije: <em>Izrada, održavanje i reparacija elektro instalacija. </em></span>
-                      <ul class="info">
-                        <li><i class="fas fa-map-marker-alt"></i>&nbsp; 12000 Požarevac</li>
-                        <li><i class="fas fa-phone"></i>&nbsp; 060 / 588 – 6000</li>
-                        <li><i class="fas fa-envelope"></i>&nbsp; kontakt@instalacije.rs</li>
-                      </ul>
-                      <div class="main-white-button">
-                        <a href="#"><i class="fa fa-eye"></i> Poseti stranicu</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="listing-item-pretraga">
-                    <div class="left-image">
-                      <a href="#"><img style="background-color:black;" src="Delatnosti/Postavljanje-elektricnih-instalacija/Filipovic/EF-logo-1-plava-podloga-1024x1024-400x400.jpeg" alt=""></a>
-                    </div>
-                    <div class="right-content align-self-center">
-                      <a href="#"><h4>Elektromontaža Filipović</h4></a>
-                      <ul class="rate">
-                        <li><a class="drustvene-mreze" href="https://www.instalacije.rs" target="_blank"><i class="fa-brands fa-internet-explorer fa-2xl"></i></a></li>
-                        <li><a class="drustvene-mreze" href="https://www.instagram.com/instalacije_rs_/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li> 
-                      </ul> 
-                      <span class="details">Informacije: <em>Izrada, održavanje i reparacija elektro instalacija. </em></span>
-                      <ul class="info">
-                        <li><i class="fas fa-map-marker-alt"></i>&nbsp; 12000 Požarevac</li>
-                        <li><i class="fas fa-phone"></i>&nbsp; 060 / 588 – 6000</li>
-                        <li><i class="fas fa-envelope"></i>&nbsp; kontakt@instalacije.rs</li>
-                      </ul>
-                      <div class="main-white-button">
-                        <a href="#"><i class="fa fa-eye"></i> Poseti stranicu</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="listing-item-pretraga">
-                    <div class="left-image">
-                      <a href="#"><img style="background-color:black;" src="Delatnosti/Postavljanje-elektricnih-instalacija/Filipovic/EF-logo-1-plava-podloga-1024x1024-400x400.jpeg" alt=""></a>
-                    </div>
-                    <div class="right-content align-self-center">
-                      <a href="#"><h4>Elektromontaža Filipović</h4></a>
-                      <ul class="rate">
-                        <li><a class="drustvene-mreze" href="https://www.instalacije.rs" target="_blank"><i class="fa-brands fa-internet-explorer fa-2xl"></i></a></li>
-                        <li><a class="drustvene-mreze" href="https://www.instagram.com/instalacije_rs_/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li> 
-                      </ul> 
-                      <span class="details">Informacije: <em>Izrada, održavanje i reparacija elektro instalacija. </em></span>
-                      <ul class="info">
-                        <li><i class="fas fa-map-marker-alt"></i>&nbsp; 12000 Požarevac</li>
-                        <li><i class="fas fa-phone"></i>&nbsp; 060 / 588 – 6000</li>
-                        <li><i class="fas fa-envelope"></i>&nbsp; kontakt@instalacije.rs</li>
-                      </ul>
-                      <div class="main-white-button">
-                        <a href="#"><i class="fa fa-eye"></i> Poseti stranicu</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="listing-item-pretraga">
-                    <div class="left-image">
-                      <a href="#"><img style="background-color:black;" src="Delatnosti/Postavljanje-elektricnih-instalacija/Filipovic/EF-logo-1-plava-podloga-1024x1024-400x400.jpeg" alt=""></a>
-                    </div>
-                    <div class="right-content align-self-center">
-                      <a href="#"><h4>Elektromontaža Filipović</h4></a>
-                      <ul class="rate">
-                        <li><a class="drustvene-mreze" href="https://www.instalacije.rs" target="_blank"><i class="fa-brands fa-internet-explorer fa-2xl"></i></a></li>
-                        <li><a class="drustvene-mreze" href="https://www.instagram.com/instalacije_rs_/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li> 
-                      </ul> 
-                      <span class="details">Informacije: <em>Izrada, održavanje i reparacija elektro instalacija. </em></span>
-                      <ul class="info">
-                        <li><i class="fas fa-map-marker-alt"></i>&nbsp; 12000 Požarevac</li>
-                        <li><i class="fas fa-phone"></i>&nbsp; 060 / 588 – 6000</li>
-                        <li><i class="fas fa-envelope"></i>&nbsp; kontakt@instalacije.rs</li>
-                      </ul>
-                      <div class="main-white-button">
-                        <a href="#"><i class="fa fa-eye"></i> Poseti stranicu</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="listing-item-pretraga">
-                    <div class="left-image">
-                      <a href="#"><img style="background-color:black;" src="Delatnosti/Postavljanje-elektricnih-instalacija/Filipovic/EF-logo-1-plava-podloga-1024x1024-400x400.jpeg" alt=""></a>
-                    </div>
-                    <div class="right-content align-self-center">
-                      <a href="#"><h4>Elektromontaža Filipović</h4></a>
-                      <ul class="rate">
-                        <li><a class="drustvene-mreze" href="https://www.instalacije.rs" target="_blank"><i class="fa-brands fa-internet-explorer fa-2xl"></i></a></li>
-                        <li><a class="drustvene-mreze" href="https://www.instagram.com/instalacije_rs_/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li> 
-                      </ul> 
-                      <span class="details">Informacije: <em>Izrada, održavanje i reparacija elektro instalacija. </em></span>
-                      <ul class="info">
-                        <li><i class="fas fa-map-marker-alt"></i>&nbsp; 12000 Požarevac</li>
-                        <li><i class="fas fa-phone"></i>&nbsp; 060 / 588 – 6000</li>
-                        <li><i class="fas fa-envelope"></i>&nbsp; kontakt@instalacije.rs</li>
-                      </ul>
-                      <div class="main-white-button">
-                        <a href="#"><i class="fa fa-eye"></i> Poseti stranicu</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="listing-item-pretraga">
-                    <div class="left-image">
-                      <a href="#"><img style="background-color:black;" src="Delatnosti/Postavljanje-elektricnih-instalacija/Filipovic/EF-logo-1-plava-podloga-1024x1024-400x400.jpeg" alt=""></a>
-                    </div>
-                    <div class="right-content align-self-center">
-                      <a href="#"><h4>Elektromontaža Filipović</h4></a>
-                      <ul class="rate">
-                        <li><a class="drustvene-mreze" href="https://www.instalacije.rs" target="_blank"><i class="fa-brands fa-internet-explorer fa-2xl"></i></a></li>
-                        <li><a class="drustvene-mreze" href="https://www.instagram.com/instalacije_rs_/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li> 
-                      </ul> 
-                      <span class="details">Informacije: <em>Izrada, održavanje i reparacija elektro instalacija. </em></span>
-                      <ul class="info">
-                        <li><i class="fas fa-map-marker-alt"></i>&nbsp; 12000 Požarevac</li>
-                        <li><i class="fas fa-phone"></i>&nbsp; 060 / 588 – 6000</li>
-                        <li><i class="fas fa-envelope"></i>&nbsp; kontakt@instalacije.rs</li>
-                      </ul>
-                      <div class="main-white-button">
-                        <a href="#"><i class="fa fa-eye"></i> Poseti stranicu</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="listing-item-pretraga">
-                    <div class="left-image">
-                      <a href="#"><img style="background-color:black;" src="Delatnosti/Postavljanje-elektricnih-instalacija/Filipovic/EF-logo-1-plava-podloga-1024x1024-400x400.jpeg" alt=""></a>
-                    </div>
-                    <div class="right-content align-self-center">
-                      <a href="#"><h4>Elektromontaža Filipović</h4></a>
-                      <ul class="rate">
-                        <li><a class="drustvene-mreze" href="https://www.instalacije.rs" target="_blank"><i class="fa-brands fa-internet-explorer fa-2xl"></i></a></li>
-                        <li><a class="drustvene-mreze" href="https://www.instagram.com/instalacije_rs_/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li> 
-                      </ul> 
-                      <span class="details">Informacije: <em>Izrada, održavanje i reparacija elektro instalacija. </em></span>
-                      <ul class="info">
-                        <li><i class="fas fa-map-marker-alt"></i>&nbsp; 12000 Požarevac</li>
-                        <li><i class="fas fa-phone"></i>&nbsp; 060 / 588 – 6000</li>
-                        <li><i class="fas fa-envelope"></i>&nbsp; kontakt@instalacije.rs</li>
-                      </ul>
-                      <div class="main-white-button">
-                        <a href="#"><i class="fa fa-eye"></i> Poseti stranicu</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="listing-item-pretraga">
-                    <div class="left-image">
-                      <a href="#"><img style="background-color:black;" src="Delatnosti/Postavljanje-elektricnih-instalacija/Filipovic/EF-logo-1-plava-podloga-1024x1024-400x400.jpeg" alt=""></a>
-                    </div>
-                    <div class="right-content align-self-center">
-                      <a href="#"><h4>Elektromontaža Filipović</h4></a>
-                      <ul class="rate">
-                        <li><a class="drustvene-mreze" href="https://www.instalacije.rs" target="_blank"><i class="fa-brands fa-internet-explorer fa-2xl"></i></a></li>
-                        <li><a class="drustvene-mreze" href="https://www.instagram.com/instalacije_rs_/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li> 
-                      </ul> 
-                      <span class="details">Informacije: <em>Izrada, održavanje i reparacija elektro instalacija. </em></span>
-                      <ul class="info">
-                        <li><i class="fas fa-map-marker-alt"></i>&nbsp; 12000 Požarevac</li>
-                        <li><i class="fas fa-phone"></i>&nbsp; 060 / 588 – 6000</li>
-                        <li><i class="fas fa-envelope"></i>&nbsp; kontakt@instalacije.rs</li>
-                      </ul>
-                      <div class="main-white-button">
-                        <a href="#"><i class="fa fa-eye"></i> Poseti stranicu</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="listing-item-pretraga">
-                    <div class="left-image">
-                      <a href="#"><img style="background-color:black;" src="Delatnosti/Postavljanje-elektricnih-instalacija/Filipovic/EF-logo-1-plava-podloga-1024x1024-400x400.jpeg" alt=""></a>
-                    </div>
-                    <div class="right-content align-self-center">
-                      <a href="#"><h4>Elektromontaža Filipović</h4></a>
-                      <ul class="rate">
-                        <li><a class="drustvene-mreze" href="https://www.instalacije.rs" target="_blank"><i class="fa-brands fa-internet-explorer fa-2xl"></i></a></li>
-                        <li><a class="drustvene-mreze" href="https://www.instagram.com/instalacije_rs_/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li> 
-                      </ul> 
-                      <span class="details">Informacije: <em>Izrada, održavanje i reparacija elektro instalacija. </em></span>
-                      <ul class="info">
-                        <li><i class="fas fa-map-marker-alt"></i>&nbsp; 12000 Požarevac</li>
-                        <li><i class="fas fa-phone"></i>&nbsp; 060 / 588 – 6000</li>
-                        <li><i class="fas fa-envelope"></i>&nbsp; kontakt@instalacije.rs</li>
-                      </ul>
-                      <div class="main-white-button">
-                        <a href="#"><i class="fa fa-eye"></i> Poseti stranicu</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="listing-item-pretraga">
-                    <div class="left-image">
-                      <a href="#"><img style="background-color:black;" src="Delatnosti/Postavljanje-elektricnih-instalacija/Filipovic/EF-logo-1-plava-podloga-1024x1024-400x400.jpeg" alt=""></a>
-                    </div>
-                    <div class="right-content align-self-center">
-                      <a href="#"><h4>Elektromontaža Filipović</h4></a>
-                      <ul class="rate">
-                        <li><a class="drustvene-mreze" href="https://www.instalacije.rs" target="_blank"><i class="fa-brands fa-internet-explorer fa-2xl"></i></a></li>
-                        <li><a class="drustvene-mreze" href="https://www.instagram.com/instalacije_rs_/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li> 
-                      </ul> 
-                      <span class="details">Informacije: <em>Izrada, održavanje i reparacija elektro instalacija. </em></span>
-                      <ul class="info">
-                        <li><i class="fas fa-map-marker-alt"></i>&nbsp; 12000 Požarevac</li>
-                        <li><i class="fas fa-phone"></i>&nbsp; 060 / 588 – 6000</li>
-                        <li><i class="fas fa-envelope"></i>&nbsp; kontakt@instalacije.rs</li>
-                      </ul>
-                      <div class="main-white-button">
-                        <a href="#"><i class="fa fa-eye"></i> Poseti stranicu</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="listing-item-pretraga">
-                    <div class="left-image">
-                      <a href="#"><img style="background-color:black;" src="Delatnosti/Postavljanje-elektricnih-instalacija/Filipovic/EF-logo-1-plava-podloga-1024x1024-400x400.jpeg" alt=""></a>
-                    </div>
-                    <div class="right-content align-self-center">
-                      <a href="#"><h4>Elektromontaža Filipović</h4></a>
-                      <ul class="rate">
-                        <li><a class="drustvene-mreze" href="https://www.instalacije.rs" target="_blank"><i class="fa-brands fa-internet-explorer fa-2xl"></i></a></li>
-                        <li><a class="drustvene-mreze" href="https://www.instagram.com/instalacije_rs_/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li> 
-                      </ul> 
-                      <span class="details">Informacije: <em>Izrada, održavanje i reparacija elektro instalacija. </em></span>
-                      <ul class="info">
-                        <li><i class="fas fa-map-marker-alt"></i>&nbsp; 12000 Požarevac</li>
-                        <li><i class="fas fa-phone"></i>&nbsp; 060 / 588 – 6000</li>
-                        <li><i class="fas fa-envelope"></i>&nbsp; kontakt@instalacije.rs</li>
-                      </ul>
-                      <div class="main-white-button">
-                        <a href="#"><i class="fa fa-eye"></i> Poseti stranicu</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="listing-item-pretraga">
-                    <div class="left-image">
-                      <a href="#"><img style="background-color:black;" src="Delatnosti/Postavljanje-elektricnih-instalacija/Filipovic/EF-logo-1-plava-podloga-1024x1024-400x400.jpeg" alt=""></a>
-                    </div>
-                    <div class="right-content align-self-center">
-                      <a href="#"><h4>Elektromontaža Filipović</h4></a>
-                      <ul class="rate">
-                        <li><a class="drustvene-mreze" href="https://www.instalacije.rs" target="_blank"><i class="fa-brands fa-internet-explorer fa-2xl"></i></a></li>
-                        <li><a class="drustvene-mreze" href="https://www.instagram.com/instalacije_rs_/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li> 
-                      </ul> 
-                      <span class="details">Informacije: <em>Izrada, održavanje i reparacija elektro instalacija. </em></span>
-                      <ul class="info">
-                        <li><i class="fas fa-map-marker-alt"></i>&nbsp; 12000 Požarevac</li>
-                        <li><i class="fas fa-phone"></i>&nbsp; 060 / 588 – 6000</li>
-                        <li><i class="fas fa-envelope"></i>&nbsp; kontakt@instalacije.rs</li>
-                      </ul>
-                      <div class="main-white-button">
-                        <a href="#"><i class="fa fa-eye"></i> Poseti stranicu</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="listing-item-pretraga">
-                    <div class="left-image">
-                      <a href="#"><img style="background-color:black;" src="Delatnosti/Postavljanje-elektricnih-instalacija/Filipovic/EF-logo-1-plava-podloga-1024x1024-400x400.jpeg" alt=""></a>
-                    </div>
-                    <div class="right-content align-self-center">
-                      <a href="#"><h4>Elektromontaža Filipović</h4></a>
-                      <ul class="rate">
-                        <li><a class="drustvene-mreze" href="https://www.instalacije.rs" target="_blank"><i class="fa-brands fa-internet-explorer fa-2xl"></i></a></li>
-                        <li><a class="drustvene-mreze" href="https://www.instagram.com/instalacije_rs_/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li> 
-                      </ul> 
-                      <span class="details">Informacije: <em>Izrada, održavanje i reparacija elektro instalacija. </em></span>
-                      <ul class="info">
-                        <li><i class="fas fa-map-marker-alt"></i>&nbsp; 12000 Požarevac</li>
-                        <li><i class="fas fa-phone"></i>&nbsp; 060 / 588 – 6000</li>
-                        <li><i class="fas fa-envelope"></i>&nbsp; kontakt@instalacije.rs</li>
-                      </ul>
-                      <div class="main-white-button">
-                        <a href="#"><i class="fa fa-eye"></i> Poseti stranicu</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="listing-item-pretraga">
-                    <div class="left-image">
-                      <a href="#"><img style="background-color:black;" src="Delatnosti/Postavljanje-elektricnih-instalacija/Filipovic/EF-logo-1-plava-podloga-1024x1024-400x400.jpeg" alt=""></a>
-                    </div>
-                    <div class="right-content align-self-center">
-                      <a href="#"><h4>Elektromontaža Filipović</h4></a>
-                      <ul class="rate">
-                        <li><a class="drustvene-mreze" href="https://www.instalacije.rs" target="_blank"><i class="fa-brands fa-internet-explorer fa-2xl"></i></a></li>
-                        <li><a class="drustvene-mreze" href="https://www.instagram.com/instalacije_rs_/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li> 
-                      </ul> 
-                      <span class="details">Informacije: <em>Izrada, održavanje i reparacija elektro instalacija. </em></span>
-                      <ul class="info">
-                        <li><i class="fas fa-map-marker-alt"></i>&nbsp; 12000 Požarevac</li>
-                        <li><i class="fas fa-phone"></i>&nbsp; 060 / 588 – 6000</li>
-                        <li><i class="fas fa-envelope"></i>&nbsp; kontakt@instalacije.rs</li>
-                      </ul>
-                      <div class="main-white-button">
-                        <a href="#"><i class="fa fa-eye"></i> Poseti stranicu</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="listing-item-pretraga">
-                    <div class="left-image">
-                      <a href="#"><img style="background-color:black;" src="Delatnosti/Postavljanje-elektricnih-instalacija/Filipovic/EF-logo-1-plava-podloga-1024x1024-400x400.jpeg" alt=""></a>
-                    </div>
-                    <div class="right-content align-self-center">
-                      <a href="#"><h4>Elektromontaža Filipović</h4></a>
-                      <ul class="rate">
-                        <li><a class="drustvene-mreze" href="https://www.instalacije.rs" target="_blank"><i class="fa-brands fa-internet-explorer fa-2xl"></i></a></li>
-                        <li><a class="drustvene-mreze" href="https://www.instagram.com/instalacije_rs_/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li> 
-                      </ul> 
-                      <span class="details">Informacije: <em>Izrada, održavanje i reparacija elektro instalacija. </em></span>
-                      <ul class="info">
-                        <li><i class="fas fa-map-marker-alt"></i>&nbsp; 12000 Požarevac</li>
-                        <li><i class="fas fa-phone"></i>&nbsp; 060 / 588 – 6000</li>
-                        <li><i class="fas fa-envelope"></i>&nbsp; kontakt@instalacije.rs</li>
-                      </ul>
-                      <div class="main-white-button">
-                        <a href="#"><i class="fa fa-eye"></i> Poseti stranicu</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="listing-item-pretraga">
-                    <div class="left-image">
-                      <a href="#"><img style="background-color:black;" src="Delatnosti/Postavljanje-elektricnih-instalacija/Filipovic/EF-logo-1-plava-podloga-1024x1024-400x400.jpeg" alt=""></a>
-                    </div>
-                    <div class="right-content align-self-center">
-                      <a href="#"><h4>Elektromontaža Filipović</h4></a>
-                      <ul class="rate">
-                        <li><a class="drustvene-mreze" href="https://www.instalacije.rs" target="_blank"><i class="fa-brands fa-internet-explorer fa-2xl"></i></a></li>
-                        <li><a class="drustvene-mreze" href="https://www.instagram.com/instalacije_rs_/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li> 
-                      </ul> 
-                      <span class="details">Informacije: <em>Izrada, održavanje i reparacija elektro instalacija. </em></span>
-                      <ul class="info">
-                        <li><i class="fas fa-map-marker-alt"></i>&nbsp; 12000 Požarevac</li>
-                        <li><i class="fas fa-phone"></i>&nbsp; 060 / 588 – 6000</li>
-                        <li><i class="fas fa-envelope"></i>&nbsp; kontakt@instalacije.rs</li>
-                      </ul>
-                      <div class="main-white-button">
-                        <a href="#"><i class="fa fa-eye"></i> Poseti stranicu</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="listing-item-pretraga">
-                    <div class="left-image">
-                      <a href="#"><img style="background-color:black;" src="Delatnosti/Postavljanje-elektricnih-instalacija/Filipovic/EF-logo-1-plava-podloga-1024x1024-400x400.jpeg" alt=""></a>
-                    </div>
-                    <div class="right-content align-self-center">
-                      <a href="#"><h4>Elektromontaža Filipović</h4></a>
-                      <ul class="rate">
-                        <li><a class="drustvene-mreze" href="https://www.instalacije.rs" target="_blank"><i class="fa-brands fa-internet-explorer fa-2xl"></i></a></li>
-                        <li><a class="drustvene-mreze" href="https://www.instagram.com/instalacije_rs_/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li> 
-                      </ul> 
-                      <span class="details">Informacije: <em>Izrada, održavanje i reparacija elektro instalacija. </em></span>
-                      <ul class="info">
-                        <li><i class="fas fa-map-marker-alt"></i>&nbsp; 12000 Požarevac</li>
-                        <li><i class="fas fa-phone"></i>&nbsp; 060 / 588 – 6000</li>
-                        <li><i class="fas fa-envelope"></i>&nbsp; kontakt@instalacije.rs</li>
-                      </ul>
-                      <div class="main-white-button">
-                        <a href="#"><i class="fa fa-eye"></i> Poseti stranicu</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="listing-item-pretraga">
-                    <div class="left-image">
-                      <a href="#"><img style="background-color:black;" src="Delatnosti/Postavljanje-elektricnih-instalacija/Filipovic/EF-logo-1-plava-podloga-1024x1024-400x400.jpeg" alt=""></a>
-                    </div>
-                    <div class="right-content align-self-center">
-                      <a href="#"><h4>Elektromontaža Filipović</h4></a>
-                      <ul class="rate">
-                        <li><a class="drustvene-mreze" href="https://www.instalacije.rs" target="_blank"><i class="fa-brands fa-internet-explorer fa-2xl"></i></a></li>
-                        <li><a class="drustvene-mreze" href="https://www.instagram.com/instalacije_rs_/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li> 
-                      </ul> 
-                      <span class="details">Informacije: <em>Izrada, održavanje i reparacija elektro instalacija. </em></span>
-                      <ul class="info">
-                        <li><i class="fas fa-map-marker-alt"></i>&nbsp; 12000 Požarevac</li>
-                        <li><i class="fas fa-phone"></i>&nbsp; 060 / 588 – 6000</li>
-                        <li><i class="fas fa-envelope"></i>&nbsp; kontakt@instalacije.rs</li>
-                      </ul>
-                      <div class="main-white-button">
-                        <a href="#"><i class="fa fa-eye"></i> Poseti stranicu</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="listing-item-pretraga">
-                    <div class="left-image">
-                      <a href="#"><img style="background-color:black;" src="Delatnosti/Postavljanje-elektricnih-instalacija/Filipovic/EF-logo-1-plava-podloga-1024x1024-400x400.jpeg" alt=""></a>
-                    </div>
-                    <div class="right-content align-self-center">
-                      <a href="#"><h4>Elektromontaža Filipović</h4></a>
-                      <ul class="rate">
-                        <li><a class="drustvene-mreze" href="https://www.instalacije.rs" target="_blank"><i class="fa-brands fa-internet-explorer fa-2xl"></i></a></li>
-                        <li><a class="drustvene-mreze" href="https://www.instagram.com/instalacije_rs_/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li> 
-                      </ul> 
-                      <span class="details">Informacije: <em>Izrada, održavanje i reparacija elektro instalacija. </em></span>
-                      <ul class="info">
-                        <li><i class="fas fa-map-marker-alt"></i>&nbsp; 12000 Požarevac</li>
-                        <li><i class="fas fa-phone"></i>&nbsp; 060 / 588 – 6000</li>
-                        <li><i class="fas fa-envelope"></i>&nbsp; kontakt@instalacije.rs</li>
-                      </ul>
-                      <div class="main-white-button">
-                        <a href="#"><i class="fa fa-eye"></i> Poseti stranicu</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="listing-item-pretraga">
-                    <div class="left-image">
-                      <a href="#"><img style="background-color:black;" src="Delatnosti/Postavljanje-elektricnih-instalacija/Filipovic/EF-logo-1-plava-podloga-1024x1024-400x400.jpeg" alt=""></a>
-                    </div>
-                    <div class="right-content align-self-center">
-                      <a href="#"><h4>Elektromontaža Filipović</h4></a>
-                      <ul class="rate">
-                        <li><a class="drustvene-mreze" href="https://www.instalacije.rs" target="_blank"><i class="fa-brands fa-internet-explorer fa-2xl"></i></a></li>
-                        <li><a class="drustvene-mreze" href="https://www.instagram.com/instalacije_rs_/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li> 
-                      </ul> 
-                      <span class="details">Informacije: <em>Izrada, održavanje i reparacija elektro instalacija. </em></span>
-                      <ul class="info">
-                        <li><i class="fas fa-map-marker-alt"></i>&nbsp; 12000 Požarevac</li>
-                        <li><i class="fas fa-phone"></i>&nbsp; 060 / 588 – 6000</li>
-                        <li><i class="fas fa-envelope"></i>&nbsp; kontakt@instalacije.rs</li>
-                      </ul>
-                      <div class="main-white-button">
-                        <a href="#"><i class="fa fa-eye"></i> Poseti stranicu</a>
-                      </div>
-                    </div>
-                  </div>
+               
                   </div>
 				  
                   
 				  </div>
-				</div>
-				</div>
               </div>
-            </div>
        <!--   </div> -->
 
 	
@@ -981,8 +428,13 @@ body {
   <script src="templatemo_564_plot_listing/assets/js/animation.js"></script>
   <script src="templatemo_564_plot_listing/assets/js/imagesloaded.js"></script>
   <script src="templatemo_564_plot_listing/assets/js/custom.js"></script>
+  <script src="bootstrap.bundle.min.js"></script>
 	  <script src="JSS/Filterovanje.js"></script>	
 
+	<script>
+!function(d){var c="portfilter";var b=function(e){this.$element=d(e);this.stuff=d("[data-tag]");this.target=this.$element.data("target")||""};b.prototype.filter=function(g){var e=[],f=this.target;this.stuff.fadeOut("fast").promise().done(function(){d(this).each(function(){if(d(this).data("tag")==f||f=="all"){e.push(this)}});d(e).show()})};var a=d.fn[c];d.fn[c]=function(e){return this.each(function(){var g=d(this),f=g.data(c);if(!f){g.data(c,(f=new b(this)))}if(e=="filter"){f.filter()}})};d.fn[c].defaults={};d.fn[c].Constructor=b;d.fn[c].noConflict=function(){d.fn[c]=a;return this};d(document).on("click.portfilter.data-api","[data-toggle^=portfilter]",function(f){d(this).portfilter("filter")})}(window.jQuery);
+</script>
+	<script> </script>
 </body>
 
 </html>

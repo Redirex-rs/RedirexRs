@@ -616,6 +616,8 @@ header
   .header-area.header-sticky .nav li.search-icon a {
     width: 100%;
   }
+	
+ 	
   .header-area {
     background-color: #f7f7f7;
     padding: 0px 15px;
@@ -720,7 +722,7 @@ Banner Style
 --------------------------------------------- 
 */
 
-@media (max-width: 767px) {
+@media (max-width: 767px){
 	.lista-preduzetnika{
 		display: block;
 	}
@@ -729,13 +731,13 @@ Banner Style
   background-position: center center;
   background-size: cover;
   background-image: url(../images/banner-bg.jpg);
-  padding: 10em 0px 180px 0px;
+  padding: 10em 0px 50px 0px;
   position: relative;
   overflow: hidden;
 }
 }
 @media (max-width: 767px){
-.main-banner .top-text h6 {
+.top-text h6 {
   color: #fff;
   font-size: 1em;
   font-weight: 500;
@@ -743,7 +745,7 @@ Banner Style
 } 
 }
 @media (max-width: 767px){
-.main-banner .top-text h2 {
+.top-text h2 {
   color: #fff;
   font-size: 2em;
   font-weight: 800;
@@ -753,39 +755,43 @@ Banner Style
 }
 }
 @media (max-width: 767px){
-.main-banner ul.categories {
+ul.categories {
 	display: inline-flex;
-	margin-top: 7em;
-  text-align: center;
+	width: 100%;
+	height: 20em;
+	margin-top: 1em;
+	border: 1px solid red;
+}
+	
+	
+}
+@media (max-width: 767px){
+ul.categories li {
+	width: 100%;
+	height: 5em;
+	border: 1px solid red;
 }
 }
 @media (max-width: 767px){
-.main-banner ul.categories li {
-	display: inline-flex;
-  width: 30%;
-	height: 8rem;
-}
-}
-@media (max-width: 767px){
-.main-banner ul.categories li p {
+ul.categories li p {
   width: 100%;
-  font-size: 0.75em;
+  font-size: 0.45em;
   text-align: center;
+  color: red;
+}
+		
+	
+}
+@media (max-width: 767px){
+ul.categories li a {
   color: #fff;
-}
-}
-@media (max-width: 767px){
-.main-banner ul.categories li a {
-  color: #fff;
   text-align: center;
   width: 100%;
+  height: 100%;
 }
 }
 @media (max-width: 767px){
-.main-banner ul.categories li .icon {
-  display: block;
-  height: 50%;
-  width: 100%;
+ul.categories li .icon {
   text-align: center;
   line-height: 4em;
   color: #8d99af;
@@ -816,7 +822,7 @@ Banner Style
 @media (min-width: 767px){
 .top-text h6 {
   color: #fff;
-  font-size: 15px;
+  font-size: 2rem;
   font-weight: 500;
   text-transform: uppercase;
 } 
@@ -830,6 +836,40 @@ Banner Style
   margin-top: 15px;
   margin-bottom: 45px;
 }
+	
+ .recent-listing{
+				  padding: 1em;
+			  }
+			  .listing-item-pretraga{
+				 margin: auto;
+				 margin-bottom: 1em;
+				 width: 13em;
+				 border: 1px solid #c2c2c2;
+				 border-radius: 1%
+			  }
+			  .right-content{
+				  width: 100%;
+			  }
+			  .right-content h4{
+				  font-size: 1em; 
+				  display: flex; 
+				  width: 100%;
+			  }
+			  .right-content span{
+				  font-size: 0.86em;
+			  }
+			  ul.info li{
+				  display: block; 
+				  width: 100%; 
+				  font-size: 1em; 
+			  }
+			  
+			  .main-white-button a{ 
+				  font-size: 0.86rem; 
+				  width: 100%; 
+				  text-align: center
+			  }
+	
 }
 @media (min-width: 767px){
 ul.categories {
@@ -837,7 +877,7 @@ ul.categories {
   margin-top: 60px;
   padding: 1em;
   text-align: center;
-	
+  
 }
 }
 @media (min-width: 767px){
@@ -849,7 +889,8 @@ ul.categories {
   border-radius: 5%;
   margin: auto;
   padding: 0.5em;	  
-	 border: 2px solid #C2C2C2;
+  border: 2px solid #C2C2C2;
+	
 	 
 }
 }
@@ -1211,14 +1252,6 @@ Recent Listing
   margin-bottom: 80px;
 }
 
-.recent-listing .item .listing-item-pretraga {
-  display: block;
-	width: 15em;
-	height: 32em;
-  background-color: #f7f7f7;
-  border-radius: 7px;
-  margin-bottom: 30px;
-}
 
 @media (max-width: 767px){
 .recent-listing .item .listing-item {
@@ -1293,6 +1326,10 @@ Recent Listing
   font-size: 0.8px;
   font-weight: 500;
   color: #8d99af;
+}
+
+.kartice-pretraga{
+	width: 80%;
 }
 
 .recent-listing .item .right-content span.price {
@@ -2298,7 +2335,7 @@ responsive
     margin-top: 45px;
     margin-bottom: 55px;
   }
-e}
+}
 
 @media (max-width: 767px) {
   .main-banner ul.categories li a {
