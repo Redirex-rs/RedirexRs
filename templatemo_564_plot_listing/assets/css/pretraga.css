@@ -844,9 +844,15 @@ ul.categories li .icon {
 				 margin: auto;
 				 margin-bottom: 1em;
 				 width: 13em;
+				 height: 33rem;
 				 border: 1px solid #c2c2c2;
 				 border-radius: 1%
 			  }
+	.listing-pretraga .container .row{
+		border: 2px solid red;
+		width: 100em;
+			
+	}
 			  .right-content{
 				  width: 100%;
 			  }
