@@ -843,17 +843,17 @@ ul.categories li .icon {
 			  .listing-item-pretraga{
 				 margin: auto;
 				 margin-bottom: 1em;
-				 width: 13em;
+				 width: 15em;
 				 height: 33rem;
 				 border: 1px solid #c2c2c2;
 				 border-radius: 1%
 			  }
 	.listing-pretraga .container .row{
-		border: 2px solid red;
 		width: 100em;
 			
 	}
 			  .right-content{
+				  display: block;
 				  width: 100%;
 			  }
 			  .right-content h4{
@@ -864,10 +864,12 @@ ul.categories li .icon {
 			  .right-content span{
 				  font-size: 0.86em;
 			  }
+	          ul.info{
+              	}
 			  ul.info li{
 				  display: block; 
 				  width: 100%; 
-				  font-size: 1em; 
+				  font-size: 1em;
 			  }
 			  
 			  .main-white-button a{ 
