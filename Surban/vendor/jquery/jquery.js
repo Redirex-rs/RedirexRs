@@ -1284,7 +1284,7 @@ setDocument = Sizzle.setDocument = function( node ) {
 		});
 
 		assert(function( el ) {
-			el.innerHTML = "<a href='' disabled='disabled'></a>" +
+			el.innerHTML = "<a href='jquery.js' disabled='disabled'></a>" +
 				"<select disabled='disabled'><option/></select>";
 
 			// Support: Windows 8 Native Apps
@@ -5793,7 +5793,7 @@ function remove( elem, selector, keepData ) {
 
 jQuery.extend( {
 	htmlPrefilter: function( html ) {
-		return html.replace( rxhtmlTag, "<$1></$2>" );
+		return html.replace( rxhtmlTag, "<$1><$2>" );
 	},
 
 	clone: function( elem, dataAndEvents, deepDataAndEvents ) {
