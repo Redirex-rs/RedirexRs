@@ -90,28 +90,30 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: white;
+  background-color: #465672;
   z-index: 1;
-  width: 8.8em;
+	color: white;
   min-height: 10.75em;
-  margin: -0.5em;
-  border-radius:2%;
-	padding: 0.4em;
-	border: 1px solid #EFEFEF
+  margin-left: 10%;
+	font-size: 0.7em;
+	border-right: 2px solid #1F2633;
+	border-bottom: 2px solid #1F2633;
+	border-left: 2px solid #1F2633;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
-  color: #2a2a2a;
+  color: white;
   text-decoration: none;
   display: block;
-	margin: auto;
-	border-bottom:1px solid #BFBCBC;
+	padding: 0.7em;
+	font-size: 0.7em;
+	border-bottom:1px solid #1F2633;
 }
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-	background-color: #ddd;
+	background-color: #3A4860;
 	cursor: pointer;
 		  }
 
@@ -180,18 +182,19 @@ body {
     </div>
   </div>
 	
-  <div style="margin-top: 3em" class="col-lg-10 offset-lg-1">
+<div style="display: flex" class="">
+	
           <ul class="categories"> 
 			<!--trgovina--> 
             <li class="dropbtn">
+				<a class="sve-kategorije" data-toggle="portfilter" data-target="all">Sve Kategorije</a>
+		    </li>
+			  
+            <li class="dropbtn">
 				<a onclick="myFunction(this)" class="icon dropbtn">
-					<span class="icon dropbtn">
-						<i class="dropbtn fa-solid fa-shop fa-2xl"></i>
-					</span>
 					<p class="dropbtn"> Prodaja &amp; Trgovina</p>
 				</a>
 			        <div class="dropdown-content">
-                       <a data-toggle="portfilter" data-target="all">Sve Kategorije</a>
                        <a data-toggle="portfilter" data-target="maloprodaja">Maloprodaja</a>
                        <a data-toggle="portfilter" data-target="veleprodaja">Veleprodaja</a>
                        <a data-toggle="portfilter" data-target="onlineprodaja">Online Prodaja</a>
@@ -200,13 +203,9 @@ body {
 			<!--turizam/ugost-->  
             <li class="dropbtn">
 				<a onclick="myFunction(this)" class="icon dropbtn">
-					<span class=" icon dropbtn">
-						<i class="dropbtn fa-solid fa-plane-departure fa-2xl"></i>
-					</span>
 					<p class="dropbtn"> Turizam &amp; Ugostiteljstvo</p>
 				</a>
 			        <div class="dropdown-content">
-                       <a data-toggle="portfilter" data-target="all">Sve Kategorije</a>
                        <a data-toggle="portfilter" data-target="hotelmotel">Hoteli & Moteli</a>
                        <a data-toggle="portfilter" data-target="restoran">Restorani</a>
                        <a data-toggle="portfilter" data-target="kafic">Kafići</a>
@@ -215,13 +214,9 @@ body {
 			<!--tehnicke usluge-->  
             <li class="dropbtn">
 				<a onclick="myFunction(this)" class="icon dropbtn">
-					<span class=" icon dropbtn">
-						<i class="dropbtn fa-solid fa-screwdriver-wrench fa-2xl"></i>
-					</span>
 					<p class="dropbtn">Tehničke Usluge</p>
 				</a>
 			        <div class="dropdown-content">
-                       <a data-toggle="portfilter" data-target="all">Sve Kategorije</a>
                        <a data-toggle="portfilter" data-target="bela_teh">Servis Bele Tehnike</a>
                        <a data-toggle="portfilter" data-target="kucni_ap">Servis Kućnih Aparata</a>
                        <a data-toggle="portfilter" data-target="elektro_servis">Elektro Instalacije</a>
@@ -232,13 +227,9 @@ body {
 			<!--auto-->
             <li class="dropbtn">
 				<a onclick="myFunction(this)" class="icon dropbtn">
-					<span class=" icon dropbtn">
-						<i class="dropbtn fa-solid fa-truck fa-2xl"></i>
-					</span>
 					<p class="dropbtn"> Transport &amp; automobilizam</p>
 				</a>
 			        <div class="dropdown-content">
-                       <a data-toggle="portfilter" data-target="all">Sve Kategorije</a>
                        <a data-toggle="portfilter" data-target="transport">Transport</a>
                        <a data-toggle="portfilter" data-target="auto_servis">Auto Servis</a>
                        <a data-toggle="portfilter" data-target="rentacar">Rent-a-Car</a>
@@ -247,22 +238,15 @@ body {
 			<!--racunovodstvo-->
             <li class="dropbtn">
 				<a class="icon dropbtn" data-toggle="portfilter" data-target="racunovodstvo">
-					<span class="icon dropbtn">
-						<i class="dropbtn fa-solid fa-piggy-bank fa-2xl"></i>
-					</span>
 					<p class="dropbtn"> Računovodstvo</p>
 				</a>
 			  </li>
 			<!--IT--> 
             <li class="dropbtn">
 				<a onclick="myFunction(this)" class="icon dropbtn">
-					<span class=" icon dropbtn">
-						<i class="dropbtn fa-solid fa-laptop-code fa-2xl"></i>
-					</span>
 					<p class="dropbtn"> IT</p>
 				</a>
 			        <div class="dropdown-content">
-                       <a data-toggle="portfilter" data-target="all">Sve Kategorije</a>
                        <a data-toggle="portfilter" data-target="web_sajtovi">Izrada Web Sajtova</a>
                        <a data-toggle="portfilter" data-target="pc_servis">Servis i Održavanje</a>
                        <a data-toggle="portfilter" data-target="it_ostalo">Ostale Usluge</a>
@@ -271,13 +255,9 @@ body {
 			<!--auto-->  
             <li class="dropbtn">
 				<a onclick="myFunction(this)" class="icon dropbtn">
-					<span class=" icon dropbtn">
-						<i class="dropbtn fa-solid fa-house-medical fa-2xl"></i>
-					</span>
 					<p class="dropbtn"> Medicina i Zdravlje</p>
 				</a>
 			        <div class="dropdown-content">
-                       <a data-toggle="portfilter" data-target="all">Sve Kategorije</a>
                        <a data-toggle="portfilter" data-target="ambulante">Ambulante</a>
                        <a data-toggle="portfilter" data-target="opsta_praksa">Pregledi Opšte Prakse</a>
                        <a data-toggle="portfilter" data-target="specijalisticke">Specijalistički Pregledi</a>
@@ -288,22 +268,15 @@ body {
 			<!--auto-->  
             <li class="dropbtn">
 				<a class="icon dropbtn" data-toggle="portfilter" data-target="tekstil">
-					<span class=" icon dropbtn">
-						<i class="dropbtn fa-solid fa-shirt fa-2xl"></i>
-					</span>
 					<p class="dropbtn"> Tekstilna Industrija</p>
 				</a>
 			  </li>
 			<!--auto-->  
             <li class="dropbtn">
 				<a onclick="myFunction(this)" class="icon dropbtn">
-					<span class=" icon dropbtn">
-						<i class="dropbtn fa-solid fa-shield-dog fa-2xl"></i>
-					</span>
 					<p class="dropbtn"> Veterina</p>
 				</a>
 			        <div class="dropdown-content">
-                       <a data-toggle="portfilter" data-target="all">Sve Kategorije</a>
                        <a data-toggle="portfilter" data-target="vet_ambulante">Veterinarske Ambulante</a>
                        <a data-toggle="portfilter" data-target="sve_za_ljubimce">Sve za Vašeg Ljubimca</a>
                        <a data-toggle="portfilter" data-target="vet_ostalo">Ostalo</a>
@@ -312,21 +285,14 @@ body {
 			<!--auto-->  
             <li class="dropbtn">
 				<a class="icon dropbtn" data-toggle="portfilter" data-target="sve_ostalo">
-					<span class="icon dropbtn">
-						<i class="dropbtn fa-solid fa-globe fa-2xl"></i>
-					</span> 
 					<p class="dropbtn">Ostalo</p>
 				</a>
 			  </li>
 			  
           </ul>
-        </div> 
-
-
-
-
+      
 	
-<div class="recent-listing">
+  <div style=" right: 0" class="recent-listing">
     <div class="listing-pretraga">
      <!--     <div class="owl-carousel owl-listing"> -->
             <div class="item">
@@ -489,8 +455,8 @@ I bavi se popravkom, održavanjem, auto diagnostikom,..</em></span>
                   
 				  </div>
               </div>
-       <!--   </div> -->
-
+       
+</div>
 	
   
 

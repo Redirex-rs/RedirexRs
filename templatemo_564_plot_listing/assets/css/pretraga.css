@@ -838,7 +838,7 @@ ul.categories li .icon {
 }
 	
  .recent-listing{
-				  padding: 1em;
+	 width: 87%;
 			  }
 			  .listing-item-pretraga{
 				 margin: auto;
@@ -846,7 +846,9 @@ ul.categories li .icon {
 				 width: 15em;
 				 height: 33rem;
 				 border: 1px solid #c2c2c2;
-				 border-radius: 1%
+				 border-radius: 1%;
+				 border-left: 1px solid #323E52;
+				 border-bottom: 1px solid #323E52;
 			  }
 	.listing-pretraga .container .row{
 		width: 100em;
@@ -881,56 +883,65 @@ ul.categories li .icon {
 }
 @media (min-width: 767px){
 ul.categories {
-  width: 100%;
-  margin-top: 60px;
-  padding: 1em;
+  width: 10%;
   text-align: center;
+	background: #465672;
+	margin-right: 1%;
   
 }
+	.dropbtn .sve-kategorije{
+	 font-size: 0.7em;
+	 height: 3em;
+	 border-bottom: 1px solid #687DA2;
+		margin-bottom: 1em;
+		padding: 0.5em;
+		cursor: pointer;
+	}
 }
 @media (min-width: 767px){
  ul.categories li {
-  display: inline-flex;
+  display: flex;
   text-align: center;
-  width: 9em;
-  height: 11em;
-  border-radius: 5%;
-  margin: auto;
-  padding: 0.5em;	  
-  border: 2px solid #C2C2C2;
-	
-	 
+	background: #465672;
 }
+	
+ 
 }
 @media (min-width: 767px){
 ul.categories li p {
   width: 100%;
-  font-size: 1em;
-	font-weight: 700;
   text-align: center;
-  color: #2a2a2a;
+  color: #FFFFFF;
+	 font-size: 0.7em;
+	background: #465672;
 }
 }
 @media (min-width: 767px){
  ul.categories li a {
-  color: #fff;
+  color: #FFFFFF;
   width: 100%;
   text-align: center;
-  font-size: 1rem;
-  margin-top: 5px;
+  font-size: 1em;
+	 font-weight: 500;
 }
+	
 }
 @media (min-width: 767px){
 ul.categories li .icon {
   display: block;
   margin: 0 auto 12px auto;
-  width: 8em;
   text-align: center;
   line-height: 5em;
-  color: #8d99af;
+	height: 100%;
+  color: #FFFFFF;
   background-color: #fff;
   transition: all .5s;
 }
+	
+	.dropbtn p:hover{
+		background-color: white;
+		color: #465672
+	}
 }
 
 
@@ -938,8 +949,10 @@ ul.categories li .icon {
   text-align: center;
 }
 .main-banner ul.categories li a:hover .icon {
-  background-color: #2b2d42;
 }
+
+
+
 .main-banner ul.categories li .icon img {
   max-width: 27px;
 }
@@ -1368,7 +1381,7 @@ Recent Listing
 .recent-listing .item .right-content span.details {
   display: block;
   margin-bottom: 30px;
-  font-size: 0.8;
+  font-size: 1em;
   color: #8d99af;
 }
 
