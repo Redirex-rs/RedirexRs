@@ -727,6 +727,12 @@ Banner Style
 	.lista-preduzetnika{
 		display: block;
 	}
+.lista-preduzetnika>p{
+  width: 100%;
+  font-size: 0.6em;
+  line-height: 11px;
+}
+
 	.main-banner {
   background-repeat: no-repeat;
   background-position: center center;
@@ -906,6 +912,11 @@ ul.categories li .icon {
 }
 
 @media (max-width: 767px){
+
+  .popular-categories {
+    margin-top: 20px;
+  }
+
 	.home-pretraga{
 		display: block;
   flex-direction: row;
@@ -914,15 +925,16 @@ ul.categories li .icon {
 		-webkit-overflow-scrolling: touch;
 			  margin-top: 1em;
 	}
+
+
 	.home-pretraga li{
 		width: 100%;
 		-webkit-overflow-scrolling: touch;
+    margin-bottom: 0.3em;
 	}	
 .home-pretraga li a{
-	font-size: 0.5em;
-	height: 4.5em;
+	font-size: 0.8em;
 	border-bottom: 1px solid #2a2a2a;
-	padding: 0.2em;
 			   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
 			  color: #343a40;
@@ -933,6 +945,8 @@ ul.categories li .icon {
 }
 
 @media (min-width: 767px){
+
+
 	.home-pretraga{
   flex-direction: column;
   flex-wrap: wrap;
@@ -1019,13 +1033,11 @@ Popular Categories
 ---------------------------------------
 */
 
-.popular-categories {
-  margin-top: 120px;
-}
+
 
 .popular-categories .section-heading {
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 
 .popular-categories .naccs {
@@ -1178,14 +1190,16 @@ Recent Listing
 }
 
 @media (max-width: 767px){
+
+
 .recent-listing .item .listing-item {
   display: inline-flex;
   background-color: #f7f7f7;
   border-radius: 7px;
-  width: 90%;
+  width: 100%;
   position: relative;
   margin-bottom: 30px;
-	border: 2px solid red;
+  margin: a1em;
 }
 
 .recent-listing .item .left-image {
@@ -1194,7 +1208,6 @@ Recent Listing
 	width: 10em;
 	height: 15em;
 	object-fit: contain;
-	border: 2px solid green
 	}
 	
 .recent-listing .item .left-image img {
@@ -1203,7 +1216,6 @@ Recent Listing
 	width: 100%;
 	height: 100%;
   border-bottom-left-radius: 7px;
-	border: 2px solid pink;
 }
 	
 }
@@ -1224,6 +1236,7 @@ Recent Listing
 .recent-listing .item .right-content {
   display: inline-block;
   padding: 60px;
+  align-content: center;
 }
 
 .recent-listing .item .right-content ul.rate {
@@ -1343,6 +1356,7 @@ Footer
 footer {
   border-top: 1px solid #eee;
   padding-top: 80px;
+  margin-bottom: 2em;
 }
 
 footer h4 {
@@ -2255,7 +2269,7 @@ responsive
     margin-top: 45px;
     margin-bottom: 55px;
   }
-e}
+}
 
 @media (max-width: 767px) {
   .main-banner ul.categories li a {
@@ -2264,6 +2278,9 @@ e}
   .header-area .main-nav a.logo {
     background-image: url(../images/black-logo.png);
     float: left;
+  }
+  .main-nav a p{
+    color: #8d99af;
   }
   .header-area .logo {
     margin-left: 0px;
