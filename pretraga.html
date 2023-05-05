@@ -53,7 +53,24 @@ https://templatemo.com/tm-564-plot-listing
 
 -->
 	  
-	  <style> .logo1 > p{
+	  <style> 
+    
+    @media (min-width: 767px){
+      .delatnosti-mob{
+        display: none;
+      }
+      .solid{
+        display: none;
+      }
+    }
+    
+    @media (max-width: 767px){
+      .categories{
+        display: none;
+      }
+    }
+
+    .logo1 > p{
 		  width: 166px;
 		  height: 58px;
 		  font-size: 2.2em;
@@ -62,6 +79,7 @@ https://templatemo.com/tm-564-plot-listing
 		  padding-top: 10px;
 		  color: white
 		  }
+
 		  .wj-dropdown {
   margin-bottom: 18px;
 }
@@ -137,7 +155,7 @@ color: #2c3035ad;
 
 .special{
   background-color: blue;
-}
+} 
 
 
 
@@ -193,12 +211,115 @@ color: #2c3035ad;
             <ul class="nav">
               <li><a href="index.html">Home</a></li>
               <li><a href="#" class="active">Pretraga</a></li>
-              <li><a href="#footer">Kontakt</a></li> 
-              <li><div class="main-white-button"><a href="#"><i class="fa fa-plus"></i> Istaknite vaše usluge</a></div></li> 
+              <li><a href="#footer">Kontakt</a></li>
+              <ul class="delatnosti-mob">
+
+                  <div class="btn-group btn sve-kategorije">
+                    <a class="sve-kategorije" data-toggle="portfilter" data-target="all">Sve Kategorije</a>
+                  </div>
+
+    <!--trgovina--> 
+    <div class="btn-group btn">
+      <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Prodaja &amp; Trgovina
+      </button>
+      <ul class="dropdown-menu">
+        <a class="dropdown-item" data-toggle="portfilter" data-target="maloprodaja">Maloprodaja</a>
+        <a class="dropdown-item" data-toggle="portfilter" data-target="veleprodaja">Veleprodaja</a>
+        <a class="dropdown-item" data-toggle="portfilter" data-target="onlineprodaja">Online Prodaja</a>
+      </ul>
+    </div>
+                    <!--turizam/ugost-->
+    <div class="btn-group btn">
+      <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Turizam &amp; Ugostiteljstvo
+      </button>
+      <ul class="dropdown-menu">
+        <a class="dropdown-item" data-toggle="portfilter" data-target="hotelmotel">Hoteli & Moteli</a>
+        <a class="dropdown-item" data-toggle="portfilter" data-target="restoran">Restorani</a>
+        <a class="dropdown-item" data-toggle="portfilter" data-target="kafic">Kafići</a>
+      </ul>
+    </div>
+    <!--tehnicke usluge--> 
+    <div class="btn-group btn">
+      <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Tehničke Usluge
+      </button>
+      <ul class="dropdown-menu">
+        <a class="dropdown-item" data-toggle="portfilter" data-target="bela_teh">Servis Bele Tehnike</a>
+        <a class="dropdown-item" data-toggle="portfilter" data-target="kucni_ap">Servis Kućnih Aparata</a>
+        <a class="dropdown-item" data-toggle="portfilter" data-target="elektro_servis">Elektro Instalacije</a>
+        <a class="dropdown-item" data-toggle="portfilter" data-target="gradjevina">Građevinske Usluge</a>
+        <a class="dropdown-item" data-toggle="portfilter" data-target="zanatske">Zanatske Usluge</a>
+      </ul>
+    </div>  
+    <!--auto-->
+    <div class="btn-group btn">
+      <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Transport &amp; automobilizam
+      </button>
+      <ul class="dropdown-menu">
+        <a class="dropdown-item" data-toggle="portfilter" data-target="transport">Transport</a>
+        <a class="dropdown-item" data-toggle="portfilter" data-target="auto_servis">Auto Servis</a>
+        <a class="dropdown-item" data-toggle="portfilter" data-target="rentacar">Rent-a-Car</a>
+      </ul>
+    </div>
+    <!--racun-->
+    <div class="btn-group btn">
+      <a type="button" class="icon dropbtn btn" data-toggle="portfilter" data-target="racunovodstvo">
+        Računovodstvo
+      </a>
+    </div> 
+ <!--IT--> 
+ <div class="btn-group btn">
+  <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">IT
+  </button>
+  <ul class="dropdown-menu">
+    <a class="dropdown-item" data-toggle="portfilter" data-target="web_sajtovi">Izrada Web Sajtova</a>
+    <a class="dropdown-item" data-toggle="portfilter" data-target="pc_servis">Servis i Održavanje</a>
+    <a class="dropdown-item" data-toggle="portfilter" data-target="it_ostalo">Ostale Usluge</a>
+  </ul>
+</div> 
+ <!--Medicina i Zdravlje--> 
+ <div class="btn-group btn">
+  <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Medicina i Zdravlje
+  </button>
+  <ul class="dropdown-menu">
+    <a class="dropdown-item" data-toggle="portfilter" data-target="ambulante">Ambulante</a>
+    <a class="dropdown-item" data-toggle="portfilter" data-target="opsta_praksa">Lekari Opšte Prakse</a>
+    <a class="dropdown-item" data-toggle="portfilter" data-target="specijalisticke">Specijalistički Pregledi</a>
+    <a class="dropdown-item" data-toggle="portfilter" data-target="kozmetika">Kozmetički Saloni</a>
+    <a class="dropdown-item" data-toggle="portfilter" data-target="medic_ostalo">Ostalo</a>
+  </ul>
+</div> 
+    <!--tekstil-->
+    <div class="btn-group btn">
+    <a type="button" class="icon dropbtn btn" data-toggle="portfilter" data-target="tekstil">
+      Tekstilna Industrija
+    </a>  
+  </div>
+ <!--Veterina--> 
+ <div class="btn-group btn">
+  <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Veterina
+  </button>
+  <ul class="dropdown-menu">
+    <a class="dropdown-item" data-toggle="portfilter" data-target="vet_ambulante">Veterinarske Ambulante</a>
+    <a class="dropdown-item" data-toggle="portfilter" data-target="sve_za_ljubimce">Sve za Vašeg Ljubimca</a>
+    <a class="dropdown-item" data-toggle="portfilter" data-target="vet_ostalo">Ostalo</a>
+  </ul>
+</div> 
+    <!--ostalo-->
+    <div class="btn-group btn">
+    <a type="button" class="icon dropbtn btn" data-toggle="portfilter" data-target="sve_ostalo">
+      Ostalo
+    </a>
+ </div>
+              </ul> 
+              
             </ul>        
             <a class="menu-trigger">
                 <span>Menu</span>
             </a>
+
+
+
+            
             <!-- ***** Menu End ***** -->
           </nav>
         </div>
@@ -355,7 +476,11 @@ color: #2c3035ad;
                         <li><i class="fas fa-envelope"></i>&nbsp;stefistildoo@gmail.com</li>
                       </ul>
                     </div>
-                  </div>	
+                  </div>
+
+                  <hr class="solid"> 
+                     
+                  	
 				  <!--Beauty and Life-->
 				  <div class="listing-item-pretraga" data-tag="kozmetika">
                     <div class="left-image">
@@ -377,6 +502,10 @@ color: #2c3035ad;
                       </div>
                     </div>
                   </div>	
+
+                  <hr class="solid"> 
+                     
+                  
 				  <!--PLC software-->
 				  <div class="listing-item-pretraga" data-tag="it-ostalo">
                     <div class="left-image">
@@ -398,6 +527,10 @@ color: #2c3035ad;
                       </div>
                     </div>
                   </div>	
+
+                  <hr class="solid"> 
+                     
+                  
 				  <!--Auto servis misa-->
 				  <div class="listing-item-pretraga" data-tag="auto_servis">
                     <div class="left-image">
@@ -420,6 +553,10 @@ I bavi se popravkom, održavanjem, auto diagnostikom,..</em></span> -->
                       </div>
                     </div>
                   </div>	
+
+                  <hr class="solid"> 
+                     
+                  
 				  <!--Auto servis daja-->
 				  <div class="listing-item-pretraga" data-tag="auto_servis">
                     <div class="left-image">
@@ -440,7 +577,11 @@ I bavi se popravkom, održavanjem, auto diagnostikom,..</em></span> -->
                        <!-- <a href="#"> Poseti stranicu</a> -->
                       </div>
                     </div>
-                  </div>				  
+                  </div>
+
+                  <hr class="solid"> 
+                     
+                  				  
 				  <!--ASM Mercedes servis-->
 				  <div class="listing-item-pretraga" data-tag="auto_servis">
                     <div class="left-image">
@@ -463,6 +604,10 @@ I bavi se popravkom, održavanjem, auto diagnostikom,..</em></span>
                       </div>
                     </div>
                   </div>
+
+                  <hr class="solid"> 
+                     
+                  
 				  <!--Elektro Filipovic-->
 				  <div class="listing-item-pretraga" data-tag="elektro_servis">
                     <div class="left-image">
@@ -560,12 +705,13 @@ I bavi se popravkom, održavanjem, auto diagnostikom,..</em></span>
 !function(d){var c="portfilter";var b=function(e){this.$element=d(e);this.stuff=d("[data-tag]");this.target=this.$element.data("target")||""};b.prototype.filter=function(g){var e=[],f=this.target;this.stuff.fadeOut("fast").promise().done(function(){d(this).each(function(){if(d(this).data("tag")==f||f=="all"){e.push(this)}});d(e).show()})};var a=d.fn[c];d.fn[c]=function(e){return this.each(function(){var g=d(this),f=g.data(c);if(!f){g.data(c,(f=new b(this)))}if(e=="filter"){f.filter()}})};d.fn[c].defaults={};d.fn[c].Constructor=b;d.fn[c].noConflict=function(){d.fn[c]=a;return this};d(document).on("click.portfilter.data-api","[data-toggle^=portfilter]",function(f){d(this).portfilter("filter")})}(window.jQuery);
 </script>
 <script>
+  /*
 	var cards = $(".listing-item-pretraga");
 for(var i = 0; i < cards.length; i++){
     var target = Math.floor(Math.random() * cards.length -1) + 1;
     var target2 = Math.floor(Math.random() * cards.length -1) +1;
     cards.eq(target).before(cards.eq(target2));
-}
+} */
 
 $(".dropdown-toggle").on("click", function () {
     $(".collapse.show").removeClass("show");

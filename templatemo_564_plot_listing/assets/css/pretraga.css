@@ -297,9 +297,7 @@ header
 
 .header-area .main-nav .nav {
   float: right;
-  margin-top: 30px;
   margin-right: 0px;
-  background-color: transparent;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -654,7 +652,7 @@ header
     border-top: 1px solid #eee;
   }
   .header-area.header-sticky .nav {
-    margin-top: 100px;
+    margin-top: 22px;
   }
   .header-area .main-nav .nav li {
     width: 100%;
@@ -753,13 +751,6 @@ Banner Style
   margin-top: 15px;
   margin-bottom: 45px;
 }
-}
-@media (max-width: 767px){
-ul.categories {
-	display: inline-flex;
-	width: 100%;
-	height: 20em;
-	margin-top: 1em;
 }
 	
 	
@@ -2371,6 +2362,39 @@ responsive
   .header-area .main-nav a.logo {
     background-image: url(../images/black-logo.png);
     float: left;
+  }
+
+  .delatnosti-mob{
+    margin-bottom: 1em;
+    padding-left: 0em;
+  }
+.delatnosti-mob .sve-kategorije{
+  display: block;
+  width: 100% !important;
+  color: #2a2a2a;
+}
+
+.delatnosti-mob .btn{
+  display: inline-flex;
+  font-size: 0.75em;
+  width: 90%;
+  margin: auto;
+  color: #2a2a2a;
+}
+.btn .icon{
+  color: #2a2a2a;
+  text-align: center;
+}
+.btn .dropdown-toggle{
+  text-align: center;
+}
+  .main-nav .nav{
+    background-color: #f7f7f7;
+    border: 7px solid #6c757d;
+    border-radius:1cqb;
+  }
+  .main-nav a p{
+    color: #8d99af;
   }
   .header-area .logo {
     margin-left: 0px;
